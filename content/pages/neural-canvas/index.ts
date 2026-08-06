@@ -10,6 +10,16 @@ import llmIntegrationCost from "./llm-integration-cost.json";
 import computerVisionDevelopmentCost from "./computer-vision-development-cost.json";
 import aiAutomationCost from "./ai-automation-cost.json";
 import aiChatbotDevelopmentCost from "./ai-chatbot-development-cost.json";
+import aiConsultingCost from "./ai-consulting-cost.json";
+import generativeAiDevelopment from "./generative-ai-development.json";
+import buildVsBuyAi from "./build-vs-buy-ai.json";
+import aiDevelopmentCompany from "./ai-development-company.json";
+import generativeAiDevelopmentCost from "./generative-ai-development-cost.json";
+import openaiVsAnthropicVsGoogleEnterprise from "./openai-vs-anthropic-vs-google-enterprise.json";
+
+
+
+
 
 
 
@@ -29,6 +39,16 @@ llmIntegrationCost as DynamicPageData,
 computerVisionDevelopmentCost as DynamicPageData,
 aiAutomationCost as DynamicPageData,
 aiChatbotDevelopmentCost as DynamicPageData,
+aiConsultingCost as DynamicPageData,
+generativeAiDevelopment as DynamicPageData,
+buildVsBuyAi as DynamicPageData,
+aiDevelopmentCompany as DynamicPageData,
+generativeAiDevelopmentCost as DynamicPageData,
+openaiVsAnthropicVsGoogleEnterprise as DynamicPageData,
+
+
+
+
 
 
 
