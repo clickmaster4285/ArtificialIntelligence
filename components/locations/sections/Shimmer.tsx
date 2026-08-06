@@ -21,7 +21,7 @@ export function Shimmer() {
 }
 
 /**
- * SkeletonBar — a shimmering loading placeholder (infinite sweep), used for
+ * SkeletonBar  a shimmering loading placeholder (infinite sweep), used for
  * the "loading skeleton" state before real content mounts.
  */
 export function SkeletonBar({ className = '' }: { className?: string }) {

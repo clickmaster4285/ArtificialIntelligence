@@ -12,7 +12,9 @@ const words = ["Unlock", "the", "Power", "of", "Intelligent", "Automation."];
 
 export function HugeHero({ visible }: HugeHeroProps) {
   return (
-    <section className="relative h-screen w-full overflow-hidden text-white">
+    // UPDATED: Applied px-6 md:px-12 here to match HugeAbout perfectly.
+    <section className="relative h-screen w-full overflow-hidden text-white px-6 md:px-12">
+      
       {/* Background video */}
       <video
         src="/video/ai.mp4"
@@ -44,8 +46,10 @@ export function HugeHero({ visible }: HugeHeroProps) {
         }}
       />
 
-      {/* Hero content */}
-      <div className="relative z-10 h-full flex flex-col justify-center px-6 md:px-12">
+      {/* Hero content container */}
+      <div className="relative z-10 h-full flex flex-col justify-center max-w-7xl mx-auto w-full">
+        
+        {/* Eyebrow */}
         <motion.span
           initial={{ opacity: 0, y: 20 }}
           animate={visible ? { opacity: 1, y: 0 } : {}}
@@ -56,7 +60,8 @@ export function HugeHero({ visible }: HugeHeroProps) {
           Software House · Est. 2018
         </motion.span>
 
-        <h1 className="text-[10vw] lg:text-[6vw] leading-[1.34] font-semibold tracking-tighter max-w-[1100px]">
+        {/* Main Title */}
+        <h1 className="text-[10vw] lg:text-[6vw] leading-[1.34] font-semibold tracking-tighter max-w-5xl">
           {words.map((w, i) => {
             const isGradient = i === 4 || i === 5;
             return (
@@ -89,13 +94,14 @@ export function HugeHero({ visible }: HugeHeroProps) {
           })}
         </h1>
 
+        {/* Description */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={visible ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 1 }}
           className="mt-6 flex flex-col md:flex-row md:items-end justify-between gap-6 max-w-4xl"
         >
-          <p className="max-w-5xl text-base md:text-xl font-semibold text-justify text-white/80">
+          <p className="max-w-2xl text-base md:text-lg font-medium text-left text-white/80 leading-relaxed">
             A software house crafting AI products, web platforms, and mobile experiences for ambitious startups and growing businesses. We combine strategy, design, and engineering to build digital products that launch faster, scale confidently, and deliver experiences users genuinely enjoy. From intelligent AI solutions to high-performance web and mobile applications, we create technology that drives growth and stands the test of time.
           </p>
         </motion.div>

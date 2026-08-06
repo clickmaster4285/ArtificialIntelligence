@@ -27,7 +27,7 @@ const services = [
     title: "AI & Machine Learning",
     tag: "LLMs · RAG · Agents",
     img: serviceAi.src,
-    desc: "Production-grade AI features — from copilots and agents to custom RAG pipelines and fine-tuning.",
+    desc: "Production-grade AI features  from copilots and agents to custom RAG pipelines and fine-tuning.",
   },
   {
     n: "04",

@@ -46,12 +46,12 @@ export function Navbar({ className }: NavbarProps) {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.7, delay: 0.1 }}
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-500 px-6 md:px-12",
         isScrolled ? "bg-black/80 backdrop-blur-xl border-b border-white/5" : "bg-transparent",
         className
       )}
     >
-      <div className="max-w-7xl mx-auto px-6 md:px-12">
+      <div className="max-w-7xl mx-auto">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link 
@@ -132,9 +132,9 @@ export function Navbar({ className }: NavbarProps) {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden bg-black/95 backdrop-blur-xl border-t border-white/5 overflow-hidden"
+            className="md:hidden bg-black/95 backdrop-blur-xl border-t border-white/5 overflow-hidden -mx-6 md:-mx-12"
           >
-            <div className="px-6 py-6 space-y-4">
+            <div className="px-6 md:px-12 py-6 space-y-4">
               {navLinks.map((link) => (
                 <Link
                   key={link.name}

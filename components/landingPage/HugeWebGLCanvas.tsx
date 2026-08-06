@@ -57,7 +57,7 @@ void main(){
   float d = smin(smin(d1, d2, 0.35), d3, 0.35);
   float blob = smoothstep(0.05, -0.25, d);
 
-  // color palette (purple -> magenta -> warm orange) — matches brand
+  // color palette (purple -> magenta -> warm orange)  matches brand
   vec3 c1 = vec3(0.10, 0.06, 0.22);   // deep purple bg
   vec3 c2 = vec3(0.55, 0.25, 0.95);   // violet
   vec3 c3 = vec3(0.95, 0.35, 0.55);   // magenta

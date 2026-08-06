@@ -7,12 +7,12 @@ const TESTIMONIALS = [
   { name: "Maya Iyer", role: "Head of Product, Atelier", quote: "The model understands context better than humans do. It's the first AI we've shipped that actually feels trustworthy.", accent: "oklch(0.84 0.15 150)" },
   { name: "Alex Romero", role: "CMO, Norton", quote: "Generated 1,200 personalized ad variations in one hour. Our ROAS doubled instantly. This is the new baseline.", accent: "oklch(0.82 0.16 60)" },
   { name: "Priya Shah", role: "Founder, Kove", quote: "We thought we'd need a team of data scientists. They gave us a single endpoint that outperformed our in-house models.", accent: "oklch(0.78 0.18 20)" },
-  { name: "Marcus Hall", role: "VP Product, Helio", quote: "Latency is under 100ms, even at scale. Their inference stack is a weapon. Our users never know it's AI — that's the point.", accent: "oklch(0.80 0.17 260)" },
+  { name: "Marcus Hall", role: "VP Product, Helio", quote: "Latency is under 100ms, even at scale. Their inference stack is a weapon. Our users never know it's AI  that's the point.", accent: "oklch(0.80 0.17 260)" },
   { name: "Yuki Tanaka", role: "Creative Director, Forma", quote: "The prompt controls are so fine-grained we can steer outputs exactly where we want. Finally, AI with an opinion.", accent: "oklch(0.84 0.14 180)" },
-  { name: "Elena Voss", role: "CEO, Stratus", quote: "We replaced four separate vendors with their platform. Unified, faster, cheaper. And honestly — smarter.", accent: "oklch(0.82 0.16 90)" },
+  { name: "Elena Voss", role: "CEO, Stratus", quote: "We replaced four separate vendors with their platform. Unified, faster, cheaper. And honestly  smarter.", accent: "oklch(0.82 0.16 90)" },
 ];
 
-// Layout — cards drift along a deep aisle with a slight S-curve.
+// Layout  cards drift along a deep aisle with a slight S-curve.
 const SPACING_Z = 1500;
 const SIDE_X = 360;
 const CARD_TILT = 18;
@@ -171,8 +171,8 @@ export default function TestimonialsAurora() {
               // Sharper falloff so distant cards don't bleed through the front one.
               const visibility =
                 dist > 0
-                  ? Math.max(0, 1 - dist * 0.85) // ahead — fade fast
-                  : Math.max(0, 1 - absDist * 1.4); // behind — fade even faster
+                  ? Math.max(0, 1 - dist * 0.85) // ahead  fade fast
+                  : Math.max(0, 1 - absDist * 1.4); // behind  fade even faster
               const lift = Math.sin(Math.min(1, focus) * Math.PI) * 26;
 
               return (
@@ -217,7 +217,7 @@ export default function TestimonialsAurora() {
 }
 
 function Starfield() {
-  // Static-looking stars rendered with radial-gradient layers — cheap & crisp.
+  // Static-looking stars rendered with radial-gradient layers  cheap & crisp.
   return (
     <div
       className="absolute inset-0 pointer-events-none opacity-70"

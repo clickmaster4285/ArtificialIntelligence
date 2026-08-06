@@ -141,9 +141,9 @@ export function generateBreadcrumbSchema(pageData: AIPageData) {
 
   if (isSubPage) {
     const pageTitle = pageData.h1
-      .split(' — ')[0]
+      .split('  ')[0]
       .replace('AI Development for ', '')
-      .replace('AI Development — ', '')
+      .replace('AI Development  ', '')
       .replace('AI Development and ', '');
     
     items.push({

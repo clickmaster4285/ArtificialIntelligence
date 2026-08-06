@@ -47,7 +47,7 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
     notFound();
   }
 
-  const locationName = location.h1.split(' — ')[0].replace('AI Development Company in ', '');
+  const locationName = location.h1.split('  ')[0].replace('AI Development Company in ', '');
 
   return (
     <PageLayout withGrain>

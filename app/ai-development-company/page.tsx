@@ -18,8 +18,8 @@ export default function LocationOverviewPage() {
     <PageLayout withGrain>
       <HeroSection
         tagline="AI Development Company"
-        title="AI Development Company — Custom AI Solutions Across North America"
-        description="ClickMasters is a custom AI development company serving clients across the United States and Canada. We build production-ready AI systems — RAG knowledge platforms, LLM applications, AI agents, custom ML models, and generative AI applications — for enterprises and startups at every stage. Projects start at $20,000. Fixed-price milestone contracts. Full IP transfer."
+        title="AI Development Company  Custom AI Solutions Across North America"
+        description="ClickMasters is a custom AI development company serving clients across the United States and Canada. We build production-ready AI systems  RAG knowledge platforms, LLM applications, AI agents, custom ML models, and generative AI applications  for enterprises and startups at every stage. Projects start at $20,000. Fixed-price milestone contracts. Full IP transfer."
         ctaText="Get a Free AI Consultation"
         ctaLink="/contact"
         startingPrice="$20,000"
@@ -52,7 +52,7 @@ export default function LocationOverviewPage() {
       />
 
       <PricingSection
-        title="AI Development Pricing — 2026"
+        title="AI Development Pricing  2026"
         description="ClickMasters delivers senior AI engineering at transparent, published rates with fixed-price milestone contracts."
         items={[
           { systemType: 'AI SaaS Product (MVP)', priceRange: '$70,000–$250,000', timeline: '16–32 weeks', primaryOutcome: 'Pre-Series A/B AI product companies' },
@@ -71,7 +71,7 @@ export default function LocationOverviewPage() {
         items={[
           {
             question: 'What is an AI development company?',
-            answer: 'An AI development company builds custom AI systems for businesses — RAG knowledge bases, LLM applications, AI agents, custom ML models, and generative AI applications. ClickMasters builds production-ready AI systems with fixed-price contracts and full IP transfer.'
+            answer: 'An AI development company builds custom AI systems for businesses  RAG knowledge bases, LLM applications, AI agents, custom ML models, and generative AI applications. ClickMasters builds production-ready AI systems with fixed-price contracts and full IP transfer.'
           },
           {
             question: 'How much does AI development cost?',

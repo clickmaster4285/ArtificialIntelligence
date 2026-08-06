@@ -2,7 +2,7 @@
 
 // components/sections/ApplicationsSection.tsx
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, Variants } from 'framer-motion';
 import {
   ChevronRight,
   CheckCircle2,
@@ -13,8 +13,6 @@ import {
   Zap,
   Star,
 } from 'lucide-react';
-import { GradientHeading } from '@/components/locations/sections/GradientHeading';
-import { BorderDraw } from '@/components/locations/sections/BorderDraw';
 
 interface ApplicationItem {
   title: string;
@@ -38,15 +36,41 @@ export const ApplicationsSection: React.FC<ApplicationsSectionProps> = ({
   const [activeIndex, setActiveIndex] = useState<number | null>(0);
   const [hoveredNav, setHoveredNav] = useState<number | null>(null);
 
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1, transition: { staggerChildren: 0.08 } },
-  } as const;
+  };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, x: -20 },
     visible: { opacity: 1, x: 0, transition: { duration: 0.5, ease: 'easeOut' } },
-  } as const;
+  };
+
+  const contentVariants: Variants = {
+    hidden: { 
+      opacity: 0, 
+      y: 20, 
+      scale: 0.98 
+    },
+    visible: { 
+      opacity: 1, 
+      y: 0, 
+      scale: 1,
+      transition: { 
+        duration: 0.5, 
+        ease: [0.22, 1, 0.36, 1]
+      } 
+    },
+    exit: { 
+      opacity: 0, 
+      y: -20, 
+      scale: 0.98,
+      transition: { 
+        duration: 0.3,
+        ease: "easeInOut"
+      } 
+    },
+  };
 
   const getIcon = (index: number) => {
     const icons = [
@@ -61,29 +85,63 @@ export const ApplicationsSection: React.FC<ApplicationsSectionProps> = ({
   };
 
   return (
-    <section className="py-16 md:py-20 relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative py-24 md:py-32 overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-br from-[#1a0b2e] via-[#0d0618] to-[#1a0b2e] pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-tr from-violet-900/20 via-fuchsia-900/10 to-orange-900/20 pointer-events-none" />
+      
+      <div className="absolute -top-40 -right-40 w-96 h-96 bg-violet-600/20 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-fuchsia-600/20 rounded-full blur-3xl pointer-events-none" />
+
+      <div className="relative z-10 max-w-7xl mx-auto px-8 w-full">
+        
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="max-w-3xl mb-12 text-left"
+          transition={{ duration: 0.6 }}
+          className="mb-14"
         >
-          <span className="text-eyebrow text-violet-400">Applications</span>
-          <div className="mt-2">
-            <GradientHeading text={title} as="h2" className="text-3xl md:text-4xl" />
-          </div>
-          {description && <p className="mt-4 text-ink-soft">{description}</p>}
+          <motion.div 
+            className="flex items-center gap-3 text-eyebrow text-violet-400 uppercase tracking-widest text-sm font-medium"
+            whileHover={{ scale: 1.02 }}
+          >
+            <span className="w-8 h-px bg-violet-400/70" />
+            Applications
+          </motion.div>
+          
+          <motion.div 
+            className="mt-4"
+            initial={{ opacity: 0, x: -10 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+          >
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1]">
+              <span className="bg-gradient-to-r from-[#d8b4fe] via-[#f9a8d4] to-[#fdba74] bg-clip-text text-transparent">
+                {title}
+              </span>
+            </h2>
+          </motion.div>
+          
+          {description && (
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="mt-6 text-lg text-white/70 max-w-2xl leading-relaxed"
+            >
+              {description}
+            </motion.p>
+          )}
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Left: Navigation - each item scales up slightly when selected */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-12">
+          
           <motion.div
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="lg:col-span-1 space-y-2"
+            className="lg:col-span-1 space-y-3"
           >
             {items.map((item, index) => {
               const isActive = activeIndex === index;
@@ -94,87 +152,134 @@ export const ApplicationsSection: React.FC<ApplicationsSectionProps> = ({
                   onClick={() => setActiveIndex(index)}
                   onMouseEnter={() => setHoveredNav(index)}
                   onMouseLeave={() => setHoveredNav(null)}
-                  animate={{ scale: isActive ? 1.02 : 1 }}
-                  transition={{ duration: 0.25 }}
+                  whileHover={{ y: -2 }}
                   className={`
-                    relative w-full text-left p-4 rounded-xl overflow-hidden
-                    flex items-center gap-3 group
-                    ${isActive ? 'bg-violet-500/10 text-white' : 'hover:bg-white/5 text-ink-soft'}
+                    relative w-full text-left p-5 rounded-xl overflow-hidden
+                    flex items-center gap-4 group transition-all duration-300
+                    ${isActive 
+                      ? 'bg-gradient-to-r from-violet-500/20 to-fuchsia-500/10 shadow-[0_0_30px_-10px_rgba(168,85,247,0.4)]' 
+                      : 'bg-white/[0.03] hover:bg-white/[0.06]'
+                    }
                   `}
                 >
-                  <BorderDraw hovered={isActive || hoveredNav === index} rounded={12} />
                   <span
                     className={`
-                    relative p-2 rounded-lg transition-colors
-                    ${isActive ? 'bg-violet-500/20 text-violet-400' : 'bg-white/5 text-ink-mute'}
-                  `}
+                      relative p-2.5 rounded-xl transition-all duration-300
+                      ${isActive 
+                        ? 'bg-violet-500/30 text-violet-300 shadow-[0_0_20px_-5px_rgba(168,85,247,0.3)]' 
+                        : 'bg-white/5 text-white/40 group-hover:text-white/70'
+                      }
+                    `}
                   >
                     {getIcon(index)}
                   </span>
-                  <span className="relative flex-1 font-medium text-sm">{item.title}</span>
+                  
+                  <div className="relative flex-1 flex flex-col items-start">
+                    <span className="font-medium text-sm text-white group-hover:text-white transition-colors">
+                      {item.title}
+                    </span>
+                    <span className="text-xs text-white/40 group-hover:text-white/60 transition-colors hidden sm:block">
+                      Learn more
+                    </span>
+                  </div>
+
                   <ChevronRight
                     className={`
-                    relative w-4 h-4 transition-all
-                    ${isActive ? 'text-violet-400 opacity-100 translate-x-0.5' : 'opacity-0 group-hover:opacity-50'}
-                  `}
+                      relative w-4 h-4 transition-all duration-300
+                      ${isActive 
+                        ? 'text-violet-400 opacity-100 translate-x-0.5' 
+                        : 'opacity-0 group-hover:opacity-50 group-hover:translate-x-0.5'
+                      }
+                    `}
                   />
                 </motion.button>
               );
             })}
           </motion.div>
 
-          {/* Right: Content */}
           <div className="lg:col-span-2">
             <AnimatePresence mode="wait">
               {activeIndex !== null && (
                 <motion.div
                   key={activeIndex}
-                  initial={{ opacity: 0, y: 20, scale: 0.98 }}
-                  animate={{ opacity: 1, y: 0, scale: 1 }}
-                  exit={{ opacity: 0, y: -20, scale: 0.98 }}
-                  transition={{ duration: 0.4 }}
-                  className="p-6 md:p-8 rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-transparent text-left"
+                  variants={contentVariants}
+                  initial="hidden"
+                  animate="visible"
+                  exit="exit"
+                  className="relative p-8 md:p-10 rounded-3xl bg-gradient-to-br from-white/[0.06] via-white/[0.03] to-transparent backdrop-blur-xl shadow-2xl overflow-hidden"
                 >
-                  <h3 className="text-xl font-bold text-white mb-3">
-                    {items[activeIndex].title}
-                  </h3>
-                  <p className="text-ink-soft leading-relaxed mb-4">
-                    {items[activeIndex].description}
-                  </p>
+                  <div className="absolute top-0 right-0 w-64 h-64 bg-violet-500/10 rounded-full blur-[80px] pointer-events-none" />
+                  
+                  <div className="relative z-10">
+                    <motion.h3 
+                      className="text-2xl md:text-3xl font-bold text-white mb-4"
+                      initial={{ opacity: 0, x: -10 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: 0.1 }}
+                    >
+                      {items[activeIndex].title}
+                    </motion.h3>
+                    
+                    <motion.p 
+                      className="text-white/70 leading-relaxed mb-6 text-lg"
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ delay: 0.2 }}
+                    >
+                      {items[activeIndex].description}
+                    </motion.p>
 
-                  {items[activeIndex].keyFeatures && (
-                    <div className="mt-4">
-                      <h4 className="text-sm font-semibold text-ink-mute mb-2">Key Features</h4>
-                      <div className="flex flex-wrap gap-2">
-                        {items[activeIndex].keyFeatures!.map((feature, idx) => (
-                          <motion.span
-                            key={idx}
-                            initial={{ opacity: 0, scale: 0.9 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            transition={{ delay: idx * 0.04 }}
-                            className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs bg-violet-500/10 text-violet-300 border border-violet-500/20"
-                          >
-                            <CheckCircle2 className="w-3 h-3" />
-                            {feature}
-                          </motion.span>
-                        ))}
-                      </div>
-                    </div>
-                  )}
+                    {items[activeIndex].keyFeatures && (
+                      <motion.div 
+                        className="mt-6"
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.3 }}
+                      >
+                        <h4 className="text-sm font-semibold text-white/50 uppercase tracking-wider mb-3">Key Features</h4>
+                        <div className="flex flex-wrap gap-3">
+                          {items[activeIndex].keyFeatures!.map((feature, idx) => (
+                            <motion.span
+                              key={idx}
+                              initial={{ opacity: 0, scale: 0.9 }}
+                              animate={{ opacity: 1, scale: 1 }}
+                              transition={{ delay: 0.3 + (idx * 0.05) }}
+                              className="flex items-center gap-2 px-4 py-2 rounded-full text-sm bg-gradient-to-r from-violet-500/20 to-fuchsia-500/10 text-violet-300"
+                            >
+                              <CheckCircle2 className="w-4 h-4" />
+                              {feature}
+                            </motion.span>
+                          ))}
+                        </div>
+                      </motion.div>
+                    )}
 
-                  {items[activeIndex].technicalApproach && (
-                    <div className="mt-4 p-4 rounded-xl border border-white/5 bg-white/5">
-                      <h4 className="text-sm font-semibold text-ink-mute mb-1">Technical Approach</h4>
-                      <p className="text-sm text-ink-soft">{items[activeIndex].technicalApproach}</p>
-                    </div>
-                  )}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+                      {items[activeIndex].technicalApproach && (
+                        <motion.div 
+                          className="p-5 rounded-xl bg-white/[0.04]"
+                          initial={{ opacity: 0, y: 10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ delay: 0.4 }}
+                        >
+                          <h4 className="text-xs font-semibold text-white/50 uppercase tracking-wider mb-1">Technical Approach</h4>
+                          <p className="text-sm text-white/70">{items[activeIndex].technicalApproach}</p>
+                        </motion.div>
+                      )}
 
-                  {items[activeIndex].typicalOutcome && (
-                    <div className="mt-4 p-4 rounded-xl border border-green-500/20 bg-green-500/5">
-                      <h4 className="text-sm font-semibold text-green-400 mb-1">Typical Outcome</h4>
-                      <p className="text-sm text-ink-soft">{items[activeIndex].typicalOutcome}</p>
+                      {items[activeIndex].typicalOutcome && (
+                        <motion.div 
+                          className="p-5 rounded-xl bg-emerald-500/5"
+                          initial={{ opacity: 0, y: 10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ delay: 0.5 }}
+                        >
+                          <h4 className="text-xs font-semibold text-emerald-400 uppercase tracking-wider mb-1">Typical Outcome</h4>
+                          <p className="text-sm text-white/70">{items[activeIndex].typicalOutcome}</p>
+                        </motion.div>
+                      )}
                     </div>
-                  )}
+                  </div>
                 </motion.div>
               )}
             </AnimatePresence>

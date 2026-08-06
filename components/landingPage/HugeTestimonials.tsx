@@ -27,7 +27,7 @@ const testimonials: T[] = [
   },
   {
     quote:
-      "Every detail felt considered. From the typography to the motion to the API design — it all sings the same tune.",
+      "Every detail felt considered. From the typography to the motion to the API design  it all sings the same tune.",
     name: "Priya Raman",
     role: "CTO",
     company: "Crunchbase",
@@ -51,7 +51,7 @@ const testimonials: T[] = [
   },
   {
     quote:
-      "They don't just deliver — they raise the standard of everything around them. Our internal team is better for it.",
+      "They don't just deliver  they raise the standard of everything around them. Our internal team is better for it.",
     name: "Marcus Tan",
     role: "Director of Engineering",
     company: "Rizzle",
@@ -83,7 +83,7 @@ export function HugeTestimonials() {
             </h2>
           </div>
           <p className="text-sm md:text-base text-muted-foreground max-w-sm">
-            Long-running partnerships across products, brands and platforms —
+            Long-running partnerships across products, brands and platforms 
             here&apos;s what they have to say.
           </p>
         </motion.div>

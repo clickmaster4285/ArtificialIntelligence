@@ -7,6 +7,9 @@ export interface ServiceNavItem {
   icon: string;
   path: string;
   category: string;
+  hasSubPages?: boolean;
+  subPages?: { slug: string; title: string; icon: string; path: string }[];
+  featured?: boolean;
 }
 
 export interface ServiceCategory {
@@ -14,7 +17,84 @@ export interface ServiceCategory {
   items: ServiceNavItem[];
 }
 
+// Healthcare city sub-pages
+const healthcareSubPages = [
+  { slug: 'healthcare-toronto', title: 'Toronto', icon: '🍁', path: '/ai-development/healthcare/toronto' },
+  { slug: 'healthcare-atlanta', title: 'Atlanta', icon: '🍑', path: '/ai-development/healthcare/atlanta' },
+  { slug: 'healthcare-phoenix', title: 'Phoenix', icon: '🌵', path: '/ai-development/healthcare/phoenix' },
+  { slug: 'healthcare-vancouver', title: 'Vancouver', icon: '🌊', path: '/ai-development/healthcare/vancouver' },
+  { slug: 'healthcare-new-york', title: 'New York', icon: '🗽', path: '/ai-development/healthcare/new-york' },
+  { slug: 'healthcare-houston', title: 'Houston', icon: '🚀', path: '/ai-development/healthcare/houston' },
+  { slug: 'healthcare-chicago', title: 'Chicago', icon: '🌆', path: '/ai-development/healthcare/chicago' },
+  { slug: 'healthcare-dallas', title: 'Dallas', icon: '⭐', path: '/ai-development/healthcare/dallas' },
+  { slug: 'healthcare-miami', title: 'Miami', icon: '🌴', path: '/ai-development/healthcare/miami' },
+  { slug: 'healthcare-seattle', title: 'Seattle', icon: '☕', path: '/ai-development/healthcare/seattle' },
+  { slug: 'healthcare-austin', title: 'Austin', icon: '🤠', path: '/ai-development/healthcare/austin' },
+  { slug: 'healthcare-denver', title: 'Denver', icon: '🏔️', path: '/ai-development/healthcare/denver' },
+  { slug: 'healthcare-calgary', title: 'Calgary', icon: '⛰️', path: '/ai-development/healthcare/calgary' },
+  { slug: 'healthcare-san-francisco', title: 'San Francisco', icon: '🌉', path: '/ai-development/healthcare/san-francisco' },
+  { slug: 'healthcare-washington-dc', title: 'Washington DC', icon: '🏛️', path: '/ai-development/healthcare/washington-dc' },
+  { slug: 'healthcare-montreal', title: 'Montreal', icon: '⚜️', path: '/ai-development/healthcare/montreal' },
+];
+
+// Chatbot city sub-pages
+const chatbotSubPages = [
+  { slug: 'ai-chatbot-development-new-york', title: 'New York', icon: '🗽', path: '/ai-chatbot-development/new-york' },
+  { slug: 'ai-chatbot-development-toronto', title: 'Toronto', icon: '🍁', path: '/ai-chatbot-development/toronto' },
+  { slug: 'ai-chatbot-development-san-francisco', title: 'San Francisco', icon: '🌉', path: '/ai-chatbot-development/san-francisco' },
+  { slug: 'ai-chatbot-development-dallas', title: 'Dallas', icon: '⭐', path: '/ai-chatbot-development/dallas' },
+  { slug: 'ai-chatbot-development-boston', title: 'Boston', icon: '🏛️', path: '/ai-chatbot-development/boston' },
+  { slug: 'ai-chatbot-development-miami', title: 'Miami', icon: '🌴', path: '/ai-chatbot-development/miami' },
+  { slug: 'ai-chatbot-development-austin', title: 'Austin', icon: '🤠', path: '/ai-chatbot-development/austin' },
+  { slug: 'ai-chatbot-development-vancouver', title: 'Vancouver', icon: '🌊', path: '/ai-chatbot-development/vancouver' },
+  { slug: 'ai-chatbot-development-montreal', title: 'Montreal', icon: '⚜️', path: '/ai-chatbot-development/montreal' },
+  { slug: 'ai-chatbot-development-chicago', title: 'Chicago', icon: '🌆', path: '/ai-chatbot-development/chicago' },
+  { slug: 'ai-chatbot-development-houston', title: 'Houston', icon: '🚀', path: '/ai-chatbot-development/houston' },
+  { slug: 'ai-chatbot-development-washington-dc', title: 'Washington DC', icon: '🏛️', path: '/ai-chatbot-development/washington-dc' },
+  { slug: 'ai-chatbot-development-philadelphia', title: 'Philadelphia', icon: '🔔', path: '/ai-chatbot-development/philadelphia' },
+  { slug: 'ai-chatbot-development-atlanta', title: 'Atlanta', icon: '🍑', path: '/ai-chatbot-development/atlanta' },
+  { slug: 'ai-chatbot-development-denver', title: 'Denver', icon: '🏔️', path: '/ai-chatbot-development/denver' },
+  { slug: 'ai-chatbot-development-los-angeles', title: 'Los Angeles', icon: '🎬', path: '/ai-chatbot-development/los-angeles' },
+  { slug: 'ai-chatbot-development-charlotte', title: 'Charlotte', icon: '🏦', path: '/ai-chatbot-development/charlotte' },
+  { slug: 'ai-chatbot-development-orlando', title: 'Orlando', icon: '🎢', path: '/ai-chatbot-development/orlando' },
+  { slug: 'ai-chatbot-development-columbus', title: 'Columbus', icon: '🏙️', path: '/ai-chatbot-development/columbus' },
+  { slug: 'ai-chatbot-development-seattle', title: 'Seattle', icon: '☕', path: '/ai-chatbot-development/seattle' },
+  { slug: 'ai-chatbot-development-san-jose', title: 'San Jose', icon: '💻', path: '/ai-chatbot-development/san-jose' },
+  { slug: 'ai-chatbot-development-calgary', title: 'Calgary', icon: '⛰️', path: '/ai-chatbot-development/calgary' },
+  { slug: 'ai-chatbot-development-phoenix', title: 'Phoenix', icon: '🌵', path: '/ai-chatbot-development/phoenix' },
+];
+
 export const serviceNavigationItems: ServiceNavItem[] = [
+  // ============================================
+  // FEATURED - Healthcare at the TOP
+  // ============================================
+  {
+    slug: 'healthcare',
+    title: 'Healthcare AI',
+    description: 'Clinical decision support, EHR AI, medical imaging',
+    icon: '🏥',
+    path: '/ai-development/healthcare',
+    category: 'Featured',
+    featured: true,
+    hasSubPages: true,
+    subPages: healthcareSubPages
+  },
+
+  // ============================================
+  // AI Chatbot Development
+  // ============================================
+  {
+    slug: 'chatbot',
+    title: 'AI Chatbot Development',
+    description: 'RAG-grounded chatbots for support, sales & internal use',
+    icon: '💬',
+    path: '/ai-chatbot-development-company',
+    category: 'Featured',
+    featured: true,
+    hasSubPages: true,
+    subPages: chatbotSubPages
+  },
+
   // Financial Services
   {
     slug: 'fintech',
@@ -97,14 +177,6 @@ export const serviceNavigationItems: ServiceNavItem[] = [
 
   // Industry Specific
   {
-    slug: 'healthcare',
-    title: 'Healthcare AI',
-    description: 'Clinical decision support, EHR AI, medical imaging',
-    icon: '🏥',
-    path: '/ai-development/healthcare',
-    category: 'Industry Specific'
-  },
-  {
     slug: 'real-estate',
     title: 'Real Estate AI',
     description: 'Property valuation, lead scoring, document AI',
@@ -181,14 +253,18 @@ export const serviceNavigationItems: ServiceNavItem[] = [
     icon: '📚',
     path: '/ai-development/education',
     category: 'Education'
-  }
+  },
 ];
 
 // ============================================
-// CATEGORIES - Properly typed
+// CATEGORIES
 // ============================================
 
 export const serviceCategories: ServiceCategory[] = [
+  {
+    title: 'Featured',
+    items: serviceNavigationItems.filter((item: ServiceNavItem) => item.category === 'Featured')
+  },
   {
     title: 'Financial Services',
     items: serviceNavigationItems.filter((item: ServiceNavItem) => item.category === 'Financial Services')
@@ -227,23 +303,22 @@ export const serviceCategories: ServiceCategory[] = [
 // HELPER FUNCTIONS
 // ============================================
 
-/**
- * Get all slugs for static generation
- */
 export function getAllServiceSlugs(): string[] {
   return serviceNavigationItems.map((item: ServiceNavItem) => item.slug);
 }
 
-/**
- * Get service by slug
- */
 export function getServiceBySlug(slug: string): ServiceNavItem | undefined {
   return serviceNavigationItems.find((item: ServiceNavItem) => item.slug === slug);
 }
 
-/**
- * Get services by category
- */
 export function getServicesByCategory(category: string): ServiceNavItem[] {
   return serviceNavigationItems.filter((item: ServiceNavItem) => item.category === category);
+}
+
+export function getHealthcareSubPages() {
+  return healthcareSubPages;
+}
+
+export function getChatbotSubPages() {
+  return chatbotSubPages;
 }
