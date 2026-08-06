@@ -1,4 +1,4 @@
-// app/ai-chatbot-development/[slug]/page.tsx
+// app/ai-development/media/[slug]/page.tsx
 import React from 'react';
 import { notFound } from 'next/navigation';
 import { PageLayout } from '@/components/locations/PageLayout';
@@ -11,15 +11,15 @@ import { CTASection } from '@/components/locations/sections/Cta';
 import { StatsSection } from '@/components/locations/sections/Stats';
 import { ObjectionsSection } from '@/components/locations/sections/Objections';
 import {
-  getAllChatbotCityPageSlugs,
-  getChatbotCityPageDataBySlug,
-} from '@/data/ai-chatbot-city-pages-data';
+  getAllMediaAICityPageSlugs,
+  getMediaAICityPageDataBySlug,
+} from '@/data/media-ai-city-pages-data';
 
-// Generate static paths for all chatbot city pages
+// Generate static paths for all media AI city pages
 export async function generateStaticParams() {
-  const slugs = getAllChatbotCityPageSlugs()
-    .filter((slug) => slug !== 'ai-chatbot-development-company')
-    .map((slug) => slug.replace(/^ai-chatbot-development-/, ''));
+  const slugs = getAllMediaAICityPageSlugs()
+    .filter((slug) => slug !== 'media-content')
+    .map((slug) => slug.replace(/^media-/, ''));
 
   return slugs.map((slug) => ({
     slug,
@@ -29,9 +29,7 @@ export async function generateStaticParams() {
 // Generate metadata for each city page
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  console.log('📝 generateMetadata - Looking for slug:', slug);
-  const pageData = getChatbotCityPageDataBySlug(slug);
-  console.log('📝 Found:', pageData ? '✅ Yes' : '❌ No');
+  const pageData = getMediaAICityPageDataBySlug(slug);
 
   if (!pageData) {
     return {
@@ -47,21 +45,17 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 }
 
 // Main page component
-export default async function ChatbotCityPage({ params }: { params: Promise<{ slug: string }> }) {
+export default async function MediaAICityPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  console.log('📍 ChatbotCityPage - Rendering for slug:', slug);
-
-  const pageData = getChatbotCityPageDataBySlug(slug);
-  console.log('📍 Found pageData:', pageData ? '✅ Yes' : '❌ No');
+  const pageData = getMediaAICityPageDataBySlug(slug);
 
   // If page doesn't exist, show 404
-  if (!pageData || slug === 'ai-chatbot-development-company') {
-    console.log('❌ Page not found, showing 404');
+  if (!pageData || slug === 'media-content') {
     notFound();
   }
 
   // Extract city name from h1 for dynamic text
-  const cityName = pageData.h1.split('  ')[0].replace('AI Chatbot Development in ', '');
+  const cityName = pageData.h1.split('  ')[0].replace('Media AI Development in ', '');
 
   return (
     <PageLayout withGrain>
@@ -83,7 +77,7 @@ export default async function ChatbotCityPage({ params }: { params: Promise<{ sl
       />
 
       <StatsSection
-        title={`AI Chatbot Development in ${cityName}: Key Metrics`}
+        title={`Media AI in ${cityName}: Key Metrics`}
         stats={pageData.overview.stats ?? []}
       />
 
@@ -100,10 +94,12 @@ export default async function ChatbotCityPage({ params }: { params: Promise<{ sl
         items={pageData.applications.items}
       />
 
-      <ObjectionsSection
-        title="Buyer Objections, Answered Directly"
-        items={pageData.objections}
-      />
+      {pageData.objections && pageData.objections.length > 0 && (
+        <ObjectionsSection
+          title="Buyer Objections, Answered Directly"
+          items={pageData.objections}
+        />
+      )}
 
       <FAQSection items={pageData.faqs} />
 

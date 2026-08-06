@@ -155,13 +155,13 @@ export function ServiceOverview({ data, className }: ServiceOverviewProps) {
       />
 
       <motion.div 
-        className="max-w-7xl mx-auto px-[14px] relative z-10"
+        className="mx-auto max-w-7xl px-3 sm:px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12 relative z-10"
         style={{ opacity, scale }}
       >
         {/* ========================================= */}
         {/* GRID LAYOUT: LEFT (Content) / RIGHT (Graphic) */}
         {/* ========================================= */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-20 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-20 items-start">
           
           {/* ========================================= */}
           {/* LEFT COLUMN: Content (Spans 7 cols) */}
@@ -234,7 +234,7 @@ export function ServiceOverview({ data, className }: ServiceOverviewProps) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.4 }}
-                className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6"
+                className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8"
               >
                 {data.stats.map((stat, index) => (
                   <motion.div
@@ -257,7 +257,7 @@ export function ServiceOverview({ data, className }: ServiceOverviewProps) {
                     {/* Glow effect on hover matching heading colors */}
                     <div className="absolute -inset-0.5 bg-gradient-to-r from-violet-600/30 to-fuchsia-600/30 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                     
-                    <div className="relative glass rounded-2xl p-8 text-center border border-white/5 hover:border-violet-500/30 transition-all duration-500 backdrop-blur-sm bg-white/5">
+                    <div className="relative glass rounded-2xl p-8 text-center border border-white/5 hover:border-violet-500/30 transition-all duration-500 backdrop-blur-sm bg-white/5 min-h-[180px] flex flex-col items-center justify-center">
                       {/* Icon/Decoration */}
                       <motion.div
                         className="absolute -top-3 -right-3 w-12 h-12 bg-gradient-to-br from-violet-500/30 to-fuchsia-500/30 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"

@@ -13,8 +13,8 @@ interface PageLayoutProps {
 // Wrapping them again here would clip their full-bleed backgrounds into a
 // centered column, producing hard vertical edges on either side.
 //
-// If you need to render plain (non-section) content on a page — e.g. a
-// simple text page with no full-bleed background — wrap that content in
+// If you need to render plain (non-section) content on a page  e.g. a
+// simple text page with no full-bleed background  wrap that content in
 // <Container> yourself where you use it, rather than relying on PageLayout.
 export const PageLayout: React.FC<PageLayoutProps> = ({
   children,

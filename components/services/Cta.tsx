@@ -107,12 +107,12 @@ export function ServiceCTA({ data, className }: ServiceCTAProps) {
       <div className="absolute inset-0 opacity-[0.03] grain-after pointer-events-none" />
 
       <motion.div 
-        className="max-w-7xl mx-auto px-[14px] relative z-10"
+        className="mx-auto max-w-7xl px-3 sm:px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12 relative z-10"
         style={{ opacity }}
       >
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           {/* Left Column - Content */}
-          <div className="pt-8">
+          <div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -204,13 +204,13 @@ export function ServiceCTA({ data, className }: ServiceCTAProps) {
             </motion.div>
           </div>
 
-          {/* Right Column - Animated Contact Form */}
+          {/* Right Column - Animated Contact Form with top padding */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="relative"
+            className="relative pt-8 lg:pt-0"
           >
             {/* Form glow effect */}
             <div className="absolute -inset-4 bg-gradient-to-r from-violet-600/20 via-fuchsia-600/20 to-orange-500/20 rounded-3xl blur-2xl" />

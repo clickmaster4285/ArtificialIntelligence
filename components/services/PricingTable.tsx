@@ -121,7 +121,7 @@ export function ServicePricing({ data, className }: ServicePricingProps) {
       />
 
       <motion.div 
-        className="max-w-7xl mx-auto px-[14px] relative z-10"
+        className="mx-auto max-w-7xl px-3 sm:px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12 relative z-10"
         style={{ opacity }}
       >
         <div className="max-w-5xl">

@@ -1,12 +1,9 @@
 // src/app/layout.tsx
 
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/landingPage/Navbar";
 import { HugeFooter } from "@/components/landingPage/HugeFooter";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "ClickMasters - AI Development Company",
@@ -23,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} min-h-screen flex flex-col`}>
+      <body className="min-h-screen flex flex-col">
         {/* Navbar - Fixed at top */}
         <Navbar />
         

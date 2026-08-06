@@ -5,7 +5,6 @@ import React, { useState } from 'react';
 import { motion, Variants } from 'framer-motion';
 import { ArrowRight, Mail, Phone, User, MessageSquare, Send } from 'lucide-react';
 import { FloatingObjects } from '@/components/locations/sections/FloatingObjects';
-import { BorderDraw } from '@/components/locations/sections/BorderDraw';
 import { Shimmer } from '@/components/locations/sections/Shimmer';
 
 interface CTASectionProps {
@@ -77,7 +76,7 @@ export const CTASection: React.FC<CTASectionProps> = ({
         transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
       />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 w-full">
+      <div className="relative z-10 mx-auto px-8 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           
           {/* ========================================= */}
@@ -157,7 +156,7 @@ export const CTASection: React.FC<CTASectionProps> = ({
                   onMouseLeave={() => setSecondaryHovered(false)}
                   className="relative inline-flex items-center gap-2 px-6 py-3 rounded-full border border-white/15 text-white font-medium hover:text-white transition-colors duration-300"
                 >
-                  <BorderDraw hovered={secondaryHovered} rounded={9999} />
+                 
                   <Phone className="w-4 h-4 text-white/60" />
                   {secondaryText}
                 </a>

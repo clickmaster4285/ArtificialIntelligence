@@ -4,7 +4,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, ChevronUp, HelpCircle, MessageCircle } from 'lucide-react';
-import { BorderDraw } from '@/components/locations/sections/BorderDraw';
 
 interface FAQItem {
   question: string;
@@ -29,7 +28,7 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ items }) => {
       <div className="absolute inset-0 bg-gradient-to-br from-[#1a0b2e] via-[#0d0618] to-[#1a0b2e] pointer-events-none" />
       <div className="absolute inset-0 bg-gradient-to-tr from-violet-900/20 via-fuchsia-900/10 to-orange-900/20 pointer-events-none" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12">
+      <div className="relative z-10 mx-auto px-8 w-full">
         
         {/* ========================================= */}
         {/* GRID LAYOUT: LEFT (Content) / RIGHT (Graphics) */}
@@ -96,8 +95,7 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ items }) => {
                       isOpen ? 'border-violet-500/40 bg-violet-500/5 shadow-[0_0_30px_-10px_rgba(139,92,246,0.2)]' : 'border-white/5 hover:bg-white/[0.03]'
                     }`}
                   >
-                    <BorderDraw hovered={hoveredIndex === index || isOpen} rounded={12} />
-
+                
                     <button
                       onClick={() => toggleItem(index)}
                       className="relative w-full text-left p-5 flex items-start justify-between gap-4"

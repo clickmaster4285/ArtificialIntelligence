@@ -21,7 +21,7 @@ export function ServiceTechnicalChallenges({ data }: ServiceTechnicalChallengesP
     <section className="relative py-20 bg-card overflow-hidden">
       <div className="absolute inset-0 bg-[var(--grad-fade)] opacity-50 pointer-events-none" />
 
-      <div className="container mx-auto px-[14px] relative z-10">
+      <div className="mx-auto max-w-[92vw] sm:max-w-[84vw] px-4 sm:px-6 relative z-10">
         <div className="max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

@@ -130,7 +130,7 @@ export function ServiceCompliance({ data, className }: ServiceComplianceProps) {
       />
 
       <motion.div 
-        className="max-w-7xl mx-auto px-[14px] relative z-10"
+        className="mx-auto max-w-[92vw] sm:max-w-[84vw] px-4 sm:px-6 relative z-10"
         style={{ opacity, scale }}
       >
         <div className="max-w-5xl">

@@ -92,7 +92,7 @@ export const ApplicationsSection: React.FC<ApplicationsSectionProps> = ({
       <div className="absolute -top-40 -right-40 w-96 h-96 bg-violet-600/20 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-fuchsia-600/20 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-8 w-full">
+      <div className="relative z-10 mx-auto px-8 w-full">
         
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -4,7 +4,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ShieldCheck, Lock, FileCheck, Server, Users, Eye } from 'lucide-react';
-import { BorderDraw } from '@/components/locations/sections/BorderDraw';
 
 interface ComplianceItem {
   title: string;
@@ -57,8 +56,7 @@ function ComplianceCard({ item, index }: { item: ComplianceItem; index: number }
         transition={{ duration: 0.6, ease: "easeOut" }}
       />
       
-      {/* Standard Border Draw Effect */}
-      <BorderDraw hovered={hovered} rounded={16} />
+
 
       {/* === Icon Box === */}
       <motion.div
@@ -125,7 +123,7 @@ export const ComplianceSection: React.FC<ComplianceSectionProps> = ({
         transition={{ duration: 15, repeat: Infinity, ease: "easeInOut", delay: 2 }}
       />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12">
+      <div className="relative z-10 mx-auto px-8 w-full">
         
         {/* === UNIFIED LEFT-ALIGNED HEADER === */}
         <motion.div

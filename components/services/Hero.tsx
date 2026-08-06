@@ -121,7 +121,7 @@ export function ServiceHero({
         <NetworkBackground density="medium" />
       </div>
 
-      <div className="container mx-auto px-[14px] relative z-10">
+      <div className="mx-auto max-w-7xl px-3 sm:px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -141,8 +141,8 @@ export function ServiceHero({
             </motion.div>
           )}
 
-          {/* Enhanced H1 with word-by-word animation like landing page */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight max-w-4xl">
+          {/* Enhanced H1 with word-by-word animation like landing page - INCREASED TEXT SIZE */}
+          <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-semibold tracking-tight max-w-4xl">
             {words.map((w, i) => {
               // Check if word should have gradient (you can customize which words get gradient)
               const isGradient = i === 0 || i === 2 || i === words.length - 1;

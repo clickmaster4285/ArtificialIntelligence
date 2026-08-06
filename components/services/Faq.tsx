@@ -81,7 +81,7 @@ export function ServiceFAQs({ data, className }: ServiceFAQsProps) {
       />
 
       <motion.div 
-        className="max-w-7xl mx-auto px-[14px] relative z-10"
+        className="mx-auto max-w-7xl px-3 sm:px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12 relative z-10"
         style={{ opacity }}
       >
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
@@ -211,7 +211,6 @@ export function ServiceFAQs({ data, className }: ServiceFAQsProps) {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            /* CHANGED: Added flex items-center justify-center to vertically center the SVG */
             className="hidden lg:flex lg:items-center lg:justify-center lg:h-full"
           >
             <div className="sticky top-32 w-full max-w-[400px] mx-auto">

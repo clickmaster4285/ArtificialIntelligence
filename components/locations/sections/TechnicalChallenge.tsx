@@ -5,7 +5,6 @@ import React, { useRef, useState } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { AlertTriangle, Wrench } from 'lucide-react';
 import { GradientHeading } from '@/components/locations/sections/GradientHeading';
-import { BorderDraw } from '@/components/locations/sections/BorderDraw';
 
 interface Challenge {
   title: string;
@@ -44,7 +43,7 @@ function ChallengeRow({ challenge, index }: { challenge: Challenge; index: numbe
         onMouseLeave={() => setHovered(false)}
         className="relative p-6 rounded-2xl border border-white/5 bg-white/5 hover:bg-white/[0.07] transition-colors duration-300 text-left overflow-hidden"
       >
-        <BorderDraw hovered={hovered} rounded={16} />
+        
         <div className="flex items-start gap-3">
           <span className="p-2 rounded-lg bg-orange-500/10 text-orange-400 flex-shrink-0">
             <AlertTriangle className="w-4 h-4" />
@@ -83,7 +82,7 @@ export const TechnicalChallengesSection: React.FC<TechnicalChallengesSectionProp
 
   return (
     <section className="py-16 md:py-20 relative">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 mx-auto px-8 w-full">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

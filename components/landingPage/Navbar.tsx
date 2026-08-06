@@ -46,17 +46,17 @@ export function Navbar({ className }: NavbarProps) {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.7, delay: 0.1 }}
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-500 px-6 md:px-12",
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-500 px-4 sm:px-6 lg:px-8",
         isScrolled ? "bg-black/80 backdrop-blur-xl border-b border-white/5" : "bg-transparent",
         className
       )}
     >
       <div className="max-w-7xl mx-auto">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
           <Link 
             href="/" 
-            className="text-2xl font-bold tracking-tight text-white hover:opacity-80 transition-opacity flex-shrink-0 group"
+            className="text-xl sm:text-2xl font-bold tracking-tight text-white hover:opacity-80 transition-opacity flex-shrink-0 group"
           >
             <span className="relative">
               ClickMasters
@@ -65,7 +65,7 @@ export function Navbar({ className }: NavbarProps) {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center justify-center gap-8 flex-1">
+          <div className="hidden md:flex items-center justify-center gap-6 lg:gap-8 xl:gap-10 flex-1">
             {navLinks.map((link) => (
               <div key={link.name} className="relative">
                 {link.hasDropdown && link.dropdownType === 'services' ? (
@@ -76,7 +76,7 @@ export function Navbar({ className }: NavbarProps) {
                   <Link
                     href={link.href}
                     className={cn(
-                      "text-sm font-medium text-white/80 hover:text-white transition-colors relative group",
+                      "text-base lg:text-lg font-medium text-white/80 hover:text-white transition-colors relative group whitespace-nowrap",
                       pathname === link.href && "text-white"
                     )}
                   >
@@ -91,7 +91,7 @@ export function Navbar({ className }: NavbarProps) {
           {/* Contact Button */}
           <Link
             href="/contact"
-            className="hidden md:block text-sm font-medium border border-white/40 rounded-full px-5 py-2 hover:bg-white hover:text-black transition-all duration-300 hover:shadow-lg hover:shadow-white/10"
+            className="hidden md:block text-base lg:text-lg font-medium border border-white/40 rounded-full px-5 lg:px-6 py-2 lg:py-2.5 hover:bg-white hover:text-black transition-all duration-300 hover:shadow-lg hover:shadow-white/10 whitespace-nowrap"
           >
             Let's talk
           </Link>
@@ -104,19 +104,19 @@ export function Navbar({ className }: NavbarProps) {
           >
             <span
               className={cn(
-                "block w-6 h-0.5 bg-white transition-all duration-300",
+                "block w-5 sm:w-6 h-0.5 bg-white transition-all duration-300",
                 isMobileMenuOpen && "rotate-45 translate-y-2"
               )}
             />
             <span
               className={cn(
-                "block w-6 h-0.5 bg-white transition-all duration-300",
+                "block w-5 sm:w-6 h-0.5 bg-white transition-all duration-300",
                 isMobileMenuOpen && "opacity-0"
               )}
             />
             <span
               className={cn(
-                "block w-6 h-0.5 bg-white transition-all duration-300",
+                "block w-5 sm:w-6 h-0.5 bg-white transition-all duration-300",
                 isMobileMenuOpen && "-rotate-45 -translate-y-2"
               )}
             />
@@ -132,15 +132,15 @@ export function Navbar({ className }: NavbarProps) {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden bg-black/95 backdrop-blur-xl border-t border-white/5 overflow-hidden -mx-6 md:-mx-12"
+            className="md:hidden bg-black/95 backdrop-blur-xl border-t border-white/5 overflow-hidden -mx-4 sm:-mx-6 lg:-mx-8"
           >
-            <div className="px-6 md:px-12 py-6 space-y-4">
+            <div className="px-4 sm:px-6 lg:px-8 py-4 sm:py-6 space-y-3 sm:space-y-4">
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
                   href={link.href}
                   className={cn(
-                    "block text-sm font-medium text-white/80 hover:text-white transition-colors py-2",
+                    "block text-base font-medium text-white/80 hover:text-white transition-colors py-2",
                     pathname === link.href && "text-white"
                   )}
                   onClick={() => setIsMobileMenuOpen(false)}
@@ -150,7 +150,7 @@ export function Navbar({ className }: NavbarProps) {
               ))}
               <Link
                 href="/contact"
-                className="block text-sm font-medium border border-white/40 rounded-full px-5 py-2 text-center hover:bg-white hover:text-black transition-colors"
+                className="block text-base font-medium border border-white/40 rounded-full px-5 py-2.5 text-center hover:bg-white hover:text-black transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Let's talk

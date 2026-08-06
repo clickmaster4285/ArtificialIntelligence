@@ -309,7 +309,7 @@ export function ServiceApplications({ data, className }: ServiceApplicationsProp
         ))}
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-[14px]">
+      <div className="relative mx-auto max-w-7xl px-3 sm:px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12">
         {/* Header - Left Aligned */}
         <motion.div style={{ opacity: headerOpacity, y: headerY }} className="max-w-3xl">
           <div className="inline-flex items-center gap-2 rounded-full border border-violet-500/20 bg-violet-500/10 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.2em] text-violet-400 backdrop-blur">

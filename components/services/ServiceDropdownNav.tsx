@@ -12,7 +12,12 @@ import {
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { serviceNavigationItems } from '@/data/service-navigation';
-import { getAllChatbotCityPageSlugs, getChatbotCityPageDataBySlug } from '@/data/ai-chatbot-city-pages-data';
+import { getAllChatbotCityPageSlugs } from '@/data/ai-chatbot-city-pages-data';
+import { getAllMediaAICityPageSlugs } from '@/data/media-ai-city-pages-data';
+import { getAllFinTechAICityPageSlugs } from '@/data/fintech-ai-city-pages-data';
+import { getAllPropTechAICityPageSlugs } from '@/data/proptech-ai-city-pages-data';
+import { getAllInsuranceAICityPageSlugs } from '@/data/insurance-ai-city-pages-data';
+import { getAllLegalTechAICityPageSlugs } from '@/data/legaltech-ai-city-pages-data';
 
 // ============================================
 // SERVICE SUBPAGES DATA
@@ -26,9 +31,9 @@ type ServiceSubPage = {
   description?: string;
 };
 
-// AI Development subpages (all services except healthcare and chatbot)
+// AI Development subpages (all services except healthcare, chatbot, media, fintech, proptech, insurance, legaltech)
 const aiDevelopmentSubPages: ServiceSubPage[] = serviceNavigationItems
-  .filter(item => item.slug !== 'healthcare' && item.slug !== 'chatbot')
+  .filter(item => item.slug !== 'healthcare' && item.slug !== 'chatbot' && item.slug !== 'media' && item.slug !== 'fintech' && item.slug !== 'proptech' && item.slug !== 'insurance' && item.slug !== 'legaltech')
   .map(item => ({
     slug: item.slug,
     title: item.title,
@@ -60,7 +65,6 @@ const healthcareSubPages: ServiceSubPage[] = [
 // Chatbot city subpages
 const chatbotSlugs = getAllChatbotCityPageSlugs().filter(slug => slug !== 'ai-chatbot-development-company');
 const chatbotSubPages: ServiceSubPage[] = chatbotSlugs.map((slug) => {
-  // Extract city name from slug
   const citySlug = slug.replace('ai-chatbot-development-', '');
   const cityName = citySlug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
   return {
@@ -68,6 +72,71 @@ const chatbotSubPages: ServiceSubPage[] = chatbotSlugs.map((slug) => {
     title: cityName,
     icon: getCityIcon(slug),
     path: `/ai-chatbot-development/${citySlug}`,
+  };
+});
+
+// Media AI city subpages
+const mediaSlugs = getAllMediaAICityPageSlugs().filter(slug => slug !== 'media-content');
+const mediaSubPages: ServiceSubPage[] = mediaSlugs.map((slug) => {
+  const citySlug = slug.replace('media-', '');
+  const cityName = citySlug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+  return {
+    slug: slug,
+    title: cityName,
+    icon: getMediaCityIcon(slug),
+    path: `/ai-development/media/${citySlug}`,
+  };
+});
+
+// FinTech AI city subpages
+const fintechSlugs = getAllFinTechAICityPageSlugs().filter(slug => slug !== 'fintech');
+const fintechSubPages: ServiceSubPage[] = fintechSlugs.map((slug) => {
+  const citySlug = slug.replace('fintech-', '');
+  const cityName = citySlug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+  return {
+    slug: slug,
+    title: cityName,
+    icon: getFinTechCityIcon(slug),
+    path: `/ai-development/fintech/${citySlug}`,
+  };
+});
+
+// PropTech AI city subpages
+const proptechSlugs = getAllPropTechAICityPageSlugs().filter(slug => slug !== 'proptech');
+const proptechSubPages: ServiceSubPage[] = proptechSlugs.map((slug) => {
+  const citySlug = slug.replace('proptech-', '');
+  const cityName = citySlug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+  return {
+    slug: slug,
+    title: cityName,
+    icon: getPropTechCityIcon(slug),
+    path: `/ai-development/proptech/${citySlug}`,
+  };
+});
+
+// Insurance AI city subpages
+const insuranceSlugs = getAllInsuranceAICityPageSlugs().filter(slug => slug !== 'insurance');
+const insuranceSubPages: ServiceSubPage[] = insuranceSlugs.map((slug) => {
+  const citySlug = slug.replace('insurance-', '');
+  const cityName = citySlug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+  return {
+    slug: slug,
+    title: cityName,
+    icon: getInsuranceCityIcon(slug),
+    path: `/ai-development/insurance/${citySlug}`,
+  };
+});
+
+// LegalTech AI city subpages
+const legaltechSlugs = getAllLegalTechAICityPageSlugs();
+const legaltechSubPages: ServiceSubPage[] = legaltechSlugs.map((slug) => {
+  const citySlug = slug.replace('legaltech-', '');
+  const cityName = citySlug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+  return {
+    slug: slug,
+    title: cityName,
+    icon: getLegalTechCityIcon(slug),
+    path: `/ai-development/legaltech/${citySlug}`,
   };
 });
 
@@ -98,6 +167,117 @@ function getCityIcon(slug: string): string {
     'ai-chatbot-development-phoenix': '🌵',
   };
   return icons[slug] || '📍';
+}
+
+function getMediaCityIcon(slug: string): string {
+  const icons: Record<string, string> = {
+    'media-los-angeles': '🎬',
+    'media-new-york': '🗽',
+    'media-dallas': '⭐',
+    'media-calgary': '⛰️',
+    'media-atlanta': '🍑',
+    'media-chicago': '🌆',
+    'media-seattle': '☕',
+    'media-houston': '🚀',
+    'media-denver': '🏔️',
+    'media-charlotte': '🏦',
+    'media-austin': '🤠',
+    'media-phoenix': '🌵',
+    'media-miami': '🌴',
+    'media-washington-dc': '🏛️',
+    'media-columbus': '🏙️',
+    'media-orlando': '🎢',
+    'media-vancouver': '🌊',
+    'media-montreal': '⚜️',
+    'media-san-francisco': '🌉',
+    'media-toronto': '🍁',
+    'media-boston': '🏛️',
+  };
+  return icons[slug] || '📺';
+}
+
+function getFinTechCityIcon(slug: string): string {
+  const icons: Record<string, string> = {
+    'fintech-toronto': '🍁',
+    'fintech-miami': '🌴',
+    'fintech-los-angeles': '🎬',
+    'fintech-seattle': '☕',
+    'fintech-denver': '🏔️',
+    'fintech-phoenix': '🌵',
+    'fintech-houston': '🚀',
+    'fintech-montreal': '⚜️',
+    'fintech-washington-dc': '🏛️',
+    'fintech-atlanta': '🍑',
+    'fintech-calgary': '⛰️',
+    'fintech-austin': '🤠',
+    'fintech-new-york': '🗽',
+    'fintech-chicago': '🌆',
+    'fintech-boston': '🏛️',
+    'fintech-vancouver': '🌊',
+    'fintech-san-francisco': '🌉',
+    'fintech-dallas': '⭐',
+    'fintech-charlotte': '🏦',
+  };
+  return icons[slug] || '💰';
+}
+
+function getPropTechCityIcon(slug: string): string {
+  const icons: Record<string, string> = {
+    'proptech-houston': '🚀',
+    'proptech-chicago': '🌆',
+    'proptech-seattle': '☕',
+    'proptech-boston': '🏛️',
+    'proptech-atlanta': '🍑',
+    'proptech-dallas': '⭐',
+    'proptech-washington-dc': '🏛️',
+    'proptech-phoenix': '🌵',
+    'proptech-charlotte': '🏦',
+    'proptech-columbus': '🏙️',
+    'proptech-orlando': '🎢',
+    'proptech-san-francisco': '🌉',
+    'proptech-miami': '🌴',
+    'proptech-austin': '🤠',
+    'proptech-new-york': '🗽',
+    'proptech-los-angeles': '🎬',
+    'proptech-toronto': '🍁',
+    'proptech-vancouver': '🌊',
+    'proptech-montreal': '⚜️',
+    'proptech-calgary': '⛰️',
+  };
+  return icons[slug] || '🏠';
+}
+
+function getInsuranceCityIcon(slug: string): string {
+  const icons: Record<string, string> = {
+    'insurance-atlanta': '🍑',
+    'insurance-austin': '🤠',
+    'insurance-boston': '🏛️',
+    'insurance-calgary': '⛰️',
+    'insurance-charlotte': '🏦',
+    'insurance-chicago': '🌆',
+    'insurance-dallas': '⭐',
+    'insurance-denver': '🏔️',
+    'insurance-houston': '🚀',
+    'insurance-los-angeles': '🎬',
+    'insurance-miami': '🌴',
+    'insurance-montreal': '⚜️',
+    'insurance-new-york': '🗽',
+    'insurance-phoenix': '🌵',
+    'insurance-san-francisco': '🌉',
+    'insurance-seattle': '☕',
+    'insurance-toronto': '🍁',
+    'insurance-vancouver': '🌊',
+    'insurance-washington-dc': '🏛️',
+  };
+  return icons[slug] || '🛡️';
+}
+
+function getLegalTechCityIcon(slug: string): string {
+  const icons: Record<string, string> = {
+    'legaltech-new-york': '🗽',
+    'legaltech-austin': '🤠',
+  };
+  return icons[slug] || '⚖️';
 }
 
 // Main navigation items (left side)
@@ -131,6 +311,56 @@ const mainNavItems = [
     isMain: false,
     badge: `${chatbotSubPages.length} cities`,
   },
+  {
+    slug: 'media',
+    title: 'Media & Content AI',
+    description: 'Content recommendation, personalization, ad targeting',
+    icon: '📺',
+    path: '/ai-development/media-content',
+    subPages: mediaSubPages,
+    isMain: false,
+    badge: `${mediaSubPages.length} cities`,
+  },
+  {
+    slug: 'fintech',
+    title: 'FinTech AI',
+    description: 'Fraud detection, credit scoring, AML compliance',
+    icon: '💰',
+    path: '/ai-development/fintech',
+    subPages: fintechSubPages,
+    isMain: false,
+    badge: `${fintechSubPages.length} cities`,
+  },
+  {
+    slug: 'proptech',
+    title: 'PropTech AI',
+    description: 'Property valuation, market analytics, buyer matching',
+    icon: '🏠',
+    path: '/ai-development/proptech',
+    subPages: proptechSubPages,
+    isMain: false,
+    badge: `${proptechSubPages.length} cities`,
+  },
+  {
+    slug: 'insurance',
+    title: 'Insurance AI',
+    description: 'Claims automation, fraud detection, underwriting AI',
+    icon: '🛡️',
+    path: '/ai-development/insurance',
+    subPages: insuranceSubPages,
+    isMain: false,
+    badge: `${insuranceSubPages.length} cities`,
+  },
+  {
+    slug: 'legaltech',
+    title: 'LegalTech AI',
+    description: 'Contract analysis, e-discovery, legal research',
+    icon: '⚖️',
+    path: '/ai-development/legaltech',
+    subPages: legaltechSubPages,
+    isMain: false,
+    badge: `${legaltechSubPages.length} cities`,
+  },
 ];
 
 export function ServiceDropdownNav() {
@@ -159,7 +389,17 @@ export function ServiceDropdownNav() {
 
   // Set active item based on pathname
   useEffect(() => {
-    if (pathname?.startsWith('/ai-chatbot-development')) {
+    if (pathname?.startsWith('/ai-development/legaltech')) {
+      setActiveItem('legaltech');
+    } else if (pathname?.startsWith('/ai-development/insurance')) {
+      setActiveItem('insurance');
+    } else if (pathname?.startsWith('/ai-development/proptech')) {
+      setActiveItem('proptech');
+    } else if (pathname?.startsWith('/ai-development/fintech')) {
+      setActiveItem('fintech');
+    } else if (pathname?.startsWith('/ai-development/media')) {
+      setActiveItem('media');
+    } else if (pathname?.startsWith('/ai-chatbot-development')) {
       setActiveItem('chatbot');
     } else if (pathname?.startsWith('/ai-development/healthcare')) {
       setActiveItem('healthcare');
@@ -191,8 +431,8 @@ export function ServiceDropdownNav() {
       </button>
 
       {isOpen && (
-        <div className="service-dropdown-panel absolute top-full left-0 mt-2 w-[720px] max-w-[90vw] rounded-xl border border-zinc-800 bg-zinc-950 shadow-2xl shadow-black/50 overflow-hidden">
-          <div className="flex h-[480px]">
+        <div className="service-dropdown-panel absolute top-full left-0 mt-2 w-[760px] max-w-[95vw] rounded-xl border border-zinc-800 bg-zinc-950 shadow-2xl shadow-black/50 overflow-hidden">
+          <div className="flex h-[500px]">
             {/* LEFT SIDE - Navigation */}
             <div className="w-1/3 border-r border-zinc-800 overflow-y-auto p-3 bg-zinc-900">
               <div className="text-[10px] font-semibold text-white/30 uppercase tracking-wider px-3 mb-2">
@@ -208,7 +448,7 @@ export function ServiceDropdownNav() {
                     onMouseEnter={() => setActiveItem(item.slug)}
                     onClick={() => setIsOpen(false)}
                     className={cn(
-                      "group relative px-3 py-3 rounded-lg cursor-pointer transition-all duration-200",
+                      "group relative px-3 py-2.5 rounded-lg cursor-pointer transition-all duration-200",
                       "hover:bg-violet-600/10",
                       isActive && "bg-violet-600/15"
                     )}
@@ -269,7 +509,7 @@ export function ServiceDropdownNav() {
                 <>
                   <div className="flex items-center justify-between mb-3">
                     <div className="text-xs font-semibold text-white/40 uppercase tracking-wider">
-                      {activeData.title} — Subpages
+                      {activeData.title}  Subpages
                     </div>
                     <span className="text-[10px] text-violet-400 font-semibold">
                       {activeData.subPages.length} items

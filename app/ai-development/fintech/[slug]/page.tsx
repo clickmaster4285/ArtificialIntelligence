@@ -1,4 +1,4 @@
-// app/ai-chatbot-development/[slug]/page.tsx
+// app/ai-development/fintech/[slug]/page.tsx
 import React from 'react';
 import { notFound } from 'next/navigation';
 import { PageLayout } from '@/components/locations/PageLayout';
@@ -11,27 +11,24 @@ import { CTASection } from '@/components/locations/sections/Cta';
 import { StatsSection } from '@/components/locations/sections/Stats';
 import { ObjectionsSection } from '@/components/locations/sections/Objections';
 import {
-  getAllChatbotCityPageSlugs,
-  getChatbotCityPageDataBySlug,
-} from '@/data/ai-chatbot-city-pages-data';
+  getAllFinTechAICityPageSlugs,
+  getFinTechAICityPageDataBySlug,
+} from '@/data/fintech-ai-city-pages-data';
 
-// Generate static paths for all chatbot city pages
+// Generate static paths for all FinTech AI city pages
 export async function generateStaticParams() {
-  const slugs = getAllChatbotCityPageSlugs()
-    .filter((slug) => slug !== 'ai-chatbot-development-company')
-    .map((slug) => slug.replace(/^ai-chatbot-development-/, ''));
-
-  return slugs.map((slug) => ({
-    slug,
-  }));
+  const slugs = getAllFinTechAICityPageSlugs();
+  // Filter out the main page and normalize to city-only slugs (e.g. "fintech-toronto" -> "toronto")
+  const citySlugs = slugs.filter((slug) => slug !== 'fintech').map((s) => s.replace('fintech-', ''));
+  return citySlugs.map((slug) => ({ slug }));
 }
 
 // Generate metadata for each city page
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  console.log('📝 generateMetadata - Looking for slug:', slug);
-  const pageData = getChatbotCityPageDataBySlug(slug);
-  console.log('📝 Found:', pageData ? '✅ Yes' : '❌ No');
+  // Page data keys are prefixed with "fintech-", map the URL slug back to the data key
+  const dataKey = `fintech-${slug}`;
+  const pageData = getFinTechAICityPageDataBySlug(dataKey);
 
   if (!pageData) {
     return {
@@ -47,21 +44,19 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 }
 
 // Main page component
-export default async function ChatbotCityPage({ params }: { params: Promise<{ slug: string }> }) {
+export default async function FinTechAICityPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  console.log('📍 ChatbotCityPage - Rendering for slug:', slug);
-
-  const pageData = getChatbotCityPageDataBySlug(slug);
-  console.log('📍 Found pageData:', pageData ? '✅ Yes' : '❌ No');
+  // Map the URL slug (e.g. "toronto") to the data key (e.g. "fintech-toronto")
+  const dataKey = `fintech-${slug}`;
+  const pageData = getFinTechAICityPageDataBySlug(dataKey);
 
   // If page doesn't exist, show 404
-  if (!pageData || slug === 'ai-chatbot-development-company') {
-    console.log('❌ Page not found, showing 404');
+  if (!pageData) {
     notFound();
   }
 
   // Extract city name from h1 for dynamic text
-  const cityName = pageData.h1.split('  ')[0].replace('AI Chatbot Development in ', '');
+  const cityName = pageData.h1.split('  ')[0].replace('FinTech AI Development in ', '');
 
   return (
     <PageLayout withGrain>
@@ -83,7 +78,7 @@ export default async function ChatbotCityPage({ params }: { params: Promise<{ sl
       />
 
       <StatsSection
-        title={`AI Chatbot Development in ${cityName}: Key Metrics`}
+        title={`FinTech AI in ${cityName}: Key Metrics`}
         stats={pageData.overview.stats ?? []}
       />
 
@@ -100,10 +95,12 @@ export default async function ChatbotCityPage({ params }: { params: Promise<{ sl
         items={pageData.applications.items}
       />
 
-      <ObjectionsSection
-        title="Buyer Objections, Answered Directly"
-        items={pageData.objections}
-      />
+      {pageData.objections && pageData.objections.length > 0 && (
+        <ObjectionsSection
+          title="Buyer Objections, Answered Directly"
+          items={pageData.objections}
+        />
+      )}
 
       <FAQSection items={pageData.faqs} />
 

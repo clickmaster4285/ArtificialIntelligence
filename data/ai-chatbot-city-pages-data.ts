@@ -70,10 +70,10 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       primaryKW: 'ai chatbot development company',
       secondaryKWs: ['custom ai chatbot development', 'enterprise chatbot development company', 'conversational ai development company', 'ai chatbot developers', 'business chatbot development'],
     },
-    h1: 'AI Chatbot Development Company — Custom Conversational AI Built on GPT-4, Claude & Your Data',
+    h1: 'AI Chatbot Development Company  Custom Conversational AI Built on GPT-4, Claude & Your Data',
     hero: {
       tagline: 'Production Chatbots Built with RAG, GPT-4 & Claude',
-      description: 'ClickMasters is an AI chatbot development company that builds custom conversational AI systems grounded in your business data, integrated into your existing tools, and engineered to actually resolve customer and employee requests — not just deflect them into a frustrating loop of "I don\'t understand that." Chatbot projects start at $8,000 for a focused, single-purpose assistant and scale to $80,000+ for multi-channel, RAG-grounded systems with CRM and ticketing integration. Fixed-price. Full IP ownership. USA-based engineers who have shipped production chatbots, not agency account managers reading from a script.',
+      description: 'ClickMasters is an AI chatbot development company that builds custom conversational AI systems grounded in your business data, integrated into your existing tools, and engineered to actually resolve customer and employee requests  not just deflect them into a frustrating loop of "I don\'t understand that." Chatbot projects start at $8,000 for a focused, single-purpose assistant and scale to $80,000+ for multi-channel, RAG-grounded systems with CRM and ticketing integration. Fixed-price. Full IP ownership. USA-based engineers who have shipped production chatbots, not agency account managers reading from a script.',
       ctaText: 'Get a Free Chatbot Strategy Call',
       ctaLink: '/contact',
       startingPrice: '$8,000',
@@ -81,7 +81,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
     },
     overview: {
       title: 'Why "Chatbot Development Company" Means Something Different in 2026',
-      content: 'A chatbot built in 2026 is not the keyword-matching, decision-tree chatbot of the 2018–2021 era, and it should not be confused with a no-code chatbot builder that wraps a generic LLM prompt around your FAQ page. The category has split into three distinct tiers: Tier 1 — Scripted/decision-tree bots (cheap, fast, fail on any question outside the script); Tier 2 — LLM-wrapped chatbots (handle open-ended conversation but hallucinate on company-specific facts); Tier 3 — RAG-grounded, tool-using chatbots (what ClickMasters builds). The vendor decision that matters most is not "which LLM" but "is this chatbot grounded in verifiable data, with appropriate fallback to human handoff."',
+      content: 'A chatbot built in 2026 is not the keyword-matching, decision-tree chatbot of the 2018–2021 era, and it should not be confused with a no-code chatbot builder that wraps a generic LLM prompt around your FAQ page. The category has split into three distinct tiers: Tier 1  Scripted/decision-tree bots (cheap, fast, fail on any question outside the script); Tier 2  LLM-wrapped chatbots (handle open-ended conversation but hallucinate on company-specific facts); Tier 3  RAG-grounded, tool-using chatbots (what ClickMasters builds). The vendor decision that matters most is not "which LLM" but "is this chatbot grounded in verifiable data, with appropriate fallback to human handoff."',
       stats: [
         { label: 'Project Start', value: '$8,000', description: 'Focused single-purpose assistant' },
         { label: 'Enterprise Chatbot', value: '$60,000–$150,000+', description: '16–28 weeks' },
@@ -89,7 +89,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       ],
     },
     pricing: {
-      title: 'AI Chatbot Development Pricing — 2026',
+      title: 'AI Chatbot Development Pricing  2026',
       description: 'Monthly LLM API costs (GPT-4, Claude) typically run $200–$3,000/month depending on conversation volume, separate from development cost.',
       items: [
         { systemType: 'Basic FAQ/support chatbot (single channel, RAG over docs)', priceRange: '$8,000 – $20,000', timeline: '4–8 weeks', primaryOutcome: 'Self-service FAQ, policy guidance' },
@@ -98,7 +98,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
         { systemType: 'Multi-channel chatbot (web + SMS + WhatsApp, multilingual)', priceRange: '$35,000 – $65,000', timeline: '12–18 weeks', primaryOutcome: 'Omnichannel support' },
         { systemType: 'Enterprise chatbot (multi-system integration, compliance-aware, voice)', priceRange: '$60,000 – $150,000+', timeline: '16–28 weeks', primaryOutcome: 'Enterprise-wide automation' },
       ],
-      note: 'ClickMasters includes cost-optimization in every build — caching common queries, routing simple requests to smaller/cheaper models.',
+      note: 'ClickMasters includes cost-optimization in every build  caching common queries, routing simple requests to smaller/cheaper models.',
     },
     applications: {
       title: 'What ClickMasters Builds',
@@ -106,7 +106,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       items: [
         {
           title: 'Customer Support & Service Chatbots',
-          description: 'Resolve tier-1 support volume — order status, account questions, return policy, troubleshooting — without a human agent, while escalating cleanly to a live agent (with full conversation context transferred) for anything outside the bot\'s competence. Built on RAG against your help center, policy documents, and order/account systems via API. Integrates with Zendesk, Intercom, Freshdesk, Salesforce Service Cloud.',
+          description: 'Resolve tier-1 support volume  order status, account questions, return policy, troubleshooting  without a human agent, while escalating cleanly to a live agent (with full conversation context transferred) for anything outside the bot\'s competence. Built on RAG against your help center, policy documents, and order/account systems via API. Integrates with Zendesk, Intercom, Freshdesk, Salesforce Service Cloud.',
           keyFeatures: ['RAG-grounded answers', 'Clean escalation with context', 'CRM/ticketing integration', 'Resolution rate tracking'],
         },
         {
@@ -116,12 +116,12 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
         },
         {
           title: 'Internal Knowledge & Employee Support Chatbots',
-          description: 'Give employees a single conversational interface to HR policy, IT support documentation, benefits information, and internal wikis — grounded in your actual internal documents via RAG, with role-based access control so the bot only surfaces information the employee is authorized to see.',
+          description: 'Give employees a single conversational interface to HR policy, IT support documentation, benefits information, and internal wikis  grounded in your actual internal documents via RAG, with role-based access control so the bot only surfaces information the employee is authorized to see.',
           keyFeatures: ['RAG-grounded internal docs', 'Role-based access control', 'HR/IT support', 'Employee self-service'],
         },
         {
           title: 'Multilingual & Voice-Enabled Chatbots',
-          description: 'Deployed across web chat, SMS, WhatsApp Business API, and voice (via integration with telephony platforms), with multilingual support powered by the underlying LLM\'s native multilingual capability rather than a separate translation layer — critical for businesses serving Spanish-speaking, French-Canadian, or other non-English-primary customer bases.',
+          description: 'Deployed across web chat, SMS, WhatsApp Business API, and voice (via integration with telephony platforms), with multilingual support powered by the underlying LLM\'s native multilingual capability rather than a separate translation layer  critical for businesses serving Spanish-speaking, French-Canadian, or other non-English-primary customer bases.',
           keyFeatures: ['Web, SMS, WhatsApp', 'Voice integration', 'Native multilingual', 'Global deployment'],
         },
         {
@@ -134,7 +134,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
     objections: [
       {
         question: 'How much will this cost?',
-        answer: '$8,000–$20,000 for a focused single-purpose chatbot; $20,000–$65,000 for a multi-channel, CRM-integrated system; $60,000+ for enterprise-scale deployment with compliance and voice. You\'ll receive a fixed quote after a scoping call — never a "depends" answer with no number attached.',
+        answer: '$8,000–$20,000 for a focused single-purpose chatbot; $20,000–$65,000 for a multi-channel, CRM-integrated system; $60,000+ for enterprise-scale deployment with compliance and voice. You\'ll receive a fixed quote after a scoping call  never a "depends" answer with no number attached.',
       },
       {
         question: 'How long will it take?',
@@ -146,7 +146,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       },
       {
         question: 'What happens if the chatbot gives a wrong or harmful answer?',
-        answer: 'Every ClickMasters chatbot includes confidence-based escalation — when the model\'s retrieval confidence is low or the query falls outside defined topic boundaries, the bot hands off to a human agent with full context rather than guessing. We also implement logging and review workflows so you can audit chatbot responses and continuously improve the knowledge base feeding the RAG system.',
+        answer: 'Every ClickMasters chatbot includes confidence-based escalation  when the model\'s retrieval confidence is low or the query falls outside defined topic boundaries, the bot hands off to a human agent with full context rather than guessing. We also implement logging and review workflows so you can audit chatbot responses and continuously improve the knowledge base feeding the RAG system.',
       },
       {
         question: 'Can you handle my specific industry\'s compliance requirements?',
@@ -156,7 +156,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
     faqs: [
       {
         question: 'What\'s the difference between an AI chatbot and a traditional rule-based chatbot?',
-        answer: 'Rule-based chatbots follow scripted decision trees and fail on any unscripted question. AI chatbots built on LLMs like GPT-4 or Claude understand natural language, handle open-ended conversation, and — when properly grounded with RAG — answer accurately from your real business data rather than a fixed script.',
+        answer: 'Rule-based chatbots follow scripted decision trees and fail on any unscripted question. AI chatbots built on LLMs like GPT-4 or Claude understand natural language, handle open-ended conversation, and  when properly grounded with RAG  answer accurately from your real business data rather than a fixed script.',
       },
       {
         question: 'Will the chatbot hallucinate or make up information?',
@@ -167,24 +167,24 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
         answer: 'Yes. ClickMasters builds chatbots that integrate with Salesforce, HubSpot, Zendesk, Intercom, Freshdesk, and custom internal systems via API, so conversations and actions sync directly into your existing workflow rather than living in an isolated chat widget.',
       },
       {
-        question: 'How is this priced — per conversation, subscription, or fixed project fee?',
-        answer: 'Development is a fixed-price project fee based on scope. Ongoing LLM API costs (typically $200–$3,000/month depending on volume) are separate and billed directly by the model provider (OpenAI, Anthropic, Google) — ClickMasters does not mark up API usage.',
+        question: 'How is this priced  per conversation, subscription, or fixed project fee?',
+        answer: 'Development is a fixed-price project fee based on scope. Ongoing LLM API costs (typically $200–$3,000/month depending on volume) are separate and billed directly by the model provider (OpenAI, Anthropic, Google)  ClickMasters does not mark up API usage.',
       },
       {
         question: 'Do you build chatbots for WhatsApp and SMS, or only web chat?',
-        answer: 'We build for whichever channels your customers actually use — web chat widget, WhatsApp Business API, SMS, Facebook Messenger, and voice via telephony integration. Multi-channel deployments share a unified backend so conversation history and context carry across channels.',
+        answer: 'We build for whichever channels your customers actually use  web chat widget, WhatsApp Business API, SMS, Facebook Messenger, and voice via telephony integration. Multi-channel deployments share a unified backend so conversation history and context carry across channels.',
       },
       {
-        question: 'What happens to our data — is it used to train the AI models?',
+        question: 'What happens to our data  is it used to train the AI models?',
         answer: 'No. ClickMasters configures API-level data usage settings with OpenAI, Anthropic, and Google to opt out of model training on your data. Your conversations and business data remain yours, accessed only to power your specific chatbot\'s responses.',
       },
       {
         question: 'How long does it take to see ROI from a support chatbot?',
-        answer: 'Most support chatbots show measurable ticket deflection within 4–6 weeks of launch as the knowledge base matures and the team tunes escalation thresholds. Full ROI — accounting for development cost — typically arrives within 3–9 months depending on support volume and team size.',
+        answer: 'Most support chatbots show measurable ticket deflection within 4–6 weeks of launch as the knowledge base matures and the team tunes escalation thresholds. Full ROI  accounting for development cost  typically arrives within 3–9 months depending on support volume and team size.',
       },
       {
         question: 'Can the chatbot speak languages other than English?',
-        answer: 'Yes. GPT-4 and Claude have strong native multilingual capability, so ClickMasters builds multilingual chatbots without a separate translation layer — the model responds directly in the customer\'s language, which produces more natural conversation than translate-then-respond pipelines.',
+        answer: 'Yes. GPT-4 and Claude have strong native multilingual capability, so ClickMasters builds multilingual chatbots without a separate translation layer  the model responds directly in the customer\'s language, which produces more natural conversation than translate-then-respond pipelines.',
       },
     ],
     cta: {
@@ -208,7 +208,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       primaryKW: 'ai chatbot development new york',
       secondaryKWs: ['chatbot development company nyc', 'custom chatbot new york', 'ai chatbot nyc', 'conversational ai new york'],
     },
-    h1: 'AI Chatbot Development in New York — Custom Conversational AI for Finance, Retail & Professional Services',
+    h1: 'AI Chatbot Development in New York  Custom Conversational AI for Finance, Retail & Professional Services',
     hero: {
       tagline: 'RAG-Grounded Chatbots for New York\'s Finance, Retail & Professional Services',
       description: 'ClickMasters builds RAG-grounded AI chatbots for New York financial services firms, retail and consumer brands, professional services firms, and the dense enterprise base that makes NYC the largest single AI buyer market ClickMasters serves. Chatbot development in New York starts at $8,000. Fixed-price. Full IP. Eastern timezone delivery.',
@@ -219,7 +219,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
     },
     overview: {
       title: 'Chatbot Development in New York: Finance, Retail & Professional Services',
-      content: 'New York\'s financial services concentration means chatbot projects here disproportionately involve regulated-advice avoidance — a wealth management or banking chatbot needs to answer general questions while routing anything resembling personalized financial advice to a licensed advisor, a guardrail ClickMasters builds into every financial services chatbot by default. Retail and professional services chatbots in NYC more commonly focus on customer self-service volume reduction and lead qualification given the market\'s scale and competitive intensity.',
+      content: 'New York\'s financial services concentration means chatbot projects here disproportionately involve regulated-advice avoidance  a wealth management or banking chatbot needs to answer general questions while routing anything resembling personalized financial advice to a licensed advisor, a guardrail ClickMasters builds into every financial services chatbot by default. Retail and professional services chatbots in NYC more commonly focus on customer self-service volume reduction and lead qualification given the market\'s scale and competitive intensity.',
       stats: [
         { label: 'Project Start', value: '$8,000', description: 'Basic FAQ/support chatbot' },
         { label: 'Financial Services Bot', value: '$30,000–$70,000', timeline: '10–16 weeks' },
@@ -227,7 +227,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       ],
     },
     pricing: {
-      title: 'Chatbot Pricing — New York',
+      title: 'Chatbot Pricing  New York',
       description: 'All NYC chatbot projects include RAG-grounding and integration with your existing systems.',
       items: [
         { systemType: 'Basic FAQ/support chatbot', priceRange: '$8,000 – $20,000', timeline: '4–8 weeks', primaryOutcome: 'Self-service FAQ, policy guidance' },
@@ -265,7 +265,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       },
       {
         question: 'Will it stay within regulatory bounds for financial advice?',
-        answer: 'Yes — ClickMasters builds explicit topic-boundary guardrails that route anything resembling personalized financial advice to a licensed advisor rather than letting the model answer.',
+        answer: 'Yes  ClickMasters builds explicit topic-boundary guardrails that route anything resembling personalized financial advice to a licensed advisor rather than letting the model answer.',
       },
       {
         question: 'What if it hallucinates account or policy information?',
@@ -275,7 +275,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
     faqs: [
       {
         question: 'Can you build a chatbot that avoids giving regulated financial advice?',
-        answer: 'Yes, this is standard for ClickMasters\' New York financial services chatbots — explicit topic boundaries route advice-adjacent questions to a licensed human advisor.',
+        answer: 'Yes, this is standard for ClickMasters\' New York financial services chatbots  explicit topic boundaries route advice-adjacent questions to a licensed human advisor.',
       },
       {
         question: 'Can the chatbot integrate with our existing CRM and trading or account platforms?',
@@ -315,7 +315,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       primaryKW: 'ai chatbot development toronto',
       secondaryKWs: ['chatbot development company toronto', 'custom ai chatbot canada', 'toronto conversational ai', 'ai chatbot ontario'],
     },
-    h1: 'AI Chatbot Development in Toronto — Custom Conversational AI for Finance & Retail',
+    h1: 'AI Chatbot Development in Toronto  Custom Conversational AI for Finance & Retail',
     hero: {
       tagline: 'PIPEDA-Compliant Chatbots for Toronto\'s Banking, FinTech & Retail',
       description: 'ClickMasters builds RAG-grounded AI chatbots for Toronto\'s major banking institutions, fintech startups, and retail and consumer brands across Canada\'s largest financial center. Chatbot development in Toronto starts at $8,000 USD. Fixed-price. Full IP. Eastern timezone delivery.',
@@ -334,7 +334,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       ],
     },
     pricing: {
-      title: 'Chatbot Pricing — Toronto (USD)',
+      title: 'Chatbot Pricing  Toronto (USD)',
       description: 'All Toronto chatbot projects include PIPEDA-compliant data handling where required.',
       items: [
         { systemType: 'Basic FAQ/support chatbot', priceRange: '$8,000 – $20,000', timeline: '4–8 weeks', primaryOutcome: 'Self-service FAQ, policy guidance' },
@@ -421,7 +421,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       primaryKW: 'ai chatbot development san francisco',
       secondaryKWs: ['chatbot development company sf', 'custom ai chatbot bay area', 'sf conversational ai consulting', 'production grade chatbot startup'],
     },
-    h1: 'AI Chatbot Development in San Francisco — Production-Grade Chatbots for AI-Native Startups & SaaS',
+    h1: 'AI Chatbot Development in San Francisco  Production-Grade Chatbots for AI-Native Startups & SaaS',
     hero: {
       tagline: 'Production-Grade Chatbots for SF\'s AI-Native Startups & SaaS',
       description: 'ClickMasters builds production-grade RAG-grounded chatbots for San Francisco\'s AI-native startup ecosystem and established SaaS companies needing to take a chatbot from MVP to genuinely reliable customer-facing deployment. Chatbot development in San Francisco starts at $10,000. Fixed-price. Full IP. Pacific timezone delivery.',
@@ -432,7 +432,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
     },
     overview: {
       title: 'Chatbot Development in San Francisco: From MVP to Production-Grade',
-      content: 'Most SF startups ClickMasters works with have already built a basic chatbot prototype — the gap is almost never "can we make an LLM respond to messages" but "why does it hallucinate on specific questions, how do we control API costs as usage scales, and how do we know it\'s actually working well enough to trust with real customers." ClickMasters\' SF engagements typically start from that more advanced baseline rather than a first-chatbot conversation.',
+      content: 'Most SF startups ClickMasters works with have already built a basic chatbot prototype  the gap is almost never "can we make an LLM respond to messages" but "why does it hallucinate on specific questions, how do we control API costs as usage scales, and how do we know it\'s actually working well enough to trust with real customers." ClickMasters\' SF engagements typically start from that more advanced baseline rather than a first-chatbot conversation.',
       stats: [
         { label: 'Project Start', value: '$10,000', description: 'MVP-to-production upgrade' },
         { label: 'Enterprise SaaS Bot', value: '$45,000–$130,000', timeline: '14–22 weeks' },
@@ -440,7 +440,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       ],
     },
     pricing: {
-      title: 'Chatbot Pricing — San Francisco',
+      title: 'Chatbot Pricing  San Francisco',
       description: 'All SF chatbot projects include evaluation suite and cost-optimization infrastructure.',
       items: [
         { systemType: 'MVP-to-production chatbot upgrade', priceRange: '$10,000 – $30,000', timeline: '4–10 weeks', primaryOutcome: 'Production reliability, hallucination reduction' },
@@ -455,7 +455,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       items: [
         {
           title: 'AI-Native Startups',
-          description: 'Taking an MVP chatbot to production reliability — RAG grounding, hallucination mitigation, cost-optimized model routing, and a formal evaluation suite establishing measured accuracy. SF startups need chatbots that survive real customer scrutiny.',
+          description: 'Taking an MVP chatbot to production reliability  RAG grounding, hallucination mitigation, cost-optimized model routing, and a formal evaluation suite establishing measured accuracy. SF startups need chatbots that survive real customer scrutiny.',
           keyFeatures: ['RAG grounding', 'Hallucination mitigation', 'Cost optimization', 'Evaluation suite'],
         },
         {
@@ -472,7 +472,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
     },
     objections: [
       {
-        question: 'We already have a basic chatbot — why do we need a vendor?',
+        question: 'We already have a basic chatbot  why do we need a vendor?',
         answer: 'Most SF startups\' MVP chatbots use basic prompting without proper RAG grounding, which is why they hallucinate. ClickMasters takes over from that baseline and closes the gap to production reliability.',
       },
       {
@@ -487,7 +487,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
     faqs: [
       {
         question: 'Can you take over and fix a chatbot we built ourselves that\'s hallucinating?',
-        answer: 'Yes, this is a common SF engagement pattern — ClickMasters audits the existing implementation\'s grounding and guardrail gaps, then upgrades rather than rebuilding from scratch where the foundation is sound.',
+        answer: 'Yes, this is a common SF engagement pattern  ClickMasters audits the existing implementation\'s grounding and guardrail gaps, then upgrades rather than rebuilding from scratch where the foundation is sound.',
       },
       {
         question: 'Can you help us control LLM API costs as our chatbot scales?',
@@ -503,7 +503,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       },
       {
         question: 'Do you provide the evaluation methodology, or just deliver the chatbot?',
-        answer: 'Both — every chatbot ships with a documented evaluation report measuring resolution rate and accuracy against a representative test set.',
+        answer: 'Both  every chatbot ships with a documented evaluation report measuring resolution rate and accuracy against a representative test set.',
       },
     ],
     cta: {
@@ -527,7 +527,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       primaryKW: 'ai chatbot development dallas',
       secondaryKWs: ['chatbot development company dallas', 'custom ai chatbot texas', 'dallas conversational ai', 'financial services chatbot dallas'],
     },
-    h1: 'AI Chatbot Development in Dallas — Custom Conversational AI for Finance, Energy & Healthcare',
+    h1: 'AI Chatbot Development in Dallas  Custom Conversational AI for Finance, Energy & Healthcare',
     hero: {
       tagline: 'RAG-Grounded Chatbots for Dallas\'s Finance, Energy & Healthcare',
       description: 'ClickMasters builds RAG-grounded AI chatbots for Dallas financial services firms, energy companies, and healthcare organizations across the diversified Dallas-Fort Worth Fortune 500 base. Chatbot development in Dallas starts at $8,000. Fixed-price. Full IP. Central timezone delivery.',
@@ -546,7 +546,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       ],
     },
     pricing: {
-      title: 'Chatbot Pricing — Dallas',
+      title: 'Chatbot Pricing  Dallas',
       description: 'All Dallas chatbot projects include industry-appropriate guardrails and compliance architecture.',
       items: [
         { systemType: 'Basic FAQ/support chatbot', priceRange: '$8,000 – $20,000', timeline: '4–8 weeks', primaryOutcome: 'Self-service FAQ, policy guidance' },
@@ -583,7 +583,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       },
       {
         question: 'Will the chatbot accidentally give regulated financial advice?',
-        answer: 'No — ClickMasters builds explicit topic-boundary guardrails that route advice-adjacent questions to a licensed professional rather than letting the model generate advice.',
+        answer: 'No  ClickMasters builds explicit topic-boundary guardrails that route advice-adjacent questions to a licensed professional rather than letting the model generate advice.',
       },
       {
         question: 'Is this HIPAA-compliant for our healthcare deployment?',
@@ -633,7 +633,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       primaryKW: 'ai chatbot development boston',
       secondaryKWs: ['chatbot development company boston', 'healthcare chatbot boston massachusetts', 'biotech chatbot boston', 'boston university chatbot'],
     },
-    h1: 'AI Chatbot Development in Boston — Custom Conversational AI for Healthcare, Biotech & Higher Ed',
+    h1: 'AI Chatbot Development in Boston  Custom Conversational AI for Healthcare, Biotech & Higher Ed',
     hero: {
       tagline: 'HIPAA & FERPA-Compliant Chatbots for Boston\'s Healthcare, Biotech & Higher Ed',
       description: 'ClickMasters builds RAG-grounded AI chatbots for Boston\'s academic medical centers, biotech and pharma companies, and the research-dense higher education ecosystem anchored by MIT and Harvard. Chatbot development in Boston starts at $10,000. Fixed-price. Full IP. Eastern timezone delivery.',
@@ -652,7 +652,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       ],
     },
     pricing: {
-      title: 'Chatbot Pricing — Boston',
+      title: 'Chatbot Pricing  Boston',
       description: 'All Boston chatbot projects include appropriate compliance architecture (HIPAA, FERPA, or GxP).',
       items: [
         { systemType: 'Basic FAQ/support chatbot', priceRange: '$10,000 – $25,000', timeline: '4–8 weeks', primaryOutcome: 'Self-service FAQ, policy guidance' },
@@ -739,7 +739,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       primaryKW: 'ai chatbot development miami',
       secondaryKWs: ['chatbot development company miami', 'bilingual chatbot miami florida', 'real estate chatbot miami', 'miami conversational ai spanish'],
     },
-    h1: 'AI Chatbot Development in Miami — Bilingual Conversational AI for FinTech, Real Estate & Hospitality',
+    h1: 'AI Chatbot Development in Miami  Bilingual Conversational AI for FinTech, Real Estate & Hospitality',
     hero: {
       tagline: 'Native Spanish/English Chatbots for Miami\'s FinTech, Real Estate & Hospitality',
       description: 'ClickMasters builds RAG-grounded, natively bilingual (English/Spanish) AI chatbots for Miami\'s growing FinTech sector, real estate and property platforms, and the hospitality industry central to South Florida\'s economy. Chatbot development in Miami starts at $8,000. Fixed-price. Full IP. Eastern timezone delivery.',
@@ -758,7 +758,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       ],
     },
     pricing: {
-      title: 'Chatbot Pricing — Miami',
+      title: 'Chatbot Pricing  Miami',
       description: 'All Miami chatbot projects include native bilingual (EN/ES) capability.',
       items: [
         { systemType: 'Basic FAQ/support chatbot (bilingual)', priceRange: '$8,000 – $22,000', timeline: '4–8 weeks', primaryOutcome: 'Bilingual self-service FAQ' },
@@ -821,7 +821,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       },
       {
         question: 'Will the chatbot accidentally give regulated financial advice?',
-        answer: 'No — ClickMasters builds explicit topic-boundary guardrails that route advice-adjacent questions to a licensed professional.',
+        answer: 'No  ClickMasters builds explicit topic-boundary guardrails that route advice-adjacent questions to a licensed professional.',
       },
     ],
     cta: {
@@ -845,7 +845,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       primaryKW: 'ai chatbot development austin',
       secondaryKWs: ['chatbot development company austin', 'saas startup chatbot austin texas', 'fintech chatbot austin', 'austin conversational ai'],
     },
-    h1: 'AI Chatbot Development in Austin — Custom Conversational AI for SaaS Startups & FinTech',
+    h1: 'AI Chatbot Development in Austin  Custom Conversational AI for SaaS Startups & FinTech',
     hero: {
       tagline: 'Startup-Ready Chatbots for Austin\'s SaaS & FinTech Ecosystem',
       description: 'ClickMasters builds RAG-grounded AI chatbots for Austin\'s dense SaaS startup ecosystem and growing fintech sector, scoped to startup budgets and funding-cycle timelines. Chatbot development in Austin starts at $8,000. Fixed-price. Full IP. Central timezone delivery.',
@@ -856,7 +856,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
     },
     overview: {
       title: 'Chatbot Development in Austin: SaaS Startups & FinTech',
-      content: 'Austin SaaS startups typically need chatbots embedded directly into their product as a customer support or in-product feature, shipped within a compressed funding-cycle timeline. FinTech startups need a different chatbot profile — customer self-service with regulated-advice-aware boundaries that satisfy bank-partnership compliance expectations from day one.',
+      content: 'Austin SaaS startups typically need chatbots embedded directly into their product as a customer support or in-product feature, shipped within a compressed funding-cycle timeline. FinTech startups need a different chatbot profile  customer self-service with regulated-advice-aware boundaries that satisfy bank-partnership compliance expectations from day one.',
       stats: [
         { label: 'Project Start', value: '$8,000', description: 'Basic FAQ/support chatbot' },
         { label: 'SaaS In-Product Bot', value: '$18,000–$45,000', timeline: '8–14 weeks' },
@@ -864,7 +864,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       ],
     },
     pricing: {
-      title: 'Chatbot Pricing — Austin',
+      title: 'Chatbot Pricing  Austin',
       description: 'All Austin chatbot projects are scoped to startup budgets and timelines.',
       items: [
         { systemType: 'Basic FAQ/support chatbot', priceRange: '$8,000 – $20,000', timeline: '4–8 weeks', primaryOutcome: 'Self-service FAQ, policy guidance' },
@@ -951,7 +951,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       primaryKW: 'ai chatbot development vancouver',
       secondaryKWs: ['chatbot development company vancouver', 'tech startup chatbot vancouver bc', 'film production chatbot vancouver', 'vancouver conversational ai canada'],
     },
-    h1: 'AI Chatbot Development in Vancouver — Custom Conversational AI for Tech, Film & Forestry',
+    h1: 'AI Chatbot Development in Vancouver  Custom Conversational AI for Tech, Film & Forestry',
     hero: {
       tagline: 'PIPEDA-Compliant Chatbots for Vancouver\'s Tech, Film & Forestry',
       description: 'ClickMasters builds RAG-grounded, PIPEDA-compliant AI chatbots for Vancouver\'s growing tech sector, the city\'s significant film and television production industry, and forestry/natural resources companies. Chatbot development in Vancouver starts at $8,000 CAD. Fixed-price. Full IP. Pacific timezone delivery.',
@@ -962,7 +962,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
     },
     overview: {
       title: 'Chatbot Development in Vancouver: Tech, Film Production & Forestry',
-      content: 'Vancouver\'s tech sector needs chatbots embedded into product offerings, often scoped for startup budgets and timelines similar to other tech hubs. The city\'s film production industry — "Hollywood North" — needs a different profile: production support and fan engagement chatbots with brand voice consistency. Forestry and natural resources companies need internal technical documentation chatbots for field operations.',
+      content: 'Vancouver\'s tech sector needs chatbots embedded into product offerings, often scoped for startup budgets and timelines similar to other tech hubs. The city\'s film production industry  "Hollywood North"  needs a different profile: production support and fan engagement chatbots with brand voice consistency. Forestry and natural resources companies need internal technical documentation chatbots for field operations.',
       stats: [
         { label: 'Project Start', value: '$8,000 CAD', description: 'Basic FAQ/support chatbot' },
         { label: 'Tech Bot', value: '$18,000–$48,000 CAD', timeline: '8–14 weeks' },
@@ -970,7 +970,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       ],
     },
     pricing: {
-      title: 'Chatbot Pricing — Vancouver (CAD)',
+      title: 'Chatbot Pricing  Vancouver (CAD)',
       description: 'All Vancouver chatbot projects include PIPEDA-compliant data handling.',
       items: [
         { systemType: 'Basic FAQ/support chatbot', priceRange: '$8,000 – $22,000', timeline: '4–8 weeks', primaryOutcome: 'Self-service FAQ, policy guidance' },
@@ -1057,7 +1057,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       primaryKW: 'ai chatbot development montreal',
       secondaryKWs: ['chatbot development company montreal', 'bilingual chatbot montreal quebec', 'ai tech startup chatbot montreal', 'aerospace chatbot montreal canada'],
     },
-    h1: 'AI Chatbot Development in Montreal — Bilingual Conversational AI for AI/Tech & Aerospace',
+    h1: 'AI Chatbot Development in Montreal  Bilingual Conversational AI for AI/Tech & Aerospace',
     hero: {
       tagline: 'Bilingual EN/FR, PIPEDA-Compliant Chatbots for Montreal\'s AI/Tech & Aerospace',
       description: 'ClickMasters builds RAG-grounded, natively bilingual (English/French) AI chatbots for Montreal\'s significant AI research and tech ecosystem and the city\'s substantial aerospace manufacturing presence. Chatbot development in Montreal starts at $8,000 CAD. Fixed-price. Full IP. Eastern timezone delivery.',
@@ -1076,7 +1076,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       ],
     },
     pricing: {
-      title: 'Chatbot Pricing — Montreal (CAD)',
+      title: 'Chatbot Pricing  Montreal (CAD)',
       description: 'All Montreal chatbot projects include native bilingual (EN/FR) capability and PIPEDA compliance.',
       items: [
         { systemType: 'Basic FAQ/support chatbot (bilingual)', priceRange: '$8,000 – $22,000', timeline: '4–8 weeks', primaryOutcome: 'Bilingual self-service FAQ' },
@@ -1163,7 +1163,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       primaryKW: 'ai chatbot development chicago',
       secondaryKWs: ['chatbot development company chicago', 'custom ai chatbot illinois', 'chicago conversational ai', 'business chatbot chicago'],
     },
-    h1: 'AI Chatbot Development in Chicago — Custom Conversational AI for Finance, Manufacturing & Logistics',
+    h1: 'AI Chatbot Development in Chicago  Custom Conversational AI for Finance, Manufacturing & Logistics',
     hero: {
       tagline: 'RAG-Grounded Chatbots for Chicago\'s Finance, Manufacturing & Logistics',
       description: 'ClickMasters builds RAG-grounded AI chatbots for Chicago financial services firms, manufacturers, and logistics operators across the city\'s diversified enterprise base. Chatbot development in Chicago starts at $8,000. Fixed-price. Full IP. Central timezone delivery.',
@@ -1174,7 +1174,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
     },
     overview: {
       title: 'Chatbot Development in Chicago: Finance, Manufacturing & Logistics',
-      content: 'Chicago\'s manufacturing and logistics base drives a chatbot demand pattern distinct from purely customer-facing financial services use cases — internal employee-facing chatbots for warehouse and production staff to query equipment manuals, safety procedures, and inventory status hands-free, alongside customer-facing support chatbots for order status and account questions. ClickMasters builds both patterns with the same RAG-grounding discipline that prevents hallucinated equipment specifications or safety guidance from reaching staff on a production floor.',
+      content: 'Chicago\'s manufacturing and logistics base drives a chatbot demand pattern distinct from purely customer-facing financial services use cases  internal employee-facing chatbots for warehouse and production staff to query equipment manuals, safety procedures, and inventory status hands-free, alongside customer-facing support chatbots for order status and account questions. ClickMasters builds both patterns with the same RAG-grounding discipline that prevents hallucinated equipment specifications or safety guidance from reaching staff on a production floor.',
       stats: [
         { label: 'Project Start', value: '$8,000', description: 'Basic FAQ/support chatbot' },
         { label: 'Internal Ops Bot', value: '$25,000–$60,000', timeline: '8–14 weeks' },
@@ -1182,7 +1182,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       ],
     },
     pricing: {
-      title: 'Chatbot Pricing — Chicago',
+      title: 'Chatbot Pricing  Chicago',
       description: 'All Chicago chatbot projects include appropriate guardrails for manufacturing and logistics use cases.',
       items: [
         { systemType: 'Basic FAQ/support chatbot', priceRange: '$8,000 – $20,000', timeline: '4–8 weeks', primaryOutcome: 'Self-service FAQ, policy guidance' },
@@ -1269,7 +1269,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       primaryKW: 'ai chatbot development houston',
       secondaryKWs: ['chatbot development company houston', 'custom ai chatbot texas', 'houston conversational ai', 'energy chatbot houston'],
     },
-    h1: 'AI Chatbot Development in Houston — Custom Conversational AI for Energy, Healthcare & Logistics',
+    h1: 'AI Chatbot Development in Houston  Custom Conversational AI for Energy, Healthcare & Logistics',
     hero: {
       tagline: 'RAG-Grounded Chatbots for Houston\'s Energy, Healthcare & Logistics',
       description: 'ClickMasters builds RAG-grounded AI chatbots for Houston energy companies, the city\'s substantial medical center ecosystem, and logistics operators leveraging the Port of Houston\'s trade volume. Chatbot development in Houston starts at $8,000. Fixed-price. Full IP. Central timezone delivery.',
@@ -1280,7 +1280,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
     },
     overview: {
       title: 'Chatbot Development in Houston: Energy, Healthcare & Logistics',
-      content: 'Houston\'s energy sector drives demand for internal-facing chatbots grounded in technical documentation — field operations manuals, safety procedures, equipment specifications — that engineers and field staff can query hands-free rather than searching disconnected document repositories. The Texas Medical Center\'s scale drives a parallel demand for patient-facing healthcare chatbots requiring HIPAA-compliant architecture, while Port of Houston-adjacent logistics operators need customer and partner self-service for shipment status.',
+      content: 'Houston\'s energy sector drives demand for internal-facing chatbots grounded in technical documentation  field operations manuals, safety procedures, equipment specifications  that engineers and field staff can query hands-free rather than searching disconnected document repositories. The Texas Medical Center\'s scale drives a parallel demand for patient-facing healthcare chatbots requiring HIPAA-compliant architecture, while Port of Houston-adjacent logistics operators need customer and partner self-service for shipment status.',
       stats: [
         { label: 'Project Start', value: '$8,000', description: 'Basic FAQ/support chatbot' },
         { label: 'Energy Bot', value: '$20,000–$50,000', timeline: '8–14 weeks' },
@@ -1288,7 +1288,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       ],
     },
     pricing: {
-      title: 'Chatbot Pricing — Houston',
+      title: 'Chatbot Pricing  Houston',
       description: 'All Houston chatbot projects include industry-appropriate compliance architecture.',
       items: [
         { systemType: 'Basic FAQ/support chatbot', priceRange: '$8,000 – $20,000', timeline: '4–8 weeks', primaryOutcome: 'Self-service FAQ, policy guidance' },
@@ -1308,7 +1308,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
         },
         {
           title: 'Healthcare',
-          description: 'Patient self-service for appointment scheduling and general questions, and internal clinical policy Q&A — built with HIPAA-compliant architecture. Houston\'s Texas Medical Center needs HIPAA-compliant patient chatbots.',
+          description: 'Patient self-service for appointment scheduling and general questions, and internal clinical policy Q&A  built with HIPAA-compliant architecture. Houston\'s Texas Medical Center needs HIPAA-compliant patient chatbots.',
           keyFeatures: ['HIPAA-compliant', 'Appointment scheduling', 'Clinical-advice boundaries', 'Patient self-service'],
         },
         {
@@ -1375,7 +1375,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       primaryKW: 'ai chatbot development washington dc',
       secondaryKWs: ['chatbot development company dc', 'federal contractor chatbot', 'fedramp aware chatbot', 'washington dc conversational ai'],
     },
-    h1: 'AI Chatbot Development in Washington DC — Custom Conversational AI for Federal Contractors & Nonprofits',
+    h1: 'AI Chatbot Development in Washington DC  Custom Conversational AI for Federal Contractors & Nonprofits',
     hero: {
       tagline: 'FedRAMP-Aware Chatbots for DC\'s Federal Contractors & Nonprofits',
       description: 'ClickMasters builds RAG-grounded AI chatbots for DC-area federal government contractors, policy organizations, and the dense nonprofit and association sector headquartered in the capital. Chatbot development in Washington DC starts at $10,000. Fixed-price. Full IP. Eastern timezone delivery.',
@@ -1386,7 +1386,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
     },
     overview: {
       title: 'Chatbot Development in Washington DC: Federal Contractors & Nonprofits',
-      content: 'DC\'s federal contractor base often needs chatbots built with FedRAMP-aware infrastructure considerations even when the chatbot itself isn\'t a FedRAMP-authorized system — federal customers increasingly expect vendors to understand this compliance landscape during procurement evaluation. Nonprofits and associations headquartered in DC more commonly need member or constituent self-service chatbots without the same federal compliance overhead, prioritizing speed to deployment instead.',
+      content: 'DC\'s federal contractor base often needs chatbots built with FedRAMP-aware infrastructure considerations even when the chatbot itself isn\'t a FedRAMP-authorized system  federal customers increasingly expect vendors to understand this compliance landscape during procurement evaluation. Nonprofits and associations headquartered in DC more commonly need member or constituent self-service chatbots without the same federal compliance overhead, prioritizing speed to deployment instead.',
       stats: [
         { label: 'Project Start', value: '$10,000', description: 'Basic FAQ/support chatbot' },
         { label: 'FedRAMP-Aware Bot', value: '$30,000–$80,000', timeline: '10–18 weeks' },
@@ -1394,7 +1394,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       ],
     },
     pricing: {
-      title: 'Chatbot Pricing — Washington DC',
+      title: 'Chatbot Pricing  Washington DC',
       description: 'All DC chatbot projects include appropriate compliance considerations for the sector.',
       items: [
         { systemType: 'Basic FAQ/support chatbot', priceRange: '$10,000 – $25,000', timeline: '4–8 weeks', primaryOutcome: 'Self-service FAQ, policy guidance' },
@@ -1481,7 +1481,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       primaryKW: 'ai chatbot development philadelphia',
       secondaryKWs: ['chatbot development company philadelphia', 'healthcare chatbot philadelphia', 'pharma chatbot philadelphia', 'philadelphia conversational ai'],
     },
-    h1: 'AI Chatbot Development in Philadelphia — Custom Conversational AI for Healthcare, Pharma & Financial Services',
+    h1: 'AI Chatbot Development in Philadelphia  Custom Conversational AI for Healthcare, Pharma & Financial Services',
     hero: {
       tagline: 'HIPAA & GxP-Ready Chatbots for Philadelphia\'s Healthcare, Pharma & Finance',
       description: 'ClickMasters builds RAG-grounded AI chatbots for Philadelphia\'s academic medical centers, pharmaceutical companies, and financial services firms across the Philadelphia-Wilmington corridor. Chatbot development in Philadelphia starts at $10,000. Fixed-price. Full IP. Eastern timezone delivery.',
@@ -1492,7 +1492,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
     },
     overview: {
       title: 'Chatbot Development in Philadelphia: Healthcare, Pharma & Financial Services',
-      content: 'Philadelphia\'s academic medical center density means patient-facing chatbots here require HIPAA-compliant architecture and careful clinical-information boundaries — appropriate for appointment scheduling and general health information, but explicitly routing anything resembling clinical diagnosis or treatment advice to a healthcare provider. Pharma clients need a different chatbot profile: internal regulatory and clinical documentation Q&A grounded in company-specific GxP documentation.',
+      content: 'Philadelphia\'s academic medical center density means patient-facing chatbots here require HIPAA-compliant architecture and careful clinical-information boundaries  appropriate for appointment scheduling and general health information, but explicitly routing anything resembling clinical diagnosis or treatment advice to a healthcare provider. Pharma clients need a different chatbot profile: internal regulatory and clinical documentation Q&A grounded in company-specific GxP documentation.',
       stats: [
         { label: 'Project Start', value: '$10,000', description: 'Basic FAQ/support chatbot' },
         { label: 'Healthcare Bot', value: '$25,000–$65,000', timeline: '10–16 weeks' },
@@ -1500,7 +1500,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       ],
     },
     pricing: {
-      title: 'Chatbot Pricing — Philadelphia',
+      title: 'Chatbot Pricing  Philadelphia',
       description: 'All Philadelphia chatbot projects include appropriate compliance architecture.',
       items: [
         { systemType: 'Basic FAQ/support chatbot', priceRange: '$10,000 – $25,000', timeline: '4–8 weeks', primaryOutcome: 'Self-service FAQ, policy guidance' },
@@ -1587,7 +1587,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       primaryKW: 'ai chatbot development atlanta',
       secondaryKWs: ['chatbot development company atlanta', 'custom ai chatbot georgia', 'atlanta conversational ai', 'payments chatbot atlanta'],
     },
-    h1: 'AI Chatbot Development in Atlanta — Custom Conversational AI for FinTech, Logistics & Retail',
+    h1: 'AI Chatbot Development in Atlanta  Custom Conversational AI for FinTech, Logistics & Retail',
     hero: {
       tagline: 'RAG-Grounded Chatbots for Atlanta\'s FinTech, Logistics & Retail',
       description: 'ClickMasters builds RAG-grounded AI chatbots for Atlanta\'s dense FinTech and payments cluster, logistics operators leveraging Hartsfield-Jackson\'s connectivity, and retail and consumer brands. Chatbot development in Atlanta starts at $8,000. Fixed-price. Full IP. Eastern timezone delivery.',
@@ -1606,7 +1606,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       ],
     },
     pricing: {
-      title: 'Chatbot Pricing — Atlanta',
+      title: 'Chatbot Pricing  Atlanta',
       description: 'All Atlanta chatbot projects include appropriate industry-specific guardrails.',
       items: [
         { systemType: 'Basic FAQ/support chatbot', priceRange: '$8,000 – $20,000', timeline: '4–8 weeks', primaryOutcome: 'Self-service FAQ, policy guidance' },
@@ -1693,7 +1693,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       primaryKW: 'ai chatbot development denver',
       secondaryKWs: ['chatbot development company denver', 'custom ai chatbot colorado', 'denver conversational ai', 'energy chatbot denver colorado'],
     },
-    h1: 'AI Chatbot Development in Denver — Custom Conversational AI for Energy, Healthcare & Aerospace',
+    h1: 'AI Chatbot Development in Denver  Custom Conversational AI for Energy, Healthcare & Aerospace',
     hero: {
       tagline: 'RAG-Grounded Chatbots for Denver\'s Energy, Healthcare & Aerospace',
       description: 'ClickMasters builds RAG-grounded AI chatbots for Denver-area energy companies, healthcare organizations, and the region\'s aerospace and defense presence. Chatbot development in Denver starts at $8,000. Fixed-price. Full IP. Mountain timezone delivery.',
@@ -1712,7 +1712,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       ],
     },
     pricing: {
-      title: 'Chatbot Pricing — Denver',
+      title: 'Chatbot Pricing  Denver',
       description: 'All Denver chatbot projects include industry-appropriate compliance architecture.',
       items: [
         { systemType: 'Basic FAQ/support chatbot', priceRange: '$8,000 – $20,000', timeline: '4–8 weeks', primaryOutcome: 'Self-service FAQ, policy guidance' },
@@ -1799,7 +1799,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       primaryKW: 'ai chatbot development los angeles',
       secondaryKWs: ['chatbot development company la', 'media entertainment chatbot los angeles', 'healthcare chatbot la', 'los angeles conversational ai'],
     },
-    h1: 'AI Chatbot Development in Los Angeles — Custom Conversational AI for Media, Entertainment & Healthcare',
+    h1: 'AI Chatbot Development in Los Angeles  Custom Conversational AI for Media, Entertainment & Healthcare',
     hero: {
       tagline: 'Brand-Conscious Chatbots for LA\'s Media, Entertainment & Healthcare',
       description: 'ClickMasters builds RAG-grounded AI chatbots for LA media and entertainment companies and the city\'s large managed-care and hospital ecosystem. Chatbot development in Los Angeles starts at $10,000. Fixed-price. Full IP. Pacific timezone delivery.',
@@ -1818,7 +1818,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       ],
     },
     pricing: {
-      title: 'Chatbot Pricing — Los Angeles',
+      title: 'Chatbot Pricing  Los Angeles',
       description: 'All LA chatbot projects include appropriate industry-specific guardrails.',
       items: [
         { systemType: 'Basic FAQ/support chatbot', priceRange: '$10,000 – $25,000', timeline: '4–8 weeks', primaryOutcome: 'Self-service FAQ, policy guidance' },
@@ -1905,7 +1905,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       primaryKW: 'ai chatbot development charlotte',
       secondaryKWs: ['chatbot development company charlotte', 'banking chatbot charlotte nc', 'insurance chatbot charlotte', 'charlotte conversational ai'],
     },
-    h1: 'AI Chatbot Development in Charlotte — Custom Conversational AI for Banking, Insurance & Energy',
+    h1: 'AI Chatbot Development in Charlotte  Custom Conversational AI for Banking, Insurance & Energy',
     hero: {
       tagline: 'RAG-Grounded Chatbots for Charlotte\'s Banking, Insurance & Energy',
       description: 'ClickMasters builds RAG-grounded AI chatbots for Charlotte\'s major banking institutions, insurance carriers, and Duke Energy\'s grid operations. Chatbot development in Charlotte starts at $8,000. Fixed-price. Full IP. Eastern timezone delivery.',
@@ -1924,7 +1924,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       ],
     },
     pricing: {
-      title: 'Chatbot Pricing — Charlotte',
+      title: 'Chatbot Pricing  Charlotte',
       description: 'All Charlotte chatbot projects include appropriate industry-specific guardrails.',
       items: [
         { systemType: 'Basic FAQ/support chatbot', priceRange: '$8,000 – $20,000', timeline: '4–8 weeks', primaryOutcome: 'Self-service FAQ, policy guidance' },
@@ -1961,7 +1961,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       },
       {
         question: 'Will the chatbot accidentally give regulated financial advice?',
-        answer: 'No — ClickMasters builds explicit topic-boundary guardrails that route advice-adjacent questions to a licensed professional.',
+        answer: 'No  ClickMasters builds explicit topic-boundary guardrails that route advice-adjacent questions to a licensed professional.',
       },
       {
         question: 'Can this integrate with our existing claims or billing platform?',
@@ -2011,7 +2011,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       primaryKW: 'ai chatbot development orlando',
       secondaryKWs: ['chatbot development company orlando', 'theme park chatbot orlando florida', 'hospitality chatbot orlando', 'orlando conversational ai'],
     },
-    h1: 'AI Chatbot Development in Orlando — Custom Conversational AI for Theme Parks, Hospitality & Defense Simulation',
+    h1: 'AI Chatbot Development in Orlando  Custom Conversational AI for Theme Parks, Hospitality & Defense Simulation',
     hero: {
       tagline: 'High-Volume Chatbots for Orlando\'s Theme Parks, Hospitality & Defense',
       description: 'ClickMasters builds RAG-grounded AI chatbots for Orlando\'s theme park and entertainment industry, the city\'s large hospitality sector, and the defense simulation cluster anchored by PEO STRI. Chatbot development in Orlando starts at $10,000. Fixed-price. Full IP. Eastern timezone delivery.',
@@ -2030,7 +2030,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       ],
     },
     pricing: {
-      title: 'Chatbot Pricing — Orlando',
+      title: 'Chatbot Pricing  Orlando',
       description: 'All Orlando chatbot projects include appropriate industry-specific guardrails.',
       items: [
         { systemType: 'Basic FAQ/support chatbot', priceRange: '$10,000 – $25,000', timeline: '4–8 weeks', primaryOutcome: 'Self-service FAQ, policy guidance' },
@@ -2117,7 +2117,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       primaryKW: 'ai chatbot development columbus',
       secondaryKWs: ['chatbot development company columbus', 'insurance chatbot columbus ohio', 'logistics chatbot columbus', 'columbus conversational ai'],
     },
-    h1: 'AI Chatbot Development in Columbus — Custom Conversational AI for Insurance, Logistics & Retail',
+    h1: 'AI Chatbot Development in Columbus  Custom Conversational AI for Insurance, Logistics & Retail',
     hero: {
       tagline: 'RAG-Grounded Chatbots for Columbus\'s Insurance, Logistics & Retail',
       description: 'ClickMasters builds RAG-grounded AI chatbots for Columbus insurance carriers, distribution centers, and retail brands headquartered in the area. Chatbot development in Columbus starts at $8,000. Fixed-price. Full IP. Eastern timezone delivery.',
@@ -2136,7 +2136,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       ],
     },
     pricing: {
-      title: 'Chatbot Pricing — Columbus',
+      title: 'Chatbot Pricing  Columbus',
       description: 'All Columbus chatbot projects include appropriate industry-specific guardrails.',
       items: [
         { systemType: 'Basic FAQ/support chatbot', priceRange: '$8,000 – $20,000', timeline: '4–8 weeks', primaryOutcome: 'Self-service FAQ, policy guidance' },
@@ -2223,7 +2223,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       primaryKW: 'ai chatbot development seattle',
       secondaryKWs: ['chatbot development company seattle', 'retail chatbot seattle washington', 'aerospace chatbot seattle', 'seattle conversational ai'],
     },
-    h1: 'AI Chatbot Development in Seattle — Custom Conversational AI for Retail, Cloud SaaS & Aerospace',
+    h1: 'AI Chatbot Development in Seattle  Custom Conversational AI for Retail, Cloud SaaS & Aerospace',
     hero: {
       tagline: 'Cloud-Native & Aerospace-Ready Chatbots for Seattle\'s Retail, SaaS & Aerospace',
       description: 'ClickMasters builds RAG-grounded AI chatbots for Seattle retail and ecommerce companies, cloud-native SaaS firms, and Boeing\'s aerospace manufacturing ecosystem. Chatbot development in Seattle starts at $10,000. Fixed-price. Full IP. Pacific timezone delivery.',
@@ -2242,7 +2242,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       ],
     },
     pricing: {
-      title: 'Chatbot Pricing — Seattle',
+      title: 'Chatbot Pricing  Seattle',
       description: 'All Seattle chatbot projects include appropriate industry-specific guardrails.',
       items: [
         { systemType: 'Basic FAQ/support chatbot', priceRange: '$10,000 – $25,000', timeline: '4–8 weeks', primaryOutcome: 'Self-service FAQ, policy guidance' },
@@ -2329,7 +2329,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       primaryKW: 'ai chatbot development san jose',
       secondaryKWs: ['chatbot development company san jose', 'semiconductor chatbot silicon valley', 'hardware company chatbot san jose', 'san jose conversational ai'],
     },
-    h1: 'AI Chatbot Development in San Jose — Custom Conversational AI for Semiconductor & Hardware Companies',
+    h1: 'AI Chatbot Development in San Jose  Custom Conversational AI for Semiconductor & Hardware Companies',
     hero: {
       tagline: 'Technical Documentation Chatbots for San Jose\'s Semiconductor & Hardware Companies',
       description: 'ClickMasters builds RAG-grounded AI chatbots for San Jose semiconductor manufacturers and hardware companies across Silicon Valley\'s South Bay core. Chatbot development in San Jose starts at $10,000. Fixed-price. Full IP. Pacific timezone delivery.',
@@ -2348,7 +2348,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       ],
     },
     pricing: {
-      title: 'Chatbot Pricing — San Jose',
+      title: 'Chatbot Pricing  San Jose',
       description: 'All San Jose chatbot projects include appropriate technical documentation grounding.',
       items: [
         { systemType: 'Basic FAQ/support chatbot', priceRange: '$10,000 – $25,000', timeline: '4–8 weeks', primaryOutcome: 'Self-service FAQ, policy guidance' },
@@ -2435,7 +2435,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       primaryKW: 'ai chatbot development calgary',
       secondaryKWs: ['chatbot development company calgary', 'energy chatbot calgary alberta', 'agriculture chatbot calgary canada', 'calgary conversational ai'],
     },
-    h1: 'AI Chatbot Development in Calgary — Custom Conversational AI for Energy & Agriculture',
+    h1: 'AI Chatbot Development in Calgary  Custom Conversational AI for Energy & Agriculture',
     hero: {
       tagline: 'PIPEDA-Compliant Chatbots for Calgary\'s Energy & Agriculture Sectors',
       description: 'ClickMasters builds RAG-grounded, PIPEDA-compliant AI chatbots for Calgary\'s energy sector (oil/gas headquarters concentration) and the broader Alberta agriculture industry the city serves as a commercial hub for. Chatbot development in Calgary starts at $8,000 CAD. Fixed-price. Full IP. Mountain timezone delivery.',
@@ -2446,7 +2446,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
     },
     overview: {
       title: 'Chatbot Development in Calgary: Energy & Agriculture',
-      content: 'Calgary\'s energy sector drives demand for internal-facing chatbots grounded in technical documentation — field operations manuals, safety procedures, and equipment specifications — that engineers and field staff can query hands-free. Agriculture-adjacent businesses serving Alberta\'s farming sector need a different profile: customer self-service for equipment, supply, and commodity questions.',
+      content: 'Calgary\'s energy sector drives demand for internal-facing chatbots grounded in technical documentation  field operations manuals, safety procedures, and equipment specifications  that engineers and field staff can query hands-free. Agriculture-adjacent businesses serving Alberta\'s farming sector need a different profile: customer self-service for equipment, supply, and commodity questions.',
       stats: [
         { label: 'Project Start', value: '$8,000 CAD', description: 'Basic FAQ/support chatbot' },
         { label: 'Energy Bot', value: '$20,000–$50,000 CAD', timeline: '8–14 weeks' },
@@ -2454,7 +2454,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       ],
     },
     pricing: {
-      title: 'Chatbot Pricing — Calgary (CAD)',
+      title: 'Chatbot Pricing  Calgary (CAD)',
       description: 'All Calgary chatbot projects include PIPEDA-compliant data handling where required.',
       items: [
         { systemType: 'Basic FAQ/support chatbot', priceRange: '$8,000 – $22,000', timeline: '4–8 weeks', primaryOutcome: 'Self-service FAQ, policy guidance' },
@@ -2541,7 +2541,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       primaryKW: 'ai chatbot development phoenix',
       secondaryKWs: ['chatbot development company phoenix', 'semiconductor chatbot phoenix arizona', 'healthcare chatbot phoenix', 'real estate chatbot phoenix'],
     },
-    h1: 'AI Chatbot Development in Phoenix — Custom Conversational AI for Semiconductor, Healthcare & Real Estate',
+    h1: 'AI Chatbot Development in Phoenix  Custom Conversational AI for Semiconductor, Healthcare & Real Estate',
     hero: {
       tagline: 'RAG-Grounded Chatbots for Phoenix\'s Semiconductor, Healthcare & Real Estate',
       description: 'ClickMasters builds RAG-grounded AI chatbots for Phoenix\'s growing semiconductor manufacturing base, the city\'s substantial healthcare and retirement-community-adjacent medical ecosystem, and a fast-growing real estate market driven by sustained population growth. Chatbot development in Phoenix starts at $8,000. Fixed-price. Full IP. Mountain timezone delivery.',
@@ -2560,7 +2560,7 @@ const CHATBOT_CITY_PAGES: Record<string, ChatbotCityPageData> = {
       ],
     },
     pricing: {
-      title: 'Chatbot Pricing — Phoenix',
+      title: 'Chatbot Pricing  Phoenix',
       description: 'All Phoenix chatbot projects include appropriate industry-specific guardrails.',
       items: [
         { systemType: 'Basic FAQ/support chatbot', priceRange: '$8,000 – $20,000', timeline: '4–8 weeks', primaryOutcome: 'Self-service FAQ, policy guidance' },
