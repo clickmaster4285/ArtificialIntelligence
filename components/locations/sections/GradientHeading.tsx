@@ -44,7 +44,7 @@ export function GradientHeading({
   delay = 0,
 }: GradientHeadingProps) {
   const tokens = tokenize(text);
-  const Tag = as as any;
+  const Tag: keyof React.JSX.IntrinsicElements = as;
 
   const viewportProps =
     trigger === 'scroll'

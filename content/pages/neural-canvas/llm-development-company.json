@@ -1,0 +1,715 @@
+{
+  "slug": "llm-development-company",
+  "status": "published",
+  "seo": {
+    "title": "LLM Development Company | ClickMasters AI",
+    "description": "LLM development company. Custom GPT-4, Claude and Llama integration, fine-tuning and RAG from $20K. Production-grade, fixed-price delivery.",
+    "canonical": "/llm-development-company/",
+    "primaryKeyword": "llm development company",
+    "secondaryKeywords": [
+      "large language model development company",
+      "llm development services",
+      "llm consulting company",
+      "enterprise llm development",
+      "custom llm developers",
+      "rag development company",
+      "llm integration services"
+    ],
+    "openGraphImage": "/images/pages/llm-development-company/og-image.jpg",
+    "noIndex": false,
+    "noFollow": false
+  },
+  "schema": {
+    "service": true,
+    "organization": true,
+    "breadcrumbs": true,
+    "faq": true
+  },
+  "appearance": {
+    "template": "neural-canvas",
+    "accent": "violet",
+    "background": "neural-grid",
+    "grain": true,
+    "glow": true,
+    "scrollProgress": true,
+    "customCursor": true
+  },
+  "hero": {
+    "eyebrow": "Production-Grade Language Intelligence",
+    "title": "LLM Development Company",
+    "highlightedText": "Built Beyond the Demo",
+    "description": "ClickMasters builds production LLM systems on GPT-4, Claude, Gemini, Llama and Mistral—integrated into your existing software, grounded in your proprietary data and engineered for measurable accuracy at scale.",
+    "primaryCta": {
+      "label": "Get a Free LLM Strategy Session",
+      "href": "#consultation",
+      "ariaLabel": "Book a free LLM strategy consultation"
+    },
+    "secondaryCta": {
+      "label": "Explore Our Capabilities",
+      "href": "#llm-capabilities"
+    },
+    "trustText": "Fixed price · Full IP ownership · Senior USA-based engineers",
+    "metrics": [
+      {
+        "value": "$20K",
+        "label": "Starting investment",
+        "description": "For a focused LLM integration"
+      },
+      {
+        "value": "6–10",
+        "label": "Weeks to launch",
+        "description": "For most focused integrations"
+      },
+      {
+        "value": "24h",
+        "label": "Initial response",
+        "description": "Technical response within one business day"
+      }
+    ],
+    "visual": {
+      "type": "neural-sphere",
+      "label": "Multi-model intelligence",
+      "modelNames": [
+        "GPT-4",
+        "Claude",
+        "Gemini",
+        "Llama",
+        "Mistral"
+      ]
+    }
+  },
+  "sections": [
+    {
+      "id": "llm-capabilities",
+      "type": "feature-grid",
+      "eyebrow": "What We Build",
+      "title": "LLM engineering that covers the complete production stack",
+      "description": "A reliable LLM product requires far more than connecting an API. We combine integration, retrieval, model adaptation and agentic orchestration according to the actual problem.",
+      "tone": "default",
+      "width": "wide",
+      "animation": "stagger",
+      "variant": "bento",
+      "columns": 2,
+      "items": [
+        {
+          "title": "LLM Integration",
+          "description": "Connect GPT-4, Claude, Gemini or an open-weight model to your application with production prompt architecture, structured outputs, streaming, retries, caching and cost controls.",
+          "icon": "network",
+          "label": "Foundation",
+          "metric": "6–10 weeks",
+          "link": {
+            "label": "Explore LLM integration",
+            "href": "/llm-integration-services/"
+          }
+        },
+        {
+          "title": "Retrieval-Augmented Generation",
+          "description": "Ground model responses in your documents, databases and knowledge systems using semantic retrieval, hybrid search, re-ranking and traceable citations.",
+          "icon": "database",
+          "label": "Knowledge",
+          "metric": "Lower hallucination risk",
+          "link": {
+            "label": "Explore RAG development",
+            "href": "/rag-development-services/"
+          }
+        },
+        {
+          "title": "Model Fine-Tuning",
+          "description": "Improve performance on narrow, repeated tasks through carefully curated training data, baseline comparison, holdout evaluation and controlled model adaptation.",
+          "icon": "brain",
+          "label": "Specialization",
+          "metric": "Task-specific accuracy",
+          "link": {
+            "label": "Explore model fine-tuning",
+            "href": "/ai-model-fine-tuning-services/"
+          }
+        },
+        {
+          "title": "Agentic Orchestration",
+          "description": "Build multi-step AI workflows that reason, call approved tools, interact with your systems and complete tasks with checkpoints and human approval gates.",
+          "icon": "workflow",
+          "label": "Automation",
+          "metric": "Multi-step execution",
+          "link": {
+            "label": "Explore AI agent development",
+            "href": "/ai-agent-development-company/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "model-ecosystem",
+      "type": "technologies",
+      "eyebrow": "Model Agnostic",
+      "title": "The right model for the task—not the model with the loudest marketing",
+      "description": "We evaluate models against your accuracy, latency, cost, context and data-governance requirements before committing to an architecture.",
+      "tone": "surface",
+      "width": "wide",
+      "animation": "pinned-scroll",
+      "variant": "orbit",
+      "items": [
+        {
+          "name": "GPT-4",
+          "category": "OpenAI",
+          "description": "Strong general reasoning, tooling ecosystem and enterprise integration support."
+        },
+        {
+          "name": "Claude",
+          "category": "Anthropic",
+          "description": "Excellent long-context performance, document analysis and careful instruction following."
+        },
+        {
+          "name": "Gemini",
+          "category": "Google",
+          "description": "Powerful multimodal capability with tight Google Cloud and Vertex AI integration."
+        },
+        {
+          "name": "Llama",
+          "category": "Meta",
+          "description": "Open-weight deployment for data control, customization and high-volume workloads."
+        },
+        {
+          "name": "Mistral",
+          "category": "Open Weight",
+          "description": "Efficient self-hosted options for privacy-sensitive and cost-conscious deployments."
+        }
+      ]
+    },
+    {
+      "id": "llm-development-pricing",
+      "type": "table",
+      "eyebrow": "Transparent Investment",
+      "title": "LLM development cost and delivery timelines",
+      "description": "Your final quote is fixed after discovery. These ranges provide a realistic starting point before the first conversation.",
+      "tone": "contrast",
+      "width": "wide",
+      "animation": "horizontal-reveal",
+      "variant": "pricing",
+      "columns": [
+        {
+          "key": "engagement",
+          "label": "Engagement Type",
+          "align": "left",
+          "width": "42%"
+        },
+        {
+          "key": "price",
+          "label": "Price Range",
+          "align": "left",
+          "width": "28%"
+        },
+        {
+          "key": "timeline",
+          "label": "Timeline",
+          "align": "left",
+          "width": "30%"
+        }
+      ],
+      "rows": [
+        {
+          "id": "api-integration",
+          "cells": {
+            "engagement": "LLM API integration and prompt engineering",
+            "price": "$20,000–$50,000",
+            "timeline": "6–10 weeks"
+          },
+          "highlighted": true,
+          "badge": "Popular starting point"
+        },
+        {
+          "id": "rag-system",
+          "cells": {
+            "engagement": "Production RAG system and retrieval pipeline",
+            "price": "$20,000–$80,000",
+            "timeline": "8–14 weeks"
+          }
+        },
+        {
+          "id": "fine-tuned-model",
+          "cells": {
+            "engagement": "Fine-tuned domain model",
+            "price": "$5,000–$40,000",
+            "timeline": "4–10 weeks"
+          }
+        },
+        {
+          "id": "agentic-workflow",
+          "cells": {
+            "engagement": "Agentic multi-step LLM workflow",
+            "price": "$40,000–$150,000",
+            "timeline": "12–22 weeks"
+          }
+        },
+        {
+          "id": "enterprise-platform",
+          "cells": {
+            "engagement": "Enterprise multi-model LLM platform",
+            "price": "$150,000–$500,000+",
+            "timeline": "20–40 weeks"
+          }
+        }
+      ],
+      "note": "Ongoing API or model-hosting costs are separate. During discovery, we calculate the cost crossover between third-party APIs and self-hosted open-weight models using your projected usage.",
+      "cta": {
+        "label": "Get a Fixed Project Estimate",
+        "href": "#consultation"
+      }
+    },
+    {
+      "id": "development-process",
+      "type": "process",
+      "eyebrow": "How We Work",
+      "title": "From uncertain use case to measurable production system",
+      "description": "Every phase has a clear decision, deliverable and quality threshold. The process is designed to eliminate expensive architectural mistakes early.",
+      "tone": "default",
+      "width": "wide",
+      "animation": "pinned-scroll",
+      "variant": "pinned-cards",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Discovery and Model Selection",
+          "description": "We define the exact tasks, users, risks, accuracy targets, latency requirements, usage volume and data-governance constraints before selecting the model or architecture.",
+          "duration": "Week 1–2",
+          "deliverables": [
+            "Technical discovery document",
+            "Model evaluation criteria",
+            "Architecture recommendation",
+            "Fixed project scope"
+          ]
+        },
+        {
+          "number": "02",
+          "title": "Data and Retrieval Preparation",
+          "description": "For RAG, we clean, structure, chunk and index your knowledge. For fine-tuning, we curate representative training examples and build untouched evaluation datasets.",
+          "duration": "Week 2–5",
+          "deliverables": [
+            "Prepared knowledge corpus",
+            "Retrieval index",
+            "Training dataset",
+            "Evaluation dataset"
+          ]
+        },
+        {
+          "number": "03",
+          "title": "System Engineering",
+          "description": "We build the application layer, prompts, retrieval pipeline, model routing, tool integrations, output validation, rate limiting, retries, caching and observability.",
+          "duration": "Week 4–12",
+          "deliverables": [
+            "Production backend",
+            "Model orchestration",
+            "Application integrations",
+            "Monitoring foundation"
+          ]
+        },
+        {
+          "number": "04",
+          "title": "Quantitative Evaluation",
+          "description": "The system is tested against held-out scenarios using retrieval precision, task accuracy, hallucination rate, latency and cost rather than subjective approval.",
+          "duration": "Continuous",
+          "deliverables": [
+            "Evaluation report",
+            "Failure analysis",
+            "Quality benchmarks",
+            "Regression suite"
+          ]
+        },
+        {
+          "number": "05",
+          "title": "Deployment and Improvement",
+          "description": "We deploy with version tracking, production monitoring, feedback capture and regression tests that detect quality changes when models, prompts or source data change.",
+          "duration": "Launch and beyond",
+          "deliverables": [
+            "Production deployment",
+            "Operational dashboard",
+            "Technical documentation",
+            "Knowledge transfer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "production-difference",
+      "type": "stats",
+      "eyebrow": "Production Discipline",
+      "title": "Engineered around outcomes that can be measured",
+      "tone": "surface",
+      "width": "wide",
+      "animation": "stagger",
+      "variant": "floating-cards",
+      "items": [
+        {
+          "value": "100%",
+          "label": "IP ownership",
+          "description": "Your organization owns the delivered source code and project IP."
+        },
+        {
+          "value": "Fixed",
+          "label": "Project pricing",
+          "description": "Defined scope and milestones without open-ended hourly billing."
+        },
+        {
+          "value": "Multi",
+          "label": "Model architecture",
+          "description": "Provider-independent decisions where your use case benefits from flexibility."
+        },
+        {
+          "value": "Live",
+          "label": "Quality monitoring",
+          "description": "Evaluation continues after launch instead of ending at deployment."
+        }
+      ]
+    },
+    {
+      "id": "buyer-objections",
+      "type": "objections",
+      "eyebrow": "Direct Answers",
+      "title": "The questions serious buyers ask before committing",
+      "description": "No vague promises and no hidden discovery call required to understand the fundamentals.",
+      "tone": "default",
+      "width": "content",
+      "animation": "stagger",
+      "variant": "reveal-cards",
+      "items": [
+        {
+          "objection": "How much will an LLM project cost?",
+          "answer": "Focused integrations typically range from $20,000 to $50,000, RAG systems from $20,000 to $80,000, and agentic or enterprise platforms from $40,000 upward. Your agreement contains a fixed quote based on the approved scope."
+        },
+        {
+          "objection": "How long will development take?",
+          "answer": "Most single-use-case integrations and RAG systems require 6–14 weeks. Agentic workflows commonly require 12–22 weeks because tool permissions, recovery behavior and approval logic demand deeper engineering."
+        },
+        {
+          "objection": "How do you control hallucinations?",
+          "answer": "We combine retrieval grounding, source citations, confidence thresholds, structured output validation, human escalation and quantitative evaluation appropriate to the risk level of your use case."
+        },
+        {
+          "objection": "Can you meet compliance and data-residency requirements?",
+          "answer": "Yes. Compliance requirements influence the architecture from discovery. Options include controlled third-party APIs, regional cloud deployment and fully self-hosted Llama or Mistral infrastructure."
+        }
+      ]
+    },
+    {
+      "id": "rag-architecture",
+      "type": "rich-text",
+      "eyebrow": "Technical Deep Dive",
+      "title": "RAG quality is determined by architecture—not by adding a vector database",
+      "description": "Reliable retrieval requires deliberate decisions across document preparation, search, ranking, context construction and evaluation.",
+      "tone": "contrast",
+      "width": "content",
+      "animation": "mask-reveal",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "Semantic and structure-aware chunking",
+          "paragraphs": [
+            "Naive fixed-length chunking frequently separates a coherent idea across multiple chunks. We split content around semantic and structural boundaries so retrieved passages preserve the context required to answer accurately."
+          ],
+          "bullets": [
+            "Heading-aware document segmentation",
+            "Clause preservation for legal documents",
+            "Metadata retention",
+            "Configurable overlap based on document type"
+          ]
+        },
+        {
+          "heading": "Hybrid retrieval",
+          "paragraphs": [
+            "Embedding search understands concepts but may miss exact part numbers, clauses or error codes. Hybrid retrieval combines semantic search with keyword search and fuses the results to improve both conceptual and exact-match recall."
+          ]
+        },
+        {
+          "heading": "Re-ranking",
+          "paragraphs": [
+            "Initial retrieval produces candidate passages. A re-ranking layer scores those candidates against the user query before the final context is passed to the generation model, improving relevance and reducing noise."
+          ]
+        },
+        {
+          "heading": "Evaluation-driven iteration",
+          "paragraphs": [
+            "We create representative queries with known supporting sources and measure retrieval precision and recall throughout development. This exposes systematic gaps that subjective answer review normally misses."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fine-tuning-decision",
+      "type": "rich-text",
+      "eyebrow": "Honest Model Strategy",
+      "title": "Fine-tuning is powerful when the economics and data support it",
+      "tone": "default",
+      "width": "content",
+      "animation": "fade-up",
+      "layout": "two-column",
+      "blocks": [
+        {
+          "heading": "When fine-tuning is worthwhile",
+          "paragraphs": [
+            "Fine-tuning makes sense for a narrow and repeated task where prompting plus RAG has already been tested and still fails to achieve the required accuracy or consistency."
+          ],
+          "bullets": [
+            "Classification and routing",
+            "Structured information extraction",
+            "Consistent domain-specific output",
+            "Specialized tone or format",
+            "Hundreds of representative examples available"
+          ]
+        },
+        {
+          "heading": "When fine-tuning is the wrong tool",
+          "paragraphs": [
+            "General knowledge questions, rapidly changing source information and small low-quality datasets are usually better handled with prompting, retrieval or application-level logic."
+          ],
+          "bullets": [
+            "General-purpose knowledge Q&A",
+            "Frequently changing business data",
+            "Fewer than several hundred quality examples",
+            "Problems already solved reliably with RAG",
+            "Projects without an evaluation baseline"
+          ],
+          "links": [
+            {
+              "label": "Explore AI model fine-tuning",
+              "href": "/ai-model-fine-tuning-services/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "agentic-systems",
+      "type": "feature-grid",
+      "eyebrow": "Beyond Chat",
+      "title": "Agentic systems that act with explicit boundaries",
+      "description": "Production agents need more than tool calling. They require permissions, durable state, recovery behavior and human control wherever an action has real-world consequences.",
+      "tone": "surface",
+      "width": "wide",
+      "animation": "stagger",
+      "variant": "spotlight",
+      "columns": 3,
+      "items": [
+        {
+          "title": "Bounded Tool Access",
+          "description": "Every agent receives access only to explicitly approved tools and actions rather than unrestricted production access.",
+          "icon": "shield"
+        },
+        {
+          "title": "Durable Checkpoints",
+          "description": "Long-running workflows persist progress and can recover from a failure point without restarting the entire task.",
+          "icon": "layers"
+        },
+        {
+          "title": "Human Approval Gates",
+          "description": "Financial transactions, external messages, destructive changes and other sensitive actions pause for authorized approval.",
+          "icon": "workflow"
+        }
+      ]
+    },
+    {
+      "id": "cost-optimization",
+      "type": "feature-grid",
+      "eyebrow": "Efficiency at Scale",
+      "title": "Control inference cost before usage becomes expensive",
+      "description": "Cost architecture is designed during development instead of being added after monthly API usage becomes a problem.",
+      "tone": "default",
+      "width": "wide",
+      "animation": "stagger",
+      "variant": "numbered",
+      "columns": 2,
+      "items": [
+        {
+          "title": "Model Routing",
+          "description": "Simple classification and extraction tasks route to smaller models while complex reasoning uses a more capable model.",
+          "icon": "workflow",
+          "metric": "Potential 30–50% inference reduction"
+        },
+        {
+          "title": "Semantic Caching",
+          "description": "Repeated or semantically similar requests reuse verified responses when appropriate, reducing cost and improving latency.",
+          "icon": "database"
+        },
+        {
+          "title": "Context Optimization",
+          "description": "Retrieval count, prompt structure and supplied context are optimized so every request uses only the tokens required for a reliable response.",
+          "icon": "code"
+        },
+        {
+          "title": "Batch Processing",
+          "description": "Non-real-time document processing and classification workloads use batch execution where lower-cost provider options are available.",
+          "icon": "layers"
+        }
+      ]
+    },
+    {
+      "id": "industry-expertise",
+      "type": "industries",
+      "eyebrow": "Domain-Aware Engineering",
+      "title": "LLM architecture shaped around industry constraints",
+      "description": "Different industries require different decisions around context, privacy, explainability, latency and human review.",
+      "tone": "contrast",
+      "width": "wide",
+      "animation": "horizontal-reveal",
+      "variant": "interactive-list",
+      "items": [
+        {
+          "name": "Legal and Professional Services",
+          "description": "Long-context contract review, document comparison, research and due-diligence systems with source traceability.",
+          "href": "/ai-development/legal/"
+        },
+        {
+          "name": "Healthcare",
+          "description": "HIPAA-aware RAG, clinical documentation workflows, controlled PHI handling and human-reviewed clinical support.",
+          "href": "/ai-development/healthcare/"
+        },
+        {
+          "name": "Financial Services",
+          "description": "Explainable outputs, audit trails, controlled data access and compliance-aware automation.",
+          "href": "/ai-development/fintech/"
+        },
+        {
+          "name": "Retail and Ecommerce",
+          "description": "High-volume customer service, catalog intelligence and product experiences optimized around latency and cost per request.",
+          "href": "/ai-development/ecommerce/"
+        }
+      ]
+    },
+    {
+      "id": "llm-faqs",
+      "type": "faq",
+      "eyebrow": "Frequently Asked",
+      "title": "Questions about LLM development",
+      "tone": "default",
+      "width": "content",
+      "animation": "fade-up",
+      "variant": "indexed",
+      "items": [
+        {
+          "question": "What is the difference between LLM integration and fine-tuning?",
+          "answer": "LLM integration uses an existing foundation model through an API or self-hosted endpoint with prompting and often RAG. Fine-tuning changes model weights using domain examples to improve narrow repeated tasks. Most business use cases should test integration plus RAG before investing in fine-tuning."
+        },
+        {
+          "question": "Which model should we use: GPT-4, Claude, Gemini, Llama or Mistral?",
+          "answer": "The correct model depends on your task, expected volume, accuracy requirements, context size, latency target, cloud environment and data-governance constraints. ClickMasters evaluates candidate models against representative tasks instead of defaulting to one provider."
+        },
+        {
+          "question": "Can we self-host an open-weight model?",
+          "answer": "Yes. Llama and Mistral can be deployed on infrastructure you control. Self-hosting offers stronger data control and can reduce marginal cost at high usage, but it introduces GPU infrastructure and model-serving responsibilities."
+        },
+        {
+          "question": "How do you prevent company-specific hallucinations?",
+          "answer": "The primary technique is RAG grounding against your current knowledge base. Depending on risk, we also implement citations, confidence thresholds, structured output validation, human escalation and evaluation suites."
+        },
+        {
+          "question": "Do you develop AI agents that can take actions?",
+          "answer": "Yes. We build multi-step agents that call approved tools and APIs. Sensitive actions use permission boundaries, checkpoints, audit logs and human approval gates rather than unlimited autonomy."
+        },
+        {
+          "question": "How is an LLM development project priced?",
+          "answer": "Development is delivered as a fixed-price project based on an approved scope. Ongoing API usage or self-hosting infrastructure is billed separately and is not hidden inside the development fee."
+        },
+        {
+          "question": "What happens to our data when using a third-party model API?",
+          "answer": "Enterprise API configurations are selected to prevent submitted data from being used for provider model training where supported. When data cannot leave your controlled environment, we can design a self-hosted open-weight deployment."
+        },
+        {
+          "question": "How do you measure whether the system works?",
+          "answer": "We use task-specific evaluation: retrieval precision and recall for RAG, labeled task accuracy, hallucination rate, output validity, latency and cost. These benchmarks are established before launch and retained for regression testing."
+        },
+        {
+          "question": "How long does a RAG system remain accurate?",
+          "answer": "A RAG system retrieves from the live knowledge base, so it does not become stale like model training data. Its accuracy depends on keeping source documents current and automatically synchronizing document changes into the retrieval index."
+        },
+        {
+          "question": "Can you migrate an existing integration between model providers?",
+          "answer": "Yes. Provider-agnostic architecture can reduce migration cost, but prompts, evaluation and behavior still need to be re-tested because models interpret instructions differently."
+        },
+        {
+          "question": "What happens when a foundation-model provider updates its model?",
+          "answer": "Regression tests run against the established evaluation set so behavioral changes can be detected before they affect production users. Model and prompt versions should be tracked as controlled dependencies."
+        },
+        {
+          "question": "Will we receive the source code and intellectual property?",
+          "answer": "Yes. ClickMasters projects include full ownership of the custom source code and project IP defined in the agreement."
+        }
+      ]
+    },
+    {
+      "id": "vendor-evaluation",
+      "type": "rich-text",
+      "eyebrow": "Choose Carefully",
+      "title": "Questions that reveal whether an LLM vendor has shipped real production systems",
+      "tone": "surface",
+      "width": "content",
+      "animation": "mask-reveal",
+      "layout": "editorial",
+      "blocks": [
+        {
+          "heading": "Ask for architecture, not reassurance",
+          "paragraphs": [
+            "Ask the vendor to explain how hallucination would be reduced for your specific use case. A credible answer should cover grounding, retrieval quality, confidence behavior, evaluation and escalation—not simply claim that the model is highly accurate."
+          ]
+        },
+        {
+          "heading": "Ask how fine-tuning decisions are made",
+          "paragraphs": [
+            "A trustworthy vendor should be willing to recommend prompting or RAG when those approaches solve the problem more economically than fine-tuning."
+          ]
+        },
+        {
+          "heading": "Ask for concrete evaluation methodology",
+          "paragraphs": [
+            "Request details about test-set construction, task metrics, retrieval precision, hallucination measurement and regression testing. Production quality cannot be established through a handful of impressive demonstrations."
+          ]
+        },
+        {
+          "heading": "Ask what happens after a production failure",
+          "paragraphs": [
+            "Experienced teams can explain how provider updates, retrieval degradation, tool failures and unexpected outputs are detected, contained and investigated."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "consultation",
+      "type": "cta",
+      "eyebrow": "Start With Technical Clarity",
+      "heading": "Turn your LLM idea into a production architecture",
+      "text": "Bring us the task, the available data and your governance constraints. We will help determine whether your project needs integration, RAG, fine-tuning, an agentic workflow or a self-hosted model.",
+      "tone": "contrast",
+      "width": "wide",
+      "animation": "fade-scale",
+      "primaryCta": {
+        "label": "Book Your Free LLM Strategy Session",
+        "href": "/contact/"
+      },
+      "secondaryCta": {
+        "label": "Email the Engineering Team",
+        "href": "mailto:hello@clickmastersartificialintelligencecompany.com"
+      },
+      "contactEmail": "hello@clickmastersartificialintelligencecompany.com",
+      "variant": "orbital"
+    }
+  ],
+  "relatedPages": [
+    {
+      "title": "LLM Integration Services",
+      "description": "Integrate leading language models into your existing products and workflows.",
+      "href": "/llm-integration-services/"
+    },
+    {
+      "title": "RAG Development Services",
+      "description": "Build grounded AI systems over your proprietary knowledge.",
+      "href": "/rag-development-services/"
+    },
+    {
+      "title": "AI Model Fine-Tuning",
+      "description": "Adapt language models for narrow domain-specific tasks.",
+      "href": "/ai-model-fine-tuning-services/"
+    },
+    {
+      "title": "Generative AI Development",
+      "description": "Build production generative AI products and internal platforms.",
+      "href": "/generative-ai-development-company/"
+    }
+  ]
+}

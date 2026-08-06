@@ -1,4 +1,5 @@
 import { motion, useInView } from "framer-motion";
+import type { MotionValue } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
 const stats = [
@@ -8,7 +9,7 @@ const stats = [
   { k: 18, v: "Countries served" },
 ];
 
-export function StatCardSection({ bgY }: { bgY?: any }) {
+export function StatCardSection({ bgY }: { bgY?: MotionValue<number | string> }) {
   const sectionRef = useRef<HTMLDivElement>(null);
 
   const isInView = useInView(sectionRef, {
@@ -21,8 +22,10 @@ export function StatCardSection({ bgY }: { bgY?: any }) {
     let frameId: number;
 
     if (!isInView) {
-      setCounts(stats.map(() => 0));
-      return;
+      frameId = requestAnimationFrame(() => {
+        setCounts(stats.map(() => 0));
+      });
+      return () => cancelAnimationFrame(frameId);
     }
 
     const start = performance.now();
@@ -100,7 +103,7 @@ export function StatCardSection({ bgY }: { bgY?: any }) {
           transition={{ duration: 0.8, delay: 0.15 }}
           className="text-lg text-muted-foreground max-w-md"
         >
-          We're a multidisciplinary team of engineers, designers, and product
+          We&apos;re a multidisciplinary team of engineers, designers, and product
           strategists who care deeply about craft. We collaborate with ambitious
           founders and forward-thinking teams to design, build, and scale
           digital products that are fast, intuitive, visually refined, and

@@ -57,7 +57,7 @@ export function ServiceCTA({ data, className }: ServiceCTAProps) {
           >
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-sm text-white/90 text-sm font-medium mb-6 border border-white/15">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-              Let's Build Something Great Together
+              Let&apos;s Build Something Great Together
             </span>
           </motion.div>
 

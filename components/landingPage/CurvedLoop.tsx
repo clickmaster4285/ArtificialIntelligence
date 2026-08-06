@@ -106,7 +106,7 @@ const CurvedLoop: FC<CurvedLoopProps> = ({
     dirRef.current = velRef.current > 0 ? 'right' : 'left';
   };
 
-  const cursorStyle = interactive ? (dragRef.current ? 'grabbing' : 'grab') : 'auto';
+  const cursorStyle = interactive ? 'grab' : 'auto';
 
   return (
     <div

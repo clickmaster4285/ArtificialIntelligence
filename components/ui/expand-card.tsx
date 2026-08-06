@@ -2,12 +2,13 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import type { StaticImageData } from "next/image";
 
 type Item = {
   n: string;
   title: string;
   desc: string;
-  image: any;
+  image: string | StaticImageData;
 };
 
 interface Props {
