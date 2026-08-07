@@ -8,7 +8,7 @@ import {
 
 import {
   getFeaturedGlossaryTerms,
-  publishedGlossaryTerms,
+  getPublishedGlossaryTerms,
 } from "@/content/glossary";
 
 import {
@@ -187,6 +187,9 @@ export default async function GlossaryPage({
   /* ---------------------------------------------------------
      FILTER AND PAGINATE TERMS
   --------------------------------------------------------- */
+
+  const publishedGlossaryTerms =
+    getPublishedGlossaryTerms();
 
   const glossaryResults =
     queryGlossaryTerms({

@@ -30,10 +30,10 @@ interface GlossaryDetailRouteProps {
 ========================================================= */
 
 /**
- * Only glossary pages returned by generateStaticParams()
- * will be available.
+ * Allows newly added glossary JSON files to resolve during development and
+ * on-demand server rendering without touching this route file.
  */
-export const dynamicParams = false;
+export const dynamicParams = true;
 
 /* =========================================================
    HELPERS

@@ -1,0 +1,303 @@
+{
+  "slug": "vector-database",
+  "status": "published",
+  "title": "Vector Database",
+  "shortTitle": "Vector Database",
+  "abbreviation": "VDB",
+  "letter": "V",
+  "category": "Vector Database",
+  "shortDefinition": "A specialized database for storing AI embeddings to enable fast semantic similarity search.",
+  "definition": "A vector database is a specialized database designed to store and search 'embeddings' — numerical representations of text, images, or other data that capture semantic meaning — enabling fast similarity search at scale. Rather than searching for exact keyword matches, a vector database finds content that's conceptually similar to a query, which is the technology underlying RAG systems, semantic search, and recommendation engines.",
+  "introduction": "A vector database is a specialized database designed to store and search 'embeddings' — numerical representations of text, images, or other data that capture semantic meaning — enabling fast similarity search at scale. Rather than searching for exact keyword matches, a vector database finds content that's conceptually similar to a query, which is the technology underlying RAG systems, semantic search, and recommendation engines.",
+  "featured": true,
+  "aliases": [
+    "VDB",
+    "vector database",
+    "vector search engine",
+    "embedding database",
+    "similarity search engine"
+  ],
+  "readingTime": "6 min read",
+  "publishedAt": "2026-08-07",
+  "updatedAt": "2026-08-07",
+
+  "seo": {
+    "title": "What is a Vector Database? Definition & Guide",
+    "description": "A vector database stores AI embeddings for fast semantic search, powering RAG and recommendation systems. Definition, options, setup from $15K.",
+    "canonical": "/glossary/vector-database/",
+    "keywords": [
+      "what is a vector database",
+      "vector database definition",
+      "pinecone vs weaviate vs chroma",
+      "vector embeddings explained",
+      "vector database setup services"
+    ]
+  },
+
+  "sections": [
+    {
+      "id": "how-vector-databases-work",
+      "eyebrow": "Core technology",
+      "title": "How vector databases work",
+      "description": "Vector databases store and search embeddings using approximate nearest-neighbor algorithms.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Text, images, or other content is converted into embeddings — long lists of numbers representing the content's meaning in a high-dimensional mathematical space — using an embedding model. Content with similar meaning produces embeddings that are mathematically close together in that space. A vector database indexes these embeddings using algorithms designed for fast approximate nearest-neighbor search, so a query can find the most semantically relevant content among millions of items in milliseconds, rather than requiring an exhaustive comparison."
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "The key insight",
+          "text": "Vector databases don't search for exact words — they search for meaning. This is what enables semantic search, RAG, and AI-powered recommendations."
+        }
+      ]
+    },
+
+    {
+      "id": "provider-comparison",
+      "eyebrow": "Selection guide",
+      "title": "Pinecone vs. Weaviate vs. Chroma: choosing a vector database",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The major vector database options each fit different needs. Pinecone is a fully-managed cloud service requiring minimal infrastructure management, well-suited to teams wanting to move fast without operating their own database. Weaviate offers more flexibility for self-hosting and hybrid search (combining vector and keyword search). Chroma is lightweight and well-suited to smaller-scale or prototype applications, with a simpler operational footprint. The right choice depends on your scale, hosting preferences, and budget."
+        },
+        {
+          "type": "table",
+          "caption": "Vector database comparison at a glance",
+          "headers": ["Provider", "Hosting", "Best for", "Key feature"],
+          "rows": [
+            ["Pinecone", "Fully-managed cloud", "Teams wanting to move fast", "Minimal infrastructure management"],
+            ["Weaviate", "Self-hosted or cloud", "Flexibility and hybrid search", "Combines vector + keyword search"],
+            ["Chroma", "Self-hosted (lightweight)", "Small-scale / prototype apps", "Simple operational footprint"],
+            ["Qdrant", "Self-hosted or cloud", "High-performance production", "Rust-based, high throughput"]
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "clickmasters-approach",
+      "eyebrow": "ClickMasters approach",
+      "title": "How ClickMasters implements vector databases for enterprise clients",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "ClickMasters sets up production vector database infrastructure as part of RAG and semantic search builds — selecting the right provider for your scale and hosting requirements, designing an appropriate chunking and embedding strategy for your specific content, and building the ingestion pipeline that keeps the vector database current as your underlying documents change."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Provider selection based on your scale, hosting preference, and budget.",
+            "Chunking and embedding strategy design for your specific content types.",
+            "Ingestion pipeline to keep the database current as documents change.",
+            "Query optimization for performance and cost efficiency.",
+            "Monitoring and alerting for latency and accuracy degradation."
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "pricing",
+      "eyebrow": "Investment",
+      "title": "Vector database pricing",
+      "content": [
+        {
+          "type": "table",
+          "caption": "Fixed-price vector database projects from ClickMasters",
+          "headers": ["Project Type", "Price Range", "Timeline"],
+          "rows": [
+            ["Vector database setup (single data source)", "$15,000 – $35,000", "6–10 weeks"],
+            ["Multi-source vector database with hybrid search", "$30,000 – $70,000", "10–16 weeks"],
+            ["Enterprise vector infrastructure with ongoing sync", "$45,000 – $110,000", "14–20 weeks"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "success",
+          "title": "Full IP ownership",
+          "text": "All projects include full intellectual property transfer. You own everything we build."
+        }
+      ]
+    },
+
+    {
+      "id": "common-objections",
+      "eyebrow": "Direct answers",
+      "title": "Common objections, answered directly",
+      "content": [
+        {
+          "type": "bullet-list",
+          "items": [
+            "\"Which vector database should we use?\" — ClickMasters recommends the right provider based on your scale, hosting preference, and budget during Discovery, rather than defaulting to one option regardless of fit.",
+            "\"How much will this cost?\" — $15,000–$110,000 depending on data source complexity and ongoing sync requirements. Fixed quote after Discovery.",
+            "\"How do we keep the vector database current as our documents change?\" — ClickMasters builds ingestion pipelines that automatically update the vector database as source documents are added, edited, or removed, rather than requiring manual re-indexing.",
+            "\"Can we use a regular database instead?\" — Regular databases aren't optimized for semantic similarity search. For RAG or recommendation systems, a vector database is essential."
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "limitations",
+      "eyebrow": "Engineering reality",
+      "title": "Limitations and risks of vector databases",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Vector databases are powerful but have limitations. They depend entirely on the quality of the embedding model, require careful chunking strategy, can be expensive to operate at scale, and may not handle exact-match queries well without hybrid search. Indexing large datasets takes time and resources, and vector search accuracy is a tradeoff with speed."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Embedding model dependency: search quality is only as good as your embedding model.",
+            "Chunking strategy matters: poor chunking reduces retrieval relevance.",
+            "Cost: vector databases can be expensive to operate at large scale.",
+            "Performance tradeoff: approximate nearest-neighbor search trades some accuracy for speed.",
+            "Indexing time: large datasets require significant time and compute to index.",
+            "Exact matches: vector search may miss exact keyword matches without hybrid search.",
+            "Maintenance: requires ongoing monitoring for drift and performance degradation."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Important",
+          "text": "A vector database is a critical infrastructure component, not a product feature. It requires ongoing maintenance, monitoring, and periodic embedding model upgrades to maintain quality."
+        }
+      ]
+    },
+
+    {
+      "id": "best-practices",
+      "eyebrow": "Implementation guide",
+      "title": "Best practices for vector database implementation",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "A production-grade vector database requires thoughtful architecture, careful data preparation, and ongoing monitoring. The following practices can help ensure your vector database performs reliably at scale."
+        },
+        {
+          "type": "numbered-list",
+          "title": "Recommended approach:",
+          "items": [
+            "Choose the right provider for your scale and hosting requirements (Pinecone for speed, Weaviate for flexibility, Chroma for prototyping).",
+            "Design chunking strategy based on your content type (paragraphs, sentences, or semantic boundaries).",
+            "Select embedding model appropriate for your domain (OpenAI ada for general text, domain-specific models for specialized content).",
+            "Implement hybrid search (vector + keyword) for maximum recall.",
+            "Set up automated ingestion pipeline to keep the database current.",
+            "Monitor latency, recall, and precision metrics continuously.",
+            "Plan for re-indexing when you upgrade embedding models.",
+            "Implement caching for frequently-accessed vectors to reduce costs."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "Key metric",
+          "text": "Measure recall@k (how often the correct result appears in the top k results) on your production queries. This tells you if your retrieval is actually working."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "eyebrow": "Common questions",
+    "title": "Frequently asked questions about vector databases",
+    "items": [
+      {
+        "question": "Do I need a vector database, or can I use a regular database?",
+        "answer": "If your use case involves semantic similarity search (finding conceptually related content, not just exact matches), you need a vector database or vector-capable extension. Regular databases aren't built for this kind of search."
+      },
+      {
+        "question": "How is a vector database different from a regular SQL database?",
+        "answer": "A SQL database is optimized for exact matches and structured queries; a vector database is optimized for finding semantically similar content based on mathematical distance between embeddings."
+      },
+      {
+        "question": "Which embedding model should we use to generate the vectors?",
+        "answer": "This depends on your content type and the provider you're using (OpenAI, Anthropic, and open-source options via Hugging Face all offer embedding models); ClickMasters recommends the right fit during Discovery."
+      },
+      {
+        "question": "Can a vector database handle our specific data volume?",
+        "answer": "Pinecone, Weaviate, and Chroma all scale to millions of vectors; ClickMasters scopes infrastructure sizing based on your specific data volume and query throughput needs."
+      },
+      {
+        "question": "How long does a vector database setup project take?",
+        "answer": "6–20 weeks depending on data source complexity and ongoing sync requirements."
+      },
+      {
+        "question": "Is a vector database part of every RAG project, or a separate cost?",
+        "answer": "Vector database setup is typically included as part of a full RAG implementation; this page covers it as a standalone service for teams that already have the rest of their RAG pipeline built."
+      },
+      {
+        "question": "What is the difference between Pinecone, Weaviate, and Chroma?",
+        "answer": "Pinecone is a fully-managed cloud service, Weaviate offers self-hosting and hybrid search, and Chroma is lightweight for prototyping. The right choice depends on your scale, hosting preferences, and budget."
+      },
+      {
+        "question": "Can I host a vector database on my own infrastructure?",
+        "answer": "Yes — Weaviate, Chroma, and Qdrant can all be self-hosted on your own infrastructure (AWS, Azure, GCP, or on-premises), giving you full data control."
+      },
+      {
+        "question": "What is hybrid search in vector databases?",
+        "answer": "Hybrid search combines vector search (semantic similarity) with keyword search (exact matches) to maximize recall. This is especially useful when queries contain both conceptual meaning and important exact terms (like product codes)."
+      },
+      {
+        "question": "How often should we re-index our vector database?",
+        "answer": "This depends on how often your source content changes. For frequently updated content (e.g., support tickets, news), you need continuous or daily sync. For stable content, re-indexing on change or periodically is sufficient."
+      }
+    ]
+  },
+
+  "relatedTerms": [
+    "retrieval-augmented-generation",
+    "embeddings",
+    "semantic-search",
+    "hybrid-search",
+    "large-language-model",
+    "reranking"
+  ],
+
+  "references": [
+    {
+      "label": "Approximate Nearest Neighbor Search (ANN) Algorithms Survey",
+      "href": "https://arxiv.org/abs/2002.01852",
+      "publisher": "arXiv"
+    },
+    {
+      "label": "Pinecone Documentation — Vector Database for AI",
+      "href": "https://docs.pinecone.io/",
+      "publisher": "Pinecone"
+    }
+  ],
+
+  "additionalResources": [
+    {
+      "label": "RAG Development Services at ClickMasters",
+      "href": "/rag-development-services/"
+    },
+    {
+      "label": "AI Recommendation Engine Development",
+      "href": "/ai-recommendation-engine-development/"
+    },
+    {
+      "label": "What is RAG? (Retrieval-Augmented Generation)",
+      "href": "/glossary/rag-retrieval-augmented-generation/"
+    }
+  ],
+
+  "cta": {
+    "eyebrow": "Ready to set up your vector database?",
+    "title": "Get a free vector database consultation — 24-hour response",
+    "description": "ClickMasters builds production vector database infrastructure for RAG, semantic search, and recommendation systems. From $15,000. Fixed-price. Full IP. 24-hour response.",
+    "primaryLink": {
+      "label": "Book your free consultation",
+      "href": "/contact"
+    },
+    "secondaryLink": {
+      "label": "Get your free project estimate",
+      "href": "/contact"
+    }
+  }
+}

@@ -29,6 +29,7 @@ import type {
 import { cn } from "@/lib/utils";
 
 import { GlossaryBackground } from "../shared/GlossaryBackground";
+import { GlossaryGradientText } from "../shared/GlossaryGradientText";
 
 /* =========================================================
    TYPES
@@ -373,44 +374,82 @@ export function GlossaryDetailHero({
             </motion.div>
 
             {/* Title */}
-            <motion.h1
-              initial={
-                reduceMotion
-                  ? false
-                  : {
-                      opacity: 0,
-                      y: 32,
-                      filter:
-                        "blur(14px)",
-                    }
-              }
-              animate={{
-                opacity: 1,
-                y: 0,
-                filter: "blur(0px)",
-              }}
-              transition={{
-                duration: 0.9,
-                delay: 0.14,
-                ease: [
-                  0.22,
-                  1,
-                  0.36,
-                  1,
-                ],
-              }}
-              className={cn(
-                "mt-5",
-                "max-w-[1050px]",
-                "text-[clamp(3rem,7vw,7.4rem)]",
-                "font-semibold",
-                "leading-[0.88]",
-                "tracking-[-0.07em]",
-                "text-white",
-              )}
-            >
-              {term.title}
-            </motion.h1>
+            <div className="relative mt-5">
+              <motion.div
+                aria-hidden="true"
+                className={cn(
+                  "pointer-events-none",
+                  "absolute -left-8 top-1/2",
+                  "h-40 w-[min(42rem,90vw)]",
+                  "-translate-y-1/2",
+                  "rounded-full",
+                  "bg-[radial-gradient(ellipse_at_center,rgba(168,85,247,0.2),rgba(34,211,238,0.08)_42%,transparent_72%)]",
+                  "blur-3xl",
+                )}
+                animate={
+                  reduceMotion
+                    ? undefined
+                    : {
+                        opacity: [
+                          0.42,
+                          0.72,
+                          0.42,
+                        ],
+                        scale: [
+                          0.98,
+                          1.04,
+                          0.98,
+                        ],
+                      }
+                }
+                transition={{
+                  duration: 7,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+              />
+
+              <motion.h1
+                initial={
+                  reduceMotion
+                    ? false
+                    : {
+                        opacity: 0,
+                        y: 32,
+                        filter:
+                          "blur(14px)",
+                      }
+                }
+                animate={{
+                  opacity: 1,
+                  y: 0,
+                  filter: "blur(0px)",
+                }}
+                transition={{
+                  duration: 0.9,
+                  delay: 0.14,
+                  ease: [
+                    0.22,
+                    1,
+                    0.36,
+                    1,
+                  ],
+                }}
+                className={cn(
+                  "relative",
+                  "max-w-[1050px]",
+                  "text-[clamp(3rem,7vw,7.4rem)]",
+                  "font-semibold",
+                  "leading-[0.9]",
+                  "text-white",
+                )}
+              >
+                <GlossaryGradientText
+                  text={term.title}
+                  highlightWordCount={2}
+                />
+              </motion.h1>
+            </div>
 
             {/* Introduction */}
             {term.introduction && (
@@ -481,10 +520,10 @@ export function GlossaryDetailHero({
               "relative",
               "overflow-hidden",
               "rounded-3xl",
-              "border border-white/[0.09]",
-              "bg-white/[0.03]",
+                "border border-white/[0.09]",
+              "bg-[linear-gradient(145deg,rgba(255,255,255,0.055),rgba(139,92,246,0.045)_48%,rgba(34,211,238,0.035))]",
               "p-5",
-              "shadow-[0_30px_100px_-55px_rgba(139,92,246,0.7)]",
+              "shadow-[0_34px_110px_-52px_rgba(139,92,246,0.9)]",
               "backdrop-blur-2xl",
             )}
           >
@@ -495,9 +534,35 @@ export function GlossaryDetailHero({
                 "absolute -right-16 -top-16",
                 "h-40 w-40",
                 "rounded-full",
-                "bg-violet-500/15",
+                "bg-fuchsia-400/18",
                 "blur-[65px]",
               )}
+            />
+
+            <motion.div
+              aria-hidden="true"
+              className={cn(
+                "pointer-events-none",
+                "absolute inset-x-6 top-0",
+                "h-px",
+                "bg-gradient-to-r from-transparent via-fuchsia-300 to-transparent",
+              )}
+              animate={
+                reduceMotion
+                  ? undefined
+                  : {
+                      opacity: [
+                        0.35,
+                        0.95,
+                        0.35,
+                      ],
+                    }
+              }
+              transition={{
+                duration: 4.8,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
             />
 
             <span

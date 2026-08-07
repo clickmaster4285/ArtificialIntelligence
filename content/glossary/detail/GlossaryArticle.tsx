@@ -12,6 +12,7 @@ import type {
 import { cn } from "@/lib/utils";
 
 import { GlossaryContentRenderer } from "./GlossaryContentRenderer";
+import { GlossaryGradientText } from "../shared/GlossaryGradientText";
 
 /* =========================================================
    TYPES
@@ -76,7 +77,7 @@ function ArticleSection({
       )}
     >
       {/* Vertical section line */}
-      <div
+      <motion.div
         aria-hidden="true"
         className={cn(
           "pointer-events-none",
@@ -88,6 +89,22 @@ function ArticleSection({
           "to-transparent",
           "lg:block",
         )}
+        animate={
+          reduceMotion
+            ? undefined
+            : {
+                opacity: [
+                  0.45,
+                  1,
+                  0.45,
+                ],
+              }
+        }
+        transition={{
+          duration: 5.5,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
       />
 
       {/* Section heading */}
@@ -140,12 +157,14 @@ function ArticleSection({
             "max-w-[850px]",
             "text-[clamp(2rem,4vw,4rem)]",
             "font-semibold",
-            "leading-[1]",
-            "tracking-[-0.05em]",
+            "leading-[1.02]",
             "text-white",
           )}
         >
-          {section.title}
+          <GlossaryGradientText
+            text={section.title}
+            highlightWordCount={2}
+          />
         </h2>
 
         {section.description && (

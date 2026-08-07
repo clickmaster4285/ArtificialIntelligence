@@ -1,41 +1,79 @@
+import "server-only";
+
+import {
+  readdirSync,
+  readFileSync,
+} from "node:fs";
+
+import {
+  join,
+} from "node:path";
+
 import type {
   GlossaryCardData,
   GlossaryCategory,
   GlossaryTerm,
 } from "@/types/glossary";
 
-import retrievalAugmentedGenerationData from "./terms/retrieval-augmented-generation.json";
-
 /* =========================================================
    RAW GLOSSARY DATA
 ========================================================= */
 
-/**
- * Har naye glossary JSON ko:
- *
- * 1. Is file ke top par import karo.
- * 2. Neeche glossaryTerms array mein add karo.
- */
+const glossaryTermsDirectory = join(
+  process.cwd(),
+  "content",
+  "glossary",
+  "terms",
+);
 
-const rawGlossaryTerms = [
-  retrievalAugmentedGenerationData,
-];
+function readGlossaryTermFiles(): GlossaryTerm[] {
+  return readdirSync(
+    glossaryTermsDirectory,
+  )
+    .filter((fileName) =>
+      fileName.endsWith(".json"),
+    )
+    .sort((firstFile, secondFile) =>
+      firstFile.localeCompare(
+        secondFile,
+        "en",
+        {
+          sensitivity: "base",
+        },
+      ),
+    )
+    .map((fileName) => {
+      const filePath = join(
+        glossaryTermsDirectory,
+        fileName,
+      );
+
+      const fileContents =
+        readFileSync(
+          filePath,
+          "utf8",
+        );
+
+      return JSON.parse(
+        fileContents,
+      ) as GlossaryTerm;
+    });
+}
 
 /* =========================================================
    NORMALIZED GLOSSARY TERMS
 ========================================================= */
 
-export const glossaryTerms: GlossaryTerm[] =
-  rawGlossaryTerms.map(
-    (term) => term as GlossaryTerm,
-  );
+export function getGlossaryTerms(): GlossaryTerm[] {
+  return readGlossaryTermFiles();
+}
 
 /* =========================================================
    PUBLISHED TERMS
 ========================================================= */
 
-export const publishedGlossaryTerms =
-  glossaryTerms
+export function getPublishedGlossaryTerms(): GlossaryTerm[] {
+  return getGlossaryTerms()
     .filter(
       (term) =>
         term.status === "published",
@@ -49,26 +87,28 @@ export const publishedGlossaryTerms =
         },
       ),
     );
+}
 
 /* =========================================================
    TERM MAP
 ========================================================= */
 
 /**
- * Map gives fast slug lookup:
- *
- * glossaryTermMap.get("vector-database")
+ * Map gives fast slug lookup for the current terms folder.
  */
 
-export const glossaryTermMap = new Map<
-  string,
-  GlossaryTerm
->(
-  publishedGlossaryTerms.map((term) => [
-    term.slug,
-    term,
-  ]),
-);
+function getGlossaryTermMap() {
+  return new Map<string, GlossaryTerm>(
+    getPublishedGlossaryTerms().map(
+      (term) => [
+        normalizeGlossarySlug(
+          term.slug,
+        ),
+        term,
+      ],
+    ),
+  );
+}
 
 /* =========================================================
    HELPERS
@@ -95,7 +135,7 @@ export function getGlossaryTermBySlug(
   const normalizedSlug =
     normalizeGlossarySlug(slug);
 
-  return glossaryTermMap.get(
+  return getGlossaryTermMap().get(
     normalizedSlug,
   );
 }
@@ -104,7 +144,7 @@ export function getGlossaryTermBySlug(
  * Get slugs for generateStaticParams().
  */
 export function getAllGlossarySlugs(): string[] {
-  return publishedGlossaryTerms.map(
+  return getPublishedGlossaryTerms().map(
     (term) => term.slug,
   );
 }
@@ -133,7 +173,7 @@ export function getGlossaryCardData(
  * All published terms formatted for cards.
  */
 export function getAllGlossaryCards(): GlossaryCardData[] {
-  return publishedGlossaryTerms.map(
+  return getPublishedGlossaryTerms().map(
     getGlossaryCardData,
   );
 }
@@ -142,7 +182,7 @@ export function getAllGlossaryCards(): GlossaryCardData[] {
  * Featured glossary cards.
  */
 export function getFeaturedGlossaryTerms(): GlossaryCardData[] {
-  return publishedGlossaryTerms
+  return getPublishedGlossaryTerms()
     .filter((term) => term.featured)
     .map(getGlossaryCardData);
 }
@@ -156,7 +196,7 @@ export function getGlossaryTermsByLetter(
   const normalizedLetter =
     letter.trim().toUpperCase();
 
-  return publishedGlossaryTerms.filter(
+  return getPublishedGlossaryTerms().filter(
     (term) =>
       term.letter.toUpperCase() ===
       normalizedLetter,
@@ -169,7 +209,7 @@ export function getGlossaryTermsByLetter(
 export function getGlossaryTermsByCategory(
   category: GlossaryCategory,
 ): GlossaryTerm[] {
-  return publishedGlossaryTerms.filter(
+  return getPublishedGlossaryTerms().filter(
     (term) =>
       term.category === category,
   );
@@ -182,7 +222,7 @@ export function getGlossaryTermsByCategory(
 export function getAvailableGlossaryCategories(): GlossaryCategory[] {
   return Array.from(
     new Set(
-      publishedGlossaryTerms.map(
+      getPublishedGlossaryTerms().map(
         (term) => term.category,
       ),
     ),
@@ -235,8 +275,11 @@ export function getAdjacentGlossaryTerms(
       currentSlug,
     );
 
+  const publishedTerms =
+    getPublishedGlossaryTerms();
+
   const currentIndex =
-    publishedGlossaryTerms.findIndex(
+    publishedTerms.findIndex(
       (term) =>
         term.slug === normalizedSlug,
     );
@@ -246,12 +289,12 @@ export function getAdjacentGlossaryTerms(
   }
 
   const previousTerm =
-    publishedGlossaryTerms[
+    publishedTerms[
       currentIndex - 1
     ];
 
   const nextTerm =
-    publishedGlossaryTerms[
+    publishedTerms[
       currentIndex + 1
     ];
 
@@ -285,7 +328,7 @@ function validateGlossaryTerms(): void {
 
   const usedSlugs = new Set<string>();
 
-  for (const term of glossaryTerms) {
+  for (const term of getGlossaryTerms()) {
     const normalizedSlug =
       normalizeGlossarySlug(term.slug);
 
