@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/landingPage/Navbar";
+import { GlobalLeadForm } from "@/components/landingPage/GlobalLeadForm";
 import { HugeFooter } from "@/components/landingPage/HugeFooter";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -37,6 +38,9 @@ export default function RootLayout({
         <main className="flex-grow pt-20">
           {children}
         </main>
+
+        {/* Global lead form - Appears before footer on every page */}
+        <GlobalLeadForm />
 
         {/* Footer - Always at bottom */}
         <HugeFooter />

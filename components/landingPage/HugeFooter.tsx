@@ -132,7 +132,7 @@ export function HugeFooter() {
                 <div className="mt-6 flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
                   <span className="text-xs text-muted-foreground">
-                    Available for Q2 2026 partnerships
+                    Available for Q4 2026 partnerships
                   </span>
                 </div>
               </div>
