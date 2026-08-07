@@ -18,6 +18,14 @@ import { getAllFinTechAICityPageSlugs } from '@/data/fintech-ai-city-pages-data'
 import { getAllPropTechAICityPageSlugs } from '@/data/proptech-ai-city-pages-data';
 import { getAllInsuranceAICityPageSlugs } from '@/data/insurance-ai-city-pages-data';
 import { getAllLegalTechAICityPageSlugs } from '@/data/legaltech-ai-city-pages-data';
+import { getAllRetailAICityPageSlugs } from '@/data/retail-ai-city-pages-data';
+import { getAllRealEstateAICityPageSlugs } from '@/data/real-estate-ai-city-pages-data';
+import { getAllEdTechAICityPageSlugs } from '@/data/edtech-ai-city-pages-data';
+import { getAllLogisticsAICityPageSlugs } from '@/data/logistics-ai-city-pages-data';
+import { getAllLegalAICityPageSlugs } from '@/data/legal-ai-city-pages-data';
+import { getAllEcommerceAICityPageSlugs } from '@/data/ecommerce-ai-city-pages-data';
+import { getAllManufacturingAICityPageSlugs } from '@/data/manufacturing-ai-city-pages-data';
+import { getAllHRAICityPageSlugs } from '@/data/hr-ai-city-pages-data';
 
 // ============================================
 // SERVICE SUBPAGES DATA
@@ -31,9 +39,9 @@ type ServiceSubPage = {
   description?: string;
 };
 
-// AI Development subpages (all services except healthcare, chatbot, media, fintech, proptech, insurance, legaltech)
+// AI Development subpages (all services except healthcare, chatbot, media, fintech, proptech, insurance, legaltech, retail, real-estate, edtech, logistics, legal, ecommerce, manufacturing, hr)
 const aiDevelopmentSubPages: ServiceSubPage[] = serviceNavigationItems
-  .filter(item => item.slug !== 'healthcare' && item.slug !== 'chatbot' && item.slug !== 'media' && item.slug !== 'fintech' && item.slug !== 'proptech' && item.slug !== 'insurance' && item.slug !== 'legaltech')
+  .filter(item => item.slug !== 'healthcare' && item.slug !== 'chatbot' && item.slug !== 'media' && item.slug !== 'fintech' && item.slug !== 'proptech' && item.slug !== 'insurance' && item.slug !== 'legaltech' && item.slug !== 'retail' && item.slug !== 'real-estate' && item.slug !== 'edtech' && item.slug !== 'logistics' && item.slug !== 'legal' && item.slug !== 'ecommerce' && item.slug !== 'manufacturing' && item.slug !== 'hr')
   .map(item => ({
     slug: item.slug,
     title: item.title,
@@ -137,6 +145,110 @@ const legaltechSubPages: ServiceSubPage[] = legaltechSlugs.map((slug) => {
     title: cityName,
     icon: getLegalTechCityIcon(slug),
     path: `/ai-development/legaltech/${citySlug}`,
+  };
+});
+
+// Retail AI city subpages
+const retailSlugs = getAllRetailAICityPageSlugs().filter(slug => slug !== 'retail');
+const retailSubPages: ServiceSubPage[] = retailSlugs.map((slug) => {
+  const citySlug = slug.replace('retail-', '');
+  const cityName = citySlug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+  return {
+    slug: slug,
+    title: cityName,
+    icon: getRetailCityIcon(slug),
+    path: `/ai-development/retail/${citySlug}`,
+  };
+});
+
+// Real Estate AI city subpages
+const realEstateSlugs = getAllRealEstateAICityPageSlugs().filter(slug => slug !== 'real-estate');
+const realEstateSubPages: ServiceSubPage[] = realEstateSlugs.map((slug) => {
+  const citySlug = slug.replace('real-estate-', '');
+  const cityName = citySlug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+  return {
+    slug: slug,
+    title: cityName,
+    icon: getRealEstateCityIcon(slug),
+    path: `/ai-development/real-estate/${citySlug}`,
+  };
+});
+
+// EdTech AI city subpages
+const edtechSlugs = getAllEdTechAICityPageSlugs();
+const edtechSubPages: ServiceSubPage[] = edtechSlugs.map((slug) => {
+  const citySlug = slug.replace('edtech-', '');
+  const cityName = citySlug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+  return {
+    slug: slug,
+    title: cityName,
+    icon: getEdTechCityIcon(slug),
+    path: `/ai-development/edtech/${citySlug}`,
+  };
+});
+
+// Logistics AI city subpages
+const logisticsSlugs = getAllLogisticsAICityPageSlugs().filter(slug => slug !== 'logistics');
+const logisticsSubPages: ServiceSubPage[] = logisticsSlugs.map((slug) => {
+  const citySlug = slug.replace('logistics-', '');
+  const cityName = citySlug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+  return {
+    slug: slug,
+    title: cityName,
+    icon: getLogisticsCityIcon(slug),
+    path: `/ai-development/logistics/${citySlug}`,
+  };
+});
+
+// Legal AI city subpages
+const legalSlugs = getAllLegalAICityPageSlugs().filter(slug => slug !== 'legal');
+const legalSubPages: ServiceSubPage[] = legalSlugs.map((slug) => {
+  const citySlug = slug.replace('legal-', '');
+  const cityName = citySlug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+  return {
+    slug: slug,
+    title: cityName,
+    icon: getLegalCityIcon(slug),
+    path: `/ai-development/legal/${citySlug}`,
+  };
+});
+
+// Ecommerce AI city subpages
+const ecommerceSlugs = getAllEcommerceAICityPageSlugs().filter(slug => slug !== 'ecommerce');
+const ecommerceSubPages: ServiceSubPage[] = ecommerceSlugs.map((slug) => {
+  const citySlug = slug.replace('ecommerce-', '');
+  const cityName = citySlug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+  return {
+    slug: slug,
+    title: cityName,
+    icon: getEcommerceCityIcon(slug),
+    path: `/ai-development/ecommerce/${citySlug}`,
+  };
+});
+
+// Manufacturing AI city subpages
+const manufacturingSlugs = getAllManufacturingAICityPageSlugs().filter(slug => slug !== 'manufacturing');
+const manufacturingSubPages: ServiceSubPage[] = manufacturingSlugs.map((slug) => {
+  const citySlug = slug.replace('manufacturing-', '');
+  const cityName = citySlug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+  return {
+    slug: slug,
+    title: cityName,
+    icon: getManufacturingCityIcon(slug),
+    path: `/ai-development/manufacturing/${citySlug}`,
+  };
+});
+
+// HR AI city subpages
+const hrSlugs = getAllHRAICityPageSlugs().filter(slug => slug !== 'hr-technology');
+const hrSubPages: ServiceSubPage[] = hrSlugs.map((slug) => {
+  const citySlug = slug.replace('hr-', '');
+  const cityName = citySlug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+  return {
+    slug: slug,
+    title: cityName,
+    icon: getHRCityIcon(slug),
+    path: `/ai-development/hr/${citySlug}`,
   };
 });
 
@@ -280,6 +392,171 @@ function getLegalTechCityIcon(slug: string): string {
   return icons[slug] || '⚖️';
 }
 
+function getRetailCityIcon(slug: string): string {
+  const icons: Record<string, string> = {
+    'retail-dallas': '⭐',
+  };
+  return icons[slug] || '🛍️';
+}
+
+function getRealEstateCityIcon(slug: string): string {
+  const icons: Record<string, string> = {
+    'real-estate-austin': '🤠',
+  };
+  return icons[slug] || '🏡';
+}
+
+function getEdTechCityIcon(slug: string): string {
+  const icons: Record<string, string> = {
+    'edtech-boston': '🏛️',
+    'edtech-new-york': '🗽',
+    'edtech-austin': '🤠',
+    'edtech-chicago': '🌆',
+    'edtech-los-angeles': '🎬',
+    'edtech-dallas': '⭐',
+    'edtech-houston': '🚀',
+    'edtech-atlanta': '🍑',
+    'edtech-phoenix': '🌵',
+    'edtech-charlotte': '🏦',
+    'edtech-columbus': '🏙️',
+    'edtech-orlando': '🎢',
+    'edtech-toronto': '🍁',
+    'edtech-vancouver': '🌊',
+    'edtech-montreal': '⚜️',
+    'edtech-calgary': '⛰️',
+    'edtech-seattle': '☕',
+    'edtech-denver': '🏔️',
+    'edtech-miami': '🌴',
+    'edtech-washington-dc': '🏛️',
+  };
+  return icons[slug] || '🎓';
+}
+
+function getLogisticsCityIcon(slug: string): string {
+  const icons: Record<string, string> = {
+    'logistics-atlanta': '🍑',
+    'logistics-austin': '🤠',
+    'logistics-boston': '🏛️',
+    'logistics-calgary': '⛰️',
+    'logistics-chicago': '🌆',
+    'logistics-dallas': '⭐',
+    'logistics-denver': '🏔️',
+    'logistics-houston': '🚀',
+    'logistics-los-angeles': '🎬',
+    'logistics-miami': '🌴',
+    'logistics-montreal': '⚜️',
+    'logistics-new-york': '🗽',
+    'logistics-phoenix': '🌵',
+    'logistics-san-francisco': '🌉',
+    'logistics-seattle': '☕',
+    'logistics-toronto': '🍁',
+    'logistics-vancouver': '🌊',
+    'logistics-washington-dc': '🏛️',
+  };
+  return icons[slug] || '🚚';
+}
+
+function getLegalCityIcon(slug: string): string {
+  const icons: Record<string, string> = {
+    'legal-atlanta': '🍑',
+    'legal-austin': '🤠',
+    'legal-boston': '🏛️',
+    'legal-calgary': '⛰️',
+    'legal-charlotte': '🏦',
+    'legal-columbus': '🏙️',
+    'legal-dallas': '⭐',
+    'legal-denver': '🏔️',
+    'legal-houston': '🚀',
+    'legal-los-angeles': '🎬',
+    'legal-miami': '🌴',
+    'legal-montreal': '⚜️',
+    'legal-new-york': '🗽',
+    'legal-phoenix': '🌵',
+    'legal-san-francisco': '🌉',
+    'legal-seattle': '☕',
+    'legal-toronto': '🍁',
+    'legal-vancouver': '🌊',
+    'legal-washington-dc': '🏛️',
+  };
+  return icons[slug] || '⚖️';
+}
+
+function getEcommerceCityIcon(slug: string): string {
+  const icons: Record<string, string> = {
+    'ecommerce-atlanta': '🍑',
+    'ecommerce-austin': '🤠',
+    'ecommerce-boston': '🏛️',
+    'ecommerce-calgary': '⛰️',
+    'ecommerce-chicago': '🌆',
+    'ecommerce-dallas': '⭐',
+    'ecommerce-denver': '🏔️',
+    'ecommerce-houston': '🚀',
+    'ecommerce-los-angeles': '🎬',
+    'ecommerce-miami': '🌴',
+    'ecommerce-montreal': '⚜️',
+    'ecommerce-new-york': '🗽',
+    'ecommerce-phoenix': '🌵',
+    'ecommerce-san-francisco': '🌉',
+    'ecommerce-seattle': '☕',
+    'ecommerce-toronto': '🍁',
+    'ecommerce-vancouver': '🌊',
+    'ecommerce-washington-dc': '🏛️',
+  };
+  return icons[slug] || '🛒';
+}
+
+function getManufacturingCityIcon(slug: string): string {
+  const icons: Record<string, string> = {
+    'manufacturing-atlanta': '🍑',
+    'manufacturing-austin': '🤠',
+    'manufacturing-boston': '🏛️',
+    'manufacturing-calgary': '⛰️',
+    'manufacturing-charlotte': '🏦',
+    'manufacturing-chicago': '🌆',
+    'manufacturing-cincinnati': '🏙️',
+    'manufacturing-dallas': '⭐',
+    'manufacturing-denver': '🏔️',
+    'manufacturing-detroit': '🚗',
+    'manufacturing-houston': '🚀',
+    'manufacturing-los-angeles': '🎬',
+    'manufacturing-miami': '🌴',
+    'manufacturing-montreal': '⚜️',
+    'manufacturing-new-york': '🗽',
+    'manufacturing-phoenix': '🌵',
+    'manufacturing-san-francisco': '🌉',
+    'manufacturing-seattle': '☕',
+    'manufacturing-toronto': '🍁',
+    'manufacturing-vancouver': '🌊',
+    'manufacturing-washington-dc': '🏛️',
+  };
+  return icons[slug] || '🏭';
+}
+
+function getHRCityIcon(slug: string): string {
+  const icons: Record<string, string> = {
+    'hr-atlanta': '🍑',
+    'hr-boston': '🏛️',
+    'hr-calgary': '⛰️',
+    'hr-charlotte': '🏦',
+    'hr-chicago': '🌆',
+    'hr-columbus': '🏙️',
+    'hr-dallas': '⭐',
+    'hr-denver': '🏔️',
+    'hr-houston': '🚀',
+    'hr-los-angeles': '🎬',
+    'hr-miami': '🌴',
+    'hr-montreal': '⚜️',
+    'hr-new-york': '🗽',
+    'hr-phoenix': '🌵',
+    'hr-san-francisco': '🌉',
+    'hr-seattle': '☕',
+    'hr-toronto': '🍁',
+    'hr-vancouver': '🌊',
+    'hr-washington-dc': '🏛️',
+  };
+  return icons[slug] || '👔';
+}
+
 // Main navigation items (left side)
 const mainNavItems = [
   {
@@ -361,6 +638,86 @@ const mainNavItems = [
     isMain: false,
     badge: `${legaltechSubPages.length} cities`,
   },
+  {
+    slug: 'retail',
+    title: 'Retail AI',
+    description: 'Demand forecasting, personalization, inventory optimization',
+    icon: '🛍️',
+    path: '/ai-development/retail',
+    subPages: retailSubPages,
+    isMain: false,
+    badge: `${retailSubPages.length} cities`,
+  },
+  {
+    slug: 'real-estate',
+    title: 'Real Estate AI',
+    description: 'Property valuation, lead scoring, PropTech solutions',
+    icon: '🏡',
+    path: '/ai-development/real-estate',
+    subPages: realEstateSubPages,
+    isMain: false,
+    badge: `${realEstateSubPages.length} cities`,
+  },
+  {
+    slug: 'edtech',
+    title: 'EdTech AI',
+    description: 'Adaptive learning, student support, assessment AI',
+    icon: '🎓',
+    path: '/ai-development/edtech',
+    subPages: edtechSubPages,
+    isMain: false,
+    badge: `${edtechSubPages.length} cities`,
+  },
+  {
+    slug: 'logistics',
+    title: 'Logistics AI',
+    description: 'Route optimization, demand forecasting, warehouse AI',
+    icon: '🚚',
+    path: '/ai-development/logistics',
+    subPages: logisticsSubPages,
+    isMain: false,
+    badge: `${logisticsSubPages.length} cities`,
+  },
+  {
+    slug: 'legal',
+    title: 'Legal AI',
+    description: 'Contract analysis, legal research, e-discovery',
+    icon: '⚖️',
+    path: '/ai-development/legal',
+    subPages: legalSubPages,
+    isMain: false,
+    badge: `${legalSubPages.length} cities`,
+  },
+  {
+    slug: 'ecommerce',
+    title: 'Ecommerce AI',
+    description: 'Recommendation engines, personalization, demand forecasting',
+    icon: '🛒',
+    path: '/ai-development/ecommerce',
+    subPages: ecommerceSubPages,
+    isMain: false,
+    badge: `${ecommerceSubPages.length} cities`,
+  },
+  {
+    slug: 'manufacturing',
+    title: 'Manufacturing AI',
+    description: 'Defect detection, predictive maintenance, process optimization',
+    icon: '🏭',
+    path: '/ai-development/manufacturing',
+    subPages: manufacturingSubPages,
+    isMain: false,
+    badge: `${manufacturingSubPages.length} cities`,
+  },
+  {
+    slug: 'hr',
+    title: 'HR AI',
+    description: 'Candidate screening, attrition prediction, workforce analytics',
+    icon: '👔',
+    path: '/ai-development/hr',
+    subPages: hrSubPages,
+    isMain: false,
+    badge: `${hrSubPages.length} cities`,
+  },
 ];
 
 export function ServiceDropdownNav() {
@@ -389,7 +746,23 @@ export function ServiceDropdownNav() {
 
   // Set active item based on pathname
   useEffect(() => {
-    if (pathname?.startsWith('/ai-development/legaltech')) {
+    if (pathname?.startsWith('/ai-development/hr')) {
+      setActiveItem('hr');
+    } else if (pathname?.startsWith('/ai-development/manufacturing')) {
+      setActiveItem('manufacturing');
+    } else if (pathname?.startsWith('/ai-development/ecommerce')) {
+      setActiveItem('ecommerce');
+    } else if (pathname?.startsWith('/ai-development/legal')) {
+      setActiveItem('legal');
+    } else if (pathname?.startsWith('/ai-development/logistics')) {
+      setActiveItem('logistics');
+    } else if (pathname?.startsWith('/ai-development/edtech')) {
+      setActiveItem('edtech');
+    } else if (pathname?.startsWith('/ai-development/real-estate')) {
+      setActiveItem('real-estate');
+    } else if (pathname?.startsWith('/ai-development/retail')) {
+      setActiveItem('retail');
+    } else if (pathname?.startsWith('/ai-development/legaltech')) {
       setActiveItem('legaltech');
     } else if (pathname?.startsWith('/ai-development/insurance')) {
       setActiveItem('insurance');
@@ -509,7 +882,7 @@ export function ServiceDropdownNav() {
                 <>
                   <div className="flex items-center justify-between mb-3">
                     <div className="text-xs font-semibold text-white/40 uppercase tracking-wider">
-                      {activeData.title}  Subpages
+                      {activeData.title} — Subpages
                     </div>
                     <span className="text-[10px] text-violet-400 font-semibold">
                       {activeData.subPages.length} items

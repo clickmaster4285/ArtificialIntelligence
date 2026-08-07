@@ -52,31 +52,6 @@ export default function LegalTechMainPage() {
         stats={pageData.overview.stats}
       />
 
-      {/* City Grid Section */}
-      <section className="py-16 bg-white dark:bg-gray-950">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">LegalTech AI by City</h2>
-          <p className="text-center text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-12">
-            ClickMasters serves legal tech startups across the United States with AI-native products calibrated to local market dynamics and buyer expectations.
-          </p>
-          
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-            {cities.map((city) => {
-              const slug = city.toLowerCase().replace(/\s+/g, '-');
-              return (
-                <Link
-                  key={city}
-                  href={`/ai-development/legaltech/${slug}/`}
-                  className="bg-gray-50 dark:bg-gray-900 hover:bg-gray-100 dark:hover:bg-gray-800 border border-gray-200 dark:border-gray-800 rounded-lg p-4 text-center transition-all hover:shadow-md"
-                >
-                  <span className="text-gray-800 dark:text-gray-200 font-medium">{city}</span>
-                </Link>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
       <StatsSection
         title="LegalTech AI by the Numbers"
         stats={pageData.overview.stats ?? []}

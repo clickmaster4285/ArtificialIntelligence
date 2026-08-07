@@ -111,7 +111,7 @@ export const OverviewSection: React.FC<OverviewSectionProps> = ({
           className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-start"
         >
           {/* LEFT: Content */}
-          <motion.div variants={itemVariants} className="relative">
+          <motion.div variants={itemVariants} className="relative lg:pl-48 lg:pr-4">
             
             {/* Eyebrow Line */}
             <motion.div 
@@ -163,7 +163,7 @@ export const OverviewSection: React.FC<OverviewSectionProps> = ({
               variants={containerVariants}
               initial="hidden"
               animate={isInView ? "visible" : "hidden"}
-              className="grid grid-cols-1 gap-6"
+              className="grid grid-cols-2 gap-4 lg:pr-48"
             >
               {stats.map((stat, index) => (
                 <motion.div
@@ -171,27 +171,29 @@ export const OverviewSection: React.FC<OverviewSectionProps> = ({
                   custom={index}
                   variants={cardVariants}
                   whileHover={{ 
-                    y: -8, 
+                    y: -6, 
                     transition: { duration: 0.2 } 
                   }}
-                  className="group relative p-8 rounded-2xl border border-white/5 bg-gradient-to-br from-white/[0.05] via-white/[0.02] to-transparent backdrop-blur-md hover:border-violet-500/40 transition-all duration-500"
+                  className={`group relative p-5 rounded-xl border border-white/5 bg-gradient-to-br from-white/[0.05] via-white/[0.02] to-transparent backdrop-blur-md hover:border-violet-500/40 transition-all duration-500 ${
+                    stat.description ? 'col-span-2' : ''
+                  }`}
                 >
                   {/* Inner glowing overlay on hover */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-violet-600/10 to-fuchsia-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl pointer-events-none" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-violet-600/10 to-fuchsia-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl pointer-events-none" />
                   
-                  <div className="relative z-10 flex items-start justify-between">
-                    <div className="space-y-1">
+                  <div className="relative z-10 flex items-start justify-between gap-3">
+                    <div className="space-y-1 min-w-0">
                       <motion.div 
-                        className="text-4xl md:text-5xl font-bold text-white tracking-tight group-hover:text-violet-200 transition-colors duration-300"
+                        className="text-2xl md:text-3xl font-bold text-white tracking-tight leading-tight group-hover:text-violet-200 transition-colors duration-300 truncate"
                         whileHover={{ scale: 1.02 }}
                       >
                         {stat.value}
                       </motion.div>
-                      <div className="text-base font-medium text-ink-mute group-hover:text-violet-300 transition-colors duration-300">
+                      <div className="text-xs sm:text-sm font-medium text-ink-mute group-hover:text-violet-300 transition-colors duration-300">
                         {stat.label}
                       </div>
                       {stat.description && (
-                        <div className="text-sm text-ink-mute/60 max-w-[200px]">
+                        <div className="text-xs text-ink-mute/60">
                           {stat.description}
                         </div>
                       )}
@@ -199,7 +201,7 @@ export const OverviewSection: React.FC<OverviewSectionProps> = ({
                     
                     {/* Glass Icon Container */}
                     <motion.div 
-                      className="p-3 rounded-xl bg-gradient-to-br from-violet-500/20 to-fuchsia-500/10 text-violet-400 border border-white/10 shadow-lg shadow-violet-900/20 group-hover:scale-110 group-hover:border-violet-500/50 transition-all duration-300"
+                      className="shrink-0 p-2 rounded-lg bg-gradient-to-br from-violet-500/20 to-fuchsia-500/10 text-violet-400 border border-white/10 shadow-lg shadow-violet-900/20 group-hover:scale-110 group-hover:border-violet-500/50 transition-all duration-300"
                       whileHover={{ rotate: [0, -10, 10, 0] }}
                       transition={{ duration: 0.4 }}
                     >

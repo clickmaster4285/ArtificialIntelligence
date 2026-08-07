@@ -258,7 +258,154 @@ const ALL_PAGE_DATA: Record<string, AIPageData> = {
     },
     internalLinks: ['/ai-development-cost/', '/custom-ai-development-company/', '/ai-consulting-company/'],
   },
-
+// ============================================
+// AI DEVELOPMENT COST PAGE (NEW)
+// ============================================
+'ai-development-cost': {
+  meta: {
+    title: 'AI Development Cost 2026: Full Pricing Guide | ClickMasters',
+    description: 'How much does AI development cost in 2026? Chatbots from $8K, RAG systems from $25K, ML models from $30K, enterprise platforms from $150K. Real pricing, no calls required.',
+    slug: '/ai-development-cost/',
+    primaryKW: 'ai development cost',
+    secondaryKWs: ['cost of ai development', 'how much does artificial intelligence cost', 'how much does it cost to build an ai', 'ai app development cost', 'custom ai development cost', 'how much does ai software cost'],
+  },
+  h1: 'How Much Does AI Development Cost in 2026? Complete Pricing Guide',
+  hero: {
+    tagline: 'Real Prices, No Sales Calls Required',
+    description: 'AI development costs range from $8,000 for a basic chatbot to $500,000+ for an enterprise AI platform. Most US companies commission their first AI project in the $30,000–$120,000 range — a production-ready system that solves one to three clearly defined business problems. The single most important cost driver is not which AI model you use, but how clean your data is and how many systems the AI needs to integrate with. This guide gives you accurate 2026 pricing across every major AI project type, explains what drives costs up or down, breaks down the real difference between offshore and USA-based development pricing, and tells you exactly what you should pay for — and what you should refuse to pay for.',
+    ctaText: 'Get a Fixed-Price Quote for Your AI Project — Free 30-Min Scope Call',
+    ctaLink: '#cta',
+    startingPrice: '$8,000',
+    badge: 'Transparent Pricing | Fixed-Price | USA-Based',
+  },
+  overview: {
+    title: 'AI Development Cost Overview',
+    content: 'AI development costs range from $8,000 for a basic chatbot to $500,000+ for an enterprise AI platform. Most US companies commission their first AI project in the $30,000–$120,000 range — a production-ready system that solves one to three clearly defined business problems. The single most important cost driver is not which AI model you use, but how clean your data is and how many systems the AI needs to integrate with.',
+    stats: [
+      { label: 'Chatbot Start', value: '$8,000', description: 'Basic AI chatbot' },
+      { label: 'Typical First Project', value: '$30,000–$120,000', description: 'Most first AI projects' },
+      { label: 'Enterprise Platform', value: '$500,000+', description: 'Multi-model, multi-team' },
+    ],
+  },
+  pricing: {
+    title: 'AI Development Cost by Project Type — 2026 Pricing Table',
+    description: 'These are real prices based on ClickMasters project history and market data. They assume USA-based development, senior engineers only, production-quality code (not demos), full IP transfer, and a 30-day post-launch support window.',
+    items: [
+      { systemType: 'AI Chatbot — Basic (1 LLM, 1 channel, pre-built UI)', priceRange: '$8,000–$25,000', timeline: '4–6 wks', primaryOutcome: '1 LLM, 1 channel, pre-built UI' },
+      { systemType: 'AI Chatbot — Enterprise (multi-channel, CRM integration)', priceRange: '$25,000–$80,000', timeline: '8–14 wks', primaryOutcome: 'Multi-channel, CRM integration' },
+      { systemType: 'RAG System (document Q&A, knowledge base, vector DB)', priceRange: '$25,000–$100,000', timeline: '8–16 wks', primaryOutcome: 'Document Q&A, knowledge base' },
+      { systemType: 'Custom ML Model (single use case, tabular/text data)', priceRange: '$30,000–$120,000', timeline: '10–18 wks', primaryOutcome: 'Single use case, tabular/text data' },
+      { systemType: 'Computer Vision System (image/video analysis, real-time)', priceRange: '$40,000–$200,000', timeline: '12–24 wks', primaryOutcome: 'Image/video analysis, real-time' },
+      { systemType: 'AI Automation Workflow (intelligent process automation)', priceRange: '$15,000–$80,000', timeline: '6–14 wks', primaryOutcome: 'Intelligent process automation' },
+      { systemType: 'LLM Integration into existing product', priceRange: '$20,000–$90,000', timeline: '8–14 wks', primaryOutcome: 'AI feature integration' },
+      { systemType: 'AI Model Fine-Tuning (domain-specific customization)', priceRange: '$5,000–$50,000', timeline: '4–10 wks', primaryOutcome: 'Domain-specific customization' },
+      { systemType: 'Generative AI SaaS Product', priceRange: '$60,000–$350,000', timeline: '16–36 wks', primaryOutcome: 'AI-powered SaaS platform' },
+      { systemType: 'Enterprise AI Platform (multi-model, multi-team)', priceRange: '$150,000–$500,000+', timeline: '24–48 wks', primaryOutcome: 'Multi-model, multi-team' },
+      { systemType: 'AI Strategy & Consulting Engagement', priceRange: '$5,000–$80,000', timeline: '2–8 wks', primaryOutcome: 'AI roadmap and planning' },
+      { systemType: 'Dedicated AI Engineer (monthly)', priceRange: '$10,000–$22,000/mo', timeline: 'Ongoing', primaryOutcome: 'Full-time AI engineering' },
+    ],
+    note: 'Prices vary based on data quality, integration complexity, and compliance requirements.',
+  },
+  applications: {
+    title: 'AI Development Cost vs. ROI: What to Expect Back',
+    description: 'The most useful framing for any AI development budget conversation is not "how much does this cost" but "what is the payback period." Here is what ClickMasters\' clients typically see across the most common AI application types, based on real deployment data.',
+    items: [
+      {
+        title: 'AI Chatbot for Customer Service',
+        description: 'A $30,000 enterprise chatbot that handles 40% of tier-1 support tickets, at an average handling cost reduction of $8 per ticket, pays back in under 6 months for any company processing 700+ support tickets per month. The math: 700 tickets × 40% deflection × $8 savings = $2,240/month savings. $30,000 ÷ $2,240 = 13.4-month payback — and that\'s a conservative deflection rate. Companies that invest in better training data see 60–70% deflection within 90 days of deployment.',
+        keyFeatures: ['$30,000 investment', '40% deflection rate', '$8 per ticket savings', '13.4-month payback'],
+        typicalOutcome: '60–70% deflection within 90 days',
+      },
+      {
+        title: 'Demand Forecasting ML Model',
+        description: 'A $70,000 demand forecasting model that reduces inventory carrying costs by 15% for a $10M annual inventory base saves $1,500,000/year. Payback: under 2 months. These numbers are not exceptional — they are typical for mid-size distributors and manufacturers deploying their first ML-based forecasting system.',
+        keyFeatures: ['$70,000 investment', '15% inventory reduction', '$1.5M annual savings', 'Under 2 months payback'],
+      },
+      {
+        title: 'Document Processing Automation (NLP)',
+        description: 'A $45,000 contract review NLP system that processes 200 contracts/month, reducing average review time from 4 hours to 45 minutes per contract, saves 250 attorney or analyst hours per month. At $150/hour fully loaded cost, that\'s $37,500/month in productivity recovery. Payback: 6 weeks.',
+        keyFeatures: ['$45,000 investment', '4 hours → 45 minutes', '$37,500/month savings', '6 weeks payback'],
+      },
+      {
+        title: 'Recommendation Engine (eCommerce)',
+        description: 'An $80,000 personalized recommendation engine that increases average order value by 12% for a company doing $5M/month in revenue generates $600,000/month in additional revenue — assuming a 10% conversion contribution from recommendations. Even at a conservative 1% revenue lift, that\'s $50,000/month. Payback: under 2 months.',
+        keyFeatures: ['$80,000 investment', '12% AOV increase', '$50,000–$600,000/month', 'Under 2 months payback'],
+      },
+    ],
+  },
+  technicalChallenges: {
+    title: 'Hidden Costs Most Buyers Miss',
+    description: 'Beyond the direct development cost, there are several ongoing and indirect costs that most AI development quotes don\'t highlight. Budget for these from the start.',
+    challenges: [
+      {
+        title: 'Cloud Infrastructure (Ongoing)',
+        description: 'Production AI applications run on cloud compute. Costs vary enormously based on inference volume and model size. An LLM application serving 1,000 queries/day via the OpenAI API might cost $500–$2,000/month in API fees. A self-hosted ML model on a GPU instance might cost $1,000–$5,000/month depending on instance type.',
+        solution: 'Budget 10–20% of development cost annually for infrastructure.',
+      },
+      {
+        title: 'Model Retraining',
+        description: 'ML models need periodic retraining as real-world data distributions shift. For time-sensitive applications (fraud detection, demand forecasting), quarterly retraining is common. Each retraining cycle requires data preparation, training compute, evaluation, and deployment.',
+        solution: 'Budget $5,000–$20,000/year for models that need active maintenance.',
+      },
+      {
+        title: 'Data Labeling',
+        description: 'If your application requires supervised learning on labeled data, ongoing labeling is a perpetual cost as your training dataset grows. Services like Scale AI, Labelbox, and AWS Ground Truth charge $0.05–$0.50 per labeled data point depending on complexity.',
+        solution: 'A training dataset of 50,000 labeled examples might cost $2,500–$25,000 to prepare.',
+      },
+      {
+        title: 'Security and Compliance Audits',
+        description: 'If your AI application handles regulated data, plan for annual security audits and compliance reviews. HIPAA compliance audits cost $10,000–$50,000. SOC 2 Type II audits cost $20,000–$100,000.',
+        solution: 'These are not development costs — they\'re operational costs that the AI application generates.',
+      },
+      {
+        title: 'LLM API Fees (if applicable)',
+        description: 'GPT-4 tokens are not free. At current OpenAI pricing, a high-volume LLM application processing 10,000 complex queries per day could incur $5,000–$20,000/month in API fees.',
+        solution: 'This must be modeled in your business case before committing to an LLM-based architecture.',
+      },
+    ],
+  },
+  faqs: [
+    {
+      question: 'How much does AI development cost in 2026?',
+      answer: 'AI development costs range from $8,000 for a basic chatbot to $500,000+ for an enterprise AI platform. The most common first AI project at ClickMasters costs $30,000–$120,000 — a production-ready application solving one to three business problems, built by USA-based senior engineers on a fixed-price milestone contract.',
+    },
+    {
+      question: 'What is the most expensive part of an AI development project?',
+      answer: 'Data engineering is consistently the most underestimated cost in AI projects. Cleaning, structuring, and connecting disparate data sources can consume 30–60% of total project budget when data is not well-organized at project start. Model training, by comparison, is often a smaller cost line than buyers expect.',
+    },
+    {
+      question: 'Is offshore AI development cheaper overall?',
+      answer: 'Offshore development has lower hourly rates ($40–$90/hr vs $150–$350/hr for US-based). However, project failure rates are substantially higher for complex AI applications due to communication challenges, IP jurisdiction concerns, and compliance limitations for regulated industries. The full lifecycle cost — including rework and potential rebuilds — often equalizes or reverses the hourly rate advantage.',
+    },
+    {
+      question: 'What does an AI consulting engagement cost?',
+      answer: 'AI strategy consulting at ClickMasters costs $15,000–$40,000 for a 4–8 week engagement, delivering a prioritized AI roadmap with cost and timeline estimates for each initiative. Technical due diligence on existing AI systems costs $5,000–$15,000 for a 1–2 week assessment.',
+    },
+    {
+      question: 'How much does it cost to add AI to an existing product or software?',
+      answer: 'Integrating AI features into an existing product typically costs $20,000–$90,000 depending on the complexity of the integration and the depth of AI capability required. A simple LLM-powered search or summary feature in an existing SaaS product can be built for $20,000–$40,000. A full AI copilot with custom training and multi-user personalization is more typically $60,000–$150,000.',
+    },
+    {
+      question: 'What AI development payment terms are standard?',
+      answer: 'ClickMasters uses fixed-price milestone contracts with a 30% upfront payment to initiate Discovery, followed by milestone payments tied to approved deliverables. You never pay for a milestone until you\'ve reviewed and approved the output. Final payment is released on project acceptance, not on a time-based schedule.',
+    },
+    {
+      question: 'How much does HIPAA-compliant AI development cost?',
+      answer: 'HIPAA compliance adds $15,000–$40,000 to an AI project\'s base cost, covering HIPAA-compliant infrastructure setup, PHI encryption, audit logging, access control implementation, Business Associate Agreement, and compliance documentation. This is non-negotiable for healthcare AI applications handling patient data.',
+    },
+    {
+      question: 'Can I get a fixed price before committing to the full project?',
+      answer: 'Yes. ClickMasters\' Discovery phase costs $2,500–$5,000 and delivers a fixed-price proposal for the full project within one week. If you choose not to proceed after Discovery, there are no further obligations. Discovery costs are credited in full if you proceed with the project.',
+    },
+  ],
+  cta: {
+    title: 'Get a Fixed-Price Proposal for Your AI Project',
+    description: 'ClickMasters provides firm, fixed-price proposals after a one-week Discovery phase. No estimates. No ranges that "depend on complexity." A real number, bound by contract, with defined milestone deliverables. To start, book a 30-minute scoping call with a senior ClickMasters AI architect. We\'ll assess your requirements, ask the right questions, and tell you honestly whether your project is well-scoped for Discovery or needs more definition first.',
+    ctaText: 'Book Your Free 30-Min AI Project Scoping Call',
+    ctaLink: '#cta',
+  },
+  internalLinks: ['/ai-application-development-services/', '/custom-ai-development-company/', '/hire-ai-developer/', '/ai-consulting-company/', '/ai-development-company-vs-freelancer/'],
+},
   // ============================================
   // 2. FINTECH AI
   // ============================================
@@ -2354,7 +2501,11 @@ export function getPageDataBySlug(slug: string): AIPageData | null {
  * Get all page slugs for static generation
  */
 export function getAllPageSlugs(): string[] {
-  return Object.keys(ALL_PAGE_DATA).filter((key) => key !== 'index');
+  return Object.keys(ALL_PAGE_DATA).filter((key) => key !== 'index' && key !== 'ai-development-cost');
+}
+
+export function getAllTopLevelPageSlugs(): string[] {
+  return Object.keys(ALL_PAGE_DATA).filter((key) => key === 'ai-development-cost');
 }
 
 /**
