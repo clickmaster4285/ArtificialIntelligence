@@ -1,0 +1,543 @@
+{
+  "slug": "generative-ai-consulting",
+  "status": "published",
+  "seo": {
+    "title": "Generative AI Consulting | $77 CPC Keyword | ClickMasters",
+    "description": "Generative AI consulting from $15K. GPT-4, Claude & Gemini strategy, RAG architecture, fine-tuning roadmaps. USA-based senior consultants. Free GenAI strategy call.",
+    "canonical": "/generative-ai-consulting/",
+    "primaryKeyword": "generative ai consulting",
+    "secondaryKeywords": [
+      "generative ai consulting services",
+      "generative ai consulting company",
+      "generative ai strategy consulting",
+      "enterprise generative ai consulting",
+      "genai consulting services",
+      "generative ai advisory"
+    ],
+    "openGraphImage": "/images/pages/generative-ai-consulting/og-image.jpg",
+    "noIndex": false,
+    "noFollow": false
+  },
+  "schema": {
+    "service": true,
+    "organization": true,
+    "breadcrumbs": true,
+    "faq": true
+  },
+  "appearance": {
+    "template": "neural-canvas",
+    "accent": "violet",
+    "background": "neural-grid",
+    "grain": true,
+    "glow": true,
+    "scrollProgress": true,
+    "customCursor": true
+  },
+  "hero": {
+    "eyebrow": "Generative AI Consulting",
+    "title": "Generative AI Consulting — Strategy, Model Selection & Production Roadmaps",
+    "highlightedText": "Strategy from $15,000 · GPT-4, Claude & Gemini · Free GenAI call",
+    "description": "ClickMasters provides dedicated generative AI consulting for enterprises and growth-stage companies navigating the transition from experimenting with ChatGPT to deploying proprietary GenAI systems that create durable competitive advantage. Engagements start at $15,000 for focused GenAI strategy work and scale to $45,000+ for enterprise GenAI transformation programs. Our consultants have built and deployed generative AI systems in production — not just advised on frameworks.",
+    "primaryCta": {
+      "label": "Book a Free GenAI Strategy Call — 24-Hour Response",
+      "href": "#cta",
+      "ariaLabel": "Book a free generative AI strategy call with 24-hour response"
+    },
+    "secondaryCta": {
+      "label": "Explore GenAI Services",
+      "href": "/generative-ai-development-company/"
+    },
+    "trustText": "USA-based senior consultants · RAG & fine-tuning expertise · $77 CPC keyword",
+    "metrics": [
+      {
+        "value": "$15K+",
+        "label": "Strategy engagements",
+        "description": "Full GenAI roadmap with ROI models"
+      },
+      {
+        "value": "4-8",
+        "label": "Weeks to strategy",
+        "description": "Model selection to implementation roadmap"
+      },
+      {
+        "value": "$77",
+        "label": "CPC value",
+        "description": "High-intent GenAI search keyword"
+      }
+    ],
+    "visual": {
+      "type": "neural-sphere",
+      "label": "Generative AI consulting services",
+      "modelNames": [
+        "GPT-4o",
+        "Claude 3.5",
+        "Gemini 1.5 Pro",
+        "Llama 3.1",
+        "RAG",
+        "Fine-Tuning"
+      ]
+    }
+  },
+  "sections": [
+    {
+      "id": "what-genai-consulting-delivers",
+      "type": "rich-text",
+      "eyebrow": "What We Deliver",
+      "title": "What generative AI consulting actually delivers",
+      "description": "Generative AI consulting is a distinct discipline from general AI strategy consulting. The questions are different, the technology landscape changes faster, and the implementation complexity is specifically concentrated around a set of architectural decisions.",
+      "tone": "default",
+      "width": "content",
+      "animation": "mask-reveal",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "Which foundation model is right for my use case — and why?",
+          "paragraphs": [
+            "GPT-4, Claude 3.5, Gemini 1.5 Pro, Llama 3.1, Mistral Large, and Cohere Command R+ all have different performance profiles, cost structures, context window limits, fine-tuning capabilities, and data privacy implications. Choosing the wrong model wastes development budget and creates switching costs. ClickMasters consultants evaluate your specific requirements — accuracy benchmarks, latency targets, cost per inference, data sensitivity, fine-tuning need — and recommend the right model with documented reasoning."
+          ]
+        },
+        {
+          "heading": "RAG or fine-tuning — which approach fits my situation?",
+          "paragraphs": [
+            "This is the most consequential architectural decision in most GenAI projects, and it's frequently made wrong. RAG (Retrieval-Augmented Generation) is the right choice for most knowledge-base and Q&A applications. Fine-tuning is the right choice for style, tone, and format adaptation; domain-specific terminology; and latency-sensitive applications where retrieval adds unacceptable delay. Choosing fine-tuning when RAG would work costs 5–10x more and produces a less maintainable system. ClickMasters produces a written decision framework for your specific use case."
+          ]
+        },
+        {
+          "heading": "How do I evaluate GenAI output quality at scale?",
+          "paragraphs": [
+            "Human evaluation of LLM output is expensive and doesn't scale. Automated LLM-as-judge evaluation is the current best practice — using a more capable model to evaluate the outputs of the primary model against defined quality rubrics. ClickMasters consultants design the evaluation framework and quality benchmarks before any development budget is committed, so you have objective acceptance criteria throughout the project."
+          ]
+        },
+        {
+          "heading": "What does this actually cost at production scale?",
+          "paragraphs": [
+            "LLM inference cost is a function of input tokens, output tokens, the model used, and request volume. A GenAI application that costs $500/month in development can cost $50,000/month at production scale if the cost modeling isn't done upfront. ClickMasters produces detailed cost models — based on your expected request volume, your typical prompt and completion lengths, and your chosen model — before implementation begins."
+          ]
+        },
+        {
+          "heading": "How do I handle data privacy and compliance?",
+          "paragraphs": [
+            "Sending customer or patient data to third-party LLM APIs creates data governance risks that vary by industry and jurisdiction. ClickMasters maps your data sensitivity, identifies the compliance constraints that apply (HIPAA for healthcare, GDPR for EU-person data, SOC 2 for enterprise data handling), and recommends the appropriate architecture — API-based, self-hosted, or hybrid — for your compliance profile."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "genai-services",
+      "type": "feature-grid",
+      "eyebrow": "Services",
+      "title": "The ClickMasters GenAI consulting services",
+      "description": "From readiness assessment to implementation advisory — GenAI consulting that delivers production outcomes.",
+      "tone": "surface",
+      "width": "wide",
+      "animation": "stagger",
+      "variant": "bento",
+      "columns": 2,
+      "items": [
+        {
+          "title": "GenAI Readiness Assessment",
+          "description": "Structured assessment of your organization's readiness to deploy generative AI. Covers data assets, existing infrastructure, compliance requirements, current experimentation, organizational capability, and preliminary use case prioritization. Output: GenAI Readiness Report with scored assessment and use case map.",
+          "icon": "clipboard",
+          "label": "$5K–$12K"
+        },
+        {
+          "title": "GenAI Strategy Engagement",
+          "description": "Full GenAI strategy: use case prioritization with ROI modeling, model selection framework, RAG vs. fine-tuning analysis, build-vs-buy analysis, data preparation requirements, compliance architecture, team requirements, and phased 12–24 month implementation roadmap.",
+          "icon": "compass",
+          "label": "$15K–$45K"
+        },
+        {
+          "title": "Foundation Model Selection Advisory",
+          "description": "Rigorous model selection analysis: evaluate candidates against your specific requirements — accuracy on your domain data, inference cost model, latency benchmarking, context window requirements, fine-tuning capability, data privacy implications, and total cost of ownership.",
+          "icon": "scale",
+          "label": "$8K–$18K"
+        },
+        {
+          "title": "GenAI Architecture Review",
+          "description": "Independent technical review of existing GenAI systems: architecture soundness, prompt engineering quality, retrieval system design, evaluation methodology, output quality, security and compliance posture, scalability, and MLOps monitoring maturity.",
+          "icon": "shield",
+          "label": "$5K–$15K"
+        },
+        {
+          "title": "GenAI Implementation Advisory (Retainer)",
+          "description": "Ongoing strategic and technical oversight throughout GenAI implementation. A principal consultant serves as your independent GenAI technical advisor — reviewing architecture proposals, validating vendor claims, and providing senior perspective at critical decision points.",
+          "icon": "message",
+          "label": "$8K–$18K/mo"
+        },
+        {
+          "title": "GenAI Vendor Evaluation Support",
+          "description": "Independent evaluation of GenAI vendors, platform providers, or development agencies. Our consultants apply a rigorous checklist: domain-specific benchmark data, production deployment references, data usage policies, and production SLAs for availability and accuracy.",
+          "icon": "search",
+          "label": "Included"
+        }
+      ]
+    },
+    {
+      "id": "foundation-model-landscape",
+      "type": "rich-text",
+      "eyebrow": "Model Landscape 2026",
+      "title": "Foundation model landscape: 2026 reference",
+      "description": "One of the most valuable things a GenAI consultant does is maintain current, independent knowledge of the foundation model landscape — because it changes fast enough that information from 12 months ago is materially outdated.",
+      "tone": "contrast",
+      "width": "content",
+      "animation": "fade-up",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "GPT-4 / GPT-4o (OpenAI)",
+          "paragraphs": [
+            "The default choice for most enterprise GenAI applications. Strongest all-around performance across reasoning, code generation, and instruction following. GPT-4o adds multimodal capability (image input) at lower latency. Highest API call volume in market = most real-world production validation. Data privacy: data sent to OpenAI API is not used for training (with enterprise agreement). Best for: general-purpose applications, code-adjacent use cases, multimodal applications."
+          ]
+        },
+        {
+          "heading": "Claude 3.5 Sonnet / Claude 3 Opus (Anthropic)",
+          "paragraphs": [
+            "Leading performance on long-context tasks (200K token context window for Sonnet) and complex reasoning. Claude's Constitutional AI training approach produces responses with lower rates of harmful output and more predictable behavior — particularly valuable for enterprise applications where output consistency is critical. Best for: document analysis, long-form reasoning, compliance-sensitive applications, use cases where output quality consistency is paramount."
+          ]
+        },
+        {
+          "heading": "Gemini 1.5 Pro (Google DeepMind)",
+          "paragraphs": [
+            "Exceptional performance on multimodal tasks (text + image + video + audio) and the largest available context window in production (1M tokens for Pro). Deep Google ecosystem integration is valuable for organizations heavily invested in Google Cloud. Best for: multimodal applications, large document processing, Google Workspace integration use cases."
+          ]
+        },
+        {
+          "heading": "Llama 3.1 (Meta, open source)",
+          "paragraphs": [
+            "The strongest open-source foundation model as of June 2026. Self-hostable — critical for organizations that cannot send data to third-party APIs. Fine-tunable without licensing restrictions. Lower raw performance than GPT-4 or Claude 3.5 on general benchmarks, but competitive on domain-specific tasks after fine-tuning. Best for: data-sensitive applications requiring on-premises deployment, high-volume applications where API cost is prohibitive, fine-tuning use cases with substantial proprietary data."
+          ]
+        },
+        {
+          "heading": "Mistral Large / Mistral 7B (Mistral AI)",
+          "paragraphs": [
+            "Strong performance-to-cost ratio, particularly for European organizations with GDPR data sovereignty requirements. Mistral AI is a European company with European data residency options. Best for: GDPR-sensitive applications, cost-optimized high-volume applications, European market deployments."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rag-vs-finetuning",
+      "type": "rich-text",
+      "eyebrow": "Architecture Decision",
+      "title": "RAG vs. fine-tuning: The most important GenAI architecture decision",
+      "description": "The single most common and most expensive architectural mistake in GenAI projects is choosing fine-tuning when RAG would deliver better results at lower cost — or choosing RAG for a use case that requires fine-tuning.",
+      "tone": "surface",
+      "width": "content",
+      "animation": "mask-reveal",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "Choose RAG when:",
+          "paragraphs": [
+            "Your knowledge base changes frequently (product documentation, policies, case law, research papers). The LLM's response needs to cite specific sources for trust and verification. Your knowledge base is large (thousands to millions of documents). You need to update knowledge without retraining. Factual accuracy and groundedness are critical (hallucination risk is a primary concern). Your budget for the project is under $50,000."
+          ]
+        },
+        {
+          "heading": "Choose fine-tuning when:",
+          "paragraphs": [
+            "You need the model to adopt a specific tone, style, or output format consistently. Your use case involves highly specialized domain terminology that the base model doesn't handle well. You have a large proprietary dataset (minimum 1,000–10,000 high-quality examples) that encodes domain expertise unavailable in the base model's training data. Inference latency is critical and retrieval adds unacceptable delay. You are building for a use case where the model needs to 'know' something implicitly, not retrieve it."
+          ]
+        },
+        {
+          "heading": "Choose RAG + fine-tuning (hybrid) when:",
+          "paragraphs": [
+            "Both grounding in specific documents AND domain-specific style/tone are required. You need the model to reason about retrieved content in a domain-specific way. Your accuracy requirements exceed what either approach alone achieves."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "genai-cost-modeling",
+      "type": "rich-text",
+      "eyebrow": "Cost Modeling",
+      "title": "GenAI cost modeling: What production actually costs",
+      "description": "The single most dangerous gap in GenAI planning is the difference between development costs and production costs. An application that is cheap to build can be expensive to run at scale.",
+      "tone": "contrast",
+      "width": "content",
+      "animation": "fade-up",
+      "layout": "editorial",
+      "blocks": [
+        {
+          "heading": "Production cost examples (June 2026 pricing)",
+          "paragraphs": [
+            "A customer service chatbot handling 5,000 conversations/day, average 8 turns per conversation, 800 input tokens and 400 output tokens per turn, using GPT-4o: approximately $12,000–$18,000/month in API fees. The same application on GPT-4o-mini: approximately $800–$1,200/month. The accuracy trade-off between these models for your specific use case determines which is appropriate — you need empirical testing to know, not assumptions.",
+            "A RAG-powered internal knowledge base handling 1,000 queries/day, each requiring retrieval from 15 document chunks (average 250 tokens per chunk) plus 200-token queries and 600-token responses, using Claude 3.5 Sonnet: approximately $3,000–$5,000/month in API fees.",
+            "ClickMasters cost modeling deliverable: For every GenAI strategy engagement, we produce a detailed cost model showing monthly API cost at three volume scenarios (conservative, expected, high growth), the cost impact of model tier choices, and the breakeven point at which self-hosted open-source models (Llama 3.1) become more cost-effective than API-based approaches."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pilots-to-production",
+      "type": "rich-text",
+      "eyebrow": "From Pilots to Production",
+      "title": "Building your GenAI roadmap: From pilots to production",
+      "description": "Most organizations have run GenAI pilots. Very few have successfully moved from pilot to production. The gap between 'this works in a demo' and 'this is delivering measurable business value in production' is where ClickMasters' consulting expertise is most valuable.",
+      "tone": "surface",
+      "width": "content",
+      "animation": "mask-reveal",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "Data audit first",
+          "paragraphs": [
+            "Every GenAI engagement includes a data audit before any model work is approved. We assess data quality, volume, format, and accessibility for the specific use case — and produce a data readiness score that determines whether the project is ready to proceed or requires a data preparation phase first."
+          ]
+        },
+        {
+          "heading": "Production accuracy benchmarks, not demo accuracy benchmarks",
+          "paragraphs": [
+            "We design evaluation datasets drawn from real production-representative examples, not curated test sets that make models look better than they perform in practice. Your acceptance criteria are grounded in what your real users will actually ask."
+          ]
+        },
+        {
+          "heading": "Compliance review in the design phase",
+          "paragraphs": [
+            "Every GenAI architecture recommendation accounts for your compliance requirements upfront. HIPAA, GDPR, SOC 2 — these requirements shape the architecture, not the other way around."
+          ]
+        },
+        {
+          "heading": "Cost modeling before commitment",
+          "paragraphs": [
+            "Every GenAI recommendation includes a production cost model at expected scale. You know what the system will cost to run before you commit to building it."
+          ]
+        },
+        {
+          "heading": "Internal ownership design",
+          "paragraphs": [
+            "Every GenAI strategy includes a plan for who internally will own the system post-launch — who monitors model performance, who manages retraining, who handles quality escalations. GenAI systems without internal ownership degrade silently."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "type": "faq",
+      "eyebrow": "FAQs",
+      "title": "Frequently asked questions",
+      "description": "Clear answers about GenAI consulting, RAG vs. fine-tuning, model selection, and costs.",
+      "tone": "default",
+      "width": "content",
+      "animation": "fade-up",
+      "variant": "indexed",
+      "items": [
+        {
+          "question": "What is generative AI consulting?",
+          "answer": "Generative AI consulting is the practice of advising organizations on how to select, design, and implement generative AI systems — applications powered by large language models that generate text, code, images, or other outputs. ClickMasters GenAI consulting covers foundation model selection, RAG vs. fine-tuning architecture, cost modeling, compliance design, and production implementation roadmaps."
+        },
+        {
+          "question": "How much does generative AI consulting cost?",
+          "answer": "ClickMasters GenAI consulting ranges from $5,000–$12,000 for a GenAI Readiness Assessment (1–2 weeks) to $15,000–$45,000 for a full GenAI Strategy Engagement (4–8 weeks). Hourly advisory for specific questions bills at $200–$400/hr. Ongoing implementation advisory retainers run $8,000–$18,000/month."
+        },
+        {
+          "question": "What is the difference between RAG and fine-tuning?",
+          "answer": "RAG (Retrieval-Augmented Generation) connects a language model to an external knowledge base — retrieving relevant documents at query time to ground the model's response in specific content. Fine-tuning retrains the model's parameters on domain-specific data, changing what the model 'knows' intrinsically. RAG is better for frequently-updated knowledge and factual grounding. Fine-tuning is better for style, tone, and specialized domain terminology. ClickMasters produces a written recommendation for your specific use case."
+        },
+        {
+          "question": "Which generative AI model should my company use?",
+          "answer": "The right foundation model depends on your specific requirements: accuracy benchmarks for your use case, inference cost at your expected volume, context window requirements, data privacy constraints, and fine-tuning need. ClickMasters' Foundation Model Selection Advisory ($8,000–$18,000) produces a scored comparison matrix with a documented recommendation for your specific situation."
+        },
+        {
+          "question": "Can you help us move from GenAI pilot to production?",
+          "answer": "Yes — this is the most common GenAI consulting engagement at ClickMasters. We assess why the pilot hasn't reached production, identify the specific blockers (data quality, compliance gaps, cost modeling, accuracy benchmarks, internal ownership), and produce a production readiness plan with defined milestones."
+        },
+        {
+          "question": "Do you consult on open-source models like Llama?",
+          "answer": "Yes. ClickMasters' model-agnostic approach means we evaluate Llama 3.1, Mistral, and other open-source models alongside GPT-4 and Claude for every engagement. For data-sensitive applications or high-volume use cases where API costs are prohibitive, open-source self-hosted models are frequently the right architectural choice — and we recommend them when they are."
+        },
+        {
+          "question": "Is there a free initial consultation for generative AI strategy?",
+          "answer": "Yes. ClickMasters offers a free 30-minute GenAI strategy call with a senior consultant. This call helps us understand your situation and gives you an honest preliminary view of your GenAI opportunity, the likely architectural approach, and a realistic investment estimate before any formal engagement begins."
+        },
+        {
+          "question": "Do you help organizations comply with the EU AI Act?",
+          "answer": "Yes. For organizations deploying GenAI systems that fall under the EU AI Act's high-risk categories, ClickMasters' consulting includes EU AI Act compliance assessment: risk classification for your specific system, conformity assessment requirements, technical documentation requirements, and human oversight design. This is increasingly important for US companies deploying AI systems that process data about EU-resident individuals."
+        }
+      ]
+    },
+    {
+      "id": "genai-security",
+      "type": "rich-text",
+      "eyebrow": "Security",
+      "title": "GenAI security and responsible AI",
+      "description": "Generative AI systems introduce security and safety considerations that traditional software systems don't face. A complete GenAI consulting engagement addresses these as engineering requirements, not afterthoughts.",
+      "tone": "contrast",
+      "width": "content",
+      "animation": "mask-reveal",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "Prompt injection attacks",
+          "paragraphs": [
+            "A user submits a carefully crafted input that causes the LLM to ignore its system prompt and follow attacker-controlled instructions instead. This is the GenAI equivalent of SQL injection. ClickMasters implements prompt injection defense as a standard component of every LLM application: input sanitization, instruction hierarchy enforcement, and output monitoring for anomalous behavior patterns."
+          ]
+        },
+        {
+          "heading": "Data exfiltration through LLM outputs",
+          "paragraphs": [
+            "In RAG systems with access to sensitive document stores, a poorly designed retrieval and generation pipeline can be induced to output content from confidential documents in response to indirect adversarial inputs. ClickMasters implements output filtering, access control at the retrieval layer, and content policy enforcement to prevent unauthorized data surfacing."
+          ]
+        },
+        {
+          "heading": "Hallucination and factual accuracy",
+          "paragraphs": [
+            "Generative AI models produce confident-sounding incorrect outputs with non-trivial frequency. For applications where factual accuracy matters — medical information, legal guidance, financial advice, technical specifications — hallucination is a liability, not just an inconvenience. ClickMasters implements grounding mechanisms (RAG to factual sources), output confidence signaling, citation requirements, and human-review-in-the-loop design where accuracy stakes are highest."
+          ]
+        },
+        {
+          "heading": "Output quality consistency",
+          "paragraphs": [
+            "Foundation models are updated by their providers without always notifying API customers. An application that behaves predictably on model version X may behave differently on version Y. ClickMasters implements model version pinning, regression testing suites for LLM behavior, and monitoring for output quality distribution shifts after model updates."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "competitive-landscape",
+      "type": "rich-text",
+      "eyebrow": "Competitive Landscape",
+      "title": "GenAI competitive landscape: Why now is the right time",
+      "description": "The window for building durable GenAI competitive advantage is narrowing — but it's not yet closed.",
+      "tone": "surface",
+      "width": "content",
+      "animation": "fade-up",
+      "layout": "editorial",
+      "blocks": [
+        {
+          "heading": "The commodity risk",
+          "paragraphs": [
+            "Foundation models are becoming more capable and cheaper faster than almost anyone predicted. GPT-4-level capability is now available from multiple providers at a fraction of 2023 costs. This is good for AI adoption generally. It also means that access to foundation model capability is no longer a competitive advantage — it's a commodity input."
+          ]
+        },
+        {
+          "heading": "The proprietary data advantage",
+          "paragraphs": [
+            "What does not commoditize is your proprietary data. A GenAI system trained on or connected to your transaction history, your customer behavior data, your operational records, your domain expertise — performs better on your specific use case than any generic system. The organizations building proprietary GenAI systems now are compounding this advantage with every month of additional data collection."
+          ]
+        },
+        {
+          "heading": "The implementation learning curve",
+          "paragraphs": [
+            "Building production GenAI systems at scale requires knowledge that accumulates with practice: prompt engineering discipline, RAG architecture patterns, evaluation methodology, MLOps for LLM systems. Organizations that start now are 18–24 months ahead of those that start in 2028 on this learning curve. The gap in AI implementation capability between early movers and late movers in every previous technology cycle has been persistent."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "deliverables",
+      "type": "rich-text",
+      "eyebrow": "Deliverables",
+      "title": "GenAI consulting deliverables: What you actually get",
+      "description": "Every ClickMasters generative AI consulting engagement produces written deliverables designed for multiple audiences — technical teams, product leadership, finance, and the executive layer that approves investment.",
+      "tone": "contrast",
+      "width": "content",
+      "animation": "mask-reveal",
+      "layout": "editorial",
+      "blocks": [
+        {
+          "heading": "Full GenAI Strategy Engagement deliverables",
+          "paragraphs": [
+            "Every ClickMasters generative AI consulting engagement produces written deliverables designed for multiple audiences — technical teams, product leadership, finance, and the executive layer that approves investment."
+          ],
+          "bullets": [
+            "Executive Summary (3–5 pages): Non-technical summary of findings, recommended GenAI initiatives, investment model, and expected outcomes. Designed for board and executive presentation.",
+            "GenAI Use Case Map (10–15 pages): Prioritized list of GenAI opportunities, each with use case description, data requirements, estimated development investment, expected business value, implementation complexity rating, and recommended approach.",
+            "Foundation Model Selection Framework (5–10 pages): Scored comparison matrix of candidate models against your specific requirements, with documented recommendation and rationale.",
+            "Architecture Blueprint (10–15 pages): Technical architecture recommendation for the highest-priority use case: data flow diagram, model integration design, compliance layer, serving infrastructure, and MLOps monitoring design.",
+            "Financial Model (spreadsheet): Cost model showing development investment, ongoing infrastructure cost, and projected business value at conservative/expected/optimistic scenarios. Includes payback period and NPV at 3 years.",
+            "Implementation Roadmap (5–8 pages): Phased 12–24 month implementation plan with initiative sequencing, milestone definitions, resource requirements, and dependency mapping."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vendor-evaluation",
+      "type": "rich-text",
+      "eyebrow": "Vendor Evaluation",
+      "title": "Evaluating GenAI vendors: A consulting checklist",
+      "description": "Organizations that engage ClickMasters for GenAI consulting frequently need to evaluate GenAI vendors, platform providers, or development agencies as part of the strategy work.",
+      "tone": "surface",
+      "width": "content",
+      "animation": "fade-up",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "Does their benchmark data use your domain, or a generic benchmark?",
+          "paragraphs": [
+            "Generic LLM benchmarks (MMLU, HumanEval, HellaSwag) measure general capability, not performance on your specific use case. A vendor who claims their model 'outperforms GPT-4' should be able to show you benchmark data on tasks similar to yours — not just general capability benchmarks. If they can't, the claim is marketing, not evidence."
+          ]
+        },
+        {
+          "heading": "Do they show you production deployments, or demos?",
+          "paragraphs": [
+            "A GenAI demo is the easiest artifact in technology to produce. A GenAI system serving real production traffic, with real users, real edge cases, and a real performance track record, is much harder. Ask any GenAI vendor: what is the largest production deployment of this technology, and can you connect me with that customer?"
+          ]
+        },
+        {
+          "heading": "What is their position on data usage?",
+          "paragraphs": [
+            "Does your data used in development, evaluation, or fine-tuning get used to improve their models? Does sending inference requests through their API mean your prompts and completions become training data? This matters enormously for organizations with sensitive customer or business data. The answer should be unambiguous and contractually enforced."
+          ]
+        },
+        {
+          "heading": "What is their SLA for production availability and accuracy?",
+          "paragraphs": [
+            "A GenAI vendor without a production SLA is not a production vendor — they're a research project. Production AI systems require uptime commitments, response time guarantees, and accuracy or quality commitments. If a vendor can't provide these, their system is not production-ready."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "type": "cta",
+      "eyebrow": "Get Started",
+      "heading": "Book your free GenAI strategy call",
+      "text": "ClickMasters responds within 24 business hours. The strategy call is 30 minutes with a senior GenAI consultant — not a sales representative. We will give you our honest assessment of your GenAI opportunity and the right approach for your situation.",
+      "tone": "contrast",
+      "width": "wide",
+      "animation": "fade-scale",
+      "primaryCta": {
+        "label": "Book Your Free Generative AI Strategy Call",
+        "href": "/contact/"
+      },
+      "secondaryCta": {
+        "label": "Email the GenAI Consulting Team",
+        "href": "mailto:hello@clickmastersartificialintelligencecompany.com"
+      },
+      "contactEmail": "hello@clickmastersartificialintelligencecompany.com",
+      "variant": "orbital"
+    }
+  ],
+  "relatedPages": [
+    {
+      "title": "AI Consulting Company",
+      "description": "General AI consulting services.",
+      "href": "/ai-consulting-company/"
+    },
+    {
+      "title": "AI Strategy Consulting",
+      "description": "Strategic AI planning and roadmap development.",
+      "href": "/ai-strategy-consulting/"
+    },
+    {
+      "title": "Generative AI Development Company",
+      "description": "GenAI application development services.",
+      "href": "/generative-ai-development-company/"
+    },
+    {
+      "title": "RAG Development Services",
+      "description": "Retrieval-Augmented Generation system development.",
+      "href": "/rag-development-services/"
+    },
+    {
+      "title": "LLM Integration Services",
+      "description": "Large language model integration services.",
+      "href": "/llm-integration-services/"
+    },
+    {
+      "title": "AI Model Fine-Tuning Services",
+      "description": "Custom model fine-tuning services.",
+      "href": "/ai-model-fine-tuning-services/"
+    }
+  ]
+}

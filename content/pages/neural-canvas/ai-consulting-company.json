@@ -1,0 +1,648 @@
+{
+  "slug": "ai-consulting-company",
+  "status": "published",
+  "seo": {
+    "title": "AI Consulting Company | $200/hr | ClickMasters AI",
+    "description": "AI consulting from $200/hr. Strategy, implementation roadmaps & ROI modeling. USA-based senior consultants. HIPAA, SOC2, GDPR ready. Free 30-min strategy call.",
+    "canonical": "/ai-consulting-company/",
+    "primaryKeyword": "ai consulting company",
+    "secondaryKeywords": [
+      "ai consulting firms",
+      "artificial intelligence consulting companies",
+      "ai consulting services",
+      "ai consulting for businesses",
+      "ai business consulting",
+      "enterprise ai consulting company",
+      "generative ai consulting"
+    ],
+    "openGraphImage": "/images/pages/ai-consulting-company/og-image.jpg",
+    "noIndex": false,
+    "noFollow": false
+  },
+  "schema": {
+    "service": true,
+    "organization": true,
+    "breadcrumbs": true,
+    "faq": true
+  },
+  "appearance": {
+    "template": "neural-canvas",
+    "accent": "emerald",
+    "background": "neural-grid",
+    "grain": true,
+    "glow": true,
+    "scrollProgress": true,
+    "customCursor": true
+  },
+  "hero": {
+    "eyebrow": "AI Consulting",
+    "title": "AI Consulting Company — Strategy, Implementation & Measurable ROI",
+    "highlightedText": "Strategy from $15,000 · $200–$400/hr · Free 30-min call",
+    "description": "ClickMasters is a USA-based AI consulting company that takes organizations from 'we know we need AI' to 'we have AI systems generating measurable business outcomes.' We provide AI strategy consulting at $200–$400/hour, project-based consulting engagements from $15,000, and full strategy-to-implementation programs from $40,000. Every engagement delivers written deliverables — not verbal recommendations — and is tied to measurable business outcomes agreed before work begins.",
+    "primaryCta": {
+      "label": "Book a Free 30-Min AI Strategy Call — Response in 24 Hours",
+      "href": "#cta",
+      "ariaLabel": "Book a free 30-minute AI strategy call with 24-hour response"
+    },
+    "secondaryCta": {
+      "label": "Explore AI Strategy Services",
+      "href": "/ai-strategy-consulting/"
+    },
+    "trustText": "USA-based senior consultants · Strategy to implementation · ROI modeling",
+    "metrics": [
+      {
+        "value": "$200–$400",
+        "label": "Hourly rate",
+        "description": "Senior AI consultant advisory"
+      },
+      {
+        "value": "$15K+",
+        "label": "Strategy engagements",
+        "description": "Written deliverables, ROI models"
+      },
+      {
+        "value": "4-8",
+        "label": "Weeks to strategy",
+        "description": "Full AI roadmap completion"
+      }
+    ],
+    "visual": {
+      "type": "neural-sphere",
+      "label": "AI consulting services",
+      "modelNames": [
+        "Strategy",
+        "ROI Modeling",
+        "Implementation",
+        "Governance",
+        "Vendor Evaluation"
+      ]
+    }
+  },
+  "sections": [
+    {
+      "id": "what-ai-consulting-does",
+      "type": "rich-text",
+      "eyebrow": "Overview",
+      "title": "What does an AI consulting company actually do?",
+      "description": "AI consulting is the practice of advising organizations on how to identify, prioritize, design, and implement AI initiatives that generate measurable business value.",
+      "tone": "default",
+      "width": "content",
+      "animation": "mask-reveal",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "Where should we use AI?",
+          "paragraphs": [
+            "Not every process benefits from AI automation. Not every prediction problem has enough data. Not every generative AI use case has a positive ROI at your scale. AI consulting identifies the subset of potential AI use cases where the combination of data readiness, technical feasibility, and business value justifies investment."
+          ]
+        },
+        {
+          "heading": "What should we build vs. buy?",
+          "paragraphs": [
+            "For every AI use case, there is a spectrum of approaches: purchase an off-the-shelf SaaS tool, integrate a foundation model API with minimal customization, build a custom model trained on proprietary data, or some combination. The right answer depends on your data, your compliance requirements, your competitive differentiation goals, and your budget. Getting this decision wrong is expensive."
+          ]
+        },
+        {
+          "heading": "What does it actually cost and how long will it take?",
+          "paragraphs": [
+            "AI project timelines and costs vary by an order of magnitude depending on data readiness, integration complexity, compliance requirements, and team experience. AI consulting produces realistic estimates based on your specific situation — not vendor projections optimized to win the deal."
+          ]
+        },
+        {
+          "heading": "How do we measure success?",
+          "paragraphs": [
+            "ROI from AI is only realized when success is defined in measurable terms before implementation begins. Consulting produces defined metrics: cost per transaction before and after, processing time reduction, accuracy improvement vs. baseline, revenue attributed to AI-driven recommendations. Without defined metrics, AI investment cannot be justified to a board or executive team."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing",
+      "type": "table",
+      "eyebrow": "Pricing 2026",
+      "title": "AI consulting pricing — 2026",
+      "description": "ClickMasters is one of the very few AI consulting companies that publishes rates. Here is what AI consulting actually costs.",
+      "tone": "surface",
+      "width": "wide",
+      "animation": "horizontal-reveal",
+      "variant": "pricing",
+      "columns": [
+        {
+          "key": "engagement",
+          "label": "Engagement Type",
+          "align": "left",
+          "width": "25%"
+        },
+        {
+          "key": "investment",
+          "label": "Rate / Investment",
+          "align": "left",
+          "width": "20%"
+        },
+        {
+          "key": "duration",
+          "label": "Duration",
+          "align": "left",
+          "width": "18%"
+        },
+        {
+          "key": "deliverables",
+          "label": "Deliverables",
+          "align": "left",
+          "width": "37%"
+        }
+      ],
+      "rows": [
+        {
+          "id": "hourly",
+          "cells": {
+            "engagement": "Hourly Advisory",
+            "investment": "$200–$400/hr",
+            "duration": "As needed",
+            "deliverables": "Architecture reviews, technical due diligence, strategy guidance"
+          }
+        },
+        {
+          "id": "readiness",
+          "cells": {
+            "engagement": "AI Readiness Assessment",
+            "investment": "$5,000–$12,000",
+            "duration": "1–2 weeks",
+            "deliverables": "Data audit, use case prioritization, gap analysis report"
+          }
+        },
+        {
+          "id": "strategy",
+          "cells": {
+            "engagement": "AI Strategy Engagement",
+            "investment": "$15,000–$40,000",
+            "duration": "4–8 weeks",
+            "deliverables": "Full AI roadmap, ROI models, vendor evaluation, implementation plan"
+          }
+        },
+        {
+          "id": "due-diligence",
+          "cells": {
+            "engagement": "AI Technical Due Diligence",
+            "investment": "$5,000–$15,000",
+            "duration": "1–2 weeks",
+            "deliverables": "Existing system review, code audit, risk assessment report"
+          }
+        },
+        {
+          "id": "advisory",
+          "cells": {
+            "engagement": "AI Implementation Advisory (retainer)",
+            "investment": "$8,000–$20,000/mo",
+            "duration": "3–12 months",
+            "deliverables": "Ongoing strategic oversight of AI implementation program"
+          }
+        },
+        {
+          "id": "genai",
+          "cells": {
+            "engagement": "GenAI Strategy Engagement",
+            "investment": "$15,000–$45,000",
+            "duration": "4–8 weeks",
+            "deliverables": "GenAI use case roadmap, model selection framework, build-vs-buy analysis"
+          }
+        },
+        {
+          "id": "strategy-implementation",
+          "cells": {
+            "engagement": "Strategy + Full Implementation",
+            "investment": "$40,000–$500,000+",
+            "duration": "3–12 months",
+            "deliverables": "Strategy phase + full production AI development, end-to-end"
+          }
+        }
+      ],
+      "note": "SMB AI consulting: entry-level AI readiness assessments at $5,000–$12,000. Large enterprise programs: strategy phase typically $40,000–$80,000, scoped individually."
+    },
+    {
+      "id": "consulting-services",
+      "type": "feature-grid",
+      "eyebrow": "Services",
+      "title": "ClickMasters AI consulting services",
+      "description": "From readiness assessment to full implementation advisory — AI consulting that delivers measurable outcomes.",
+      "tone": "default",
+      "width": "wide",
+      "animation": "stagger",
+      "variant": "bento",
+      "columns": 2,
+      "items": [
+        {
+          "title": "AI Readiness Assessment",
+          "description": "Five dimensions: data readiness, technology infrastructure, organizational readiness, use case identification, and compliance landscape. Output: written AI Readiness Report, 20–40 pages, with scored assessment, prioritized use case map, and 12-month AI investment plan.",
+          "icon": "clipboard",
+          "label": "$5K–$12K"
+        },
+        {
+          "title": "AI Strategy Engagement",
+          "description": "Comprehensive AI roadmap: specific initiatives ranked by ROI and complexity, vendor recommendations, build-vs-buy analysis, budget model, team assessment, governance framework. Led by senior consultants with technical AI depth and business strategy experience.",
+          "icon": "compass",
+          "label": "$15K–$40K"
+        },
+        {
+          "title": "Generative AI Consulting",
+          "description": "Foundation model selection, RAG vs. fine-tuning decision framework, prompt engineering governance, output quality evaluation, GenAI cost modeling at scale, data privacy considerations, and integration architecture.",
+          "icon": "sparkle",
+          "label": "$15K–$45K"
+        },
+        {
+          "title": "AI Technical Due Diligence",
+          "description": "Independent technical review: code quality, architecture soundness, model performance validation, data pipeline integrity, security assessment, scalability assessment. For PE/VC investors, vendor evaluation, and acquisition targets.",
+          "icon": "shield",
+          "label": "$5K–$15K"
+        },
+        {
+          "title": "AI Implementation Advisory (Retainer)",
+          "description": "Senior strategic oversight throughout implementation. Independent technical adviser — reviewing architecture decisions, validating vendor proposals, attending milestone reviews, providing senior perspective at critical decision points.",
+          "icon": "message",
+          "label": "$8K–$20K/mo"
+        },
+        {
+          "title": "AI Governance & Risk Management",
+          "description": "NIST AI RMF framework, EU AI Act compliance, industry-specific governance (financial services MRM, healthcare liability). Risk classification, compliance mapping, governance framework, and regulatory audit readiness documentation.",
+          "icon": "scale",
+          "label": "Scoped"
+        }
+      ]
+    },
+    {
+      "id": "industry-consulting",
+      "type": "feature-grid",
+      "eyebrow": "Industries",
+      "title": "AI consulting for specific industries",
+      "description": "Industry-specific AI consulting with regulatory and domain expertise built in.",
+      "tone": "surface",
+      "width": "wide",
+      "animation": "stagger",
+      "variant": "bento",
+      "columns": 2,
+      "items": [
+        {
+          "title": "Financial Services (FinTech)",
+          "description": "Use case prioritization (fraud detection, credit scoring, AML monitoring, customer service AI, regulatory reporting), compliance framework design (SOC 2, PCI DSS, GDPR, FINRA MRM), vendor evaluation, and build-vs-buy analysis with Model Risk Management requirements.",
+          "icon": "bank"
+        },
+        {
+          "title": "Healthcare (HIPAA-Ready)",
+          "description": "Regulatory, ethical, and technical challenges of AI in clinical settings. Use case prioritization across clinical decision support, revenue cycle automation, patient engagement, and operational efficiency with HIPAA-compliant architecture.",
+          "icon": "heart"
+        },
+        {
+          "title": "eCommerce and Retail",
+          "description": "Highest measurable ROI use cases: personalization and recommendation systems, demand forecasting and inventory optimization, dynamic pricing, visual search, and customer service automation. ROI models grounded in your GMV and operating metrics.",
+          "icon": "store"
+        },
+        {
+          "title": "B2B SaaS",
+          "description": "AI features for retention and expansion revenue, per-seat pricing models, foundation model selection (balancing performance, cost, privacy), and evaluation of AI as competitive moat vs. table-stakes feature.",
+          "icon": "cloud"
+        }
+      ]
+    },
+    {
+      "id": "good-vs-mediocre",
+      "type": "rich-text",
+      "eyebrow": "Evaluation",
+      "title": "What separates a good AI consultant from a mediocre one",
+      "description": "The AI consulting market is flooded with firms that repackage vendor marketing as strategic advice. Here is how to evaluate any AI consulting engagement before you sign.",
+      "tone": "contrast",
+      "width": "content",
+      "animation": "fade-up",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "Ask for references from implemented projects, not strategy projects",
+          "paragraphs": [
+            "AI strategy that results in no implementation has zero measured ROI. The best evidence of AI consulting quality is clients who went from strategy to production — and can quantify the business outcome."
+          ]
+        },
+        {
+          "heading": "Ask how they handle it when the conclusion is 'don't build AI yet'",
+          "paragraphs": [
+            "A consulting firm with financial incentive to recommend AI development will never tell you that AI isn't the right investment for you right now. ClickMasters will — because our reputation is built on projects that succeed, not projects that get started. If your data isn't ready, if your use case doesn't have a positive ROI at your scale, we say so in the strategy engagement before any development budget is committed."
+          ]
+        },
+        {
+          "heading": "Ask for ROI modeling methodology",
+          "paragraphs": [
+            "Generic statements like 'AI typically delivers 3x ROI' are not ROI models. Ask the consulting firm to show you how they model AI ROI for a specific use case given your business metrics. A serious AI consultant can build a defensible financial model from your actual data on processing cost, volume, and baseline performance."
+          ]
+        },
+        {
+          "heading": "Ask who will actually do the work",
+          "paragraphs": [
+            "Many AI consulting firms sell engagements based on senior partners and deliver with junior analysts. Ask specifically: who will be in every stakeholder workshop, who will write the strategy document, and who will be your primary point of contact for the duration of the engagement."
+          ]
+        },
+        {
+          "heading": "Ask what happens if their recommendations don't pan out",
+          "paragraphs": [
+            "AI strategy recommendations carry uncertainty — that's inherent to the work. But a good consultant builds that uncertainty into their recommendations with scenario analysis, sensitivity testing, and explicit assumptions. Ask to see how they handle uncertainty in their deliverables."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vs-big-consultancies",
+      "type": "rich-text",
+      "eyebrow": "Comparison",
+      "title": "The McKinsey / Big 4 vs. ClickMasters for AI consulting",
+      "description": "Large consultancies offer genuine advantages. Their limitations for AI consulting specifically are equally real.",
+      "tone": "surface",
+      "width": "content",
+      "animation": "fade-up",
+      "layout": "editorial",
+      "blocks": [
+        {
+          "heading": "The price difference",
+          "paragraphs": [
+            "McKinsey, Deloitte, and Accenture AI consulting rates run $500–$1,500/hour for senior consultants. A 6-week AI strategy engagement at these firms costs $200,000–$600,000. For a Fortune 500 company with a $50M AI budget, this is a reasonable investment. For a mid-market company with a $500,000 AI budget, spending 40% of it on strategy is not.",
+            "ClickMasters delivers senior AI strategy consulting at $200–$400/hour. Our consultants have deep AI/ML technical expertise combined with business strategy experience — the combination that makes AI consulting valuable. We do not have the industry benchmarking databases of McKinsey or the brand recognition of Deloitte. We deliver technically grounded AI strategy at a price point that mid-market and growth-stage companies can actually afford."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ai-replacement",
+      "type": "rich-text",
+      "eyebrow": "Perspective",
+      "title": "Will AI replace consulting? The real answer.",
+      "description": "This is the most common question we get from both clients and prospective hires.",
+      "tone": "contrast",
+      "width": "content",
+      "animation": "mask-reveal",
+      "layout": "editorial",
+      "blocks": [
+        {
+          "heading": "AI tools are changing how consulting work is done",
+          "paragraphs": [
+            "Tasks that previously required analyst hours — data gathering, pattern identification, market sizing, report formatting — are being completed faster with AI assistance. This shifts the value of consulting further toward what AI cannot do: understanding organizational context, navigating stakeholder dynamics, making judgment calls under uncertainty, and building client trust over time.",
+            "The net effect on demand for AI consulting specifically is the opposite of displacement. McKinsey's 2025 research shows that organizations pursuing AI transformation increased their consulting spend by an average of 35% in the two years following initial AI deployment — because implementation creates new strategic questions faster than it answers existing ones.",
+            "ClickMasters' AI consulting practice exists to help organizations navigate this complexity. We are not being displaced by AI. We are advising organizations on how to use it."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "type": "faq",
+      "eyebrow": "FAQs",
+      "title": "Frequently asked questions",
+      "description": "Clear answers about AI consulting cost, services, and engagement process.",
+      "tone": "default",
+      "width": "content",
+      "animation": "fade-up",
+      "variant": "indexed",
+      "items": [
+        {
+          "question": "What does an AI consulting company do?",
+          "answer": "An AI consulting company helps organizations identify where AI can generate measurable business value, designs the implementation approach, evaluates technology and vendor options, produces ROI models, and provides strategic oversight throughout implementation. ClickMasters delivers written AI strategies tied to your specific data, technology environment, and business metrics — not generic frameworks."
+        },
+        {
+          "question": "How much does AI consulting cost?",
+          "answer": "AI consulting at ClickMasters ranges from $200/hr for advisory hours to $5,000–$12,000 for an AI Readiness Assessment, $15,000–$40,000 for a full AI Strategy Engagement, and $8,000–$20,000/month for ongoing Implementation Advisory. Enterprise transformation programs are scoped individually."
+        },
+        {
+          "question": "How is AI consulting different from AI development?",
+          "answer": "AI consulting produces strategy, roadmaps, ROI models, vendor evaluations, and architecture recommendations. AI development builds the actual AI systems. ClickMasters does both — strategy engagements frequently lead to development projects, and both consulting and development work under the same quality and transparency standards."
+        },
+        {
+          "question": "Do you offer AI consulting for small businesses?",
+          "answer": "Yes. ClickMasters' AI Readiness Assessment ($5,000–$12,000) is designed for SMBs who want a realistic picture of AI investment before committing to development. Entry-level hourly advisory ($200/hr) is also available for specific questions without a full engagement commitment."
+        },
+        {
+          "question": "How long does an AI strategy engagement take?",
+          "answer": "A ClickMasters AI Strategy Engagement takes 4–8 weeks from kickoff to final deliverable. This includes an AI Readiness Assessment (week 1–2), use case prioritization workshops (weeks 2–4), ROI modeling and vendor evaluation (weeks 3–6), and strategy document production and review (weeks 5–8). Timeline can be compressed for organizations with existing data readiness documentation."
+        },
+        {
+          "question": "Do you consult on generative AI specifically?",
+          "answer": "Yes. ClickMasters offers dedicated GenAI consulting engagements covering foundation model selection, RAG vs. fine-tuning decision frameworks, prompt engineering governance, output quality evaluation, cost modeling at scale, and data privacy considerations. GenAI strategy is a distinct specialization from general AI strategy."
+        },
+        {
+          "question": "Can ClickMasters consult and then build the AI systems you recommend?",
+          "answer": "Yes, and this is the most efficient path for most clients. Strategy engagements are priced and contracted separately from development, so you are not locked into ClickMasters as your development partner based on consulting recommendations. If our strategy concludes that a third-party vendor or off-the-shelf platform is the right choice, we will say so and help you evaluate and select it."
+        },
+        {
+          "question": "Is there a free initial consultation?",
+          "answer": "Yes. ClickMasters offers a free 30-minute AI strategy call with a senior consultant. In 30 minutes we can assess whether a formal consulting engagement is the right next step for you, give you an honest preliminary view of your AI opportunity, and answer your most pressing questions about AI feasibility and investment."
+        }
+      ]
+    },
+    {
+      "id": "internal-case",
+      "type": "rich-text",
+      "eyebrow": "Business Case",
+      "title": "Building the internal case for AI investment",
+      "description": "One of the most underappreciated roles an AI consulting company plays is helping internal champions build the business case for AI investment.",
+      "tone": "surface",
+      "width": "content",
+      "animation": "fade-up",
+      "layout": "editorial",
+      "blocks": [
+        {
+          "heading": "Executive-ready business case materials",
+          "paragraphs": [
+            "ClickMasters' strategy engagements produce business case materials designed for executive consumption, not just technical documentation. The financial model includes the following components:"
+          ],
+          "bullets": [
+            "Current state cost baseline for the process being automated or improved",
+            "Projected cost after AI implementation (accounting for development, infrastructure, and ongoing maintenance)",
+            "Net present value of the investment over a 3-year horizon",
+            "Sensitivity analysis showing ROI at conservative, expected, and optimistic performance assumptions",
+            "A risk-adjusted payback period"
+          ]
+        },
+        {
+          "heading": "The IDC AI market forecast (2025)",
+          "paragraphs": [
+            "The global AI market is projected to reach $632 billion by 2028 — a compound annual growth rate of 28%. In this environment, the organizations that establish AI capabilities in 2026 will have a structural advantage over those that start in 2028 that compounds over time. ClickMasters' consulting practice exists to help organizations start now with investments that are justified, well-scoped, and positioned to deliver measurable returns."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "governance",
+      "type": "rich-text",
+      "eyebrow": "Governance",
+      "title": "AI governance and risk management consulting",
+      "description": "As AI systems become more consequential — making or influencing decisions about credit, healthcare, employment, and legal outcomes — governance and risk management become critical consulting topics.",
+      "tone": "contrast",
+      "width": "content",
+      "animation": "mask-reveal",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "AI governance frameworks",
+          "paragraphs": [
+            "The NIST AI Risk Management Framework (NIST AI RMF 1.0) provides the most comprehensive US-based guidance for managing AI risks across the model lifecycle. The EU AI Act (2024) establishes binding requirements for organizations deploying high-risk AI systems in European markets, with significant implications for US companies serving European customers."
+          ]
+        },
+        {
+          "heading": "Industry-specific requirements",
+          "paragraphs": [
+            "Financial services firms deploying ML-based credit decisioning must satisfy model risk management requirements. Healthcare organizations deploying clinical AI must address liability, informed consent, and FDA oversight questions. Legal services organizations deploying AI for client-facing work face professional responsibility rules that require human-review-in-the-loop design."
+          ]
+        },
+        {
+          "heading": "What ClickMasters produces",
+          "paragraphs": [
+            "ClickMasters' AI governance consulting produces a comprehensive set of deliverables for responsible AI deployment:"
+          ],
+          "bullets": [
+            "An AI risk classification for your proposed system (using NIST AI RMF categories)",
+            "A compliance requirements map for your industry and jurisdiction",
+            "A governance framework for the model development and deployment lifecycle",
+            "Documentation requirements for regulatory audit readiness",
+            "An ongoing monitoring and review cadence for deployed AI systems"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recovery",
+      "type": "rich-text",
+      "eyebrow": "Recovery",
+      "title": "AI consulting for organizations that have already tried AI",
+      "description": "A significant portion of ClickMasters' consulting engagements are with organizations that have already made an AI investment and are trying to understand why it didn't deliver the expected returns.",
+      "tone": "surface",
+      "width": "content",
+      "animation": "fade-up",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "We built an AI pilot that never reached production",
+          "paragraphs": [
+            "ClickMasters conducts a technical autopsy — assessing what specifically prevented production deployment and producing a revised implementation plan with the specific obstacles addressed."
+          ]
+        },
+        {
+          "heading": "We deployed AI and it's not performing as expected",
+          "paragraphs": [
+            "ClickMasters conducts a performance investigation: data pipeline audit, model evaluation methodology review, production accuracy assessment, and root cause analysis for the performance gap. Typical finding: the evaluation methodology used during development overestimated production performance."
+          ]
+        },
+        {
+          "heading": "Our AI vendor delivered something we can't maintain or improve",
+          "paragraphs": [
+            "ClickMasters reviews the delivered codebase, identifies maintainability issues, and produces a technical transition plan for bringing the system under sustainable internal or external management."
+          ]
+        },
+        {
+          "heading": "We spent $500K on AI with a large consultancy and have a strategy deck but no AI",
+          "paragraphs": [
+            "This is more common than it should be. ClickMasters translates strategy into implementation — reviewing the existing strategy for technical soundness, identifying what is actionable with your current data and infrastructure, and producing a pragmatic implementation plan with realistic costs and timelines."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "90-day-roadmap",
+      "type": "rich-text",
+      "eyebrow": "Roadmap",
+      "title": "The 90-day AI consulting roadmap",
+      "description": "For organizations that want to move from decision to production AI in 90 days, ClickMasters offers an accelerated consulting-plus-build engagement.",
+      "tone": "contrast",
+      "width": "content",
+      "animation": "mask-reveal",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "Days 1–14 (Discovery & Strategy)",
+          "paragraphs": [
+            "AI Readiness Assessment + initial use case prioritization. Delivered: AI Readiness Report, top 3 use case candidates with preliminary ROI estimates, recommended architecture for lead use case."
+          ]
+        },
+        {
+          "heading": "Days 15–30 (Technical Scoping)",
+          "paragraphs": [
+            "Deep technical scoping of the highest-priority use case. Data pipeline review, integration mapping, compliance assessment, fixed-price proposal for build phase. Delivered: Technical Scope Document with fixed-price milestone breakdown."
+          ]
+        },
+        {
+          "heading": "Days 31–90 (Build — Sprint 1)",
+          "paragraphs": [
+            "First development milestone. For most first AI projects (focused RAG or ML application), this period covers data engineering, model development, and initial API build — with a working demo of the core AI capability available at day 90.",
+            "Full production deployment follows in the subsequent 4–8 weeks depending on application complexity. This structure is designed for organizations with an internal champion who can accelerate decision-making and a clear first use case in mind."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "why-mid-market",
+      "type": "rich-text",
+      "eyebrow": "Why Us",
+      "title": "Why ClickMasters is the right AI consulting partner for mid-market companies",
+      "description": "The AI consulting market is bifurcated. ClickMasters occupies the middle — and specifically builds for mid-market companies ($10M–$500M revenue).",
+      "tone": "surface",
+      "width": "content",
+      "animation": "fade-up",
+      "layout": "editorial",
+      "blocks": [
+        {
+          "heading": "Technical credibility + business strategy experience",
+          "paragraphs": [
+            "Our consultants bring both technical AI depth (they have built and deployed production AI systems) and business strategy experience (they have designed AI roadmaps that get implemented, not shelved). The combination is rarer than it should be.",
+            "When a ClickMasters consultant recommends an RAG architecture over fine-tuning for your knowledge base application, they are making a recommendation grounded in having built both types of systems and knowing which one actually performs in production for use cases like yours. When they produce an ROI model for a demand forecasting initiative, it is built from real project cost data and real performance improvement data from similar deployments — not from consulting firm benchmarks designed to make AI look maximally attractive.",
+            "This is why our strategy engagements lead to implementations at a higher rate than the industry average. Strategy that is technically credible and financially realistic gets executed. Strategy that is aspirationally designed and economically optimistic gets shelved."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "type": "cta",
+      "eyebrow": "Get Started",
+      "heading": "Book your free AI strategy call",
+      "text": "ClickMasters responds to every inquiry within 24 business hours. The free strategy call is 30 minutes with a senior AI consultant — not a sales representative. No pitch deck, no product demo. Just an honest conversation about where AI creates real value in your business.",
+      "tone": "contrast",
+      "width": "wide",
+      "animation": "fade-scale",
+      "primaryCta": {
+        "label": "Book Your Free 30-Min AI Strategy Call",
+        "href": "/contact/"
+      },
+      "secondaryCta": {
+        "label": "Email the AI Consulting Team",
+        "href": "mailto:hello@clickmastersartificialintelligencecompany.com"
+      },
+      "contactEmail": "hello@clickmastersartificialintelligencecompany.com",
+      "variant": "orbital"
+    }
+  ],
+  "relatedPages": [
+    {
+      "title": "AI Strategy Consulting",
+      "description": "Strategic AI planning and roadmap development.",
+      "href": "/ai-strategy-consulting/"
+    },
+    {
+      "title": "Generative AI Consulting",
+      "description": "GenAI strategy, model selection, and implementation.",
+      "href": "/generative-ai-consulting/"
+    },
+    {
+      "title": "AI Development Cost",
+      "description": "Understand the true cost of AI development.",
+      "href": "/ai-development-cost/"
+    },
+    {
+      "title": "Custom AI Development Company",
+      "description": "End-to-end custom AI development services.",
+      "href": "/custom-ai-development-company/"
+    },
+    {
+      "title": "AI Consulting for FinTech",
+      "description": "AI strategy for financial services.",
+      "href": "/ai-consulting/fintech/"
+    },
+    {
+      "title": "AI Consulting for Healthcare",
+      "description": "AI strategy for healthcare organizations.",
+      "href": "/ai-consulting/healthcare/"
+    }
+  ]
+}

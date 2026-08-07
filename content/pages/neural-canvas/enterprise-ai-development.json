@@ -1,0 +1,549 @@
+{
+  "slug": "enterprise-ai-development",
+  "status": "published",
+  "seo": {
+    "title": "Enterprise AI Development Services | ClickMasters AI",
+    "description": "Enterprise AI development from $100K. Custom AI platforms, ML pipelines & LLM integration at scale. HIPAA, SOC 2, GDPR. Fixed-price. Free enterprise AI call.",
+    "canonical": "/enterprise-ai-development/",
+    "primaryKeyword": "enterprise ai development",
+    "secondaryKeywords": [
+      "enterprise ai development services",
+      "enterprise ai platform",
+      "enterprise ai company",
+      "enterprise machine learning development",
+      "enterprise llm integration",
+      "enterprise ai solutions",
+      "large scale ai development"
+    ],
+    "openGraphImage": "/images/pages/enterprise-ai-development/og-image.jpg",
+    "noIndex": false,
+    "noFollow": false
+  },
+  "schema": {
+    "service": true,
+    "organization": true,
+    "breadcrumbs": true,
+    "faq": true
+  },
+  "appearance": {
+    "template": "neural-canvas",
+    "accent": "blue",
+    "background": "neural-grid",
+    "grain": true,
+    "glow": true,
+    "scrollProgress": true,
+    "customCursor": true
+  },
+  "hero": {
+    "eyebrow": "Enterprise AI Development",
+    "title": "Enterprise AI Development — Custom AI Platforms, ML Infrastructure & Production AI at Scale",
+    "highlightedText": "From $100,000 · SOC 2-ready · HIPAA · GDPR · Fixed-price",
+    "description": "ClickMasters builds enterprise-scale AI systems for Fortune 1000 companies, large mid-market enterprises, and regulated industry organizations that need AI development beyond what standard off-the-shelf AI tools deliver. Enterprise AI development at ClickMasters addresses the full stack: ML model development, LLM integration, AI API infrastructure, MLOps pipelines, and the governance, compliance, and security architecture that enterprise AI deployments require. Enterprise AI projects start at $100,000. Fixed-price milestone contracts. Full IP transfer. USA-based senior engineers. SOC 2-ready by design.",
+    "primaryCta": {
+      "label": "Get a Free Enterprise AI Assessment — 24-Hour Response",
+      "href": "#cta",
+      "ariaLabel": "Get a free enterprise AI assessment with 24-hour response"
+    },
+    "secondaryCta": {
+      "label": "Explore Custom AI Development",
+      "href": "/custom-ai-development-company/"
+    },
+    "trustText": "SOC 2-ready · HIPAA · GDPR · SR 11-7 · Fixed-price · Full IP",
+    "metrics": [
+      {
+        "value": "$100K+",
+        "label": "Project starting price",
+        "description": "Enterprise AI development"
+      },
+      {
+        "value": "16-28",
+        "label": "Weeks to deployment",
+        "description": "Typical enterprise ML timeline"
+      },
+      {
+        "value": "99.9%",
+        "label": "Uptime target",
+        "description": "Multi-AZ high availability"
+      }
+    ],
+    "visual": {
+      "type": "neural-sphere",
+      "label": "Enterprise AI development stack",
+      "modelNames": [
+        "ML Platforms",
+        "LLM Integration",
+        "MLOps",
+        "Snowflake",
+        "Databricks",
+        "SAP"
+      ]
+    }
+  },
+  "sections": [
+    {
+      "id": "what-makes-enterprise-different",
+      "type": "rich-text",
+      "eyebrow": "Key Differences",
+      "title": "What makes enterprise AI development different",
+      "description": "Enterprise AI development is substantively different from startup or mid-market AI development in five dimensions that determine whether an AI development partner can actually serve enterprise requirements.",
+      "tone": "default",
+      "width": "content",
+      "animation": "mask-reveal",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "1. Scale and Performance Requirements",
+          "paragraphs": [
+            "Enterprise AI systems operate at scale that requires specific architectural decisions. A lead scoring model that scores 10,000 records per day can run as a nightly batch job on a single machine. The same model that must score 10 million records per hour in real-time requires distributed inference infrastructure, load balancing, auto-scaling, and latency monitoring. An LLM integration that handles 100 conversations per day runs on a single API key. The same integration handling 50,000 conversations per day requires rate limit management, cost optimization, fallback handling, and response caching.",
+            "ClickMasters designs enterprise AI with target scale as an architectural input from day one — not an afterthought that requires costly re-architecture after launch."
+          ]
+        },
+        {
+          "heading": "2. Security and Compliance Architecture",
+          "paragraphs": [
+            "Enterprise AI deployments must satisfy security and compliance requirements that SMB AI deployments frequently skip. SOC 2 Type II: AI systems handling enterprise customer data must satisfy SOC 2 Trust Service Criteria. HIPAA: Healthcare enterprise AI deployments require BAA execution and PHI-safe infrastructure. SOX: Financial enterprise AI that affects financial reporting processes must satisfy SOX controls. GDPR / EU AI Act: GDPR-compliant AI design and EU AI Act compliance required from the architecture level. NIST AI Risk Management Framework: Many US enterprise organizations now require NIST AI RMF alignment."
+          ]
+        },
+        {
+          "heading": "3. Integration with Enterprise Technology Stack",
+          "paragraphs": [
+            "Enterprise AI systems integrate with ERP systems (SAP, Oracle, Microsoft Dynamics) requiring specific integration expertise. Enterprise identity and access management (Okta, Azure AD, Ping Identity) requires SAML 2.0 and OAuth 2.0/OIDC integration. Enterprise data platforms (Snowflake, Databricks, BigQuery) require integration with ML pipelines. Enterprise observability (Datadog, Splunk, New Relic) requires instrumentation with existing observability infrastructure."
+          ]
+        },
+        {
+          "heading": "4. Governance and Change Management",
+          "paragraphs": [
+            "Enterprise AI deployments require governance and change management processes. Change control board approval: Model updates must be documented, reviewed, and approved through enterprise IT change management process. Model risk management: For financial services enterprises, OCC SR 11-7 model risk management guidelines require model documentation and independent validation. AI ethics review: Large enterprises increasingly require AI ethics review before deploying AI systems affecting employees, customers, or third parties."
+          ]
+        },
+        {
+          "heading": "5. SLA and Operational Support",
+          "paragraphs": [
+            "Enterprise AI systems require formal SLAs for uptime and response times. ClickMasters designs enterprise AI infrastructure with high availability (multi-AZ deployment eliminating single points of failure, auto-scaling for traffic spikes, circuit breakers preventing cascade failures), disaster recovery with defined RTO and RPO targets, and 24/7 monitoring with PagerDuty or OpsGenie integration for after-hours alerting."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing",
+      "type": "table",
+      "eyebrow": "Pricing 2026",
+      "title": "Enterprise AI pricing — 2026",
+      "description": "Published pricing ranges by enterprise AI project type. Every project is delivered with fixed-price milestones, defined acceptance criteria, and full IP transfer.",
+      "tone": "surface",
+      "width": "wide",
+      "animation": "horizontal-reveal",
+      "variant": "pricing",
+      "columns": [
+        {
+          "key": "project_type",
+          "label": "Enterprise AI Project Type",
+          "align": "left",
+          "width": "25%"
+        },
+        {
+          "key": "range",
+          "label": "Price Range",
+          "align": "left",
+          "width": "22%"
+        },
+        {
+          "key": "timeline",
+          "label": "Timeline",
+          "align": "left",
+          "width": "20%"
+        },
+        {
+          "key": "scope",
+          "label": "Primary Scope",
+          "align": "left",
+          "width": "33%"
+        }
+      ],
+      "rows": [
+        {
+          "id": "ml-mlops",
+          "cells": {
+            "project_type": "Enterprise ML model + MLOps",
+            "range": "$100,000–$250,000",
+            "timeline": "16–28 weeks",
+            "scope": "Single production model + full pipeline"
+          }
+        },
+        {
+          "id": "llm-integration",
+          "cells": {
+            "project_type": "Enterprise LLM integration (RAG)",
+            "range": "$80,000–$200,000",
+            "timeline": "14–24 weeks",
+            "scope": "LLM platform, knowledge base, API"
+          }
+        },
+        {
+          "id": "multi-model",
+          "cells": {
+            "project_type": "Multi-model AI platform",
+            "range": "$150,000–$400,000",
+            "timeline": "20–36 weeks",
+            "scope": "Multiple AI capabilities, unified platform"
+          }
+        },
+        {
+          "id": "api-product",
+          "cells": {
+            "project_type": "Enterprise AI API product",
+            "range": "$120,000–$300,000",
+            "timeline": "18–30 weeks",
+            "scope": "AI capabilities exposed as API product"
+          }
+        },
+        {
+          "id": "data-ml-pipeline",
+          "cells": {
+            "project_type": "Enterprise data + ML pipeline",
+            "range": "$100,000–$300,000",
+            "timeline": "16–28 weeks",
+            "scope": "Data engineering + model training pipeline"
+          }
+        },
+        {
+          "id": "transformation",
+          "cells": {
+            "project_type": "AI transformation program",
+            "range": "$200,000–$500,000+",
+            "timeline": "24–52 weeks",
+            "scope": "Multi-team AI capability, CoE setup"
+          }
+        },
+        {
+          "id": "dedicated-team",
+          "cells": {
+            "project_type": "Dedicated enterprise AI team",
+            "range": "$30,000–$60,000/month",
+            "timeline": "2-week start",
+            "scope": "Embedded AI engineering capacity"
+          }
+        }
+      ]
+    },
+    {
+      "id": "use-cases-by-industry",
+      "type": "feature-grid",
+      "eyebrow": "Industry Applications",
+      "title": "Enterprise AI use cases by industry",
+      "description": "Industry-specific enterprise AI applications with compliance architecture built in.",
+      "tone": "default",
+      "width": "wide",
+      "animation": "stagger",
+      "variant": "bento",
+      "columns": 2,
+      "items": [
+        {
+          "title": "Financial Services Enterprise AI",
+          "description": "Fraud detection at scale — real-time transaction fraud scoring at 10,000+ transactions per second with sub-50ms latency, 99.9%+ precision, SHAP explanations. Enterprise LLM for financial services — knowledge management, regulatory document analysis, client communication assistance with data residency, audit logging, PII protection. SR 11-7 model risk management documentation included.",
+          "icon": "bank",
+          "label": "SR 11-7"
+        },
+        {
+          "title": "Healthcare Enterprise AI",
+          "description": "Clinical NLP at enterprise scale — extracting structured information from millions of unstructured clinical notes using fine-tuned NLP models on clinical text. Enterprise care management AI — ML-based risk stratification identifying patients at high risk of preventable hospitalization. HIPAA compliance with Epic and Cerner data integration.",
+          "icon": "heart",
+          "label": "HIPAA"
+        },
+        {
+          "title": "Manufacturing Enterprise AI",
+          "description": "Enterprise predictive maintenance — deploying ML predictive maintenance models across 500+ assets across 10 facilities with centralized MLOps infrastructure. Data pipeline architecture for OT data integration from OSIsoft PI, Wonderware, Ignition SCADA. Quality control computer vision in high-throughput production environments.",
+          "icon": "factory",
+          "label": "SCADA/MLOps"
+        },
+        {
+          "title": "Technology & SaaS Enterprise AI",
+          "description": "Multi-model AI platforms serving multiple business units with unified governance. Enterprise LLM integration for product intelligence, customer support automation, and internal knowledge management. AI API products exposing AI capabilities to internal and external developers at scale.",
+          "icon": "cloud",
+          "label": "API Product"
+        }
+      ]
+    },
+    {
+      "id": "enterprise-engagement",
+      "type": "rich-text",
+      "eyebrow": "Engagement Model",
+      "title": "Enterprise AI engagement model",
+      "description": "ClickMasters' enterprise AI engagement model is structured to manage enterprise procurement, security, and legal requirements.",
+      "tone": "contrast",
+      "width": "content",
+      "animation": "fade-up",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "Procurement",
+          "paragraphs": [
+            "ClickMasters participates in enterprise vendor qualification processes (SOC 2 documentation, security questionnaires, insurance certificates, MNDA execution, MSA/SOW structure). We respond to RFPs and RFIs."
+          ]
+        },
+        {
+          "heading": "Security",
+          "paragraphs": [
+            "ClickMasters provides security documentation (SOC 2 Type II report, penetration test results, security questionnaire responses) for enterprise security team review. We accommodate enterprise security requirements in infrastructure design (data residency, network architecture, access controls)."
+          ]
+        },
+        {
+          "heading": "Legal",
+          "paragraphs": [
+            "ClickMasters works within enterprise MSA frameworks or ClickMasters' own MSA with enterprise-appropriate terms (liability coverage appropriate for enterprise project value, IP assignment, data handling, confidentiality)."
+          ]
+        },
+        {
+          "heading": "Executive Engagement",
+          "paragraphs": [
+            "Enterprise AI projects include executive-level engagement: project status reviews for C-level stakeholders, architecture reviews with enterprise architects, and risk reviews with enterprise risk management teams."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "type": "faq",
+      "eyebrow": "FAQs",
+      "title": "Frequently asked questions",
+      "description": "Clear answers about enterprise AI development costs, compliance, and engagement process.",
+      "tone": "default",
+      "width": "content",
+      "animation": "fade-up",
+      "variant": "indexed",
+      "items": [
+        {
+          "question": "What is enterprise AI development?",
+          "answer": "Enterprise AI development builds AI systems at the scale, security, compliance, and governance level required by large organizations. It differs from SMB AI in: architectural scale (millions of inference requests), regulatory compliance (SOC 2, HIPAA, SOX, GDPR), enterprise stack integration (SAP, Oracle, Snowflake, Databricks), governance processes (model risk management, change control), and SLA requirements (99.9%+ uptime)."
+        },
+        {
+          "question": "How much does enterprise AI development cost?",
+          "answer": "Enterprise AI projects at ClickMasters start at $100,000. Typical enterprise AI projects cost $100,000–$400,000. Full enterprise AI transformation programs cost $200,000–$500,000+. The higher cost relative to SMB AI reflects compliance architecture, governance documentation, enterprise stack integration, high-availability infrastructure, and SLA design. Full pricing above."
+        },
+        {
+          "question": "Does ClickMasters produce model risk management documentation for financial services enterprises?",
+          "answer": "Yes. ClickMasters produces OCC SR 11-7 aligned model documentation: model description, development and validation methodology, performance benchmarks, ongoing monitoring plan, and model inventory data elements. This documentation satisfies bank examiner model risk management requirements."
+        },
+        {
+          "question": "Can you build enterprise AI on our existing Snowflake / Databricks / Azure infrastructure?",
+          "answer": "Yes. ClickMasters integrates with Snowflake (including Snowflake Cortex AI features), Databricks (including MLflow and Delta Lake), Azure AI (including Azure OpenAI Service), and AWS SageMaker. Enterprise AI is built within your existing cloud environment where possible, reducing infrastructure complexity and cost."
+        },
+        {
+          "question": "Do you participate in RFP processes for enterprise AI?",
+          "answer": "Yes. ClickMasters responds to RFPs and RFIs for enterprise AI development. We provide technical approach documentation, security questionnaire responses, SOC 2 documentation, proposed team profiles, project timeline, and pricing in RFP response format. Contact hello@clickmastersartificialintelligencecompany.com to initiate an RFP process."
+        },
+        {
+          "question": "What is ClickMasters' enterprise SLA commitment?",
+          "answer": "Enterprise AI systems at ClickMasters are designed for 99.9% availability (44.7 minutes maximum downtime per month). Specific uptime SLAs are defined in the MSA/SOW for each enterprise engagement. Monitoring, alerting, and incident response procedures are documented before production launch."
+        }
+      ]
+    },
+    {
+      "id": "architecture-decisions",
+      "type": "rich-text",
+      "eyebrow": "Architecture Decisions",
+      "title": "Enterprise AI: The architecture decisions that matter at scale",
+      "description": "Enterprise AI development requires architectural decisions in the early phases of engagement that become very expensive to reverse later.",
+      "tone": "contrast",
+      "width": "content",
+      "animation": "mask-reveal",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "Build vs. Buy vs. Fine-Tune vs. Integrate",
+          "paragraphs": [
+            "Build from scratch: Required when you have proprietary training data that captures patterns no public model has learned, accuracy requirements exceed what any available pre-trained model achieves, or regulatory requirements mandate a specific model architecture. Cost premium: 40–60% over fine-tuning.",
+            "Fine-tune a foundation model: For NLP, vision, and multimodal tasks, fine-tuning typically achieves 90–95% of the accuracy of a from-scratch model at 30–50% of the development cost. ClickMasters' default recommendation for enterprise NLP and vision AI.",
+            "RAG (Retrieval-Augmented Generation): For knowledge management, document search, and question-answering applications, RAG using a frontier LLM achieves high accuracy with lower development cost. ClickMasters' default recommendation for enterprise knowledge AI.",
+            "Configure and integrate: For commodity AI capabilities where a cloud provider's pre-built AI service meets your accuracy requirement, ClickMasters recommends integration over custom development."
+          ]
+        },
+        {
+          "heading": "Private vs. Public LLM Deployment",
+          "paragraphs": [
+            "Public LLM APIs (GPT-4, Claude 3, Gemini 1.5): Faster deployment, lower infrastructure cost, access to frontier models. Concerns: data residency, data retention, and cost at scale.",
+            "Private LLM deployment (Llama 3, Mistral Large): Data stays on enterprise infrastructure, predictable cost, full control over model versions. ClickMasters recommends private LLM deployment for regulated industries, applications involving highly sensitive data, high-volume applications, and organizations with existing GPU infrastructure.",
+            "Public LLM APIs with enterprise data processing agreements are appropriate for lower-sensitivity applications, organizations without GPU infrastructure, applications where frontier model capability is required, and use cases with moderate volume."
+          ]
+        },
+        {
+          "heading": "Centralized AI Platform vs. Federated AI",
+          "paragraphs": [
+            "Centralized AI platform advantages: Consistent compliance and governance, shared feature store reduces redundant data engineering, economies of scale, unified monitoring. Appropriate for regulated industries, enterprises with strong central IT governance.",
+            "Federated AI advantages: Business unit agility, technology diversity, clear ownership. Appropriate for large conglomerates with unrelated business units, enterprises with decentralized IT governance, organizations where AI applications are highly domain-specific.",
+            "ClickMasters advises on the centralized vs. federated decision during enterprise Discovery and designs the AI governance architecture appropriate for the client's organizational structure."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "procurement",
+      "type": "rich-text",
+      "eyebrow": "Procurement",
+      "title": "Enterprise AI: The procurement and vendor selection process",
+      "description": "Enterprise AI procurement is more complex than SMB AI procurement. ClickMasters participates fully in enterprise procurement processes.",
+      "tone": "surface",
+      "width": "content",
+      "animation": "fade-up",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "RFP/RFI response",
+          "paragraphs": [
+            "ClickMasters responds to RFPs and RFIs with technical approach documentation, team profiles (bios and credentials of the specific engineers who would work on the engagement), methodology documentation, references, and pricing. We respond within the RFP deadline and address all evaluation criteria."
+          ]
+        },
+        {
+          "heading": "Security questionnaire",
+          "paragraphs": [
+            "Enterprise security teams submit security questionnaires (typically based on the SIG Lite or CAIQ framework) before vendor approval. ClickMasters maintains current responses to standard security questionnaire frameworks. SOC 2 Type II report is available under NDA."
+          ]
+        },
+        {
+          "heading": "Vendor qualification",
+          "paragraphs": [
+            "Enterprise procurement requires insurance certificates (ClickMasters carries professional liability, E&O, and cyber liability), W-9, bank references, and vendor registration in procurement systems (Ariba, Coupa, Oracle Procurement Cloud). ClickMasters maintains current vendor qualification documentation."
+          ]
+        },
+        {
+          "heading": "Legal review",
+          "paragraphs": [
+            "ClickMasters works within enterprise Master Service Agreement (MSA) frameworks or ClickMasters' own MSA. We accommodate enterprise standard contract terms with reasonable modifications. Key negotiation points: IP assignment (ClickMasters' default is full IP transfer to client), liability cap (negotiated based on project value), and data processing addendum (DPA executed for GDPR/CCPA-regulated data)."
+          ]
+        },
+        {
+          "heading": "Executive presentation",
+          "paragraphs": [
+            "For strategic AI engagements, ClickMasters presents the proposed approach at the executive level — CTO, CISO, CFO — with the business case, technical architecture, risk assessment, and ROI framework appropriate for C-level review."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vs-alternatives",
+      "type": "rich-text",
+      "eyebrow": "Comparison",
+      "title": "Enterprise AI: ClickMasters vs. the alternatives",
+      "description": "How ClickMasters compares to Big 4 consultancies, boutique firms, cloud providers, and offshore development for enterprise AI.",
+      "tone": "contrast",
+      "width": "content",
+      "animation": "mask-reveal",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "ClickMasters vs. Big 4 Consulting",
+          "paragraphs": [
+            "Big 4 AI practices bundle strategy, change management, process redesign, and technical AI development into integrated engagements. The cost premium is significant: Big 4 AI engagements typically run $300–$600/hour blended rate. ClickMasters provides the technical AI development component at $125–$175/hour effective senior engineering rate — 40–60% of Big 4 cost for the development work."
+          ]
+        },
+        {
+          "heading": "ClickMasters vs. Boutique AI Consultancies",
+          "paragraphs": [
+            "Strong boutiques have genuine ML engineering depth, production deployment experience, and industry domain knowledge. Weak boutiques have data science skills but limited production engineering capability. ClickMasters' production engineering standard (load tested, monitored, documented, version controlled, compliant) differentiates us from boutiques that deliver prototypes rather than production systems."
+          ]
+        },
+        {
+          "heading": "ClickMasters vs. Cloud Provider Professional Services",
+          "paragraphs": [
+            "AWS Professional Services, Azure Consulting Services, and Google Professional Services provide AI development tied to their cloud platforms. The engagement model tends to favor their platform. ClickMasters is cloud-agnostic — we recommend the right cloud platform for your specific requirements."
+          ]
+        },
+        {
+          "heading": "ClickMasters vs. Offshore Development Firms",
+          "paragraphs": [
+            "Offshore AI development firms offer 3–5× cost reduction. The quality risk for enterprise AI is significant: enterprise AI requires the problem framing, compliance architecture, and production engineering discipline that comes from senior US-based ML engineers with enterprise deployment experience. ClickMasters' senior US-based team reduces the risk of the expensive failure mode."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "starting-sequence",
+      "type": "rich-text",
+      "eyebrow": "Getting Started",
+      "title": "Enterprise AI: Starting the engagement",
+      "description": "For enterprise organizations beginning an AI initiative, ClickMasters recommends a structured starting sequence.",
+      "tone": "surface",
+      "width": "content",
+      "animation": "fade-up",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "Step 1: AI readiness assessment",
+          "paragraphs": [
+            "Honest evaluation of your organization's data maturity, technology stack readiness, and organizational capability for AI adoption. Many enterprises have the AI investment appetite before they have the data infrastructure to support it — the readiness assessment identifies what infrastructure investment is needed before AI development is viable."
+          ]
+        },
+        {
+          "heading": "Step 2: Use case prioritization",
+          "paragraphs": [
+            "Identifying the highest-ROI AI use cases given your specific data situation, competitive position, and organizational priorities. ClickMasters produces a use case prioritization matrix that ranks potential AI investments by ROI potential, data readiness, organizational risk, and strategic alignment."
+          ]
+        },
+        {
+          "heading": "Step 3: Pilot selection",
+          "paragraphs": [
+            "Selecting a first AI project that is scoped to generate clear ROI, validate the AI development partnership, and build organizational AI adoption muscle — without requiring the full enterprise AI platform investment upfront. The pilot creates the proof point that enables broader enterprise AI investment."
+          ]
+        },
+        {
+          "heading": "Step 4: Scale",
+          "paragraphs": [
+            "Building the broader AI platform, MLOps infrastructure, and AI governance framework that enables the enterprise to deploy AI at scale — with the confidence that comes from a validated first deployment."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "type": "cta",
+      "eyebrow": "Get Started",
+      "heading": "Start your enterprise AI project",
+      "text": "Enterprise AI development from ClickMasters. Custom AI platforms, ML infrastructure, LLM integration, enterprise data pipelines, AI transformation programs. Built for Fortune 1000 compliance and governance requirements. SOC 2, HIPAA, GDPR, EU AI Act, SR 11-7. SAP, Oracle, Snowflake, Databricks, Azure integration. RFP participation and enterprise procurement support. 99.9% uptime design with multi-AZ deployment. Fixed-price milestone contracts. Full IP transfer. USA-based senior engineers with enterprise deployment experience. From $100,000. 24-hour response.",
+      "tone": "contrast",
+      "width": "wide",
+      "animation": "fade-scale",
+      "primaryCta": {
+        "label": "Schedule Your Enterprise AI Assessment — 24-Hour Response",
+        "href": "/contact/"
+      },
+      "secondaryCta": {
+        "label": "Email the Enterprise AI Team",
+        "href": "mailto:hello@clickmastersartificialintelligencecompany.com"
+      },
+      "contactEmail": "hello@clickmastersartificialintelligencecompany.com",
+      "variant": "orbital"
+    }
+  ],
+  "relatedPages": [
+    {
+      "title": "Custom AI Development Company",
+      "description": "End-to-end custom AI development services.",
+      "href": "/custom-ai-development-company/"
+    },
+    {
+      "title": "Machine Learning Development Company",
+      "description": "Full ML development services.",
+      "href": "/machine-learning-development-company/"
+    },
+    {
+      "title": "LLM Integration Services",
+      "description": "Connect LLMs to your existing systems.",
+      "href": "/llm-integration-services/"
+    },
+    {
+      "title": "RAG Development Services",
+      "description": "Retrieval-Augmented Generation system development.",
+      "href": "/rag-development-services/"
+    },
+    {
+      "title": "AI Strategy Consulting",
+      "description": "Board-ready AI roadmaps and ROI modeling.",
+      "href": "/ai-strategy-consulting/"
+    },
+    {
+      "title": "AI Development Cost",
+      "description": "Understand the true cost of AI development.",
+      "href": "/ai-development-cost/"
+    }
+  ]
+}
