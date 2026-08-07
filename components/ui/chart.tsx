@@ -25,6 +25,11 @@ type ChartContextProps = {
   config: ChartConfig;
 };
 
+type ChartTooltipPayloadItem =
+  NonNullable<
+    TooltipContentProps<ValueType, NameType>["payload"]
+  >[number];
+
 /* -------------------- CONTEXT -------------------- */
 
 const ChartContext = React.createContext<ChartContextProps | null>(null);
@@ -166,7 +171,7 @@ const ChartTooltipContent = React.forwardRef<
         )}
 
         <div className="grid gap-1.5">
-          {(payload as any[]).map((item, index) => {
+          {payload.map((item: ChartTooltipPayloadItem, index) => {
             const indicatorColor =
               color || item.payload?.fill || item.color;
 

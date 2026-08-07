@@ -13,7 +13,11 @@ export function ScrollVideoSection() {
   const [canObserve, setCanObserve] = useState(false);
 
   useEffect(() => {
-    setCanObserve(true);
+    const timeoutId = window.setTimeout(() => {
+      setCanObserve(true);
+    }, 0);
+
+    return () => window.clearTimeout(timeoutId);
   }, []);
 
   useEffect(() => {

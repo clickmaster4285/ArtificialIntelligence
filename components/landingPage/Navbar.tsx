@@ -28,7 +28,11 @@ export function Navbar({ className }: NavbarProps) {
   }, []);
 
   useEffect(() => {
-    setIsMobileMenuOpen(false);
+    const timeoutId = window.setTimeout(() => {
+      setIsMobileMenuOpen(false);
+    }, 0);
+
+    return () => window.clearTimeout(timeoutId);
   }, [pathname]);
 
   const navLinks = [
@@ -93,7 +97,7 @@ export function Navbar({ className }: NavbarProps) {
             href="/contact"
             className="hidden md:block text-sm font-medium border border-white/40 rounded-full px-5 py-2 hover:bg-white hover:text-black transition-all duration-300 hover:shadow-lg hover:shadow-white/10"
           >
-            Let's talk
+            Let&apos;s talk
           </Link>
 
           {/* Mobile Menu Button */}
@@ -153,7 +157,7 @@ export function Navbar({ className }: NavbarProps) {
                 className="block text-sm font-medium border border-white/40 rounded-full px-5 py-2 text-center hover:bg-white hover:text-black transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Let's talk
+                Let&apos;s talk
               </Link>
             </div>
           </motion.div>

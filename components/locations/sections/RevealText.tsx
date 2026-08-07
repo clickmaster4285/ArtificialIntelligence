@@ -30,7 +30,7 @@ export function RevealText({
   stagger = 0.06,
 }: RevealTextProps) {
   const words = text.split(' ');
-  const Tag = as as any;
+  const Tag: keyof React.JSX.IntrinsicElements = as;
 
   const viewportProps =
     trigger === 'scroll' ? { whileInView: 'visible', viewport: { once: true, margin: '-60px' } } : { animate: 'visible' };

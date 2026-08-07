@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-require-imports */
+
 const fs = require('fs');
 const path = require('path');
 
@@ -19,4 +21,3 @@ const files = walk(publicDir)
 
 console.log('MP4 files in public/:');
 console.log(files.join('\n'));
-

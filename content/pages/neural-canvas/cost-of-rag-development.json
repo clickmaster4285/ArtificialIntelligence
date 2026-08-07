@@ -1,0 +1,672 @@
+{
+  "slug": "cost-of-rag-development",
+  "status": "published",
+  "seo": {
+    "title": "Cost of RAG Development | ClickMasters AI",
+    "description": "Cost of RAG development: $20K–$80K complete breakdown by component. Vector DB, embedding, retrieval tuning costs. Free RAG project cost estimate.",
+    "canonical": "/cost-of-rag-development/",
+    "primaryKeyword": "cost of rag development",
+    "secondaryKeywords": [
+      "rag development cost",
+      "how much does rag cost",
+      "retrieval augmented generation pricing",
+      "rag implementation cost",
+      "enterprise rag pricing"
+    ],
+    "openGraphImage": "/images/pages/cost-of-rag-development/og-image.jpg",
+    "noIndex": false,
+    "noFollow": false
+  },
+  "schema": {
+    "service": true,
+    "organization": true,
+    "breadcrumbs": true,
+    "faq": true
+  },
+  "appearance": {
+    "template": "neural-canvas",
+    "accent": "violet",
+    "background": "neural-grid",
+    "grain": true,
+    "glow": true,
+    "scrollProgress": true,
+    "customCursor": true
+  },
+  "hero": {
+    "eyebrow": "Transparent 2026 Pricing",
+    "title": "Cost of RAG Development — Complete Breakdown by Component",
+    "highlightedText": "From $20K",
+    "description": "RAG (Retrieval-Augmented Generation) development costs $20,000 to $80,000 for most business applications, with enterprise-scale multi-source systems running $100,000+. The actual price depends on five specific cost drivers—and this page breaks down exactly how each one moves the number.",
+    "primaryCta": {
+      "label": "Get a Free RAG Project Cost Estimate",
+      "href": "#consultation",
+      "ariaLabel": "Get a free RAG project cost estimate with 24-hour response"
+    },
+    "secondaryCta": {
+      "label": "Explore RAG Development Services",
+      "href": "/rag-development-services/"
+    },
+    "trustText": "Fixed price · Full IP ownership · Senior USA-based engineers",
+    "metrics": [
+      {
+        "value": "$20K",
+        "label": "Starting investment",
+        "description": "For a basic single-source RAG system"
+      },
+      {
+        "value": "6–8",
+        "label": "Weeks to launch (Basic)",
+        "description": "Focused RAG integrations ship fast"
+      },
+      {
+        "value": "24h",
+        "label": "Initial response",
+        "description": "Itemized estimate within one business day"
+      }
+    ],
+    "visual": {
+      "type": "neural-sphere",
+      "label": "RAG architecture stack",
+      "modelNames": [
+        "Vector DB",
+        "Embedding",
+        "Hybrid Search",
+        "Re-ranking",
+        "LLM"
+      ]
+    }
+  },
+  "sections": [
+    {
+      "id": "rag-pricing-tiers",
+      "type": "table",
+      "eyebrow": "Cost by Project Tier",
+      "title": "RAG development cost by complexity and scope",
+      "description": "These ranges reflect ClickMasters' fixed-price project fees for the development work itself. Ongoing vector database hosting and LLM API costs are separate line items detailed further below.",
+      "tone": "contrast",
+      "width": "wide",
+      "animation": "horizontal-reveal",
+      "variant": "pricing",
+      "columns": [
+        {
+          "key": "tier",
+          "label": "Tier",
+          "align": "left",
+          "width": "28%"
+        },
+        {
+          "key": "description",
+          "label": "Description",
+          "align": "left",
+          "width": "40%"
+        },
+        {
+          "key": "price",
+          "label": "Price Range",
+          "align": "left",
+          "width": "16%"
+        },
+        {
+          "key": "timeline",
+          "label": "Timeline",
+          "align": "left",
+          "width": "16%"
+        }
+      ],
+      "rows": [
+        {
+          "id": "basic-rag",
+          "cells": {
+            "tier": "Basic RAG",
+            "description": "Single document source, simple retrieval, internal tool",
+            "price": "$20,000 – $35,000",
+            "timeline": "6–8 weeks"
+          },
+          "highlighted": true,
+          "badge": "Most common starting point"
+        },
+        {
+          "id": "standard-rag",
+          "cells": {
+            "tier": "Standard RAG",
+            "description": "Multiple sources, hybrid retrieval, customer-facing",
+            "price": "$35,000 – $65,000",
+            "timeline": "8–12 weeks"
+          }
+        },
+        {
+          "id": "advanced-rag",
+          "cells": {
+            "tier": "Advanced RAG",
+            "description": "Multi-source, re-ranking, tool-use integration, evaluation suite",
+            "price": "$60,000 – $100,000",
+            "timeline": "12–16 weeks"
+          }
+        },
+        {
+          "id": "enterprise-rag",
+          "cells": {
+            "tier": "Enterprise RAG",
+            "description": "Org-wide knowledge base, access control, multi-system integration",
+            "price": "$100,000 – $250,000+",
+            "timeline": "16–28 weeks"
+          }
+        }
+      ],
+      "note": "Ongoing infrastructure costs (vector DB hosting and LLM API usage) are billed separately at provider rates and not marked up by ClickMasters.",
+      "cta": {
+        "label": "Get a Fixed Project Estimate for Your Use Case",
+        "href": "#consultation"
+      }
+    },
+    {
+      "id": "cost-drivers",
+      "type": "feature-grid",
+      "eyebrow": "What Drives the Cost",
+      "title": "The five variables that determine your RAG project price",
+      "description": "Understanding these cost drivers lets you estimate your project's likely cost before a sales call—and ensures you're comparing quotes on the same basis.",
+      "tone": "default",
+      "width": "wide",
+      "animation": "stagger",
+      "variant": "bento",
+      "columns": 2,
+      "items": [
+        {
+          "title": "1. Data Volume & Format Complexity",
+          "description": "Single, clean, well-structured sources (e.g., a product FAQ) cost less than dozens of source types—PDFs, Word docs, database records, scanned images requiring OCR. Each additional source format adds $3,000–$10,000 in ingestion engineering.",
+          "icon": "database",
+          "label": "Ingestion"
+        },
+        {
+          "title": "2. Retrieval Architecture Sophistication",
+          "description": "Basic semantic-only retrieval is cheapest but misses exact matches. Hybrid retrieval (semantic + keyword) adds $5,000–$15,000. Adding a re-ranking layer adds another $5,000–$12,000 but significantly improves relevance and reduces hallucinations.",
+          "icon": "network",
+          "label": "Retrieval"
+        },
+        {
+          "title": "3. Integration Scope",
+          "description": "A standalone chat interface costs less than one integrated into a CRM, ticketing system, or internal tool with action-taking capability. Each additional system integration typically adds $5,000–$20,000 depending on API quality and authentication complexity.",
+          "icon": "workflow",
+          "label": "Integration"
+        },
+        {
+          "title": "4. Evaluation Rigor",
+          "description": "A formal evaluation suite (curated test set measuring precision/recall and end-to-end accuracy) adds $5,000–$15,000. Skipping it saves upfront cost but leaves retrieval gaps undetected until production—a much more expensive fix later.",
+          "icon": "brain",
+          "label": "Quality Assurance"
+        },
+        {
+          "title": "5. Ongoing Infrastructure Choice",
+          "description": "Vector DB hosting runs $50–$500+/month. LLM API costs run $200–$5,000+/month depending on volume. Self-hosting trades these for upfront setup—worth it at higher volumes. ClickMasters models this crossover explicitly during Discovery.",
+          "icon": "cloud",
+          "label": "Infrastructure"
+        }
+      ]
+    },
+    {
+      "id": "whats-included",
+      "type": "rich-text",
+      "eyebrow": "Scope Clarity",
+      "title": "What's included in every fixed-price RAG quote",
+      "description": "ClickMasters' pricing transparency means you know exactly what you're paying for—and what you aren't.",
+      "tone": "surface",
+      "width": "content",
+      "animation": "mask-reveal",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "Core inclusions (standard across all tiers)",
+          "paragraphs": [
+            "Every RAG project ClickMasters delivers includes: data ingestion and chunking pipeline for your specific source formats; vector database setup and configuration; retrieval architecture (semantic, hybrid, or hybrid-plus-reranking based on your accuracy requirements); generation layer integration with your chosen LLM; a documented evaluation report measuring retrieval and answer quality against a representative test set; and deployment documentation."
+          ],
+          "bullets": [
+            "Custom ingestion pipeline for your formats",
+            "Vector DB setup & configuration",
+            "Retrieval architecture implementation",
+            "LLM generation layer integration",
+            "Evaluation report & test set",
+            "Deployment & runbooks"
+          ]
+        },
+        {
+          "heading": "Available add-ons (scoped separately)",
+          "paragraphs": [
+            "The following are not included by default but can be added to your fixed-price quote: ongoing monitoring and retraining retainers; additional system integrations beyond the initially scoped set; and multilingual support beyond your primary language (which adds modest cost given most modern embedding models have reasonable native multilingual capability, but still requires testing and tuning specific to additional languages)."
+          ],
+          "bullets": [
+            "Post-launch monitoring retainers",
+            "Additional system integrations",
+            "Multilingual support & tuning",
+            "Custom UI / front-end interfaces"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rag-vs-finetuning",
+      "type": "rich-text",
+      "eyebrow": "Cost Comparison",
+      "title": "RAG vs. Fine-Tuning: which is cheaper (and more maintainable)?",
+      "tone": "default",
+      "width": "content",
+      "animation": "fade-up",
+      "layout": "two-column",
+      "blocks": [
+        {
+          "heading": "Why RAG wins for most knowledge-base use cases",
+          "paragraphs": [
+            "Fine-tuning a model on your data costs $5,000–$40,000 depending on data volume and complexity, but it bakes a snapshot of your data into the model weights at a point in time—meaning the model goes stale as your information changes and must be periodically re-fine-tuned (incurring the cost again). RAG retrieves from your live, current knowledge base, so updating the source documents updates what the system can answer with zero additional model training cost."
+          ],
+          "bullets": [
+            "Live data updates = zero retraining cost",
+            "Better for rapidly changing business information",
+            "Lower total cost of ownership over 12–24 months"
+          ]
+        },
+        {
+          "heading": "When fine-tuning is still the right tool",
+          "paragraphs": [
+            "Fine-tuning remains the right choice for narrow, repeated tasks—consistent output formatting, classification, style matching, or specialized domain terminology—rather than broad knowledge grounding."
+          ],
+          "bullets": [
+            "Consistent output formatting",
+            "Classification & routing",
+            "Specialized style/tone",
+            "Hundreds of quality examples available"
+          ],
+          "links": [
+            {
+              "label": "Explore AI Model Fine-Tuning Services",
+              "href": "/ai-model-fine-tuning-services/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "buyer-objections",
+      "type": "objections",
+      "eyebrow": "Direct Answers",
+      "title": "The questions serious buyers ask before committing to a RAG project",
+      "description": "No vague promises and no hidden discovery call required to understand the fundamentals.",
+      "tone": "default",
+      "width": "content",
+      "animation": "stagger",
+      "variant": "reveal-cards",
+      "items": [
+        {
+          "objection": "How much will this cost for our specific use case?",
+          "answer": "$20,000–$35,000 for a basic single-source RAG system, $35,000–$65,000 for a standard multi-source customer-facing system, $60,000+ for advanced or enterprise systems. You'll get a fixed number after a Discovery call that scopes your specific data sources and integration requirements."
+        },
+        {
+          "objection": "How long will it take?",
+          "answer": "6–8 weeks for basic RAG, 8–12 weeks for standard, 12–28 weeks for advanced/enterprise systems. Timeline is fixed contractually once scope is defined during Discovery."
+        },
+        {
+          "objection": "Why should I trust your pricing over a cheaper quote from another vendor?",
+          "answer": "A meaningfully cheaper RAG quote usually skips retrieval evaluation, uses basic semantic-only retrieval without hybrid search or re-ranking, or underestimates data ingestion complexity for your actual document formats—all of which show up later as a system that retrieves the wrong information at an unacceptable rate. ClickMasters' pricing reflects the engineering actually required for a reliable system."
+        },
+        {
+          "objection": "What happens if the RAG system doesn't perform well after launch?",
+          "answer": "Every system ships with a documented evaluation baseline, so underperformance is measurable rather than a subjective dispute. Fixed-price milestones mean you're not paying for failed iterations—the contracted deliverable is a system meeting agreed evaluation thresholds."
+        },
+        {
+          "objection": "Can you handle our specific document formats and data sources?",
+          "answer": "Yes—ClickMasters has built ingestion pipelines for PDFs (including scanned documents requiring OCR), Word documents, structured database records, Confluence/SharePoint exports, and proprietary internal formats. Format complexity is assessed and priced explicitly during Discovery."
+        }
+      ]
+    },
+    {
+      "id": "hidden-cost-factors",
+      "type": "rich-text",
+      "eyebrow": "Hidden Cost Factors",
+      "title": "Secondary cost drivers buyers frequently miss",
+      "description": "Beyond the five primary variables, these secondary factors can meaningfully shift your project's actual cost relative to an initial estimate.",
+      "tone": "surface",
+      "width": "content",
+      "animation": "fade-up",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "Document re-indexing pipeline maintenance",
+          "paragraphs": [
+            "A RAG system's knowledge base needs to stay synchronized with your source documents as they change. Building an automated re-indexing pipeline that detects document updates and refreshes the vector store accordingly adds $5,000–$15,000 to the initial build but prevents a much costlier failure mode—a chatbot confidently citing outdated information."
+          ]
+        },
+        {
+          "heading": "Multilingual content handling",
+          "paragraphs": [
+            "If your knowledge base spans multiple languages, or your user base queries in multiple languages, this needs explicit testing and tuning rather than an assumption that the embedding model's general multilingual capability transfers cleanly—particularly for domain-specific terminology that may not be well-represented in the embedding model's training data for non-English languages."
+          ]
+        },
+        {
+          "heading": "Access control and permission-aware retrieval",
+          "paragraphs": [
+            "For internal-facing RAG systems where different users should only see content they're authorized to access, the retrieval system needs permission-aware filtering integrated with your existing identity and access management—a meaningfully more complex engineering requirement than an open-access knowledge base, typically adding $8,000–$20,000."
+          ]
+        },
+        {
+          "heading": "Citation and source attribution requirements",
+          "paragraphs": [
+            "For compliance-sensitive or high-stakes use cases, the system needs to cite which specific source document and section the answer was drawn from, in a way that's auditable and verifiable. Building this citation layer adds engineering effort but is often non-negotiable for regulated industries."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vendor-comparison",
+      "type": "rich-text",
+      "eyebrow": "Choose Carefully",
+      "title": "Comparing RAG vendor quotes: what to ask",
+      "tone": "contrast",
+      "width": "content",
+      "animation": "mask-reveal",
+      "layout": "editorial",
+      "blocks": [
+        {
+          "heading": "The headline number alone tells you little",
+          "paragraphs": [
+            "Ask each vendor directly: does the quote include hybrid retrieval and re-ranking, or only basic semantic search? Does it include a formal evaluation suite with measured precision/recall, or just informal testing? Does it include an automated re-indexing pipeline for keeping the knowledge base current, or a one-time ingestion that goes stale without manual intervention? Does it include citation/source attribution in responses?"
+          ]
+        },
+        {
+          "heading": "Why significantly cheaper quotes are usually cheaper for a reason",
+          "paragraphs": [
+            "A quote that's significantly cheaper than others is very often cheaper because it scopes out one or more of these components—not because the vendor is simply more efficient. ClickMasters' fixed-price quotes itemize exactly what's included so this comparison is straightforward rather than requiring you to infer scope from a vague proposal document."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "industry-comparison",
+      "type": "table",
+      "eyebrow": "Industry Context",
+      "title": "How RAG cost compares across industries",
+      "description": "Industry-specific cost premiums trace back to compliance and accuracy requirements unique to each domain.",
+      "tone": "default",
+      "width": "wide",
+      "animation": "horizontal-reveal",
+      "variant": "pricing",
+      "columns": [
+        {
+          "key": "industry",
+          "label": "Industry",
+          "align": "left",
+          "width": "28%"
+        },
+        {
+          "key": "cost_range",
+          "label": "Typical Cost Range",
+          "align": "left",
+          "width": "36%"
+        },
+        {
+          "key": "primary_driver",
+          "label": "Primary Cost Driver",
+          "align": "left",
+          "width": "36%"
+        }
+      ],
+      "rows": [
+        {
+          "id": "general-business",
+          "cells": {
+            "industry": "Internal knowledge base (general business)",
+            "cost_range": "$20,000 – $45,000",
+            "primary_driver": "Document volume and format diversity"
+          }
+        },
+        {
+          "id": "ecommerce-support",
+          "cells": {
+            "industry": "Customer support (ecommerce/SaaS)",
+            "cost_range": "$35,000 – $70,000",
+            "primary_driver": "Integration with order/account systems"
+          }
+        },
+        {
+          "id": "healthcare",
+          "cells": {
+            "industry": "Healthcare (clinical documentation)",
+            "cost_range": "$50,000 – $120,000",
+            "primary_driver": "HIPAA infrastructure, PHI redaction"
+          }
+        },
+        {
+          "id": "legal",
+          "cells": {
+            "industry": "Legal (contract/case document analysis)",
+            "cost_range": "$45,000 – $130,000",
+            "primary_driver": "Long-document chunking, citation precision"
+          }
+        },
+        {
+          "id": "financial",
+          "cells": {
+            "industry": "Financial services (research/compliance)",
+            "cost_range": "$50,000 – $140,000",
+            "primary_driver": "Explainability, audit logging, access control"
+          }
+        },
+        {
+          "id": "manufacturing",
+          "cells": {
+            "industry": "Manufacturing/technical documentation",
+            "cost_range": "$30,000 – $80,000",
+            "primary_driver": "Diagram/table extraction from technical PDFs"
+          }
+        }
+      ],
+      "note": "Healthcare and financial services typically add 20–40% to reflect HIPAA-compliant infrastructure, audit logging, and explainability requirements."
+    },
+    {
+      "id": "rag-faqs",
+      "type": "faq",
+      "eyebrow": "Frequently Asked",
+      "title": "Questions about RAG development cost and scope",
+      "tone": "default",
+      "width": "content",
+      "animation": "fade-up",
+      "variant": "indexed",
+      "items": [
+        {
+          "question": "Is the vector database cost included in the development price, or separate?",
+          "answer": "Development (the engineering work to build the system) is the fixed-price project fee. Ongoing vector database hosting ($50–$500+/month depending on scale) is a separate, typically much smaller, recurring cost billed directly by the hosting provider (Pinecone, Weaviate, etc.)—ClickMasters does not mark this up."
+        },
+        {
+          "question": "How much does it cost to add hybrid retrieval and re-ranking to a basic RAG system later, versus building it in from the start?",
+          "answer": "Building hybrid retrieval and re-ranking in from the start typically costs $10,000–$25,000 less than retrofitting them onto an already-deployed basic semantic-only system, since retrofitting requires reworking the retrieval pipeline architecture rather than building it correctly the first time. If accuracy matters for your use case, it's usually cheaper to build it right initially."
+        },
+        {
+          "question": "What's the typical ongoing monthly cost after the initial development is complete?",
+          "answer": "Vector database hosting ($50–$500+/month) plus LLM API costs for the generation step ($200–$5,000+/month depending on query volume and model). ClickMasters provides a cost estimate for your specific expected volume during Discovery so there are no surprises post-launch."
+        },
+        {
+          "question": "Does RAG development cost more for highly regulated industries like healthcare or finance?",
+          "answer": "Yes, typically 20–40% more, reflecting additional requirements like HIPAA-compliant infrastructure, audit logging, PII redaction in retrieved content, and (for finance) explainability documentation for any RAG system influencing financial decisions. This is scoped explicitly during Discovery."
+        },
+        {
+          "question": "Can we start with a basic RAG system and upgrade to advanced retrieval later?",
+          "answer": "Yes, and this is a common and reasonable approach for budget-conscious clients—start with basic semantic retrieval to validate the use case and gather real usage data, then invest in hybrid retrieval and re-ranking once you have evidence of where the basic system's retrieval accuracy falls short."
+        },
+        {
+          "question": "How is RAG development priced—fixed fee, hourly, or per query?",
+          "answer": "ClickMasters prices RAG development as a fixed project fee based on scoped complexity. Ongoing infrastructure and API costs scale with usage and are billed separately at provider rates."
+        },
+        {
+          "question": "What happens if our document sources change format or structure after the system is built?",
+          "answer": "Significant format or structural changes to your underlying documents may require updates to the ingestion pipeline. ClickMasters scopes this risk during Discovery and can include a defined maintenance window in the initial contract, or scope updates as needed if document sources change substantially after launch."
+        },
+        {
+          "question": "Do you offer a smaller pilot RAG project before committing to a full system?",
+          "answer": "Yes. Many ClickMasters clients start with a focused pilot covering a single document source or department before scaling to an organization-wide system, which validates the approach and ROI before committing to a larger budget."
+        },
+        {
+          "question": "How does cost change if we need the RAG system to support voice interaction, not just text chat?",
+          "answer": "Voice integration adds speech-to-text and text-to-speech pipeline costs, typically $8,000–$20,000 depending on latency requirements and whether real-time streaming response is needed, on top of the core RAG system cost."
+        },
+        {
+          "question": "What's the cost difference between a RAG system over our existing help center versus one that also needs to query live database records (like order status)?",
+          "answer": "Adding live database/API query capability (rather than purely static document retrieval) typically adds $10,000–$25,000, since it requires building and testing tool-calling integration against your specific systems rather than just retrieval from static text content."
+        }
+      ]
+    },
+    {
+      "id": "build-vs-buy",
+      "type": "rich-text",
+      "eyebrow": "Build vs. Buy",
+      "title": "When an off-the-shelf RAG platform makes sense—and when to build custom",
+      "tone": "default",
+      "width": "content",
+      "animation": "fade-up",
+      "layout": "editorial",
+      "blocks": [
+        {
+          "heading": "SaaS platforms (Glean, Guru, etc.) have their place",
+          "paragraphs": [
+            "These make sense when your use case is a relatively generic internal knowledge search across standard document types, when you don't need deep custom integration with proprietary internal systems, and when the per-seat SaaS pricing (often $10–$30/user/month) is lower than the amortized cost of a custom build at your organization's size."
+          ]
+        },
+        {
+          "heading": "When custom development becomes the better choice",
+          "paragraphs": [
+            "Custom RAG development becomes the better economic choice once your organization is large enough that per-seat SaaS pricing exceeds a one-time custom build's amortized cost, when you need integration with proprietary systems no off-the-shelf platform supports, or when you have specific accuracy or compliance requirements (citation auditability, access control granularity, data residency) that generic platforms don't fully satisfy."
+          ],
+          "bullets": [
+            "Large user base making per-seat SaaS expensive",
+            "Proprietary internal systems requiring deep integration",
+            "Strict compliance & audit requirements",
+            "Custom retrieval tuning for domain-specific terminology"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "common-mistakes",
+      "type": "rich-text",
+      "eyebrow": "Avoid These Pitfalls",
+      "title": "Common mistakes that inflate RAG project cost",
+      "tone": "surface",
+      "width": "content",
+      "animation": "fade-up",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "Skipping the evaluation suite to save money upfront",
+          "paragraphs": [
+            "The cost of diagnosing and fixing a retrieval quality problem after launch, with real users already experiencing bad answers, is typically higher than the $5,000–$15,000 it would have cost to build a proper evaluation suite before launch—and carries reputational cost a pre-launch evaluation gap doesn't."
+          ]
+        },
+        {
+          "heading": "Underestimating data cleanup effort",
+          "paragraphs": [
+            "Organizations frequently underestimate how much manual cleanup their actual document corpus needs before it's suitable for chunking and embedding—duplicate documents, outdated versions still present alongside current ones, inconsistent formatting that confuses automated chunking. This cleanup effort, when underestimated during initial scoping, becomes a common source of mid-project cost and timeline overruns."
+          ]
+        },
+        {
+          "heading": "Defaulting to the most expensive LLM for every query",
+          "paragraphs": [
+            "Defaulting to the most capable (and most expensive) model for every query, regardless of query complexity, inflates ongoing API costs unnecessarily. ClickMasters implements model routing as standard practice—routing straightforward queries to cheaper, faster models and reserving the most capable model for queries that genuinely require deeper reasoning."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "timeline-roi",
+      "type": "rich-text",
+      "eyebrow": "Timeline & ROI",
+      "title": "RAG implementation timeline and expected return",
+      "tone": "contrast",
+      "width": "content",
+      "animation": "mask-reveal",
+      "layout": "editorial",
+      "blocks": [
+        {
+          "heading": "Implementation timeline by tier",
+          "paragraphs": [
+            "**Weeks 1–2: Discovery & Data Audit.** ClickMasters audits your actual document sources—format, volume, quality, and structure—to produce an accurate fixed-price quote rather than a rough estimate based on assumptions. This phase frequently surfaces data quality issues that need addressing before development begins.",
+            "**Weeks 2–5 (Basic) to Weeks 2–8 (Advanced): Ingestion & Retrieval Build.** Document chunking, embedding, and vector database setup, followed by retrieval architecture implementation—semantic-only for basic tiers, hybrid retrieval plus re-ranking for standard and advanced tiers.",
+            "**Weeks 4–6 (Basic) to Weeks 8–12 (Advanced): Generation Integration & Tool Use.** Connecting the retrieval system to your chosen LLM, implementing any required tool-calling integration for action-taking capability, and building the citation/source attribution layer where required.",
+            "**Final 2–4 Weeks: Evaluation & Launch.** Building and running the evaluation suite against your test set, tuning retrieval and prompt parameters based on evaluation results, and a staged rollout—often starting with internal users or a subset of traffic before full deployment."
+          ]
+        },
+        {
+          "heading": "ROI timeline",
+          "paragraphs": [
+            "Most RAG systems show measurable value within 4–8 weeks of launch as usage data accumulates and the team can quantify time saved (for internal knowledge base use cases) or support tickets deflected (for customer-facing use cases). Full ROI accounting for the development investment typically plays out over 4–10 months depending on use case and organization size—internal knowledge base systems at larger organizations with hundreds of employees querying frequently tend to reach ROI faster than narrower, lower-volume use cases."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "why-transparency",
+      "type": "rich-text",
+      "eyebrow": "Why We Publish Pricing",
+      "title": "ClickMasters publishes RAG pricing when competitors don't",
+      "tone": "default",
+      "width": "content",
+      "animation": "fade-up",
+      "layout": "editorial",
+      "blocks": [
+        {
+          "heading": "Zero of the major AI agencies publish RAG pricing online",
+          "paragraphs": [
+            "Every competitor quote requires a sales call, and most of those calls produce a vague range rather than a specific number. ClickMasters publishes detailed pricing because RAG project scope is genuinely estimable by an engineer who has built enough of these systems to know what drives cost—and because pricing transparency lets you walk into a Discovery call already informed, comparing ClickMasters' itemized breakdown against any other quote you receive rather than negotiating from a position of uncertainty about what a fair price actually looks like."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "consultation",
+      "type": "cta",
+      "eyebrow": "Start With Clarity",
+      "heading": "Get a specific, itemized number for your actual use case",
+      "text": "Don't rely on a generic industry average that may not reflect your specific data sources, integration requirements, or compliance constraints. Bring us your use case and data sources—we'll produce a fixed RAG project estimate within 24 business hours.",
+      "tone": "contrast",
+      "width": "wide",
+      "animation": "fade-scale",
+      "primaryCta": {
+        "label": "Get Your Free RAG Project Cost Estimate",
+        "href": "/contact/"
+      },
+      "secondaryCta": {
+        "label": "Email the Engineering Team",
+        "href": "mailto:hello@clickmastersartificialintelligencecompany.com"
+      },
+      "contactEmail": "hello@clickmastersartificialintelligencecompany.com",
+      "variant": "orbital"
+    }
+  ],
+  "relatedPages": [
+    {
+      "title": "RAG Development Services",
+      "description": "Build grounded AI systems over your proprietary knowledge.",
+      "href": "/rag-development-services/"
+    },
+    {
+      "title": "LLM Integration Services",
+      "description": "Integrate leading language models into your existing products and workflows.",
+      "href": "/llm-integration-services/"
+    },
+    {
+      "title": "LLM Development Company",
+      "description": "Production-grade language intelligence built beyond the demo.",
+      "href": "/llm-development-company/"
+    },
+    {
+      "title": "AI Development Cost",
+      "description": "Complete pricing guide for AI and machine learning projects.",
+      "href": "/ai-development-cost/"
+    },
+    {
+      "title": "Cost of Machine Learning Development",
+      "description": "Budgeting for custom ML model development and deployment.",
+      "href": "/cost-of-machine-learning-development/"
+    },
+    {
+      "title": "AI Data Engineering Services",
+      "description": "Data pipelines and infrastructure for AI applications.",
+      "href": "/ai-data-engineering-services/"
+    }
+  ]
+}

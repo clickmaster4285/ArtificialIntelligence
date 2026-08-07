@@ -8,7 +8,13 @@ import { HugeFooter } from "@/components/landingPage/HugeFooter";
 
 const inter = Inter({ subsets: ["latin"] });
 
+const siteUrl = (
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  "https://clickmastersartificialintelligencecompany.com"
+).replace(/\/+$/, "");
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "ClickMasters - AI Development Company",
   description: "Custom AI development services from $30K. Chatbots, RAG systems, ML models & enterprise AI platforms.",
   icons: {

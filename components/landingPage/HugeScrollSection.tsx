@@ -182,7 +182,7 @@ export function HugeScrollSection() {
                 WebkitTextFillColor: "transparent",
               }}
             >
-              Let's build it.
+              Let&apos;s build it.
             </span>
           </motion.h2>
           <motion.div
