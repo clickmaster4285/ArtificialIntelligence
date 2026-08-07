@@ -19,6 +19,8 @@ import openaiVsAnthropicVsGoogleEnterprise from "./openai-vs-anthropic-vs-google
 import langchainVsLlamaIndex from "./langchain-vs-llamaindex.json";
 import ragDevelopmentCost from "./rag-development-cost.json";
 import aiAgentDevelopmentCost from "./ai-agent-development-cost.json";
+import gpt4VsClaudeEnterprise from "./gpt-4-vs-claude-enterprise.json";
+
 
 
 
@@ -53,6 +55,8 @@ openaiVsAnthropicVsGoogleEnterprise as DynamicPageData,
 langchainVsLlamaIndex as DynamicPageData,
 ragDevelopmentCost as DynamicPageData,
 aiAgentDevelopmentCost as DynamicPageData,
+gpt4VsClaudeEnterprise as DynamicPageData,
+
 
 
 

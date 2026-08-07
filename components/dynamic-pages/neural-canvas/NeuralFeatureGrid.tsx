@@ -22,7 +22,7 @@ import {
   Shield,
   Sparkles,
   Workflow,
-  type LucideIcon,
+  type LucideProps,
 } from "lucide-react";
 
 import Link from "next/link";
@@ -58,28 +58,6 @@ interface NeuralFeatureGridProps {
    ICON MAP
 ========================================================= */
 
-type FeatureIconName = NonNullable<
-  FeatureCard["icon"]
->;
-
-const iconMap: Record<
-  FeatureIconName,
-  LucideIcon
-> = {
-  brain: Brain,
-  database: Database,
-  network: Network,
-  sparkles: Sparkles,
-  shield: Shield,
-  code: Code2,
-  workflow: Workflow,
-  chart: ChartNoAxesCombined,
-  search: Search,
-  bot: Bot,
-  cloud: Cloud,
-  layers: Layers3,
-};
-
 /**
  * Resolve an icon safely from JSON content.
  *
@@ -87,17 +65,57 @@ const iconMap: Record<
  * icon name must never leave the component undefined. Unknown values use the
  * Sparkles fallback instead of crashing the complete page.
  */
-function getFeatureIcon(
-  iconName?: string | null,
-): LucideIcon {
-  if (!iconName) {
-    return Sparkles;
-  }
-
+function FeatureIcon({
+  iconName,
+  ...props
+}: LucideProps & {
+  iconName?: string | null;
+}) {
   const normalizedIconName =
-    iconName.trim().toLowerCase() as FeatureIconName;
+    iconName?.trim().toLowerCase();
 
-  return iconMap[normalizedIconName] ?? Sparkles;
+  switch (normalizedIconName) {
+    case "brain":
+      return <Brain {...props} />;
+
+    case "database":
+      return <Database {...props} />;
+
+    case "network":
+      return <Network {...props} />;
+
+    case "shield":
+      return <Shield {...props} />;
+
+    case "code":
+      return <Code2 {...props} />;
+
+    case "workflow":
+      return <Workflow {...props} />;
+
+    case "chart":
+      return (
+        <ChartNoAxesCombined
+          {...props}
+        />
+      );
+
+    case "search":
+      return <Search {...props} />;
+
+    case "bot":
+      return <Bot {...props} />;
+
+    case "cloud":
+      return <Cloud {...props} />;
+
+    case "layers":
+      return <Layers3 {...props} />;
+
+    case "sparkles":
+    default:
+      return <Sparkles {...props} />;
+  }
 }
 
 /* =========================================================
@@ -200,10 +218,6 @@ function NeuralFeatureCard({
     smoothY,
     [-0.5, 0.5],
     [5, -5],
-  );
-
-  const Icon = getFeatureIcon(
-    item.icon,
   );
 
   const handlePointerMove = (
@@ -380,8 +394,9 @@ function NeuralFeatureCard({
             "group-hover/card:shadow-[0_0_35px_var(--neural-soft)]",
           )}
         >
-          <Icon
+          <FeatureIcon
             aria-hidden="true"
+            iconName={item.icon}
             className="h-5 w-5"
           />
         </div>

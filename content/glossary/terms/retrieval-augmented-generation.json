@@ -1,0 +1,338 @@
+{
+  "slug": "retrieval-augmented-generation",
+  "status": "published",
+  "title": "Retrieval-Augmented Generation",
+  "shortTitle": "Retrieval-Augmented Generation",
+  "abbreviation": "RAG",
+  "letter": "R",
+  "category": "RAG",
+  "shortDefinition": "An AI architecture that retrieves relevant external information before generating a response with a language model.",
+  "definition": "Retrieval-Augmented Generation, commonly called RAG, is an AI architecture that improves language-model responses by retrieving relevant information from an external knowledge source and supplying it to the model as contextual evidence.",
+  "introduction": "RAG connects large language models with private, current or domain-specific information. Instead of relying entirely on knowledge learned during training, the model receives relevant source material at request time and uses it to produce a more grounded response.",
+  "featured": true,
+  "aliases": [
+    "RAG",
+    "retrieval augmented generation",
+    "retrieval-augmented AI",
+    "grounded generation",
+    "knowledge-grounded generation"
+  ],
+  "readingTime": "7 min read",
+  "publishedAt": "2026-08-07",
+  "updatedAt": "2026-08-07",
+
+  "seo": {
+    "title": "What Is Retrieval-Augmented Generation (RAG)?",
+    "description": "Learn how retrieval-augmented generation works, its core components, benefits, limitations and practical applications in enterprise AI systems.",
+    "canonical": "/glossary/retrieval-augmented-generation/",
+    "keywords": [
+      "retrieval augmented generation",
+      "RAG meaning",
+      "what is RAG",
+      "RAG architecture",
+      "RAG pipeline",
+      "retrieval augmented generation explained"
+    ]
+  },
+
+  "sections": [
+    {
+      "id": "how-rag-works",
+      "eyebrow": "Core architecture",
+      "title": "How retrieval-augmented generation works",
+      "description": "A RAG system combines information retrieval with language generation in a controlled pipeline.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "When a user submits a question, the system first converts that question into a numerical representation known as an embedding. It then compares the embedding with indexed content stored inside a search system or vector database."
+        },
+        {
+          "type": "numbered-list",
+          "title": "A typical RAG request follows these stages:",
+          "items": [
+            "The user submits a question or instruction.",
+            "The system converts the request into an embedding or searchable query.",
+            "The retrieval layer finds the most relevant documents or passages.",
+            "Optional filtering and re-ranking improve the quality of the retrieved context.",
+            "The selected context and original question are sent to the language model.",
+            "The language model generates a response grounded in the supplied information.",
+            "The application may return citations, source links or confidence information with the answer."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "The central idea",
+          "text": "The language model does not need to permanently memorize every piece of business knowledge. Relevant information can be retrieved and supplied when it is needed."
+        }
+      ]
+    },
+
+    {
+      "id": "rag-components",
+      "eyebrow": "System anatomy",
+      "title": "Core components of a RAG system",
+      "content": [
+        {
+          "type": "key-value-grid",
+          "items": [
+            {
+              "label": "Knowledge sources",
+              "value": "Documents, databases, websites, APIs, support tickets, policies and other trusted information."
+            },
+            {
+              "label": "Ingestion pipeline",
+              "value": "Processes that collect, clean, divide and prepare source content for retrieval."
+            },
+            {
+              "label": "Embedding model",
+              "value": "Transforms text or other content into numerical vectors that represent semantic meaning."
+            },
+            {
+              "label": "Retrieval system",
+              "value": "Searches indexed content and identifies passages that are relevant to the user request."
+            },
+            {
+              "label": "Re-ranking layer",
+              "value": "Reorders retrieved results so the strongest evidence is placed closest to the model."
+            },
+            {
+              "label": "Language model",
+              "value": "Uses the retrieved context to generate a useful, natural-language response."
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "rag-vs-standard-llm",
+      "eyebrow": "Comparison",
+      "title": "RAG compared with a standard language-model response",
+      "content": [
+        {
+          "type": "table",
+          "caption": "Standard LLM generation and retrieval-augmented generation",
+          "headers": [
+            "Capability",
+            "Standard LLM",
+            "RAG system"
+          ],
+          "rows": [
+            [
+              "Knowledge source",
+              "Primarily model training data",
+              "Training data plus retrieved external information"
+            ],
+            [
+              "Current information",
+              "Limited by training cutoff",
+              "Can access recently updated indexed content"
+            ],
+            [
+              "Private business data",
+              "Unavailable unless included through another method",
+              "Can retrieve authorized internal information"
+            ],
+            [
+              "Source citations",
+              "Often unavailable or unreliable",
+              "Can return citations connected to retrieved evidence"
+            ],
+            [
+              "Knowledge updates",
+              "May require retraining or fine-tuning",
+              "Content can usually be re-indexed without retraining"
+            ],
+            [
+              "Response grounding",
+              "Depends mainly on model knowledge",
+              "Uses selected source material as contextual evidence"
+            ]
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "benefits",
+      "eyebrow": "Business value",
+      "title": "Benefits of retrieval-augmented generation",
+      "content": [
+        {
+          "type": "bullet-list",
+          "items": [
+            "Connects language models with private and domain-specific knowledge.",
+            "Allows knowledge to be updated without retraining the entire model.",
+            "Can improve factual accuracy when retrieval quality is strong.",
+            "Makes source citations and evidence-based responses possible.",
+            "Supports permission-aware access to enterprise information.",
+            "Reduces dependence on information stored only in model parameters.",
+            "Can be evaluated and improved at individual stages of the pipeline."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "success",
+          "title": "Best suited for",
+          "text": "RAG is especially valuable when answers must reflect changing, proprietary or highly specialized information."
+        }
+      ]
+    },
+
+    {
+      "id": "limitations",
+      "eyebrow": "Engineering reality",
+      "title": "Limitations and technical challenges",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "RAG does not automatically guarantee accurate answers. The generated response still depends on the quality of the source content, chunking strategy, retrieval method, ranking logic, prompt construction and language model."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Poor source data can produce poor retrieved context.",
+            "Large or badly designed chunks may reduce retrieval precision.",
+            "Relevant evidence can be missed when queries are ambiguous.",
+            "Retrieved passages may contain conflicting or outdated information.",
+            "Additional retrieval stages can increase latency and infrastructure cost.",
+            "Permissions must be enforced before private information reaches the model.",
+            "The model may still misinterpret correctly retrieved evidence."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Important",
+          "text": "A production RAG system requires evaluation of both retrieval quality and generated-answer quality. Measuring only the final response can hide weaknesses inside the retrieval pipeline."
+        }
+      ]
+    },
+
+    {
+      "id": "use-cases",
+      "eyebrow": "Applications",
+      "title": "Common RAG use cases",
+      "content": [
+        {
+          "type": "key-value-grid",
+          "items": [
+            {
+              "label": "Enterprise knowledge assistants",
+              "value": "Answer employee questions using policies, internal documentation and operational knowledge."
+            },
+            {
+              "label": "Customer support",
+              "value": "Generate grounded answers from product manuals, help-center content and resolved support cases."
+            },
+            {
+              "label": "Legal research",
+              "value": "Retrieve relevant contracts, regulations, precedents and matter-specific documents."
+            },
+            {
+              "label": "Healthcare information",
+              "value": "Support authorized access to clinical protocols, medical literature and organizational guidance."
+            },
+            {
+              "label": "Financial analysis",
+              "value": "Search reports, filings, research documents and internal investment information."
+            },
+            {
+              "label": "Technical copilots",
+              "value": "Use codebases, API documentation and engineering knowledge to assist development teams."
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "when-to-use-rag",
+      "eyebrow": "Decision framework",
+      "title": "When should an organization use RAG?",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "RAG is a strong option when an application needs information that is private, frequently updated, too large to place permanently in a prompt or outside the model’s original training knowledge."
+        },
+        {
+          "type": "bullet-list",
+          "title": "Consider RAG when:",
+          "items": [
+            "Answers must use internal company information.",
+            "Users need citations or supporting evidence.",
+            "The knowledge base changes regularly.",
+            "Different users have different data-access permissions.",
+            "The application covers a specialized professional domain.",
+            "The team needs to update knowledge without retraining a model."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "RAG is not always required",
+          "text": "For simple writing, summarization or transformation tasks where all necessary information is already provided in the prompt, a retrieval system may add unnecessary complexity."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "eyebrow": "Common questions",
+    "title": "Frequently asked questions about RAG",
+    "items": [
+      {
+        "question": "What does RAG stand for in artificial intelligence?",
+        "answer": "RAG stands for Retrieval-Augmented Generation. It describes a system that retrieves relevant external information and supplies it to a generative model before the model creates its response."
+      },
+      {
+        "question": "Does RAG train or fine-tune the language model?",
+        "answer": "Not necessarily. A standard RAG pipeline retrieves information at request time and places it in the model context. Fine-tuning can be used alongside RAG, but it is a separate technique."
+      },
+      {
+        "question": "Does a RAG system always require a vector database?",
+        "answer": "No. Vector databases are common because they support semantic retrieval, but a RAG system can also use keyword search, relational databases, graph databases, APIs or a hybrid combination of retrieval methods."
+      },
+      {
+        "question": "Can RAG completely prevent hallucinations?",
+        "answer": "No. Strong retrieval and prompting can reduce unsupported responses, but the model may still ignore, misunderstand or incorrectly combine retrieved evidence. Evaluation and guardrails remain necessary."
+      },
+      {
+        "question": "What is hybrid retrieval in RAG?",
+        "answer": "Hybrid retrieval combines multiple search methods, commonly semantic vector search and keyword search. This can improve performance when queries contain both conceptual meaning and important exact terms."
+      }
+    ]
+  },
+
+  "relatedTerms": [
+    "large-language-model",
+    "vector-database",
+    "embeddings",
+    "semantic-search",
+    "hybrid-search",
+    "reranking"
+  ],
+
+  "references": [
+    {
+      "label": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+      "href": "https://arxiv.org/abs/2005.11401",
+      "publisher": "arXiv"
+    }
+  ],
+
+  "cta": {
+    "eyebrow": "Build with confidence",
+    "title": "Turn your knowledge into an intelligent RAG system",
+    "description": "Design a secure, observable and production-ready retrieval architecture around your business information.",
+    "primaryLink": {
+      "label": "Discuss your RAG project",
+      "href": "/contact"
+    },
+    "secondaryLink": {
+      "label": "Explore RAG development",
+      "href": "/cost-of-rag-development"
+    }
+  }
+}
