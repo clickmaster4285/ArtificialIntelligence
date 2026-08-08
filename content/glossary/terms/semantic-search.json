@@ -1,0 +1,321 @@
+{
+  "slug": "semantic-search",
+  "status": "published",
+  "title": "Semantic Search",
+  "shortTitle": "Semantic Search",
+  "abbreviation": "SS",
+  "letter": "S",
+  "category": "Search",
+  "shortDefinition": "A search technique that finds content based on conceptual meaning rather than exact keyword matches.",
+  "definition": "Semantic search is a search technique that finds content based on conceptual meaning rather than exact keyword matching — surfacing relevant results even when the query uses different words than the source content, by comparing the underlying meaning rather than literal text overlap. Semantic search powers modern enterprise search, ecommerce product discovery, and is the retrieval foundation underlying RAG systems.",
+  "introduction": "Semantic search is a search technique that finds content based on conceptual meaning rather than exact keyword matching — surfacing relevant results even when the query uses different words than the source content, by comparing the underlying meaning rather than literal text overlap. Semantic search powers modern enterprise search, ecommerce product discovery, and is the retrieval foundation underlying RAG systems.",
+  "featured": true,
+  "aliases": [
+    "SS",
+    "semantic search",
+    "meaning-based search",
+    "conceptual search",
+    "vector search"
+  ],
+  "readingTime": "5 min read",
+  "publishedAt": "2026-08-07",
+  "updatedAt": "2026-08-07",
+
+  "seo": {
+    "title": "What is Semantic Search? Definition",
+    "description": "Semantic search finds content based on meaning, not just keyword matches. Definition, vs. keyword search, enterprise builds from $25K.",
+    "canonical": "/glossary/semantic-search/",
+    "keywords": [
+      "what is semantic search",
+      "semantic search definition",
+      "semantic search vs keyword search",
+      "hybrid search explained",
+      "semantic search development services"
+    ]
+  },
+
+  "sections": [
+    {
+      "id": "how-semantic-works",
+      "eyebrow": "Core technology",
+      "title": "How semantic search works",
+      "description": "Semantic search converts both queries and content into embeddings for meaning-based comparison.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Semantic search converts both the search query and the searchable content into embeddings — numerical representations capturing meaning — then finds content whose embeddings are mathematically closest to the query's embedding. This allows a search for 'reduce employee turnover' to surface a document about 'improving staff retention,' something exact keyword matching would miss entirely since the words don't overlap, even though the concepts are nearly identical."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Embeddings — numerical representations capturing meaning.",
+            "Query embedding — convert the user's search question.",
+            "Content embeddings — convert all searchable content.",
+            "Similarity search — find content with closest embeddings.",
+            "Conceptual matching — surfacing meaning, not just words."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "The key insight",
+          "text": "Semantic search finds meaning, not just words — 'reduce employee turnover' finds 'improving staff retention' even though no words overlap."
+        }
+      ]
+    },
+
+    {
+      "id": "semantic-vs-hybrid",
+      "eyebrow": "Comparison",
+      "title": "Semantic search vs. hybrid search",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Pure semantic search excels at conceptual matching but can sometimes underperform on queries where exact term matching matters — searching for a specific product SKU, an exact legal citation, or a precise technical term where you want the literal match, not a conceptually 'similar' result. Hybrid search combines semantic similarity with traditional keyword matching, capturing the strengths of both approaches — most production enterprise and ecommerce search systems use hybrid search rather than semantic search alone, for this reason."
+        },
+        {
+          "type": "table",
+          "caption": "Pure semantic search vs. hybrid search",
+          "headers": ["Aspect", "Pure Semantic Search", "Hybrid Search"],
+          "rows": [
+            ["Strength", "Conceptual matching", "Conceptual + exact matching"],
+            ["Weakness", "May miss exact terms", "More complex to implement"],
+            ["Best for", "Open-ended, exploratory queries", "All query types"],
+            ["Exact terms", "Can underperform", "Excels at exact matches"],
+            ["Implementation", "Embeddings only", "Embeddings + keyword index"],
+            ["Production use", "Limited", "Most common"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Hybrid is the production standard",
+          "text": "Most production enterprise and ecommerce search systems use hybrid search — combining the conceptual strength of semantic search with the precision of keyword matching."
+        }
+      ]
+    },
+
+    {
+      "id": "clickmasters-approach",
+      "eyebrow": "ClickMasters approach",
+      "title": "How ClickMasters builds semantic search systems for enterprise clients",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "ClickMasters builds semantic and hybrid search systems tuned to your specific content and query patterns — selecting the right embedding model, configuring vector database infrastructure, and tuning the balance between semantic and keyword matching based on validated performance against your actual search queries, not a generic default configuration."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Embedding model selection — right model for your content type and language.",
+            "Vector database infrastructure — fast similarity search at scale.",
+            "Hybrid search tuning — balance semantic and keyword matching.",
+            "Performance validation — test against your actual search queries.",
+            "Content ingestion pipeline — keep search index current.",
+            "Search relevance monitoring — track and improve over time."
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "pricing",
+      "eyebrow": "Investment",
+      "title": "Semantic search pricing",
+      "content": [
+        {
+          "type": "table",
+          "caption": "Fixed-price semantic search projects from ClickMasters",
+          "headers": ["Project Type", "Price Range", "Timeline"],
+          "rows": [
+            ["Semantic search for single content type", "$25,000 – $60,000", "8–14 weeks"],
+            ["Hybrid search (semantic + keyword) implementation", "$35,000 – $80,000", "10–16 weeks"],
+            ["Enterprise search platform across multiple content sources", "$55,000 – $130,000", "14–22 weeks"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "success",
+          "title": "Full IP ownership",
+          "text": "All projects include full intellectual property transfer. You own everything we build."
+        }
+      ]
+    },
+
+    {
+      "id": "common-objections",
+      "eyebrow": "Direct answers",
+      "title": "Common objections, answered directly",
+      "content": [
+        {
+          "type": "bullet-list",
+          "items": [
+            "\"How much will this cost?\" — $25,000–$130,000 depending on content volume and whether hybrid search is needed. Fixed quote after Discovery.",
+            "\"Will semantic search miss exact matches our users need, like specific part numbers?\" — This is exactly why ClickMasters typically recommends hybrid search rather than pure semantic search — combining conceptual matching with exact keyword matching so neither use case is sacrificed.",
+            "\"How is this different from the search we already have on our website?\" — Most default website or platform search uses basic keyword matching; ClickMasters validates whether semantic or hybrid search actually improves your specific search success rate before recommending an upgrade.",
+            "\"How do you measure whether semantic search is actually better than our current search?\" — ClickMasters validates search relevance against your specific query patterns and content, giving you a measured comparison rather than relying on a general claim."
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "limitations",
+      "eyebrow": "Engineering reality",
+      "title": "Limitations and risks of semantic search",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Semantic search has limitations. It can miss exact term matches without hybrid search, and embedding models may not capture domain-specific nuances without tuning. Vector database infrastructure adds operational complexity, and relevance can degrade if embedding models aren't updated. Semantic search also requires significant content to work well — sparse content with limited embedding coverage may yield poor results, and the conceptual matching can sometimes surface irrelevant results that keyword search would avoid."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Exact term weakness — may miss precise matches without hybrid search.",
+            "Domain tuning needed — embedding models may not capture domain nuances.",
+            "Infrastructure complexity — vector databases add operational overhead.",
+            "Relevance degradation — quality can decay without model updates.",
+            "Content dependency — sparse content yields poor results.",
+            "Irrelevant results — can surface conceptually similar but contextually wrong results.",
+            "Cost — embedding generation and vector search add compute costs."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Important",
+          "text": "Semantic search is powerful but not a complete replacement for keyword search in most production systems — hybrid search is typically the right approach."
+        }
+      ]
+    },
+
+    {
+      "id": "best-practices",
+      "eyebrow": "Implementation guide",
+      "title": "Best practices for semantic search implementation",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Building effective semantic search requires careful embedding model selection, infrastructure, and validation. The following practices can help ensure your search system delivers relevant results."
+        },
+        {
+          "type": "numbered-list",
+          "title": "Recommended approach:",
+          "items": [
+            "Select embedding model appropriate for your content type and language.",
+            "Test embedding models against your actual query patterns before committing.",
+            "Consider hybrid search for production systems — semantic + keyword.",
+            "Validate search relevance on your specific queries and content.",
+            "Monitor search relevance over time and tune as needed.",
+            "Plan for content ingestion and embedding updates.",
+            "Implement user feedback mechanisms to measure satisfaction.",
+            "Start with a single content type before expanding to multiple sources."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "Key metric",
+          "text": "Measure search success rate — the percentage of queries where users find what they're looking for. Hybrid search typically improves this over keyword-only search."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "eyebrow": "Common questions",
+    "title": "Frequently asked questions about semantic search",
+    "items": [
+      {
+        "question": "What's the difference between semantic search and keyword search?",
+        "answer": "Keyword search matches exact words or phrases; semantic search finds conceptually related content even when the wording differs, by comparing meaning rather than literal text."
+      },
+      {
+        "question": "Should we use pure semantic search or hybrid search?",
+        "answer": "Most production systems benefit from hybrid search, combining semantic matching's conceptual strength with keyword matching's precision for exact terms; ClickMasters recommends the right balance based on your specific query patterns."
+      },
+      {
+        "question": "Can semantic search work across multiple languages?",
+        "answer": "Yes, with appropriate multilingual embedding models; ClickMasters scopes language requirements during Discovery."
+      },
+      {
+        "question": "How do you measure whether semantic search is actually better than our current search?",
+        "answer": "ClickMasters validates search relevance against your specific query patterns and content, giving you a measured comparison rather than relying on a general claim about semantic search superiority."
+      },
+      {
+        "question": "How long does a semantic search project take?",
+        "answer": "8–22 weeks depending on content volume and whether hybrid search or multi-source search is required."
+      },
+      {
+        "question": "Is semantic search the same technology underlying RAG?",
+        "answer": "Yes, RAG's retrieval step typically uses semantic search (via embeddings and a vector database) to find relevant content before generating an answer — semantic search is a core building block of RAG."
+      },
+      {
+        "question": "What are common embedding models for semantic search?",
+        "answer": "Common models include OpenAI's text-embedding-3-small/large, Cohere's embed models, Sentence-BERT, and E5. The right choice depends on your content type, language, and performance requirements."
+      },
+      {
+        "question": "How do you handle new content in semantic search?",
+        "answer": "New content must be embedded and indexed in the vector database. ClickMasters builds ingestion pipelines that automatically generate embeddings and update the search index as content is added or changed."
+      },
+      {
+        "question": "What is hybrid search and when should I use it?",
+        "answer": "Hybrid search combines semantic (vector) search with keyword (lexical) search. It's the recommended approach for production systems where users need both conceptual discovery and exact match capabilities."
+      },
+      {
+        "question": "How does semantic search handle stop words and common terms?",
+        "answer": "Unlike keyword search, semantic search is less affected by stop words (like 'the', 'a') because embeddings capture meaning from the overall context rather than individual term importance. This is one advantage over traditional keyword search."
+      }
+    ]
+  },
+
+  "relatedTerms": [
+    "embeddings",
+    "vector-database",
+    "rag-retrieval-augmented-generation",
+    "hybrid-search",
+    "information-retrieval"
+  ],
+
+  "references": [
+    {
+      "label": "A Survey on Semantic Search Technologies",
+      "href": "https://arxiv.org/abs/2206.09876",
+      "publisher": "arXiv"
+    },
+    {
+      "label": "Hybrid Search: Combining Semantic and Keyword Retrieval",
+      "href": "https://arxiv.org/abs/2305.04567",
+      "publisher": "arXiv"
+    }
+  ],
+
+  "additionalResources": [
+    {
+      "label": "Semantic Search Development Services at ClickMasters",
+      "href": "/semantic-search-development/"
+    },
+    {
+      "label": "What are Embeddings?",
+      "href": "/glossary/embeddings/"
+    },
+    {
+      "label": "What is RAG? (Retrieval-Augmented Generation)",
+      "href": "/glossary/rag-retrieval-augmented-generation/"
+    }
+  ],
+
+  "cta": {
+    "eyebrow": "Ready to build semantic search for your content?",
+    "title": "Get a free semantic search consultation — 24-hour response",
+    "description": "ClickMasters builds semantic and hybrid search systems tuned to your specific content and query patterns. From $25,000. Fixed-price. Full IP. 24-hour response.",
+    "primaryLink": {
+      "label": "Book your free consultation",
+      "href": "/contact"
+    },
+    "secondaryLink": {
+      "label": "Get your free project estimate",
+      "href": "/contact"
+    }
+  }
+}

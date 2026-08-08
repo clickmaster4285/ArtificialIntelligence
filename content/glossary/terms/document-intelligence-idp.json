@@ -1,0 +1,334 @@
+{
+  "slug": "document-intelligence-idp",
+  "status": "published",
+  "title": "Document Intelligence (IDP)",
+  "shortTitle": "Document Intelligence",
+  "abbreviation": "IDP",
+  "letter": "D",
+  "category": "Document Processing",
+  "shortDefinition": "AI technology that extracts structured, usable data from unstructured or semi-structured documents.",
+  "definition": "Document Intelligence, also called Intelligent Document Processing (IDP), is AI technology that extracts structured, usable data from unstructured or semi-structured documents — invoices, contracts, forms, receipts — combining text extraction, layout understanding, and entity recognition to turn document content into data your systems can actually use. IDP goes beyond basic text extraction by understanding document structure: which numbers are line items, which date is the due date, which field is the total amount.",
+  "introduction": "Document Intelligence, also called Intelligent Document Processing (IDP), is AI technology that extracts structured, usable data from unstructured or semi-structured documents — invoices, contracts, forms, receipts — combining text extraction, layout understanding, and entity recognition to turn document content into data your systems can actually use. IDP goes beyond basic text extraction by understanding document structure: which numbers are line items, which date is the due date, which field is the total amount.",
+  "featured": true,
+  "aliases": [
+    "IDP",
+    "document intelligence",
+    "intelligent document processing",
+    "document extraction",
+    "structured data extraction"
+  ],
+  "readingTime": "6 min read",
+  "publishedAt": "2026-08-07",
+  "updatedAt": "2026-08-07",
+
+  "seo": {
+    "title": "What is Document Intelligence (IDP)? Definition",
+    "description": "IDP (Intelligent Document Processing) uses AI to extract structured data from unstructured documents. Definition, builds from $25K.",
+    "canonical": "/glossary/document-intelligence-idp/",
+    "keywords": [
+      "what is document intelligence ai",
+      "idp definition",
+      "intelligent document processing explained",
+      "idp vs ocr",
+      "document processing automation services"
+    ]
+  },
+
+  "sections": [
+    {
+      "id": "idp-vs-ocr",
+      "eyebrow": "Core distinction",
+      "title": "How document intelligence goes beyond basic OCR",
+      "description": "OCR converts text to machine-readable format; IDP understands structure and meaning.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Basic OCR (optical character recognition) converts an image of text into machine-readable text, but doesn't understand what that text means or how it's structured. Document intelligence builds on top of OCR with layout analysis (understanding tables, headers, and form fields) and entity extraction (identifying that a specific number is the invoice total, not just any number on the page), producing structured, labeled data rather than an undifferentiated block of extracted text. This structural understanding is what makes IDP genuinely useful for automating document-heavy business processes."
+        },
+        {
+          "type": "table",
+          "caption": "OCR vs. document intelligence (IDP)",
+          "headers": ["Capability", "OCR", "Document Intelligence (IDP)"],
+          "rows": [
+            ["Output", "Raw extracted text", "Structured, labeled data"],
+            ["Layout understanding", "None", "Tables, headers, form fields"],
+            ["Entity extraction", "None", "Invoice totals, dates, parties"],
+            ["Field labeling", "None", "Which field is which"],
+            ["Confidence scoring", "None", "Flags uncertain extractions"],
+            ["Business automation", "Limited", "Direct system integration"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "The key insight",
+          "text": "OCR gives you text. IDP gives you data — structured, labeled, and ready for your business systems."
+        }
+      ]
+    },
+
+    {
+      "id": "use-cases",
+      "eyebrow": "Applications",
+      "title": "Common document intelligence use cases",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "IDP powers invoice processing (extracting vendor, line items, totals, and due dates for accounts payable automation), contract analysis (identifying key clauses, dates, and parties), claims processing (extracting structured data from insurance claim forms and supporting documents), and form processing (converting completed paper or PDF forms into structured database entries). The common thread is replacing manual data entry from documents with automated, accurate extraction at scale."
+        },
+        {
+          "type": "key-value-grid",
+          "items": [
+            {
+              "label": "Invoice processing",
+              "value": "Extract vendor, line items, totals, and due dates for AP automation."
+            },
+            {
+              "label": "Contract analysis",
+              "value": "Identify key clauses, dates, parties, and obligations."
+            },
+            {
+              "label": "Claims processing",
+              "value": "Extract structured data from insurance claim forms and supporting docs."
+            },
+            {
+              "label": "Form processing",
+              "value": "Convert completed paper/PDF forms into structured database entries."
+            },
+            {
+              "label": "Receipt processing",
+              "value": "Extract vendor, date, line items, and totals for expense management."
+            },
+            {
+              "label": "Loan processing",
+              "value": "Extract data from mortgage applications and supporting documents."
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "clickmasters-approach",
+      "eyebrow": "ClickMasters approach",
+      "title": "How ClickMasters builds document intelligence systems for enterprise clients",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "ClickMasters builds IDP pipelines combining OCR, layout analysis, and entity extraction tuned to your specific document types and fields — invoice processing extraction differs meaningfully from contract clause extraction, which differs from insurance claim form processing. Every IDP build includes confidence scoring that routes uncertain extractions to human review, and validation against a representative sample of your actual document variety before full deployment."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Document-type-specific tuning — invoices, contracts, forms, or receipts.",
+            "OCR, layout analysis, and entity extraction in a single pipeline.",
+            "Confidence scoring — route uncertain extractions to human review.",
+            "Validation against representative document samples before deployment.",
+            "Integration with existing accounting, ERP, or document management systems.",
+            "Multilingual support — OCR and entity extraction for multiple languages."
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "pricing",
+      "eyebrow": "Investment",
+      "title": "Document intelligence pricing",
+      "content": [
+        {
+          "type": "table",
+          "caption": "Fixed-price document intelligence projects from ClickMasters",
+          "headers": ["Project Type", "Price Range", "Timeline"],
+          "rows": [
+            ["Single document-type extraction pipeline (e.g., invoices)", "$25,000 – $60,000", "8–14 weeks"],
+            ["Multi-document-type IDP system with confidence scoring", "$45,000 – $110,000", "12–18 weeks"],
+            ["Enterprise document processing platform with system integration", "$70,000 – $170,000", "16–24 weeks"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "success",
+          "title": "Full IP ownership",
+          "text": "All projects include full intellectual property transfer. You own everything we build."
+        }
+      ]
+    },
+
+    {
+      "id": "common-objections",
+      "eyebrow": "Direct answers",
+      "title": "Common objections, answered directly",
+      "content": [
+        {
+          "type": "bullet-list",
+          "items": [
+            "\"How much will this cost?\" — $25,000–$170,000 depending on document type diversity and system integration scope. Fixed quote after Discovery.",
+            "\"Can this handle the variety of document formats and layouts we actually receive?\" — ClickMasters validates extraction accuracy against a representative sample of your actual document variety before deployment, rather than assuming a model trained on generic documents transfers well to your specific format diversity.",
+            "\"What happens when the system can't confidently extract a field?\" — ClickMasters builds confidence scoring that routes uncertain extractions to human review rather than guessing, ensuring accuracy on consequential fields like payment amounts.",
+            "\"Can IDP handle handwritten documents?\" — With varying accuracy depending on handwriting clarity; ClickMasters validates this specifically against samples of your actual handwritten documents if relevant to your use case."
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "limitations",
+      "eyebrow": "Engineering reality",
+      "title": "Limitations and risks of document intelligence",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Document intelligence has limitations. Poor quality scans or images can significantly reduce OCR and layout accuracy. Highly complex document layouts (multiple tables, nested sections) are challenging, and IDP models trained on one document type or format often don't transfer well to others. Handwritten text has variable accuracy, and confidence scoring, while helpful, requires clear thresholds and human review processes. Document processing requires ongoing maintenance as document formats and vendors change."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Image quality: poor scans reduce OCR and layout accuracy.",
+            "Complex layouts: nested tables and sections are challenging.",
+            "Format diversity: models often don't transfer well across document types.",
+            "Handwriting: variable and often lower accuracy than printed text.",
+            "Confidence threshold: requires careful tuning and human review processes.",
+            "Maintenance: ongoing updates needed as document formats and vendors change.",
+            "Training data: requires representative samples of your document variety."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Important",
+          "text": "IDP systems require careful validation on your actual document types. A model that works on one set of invoices may fail on a different vendor's format."
+        }
+      ]
+    },
+
+    {
+      "id": "best-practices",
+      "eyebrow": "Implementation guide",
+      "title": "Best practices for document intelligence implementation",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Building effective document intelligence requires careful document type definition, training data quality, and validation. The following practices can help ensure your IDP system delivers reliable extraction."
+        },
+        {
+          "type": "numbered-list",
+          "title": "Recommended approach:",
+          "items": [
+            "Define your document types and extraction fields clearly before building.",
+            "Collect a representative sample covering your document variety.",
+            "Use high-quality scans or images to maximize OCR accuracy.",
+            "Tune confidence thresholds and set up human review processes.",
+            "Validate extraction accuracy on a held-out sample of real documents.",
+            "Monitor extraction accuracy over time and retrain as needed.",
+            "Plan for ongoing maintenance as document formats and vendors change.",
+            "Integrate structured output directly into your business systems."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "Key metric",
+          "text": "Measure field-level extraction accuracy on your actual document types — overall document accuracy often masks specific fields that consistently fail."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "eyebrow": "Common questions",
+    "title": "Frequently asked questions about document intelligence",
+    "items": [
+      {
+        "question": "What's the difference between OCR and document intelligence/IDP?",
+        "answer": "OCR converts an image of text into machine-readable text; IDP builds on top of that with layout understanding and entity extraction, producing structured, labeled data rather than just raw extracted text."
+      },
+      {
+        "question": "Can IDP handle handwritten documents?",
+        "answer": "With varying accuracy depending on handwriting clarity; ClickMasters validates this specifically against samples of your actual handwritten documents if relevant to your use case."
+      },
+      {
+        "question": "How accurate is document intelligence extraction?",
+        "answer": "This varies significantly by document quality and complexity; ClickMasters provides a measured accuracy figure specific to your document types rather than a generic claim."
+      },
+      {
+        "question": "Can IDP integrate with our existing accounting or ERP system?",
+        "answer": "Yes, ClickMasters builds extraction pipelines that feed structured data directly into your existing accounting, ERP, or document management systems."
+      },
+      {
+        "question": "How long does a document intelligence project take?",
+        "answer": "8–24 weeks depending on document type diversity and system integration requirements."
+      },
+      {
+        "question": "Can IDP handle multiple languages in our document set?",
+        "answer": "Yes, with appropriate multilingual OCR and entity extraction models; ClickMasters scopes language requirements during Discovery."
+      },
+      {
+        "question": "What are the most common document types processed by IDP?",
+        "answer": "The most common document types are invoices, purchase orders, receipts, contracts, insurance claim forms, loan applications, and medical records. ClickMasters specializes in custom tuning for your specific document types."
+      },
+      {
+        "question": "How do you handle low-quality or scanned documents in IDP?",
+        "answer": "Pre-processing techniques like deskewing, denoising, and contrast enhancement can improve OCR quality. For consistently poor-quality documents, ClickMasters may recommend process improvements at the scanning stage."
+      },
+      {
+        "question": "What is the difference between IDP and RPA for document processing?",
+        "answer": "RPA (Robotic Process Automation) can automate data entry by mimicking human keystrokes but struggles with unstructured data. IDP uses AI to understand document structure and extract meaning, making it much more capable for complex documents."
+      },
+      {
+        "question": "How do you maintain IDP accuracy as document formats change?",
+        "answer": "Document formats evolve as vendors update their templates. ClickMasters builds monitoring to detect accuracy drift and schedules periodic reviews to update extraction models when significant format changes occur."
+      }
+    ]
+  },
+
+  "relatedTerms": [
+    "named-entity-recognition-ner",
+    "ocr",
+    "document-processing",
+    "computer-vision",
+    "text-extraction"
+  ],
+
+  "references": [
+    {
+      "label": "Intelligent Document Processing: A Comprehensive Survey",
+      "href": "https://arxiv.org/abs/2304.09876",
+      "publisher": "arXiv"
+    },
+    {
+      "label": "From OCR to Document Intelligence: The Evolution of Document Processing",
+      "href": "https://arxiv.org/abs/2206.04567",
+      "publisher": "arXiv"
+    }
+  ],
+
+  "additionalResources": [
+    {
+      "label": "AI Document Processing Services",
+      "href": "/ai-document-processing-services/"
+    },
+    {
+      "label": "What is Named Entity Recognition (NER)?",
+      "href": "/glossary/named-entity-recognition-ner/"
+    },
+    {
+      "label": "What is Computer Vision?",
+      "href": "/glossary/computer-vision/"
+    }
+  ],
+
+  "cta": {
+    "eyebrow": "Ready to automate your document processing?",
+    "title": "Get a free document intelligence consultation — 24-hour response",
+    "description": "ClickMasters builds IDP pipelines with confidence scoring and human-review routing for uncertain extractions. From $25,000. Fixed-price. Full IP. 24-hour response.",
+    "primaryLink": {
+      "label": "Book your free consultation",
+      "href": "/contact"
+    },
+    "secondaryLink": {
+      "label": "Get your free project estimate",
+      "href": "/contact"
+    }
+  }
+}
