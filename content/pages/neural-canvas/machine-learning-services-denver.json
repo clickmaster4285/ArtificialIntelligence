@@ -1,0 +1,372 @@
+{
+  "slug": "machine-learning-services-denver",
+  "status": "published",
+  "seo": {
+    "title": "Machine Learning Services Denver | ClickMasters AI",
+    "description": "ClickMasters builds custom ML for Denver — aerospace systems, energy grid, healthcare clinical, cannabis analytics, CO AI Act. From $35K. Fixed-price. 24-hour response.",
+    "canonical": "/machine-learning-services-denver/",
+    "primaryKeyword": "machine learning services denver",
+    "secondaryKeywords": [
+      "machine learning company denver",
+      "custom ml models colorado",
+      "ml development denver",
+      "aerospace ml denver"
+    ],
+    "openGraphImage": "/images/pages/machine-learning-services-denver/og-image.jpg",
+    "noIndex": false,
+    "noFollow": false
+  },
+  "schema": {
+    "service": true,
+    "organization": true,
+    "breadcrumbs": true,
+    "faq": true,
+    "localBusiness": true
+  },
+  "appearance": {
+    "template": "neural-canvas",
+    "accent": "orange",
+    "background": "neural-grid",
+    "grain": true,
+    "glow": true,
+    "scrollProgress": true,
+    "customCursor": true
+  },
+  "hero": {
+    "eyebrow": "Machine Learning Services — Denver",
+    "title": "Machine Learning Services — Denver",
+    "highlightedText": "Aerospace · Energy · Healthcare · Cannabis · CO AI Act · From $35K",
+    "description": "ClickMasters builds custom machine learning for Denver's aerospace, energy, healthcare, cannabis, financial services, and government organizations — structural health monitoring and mission analytics ML for Lockheed Martin Space and the Space Corridor's commercial satellite programs, electric grid reliability and renewable energy ML for Xcel Energy's large Colorado utility operations, clinical risk prediction for UCHealth's altitude-medicine-specialized patient population, cannabis market analytics and compliance ML for Colorado's mature legal cannabis industry, retirement and investment analytics for TIAA's large Denver presence, and Colorado AI Act-compliant ML for the government agencies and covered enterprises navigating Colorado's AI regulation. From $35,000. Fixed-price. Full IP. 24-hour response.",
+    "primaryCta": {
+      "label": "Get a Free ML Consultation — Denver — 24-Hour Response",
+      "href": "#cta",
+      "ariaLabel": "Get a free ML consultation for Denver with 24-hour response"
+    },
+    "secondaryCta": {
+      "label": "Explore ML Development Services",
+      "href": "/machine-learning-model-development/"
+    },
+    "trustText": "Self-hosted · CO AI Act · HIPAA · Mountain Time · Fixed-price",
+    "metrics": [
+      {
+        "value": "$35K+",
+        "label": "Project starting price",
+        "description": "ML services"
+      },
+      {
+        "value": "10-26",
+        "label": "Weeks to deployment",
+        "description": "Typical ML timeline"
+      },
+      {
+        "value": "MT",
+        "label": "Timezone alignment",
+        "description": "Mountain Time for Denver"
+      }
+    ],
+    "visual": {
+      "type": "neural-sphere",
+      "label": "Denver ML services",
+      "modelNames": [
+        "Aerospace Systems",
+        "Energy Grid",
+        "Healthcare Clinical",
+        "Cannabis Analytics",
+        "CO AI Act"
+      ]
+    }
+  },
+  "sections": [
+    {
+      "id": "aerospace",
+      "type": "rich-text",
+      "eyebrow": "Aerospace ML",
+      "title": "Space and Aerospace Systems ML",
+      "description": "For Lockheed Martin Space (Littleton CO), ULA (Centennial CO), and Denver's world-class Space Corridor.",
+      "tone": "contrast",
+      "width": "content",
+      "animation": "mask-reveal",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "Satellite health and anomaly detection",
+          "paragraphs": [
+            "ML for monitoring the health of satellite systems — detecting telemetry anomalies that indicate component degradation or operational issues in the commercial and government satellite programs managed from Lockheed's Littleton campus. Satellite anomaly detection must be highly sensitive (missing an early anomaly leads to mission loss) and highly specific (false positives generate unnecessary operations team interventions)."
+          ]
+        },
+        {
+          "heading": "Orbital mechanics and maneuver optimization",
+          "paragraphs": [
+            "ML for spacecraft trajectory and maneuver optimization — predicting fuel-optimal maneuver sequences for the satellite constellation management programs that increasingly require ML for the large numbers of satellites in low Earth orbit that human operators cannot manage individually."
+          ]
+        },
+        {
+          "heading": "Supply chain risk for aerospace programs",
+          "paragraphs": [
+            "ML for the complex aerospace supply chain risk analytics that the Space Corridor's programs require — long-lead-time components, sole-source suppliers, and the geopolitical supply chain risks that space program procurement must navigate.",
+            "Self-hosted on corporate infrastructure for all classified-adjacent applications."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "energy",
+      "type": "rich-text",
+      "eyebrow": "Energy ML",
+      "title": "Energy Grid and Renewable ML (Xcel Energy)",
+      "description": "Xcel Energy (Denver HQ) — one of the US's largest utilities, with ambitious renewable energy commitments in Colorado.",
+      "tone": "contrast",
+      "width": "content",
+      "animation": "mask-reveal",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "Solar and wind generation forecasting",
+          "paragraphs": [
+            "ML for Xcel's rapidly growing renewable energy portfolio in Colorado — the Front Range's Chinook wind patterns, afternoon thunderstorm season, and the specific solar irradiance patterns of Colorado's high-altitude geography create generation forecasting challenges that require Colorado-specific model calibration."
+          ]
+        },
+        {
+          "heading": "Grid outage and reliability ML",
+          "paragraphs": [
+            "ML for Xcel's transmission and distribution reliability analytics — predicting outage probability from equipment age, vegetation management cycles, and weather patterns for the Colorado distribution network that serves both dense urban and rural mountain geographies."
+          ]
+        },
+        {
+          "heading": "Colorado clean energy transition analytics",
+          "paragraphs": [
+            "ML for the regulatory and investment planning analytics of Xcel's aggressive decarbonization commitment — the resource mix optimization, storage requirement modeling, and transmission infrastructure planning that a 100% clean energy transition requires."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "healthcare",
+      "type": "rich-text",
+      "eyebrow": "Healthcare ML",
+      "title": "Healthcare Clinical ML",
+      "description": "For UCHealth, CommonSpirit Colorado, and Denver's health systems.",
+      "tone": "contrast",
+      "width": "content",
+      "animation": "mask-reveal",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "Altitude-adjusted clinical prediction models",
+          "paragraphs": [
+            "ML calibrated to Denver's 5,280-foot elevation — ClickMasters incorporates the altitude-specific physiological adjustments (hemoglobin distribution, oxygen saturation norms, pulmonary arterial pressure baselines) that the University of Colorado's altitude medicine research has quantified, and that sea-level-calibrated national models miss."
+          ]
+        },
+        {
+          "heading": "Colorado AI Act-compliant clinical ML",
+          "paragraphs": [
+            "Denver healthcare ML must comply with SB24-205's requirements for high-risk automated decision systems — impact assessment, consumer disclosure, and ongoing monitoring for all clinical ML meeting the Colorado AI Act's high-risk threshold."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cannabis",
+      "type": "rich-text",
+      "eyebrow": "Cannabis Analytics",
+      "title": "Cannabis Industry Analytics",
+      "description": "Colorado's mature legal cannabis market — the most developed cannabis analytics market in the US.",
+      "tone": "contrast",
+      "width": "content",
+      "animation": "mask-reveal",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "Cannabis retail demand analytics",
+          "paragraphs": [
+            "ML for Colorado's licensed cannabis dispensaries — predicting product demand across the complex cross-product, cross-potency cannabis product portfolio, accounting for the seasonal tourism patterns that bring non-Colorado cannabis consumers into the market."
+          ]
+        },
+        {
+          "heading": "Cannabis regulatory compliance ML",
+          "paragraphs": [
+            "ML for the seed-to-sale compliance tracking and Colorado MED reporting analytics that Colorado's licensed cannabis industry requires — the Metrc-integrated data creates ML opportunities for operational efficiency and compliance management."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "co-ai-act",
+      "type": "rich-text",
+      "eyebrow": "Colorado AI Act",
+      "title": "Colorado AI Act compliance across all Denver ML",
+      "description": "Colorado SB24-205 requires impact assessment for high-risk automated decision systems.",
+      "tone": "surface",
+      "width": "content",
+      "animation": "mask-reveal",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "SB24-205 scope for ML",
+          "paragraphs": [
+            "Any ML system that makes consequential decisions about Colorado consumers — in healthcare, credit, housing, insurance, and employment — must meet Colorado AI Act requirements. ClickMasters includes CO AI Act impact assessment as a standard deliverable for any Denver ML that may meet the high-risk threshold, rather than assessing applicability only after a model is built."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing",
+      "type": "table",
+      "eyebrow": "Pricing 2026",
+      "title": "Pricing for Denver ML services",
+      "description": "Published pricing ranges by ML application type with Colorado-specific context.",
+      "tone": "surface",
+      "width": "wide",
+      "animation": "horizontal-reveal",
+      "variant": "pricing",
+      "columns": [
+        {
+          "key": "application",
+          "label": "ML Application",
+          "align": "left",
+          "width": "25%"
+        },
+        {
+          "key": "cost_range",
+          "label": "Cost Range",
+          "align": "left",
+          "width": "22%"
+        },
+        {
+          "key": "timeline",
+          "label": "Timeline",
+          "align": "left",
+          "width": "22%"
+        },
+        {
+          "key": "context",
+          "label": "Colorado Context",
+          "align": "left",
+          "width": "31%"
+        }
+      ],
+      "rows": [
+        {
+          "id": "aerospace",
+          "cells": {
+            "application": "Space / aerospace systems ML",
+            "cost_range": "$65,000 – $175,000",
+            "timeline": "14–26 weeks",
+            "context": "Self-hosted"
+          }
+        },
+        {
+          "id": "energy",
+          "cells": {
+            "application": "Energy grid / renewable ML",
+            "cost_range": "$60,000 – $160,000",
+            "timeline": "12–24 weeks",
+            "context": "NERC, CO PUC"
+          }
+        },
+        {
+          "id": "healthcare",
+          "cells": {
+            "application": "Healthcare clinical ML",
+            "cost_range": "$60,000 – $165,000",
+            "timeline": "12–24 weeks",
+            "context": "HIPAA + CO AI Act"
+          }
+        },
+        {
+          "id": "cannabis",
+          "cells": {
+            "application": "Cannabis analytics",
+            "cost_range": "$40,000 – $110,000",
+            "timeline": "10–20 weeks",
+            "context": "CO MED, Metrc"
+          }
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "type": "faq",
+      "eyebrow": "FAQs",
+      "title": "Frequently asked questions",
+      "description": "Clear answers about Denver ML capabilities and scope.",
+      "tone": "default",
+      "width": "content",
+      "animation": "fade-up",
+      "variant": "indexed",
+      "items": [
+        {
+          "question": "Can ClickMasters build satellite telemetry anomaly detection ML for Lockheed Space?",
+          "answer": "Yes — spacecraft health monitoring ML for Lockheed's commercial satellite programs, deployed on Lockheed's corporate infrastructure, are ClickMasters capabilities."
+        },
+        {
+          "question": "Can ClickMasters build Colorado AI Act-compliant clinical prediction for UCHealth?",
+          "answer": "Yes — altitude-adjusted clinical ML with Colorado SB24-205 impact assessment documentation for UCHealth's Denver hospitals are ClickMasters capabilities."
+        },
+        {
+          "question": "Can ClickMasters build Front Range solar generation forecasting for Xcel Energy?",
+          "answer": "Yes — Colorado Front Range weather-calibrated solar and wind generation ML for Xcel's renewable energy portfolio are ClickMasters capabilities."
+        },
+        {
+          "question": "How long does Denver ML development take?",
+          "answer": "10–26 weeks. Space systems with self-hosted deployment at the longer end."
+        },
+        {
+          "question": "Do we own the ML models after delivery?",
+          "answer": "Yes — full IP transfer at project close."
+        },
+        {
+          "question": "Does ClickMasters work Mountain Time for Denver?",
+          "answer": "Yes — Mountain Time is standard for Denver and Colorado."
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "type": "cta",
+      "eyebrow": "Get Started",
+      "heading": "Ready to build machine learning for your Denver organization?",
+      "text": "ClickMasters builds self-hosted aerospace systems ML, altitude-adjusted Colorado AI Act-compliant clinical prediction, and Front Range renewable energy generation forecasting for Denver's world-class space, energy, healthcare, and cannabis community.",
+      "tone": "contrast",
+      "width": "wide",
+      "animation": "fade-scale",
+      "primaryCta": {
+        "label": "Get a Free ML Consultation — Denver — 24-Hour Response",
+        "href": "/contact/"
+      },
+      "secondaryCta": {
+        "label": "Email the Denver ML Team",
+        "href": "mailto:hello@clickmastersartificialintelligencecompany.com"
+      },
+      "contactEmail": "hello@clickmastersartificialintelligencecompany.com",
+      "variant": "orbital"
+    }
+  ],
+  "relatedPages": [
+    {
+      "title": "Machine Learning Model Development",
+      "description": "Full ML model development services.",
+      "href": "/machine-learning-model-development/"
+    },
+    {
+      "title": "AI Development Company Denver",
+      "description": "General AI development services for Denver.",
+      "href": "/ai-development-company-denver/"
+    },
+    {
+      "title": "Machine Learning Model Development Cost",
+      "description": "Understand the cost of ML development.",
+      "href": "/machine-learning-model-development-cost/"
+    },
+    {
+      "title": "Predictive Analytics Services",
+      "description": "Production-ready prediction systems.",
+      "href": "/predictive-analytics-services/"
+    },
+    {
+      "title": "Responsible AI Compliance",
+      "description": "AI governance and compliance services.",
+      "href": "/responsible-ai-compliance/"
+    }
+  ]
+}

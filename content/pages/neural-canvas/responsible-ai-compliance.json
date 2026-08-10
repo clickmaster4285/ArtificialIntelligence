@@ -1,0 +1,419 @@
+{
+  "slug": "responsible-ai-compliance",
+  "status": "published",
+  "seo": {
+    "title": "Responsible AI & Compliance Services | ClickMasters",
+    "description": "ClickMasters builds responsible AI — bias testing, explainability, HIPAA compliance, EU AI Act, NIST AI RMF, SR 11-7. From $15K. Fixed-price. Full IP. 24-hour response.",
+    "canonical": "/responsible-ai-compliance/",
+    "primaryKeyword": "responsible ai compliance services",
+    "secondaryKeywords": [
+      "ai compliance services usa",
+      "responsible ai company",
+      "ai bias testing",
+      "eu ai act compliance usa",
+      "nist ai rmf"
+    ],
+    "openGraphImage": "/images/pages/responsible-ai-compliance/og-image.jpg",
+    "noIndex": false,
+    "noFollow": false
+  },
+  "schema": {
+    "service": true,
+    "organization": true,
+    "breadcrumbs": true,
+    "faq": true
+  },
+  "appearance": {
+    "template": "neural-canvas",
+    "accent": "blue",
+    "background": "neural-grid",
+    "grain": true,
+    "glow": true,
+    "scrollProgress": true,
+    "customCursor": true
+  },
+  "hero": {
+    "eyebrow": "Responsible AI & Compliance Services",
+    "title": "Responsible AI and Compliance Services",
+    "highlightedText": "Bias testing · Explainability · HIPAA · EU AI Act · NIST AI RMF · SR 11-7",
+    "description": "ClickMasters builds AI systems that are responsible from the first architecture decision — not systems that are audited for responsibility after they're built. The difference matters enormously: retrofitting AI bias testing, explainability, and compliance documentation after a model is deployed is expensive, often technically difficult, and sometimes impossible without rebuilding the system. ClickMasters integrates responsible AI practices — fairness evaluation, explainability, transparency documentation, regulatory compliance, and AI governance — into every AI project from Discovery through production deployment. From $15,000. Fixed-price. Full IP. 24-hour response.",
+    "primaryCta": {
+      "label": "Get a Free Responsible AI Consultation — 24-Hour Response",
+      "href": "#cta",
+      "ariaLabel": "Get a free responsible AI consultation with 24-hour response"
+    },
+    "secondaryCta": {
+      "label": "Explore AI Consulting Services",
+      "href": "/ai-consulting-services/"
+    },
+    "trustText": "ECOA · HIPAA · SR 11-7 · EU AI Act · NIST AI RMF · Fixed-price",
+    "metrics": [
+      {
+        "value": "$15K+",
+        "label": "Project starting price",
+        "description": "Responsible AI services"
+      },
+      {
+        "value": "3-14",
+        "label": "Weeks to completion",
+        "description": "Typical engagement timeline"
+      },
+      {
+        "value": "15-25%",
+        "label": "Cost premium",
+        "description": "Built-in vs. retrofitted"
+      }
+    ],
+    "visual": {
+      "type": "neural-sphere",
+      "label": "Responsible AI services",
+      "modelNames": [
+        "Bias Testing",
+        "Explainability",
+        "HIPAA",
+        "EU AI Act",
+        "NIST AI RMF",
+        "SR 11-7"
+      ]
+    }
+  },
+  "sections": [
+    {
+      "id": "fairness",
+      "type": "rich-text",
+      "eyebrow": "Fairness & Bias",
+      "title": "AI Fairness and Bias Evaluation",
+      "description": "Statistical fairness testing and protected class disparate impact analysis for AI systems making decisions about people.",
+      "tone": "contrast",
+      "width": "content",
+      "animation": "mask-reveal",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "Statistical fairness testing",
+          "paragraphs": [
+            "ClickMasters evaluates AI models against multiple fairness definitions — demographic parity (equal prediction rates across groups), equalized odds (equal true positive and false positive rates), and predictive parity (equal accuracy). No single fairness metric is universally correct — the appropriate metric depends on the specific use case and the harm asymmetries between different types of errors."
+          ]
+        },
+        {
+          "heading": "Protected class disparate impact analysis",
+          "paragraphs": [
+            "For AI systems making decisions about people — credit scoring, hiring, insurance underwriting, clinical care — ClickMasters conducts protected class disparate impact analysis aligned with applicable law:",
+            "ECOA disparate impact for credit AI: Statistical analysis of loan approval, pricing, and terms decisions by race, sex, national origin, and other ECOA protected classes — adverse action documentation and disparity ratio calculation for credit models subject to CFPB and FDIC fair lending examination.",
+            "Title VII analysis for employment AI: Disparate impact analysis for AI used in hiring, promotion, and workforce decisions — four-fifths rule and statistical significance testing for selection rates by race, sex, and other Title VII protected characteristics.",
+            "Fair Housing Act compliance for real estate AI: Disparate impact analysis for AI used in rental, lending, and real estate decisions — protected class outcome analysis for housing AI models."
+          ]
+        },
+        {
+          "heading": "Bias mitigation",
+          "paragraphs": [
+            "When bias is detected, ClickMasters implements appropriate mitigation — reweighting, fairness-constrained optimization, or, where appropriate, model redesign. Bias mitigation always involves a performance-fairness tradeoff that we document explicitly rather than obscuring."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "explainability",
+      "type": "rich-text",
+      "eyebrow": "Explainability",
+      "title": "AI Explainability and Transparency",
+      "description": "SHAP, LIME, global feature importance, and natural language explanation generation for AI decisions.",
+      "tone": "contrast",
+      "width": "content",
+      "animation": "mask-reveal",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "SHAP (SHapley Additive exPlanations)",
+          "paragraphs": [
+            "Feature attribution for individual predictions — explaining why a specific credit application was declined, why a specific patient was flagged as high-risk, or why a specific job candidate was ranked low. SHAP values are the regulatory standard for credit adverse action documentation."
+          ]
+        },
+        {
+          "heading": "LIME (Local Interpretable Model-agnostic Explanations)",
+          "paragraphs": [
+            "Local linear approximation for complex model explanation where SHAP is computationally infeasible or where decision boundary explanation matters more than feature attribution."
+          ]
+        },
+        {
+          "heading": "Global feature importance",
+          "paragraphs": [
+            "Portfolio-level explanation of which features drive model behavior across the full dataset — essential for model validation documentation (SR 11-7, OCC) and for identifying potential proxy discrimination."
+          ]
+        },
+        {
+          "heading": "Natural language explanation generation",
+          "paragraphs": [
+            "LLM-generated natural language explanations of AI decisions for end-user communication — transforming SHAP values into the plain language adverse action notices that FCRA and ECOA require."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "regulatory-compliance",
+      "type": "rich-text",
+      "eyebrow": "Regulatory Compliance",
+      "title": "Regulatory Compliance Documentation",
+      "description": "SR 11-7, HIPAA, EU AI Act, and NIST AI RMF compliance documentation.",
+      "tone": "contrast",
+      "width": "content",
+      "animation": "mask-reveal",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "SR 11-7 Model Risk Management Documentation",
+          "paragraphs": [
+            "Complete SR 11-7 model validation packages for financial institution AI models — Model Development Report, Model Validation Report, Model Risk Rating, and Ongoing Monitoring Plan. SR 11-7 requires that models be independently validated by parties other than the developers — ClickMasters can provide the model validation documentation for models ClickMasters develops and for models developed by others that require independent validation."
+          ]
+        },
+        {
+          "heading": "HIPAA AI Compliance",
+          "paragraphs": [
+            "HIPAA-compliant AI requires specific architecture and documentation — Business Associate Agreements with LLM and cloud providers, minimum necessary data standard application to AI training data, PHI de-identification for model training (Safe Harbor or Expert Determination methods), and audit log architecture for all PHI-touching AI operations. ClickMasters delivers the HIPAA compliance documentation alongside every healthcare AI deployment."
+          ]
+        },
+        {
+          "heading": "EU AI Act Compliance (US-Based Organizations)",
+          "paragraphs": [
+            "The EU AI Act applies to AI systems deployed in the EU and to EU residents regardless of developer location — US AI companies serving European customers must comply. ClickMasters builds EU AI Act conformity assessment packages for US-developed AI entering EU markets:",
+            "Risk classification (prohibited, high-risk, limited-risk, minimal-risk). High-risk AI documentation requirements (technical documentation, fundamental rights assessment, conformity assessment). Human oversight implementation for high-risk AI categories (biometric, critical infrastructure, education, employment, essential services, law enforcement)."
+          ]
+        },
+        {
+          "heading": "NIST AI Risk Management Framework",
+          "paragraphs": [
+            "NIST AI RMF (GOVERN, MAP, MEASURE, MANAGE functions) implementation for organizations adopting the NIST framework for AI risk management — gap assessment, risk register development, and the documentation and governance processes that NIST AI RMF requires."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "governance",
+      "type": "rich-text",
+      "eyebrow": "Governance",
+      "title": "AI Governance Framework Design",
+      "description": "AI policy development, inventory and risk classification, and monitoring and incident response design.",
+      "tone": "contrast",
+      "width": "content",
+      "animation": "mask-reveal",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "AI policy development",
+          "paragraphs": [
+            "Drafting an organization's AI acceptable use policy, AI development standards, and AI deployment governance for the board, executive leadership, and AI development teams."
+          ]
+        },
+        {
+          "heading": "AI inventory and risk classification",
+          "paragraphs": [
+            "Inventorying an organization's deployed AI systems, classifying their risk level, and prioritizing risk management resources for the AI portfolio based on consequence severity and likelihood of harm."
+          ]
+        },
+        {
+          "heading": "AI monitoring and incident response",
+          "paragraphs": [
+            "Designing the operational processes for monitoring deployed AI performance, detecting model drift and bias emergence, and responding to AI failures and incidents — the AI equivalent of cybersecurity incident response."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "why-early",
+      "type": "rich-text",
+      "eyebrow": "Why Early",
+      "title": "Why build responsible AI from the start (not as an audit)",
+      "description": "The most common client request ClickMasters declines is 'audit our existing model for bias.' Not because bias auditing is wrong — it's essential — but because post-hoc auditing is almost never the right solution.",
+      "tone": "surface",
+      "width": "content",
+      "animation": "mask-reveal",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "Post-hoc auditing rarely fixes the problem",
+          "paragraphs": [
+            "An audit that finds bias in a deployed production model typically finds that the bias is structurally embedded in the training data, feature engineering, or model architecture in ways that require rebuilding the model, not patching it. The audit triggers an expensive and disruptive remediation that responsible AI design would have prevented."
+          ]
+        },
+        {
+          "heading": "Documentation gaps are expensive to reconstruct",
+          "paragraphs": [
+            "SR 11-7 model validation, EU AI Act technical documentation, and HIPAA audit trails require development-time information (training data lineage, feature engineering decisions, hyperparameter choices) that post-hoc auditing cannot reconstruct accurately."
+          ]
+        },
+        {
+          "heading": "Regulators increasingly look at the process, not just the outcome",
+          "paragraphs": [
+            "Financial regulators, EEOC, and the emerging AI regulatory regime care not just about whether the model discriminates but about whether the developer followed responsible AI development practices. Post-hoc auditing demonstrates that responsible AI was an afterthought.",
+            "ClickMasters builds responsible AI in — not on."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing",
+      "type": "table",
+      "eyebrow": "Pricing 2025",
+      "title": "Responsible AI pricing reference — 2025",
+      "description": "Published pricing ranges by responsible AI service type. Every engagement delivers concrete, actionable deliverables.",
+      "tone": "surface",
+      "width": "wide",
+      "animation": "horizontal-reveal",
+      "variant": "pricing",
+      "columns": [
+        {
+          "key": "service",
+          "label": "Responsible AI Service",
+          "align": "left",
+          "width": "30%"
+        },
+        {
+          "key": "cost_range",
+          "label": "Cost Range",
+          "align": "left",
+          "width": "25%"
+        },
+        {
+          "key": "timeline",
+          "label": "Timeline",
+          "align": "left",
+          "width": "25%"
+        }
+      ],
+      "rows": [
+        {
+          "id": "fairness",
+          "cells": {
+            "service": "Fairness and bias evaluation",
+            "cost_range": "$15,000 – $50,000",
+            "timeline": "4–10 weeks"
+          }
+        },
+        {
+          "id": "explainability",
+          "cells": {
+            "service": "Explainability (SHAP, LIME)",
+            "cost_range": "$10,000 – $35,000",
+            "timeline": "3–8 weeks"
+          }
+        },
+        {
+          "id": "sr11-7",
+          "cells": {
+            "service": "SR 11-7 model validation docs",
+            "cost_range": "$20,000 – $60,000",
+            "timeline": "6–14 weeks"
+          }
+        },
+        {
+          "id": "eu-ai-act",
+          "cells": {
+            "service": "EU AI Act conformity assessment",
+            "cost_range": "$25,000 – $75,000",
+            "timeline": "8–14 weeks"
+          }
+        },
+        {
+          "id": "nist",
+          "cells": {
+            "service": "NIST AI RMF implementation",
+            "cost_range": "$20,000 – $55,000",
+            "timeline": "6–12 weeks"
+          }
+        },
+        {
+          "id": "governance",
+          "cells": {
+            "service": "AI governance framework",
+            "cost_range": "$15,000 – $50,000",
+            "timeline": "4–10 weeks"
+          }
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "type": "faq",
+      "eyebrow": "FAQs",
+      "title": "Frequently asked questions",
+      "description": "Clear answers about responsible AI services, costs, and compliance requirements.",
+      "tone": "default",
+      "width": "content",
+      "animation": "fade-up",
+      "variant": "indexed",
+      "items": [
+        {
+          "question": "What's the minimum responsible AI engagement?",
+          "answer": "$10,000 for explainability addition to an existing model. $15,000 for fairness evaluation on a deployed model. $20,000 for SR 11-7 documentation package for a single model."
+        },
+        {
+          "question": "Does ClickMasters do independent model validation for models it didn't build?",
+          "answer": "Yes — ClickMasters provides independent validation documentation for models built by internal teams or other vendors, as required by SR 11-7's independence requirement."
+        },
+        {
+          "question": "Does the EU AI Act apply to US companies?",
+          "answer": "If you deploy AI systems to EU customers or residents, yes. ClickMasters builds EU AI Act conformity assessments for US AI developers entering European markets."
+        },
+        {
+          "question": "How does ClickMasters handle the performance-fairness tradeoff?",
+          "answer": "Every fairness constraint reduces model accuracy somewhere. ClickMasters documents the tradeoff explicitly — showing the performance cost of each fairness constraint so clients can make informed decisions rather than discovering hidden tradeoffs after deployment."
+        },
+        {
+          "question": "Can ClickMasters build responsible AI into a new project from Discovery?",
+          "answer": "Yes — this is ClickMasters' preferred approach. Responsible AI built into a project from Discovery costs 15–25% more than an equivalent project without responsible AI features, but eliminates the expensive post-hoc remediation that auditing typically triggers."
+        },
+        {
+          "question": "Do we own all responsible AI documentation after delivery?",
+          "answer": "Yes — all validation documentation, fairness evaluation reports, compliance documentation, and governance framework materials are delivered as client-owned deliverables."
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "type": "cta",
+      "eyebrow": "Get Started",
+      "heading": "Build responsible AI with ClickMasters",
+      "text": "ClickMasters builds AI that is fair, explainable, and compliant from the first design decision — not AI that requires remediation after the regulator calls.",
+      "tone": "contrast",
+      "width": "wide",
+      "animation": "fade-scale",
+      "primaryCta": {
+        "label": "Get a Free Responsible AI Consultation — 24-Hour Response",
+        "href": "/contact/"
+      },
+      "secondaryCta": {
+        "label": "Email the Responsible AI Team",
+        "href": "mailto:hello@clickmastersartificialintelligencecompany.com"
+      },
+      "contactEmail": "hello@clickmastersartificialintelligencecompany.com",
+      "variant": "orbital"
+    }
+  ],
+  "relatedPages": [
+    {
+      "title": "AI Consulting Services",
+      "description": "AI strategy and consulting services.",
+      "href": "/ai-consulting-services/"
+    },
+    {
+      "title": "Machine Learning Model Development",
+      "description": "ML model development services.",
+      "href": "/machine-learning-model-development/"
+    },
+    {
+      "title": "AI Agent Development Company",
+      "description": "AI agent development services.",
+      "href": "/ai-agent-development-company/"
+    },
+    {
+      "title": "AI SaaS Development",
+      "description": "AI-powered SaaS product development.",
+      "href": "/ai-saas-development/"
+    },
+    {
+      "title": "Responsible AI (Glossary)",
+      "description": "Responsible AI glossary entry.",
+      "href": "/glossary/responsible-ai/"
+    }
+  ]
+}
