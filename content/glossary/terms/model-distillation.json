@@ -1,0 +1,304 @@
+{
+  "slug": "model-distillation",
+  "status": "published",
+  "title": "Model Distillation",
+  "shortTitle": "Model Distillation",
+  "abbreviation": "KD",
+  "letter": "D",
+  "category": "Model Optimization",
+  "shortDefinition": "A technique for training a smaller, faster model to replicate a larger model's behavior.",
+  "definition": "Model distillation (also called knowledge distillation) is a technique for training a smaller, faster 'student' model to replicate the behavior of a larger, more capable 'teacher' model — capturing much of the teacher's performance in a more efficient package that costs less and runs faster at inference time. Distillation is a key technique for deploying capable AI in cost-sensitive or latency-critical contexts where running the full-size original model isn't practical.",
+  "introduction": "Model distillation (also called knowledge distillation) is a technique for training a smaller, faster 'student' model to replicate the behavior of a larger, more capable 'teacher' model — capturing much of the teacher's performance in a more efficient package that costs less and runs faster at inference time. Distillation is a key technique for deploying capable AI in cost-sensitive or latency-critical contexts where running the full-size original model isn't practical.",
+  "featured": true,
+  "aliases": [
+    "KD",
+    "knowledge distillation",
+    "model distillation",
+    "teacher-student distillation",
+    "distilled model"
+  ],
+  "readingTime": "6 min read",
+  "publishedAt": "2026-08-07",
+  "updatedAt": "2026-08-07",
+
+  "seo": {
+    "title": "What is Model Distillation? AI Term Defined",
+    "description": "Model distillation trains a smaller, faster model to mimic a larger model's behavior. Definition, use cases, implementation from $30K.",
+    "canonical": "/glossary/model-distillation/",
+    "keywords": [
+      "what is model distillation",
+      "knowledge distillation definition",
+      "model distillation vs fine-tuning",
+      "distilled model accuracy",
+      "model distillation services"
+    ]
+  },
+
+  "sections": [
+    {
+      "id": "how-distillation-works",
+      "eyebrow": "Core technique",
+      "title": "How model distillation works",
+      "description": "The student model is trained to mimic the teacher model's output patterns, capturing more information than raw labels alone.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "In distillation, the smaller student model is trained not just on the original labeled data, but specifically to mimic the larger teacher model's output patterns — including the nuanced probability distributions the teacher model produces, which contain more information than just the single 'correct' label. This additional signal helps the smaller model learn more effectively than it would training on raw labels alone, often achieving performance meaningfully closer to the teacher model than its smaller size would otherwise suggest is possible."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Student model — smaller, faster target model.",
+            "Teacher model — larger, more capable original model.",
+            "Output pattern mimicry — student learns from teacher's full output distribution.",
+            "Additional signal — probability distributions contain more information than raw labels.",
+            "Efficiency gain — smaller model captures much of the teacher's capability."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "The key insight",
+          "text": "Distillation captures the teacher model's nuanced output patterns — not just correct answers, but the full probability distribution that contains richer learning signals."
+        }
+      ]
+    },
+    {
+      "id": "why-distillation-matters",
+      "eyebrow": "Production value",
+      "title": "Why model distillation matters for production economics",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "A large, highly capable model often costs significantly more per inference call and runs slower than a smaller model — at production scale, this cost and latency difference compounds substantially. Distillation lets you capture much of a large model's capability in a smaller package, reducing inference cost and latency for high-volume production use cases, or enabling deployment on resource-constrained edge devices where the full-size original model simply wouldn't run efficiently or at all."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Inference cost reduction — smaller models cost less to run.",
+            "Latency improvement — faster inference for better user experience.",
+            "Edge deployment — enables models on resource-constrained devices.",
+            "Scale economics — savings compound with production volume.",
+            "Capability preservation — maintains much of the large model's performance."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clickmasters-approach",
+      "eyebrow": "ClickMasters approach",
+      "title": "How ClickMasters applies model distillation for enterprise clients",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "ClickMasters evaluates whether distillation is the right approach for your specific cost/latency requirements — distilling a capable model into a smaller, production-efficient version where high inference volume or edge deployment justifies the upfront distillation investment. Every distillation project includes validating the distilled model's accuracy against your specific use case requirements, since some capability loss compared to the full-size teacher model is expected and needs to be confirmed acceptable before full deployment."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Cost/latency evaluation — assess whether distillation is worth the investment.",
+            "Size optimization — distill to meet your production requirements.",
+            "Accuracy validation — confirm distilled model meets your accuracy needs.",
+            "Edge deployment readiness — enable models for resource-constrained hardware.",
+            "Production efficiency — reduce inference cost and latency at scale."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing",
+      "eyebrow": "Investment",
+      "title": "Model distillation pricing",
+      "content": [
+        {
+          "type": "table",
+          "caption": "Fixed-price model distillation projects from ClickMasters",
+          "headers": ["Project Type", "Price Range", "Timeline"],
+          "rows": [
+            ["Model distillation for cost/latency optimization", "$30,000 – $75,000", "10–16 weeks"],
+            ["Distillation for edge deployment", "$40,000 – $95,000", "12–18 weeks"],
+            ["Multi-task distillation with validated accuracy benchmarking", "$55,000 – $130,000", "14–22 weeks"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "success",
+          "title": "Full IP ownership",
+          "text": "All projects include full intellectual property transfer. You own everything we build."
+        }
+      ]
+    },
+    {
+      "id": "common-objections",
+      "eyebrow": "Direct answers",
+      "title": "Common objections, answered directly",
+      "content": [
+        {
+          "type": "bullet-list",
+          "items": [
+            "\"Will a distilled model lose too much accuracy compared to the original?\" — ClickMasters validates this directly — measuring the distilled model's accuracy against your specific use case requirements before deployment, rather than assuming distillation always preserves sufficient capability.",
+            "\"How much will this cost?\" — $30,000–$130,000 depending on use case complexity and whether edge deployment is involved. Fixed quote after Discovery.",
+            "\"Is distillation worth it for our scale, or should we just keep using the larger model?\" — ClickMasters models the cost/latency tradeoff specifically for your expected production volume during Discovery, recommending distillation only when the economics genuinely justify the upfront investment.",
+            "\"Is model distillation the same as fine-tuning?\" — No — fine-tuning adapts a model's behavior for a specific task; distillation trains an entirely smaller model to replicate a larger model's behavior."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "limitations",
+      "eyebrow": "Engineering reality",
+      "title": "Limitations and risks of model distillation",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Model distillation has limitations. There is almost always some accuracy loss compared to the larger teacher model, though distillation typically preserves more than training from scratch. Distillation requires access to the teacher model's outputs, which may not be available for some proprietary models. The process adds upfront cost and time, and distilled models may not be as general as the original for new or edge cases. Distillation also requires careful validation to ensure the smaller model remains reliable for your use case."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Accuracy loss — some capability gap is almost always present.",
+            "Teacher access — need access to teacher model outputs.",
+            "Upfront cost — distillation adds time and expense.",
+            "Generalization risk — distilled models may be less general.",
+            "Validation needed — careful accuracy testing is required.",
+            "Task suitability — not all models are good candidates for distillation."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Important",
+          "text": "Distillation is a tradeoff — you sacrifice some accuracy for cost and speed. Validate that the tradeoff is acceptable for your use case."
+        }
+      ]
+    },
+    {
+      "id": "best-practices",
+      "eyebrow": "Implementation guide",
+      "title": "Best practices for model distillation",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Applying model distillation effectively requires careful tradeoff assessment and validation. The following practices can help ensure your distilled model meets your production requirements."
+        },
+        {
+          "type": "numbered-list",
+          "title": "Recommended approach:",
+          "items": [
+            "Assess cost/latency requirements vs. accuracy needs.",
+            "Access the teacher model's output distributions.",
+            "Choose an appropriate student model architecture.",
+            "Train the student on both labels and teacher outputs.",
+            "Validate accuracy on your specific use case requirements.",
+            "Test inference speed and cost improvements.",
+            "Monitor distilled model performance in production.",
+            "Consider further fine-tuning for task-specific needs."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "Key metric",
+          "text": "Measure accuracy gap between teacher and student models — if the gap is too large for your use case, distillation may not be viable."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "eyebrow": "Common questions",
+    "title": "Frequently asked questions about model distillation",
+    "items": [
+      {
+        "question": "How much smaller is a distilled model compared to the original?",
+        "answer": "This varies significantly by use case and target deployment constraints; ClickMasters scopes the right size reduction for your specific cost, latency, or edge deployment requirements."
+      },
+      {
+        "question": "Is model distillation the same as fine-tuning?",
+        "answer": "No — fine-tuning adapts a model's behavior for a specific task; distillation trains an entirely smaller model to replicate a larger model's behavior, often for cost or deployment efficiency reasons rather than task adaptation."
+      },
+      {
+        "question": "Does distillation always reduce accuracy compared to the original model?",
+        "answer": "Generally some capability gap exists between the distilled student and original teacher model, though distillation often preserves more performance than training a similarly-sized model from scratch would achieve."
+      },
+      {
+        "question": "When does model distillation make the most sense?",
+        "answer": "When inference volume is high enough that cost/latency savings justify the upfront distillation investment, or when deployment constraints (edge devices, mobile applications) require a smaller model than the original."
+      },
+      {
+        "question": "How long does a model distillation project take?",
+        "answer": "10–22 weeks depending on use case complexity and deployment target."
+      },
+      {
+        "question": "Can a distilled model be further fine-tuned for a specific task afterward?",
+        "answer": "Yes, distillation and fine-tuning can be combined — distilling for size/cost efficiency, then fine-tuning the smaller model for your specific task requirements."
+      },
+      {
+        "question": "What is the difference between distillation and quantization?",
+        "answer": "Distillation creates a new, smaller model architecture that mimics the original. Quantization reduces the precision of an existing model's parameters (e.g., 32-bit to 8-bit). Both reduce model size but work differently — distillation often yields smaller models, while quantization is a simpler post-processing step."
+      },
+      {
+        "question": "Can distillation be used with LLMs?",
+        "answer": "Yes — distillation is increasingly used for LLMs to create smaller, faster variants that retain much of the larger model's capability. This enables cost-effective LLM deployment for high-volume applications."
+      },
+      {
+        "question": "What is the difference between online and offline distillation?",
+        "answer": "Offline distillation uses a static set of teacher outputs for training. Online distillation uses the teacher model during training, generating outputs on the fly. Online distillation is more flexible but computationally more expensive."
+      },
+      {
+        "question": "How do you choose the student model architecture for distillation?",
+        "answer": "Student architecture should be smaller and faster than the teacher while capable of capturing its behavior. ClickMasters selects appropriate architectures based on your size and speed requirements."
+      }
+    ]
+  },
+
+  "relatedTerms": [
+    "transfer-learning",
+    "edge-ai",
+    "inference-vs-training",
+    "fine-tuning",
+    "model-compression"
+  ],
+
+  "references": [
+    {
+      "label": "Distilling the Knowledge in a Neural Network",
+      "href": "https://arxiv.org/abs/1503.02531",
+      "publisher": "arXiv"
+    },
+    {
+      "label": "Knowledge Distillation: A Comprehensive Survey",
+      "href": "https://arxiv.org/abs/2106.08956",
+      "publisher": "arXiv"
+    }
+  ],
+
+  "additionalResources": [
+    {
+      "label": "What is Edge AI?",
+      "href": "/glossary/edge-ai/"
+    },
+    {
+      "label": "What is Fine-Tuning?",
+      "href": "/glossary/fine-tuning/"
+    },
+    {
+      "label": "What is Inference vs. Training?",
+      "href": "/glossary/inference-vs-training/"
+    }
+  ],
+
+  "cta": {
+    "eyebrow": "Ready to distill a model for cost or edge deployment?",
+    "title": "Get a free model distillation consultation — 24-hour response",
+    "description": "ClickMasters builds distilled models with validated accuracy for cost-sensitive or latency-critical production deployment. From $30,000. Fixed-price. Full IP. 24-hour response.",
+    "primaryLink": {
+      "label": "Book your free consultation",
+      "href": "/contact"
+    },
+    "secondaryLink": {
+      "label": "Get your free project estimate",
+      "href": "/contact"
+    }
+  }
+}
