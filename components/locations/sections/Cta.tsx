@@ -7,6 +7,18 @@ import { ArrowRight, Mail, Phone, User, MessageSquare, Send } from 'lucide-react
 import { FloatingObjects } from '@/components/locations/sections/FloatingObjects';
 import { Shimmer } from '@/components/locations/sections/Shimmer';
 
+// Helper function to split title - last word goes to new line
+const splitTitle = (text: string) => {
+  const words = text.split(' ');
+  if (words.length <= 1) return { firstPart: text, lastWord: '' };
+  
+  const lastWord = words.pop();
+  return {
+    firstPart: words.join(' '),
+    lastWord: lastWord || ''
+  };
+};
+
 interface CTASectionProps {
   eyebrow?: string;
   title: string;
@@ -61,6 +73,9 @@ export const CTASection: React.FC<CTASectionProps> = ({
     alert(`Form submitted!\nName: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`);
   };
 
+  // Split the title
+  const { firstPart, lastWord } = splitTitle(title);
+
   return (
     <section className="relative py-24 md:py-32 overflow-hidden min-h-[800px] flex items-center">
       <FloatingObjects variant="cta" />
@@ -76,18 +91,20 @@ export const CTASection: React.FC<CTASectionProps> = ({
         transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
       />
 
-      <div className="relative z-10 mx-auto px-8 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+      {/* UPDATED: Added responsive horizontal padding */}
+      <div className="relative z-10 mx-auto px-8 lg:px-12 xl:px-16 w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           
           {/* ========================================= */}
-          {/* LEFT COLUMN: Text & Content */}
+          {/* LEFT COLUMN: Text & Content with Left Padding */}
           {/* ========================================= */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-            className="max-w-xl"
+            // UPDATED: Changed from lg:pl-32 to lg:pl-48 to match other sections
+            className="max-w-xl lg:pl-48 lg:pr-2"
           >
             {/* Eyebrow with Line */}
             <motion.div 
@@ -98,28 +115,33 @@ export const CTASection: React.FC<CTASectionProps> = ({
               {eyebrow}
             </motion.div>
 
-            {/* Gradient Heading */}
+            {/* Gradient Heading - Split with last word on new line */}
             <motion.div 
               className="mt-4"
               initial={{ opacity: 0, x: -10 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1]">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.2]">
                 <span className="bg-gradient-to-r from-[#d8b4fe] via-[#f9a8d4] to-[#fdba74] bg-clip-text text-transparent">
-                  {title}
+                  {firstPart}
                 </span>
+                {lastWord && (
+                  <span className="block bg-gradient-to-r from-[#d8b4fe] via-[#f9a8d4] to-[#fdba74] bg-clip-text text-transparent">
+                    {lastWord}
+                  </span>
+                )}
               </h2>
             </motion.div>
 
-            {/* Description */}
+            {/* Description - EXACTLY 2 LINES using line-clamp-2 */}
             {description && (
               <motion.p
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.2 }}
-                className="mt-6 text-lg text-white/70 max-w-xl leading-relaxed"
+                className="mt-4 text-lg text-white/70 max-w-sm leading-relaxed line-clamp-2"
               >
                 {description}
               </motion.p>
@@ -131,7 +153,7 @@ export const CTASection: React.FC<CTASectionProps> = ({
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.35 }}
-              className="mt-10 flex flex-col sm:flex-row items-start sm:items-center gap-4"
+              className="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-4"
             >
               {/* Primary: solid pill, shimmer on hover */}
               <motion.a
@@ -165,14 +187,15 @@ export const CTASection: React.FC<CTASectionProps> = ({
           </motion.div>
 
           {/* ========================================= */}
-          {/* RIGHT COLUMN: Transparent Contact Form */}
+          {/* RIGHT COLUMN: Transparent Contact Form - EVEN WIDER */}
           {/* ========================================= */}
           <motion.div
             variants={formContainerVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="relative w-full max-w-md mx-auto lg:mx-0 lg:ml-auto"
+            // UPDATED: Changed from max-w-lg to max-w-xl for even more width
+            className="relative w-full max-w-xl mx-auto lg:mx-0 lg:ml-0 lg:pr-8"
           >
             {/* Form Glass Card */}
             <div className="relative p-8 rounded-3xl border border-white/10 bg-white/[0.04] backdrop-blur-xl shadow-2xl overflow-hidden">

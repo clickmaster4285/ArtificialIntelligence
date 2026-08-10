@@ -154,8 +154,9 @@ export function ServiceOverview({ data, className }: ServiceOverviewProps) {
         }}
       />
 
+      {/* UPDATED: Same padding as HeroSection - px-8 with lg:pl-48 for left padding */}
       <motion.div 
-        className="mx-auto max-w-7xl px-3 sm:px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12 relative z-10"
+        className="mx-auto px-8 w-full relative z-10 lg:pl-48 lg:pr-4"
         style={{ opacity, scale }}
       >
         {/* ========================================= */}

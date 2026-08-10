@@ -59,13 +59,13 @@ function ApplicationCard({ item, index }: { item: ApplicationItem; index: number
           opacity,
           transformStyle: "preserve-3d",
         }}
-        className="group relative rounded-3xl border border-white/10 bg-gradient-to-br from-white/[0.05] to-transparent p-8 backdrop-blur-xl transition-all duration-700 hover:border-violet-500/40"
+        className="group relative rounded-3xl border border-white/10 bg-gradient-to-br from-white/[0.05] to-transparent p-8 backdrop-blur-xl transition-all duration-700 hover:border-violet-500/20"
       >
-        {/* Advanced hover glow */}
-        <div className="pointer-events-none absolute -inset-px rounded-3xl bg-gradient-to-r from-violet-600/30 via-fuchsia-600/30 to-orange-500/30 opacity-0 blur-2xl transition-opacity duration-700 group-hover:opacity-100" />
+        {/* Advanced hover glow - Made more subtle */}
+        <div className="pointer-events-none absolute -inset-px rounded-3xl bg-gradient-to-r from-violet-600/10 via-fuchsia-600/10 to-orange-500/10 opacity-0 blur-2xl transition-opacity duration-700 group-hover:opacity-100" />
         
-        {/* Animated border gradient */}
-        <div className="pointer-events-none absolute -inset-px rounded-3xl bg-gradient-to-r from-violet-500/0 via-fuchsia-500/50 to-orange-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+        {/* Animated border gradient - Made more subtle */}
+        <div className="pointer-events-none absolute -inset-px rounded-3xl bg-gradient-to-r from-violet-500/0 via-fuchsia-500/20 to-orange-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
 
         {/* Scroll-linked glare sweep */}
         <motion.div
@@ -81,9 +81,9 @@ function ApplicationCard({ item, index }: { item: ApplicationItem; index: number
           transition={{ duration: 0.8, delay: 0.2 }}
         />
 
-        {/* Corner decorations */}
-        <div className="absolute top-4 right-4 w-12 h-12 rounded-full bg-violet-500/10 blur-xl group-hover:bg-violet-500/20 transition-all duration-500" />
-        <div className="absolute bottom-4 left-4 w-8 h-8 rounded-full bg-fuchsia-500/10 blur-xl group-hover:bg-fuchsia-500/20 transition-all duration-500" />
+        {/* Corner decorations - Made more subtle */}
+        <div className="absolute top-4 right-4 w-12 h-12 rounded-full bg-violet-500/5 blur-xl group-hover:bg-violet-500/10 transition-all duration-500" />
+        <div className="absolute bottom-4 left-4 w-8 h-8 rounded-full bg-fuchsia-500/5 blur-xl group-hover:bg-fuchsia-500/10 transition-all duration-500" />
 
         <div className="relative flex items-start gap-5" style={{ transform: "translateZ(60px)" }}>
           <motion.span 
@@ -94,7 +94,7 @@ function ApplicationCard({ item, index }: { item: ApplicationItem; index: number
             {String(index + 1).padStart(2, "0")}
           </motion.span>
           <div>
-            <h3 className="mt-1 text-2xl font-bold tracking-tight text-white group-hover:text-violet-400 transition-colors duration-500">
+            <h3 className="mt-1 text-2xl font-bold tracking-tight text-white group-hover:text-violet-300 transition-colors duration-500">
               {item.title}
             </h3>
             <div className="mt-1 h-0.5 w-12 bg-gradient-to-r from-violet-400 to-fuchsia-400 rounded-full group-hover:w-20 transition-all duration-500" />
@@ -172,10 +172,10 @@ function ApplicationCard({ item, index }: { item: ApplicationItem; index: number
           </motion.div>
         )}
 
-        {/* Hover indicator */}
+        {/* Hover indicator - Made more subtle */}
         <motion.div 
-          className="absolute bottom-4 right-4 text-xs text-white/20"
-          animate={{ opacity: isHovered ? 0.5 : 0.2 }}
+          className="absolute bottom-4 right-4 text-xs text-white/10"
+          animate={{ opacity: isHovered ? 0.3 : 0.1 }}
         >
           {isHovered ? "✦ Interactive" : "✦ Hover me"}
         </motion.div>
@@ -309,7 +309,8 @@ export function ServiceApplications({ data, className }: ServiceApplicationsProp
         ))}
       </div>
 
-      <div className="relative mx-auto max-w-7xl px-3 sm:px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12">
+      {/* UPDATED: Equal padding on both sides and reduced max-width for cards */}
+      <div className="relative mx-auto px-8 w-full lg:pl-48 lg:pr-48">
         {/* Header - Left Aligned */}
         <motion.div style={{ opacity: headerOpacity, y: headerY }} className="max-w-3xl">
           <div className="inline-flex items-center gap-2 rounded-full border border-violet-500/20 bg-violet-500/10 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.2em] text-violet-400 backdrop-blur">
@@ -342,11 +343,13 @@ export function ServiceApplications({ data, className }: ServiceApplicationsProp
           )}
         </motion.div>
 
-        {/* Cards Grid */}
-        <div className="mt-16 grid gap-8 md:grid-cols-2">
-          {data.items.map((item, index) => (
-            <ApplicationCard key={item.title} item={item} index={index} />
-          ))}
+        {/* Cards Grid - Reduced width with max-w-6xl and centered */}
+        <div className="mt-16 max-w-6xl mx-auto">
+          <div className="grid gap-8 md:grid-cols-2">
+            {data.items.map((item, index) => (
+              <ApplicationCard key={item.title} item={item} index={index} />
+            ))}
+          </div>
         </div>
 
         {/* Bottom decorative indicator */}

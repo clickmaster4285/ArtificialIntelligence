@@ -11,7 +11,6 @@ import { ServiceTechnicalChallenges } from '@/components/services/TechnicalChall
 import { ServiceCompliance } from '@/components/services/ServiceCompliance';
 import { ServiceFAQs } from '@/components/services/Faq';
 import { ServiceCTA } from '@/components/services/Cta';
-import { ServiceDropdownNav } from '@/components/services/ServiceDropdownNav';
 import { generateServiceSchema } from '@/lib/schema';
 
 interface PageProps {
@@ -44,7 +43,6 @@ export default async function AIDevelopmentSubPage({ params }: PageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
       <ServiceLayout>
-        <ServiceDropdownNav />
         <ServiceHero data={pageData.hero} h1={pageData.h1} />
         <ServiceOverview data={pageData.overview} />
         <ServicePricing data={pageData.pricing} />

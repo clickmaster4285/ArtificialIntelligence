@@ -33,12 +33,12 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ items }) => {
         {/* ========================================= */}
         {/* GRID LAYOUT: LEFT (Content) / RIGHT (Graphics) */}
         {/* ========================================= */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           
           {/* ========================================= */}
           {/* LEFT COLUMN: FAQ Content (Spans 7 cols) */}
           {/* ========================================= */}
-          <div className="lg:col-span-7">
+          <div className="lg:col-span-7 lg:pl-48">
             {/* === UNIFIED LEFT-ALIGNED HEADER === */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -78,8 +78,8 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ items }) => {
               </motion.p>
             </motion.div>
 
-            {/* === ACCORDION LIST === */}
-            <div className="space-y-3 max-w-2xl">
+            {/* === ACCORDION LIST - Removed max-w-2xl constraint === */}
+            <div className="space-y-3">
               {items.map((item, index) => {
                 const isOpen = openIndex === index;
                 return (
@@ -100,7 +100,7 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ items }) => {
                       onClick={() => toggleItem(index)}
                       className="relative w-full text-left p-5 flex items-start justify-between gap-4"
                     >
-                      <span className="font-medium text-white flex items-start gap-3">
+                      <span className="font-medium text-white flex items-start gap-3 text-base md:text-lg">
                         <HelpCircle className="w-5 h-5 text-violet-400 flex-shrink-0 mt-0.5" />
                         {item.question}
                       </span>

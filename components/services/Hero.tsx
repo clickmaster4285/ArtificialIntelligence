@@ -80,7 +80,7 @@ export function ServiceHero({
 
   return (
     <section className={cn(
-      "relative overflow-hidden py-24 min-h-[600px] flex items-center",
+      "relative overflow-hidden py-20 md:py-28 lg:py-36 min-h-[800px] flex items-center",
       className
     )}>
       {/* Background Video */}
@@ -121,7 +121,8 @@ export function ServiceHero({
         <NetworkBackground density="medium" />
       </div>
 
-      <div className="mx-auto max-w-7xl px-3 sm:px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12 relative z-10">
+      {/* UPDATED: Same padding as HeroSection - px-8 and lg:pl-48 for left padding */}
+      <div className="relative z-10 mx-auto px-8 w-full lg:pl-48 lg:pr-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

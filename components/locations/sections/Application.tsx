@@ -94,12 +94,13 @@ export const ApplicationsSection: React.FC<ApplicationsSectionProps> = ({
 
       <div className="relative z-10 mx-auto px-8 w-full">
         
+        {/* === HEADER WITH LEFT PADDING === */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-14"
+          className="mb-14 lg:pl-48"
         >
           <motion.div 
             className="flex items-center gap-3 text-eyebrow text-violet-400 uppercase tracking-widest text-sm font-medium"
@@ -134,155 +135,160 @@ export const ApplicationsSection: React.FC<ApplicationsSectionProps> = ({
           )}
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-12">
-          
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="lg:col-span-1 space-y-3"
-          >
-            {items.map((item, index) => {
-              const isActive = activeIndex === index;
-              return (
-                <motion.button
-                  key={index}
-                  variants={itemVariants}
-                  onClick={() => setActiveIndex(index)}
-                  onMouseEnter={() => setHoveredNav(index)}
-                  onMouseLeave={() => setHoveredNav(null)}
-                  whileHover={{ y: -2 }}
-                  className={`
-                    relative w-full text-left p-5 rounded-xl overflow-hidden
-                    flex items-center gap-4 group transition-all duration-300
-                    ${isActive 
-                      ? 'bg-gradient-to-r from-violet-500/20 to-fuchsia-500/10 shadow-[0_0_30px_-10px_rgba(168,85,247,0.4)]' 
-                      : 'bg-white/[0.03] hover:bg-white/[0.06]'
-                    }
-                  `}
-                >
-                  <span
+        {/* === CONTENT WITH LEFT PADDING AND DECREASED RIGHT WIDTH === */}
+        <div className="lg:pl-48">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
+            
+            {/* LEFT: Navigation - Increased width */}
+            <motion.div
+              variants={containerVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              className="lg:col-span-5 space-y-3"
+            >
+              {items.map((item, index) => {
+                const isActive = activeIndex === index;
+                return (
+                  <motion.button
+                    key={index}
+                    variants={itemVariants}
+                    onClick={() => setActiveIndex(index)}
+                    onMouseEnter={() => setHoveredNav(index)}
+                    onMouseLeave={() => setHoveredNav(null)}
+                    whileHover={{ y: -2 }}
                     className={`
-                      relative p-2.5 rounded-xl transition-all duration-300
+                      relative w-full text-left p-5 rounded-xl overflow-hidden
+                      flex items-center gap-4 group transition-all duration-300
                       ${isActive 
-                        ? 'bg-violet-500/30 text-violet-300 shadow-[0_0_20px_-5px_rgba(168,85,247,0.3)]' 
-                        : 'bg-white/5 text-white/40 group-hover:text-white/70'
+                        ? 'bg-gradient-to-r from-violet-500/20 to-fuchsia-500/10 shadow-[0_0_30px_-10px_rgba(168,85,247,0.4)]' 
+                        : 'bg-white/[0.03] hover:bg-white/[0.06]'
                       }
                     `}
                   >
-                    {getIcon(index)}
-                  </span>
-                  
-                  <div className="relative flex-1 flex flex-col items-start">
-                    <span className="font-medium text-sm text-white group-hover:text-white transition-colors">
-                      {item.title}
-                    </span>
-                    <span className="text-xs text-white/40 group-hover:text-white/60 transition-colors hidden sm:block">
-                      Learn more
-                    </span>
-                  </div>
-
-                  <ChevronRight
-                    className={`
-                      relative w-4 h-4 transition-all duration-300
-                      ${isActive 
-                        ? 'text-violet-400 opacity-100 translate-x-0.5' 
-                        : 'opacity-0 group-hover:opacity-50 group-hover:translate-x-0.5'
-                      }
-                    `}
-                  />
-                </motion.button>
-              );
-            })}
-          </motion.div>
-
-          <div className="lg:col-span-2">
-            <AnimatePresence mode="wait">
-              {activeIndex !== null && (
-                <motion.div
-                  key={activeIndex}
-                  variants={contentVariants}
-                  initial="hidden"
-                  animate="visible"
-                  exit="exit"
-                  className="relative p-8 md:p-10 rounded-3xl bg-gradient-to-br from-white/[0.06] via-white/[0.03] to-transparent backdrop-blur-xl shadow-2xl overflow-hidden"
-                >
-                  <div className="absolute top-0 right-0 w-64 h-64 bg-violet-500/10 rounded-full blur-[80px] pointer-events-none" />
-                  
-                  <div className="relative z-10">
-                    <motion.h3 
-                      className="text-2xl md:text-3xl font-bold text-white mb-4"
-                      initial={{ opacity: 0, x: -10 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: 0.1 }}
+                    <span
+                      className={`
+                        relative p-2.5 rounded-xl transition-all duration-300
+                        ${isActive 
+                          ? 'bg-violet-500/30 text-violet-300 shadow-[0_0_20px_-5px_rgba(168,85,247,0.3)]' 
+                          : 'bg-white/5 text-white/40 group-hover:text-white/70'
+                        }
+                      `}
                     >
-                      {items[activeIndex].title}
-                    </motion.h3>
+                      {getIcon(index)}
+                    </span>
                     
-                    <motion.p 
-                      className="text-white/70 leading-relaxed mb-6 text-lg"
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      transition={{ delay: 0.2 }}
-                    >
-                      {items[activeIndex].description}
-                    </motion.p>
-
-                    {items[activeIndex].keyFeatures && (
-                      <motion.div 
-                        className="mt-6"
-                        initial={{ opacity: 0, y: 10 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.3 }}
-                      >
-                        <h4 className="text-sm font-semibold text-white/50 uppercase tracking-wider mb-3">Key Features</h4>
-                        <div className="flex flex-wrap gap-3">
-                          {items[activeIndex].keyFeatures!.map((feature, idx) => (
-                            <motion.span
-                              key={idx}
-                              initial={{ opacity: 0, scale: 0.9 }}
-                              animate={{ opacity: 1, scale: 1 }}
-                              transition={{ delay: 0.3 + (idx * 0.05) }}
-                              className="flex items-center gap-2 px-4 py-2 rounded-full text-sm bg-gradient-to-r from-violet-500/20 to-fuchsia-500/10 text-violet-300"
-                            >
-                              <CheckCircle2 className="w-4 h-4" />
-                              {feature}
-                            </motion.span>
-                          ))}
-                        </div>
-                      </motion.div>
-                    )}
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
-                      {items[activeIndex].technicalApproach && (
-                        <motion.div 
-                          className="p-5 rounded-xl bg-white/[0.04]"
-                          initial={{ opacity: 0, y: 10 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ delay: 0.4 }}
-                        >
-                          <h4 className="text-xs font-semibold text-white/50 uppercase tracking-wider mb-1">Technical Approach</h4>
-                          <p className="text-sm text-white/70">{items[activeIndex].technicalApproach}</p>
-                        </motion.div>
-                      )}
-
-                      {items[activeIndex].typicalOutcome && (
-                        <motion.div 
-                          className="p-5 rounded-xl bg-emerald-500/5"
-                          initial={{ opacity: 0, y: 10 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ delay: 0.5 }}
-                        >
-                          <h4 className="text-xs font-semibold text-emerald-400 uppercase tracking-wider mb-1">Typical Outcome</h4>
-                          <p className="text-sm text-white/70">{items[activeIndex].typicalOutcome}</p>
-                        </motion.div>
-                      )}
+                    <div className="relative flex-1 flex flex-col items-start">
+                      <span className="font-medium text-sm text-white group-hover:text-white transition-colors">
+                        {item.title}
+                      </span>
+                      <span className="text-xs text-white/40 group-hover:text-white/60 transition-colors hidden sm:block">
+                        Learn more
+                      </span>
                     </div>
-                  </div>
-                </motion.div>
-              )}
-            </AnimatePresence>
+
+                    <ChevronRight
+                      className={`
+                        relative w-4 h-4 transition-all duration-300
+                        ${isActive 
+                          ? 'text-violet-400 opacity-100 translate-x-0.5' 
+                          : 'opacity-0 group-hover:opacity-50 group-hover:translate-x-0.5'
+                        }
+                      `}
+                    />
+                  </motion.button>
+                );
+              })}
+            </motion.div>
+
+            {/* RIGHT: Content Area - Decreased width */}
+            <div className="lg:col-span-6 lg:pl-4">
+              <AnimatePresence mode="wait">
+                {activeIndex !== null && (
+                  <motion.div
+                    key={activeIndex}
+                    variants={contentVariants}
+                    initial="hidden"
+                    animate="visible"
+                    exit="exit"
+                    className="relative p-6 md:p-8 rounded-3xl bg-gradient-to-br from-white/[0.06] via-white/[0.03] to-transparent backdrop-blur-xl shadow-2xl overflow-hidden"
+                  >
+                    <div className="absolute top-0 right-0 w-48 h-48 bg-violet-500/10 rounded-full blur-[80px] pointer-events-none" />
+                    
+                    <div className="relative z-10">
+                      <motion.h3 
+                        className="text-xl md:text-2xl font-bold text-white mb-3"
+                        initial={{ opacity: 0, x: -10 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ delay: 0.1 }}
+                      >
+                        {items[activeIndex].title}
+                      </motion.h3>
+                      
+                      <motion.p 
+                        className="text-white/70 leading-relaxed mb-4 text-base"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 0.2 }}
+                      >
+                        {items[activeIndex].description}
+                      </motion.p>
+
+                      {items[activeIndex].keyFeatures && (
+                        <motion.div 
+                          className="mt-5"
+                          initial={{ opacity: 0, y: 10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ delay: 0.3 }}
+                        >
+                          <h4 className="text-xs font-semibold text-white/50 uppercase tracking-wider mb-2">Key Features</h4>
+                          <div className="flex flex-wrap gap-2">
+                            {items[activeIndex].keyFeatures!.map((feature, idx) => (
+                              <motion.span
+                                key={idx}
+                                initial={{ opacity: 0, scale: 0.9 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                transition={{ delay: 0.3 + (idx * 0.05) }}
+                                className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs bg-gradient-to-r from-violet-500/20 to-fuchsia-500/10 text-violet-300"
+                              >
+                                <CheckCircle2 className="w-3.5 h-3.5" />
+                                {feature}
+                              </motion.span>
+                            ))}
+                          </div>
+                        </motion.div>
+                      )}
+
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-6">
+                        {items[activeIndex].technicalApproach && (
+                          <motion.div 
+                            className="p-4 rounded-xl bg-white/[0.04]"
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.4 }}
+                          >
+                            <h4 className="text-[10px] font-semibold text-white/50 uppercase tracking-wider mb-1">Technical Approach</h4>
+                            <p className="text-xs text-white/70">{items[activeIndex].technicalApproach}</p>
+                          </motion.div>
+                        )}
+
+                        {items[activeIndex].typicalOutcome && (
+                          <motion.div 
+                            className="p-4 rounded-xl bg-emerald-500/5"
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.5 }}
+                          >
+                            <h4 className="text-[10px] font-semibold text-emerald-400 uppercase tracking-wider mb-1">Typical Outcome</h4>
+                            <p className="text-xs text-white/70">{items[activeIndex].typicalOutcome}</p>
+                          </motion.div>
+                        )}
+                      </div>
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
           </div>
         </div>
       </div>

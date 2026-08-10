@@ -9,7 +9,6 @@ import { HugeProcess } from "@/components/landingPage/HugeProcess";
 import { HugeCountersPartners } from "@/components/landingPage/HugeCountersPartners";
 import { HugeLogos } from "@/components/landingPage/HugeLogos";
 import { HugeScrollSection } from "@/components/landingPage/HugeScrollSection";
-import { HugeFooter } from "@/components/landingPage/HugeFooter";
 import { StatCardSection } from "@/components/landingPage/StatCard";
 import { CaseStudies } from "@/components/landingPage/CaseStudies";
 import { ScrollVideoSection } from "@/components/landingPage/ScrollVideoSection";
@@ -61,8 +60,6 @@ export default function HomePage() {
       <Testimonials3DRoom />
 
       <AiTagSliderSection />
-
-      <HugeFooter />
     </main>
   );
 }

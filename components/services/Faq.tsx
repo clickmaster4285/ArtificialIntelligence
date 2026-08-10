@@ -80,8 +80,9 @@ export function ServiceFAQs({ data, className }: ServiceFAQsProps) {
         }}
       />
 
+      {/* UPDATED: Same padding as HeroSection - px-8 with lg:pl-48 lg:pr-48 for equal padding */}
       <motion.div 
-        className="mx-auto max-w-7xl px-3 sm:px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12 relative z-10"
+        className="mx-auto px-8 w-full lg:pl-48 lg:pr-48 relative z-10"
         style={{ opacity }}
       >
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">

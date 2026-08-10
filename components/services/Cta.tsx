@@ -2,11 +2,14 @@
 
 'use client';
 
-import { Button } from '@/components/ui/button';
-import { cn } from '@/lib/utils';
-import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
-import { NetworkBackground } from './NetworkBackground';
-import { useRef, useState } from 'react';
+import { motion, Variants } from 'framer-motion';
+import { ArrowRight, Mail, Phone, User, MessageSquare, Send } from 'lucide-react';
+import { FloatingObjects } from '@/components/locations/sections/FloatingObjects';
+import { Shimmer } from '@/components/locations/sections/Shimmer';
+import { useState } from 'react';
+
+const cn = (...classes: Array<string | undefined | false | null>) =>
+  classes.filter(Boolean).join(' ');
 
 interface ServiceCTAProps {
   data: {
@@ -19,354 +22,260 @@ interface ServiceCTAProps {
 }
 
 export function ServiceCTA({ data, className }: ServiceCTAProps) {
-  const sectionRef = useRef<HTMLElement>(null);
+  const [secondaryHovered, setSecondaryHovered] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: '',
   });
-  const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["start end", "end start"],
-  });
+  const formContainerVariants: Variants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { staggerChildren: 0.1, delayChildren: 0.2 },
+    },
+  };
 
-  const opacity = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0.3, 1, 1, 0.3]);
+  const formItemVariants: Variants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { 
+      opacity: 1, 
+      y: 0, 
+      transition: { 
+        duration: 0.5, 
+        ease: [0.22, 1, 0.36, 1] 
+      } 
+    },
+  };
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitted(true);
-    setTimeout(() => setIsSubmitted(false), 3000);
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
+    // Add your form submission logic here
+    alert(`Form submitted!\nName: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`);
   };
 
   return (
-    <section 
-      ref={sectionRef}
-      className={cn(
-        "relative py-24 md:py-32 overflow-hidden",
-        className
-      )}
-    >
-      {/* Dark Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#0a0618] via-[#0d0618] to-[#1a0b2e] pointer-events-none" />
-      <div className="absolute inset-0 bg-gradient-to-tr from-violet-900/30 via-fuchsia-900/20 to-orange-900/20 pointer-events-none" />
+    <section className={cn("relative py-24 md:py-32 overflow-hidden min-h-[800px] flex items-center", className)}>
+      <FloatingObjects variant="cta" />
+
+      {/* Background Effects */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[#1a0b2e] via-[#0d0618] to-[#1a0b2e] pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-tr from-violet-900/20 via-fuchsia-900/10 to-orange-900/20 pointer-events-none" />
       
-      {/* Network Background */}
-      <div className="absolute inset-0 opacity-40">
-        <NetworkBackground density="medium" />
-      </div>
-
-      {/* Animated Orbs */}
-      <motion.div
-        className="absolute -top-40 -right-40 w-96 h-96 bg-violet-600/20 rounded-full blur-3xl pointer-events-none"
-        animate={{
-          scale: [1, 1.2, 1],
-          opacity: [0.3, 0.6, 0.3],
-        }}
-        transition={{
-          duration: 8,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-      />
-      <motion.div
-        className="absolute -bottom-40 -left-40 w-96 h-96 bg-fuchsia-600/20 rounded-full blur-3xl pointer-events-none"
-        animate={{
-          scale: [1, 1.3, 1],
-          opacity: [0.2, 0.5, 0.2],
-        }}
-        transition={{
-          duration: 10,
-          repeat: Infinity,
-          ease: "easeInOut",
-          delay: 2,
-        }}
-      />
-
-      {/* Grid Pattern */}
-      <div 
-        className="absolute inset-0 opacity-[0.02] pointer-events-none"
-        style={{
-          backgroundImage: `
-            linear-gradient(to right, rgba(139, 92, 246, 0.1) 1px, transparent 1px),
-            linear-gradient(to bottom, rgba(139, 92, 246, 0.1) 1px, transparent 1px)
-          `,
-          backgroundSize: '60px 60px',
-        }}
-      />
-
-      {/* Grain texture */}
-      <div className="absolute inset-0 opacity-[0.03] grain-after pointer-events-none" />
-
+      {/* Right-side blur glow for the form */}
       <motion.div 
-        className="mx-auto max-w-7xl px-3 sm:px-4 md:px-6 lg:px-8 xl:px-10 2xl:px-12 relative z-10"
-        style={{ opacity }}
-      >
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-          {/* Left Column - Content */}
-          <div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              {/* Badge */}
-              <motion.div
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: 0.1 }}
-              >
-                <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-violet-500/10 backdrop-blur-sm text-violet-400 text-sm font-medium mb-6 border border-violet-500/20">
-                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-                  Let's Build Something Great Together
-                </span>
-              </motion.div>
+        className="absolute top-1/2 right-0 -translate-y-1/2 w-[500px] h-[500px] bg-violet-600/20 rounded-full blur-[120px] pointer-events-none"
+        animate={{ scale: [1, 1.1, 1] }}
+        transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
+      />
 
-              {/* Title */}
-              <motion.h2
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-4"
-              >
-                <span className="bg-gradient-to-r from-violet-400 via-fuchsia-400 to-orange-300 bg-clip-text text-transparent">
+      <div className="relative z-10 mx-auto px-8 lg:px-12 xl:px-16 w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          
+          {/* LEFT COLUMN: Text & Content */}
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: '-80px' }}
+            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+            className="max-w-xl lg:pl-48 lg:pr-2"
+          >
+            {/* Eyebrow with Line */}
+            <motion.div 
+              className="flex items-center gap-3 text-eyebrow text-violet-400 uppercase tracking-widest text-sm font-medium"
+              whileHover={{ scale: 1.02 }}
+            >
+              <span className="w-8 h-px bg-violet-400/70" />
+              Let's Build Something Great Together
+            </motion.div>
+
+            {/* Gradient Heading - Single Line */}
+            <motion.div 
+              className="mt-4"
+              initial={{ opacity: 0, x: -10 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+            >
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold tracking-tight leading-[1.2] max-w-xl">
+                <span className="bg-gradient-to-r from-[#d8b4fe] via-[#f9a8d4] to-[#fdba74] bg-clip-text text-transparent">
                   {data.title}
                 </span>
-              </motion.h2>
+              </h2>
+            </motion.div>
 
-              {/* Description */}
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                className="text-lg text-white/70 mb-8 max-w-xl leading-relaxed"
-              >
-                {data.description}
-              </motion.p>
+            {/* Description - EXACTLY 2 LINES using line-clamp-2 */}
+            <motion.p
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+              className="mt-4 text-lg text-white/70 max-w-sm leading-relaxed line-clamp-2"
+            >
+              {data.description}
+            </motion.p>
 
-              {/* Trust indicators */}
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.5 }}
-                className="space-y-3"
-              >
-                {['Fixed-Price Milestones', 'Full IP Transfer', '24-Hour Response', 'USA-Based Engineers'].map((item, i) => (
-                  <motion.div
-                    key={item}
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.4, delay: 0.1 * i }}
-                    className="flex items-center gap-3 text-white/60"
-                  >
-                    <div className="w-6 h-6 rounded-full bg-emerald-500/10 flex items-center justify-center flex-shrink-0">
-                      <svg className="w-3.5 h-3.5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                    </div>
-                    <span className="text-sm">{item}</span>
-                  </motion.div>
-                ))}
-              </motion.div>
-
-              {/* CTA Button */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.6 }}
-                className="mt-8"
-              >
-                <Button
-                  size="lg"
-                  href={data.ctaLink}
-                  className="group bg-gradient-to-r from-violet-600 to-violet-500 hover:from-violet-500 hover:to-violet-400 text-white shadow-lg shadow-violet-500/30 hover:shadow-violet-500/50 transition-all duration-300 hover:-translate-y-0.5 rounded-full px-8 py-6 text-base"
+            {/* Trust Indicators */}
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.25 }}
+              className="mt-6 space-y-2"
+            >
+              {['Fixed-Price Milestones', 'Full IP Transfer', '24-Hour Response', 'USA-Based Engineers'].map((item, i) => (
+                <motion.div
+                  key={item}
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.4, delay: 0.1 * i }}
+                  className="flex items-center gap-3 text-white/50"
                 >
-                  {data.ctaText}
-                  <svg className="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </Button>
-              </motion.div>
-            </motion.div>
-          </div>
-
-          {/* Right Column - Animated Contact Form with top padding */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="relative pt-8 lg:pt-0"
-          >
-            {/* Form glow effect */}
-            <div className="absolute -inset-4 bg-gradient-to-r from-violet-600/20 via-fuchsia-600/20 to-orange-500/20 rounded-3xl blur-2xl" />
-            
-            <motion.div 
-              className="relative glass rounded-3xl p-8 border border-white/10 backdrop-blur-xl bg-white/5 overflow-hidden"
-              whileHover={{ scale: 1.01 }}
-              transition={{ duration: 0.3 }}
-            >
-              {/* Decorative gradient bar */}
-              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-violet-400 via-fuchsia-400 to-orange-300" />
-              
-              {/* Decorative elements */}
-              <div className="absolute -top-20 -right-20 w-40 h-40 bg-violet-500/10 rounded-full blur-2xl" />
-              <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-fuchsia-500/10 rounded-full blur-2xl" />
-
-              <div className="relative">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-violet-500/30 to-fuchsia-500/30 flex items-center justify-center text-xl border border-violet-500/20">
-                    ✉️
+                  <div className="w-5 h-5 rounded-full bg-emerald-500/5 flex items-center justify-center flex-shrink-0 border border-emerald-500/10">
+                    <svg className="w-3 h-3 text-emerald-400/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
                   </div>
-                  <div>
-                    <h3 className="text-lg font-semibold text-white">Send us a message</h3>
-                    <p className="text-sm text-white/40">We'll respond within 24 hours</p>
-                  </div>
-                </div>
-
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <motion.div
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.1 }}
-                  >
-                    <input
-                      type="text"
-                      name="name"
-                      placeholder="Your Name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/40 focus:outline-none focus:border-violet-500/50 focus:ring-2 focus:ring-violet-500/20 transition-all duration-300"
-                      required
-                    />
-                  </motion.div>
-
-                  <motion.div
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.2 }}
-                  >
-                    <input
-                      type="email"
-                      name="email"
-                      placeholder="Email Address"
-                      value={formData.email}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/40 focus:outline-none focus:border-violet-500/50 focus:ring-2 focus:ring-violet-500/20 transition-all duration-300"
-                      required
-                    />
-                  </motion.div>
-
-                  <motion.div
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.3 }}
-                  >
-                    <textarea
-                      name="message"
-                      placeholder="Tell us about your project..."
-                      rows={4}
-                      value={formData.message}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/40 focus:outline-none focus:border-violet-500/50 focus:ring-2 focus:ring-violet-500/20 transition-all duration-300 resize-none"
-                      required
-                    />
-                  </motion.div>
-
-                  <motion.button
-                    type="submit"
-                    className="w-full py-3.5 bg-gradient-to-r from-violet-600 to-fuchsia-600 hover:from-violet-500 hover:to-fuchsia-500 text-white font-semibold rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-violet-500/30 flex items-center justify-center gap-2 group"
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                  >
-                    {isSubmitted ? (
-                      <>
-                        <svg className="w-5 h-5 animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                        </svg>
-                        Sending...
-                      </>
-                    ) : (
-                      <>
-                        Send Message
-                        <svg className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                        </svg>
-                      </>
-                    )}
-                  </motion.button>
-                </form>
-
-                {/* Success message */}
-                <AnimatePresence>
-                  {isSubmitted && (
-                    <motion.div
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: -10 }}
-                      className="mt-4 p-3 bg-emerald-500/10 border border-emerald-500/20 rounded-xl text-emerald-400 text-sm text-center"
-                    >
-                      ✅ Message sent successfully! We'll get back to you soon.
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-
-                {/* Form footer */}
-                <div className="mt-4 flex items-center justify-between text-xs text-white/30">
-                  <span>🔒 Your information is secure</span>
-                  <span>Response time: ~24h</span>
-                </div>
-              </div>
+                  <span className="text-sm">{item}</span>
+                </motion.div>
+              ))}
             </motion.div>
 
-            {/* Floating decorative elements */}
+            {/* CTA Buttons */}
             <motion.div
-              className="absolute -top-6 -right-6 w-12 h-12 rounded-full bg-gradient-to-br from-violet-500/20 to-fuchsia-500/20 border border-white/10 backdrop-blur-sm flex items-center justify-center text-xl"
-              animate={{
-                y: [0, -10, 0],
-                rotate: [0, 10, -10, 0],
-              }}
-              transition={{
-                duration: 4,
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.35 }}
+              className="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-4"
             >
-              🚀
-            </motion.div>
+              {/* Primary: solid pill, shimmer on hover */}
+              <motion.a
+                href={data.ctaLink}
+                whileHover={{ y: -3, scale: 1.02 }}
+                whileTap={{ y: 0, scale: 0.99 }}
+                className="group relative overflow-hidden inline-flex items-center gap-3 pl-6 pr-3 py-3 rounded-full bg-white text-black font-medium transition-shadow duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)]"
+              >
+                <Shimmer />
+                <Mail className="relative z-10 w-4 h-4 text-black/60" />
+                <span className="relative z-10">{data.ctaText}</span>
+                <span className="relative z-10 w-8 h-8 rounded-full bg-black/5 flex items-center justify-center group-hover:bg-black/10 group-hover:translate-x-0.5 transition-all">
+                  <ArrowRight className="w-4 h-4" />
+                </span>
+              </motion.a>
 
-            <motion.div
-              className="absolute -bottom-6 -left-6 w-10 h-10 rounded-full bg-gradient-to-br from-orange-500/20 to-violet-500/20 border border-white/10 backdrop-blur-sm flex items-center justify-center text-lg"
-              animate={{
-                y: [0, 10, 0],
-                rotate: [0, -10, 10, 0],
-              }}
-              transition={{
-                duration: 5,
-                delay: 1,
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
-            >
-              💡
+              {/* Secondary: outline pill */}
+              <a
+                href="#contact"
+                onMouseEnter={() => setSecondaryHovered(true)}
+                onMouseLeave={() => setSecondaryHovered(false)}
+                className="relative inline-flex items-center gap-2 px-6 py-3 rounded-full border border-white/15 text-white font-medium hover:text-white transition-colors duration-300"
+              >
+                <Phone className="w-4 h-4 text-white/60" />
+                Call Us Now
+              </a>
             </motion.div>
           </motion.div>
+
+          {/* RIGHT COLUMN: Transparent Contact Form */}
+          <motion.div
+            variants={formContainerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="relative w-full max-w-xl mx-auto lg:mx-0 lg:ml-0 lg:pr-8 pt-12 lg:pt-20"
+          >
+            {/* Form Glass Card */}
+            <div className="relative p-8 rounded-3xl border border-white/10 bg-white/[0.04] backdrop-blur-xl shadow-2xl overflow-hidden">
+              
+              {/* Decorative inner gradient line */}
+              <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-violet-500/50 to-transparent" />
+
+              {/* Form Header */}
+              <motion.div variants={formItemVariants} className="mb-6">
+                <h3 className="text-xl font-semibold text-white">Send a Message</h3>
+                <p className="text-sm text-white/50 mt-1">We'll get back to you within 24 hours.</p>
+              </motion.div>
+
+              {/* Form */}
+              <form onSubmit={handleSubmit} className="space-y-5">
+                {/* Name Input */}
+                <motion.div variants={formItemVariants} className="relative group">
+                  <div className="absolute left-4 top-1/2 -translate-y-1/2 text-white/30 group-focus-within:text-violet-400 transition-colors duration-300">
+                    <User className="w-4 h-4" />
+                  </div>
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                    value={formData.name}
+                    onChange={handleInputChange}
+                    className="w-full bg-white/[0.05] border border-white/10 rounded-xl pl-12 pr-4 py-3.5 text-white placeholder:text-white/40 focus:outline-none focus:border-violet-500/50 focus:ring-1 focus:ring-violet-500/20 transition-all duration-300"
+                  />
+                </motion.div>
+
+                {/* Email Input */}
+                <motion.div variants={formItemVariants} className="relative group">
+                  <div className="absolute left-4 top-1/2 -translate-y-1/2 text-white/30 group-focus-within:text-violet-400 transition-colors duration-300">
+                    <Mail className="w-4 h-4" />
+                  </div>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email Address"
+                    required
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    className="w-full bg-white/[0.05] border border-white/10 rounded-xl pl-12 pr-4 py-3.5 text-white placeholder:text-white/40 focus:outline-none focus:border-violet-500/50 focus:ring-1 focus:ring-violet-500/20 transition-all duration-300"
+                  />
+                </motion.div>
+
+                {/* Message Textarea */}
+                <motion.div variants={formItemVariants} className="relative group">
+                  <div className="absolute left-4 top-4 text-white/30 group-focus-within:text-violet-400 transition-colors duration-300">
+                    <MessageSquare className="w-4 h-4" />
+                  </div>
+                  <textarea
+                    name="message"
+                    placeholder="How can we help?"
+                    rows={4}
+                    required
+                    value={formData.message}
+                    onChange={handleInputChange}
+                    className="w-full bg-white/[0.05] border border-white/10 rounded-xl pl-12 pr-4 py-3.5 text-white placeholder:text-white/40 focus:outline-none focus:border-violet-500/50 focus:ring-1 focus:ring-violet-500/20 transition-all duration-300 resize-none"
+                  />
+                </motion.div>
+
+                {/* Submit Button */}
+                <motion.button
+                  variants={formItemVariants}
+                  type="submit"
+                  whileHover={{ y: -2, boxShadow: "0 0 30px rgba(139, 92, 246, 0.4)" }}
+                  whileTap={{ scale: 0.98 }}
+                  className="w-full py-3.5 rounded-xl bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white font-medium flex items-center justify-center gap-2 transition-all duration-300"
+                >
+                  Send Message
+                  <Send className="w-4 h-4" />
+                </motion.button>
+              </form>
+
+              {/* Floating decorative dots inside the glass */}
+              <motion.div
+                className="absolute -bottom-4 -left-4 w-12 h-12 rounded-full bg-violet-500/10 blur-xl"
+                animate={{ scale: [1, 1.2, 1] }}
+                transition={{ duration: 4, repeat: Infinity }}
+              />
+            </div>
+          </motion.div>
+
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 }
