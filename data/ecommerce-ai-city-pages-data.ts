@@ -2064,7 +2064,7 @@ const ECOMMERCE_AI_CITY_PAGES: Record<string, EcommerceAICityPageData> = {
     faqs: [
       {
         question: 'Can personalization treat major donors differently from casual merchandise buyers?',
-        answer: 'Yes, ClickMasters builds recommendation logic that incorporates donor history and engagement level as a signal, distinct from purchase-history-only retail personalization.',
+        answer: 'Yes ClickMasters builds recommendation logic that incorporates donor history and engagement level as a signal, distinct from purchase-history-only retail personalization.',
       },
       {
         question: 'Does book recommendation handle specialized policy/academic subject matter accurately?',

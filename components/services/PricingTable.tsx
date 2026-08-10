@@ -437,6 +437,7 @@ export function ServicePricing({ data, className }: ServicePricingProps) {
             </div>
           </motion.div>
 
+
           {/* Note with animation - Left Aligned */}
           {data.note && (
             <motion.p 

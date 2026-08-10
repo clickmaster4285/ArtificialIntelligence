@@ -68,6 +68,7 @@ export const StaggerReveal: React.FC<StaggerRevealProps> = ({
           {child}
         </motion.div>
       ))}
+      
     </motion.div>
   );
 };
