@@ -1,0 +1,303 @@
+{
+  "slug": "precision-and-recall",
+  "status": "published",
+  "title": "Precision and Recall",
+  "shortTitle": "Precision & Recall",
+  "abbreviation": "P/R",
+  "letter": "P",
+  "category": "Model Evaluation",
+  "shortDefinition": "Precision measures how many flagged results are correct; recall measures how many actual cases were found.",
+  "definition": "Precision measures, of everything a model flagged as positive (fraud, defect, churn risk), what fraction was actually correct — high precision means few false alarms. Recall measures, of everything that was actually positive, what fraction the model successfully caught — high recall means few missed cases. These two metrics, frequently in tension with each other, are essential for evaluating any classification model where the cost of a false positive differs from the cost of a false negative, which describes most real business applications.",
+  "introduction": "Precision measures, of everything a model flagged as positive (fraud, defect, churn risk), what fraction was actually correct — high precision means few false alarms. Recall measures, of everything that was actually positive, what fraction the model successfully caught — high recall means few missed cases. These two metrics, frequently in tension with each other, are essential for evaluating any classification model where the cost of a false positive differs from the cost of a false negative, which describes most real business applications.",
+  "featured": true,
+  "aliases": [
+    "P/R",
+    "precision recall",
+    "precision and recall",
+    "F1 score",
+    "classification metrics"
+  ],
+  "readingTime": "5 min read",
+  "publishedAt": "2026-08-07",
+  "updatedAt": "2026-08-07",
+
+  "seo": {
+    "title": "What are Precision and Recall? Defined",
+    "description": "Precision measures how many flagged results are correct; recall measures how many actual cases were found. Definition, builds from $20K.",
+    "canonical": "/glossary/precision-and-recall/",
+    "keywords": [
+      "what is precision and recall",
+      "precision recall definition",
+      "precision recall tradeoff",
+      "f1 score explained",
+      "model evaluation services"
+    ]
+  },
+
+  "sections": [
+    {
+      "id": "the-precision-recall-tradeoff",
+      "eyebrow": "Core tradeoff",
+      "title": "The precision-recall tradeoff",
+      "description": "Improving precision often comes at the cost of recall, and vice versa — the right balance depends on your business context.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Improving precision often comes at the cost of recall, and vice versa — a model tuned to be very cautious about flagging fraud (high precision, few false alarms) will likely miss some genuine fraud cases (lower recall), while a model tuned to catch nearly all fraud (high recall) will likely also flag more legitimate transactions as suspicious (lower precision). The right balance between these two depends entirely on your specific business context — the relative cost of a false positive (a legitimate customer wrongly flagged, creating friction) versus a false negative (actual fraud that goes undetected, creating direct financial loss) should drive where you set this tradeoff, not a generic 'as accurate as possible' goal that ignores this asymmetry."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "High precision — few false alarms, may miss some positive cases.",
+            "High recall — catches nearly all positives, may flag more false alarms.",
+            "Business context — cost of false positive vs. false negative drives the tradeoff.",
+            "No universal balance — depends on your specific application.",
+            "Asymmetric costs — treating error types equally often doesn't fit reality."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "The key insight",
+          "text": "The right precision-recall balance depends on your business context — the cost of a false positive versus a false negative should drive your threshold."
+        }
+      ]
+    },
+    {
+      "id": "why-accuracy-misleading",
+      "eyebrow": "Common pitfall",
+      "title": "Why overall accuracy alone can be misleading",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "A model's overall accuracy figure can be highly misleading for imbalanced problems — if only 1% of transactions are actually fraudulent, a model that simply predicts 'not fraud' for every single transaction achieves 99% accuracy while catching zero actual fraud cases, a completely useless model despite its impressive-sounding accuracy number. Precision and recall (and the combined F1 score, which balances both) provide a much more meaningful picture of a model's actual usefulness for imbalanced classification problems common in business applications like fraud detection, defect detection, and churn prediction."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Imbalanced data — rare positive classes make accuracy misleading.",
+            "99% accuracy example — catching zero fraud cases while appearing accurate.",
+            "Precision/recall — provide meaningful evaluation for imbalanced problems.",
+            "F1 score — balances both metrics into one useful number.",
+            "Business value — metrics that actually reflect real-world utility."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clickmasters-approach",
+      "eyebrow": "ClickMasters approach",
+      "title": "How ClickMasters tunes precision and recall for enterprise clients",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "ClickMasters explicitly discusses your specific tolerance for false positives versus false negatives during Discovery, then tunes model decision thresholds to reflect that genuine business tradeoff rather than defaulting to a generic balance that may not fit your actual cost structure. Every model evaluation report ClickMasters provides includes precision and recall (and F1 score where relevant) specific to your validated decision threshold, not just an overall accuracy figure that can obscure the metrics that actually matter for your use case."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Business tradeoff discussion — quantify false positive/negative costs.",
+            "Threshold tuning — set based on your actual cost structure.",
+            "Evaluation reports — precision, recall, F1 at your specific threshold.",
+            "No generic default — tuned to your business context.",
+            "Actionable metrics — metrics that actually reflect your real-world needs."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing",
+      "eyebrow": "Investment",
+      "title": "Precision and recall evaluation pricing",
+      "content": [
+        {
+          "type": "table",
+          "caption": "Fixed-price precision/recall evaluation projects from ClickMasters",
+          "headers": ["Project Type", "Price Range", "Timeline"],
+          "rows": [
+            ["Precision/recall evaluation and threshold tuning for existing model", "$20,000 – $40,000", "6–10 weeks"],
+            ["Precision/recall optimization included in new model development", "Included in development scope", "Varies"],
+            ["Business-aligned threshold tuning workshop and implementation", "$25,000 – $50,000", "6–10 weeks"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "success",
+          "title": "Full IP ownership",
+          "text": "All projects include full intellectual property transfer. You own everything we build."
+        }
+      ]
+    },
+    {
+      "id": "common-objections",
+      "eyebrow": "Direct answers",
+      "title": "Common objections, answered directly",
+      "content": [
+        {
+          "type": "bullet-list",
+          "items": [
+            "\"Our model has 95% accuracy — isn't that good enough?\" — Overall accuracy alone can be misleading for imbalanced problems (like fraud or defect detection, where the positive class is rare) — ClickMasters evaluates precision and recall specifically, since a high accuracy figure can mask a model that's actually missing most of the cases that matter.",
+            "\"How much will this cost?\" — $20,000–$50,000 depending on whether this is evaluation of an existing model or threshold tuning workshop work. Fixed quote after Discovery.",
+            "\"How do we decide the right balance between precision and recall for our use case?\" — ClickMasters works with your team to quantify the relative business cost of a false positive versus a false negative for your specific situation, then tunes the model's decision threshold to reflect that genuine tradeoff.",
+            "\"Why can't a model have both perfect precision and perfect recall?\" — In practice, for most real classification problems, increasing one typically requires decreasing the other to some degree, since they represent different types of errors."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "limitations",
+      "eyebrow": "Engineering reality",
+      "title": "Limitations and risks of precision/recall evaluation",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Precision and recall evaluation has limitations. The metrics depend on the classification threshold, which can be arbitrary without business context. Precision and recall don't capture the full picture of model performance for multi-class problems without extension. Both metrics are sensitive to class imbalance and require careful interpretation. The F1 score, while convenient, may not reflect the correct business tradeoff for your specific use case. Threshold tuning requires representative validation data to be reliable."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Threshold dependent — metrics vary with classification threshold.",
+            "Multi-class complexity — requires extension beyond binary cases.",
+            "Class imbalance sensitivity — careful interpretation needed.",
+            "F1 limitations — may not reflect your specific business tradeoff.",
+            "Validation data — needs representative data for reliable tuning."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Important",
+          "text": "Precision and recall are useful metrics, but they require business context and validation data to be applied meaningfully. Don't optimize them in isolation without understanding your actual cost tradeoffs."
+        }
+      ]
+    },
+    {
+      "id": "best-practices",
+      "eyebrow": "Implementation guide",
+      "title": "Best practices for precision/recall evaluation",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Evaluating precision and recall effectively requires understanding your business context and validating threshold choices. The following practices can help ensure your model evaluation reflects your real-world needs."
+        },
+        {
+          "type": "numbered-list",
+          "title": "Recommended approach:",
+          "items": [
+            "Quantify the business cost of false positives versus false negatives.",
+            "Use precision and recall, not just overall accuracy, for evaluation.",
+            "Set thresholds based on your specific cost tradeoff.",
+            "Use F1 score as a summary metric but understand its limitations.",
+            "Validate threshold choices on representative holdout data.",
+            "Monitor precision and recall in production over time.",
+            "Adjust thresholds as business costs or data distributions change.",
+            "Document evaluation methodology and threshold decisions."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "Key metric",
+          "text": "Measure the business impact of the precision-recall tradeoff — the actual cost of false positives and false negatives in your specific context, not just the statistical metrics."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "eyebrow": "Common questions",
+    "title": "Frequently asked questions about precision and recall",
+    "items": [
+      {
+        "question": "What's a simple example of the precision-recall tradeoff?",
+        "answer": "A spam filter tuned for high precision rarely marks legitimate email as spam (few false alarms) but might let more actual spam through; tuned for high recall, it catches nearly all spam but also flags more legitimate email incorrectly."
+      },
+      {
+        "question": "What is F1 score, and how does it relate to precision and recall?",
+        "answer": "F1 score is a single combined metric balancing both precision and recall, useful when you want one overall number representing both, though understanding the individual precision and recall values separately usually provides more actionable insight for tuning decisions."
+      },
+      {
+        "question": "Why can't a model have both perfect precision and perfect recall?",
+        "answer": "In practice, for most real classification problems, increasing one typically requires decreasing the other to some degree, since they represent different types of errors (false positives versus false negatives) that respond differently to threshold adjustments."
+      },
+      {
+        "question": "How do we know if our model's current precision/recall balance is right for our business?",
+        "answer": "ClickMasters works with your team to quantify the actual business cost of each error type, then validates whether the current threshold reflects that cost structure or needs adjustment."
+      },
+      {
+        "question": "How long does precision/recall evaluation and tuning take?",
+        "answer": "6–10 weeks for standalone evaluation and tuning of an existing model."
+      },
+      {
+        "question": "Can the precision/recall balance be adjusted after a model is already deployed?",
+        "answer": "Yes, often without retraining the entire model — adjusting the decision threshold (the cutoff point for classifying something as positive) can shift the precision/recall balance without requiring a full model rebuild."
+      },
+      {
+        "question": "What is the difference between precision and accuracy?",
+        "answer": "Accuracy measures overall correctness (true positives + true negatives / total). Precision measures the correctness of positive predictions only (true positives / true positives + false positives). Accuracy can be misleading for imbalanced data; precision is more meaningful for evaluating positive predictions."
+      },
+      {
+        "question": "What is the difference between recall and sensitivity?",
+        "answer": "They are the same metric — recall is also called sensitivity, true positive rate, or hit rate. All measure the fraction of actual positive cases that were correctly identified."
+      },
+      {
+        "question": "What is the F1 score formula?",
+        "answer": "F1 = 2 * (Precision * Recall) / (Precision + Recall). It's the harmonic mean of precision and recall, providing a single number that balances both metrics."
+      },
+      {
+        "question": "How do you handle precision and recall for multi-class classification?",
+        "answer": "For multi-class problems, precision and recall can be calculated per class (micro-averaged or macro-averaged). ClickMasters helps select the appropriate averaging method for your specific use case."
+      }
+    ]
+  },
+
+  "relatedTerms": [
+    "anomaly-detection",
+    "confidence-score",
+    "model-benchmarking",
+    "cross-validation",
+    "f1-score"
+  ],
+
+  "references": [
+    {
+      "label": "Precision and Recall: A Comprehensive Guide",
+      "href": "https://arxiv.org/abs/2106.08956",
+      "publisher": "arXiv"
+    },
+    {
+      "label": "The Precision-Recall Tradeoff in Machine Learning",
+      "href": "https://arxiv.org/abs/2305.09876",
+      "publisher": "arXiv"
+    }
+  ],
+
+  "additionalResources": [
+    {
+      "label": "What is Anomaly Detection?",
+      "href": "/glossary/anomaly-detection/"
+    },
+    {
+      "label": "What is a Confidence Score?",
+      "href": "/glossary/confidence-score/"
+    },
+    {
+      "label": "What is Model Benchmarking?",
+      "href": "/glossary/model-benchmarking/"
+    }
+  ],
+
+  "cta": {
+    "eyebrow": "Ready to evaluate and tune your model's precision and recall?",
+    "title": "Get a free model evaluation consultation — 24-hour response",
+    "description": "ClickMasters tunes precision and recall to reflect your actual business cost tradeoffs, not a generic default balance. From $20,000. Fixed-price. Full IP. 24-hour response.",
+    "primaryLink": {
+      "label": "Book your free consultation",
+      "href": "/contact"
+    },
+    "secondaryLink": {
+      "label": "Get your free project estimate",
+      "href": "/contact"
+    }
+  }
+}
