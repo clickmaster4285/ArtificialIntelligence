@@ -1,0 +1,312 @@
+{
+  "slug": "automl",
+  "status": "published",
+  "title": "AutoML",
+  "shortTitle": "AutoML",
+  "abbreviation": "AutoML",
+  "letter": "A",
+  "category": "Machine Learning",
+  "shortDefinition": "Tools and techniques that automate parts of the machine learning development pipeline, reducing manual ML development effort.",
+  "definition": "AutoML (Automated Machine Learning) refers to tools and techniques that automate parts of the machine learning development pipeline that traditionally required significant manual expertise — including algorithm selection, hyperparameter tuning, feature preprocessing, and sometimes feature engineering — reducing the time and expertise required to produce a performant ML model for a given dataset and task. AutoML doesn't eliminate the need for data science expertise, but can significantly accelerate the iterative experimentation phase of model development.",
+  "introduction": "AutoML (Automated Machine Learning) refers to tools and techniques that automate parts of the machine learning development pipeline that traditionally required significant manual expertise — including algorithm selection, hyperparameter tuning, feature preprocessing, and sometimes feature engineering — reducing the time and expertise required to produce a performant ML model for a given dataset and task. AutoML doesn't eliminate the need for data science expertise, but can significantly accelerate the iterative experimentation phase of model development.",
+  "featured": true,
+  "aliases": [
+    "AutoML",
+    "automated machine learning",
+    "AutoML tools",
+    "automated ML",
+    "AutoML platform"
+  ],
+  "readingTime": "5 min read",
+  "publishedAt": "2026-08-07",
+  "updatedAt": "2026-08-07",
+
+  "seo": {
+    "title": "What is AutoML? Automated Machine Learning",
+    "description": "AutoML automates model selection, hyperparameter tuning, and feature engineering to reduce manual ML development effort. Definition, from $30K.",
+    "canonical": "/glossary/automl/",
+    "keywords": [
+      "what is automl",
+      "automl definition",
+      "automated machine learning",
+      "automl vs manual ml",
+      "automl development services"
+    ]
+  },
+
+  "sections": [
+    {
+      "id": "what-automl-automates",
+      "eyebrow": "Core capabilities",
+      "title": "What AutoML automates and what it doesn't",
+      "description": "AutoML automates model search and hyperparameter tuning but doesn't address problem framing, data quality, or production deployment.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "AutoML tools typically automate the search over model architectures and hyperparameter configurations — systematically testing combinations that manual experimentation would explore more slowly — and often include automated preprocessing of input data types. What AutoML doesn't automate: problem framing (deciding what to predict and how to define success), data quality assessment and cleaning, feature engineering that requires domain knowledge, evaluation against business-appropriate metrics rather than generic accuracy scores, and the deployment, monitoring, and maintenance of the resulting model in production. AutoML accelerates model development; it doesn't eliminate the surrounding ML engineering and data science work."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Automated — model architecture search, hyperparameter tuning, data preprocessing.",
+            "Not automated — problem framing, data quality, domain-informed feature engineering.",
+            "Not automated — business-metric evaluation, deployment, monitoring, maintenance.",
+            "Acceleration tool — speeds up development, doesn't replace surrounding work.",
+            "Expertise still needed — data engineering and production ML work remain."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "The key insight",
+          "text": "AutoML accelerates model development — it doesn't eliminate the surrounding ML engineering and data science work required for production deployment."
+        }
+      ]
+    },
+    {
+      "id": "automl-vs-manual",
+      "eyebrow": "Comparison",
+      "title": "AutoML vs. manual ML: when each makes sense",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "AutoML is most valuable for exploratory work (quickly establishing a reasonable baseline model), for teams with limited ML expertise who need a functional model for a well-defined tabular prediction task, and for problems where the model architecture search space is well-defined and the dataset is relatively clean. Manual model development remains important for complex deep learning architectures, specialized domains where domain knowledge guides feature engineering decisions that AutoML can't replicate, and production systems where the explainability and reproducibility of specific design decisions matters for compliance or audit purposes."
+        },
+        {
+          "type": "table",
+          "caption": "AutoML vs. manual ML",
+          "headers": ["Aspect", "AutoML", "Manual ML"],
+          "rows": [
+            ["Best for", "Exploratory work, baseline models, clean tabular data", "Complex architectures, specialized domains, regulated contexts"],
+            ["Expertise required", "Moderate", "High"],
+            ["Speed", "Faster experimentation", "Slower but more controlled"],
+            ["Feature engineering", "Limited (generic transformations)", "Deep domain-informed feature engineering"],
+            ["Explainability", "Inspectable but less controlled", "Design decisions are documented and explained"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Complementary approaches",
+          "text": "AutoML and manual ML are not mutually exclusive — AutoML can efficiently identify promising configurations, and manual work can refine and productionize the best candidates."
+        }
+      ]
+    },
+    {
+      "id": "clickmasters-approach",
+      "eyebrow": "ClickMasters approach",
+      "title": "How ClickMasters uses AutoML as a tool within model development",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "ClickMasters uses AutoML capabilities (including cloud providers' AutoML services and libraries like Optuna for hyperparameter optimization) as one tool within broader model development engagements — particularly valuable for efficiently identifying promising model configurations before committing to deeper manual optimization, and for establishing well-tuned baselines against which more specialized approaches can be compared. AutoML outputs aren't deployed as-is without the surrounding production engineering that any model requires regardless of how its architecture was selected."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Acceleration tool — use AutoML to efficiently identify promising configurations.",
+            "Baseline establishment — well-tuned baselines for comparison.",
+            "Manual refinement — deeper optimization on top of AutoML findings.",
+            "Production engineering — AutoML outputs still need deployment infrastructure.",
+            "Hybrid approach — combine AutoML speed with manual expertise."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing",
+      "eyebrow": "Investment",
+      "title": "AutoML pricing",
+      "content": [
+        {
+          "type": "table",
+          "caption": "Fixed-price AutoML-accelerated projects from ClickMasters",
+          "headers": ["Project Type", "Price Range", "Timeline"],
+          "rows": [
+            ["AutoML-accelerated baseline model development", "$30,000 – $65,000", "8–14 weeks"],
+            ["AutoML-driven hyperparameter optimization for existing model", "$20,000 – $40,000", "4–8 weeks"],
+            ["Full custom model development (manual + AutoML hybrid approach)", "$40,000 – $90,000", "10–18 weeks"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "success",
+          "title": "Full IP ownership",
+          "text": "All projects include full intellectual property transfer. You own everything we build."
+        }
+      ]
+    },
+    {
+      "id": "common-objections",
+      "eyebrow": "Direct answers",
+      "title": "Common objections, answered directly",
+      "content": [
+        {
+          "type": "bullet-list",
+          "items": [
+            "\"Can AutoML replace the need for an ML development vendor?\" — For simple, well-defined tabular prediction tasks with clean data, AutoML tools can produce functional models with modest expertise investment; the surrounding data engineering, evaluation design, production deployment, and monitoring work that determines whether a model actually delivers business value requires more substantial expertise regardless.",
+            "\"How much will this cost?\" — $20,000–$90,000 depending on whether AutoML is used for hyperparameter optimization within broader development or as the primary model development approach. Fixed quote after Discovery.",
+            "\"Will an AutoML model be as accurate as one built by an experienced ML team?\" — For some tasks, competitive; for others, manual model design and feature engineering informed by domain knowledge outperforms generic AutoML search. ClickMasters uses both approaches to validate which is more effective for your specific task.",
+            "\"Is AutoML appropriate for deep learning applications, or mainly tabular data?\" — AutoML is most mature and effective for tabular prediction tasks; deep learning architecture search exists but is computationally expensive and still more experimental."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "limitations",
+      "eyebrow": "Engineering reality",
+      "title": "Limitations and risks of AutoML",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "AutoML has significant limitations. It doesn't address data quality issues — garbage in, garbage out still applies. It can miss domain-informed feature engineering that a human expert would identify. It may produce models that are hard to explain or reproduce. The search process can be computationally expensive. AutoML results can overfit the validation set if not carefully validated. It's not a substitute for understanding the business problem and the data. Organizations may over-rely on AutoML without understanding model limitations."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Data quality — AutoML doesn't fix data quality problems.",
+            "Domain expertise — can miss important domain-informed features.",
+            "Explainability — may produce less interpretable models.",
+            "Computational cost — search can be expensive.",
+            "Overfitting risk — may overfit to validation data.",
+            "Not a substitute — doesn't replace understanding the business problem."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Important",
+          "text": "AutoML is a powerful accelerator but not a replacement for data science expertise, problem understanding, or production engineering."
+        }
+      ]
+    },
+    {
+      "id": "best-practices",
+      "eyebrow": "Implementation guide",
+      "title": "Best practices for AutoML usage",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Using AutoML effectively requires clear problem framing, appropriate validation, and integration with broader model development. The following practices can help ensure AutoML delivers value without creating technical debt."
+        },
+        {
+          "type": "numbered-list",
+          "title": "Recommended approach:",
+          "items": [
+            "Frame the problem clearly before running AutoML.",
+            "Ensure data quality — AutoML can't fix garbage in.",
+            "Use AutoML for baseline model development and exploration.",
+            "Validate AutoML results on a held-out test set.",
+            "Add domain-informed features that AutoML might miss.",
+            "Use AutoML outputs as starting points, not final models.",
+            "Apply production engineering to any AutoML model.",
+            "Document AutoML configuration and evaluation results."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "Key metric",
+          "text": "Measure the improvement over a simple baseline — AutoML's value is in finding better configurations faster than manual experimentation would."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "eyebrow": "Common questions",
+    "title": "Frequently asked questions about AutoML",
+    "items": [
+      {
+        "question": "What does AutoML actually automate?",
+        "answer": "Algorithm selection, hyperparameter configuration search, and often basic data preprocessing — not problem framing, data quality, domain-informed feature engineering, production deployment, or ongoing monitoring."
+      },
+      {
+        "question": "Is AutoML appropriate for deep learning applications, or mainly tabular data?",
+        "answer": "AutoML is most mature and effective for tabular prediction tasks; deep learning architecture search (neural architecture search, or NAS) exists but is computationally expensive and still more experimental for many production use cases."
+      },
+      {
+        "question": "Can AutoML results be explained to a model risk examiner?",
+        "answer": "The selected architecture and its hyperparameters are inspectable; ClickMasters adds standard explainability tooling (SHAP/LIME) for any consequential AutoML-produced model, the same as any other model."
+      },
+      {
+        "question": "Which AutoML tools does ClickMasters use?",
+        "answer": "Optuna for hyperparameter optimization, cloud provider AutoML services where appropriate, and library-level AutoML tools selected based on your specific framework and task — chosen based on fit rather than a fixed default."
+      },
+      {
+        "question": "How long does an AutoML-accelerated model development project take?",
+        "answer": "4–18 weeks depending on whether it's hyperparameter optimization alone or a full model development engagement using AutoML as one component."
+      },
+      {
+        "question": "Does AutoML handle deployment, monitoring, and maintenance?",
+        "answer": "No — AutoML addresses the model selection and configuration phase; production deployment, monitoring, and maintenance requires the same MLOps infrastructure as any other model."
+      },
+      {
+        "question": "What is the difference between AutoML and hyperparameter optimization?",
+        "answer": "Hyperparameter optimization is one component of AutoML. AutoML is broader — it can also include algorithm selection, feature preprocessing, and sometimes feature engineering. Hyperparameter tuning focuses specifically on finding the best parameters for a given model."
+      },
+      {
+        "question": "Can AutoML be used for time-series forecasting?",
+        "answer": "Some AutoML tools include time-series capabilities, but they may not capture domain-specific temporal patterns. ClickMasters evaluates whether AutoML or specialized time-series modeling is appropriate for your specific forecasting task."
+      },
+      {
+        "question": "Is AutoML suitable for regulated industries?",
+        "answer": "AutoML can be used in regulated contexts with appropriate validation and documentation. However, manual model design with documented decisions may be preferred when auditability and explainability requirements are stringent."
+      },
+      {
+        "question": "What is the relationship between AutoML and MLOps?",
+        "answer": "AutoML addresses model development. MLOps addresses the full lifecycle — deployment, monitoring, versioning, and maintenance. They are complementary: AutoML helps build models; MLOps helps operate them in production."
+      }
+    ]
+  },
+
+  "relatedTerms": [
+    "hyperparameter",
+    "feature-engineering",
+    "machine-learning-model",
+    "model-selection",
+    "automated-ml"
+  ],
+
+  "references": [
+    {
+      "label": "AutoML: A Comprehensive Survey of Methods and Applications",
+      "href": "https://arxiv.org/abs/2106.08956",
+      "publisher": "arXiv"
+    },
+    {
+      "label": "Optuna: A Next-generation Hyperparameter Optimization Framework",
+      "href": "https://arxiv.org/abs/1907.10902",
+      "publisher": "arXiv"
+    }
+  ],
+
+  "additionalResources": [
+    {
+      "label": "Machine Learning Model Development Services",
+      "href": "/machine-learning-model-development/"
+    },
+    {
+      "label": "What is Hyperparameter Tuning?",
+      "href": "/glossary/hyperparameter/"
+    },
+    {
+      "label": "What is Feature Engineering?",
+      "href": "/glossary/feature-engineering/"
+    }
+  ],
+
+  "cta": {
+    "eyebrow": "Ready to accelerate ML model development?",
+    "title": "Get a free ML model development consultation — 24-hour response",
+    "description": "ClickMasters uses AutoML as a development accelerator within broader model development engagements, not as a substitute for surrounding data engineering and production ML work. From $20,000. Fixed-price. Full IP. 24-hour response.",
+    "primaryLink": {
+      "label": "Book your free consultation",
+      "href": "/contact"
+    },
+    "secondaryLink": {
+      "label": "Get your free project estimate",
+      "href": "/contact"
+    }
+  }
+}

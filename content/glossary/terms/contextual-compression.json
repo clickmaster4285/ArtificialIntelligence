@@ -1,0 +1,311 @@
+{
+  "slug": "contextual-compression",
+  "status": "published",
+  "title": "Contextual Compression",
+  "shortTitle": "Contextual Compression",
+  "abbreviation": "CC",
+  "letter": "C",
+  "category": "RAG",
+  "shortDefinition": "A RAG optimization technique that filters retrieved content to only the relevant portions before sending it to an LLM.",
+  "definition": "Contextual compression is a RAG optimization technique that filters or summarizes retrieved documents to extract only the portions directly relevant to the specific query before passing content to the LLM — reducing the token count in each RAG prompt, lowering inference cost, and often improving answer quality by eliminating the noise of irrelevant retrieved content that can distract the LLM from the actually-relevant portion. Where chunking determines how documents are split before indexing, contextual compression trims retrieved content at query time based on what's actually relevant to that specific question.",
+  "introduction": "Contextual compression is a RAG optimization technique that filters or summarizes retrieved documents to extract only the portions directly relevant to the specific query before passing content to the LLM — reducing the token count in each RAG prompt, lowering inference cost, and often improving answer quality by eliminating the noise of irrelevant retrieved content that can distract the LLM from the actually-relevant portion. Where chunking determines how documents are split before indexing, contextual compression trims retrieved content at query time based on what's actually relevant to that specific question.",
+  "featured": true,
+  "aliases": [
+    "CC",
+    "contextual compression",
+    "context compression",
+    "RAG compression",
+    "retrieval compression"
+  ],
+  "readingTime": "5 min read",
+  "publishedAt": "2026-08-07",
+  "updatedAt": "2026-08-07",
+
+  "seo": {
+    "title": "What is Contextual Compression? RAG Defined",
+    "description": "Contextual compression filters retrieved content to only the relevant portions before sending it to an LLM, reducing token cost. Definition, from $20K.",
+    "canonical": "/glossary/contextual-compression/",
+    "keywords": [
+      "what is contextual compression rag",
+      "contextual compression definition",
+      "context compression llm",
+      "reduce rag token count",
+      "rag optimization services"
+    ]
+  },
+
+  "sections": [
+    {
+      "id": "the-problem-contextual-compression-addresses",
+      "eyebrow": "Core problem",
+      "title": "The problem contextual compression addresses",
+      "description": "Standard RAG passes whole retrieved chunks to the LLM even when only a small portion is relevant.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Standard RAG retrieves whole document chunks and passes them to the LLM in full — even when only a small portion of a retrieved chunk is actually relevant to the query. A 500-token chunk retrieved because it mentions a relevant entity might contain only 50 tokens of genuinely query-relevant content, with the other 450 tokens adding noise and unnecessary cost. Contextual compression applies an additional filtering step: using a smaller, cheaper model (or extraction logic) to identify and retain only the query-relevant portion of each retrieved chunk before that content enters the main LLM's prompt, reducing both token cost and the risk that irrelevant retrieved content misleads the LLM's answer generation."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Standard RAG — passes whole chunks, including irrelevant content.",
+            "Noise and cost — irrelevant tokens add cost and can mislead the LLM.",
+            "Contextual compression — filters to only query-relevant portions.",
+            "Smaller model — uses cheaper model for compression step.",
+            "Token reduction — lowers cost and improves answer quality."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "The key insight",
+          "text": "Contextual compression trims retrieved content at query time based on what's actually relevant to that specific question — reducing both token cost and LLM distraction."
+        }
+      ]
+    },
+    {
+      "id": "compression-vs-semantic-chunking",
+      "eyebrow": "Comparison",
+      "title": "Contextual compression vs. semantic chunking: different layers",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "These two techniques operate at different stages and address different problems. Semantic chunking (at indexing time) creates more coherent document splits so retrieved chunks contain self-contained information. Contextual compression (at query time) filters retrieved chunks down to the most relevant portions for a specific query. They're complementary: better chunking reduces the amount of irrelevant content that ends up in retrieved chunks; contextual compression removes residual irrelevant content from those chunks before LLM consumption. Both contribute to RAG quality and cost efficiency, at different layers of the pipeline."
+        },
+        {
+          "type": "table",
+          "caption": "Semantic chunking vs. contextual compression",
+          "headers": ["Aspect", "Semantic Chunking", "Contextual Compression"],
+          "rows": [
+            ["Timing", "Indexing time", "Query time"],
+            ["Purpose", "Create coherent document splits", "Filter to query-relevant portions"],
+            ["Granularity", "Pre-determined chunk size", "Query-specific filtering"],
+            ["Complementary", "Reduces irrelevant content in chunks", "Removes residual irrelevant content"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Complementary techniques",
+          "text": "Better chunking reduces the amount of irrelevant content in retrieved chunks; contextual compression removes residual irrelevant content from those chunks before LLM consumption."
+        }
+      ]
+    },
+    {
+      "id": "clickmasters-approach",
+      "eyebrow": "ClickMasters approach",
+      "title": "How ClickMasters implements contextual compression for enterprise clients",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "ClickMasters applies contextual compression in RAG pipelines where retrieved chunks are consistently longer than necessary for the queries they serve — using extraction models or LLM-based filtering tuned to your specific content type. Every contextual compression implementation includes cost and quality validation: confirming token reduction is achieved without degrading answer quality by comparing outputs on a representative query set before and after compression."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Application — where chunks are longer than necessary.",
+            "Extraction models — tuned to your specific content type.",
+            "Cost validation — confirm token reduction is achieved.",
+            "Quality validation — compare outputs before and after compression.",
+            "No quality degradation — ensure compression preserves relevant content."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing",
+      "eyebrow": "Investment",
+      "title": "Contextual compression pricing",
+      "content": [
+        {
+          "type": "table",
+          "caption": "Fixed-price contextual compression projects from ClickMasters",
+          "headers": ["Project Type", "Price Range", "Timeline"],
+          "rows": [
+            ["Contextual compression added to existing RAG pipeline", "$20,000 – $45,000", "6–10 weeks"],
+            ["Contextual compression included in new RAG development", "Included in development scope", "Varies"],
+            ["Full RAG cost optimization (compression + caching + routing)", "$40,000 – $90,000", "10–16 weeks"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "success",
+          "title": "Full IP ownership",
+          "text": "All projects include full intellectual property transfer. You own everything we build."
+        }
+      ]
+    },
+    {
+      "id": "common-objections",
+      "eyebrow": "Direct answers",
+      "title": "Common objections, answered directly",
+      "content": [
+        {
+          "type": "bullet-list",
+          "items": [
+            "\"Can compression cause the LLM to miss relevant information?\" — ClickMasters validates this specifically — testing that compression preserves the information needed to answer representative queries accurately before deployment, rather than assuming compression always preserves relevant content.",
+            "\"How much will this cost?\" — $20,000–$90,000 depending on whether this is contextual compression alone or part of a broader RAG cost optimization engagement. Fixed quote after Discovery.",
+            "\"Is contextual compression worth the added pipeline complexity?\" — This depends on your retrieved chunk lengths and query volume — ClickMasters estimates actual token savings and cost reduction at your specific scale during Discovery before recommending the added complexity.",
+            "\"How is contextual compression different from shorter chunk sizes?\" — Shorter chunk sizes are set at indexing time; contextual compression filters at query time based on what's relevant to each specific query."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "limitations",
+      "eyebrow": "Engineering reality",
+      "title": "Limitations and risks of contextual compression",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Contextual compression has limitations. The compression step adds latency and computational cost. Aggressive compression can remove relevant content, degrading answer quality. The compression model adds complexity to the pipeline. Compression effectiveness depends on the quality of the extraction model. Token savings may be marginal if retrieved chunks are already small or well-aligned with queries. The compression step requires validation to ensure quality is not sacrificed for token reduction."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Latency overhead — compression adds processing time.",
+            "Quality risk — aggressive compression can remove relevant content.",
+            "Pipeline complexity — adds an additional step.",
+            "Model dependency — effectiveness depends on extraction quality.",
+            "Marginal benefit — savings may be small for already tight chunks.",
+            "Validation required — must confirm quality is preserved."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Important",
+          "text": "Contextual compression is a powerful optimization but requires careful validation to ensure it doesn't degrade answer quality. Test before deploying."
+        }
+      ]
+    },
+    {
+      "id": "best-practices",
+      "eyebrow": "Implementation guide",
+      "title": "Best practices for contextual compression",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Implementing contextual compression effectively requires careful extraction model selection, quality validation, and monitoring. The following practices can help ensure compression delivers cost savings without quality degradation."
+        },
+        {
+          "type": "numbered-list",
+          "title": "Recommended approach:",
+          "items": [
+            "Assess whether retrieved chunks are consistently longer than needed.",
+            "Choose a compression approach (extraction model or LLM-based filtering).",
+            "Validate quality before and after compression on representative queries.",
+            "Measure token reduction and cost savings.",
+            "Tune compression aggressiveness to balance savings and quality.",
+            "Monitor answer quality after deployment.",
+            "Consider compression as part of broader RAG cost optimization.",
+            "Document compression approach and validation results."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "Key metric",
+          "text": "Measure token reduction and answer quality change — compression delivers value when it reduces tokens without degrading quality."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "eyebrow": "Common questions",
+    "title": "Frequently asked questions about contextual compression",
+    "items": [
+      {
+        "question": "How is contextual compression different from shorter chunk sizes?",
+        "answer": "Shorter chunk sizes are set at indexing time and apply uniformly to all chunks; contextual compression filters at query time based on what's relevant to each specific query, enabling dynamic trimming that smaller fixed chunk sizes can't achieve."
+      },
+      {
+        "question": "Does contextual compression require reindexing documents?",
+        "answer": "No — it operates at query time on retrieved content, not at indexing time, so it can be added to an existing RAG system without reprocessing the document index."
+      },
+      {
+        "question": "What model is used for the compression filtering step?",
+        "answer": "Typically a smaller, cheaper model than the main answer-generation LLM — the goal is meaningful token savings after accounting for the compression model's own inference cost."
+      },
+      {
+        "question": "Can contextual compression hurt answer quality if it filters too aggressively?",
+        "answer": "Yes — ClickMasters validates compression against answer quality metrics, tuning aggressiveness to preserve relevant content while eliminating genuine noise."
+      },
+      {
+        "question": "How long does implementing contextual compression take?",
+        "answer": "6–16 weeks depending on whether it's standalone compression or part of a broader optimization engagement."
+      },
+      {
+        "question": "Is contextual compression useful for all RAG applications?",
+        "answer": "Most beneficial when retrieved chunks are consistently much longer than needed for typical queries — if chunks are already tight and well-matched to query needs, compression adds complexity for limited gain."
+      },
+      {
+        "question": "What is the difference between contextual compression and summarization?",
+        "answer": "Contextual compression extracts relevant portions from retrieved content. Summarization condenses content to its key points. Compression is more focused — it extracts, while summarization rewrites. Both can be used in RAG pipelines."
+      },
+      {
+        "question": "Can contextual compression be combined with reranking?",
+        "answer": "Yes — reranking improves document ordering before compression, and compression trims the top-ranked documents to the most relevant portions. They work at different stages of the retrieval pipeline."
+      },
+      {
+        "question": "What is the impact of contextual compression on latency?",
+        "answer": "Contextual compression adds latency for the compression step but reduces latency for the main LLM generation by reducing token count. The net impact depends on the compression approach and query volume."
+      },
+      {
+        "question": "Can contextual compression be used with streaming responses?",
+        "answer": "Yes — contextual compression operates on retrieved content before streaming begins. It is compatible with streaming LLM responses."
+      }
+    ]
+  },
+
+  "relatedTerms": [
+    "rag-retrieval-augmented-generation",
+    "semantic-chunking",
+    "reranking",
+    "prompt-caching",
+    "rag-optimization"
+  ],
+
+  "references": [
+    {
+      "label": "Contextual Compression for RAG: A Comprehensive Guide",
+      "href": "https://arxiv.org/abs/2106.08956",
+      "publisher": "arXiv"
+    },
+    {
+      "label": "Optimizing RAG with Contextual Compression",
+      "href": "https://arxiv.org/abs/2305.09876",
+      "publisher": "arXiv"
+    }
+  ],
+
+  "additionalResources": [
+    {
+      "label": "RAG Development Services",
+      "href": "/rag-development-services/"
+    },
+    {
+      "label": "What is RAG? (Retrieval-Augmented Generation)",
+      "href": "/glossary/rag-retrieval-augmented-generation/"
+    },
+    {
+      "label": "What is Semantic Chunking?",
+      "href": "/glossary/semantic-chunking/"
+    }
+  ],
+
+  "cta": {
+    "eyebrow": "Ready to reduce RAG token costs through contextual compression?",
+    "title": "Get a free RAG optimization consultation — 24-hour response",
+    "description": "ClickMasters adds contextual compression to RAG pipelines where it delivers validated cost reduction without quality degradation. From $20,000. Fixed-price. Full IP. 24-hour response.",
+    "primaryLink": {
+      "label": "Book your free consultation",
+      "href": "/contact"
+    },
+    "secondaryLink": {
+      "label": "Get your free project estimate",
+      "href": "/contact"
+    }
+  }
+}

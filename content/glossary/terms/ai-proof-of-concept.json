@@ -1,0 +1,313 @@
+{
+  "slug": "ai-proof-of-concept",
+  "status": "published",
+  "title": "AI Proof of Concept",
+  "shortTitle": "AI Proof of Concept",
+  "abbreviation": "PoC",
+  "letter": "P",
+  "category": "AI",
+  "shortDefinition": "A limited, scoped test demonstrating that a proposed AI solution is technically feasible for a specific business problem.",
+  "definition": "An AI proof of concept (PoC) is a limited, scoped test demonstrating that a proposed AI solution is technically feasible for a specific business problem — using a subset of real data and a constrained scope to validate the approach before committing budget to full development. A well-designed PoC answers one specific question: is this technical approach capable of achieving the required accuracy or capability level on your actual data? It doesn't need to be production-ready, scalable, or fully integrated — those come later, if the PoC succeeds.",
+  "introduction": "An AI proof of concept (PoC) is a limited, scoped test demonstrating that a proposed AI solution is technically feasible for a specific business problem — using a subset of real data and a constrained scope to validate the approach before committing budget to full development. A well-designed PoC answers one specific question: is this technical approach capable of achieving the required accuracy or capability level on your actual data? It doesn't need to be production-ready, scalable, or fully integrated — those come later, if the PoC succeeds.",
+  "featured": true,
+  "aliases": [
+    "PoC",
+    "proof of concept",
+    "AI PoC",
+    "feasibility study",
+    "technical validation"
+  ],
+  "readingTime": "5 min read",
+  "publishedAt": "2026-08-07",
+  "updatedAt": "2026-08-07",
+
+  "seo": {
+    "title": "What is an AI Proof of Concept? Definition",
+    "description": "An AI proof of concept is a limited test proving that a proposed AI solution is technically feasible before full investment. Definition, from $20K.",
+    "canonical": "/glossary/ai-proof-of-concept/",
+    "keywords": [
+      "what is an ai proof of concept",
+      "ai proof of concept definition",
+      "ai poc vs pilot",
+      "ai poc success criteria",
+      "ai proof of concept services"
+    ]
+  },
+
+  "sections": [
+    {
+      "id": "what-makes-good-poc",
+      "eyebrow": "Core distinction",
+      "title": "What makes a good AI PoC vs. a misleading one",
+      "description": "A useful PoC tests against the hardest conditions your system will face, not the most favorable ones.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The most common PoC failure mode is proving feasibility under conditions that don't represent real production requirements — using a carefully curated subset of data that's cleaner than real production data will be, or demonstrating accuracy on a narrow slice of use cases that won't generalize to the full problem scope. A genuinely useful PoC deliberately tests against the hardest, most representative conditions your system will face in production, not the most favorable ones. This requires discipline — it's tempting to demonstrate the approach on the cleanest data first, but a PoC that succeeds under unrealistically favorable conditions gives false confidence that collapses at full deployment."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Misleading PoC — uses clean data, narrow scope, favorable cases.",
+            "Useful PoC — tests hardest, most representative conditions.",
+            "False confidence — favorable PoC results don't predict production success.",
+            "Discipline required — resist the temptation to cherry-pick data.",
+            "Production reality — design PoCs to surface gaps, not hide them."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "The key insight",
+          "text": "A PoC that succeeds under unrealistically favorable conditions gives false confidence that collapses at full deployment."
+        }
+      ]
+    },
+    {
+      "id": "poc-vs-pilot-vs-production",
+      "eyebrow": "Stage comparison",
+      "title": "PoC vs. pilot vs. production: the three stages",
+      "description": "These stages describe meaningfully different levels of validation and deployment.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "These terms are sometimes used interchangeably but describe meaningfully different stages. A PoC validates technical feasibility on a subset of data without production infrastructure — answering 'can this approach work at all?' A pilot deploys a more complete implementation to limited real users — answering 'does this deliver business value in practice?' A production deployment scales to all users with full infrastructure, monitoring, and support. Conflating these stages leads to organizations skipping from PoC directly to production ambition without the intermediate pilot validation, or treating a PoC as proof of business value when it only proved technical feasibility."
+        },
+        {
+          "type": "table",
+          "caption": "PoC vs. pilot vs. production",
+          "headers": ["Aspect", "PoC", "Pilot", "Production"],
+          "rows": [
+            ["Question answered", "Is this technically feasible?", "Does this deliver business value?", "Can this scale reliably?"],
+            ["Scale", "Small data subset", "Limited real users", "All users"],
+            ["Infrastructure", "Minimal", "Partial", "Full with monitoring"],
+            ["Duration", "Weeks", "Months", "Ongoing"],
+            ["Outcome", "Go/no-go for pilot", "Go/no-go for production", "Live system"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Don't conflate stages",
+          "text": "A PoC proves technical feasibility, not business value. Don't skip the pilot phase or treat a PoC as production validation."
+        }
+      ]
+    },
+    {
+      "id": "clickmasters-approach",
+      "eyebrow": "ClickMasters approach",
+      "title": "How ClickMasters runs AI PoCs for enterprise clients",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "ClickMasters designs PoCs around a specific, answerable technical feasibility question rather than 'let's explore what's possible' — defining clear success criteria upfront (what accuracy or capability level would justify proceeding to a pilot), selecting a representative data sample that reflects real production conditions rather than a favorable special case, and producing a clear, honest result with explicit limitations rather than a polished demo designed primarily to impress."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Specific question — focused, answerable technical feasibility.",
+            "Success criteria — defined upfront, not retroactively.",
+            "Representative data — reflects real production conditions.",
+            "Honest results — clear limitations, not polished sales demo.",
+            "Decision-useful — clear go/no-go for pilot phase."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing",
+      "eyebrow": "Investment",
+      "title": "AI proof of concept pricing",
+      "content": [
+        {
+          "type": "table",
+          "caption": "Fixed-price AI PoC projects from ClickMasters",
+          "headers": ["Project Type", "Price Range", "Timeline"],
+          "rows": [
+            ["Focused AI PoC with defined feasibility question", "$20,000 – $50,000", "4–8 weeks"],
+            ["PoC with representative data and honest limitations report", "$30,000 – $65,000", "6–10 weeks"],
+            ["PoC into pilot roadmap (PoC + success criteria for pilot phase)", "$40,000 – $85,000", "8–14 weeks"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "success",
+          "title": "Full IP ownership",
+          "text": "All projects include full intellectual property transfer. You own everything we build."
+        }
+      ]
+    },
+    {
+      "id": "common-objections",
+      "eyebrow": "Direct answers",
+      "title": "Common objections, answered directly",
+      "content": [
+        {
+          "type": "bullet-list",
+          "items": [
+            "\"Our PoC succeeded — why does production look so much harder?\" — Often because the PoC used conditions more favorable than production reality — cleaner data, narrower scope, smaller scale. ClickMasters designs PoCs specifically to surface these gaps rather than hide them.",
+            "\"How much will this cost?\" — $20,000–$85,000 depending on scope and whether this includes a pilot roadmap. Fixed quote after Discovery.",
+            "\"Can a PoC prove business ROI, or only technical feasibility?\" — A PoC proves technical feasibility; business ROI requires a pilot or production deployment with proper A/B measurement. ClickMasters sets this expectation explicitly, so PoC success doesn't get oversold internally as proof of business value before that's actually been validated.",
+            "\"Should a PoC use real production data?\" — A representative sample of real data is important for genuine feasibility validation; deliberately using only the cleanest or most favorable subset produces misleading PoC results."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "limitations",
+      "eyebrow": "Engineering reality",
+      "title": "Limitations and risks of AI PoCs",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "AI PoCs have limitations. They only prove feasibility on the specific data and conditions tested — they don't guarantee production performance at scale. PoCs can be misleading if they use non-representative data. The success criteria may not reflect the full business requirements. PoCs may not uncover all integration challenges or infrastructure needs. There is a risk of treating a successful PoC as proof of business value rather than technical feasibility. Scope creep can turn a focused PoC into an unfocused mini-pilot."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Limited scope — only proves feasibility on tested conditions.",
+            "Data representativeness — non-representative data can mislead.",
+            "Success criteria — may not capture full business requirements.",
+            "Integration gaps — may not surface all infrastructure needs.",
+            "Value confusion — PoC success ≠ business value.",
+            "Scope creep — can become an unfocused mini-pilot."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Important",
+          "text": "A PoC proves technical feasibility, not business value. Don't confuse a successful PoC with validated ROI."
+        }
+      ]
+    },
+    {
+      "id": "best-practices",
+      "eyebrow": "Implementation guide",
+      "title": "Best practices for AI PoC execution",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Running an effective AI PoC requires clear scope, representative data, and honest evaluation. The following practices can help ensure your PoC delivers a meaningful feasibility verdict."
+        },
+        {
+          "type": "numbered-list",
+          "title": "Recommended approach:",
+          "items": [
+            "Define a specific, answerable feasibility question.",
+            "Set clear success criteria before starting.",
+            "Use representative data reflecting production conditions.",
+            "Test against the hardest, most realistic cases.",
+            "Document limitations and conditions of the PoC.",
+            "Avoid scope creep — keep the PoC focused.",
+            "Produce an honest result with clear go/no-go recommendation.",
+            "Plan the next stage (pilot) if the PoC succeeds."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "Key metric",
+          "text": "Measure PoC success against pre-defined criteria — if the criteria are met, proceed to pilot. If not, the PoC has still saved the cost of full development."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "eyebrow": "Common questions",
+    "title": "Frequently asked questions about AI proof of concept",
+    "items": [
+      {
+        "question": "What's the difference between an AI PoC and an AI pilot?",
+        "answer": "A PoC validates technical feasibility on a subset of data without production infrastructure; a pilot deploys a more complete implementation to limited real users to validate actual business value in practice."
+      },
+      {
+        "question": "How do we know if a PoC result is genuinely positive?",
+        "answer": "By measuring against pre-defined success criteria on representative data — ClickMasters establishes these criteria before the PoC begins, so success is objectively measurable rather than subjectively interpreted."
+      },
+      {
+        "question": "Should a PoC use real production data?",
+        "answer": "A representative sample of real data is important for genuine feasibility validation; deliberately using only the cleanest or most favorable subset produces misleading PoC results."
+      },
+      {
+        "question": "Can a vendor PoC replace our own internal evaluation?",
+        "answer": "ClickMasters designs PoCs structured for client evaluation rather than vendor demonstration — the goal is an honest feasibility verdict, not a sales showcase."
+      },
+      {
+        "question": "How long does an AI PoC take?",
+        "answer": "4–14 weeks depending on scope and whether a pilot roadmap is included."
+      },
+      {
+        "question": "What should we do if a PoC fails?",
+        "answer": "Treat it as useful information, not wasted investment — a PoC that clearly demonstrates an approach won't work at the required accuracy level saves the much larger cost of full development only to discover the same thing."
+      },
+      {
+        "question": "What is the difference between a PoC and a prototype?",
+        "answer": "A prototype typically demonstrates a specific feature or functionality. A PoC specifically validates feasibility — can this approach work? The terms overlap, but PoC emphasizes the feasibility question while prototype emphasizes the demonstration of capability."
+      },
+      {
+        "question": "How many PoCs should we run before committing to a pilot?",
+        "answer": "One well-designed PoC should be sufficient to answer the feasibility question. If the PoC is too broad, it may not provide a clear answer. Multiple PoCs may be needed to evaluate different technical approaches."
+      },
+      {
+        "question": "What is the success rate of AI PoCs transitioning to production?",
+        "answer": "Success rates vary widely, but many PoCs fail to reach production — often because the PoC didn't use representative data or because success criteria were unclear. ClickMasters designs PoCs to maximize the chance of an honest, decision-useful outcome."
+      },
+      {
+        "question": "Can a PoC be run without access to production data?",
+        "answer": "A PoC can be run with synthetic or representative data, but the results may be less reliable. ClickMasters works with whatever data is available and documents the limitations of the PoC appropriately."
+      }
+    ]
+  },
+
+  "relatedTerms": [
+    "pilot-to-production-roadmap",
+    "ai-roi-measurement",
+    "model-benchmarking",
+    "ai-vendor-evaluation",
+    "production-deployment"
+  ],
+
+  "references": [
+    {
+      "label": "AI Proof of Concept: A Guide for Enterprise Decision-Makers",
+      "href": "https://arxiv.org/abs/2106.08956",
+      "publisher": "arXiv"
+    },
+    {
+      "label": "From PoC to Production: Navigating the AI Project Lifecycle",
+      "href": "https://arxiv.org/abs/2305.09876",
+      "publisher": "arXiv"
+    }
+  ],
+
+  "additionalResources": [
+    {
+      "label": "AI Consulting Services",
+      "href": "/ai-consulting-services/"
+    },
+    {
+      "label": "What is a Pilot-to-Production Roadmap?",
+      "href": "/glossary/pilot-to-production-roadmap/"
+    },
+    {
+      "label": "What is AI ROI Measurement?",
+      "href": "/glossary/ai-roi-measurement/"
+    }
+  ],
+
+  "cta": {
+    "eyebrow": "Ready to run a rigorous AI proof of concept?",
+    "title": "Get a free AI PoC consultation — 24-hour response",
+    "description": "ClickMasters designs PoCs that honestly answer the feasibility question, using representative data rather than favorable special cases. From $20,000. Fixed-price. Full IP. 24-hour response.",
+    "primaryLink": {
+      "label": "Book your free consultation",
+      "href": "/contact"
+    },
+    "secondaryLink": {
+      "label": "Get your free project estimate",
+      "href": "/contact"
+    }
+  }
+}

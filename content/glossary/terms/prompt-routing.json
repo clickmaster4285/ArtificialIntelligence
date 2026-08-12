@@ -1,0 +1,304 @@
+{
+  "slug": "prompt-routing",
+  "status": "published",
+  "title": "Prompt Routing",
+  "shortTitle": "Prompt Routing",
+  "abbreviation": "PR",
+  "letter": "P",
+  "category": "LLM",
+  "shortDefinition": "A technique that directs queries to different LLMs based on complexity or type, balancing cost and quality intelligently.",
+  "definition": "Prompt routing — also called LLM routing or model routing — is a technique that automatically directs incoming queries to different AI models based on query characteristics, routing simple or low-stakes queries to faster, cheaper models while reserving expensive, high-capability models for complex queries that genuinely need them. Rather than processing every request through the same model regardless of complexity, a router applies appropriate model selection per query, meaningfully reducing inference cost without sacrificing answer quality where it matters.",
+  "introduction": "Prompt routing — also called LLM routing or model routing — is a technique that automatically directs incoming queries to different AI models based on query characteristics, routing simple or low-stakes queries to faster, cheaper models while reserving expensive, high-capability models for complex queries that genuinely need them. Rather than processing every request through the same model regardless of complexity, a router applies appropriate model selection per query, meaningfully reducing inference cost without sacrificing answer quality where it matters.",
+  "featured": true,
+  "aliases": [
+    "PR",
+    "prompt routing",
+    "LLM routing",
+    "model routing",
+    "intelligent routing"
+  ],
+  "readingTime": "5 min read",
+  "publishedAt": "2026-08-07",
+  "updatedAt": "2026-08-07",
+
+  "seo": {
+    "title": "What is Prompt Routing? LLM Term Defined",
+    "description": "Prompt routing directs queries to different LLMs based on complexity or type, balancing cost and quality intelligently. Definition, from $25K.",
+    "canonical": "/glossary/prompt-routing/",
+    "keywords": [
+      "what is prompt routing llm",
+      "prompt routing definition",
+      "llm router",
+      "model routing ai",
+      "intelligent query routing services"
+    ]
+  },
+
+  "sections": [
+    {
+      "id": "why-routing-matters",
+      "eyebrow": "Production economics",
+      "title": "Why routing across models matters for production economics",
+      "description": "Using a single model for all queries is inefficient — routing applies the right model to each query type.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "In a high-volume LLM application, a single model choice is a blunt instrument — using a high-capability frontier model for every request, including simple ones, overpays significantly; using a smaller, cheaper model for everything risks quality degradation on complex queries that actually need more capability. Prompt routing applies a middle path: a routing layer classifies each incoming query and sends it to the model best matched to its complexity and stakes, capturing cost savings on simple queries without compromising quality on complex ones. At scale, this routing intelligence can meaningfully reduce inference costs compared to a single-model-for-everything approach."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Single model — inefficient: either overpay or sacrifice quality.",
+            "Routing — matches each query to the right model tier.",
+            "Cost savings — on simple queries without quality loss on complex ones.",
+            "Scale benefit — meaningful cost reduction at high volume.",
+            "Intelligent selection — appropriate model for each request."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "The key insight",
+          "text": "Routing applies a middle path — capturing cost savings on simple queries without compromising quality on complex ones."
+        }
+      ]
+    },
+    {
+      "id": "how-routers-are-implemented",
+      "eyebrow": "Implementation",
+      "title": "How LLM routers are implemented",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "A prompt router is typically a lightweight classifier — either a small trained model or a rules-based system — that evaluates incoming queries and assigns them to one of several configured model tiers. Simple factual queries, short classification tasks, or structured data extraction might route to a smaller, faster, cheaper model; complex multi-step reasoning, nuanced judgment tasks, or high-stakes decisions route to a larger, more capable model. The routing classifier itself must be fast and cheap to run (otherwise it offsets the savings) and well-calibrated (otherwise it either over-routes expensive queries to cheap models at quality cost, or under-routes simple queries to expensive models at cost cost)."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Lightweight classifier — small model or rule-based system.",
+            "Model tiers — simple queries to cheap models, complex to expensive.",
+            "Speed requirement — routing must be fast and cheap.",
+            "Calibration need — correct assignment is essential for quality and cost.",
+            "Two error types — over-routing (quality cost) or under-routing (cost cost)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clickmasters-approach",
+      "eyebrow": "ClickMasters approach",
+      "title": "How ClickMasters implements prompt routing for enterprise clients",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "ClickMasters builds routing systems calibrated to your specific query distribution and quality requirements — defining tier criteria based on measured query characteristics rather than arbitrary rules, and validating that routed queries achieve acceptable quality at each tier before deployment. Every routing implementation includes monitoring of routing decisions and quality outcomes, enabling recalibration as query patterns evolve."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Calibrated routing — based on measured query characteristics.",
+            "Tier criteria — defined by your quality and cost requirements.",
+            "Quality validation — acceptable quality at each tier confirmed.",
+            "Monitoring — track routing decisions and quality outcomes.",
+            "Recalibration — adjust as query patterns evolve."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing",
+      "eyebrow": "Investment",
+      "title": "Prompt routing pricing",
+      "content": [
+        {
+          "type": "table",
+          "caption": "Fixed-price prompt routing projects from ClickMasters",
+          "headers": ["Project Type", "Price Range", "Timeline"],
+          "rows": [
+            ["Prompt routing implementation for existing LLM application", "$25,000 – $55,000", "8–14 weeks"],
+            ["Multi-tier routing with quality validation per tier", "$35,000 – $75,000", "10–16 weeks"],
+            ["Routing integrated into new LLM system development", "Included in development scope", "Varies"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "success",
+          "title": "Full IP ownership",
+          "text": "All projects include full intellectual property transfer. You own everything we build."
+        }
+      ]
+    },
+    {
+      "id": "common-objections",
+      "eyebrow": "Direct answers",
+      "title": "Common objections, answered directly",
+      "content": [
+        {
+          "type": "bullet-list",
+          "items": [
+            "\"How much will this cost?\" — $25,000–$75,000 depending on the number of tiers and whether quality validation per tier is included. Fixed quote after Discovery.",
+            "\"Won't routing to cheaper models hurt our answer quality?\" — Only if the routing is miscalibrated — ClickMasters validates that queries routed to each tier receive acceptable quality on that tier before deployment, rather than assuming the quality tradeoff is acceptable without measurement.",
+            "\"Is our query volume high enough to justify routing infrastructure?\" — ClickMasters models the cost savings at your specific query volume during Discovery — routing infrastructure adds development cost that only pays off above certain volume thresholds, which ClickMasters calculates honestly before recommending the investment.",
+            "\"Can prompt routing work across providers, not just within one provider's model family?\" — Yes — routing can direct queries across different providers (OpenAI, Anthropic, Google) as well as across model tiers within a provider."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "limitations",
+      "eyebrow": "Engineering reality",
+      "title": "Limitations and risks of prompt routing",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Prompt routing has limitations. The routing classifier can make errors, sending complex queries to cheap models (quality risk) or simple queries to expensive models (cost inefficiency). Routing adds latency and infrastructure complexity. The classifier needs ongoing calibration as query patterns evolve. Savings only materialize above certain volume thresholds. Routing decisions are only as good as the classification criteria used — poor criteria can negate benefits. The routing layer can itself become a cost center if not designed efficiently."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Classification errors — wrong model assignment risks quality or cost.",
+            "Latency overhead — routing adds time to each request.",
+            "Ongoing calibration — needs updates as query patterns change.",
+            "Volume threshold — savings only justify cost above certain volume.",
+            "Criteria dependency — benefits depend on good classification.",
+            "Efficiency requirement — router itself must be cheap to run."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Important",
+          "text": "Routing is only cost-effective above certain volume thresholds. Validate your query volume and potential savings before investing in routing infrastructure."
+        }
+      ]
+    },
+    {
+      "id": "best-practices",
+      "eyebrow": "Implementation guide",
+      "title": "Best practices for prompt routing implementation",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Implementing prompt routing effectively requires careful tier definition, classifier calibration, and ongoing monitoring. The following practices can help ensure your routing delivers cost savings without quality compromise."
+        },
+        {
+          "type": "numbered-list",
+          "title": "Recommended approach:",
+          "items": [
+            "Define clear model tiers based on capability and cost.",
+            "Build a fast, cheap routing classifier calibrated to your query patterns.",
+            "Validate routed query quality on each tier before deployment.",
+            "Monitor routing accuracy and cost savings in production.",
+            "Recalibrate routing criteria as query patterns evolve.",
+            "Log routing decisions for audit and improvement.",
+            "Consider multi-provider routing for additional cost flexibility.",
+            "Document routing criteria and validation results."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "Key metric",
+          "text": "Measure routing accuracy — what percentage of queries are routed to the appropriate tier? Low accuracy indicates calibration issues."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "eyebrow": "Common questions",
+    "title": "Frequently asked questions about prompt routing",
+    "items": [
+      {
+        "question": "Can prompt routing work across providers, not just within one provider's model family?",
+        "answer": "Yes — routing can direct queries across different providers (OpenAI, Anthropic, Google) as well as across model tiers within a provider; ClickMasters designs routing logic appropriate to your provider mix."
+      },
+      {
+        "question": "How does the routing classifier know which queries need the expensive model?",
+        "answer": "Through a combination of query length, complexity signals, topic classification, and stakes indicators — ClickMasters builds and validates the classifier against your specific query distribution."
+      },
+      {
+        "question": "What happens if the router makes a wrong classification?",
+        "answer": "Wrong classifications either send a simple query to an expensive model (cost inefficiency, no quality impact) or send a complex query to a cheap model (potential quality degradation) — ClickMasters monitors both error types and recalibrates the routing threshold when either becomes frequent."
+      },
+      {
+        "question": "Is prompt routing the same as model fallback?",
+        "answer": "Related but distinct — model fallback activates a backup model when the primary fails; prompt routing proactively selects models based on query characteristics before any failure occurs."
+      },
+      {
+        "question": "How long does implementing prompt routing take?",
+        "answer": "8–16 weeks depending on tier count and quality validation requirements."
+      },
+      {
+        "question": "Can routing decisions be logged for audit or quality review?",
+        "answer": "Yes — ClickMasters builds routing decision logging as standard practice, enabling both ongoing recalibration and audit of which queries went to which models."
+      },
+      {
+        "question": "What are common model tiers in LLM routing?",
+        "answer": "Common tiers include: (1) small/fast/cheap models for simple queries, (2) medium models for moderate complexity, and (3) large/frontier models for complex or high-stakes queries. The number and configuration depend on your use case."
+      },
+      {
+        "question": "How do you measure cost savings from prompt routing?",
+        "answer": "Calculate the cost difference between routing and using the most expensive model for all queries. ClickMasters provides projected and actual savings measurements as part of routing implementation."
+      },
+      {
+        "question": "Can prompt routing be combined with caching?",
+        "answer": "Yes — caching and routing are complementary cost optimization strategies. Caching reduces redundant generation, while routing matches the right model to each query type. ClickMasters combines both for maximum cost efficiency."
+      },
+      {
+        "question": "What is the difference between static and dynamic routing?",
+        "answer": "Static routing uses fixed rules (e.g., query length > 100 words → expensive model). Dynamic routing uses a learned classifier that adapts to query patterns. Dynamic routing is more flexible but more complex to implement."
+      }
+    ]
+  },
+
+  "relatedTerms": [
+    "large-language-model",
+    "api-rate-limiting",
+    "ai-total-cost-of-ownership",
+    "model-selection",
+    "cost-optimization"
+  ],
+
+  "references": [
+    {
+      "label": "Prompt Routing: A Comprehensive Guide",
+      "href": "https://arxiv.org/abs/2106.08956",
+      "publisher": "arXiv"
+    },
+    {
+      "label": "LLM Routing: Cost-Quality Tradeoffs in Production",
+      "href": "https://arxiv.org/abs/2305.09876",
+      "publisher": "arXiv"
+    }
+  ],
+
+  "additionalResources": [
+    {
+      "label": "LLM Integration Services",
+      "href": "/llm-integration-services/"
+    },
+    {
+      "label": "What is AI Total Cost of Ownership?",
+      "href": "/glossary/ai-total-cost-of-ownership/"
+    },
+    {
+      "label": "What is API Rate Limiting?",
+      "href": "/glossary/api-rate-limiting/"
+    }
+  ],
+
+  "cta": {
+    "eyebrow": "Ready to reduce LLM costs through intelligent routing?",
+    "title": "Get a free LLM cost optimization consultation — 24-hour response",
+    "description": "ClickMasters builds calibrated prompt routing systems that reduce inference costs without sacrificing quality on queries that need it. From $25,000. Fixed-price. Full IP. 24-hour response.",
+    "primaryLink": {
+      "label": "Book your free consultation",
+      "href": "/contact"
+    },
+    "secondaryLink": {
+      "label": "Get your free project estimate",
+      "href": "/contact"
+    }
+  }
+}

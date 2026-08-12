@@ -1,0 +1,313 @@
+{
+  "slug": "reranking",
+  "status": "published",
+  "title": "Reranking",
+  "shortTitle": "Reranking",
+  "abbreviation": "RR",
+  "letter": "R",
+  "category": "RAG",
+  "shortDefinition": "A two-stage retrieval technique that reorders initially retrieved documents by relevance before passing them to an LLM.",
+  "definition": "Reranking is a two-stage retrieval technique for RAG systems where an initial fast retrieval step (using vector similarity) fetches a broader set of candidate documents, and a second, more computationally expensive reranker model then reorders those candidates by a more precise relevance estimate before the top results are passed to the LLM for answer generation. Reranking frequently delivers significant RAG quality improvements because the initial vector similarity retrieval, while fast, doesn't always surface the most relevant documents at the top — reranking applies a more nuanced relevance model to the subset of candidates already retrieved.",
+  "introduction": "Reranking is a two-stage retrieval technique for RAG systems where an initial fast retrieval step (using vector similarity) fetches a broader set of candidate documents, and a second, more computationally expensive reranker model then reorders those candidates by a more precise relevance estimate before the top results are passed to the LLM for answer generation. Reranking frequently delivers significant RAG quality improvements because the initial vector similarity retrieval, while fast, doesn't always surface the most relevant documents at the top — reranking applies a more nuanced relevance model to the subset of candidates already retrieved.",
+  "featured": true,
+  "aliases": [
+    "RR",
+    "reranking",
+    "re-ranking",
+    "cross-encoder reranking",
+    "two-stage retrieval"
+  ],
+  "readingTime": "5 min read",
+  "publishedAt": "2026-08-07",
+  "updatedAt": "2026-08-07",
+
+  "seo": {
+    "title": "What is Reranking? RAG Quality Defined",
+    "description": "Reranking reorders initially retrieved documents by relevance before passing them to an LLM, significantly improving RAG answer quality. From $20K.",
+    "canonical": "/glossary/reranking/",
+    "keywords": [
+      "what is reranking rag",
+      "reranking definition",
+      "reranking rag retrieval",
+      "cross-encoder reranking",
+      "reranking implementation services"
+    ]
+  },
+
+  "sections": [
+    {
+      "id": "why-vector-retrieval-isnt-enough",
+      "eyebrow": "Core concept",
+      "title": "Why initial vector retrieval isn't always enough",
+      "description": "Vector similarity search is fast but can't always capture nuanced relevance distinctions.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Vector similarity search retrieves documents whose embeddings are mathematically close to the query's embedding — fast and effective for semantic matching, but using a single embedding vector per document and query that can't always capture nuanced relevance distinctions. A reranker model (typically a cross-encoder) jointly encodes the query and each candidate document together, allowing much more nuanced relevance assessment than comparing separately-encoded embeddings — at significantly higher computational cost, which is why it's applied only to the smaller set of already-retrieved candidates rather than the entire document corpus."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Vector retrieval — fast but limited to single-embedding comparisons.",
+            "Reranker — cross-encoder considers query and document together.",
+            "Nuanced relevance — better assessment of true relevance.",
+            "Computational cost — higher, applied only to candidate subset.",
+            "Complementary — reranking fixes what vector retrieval misses."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "The key insight",
+          "text": "Vector retrieval is fast but imperfect — reranking applies a more nuanced model to a small set of candidates, fixing ordering issues."
+        }
+      ]
+    },
+    {
+      "id": "bi-encoders-vs-cross-encoders",
+      "eyebrow": "Architecture",
+      "title": "Bi-encoders vs. cross-encoders: the architecture behind reranking",
+      "description": "Bi-encoders power fast initial retrieval; cross-encoders power accurate reranking.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Initial vector retrieval uses bi-encoders — the query and each document are encoded independently into comparable embedding vectors, which is fast because document embeddings can be pre-computed and stored. Rerankers typically use cross-encoders — the query and each candidate document are encoded together, allowing the model to consider their full interaction, which produces more accurate relevance scores but can't be pre-computed (it requires real-time computation for every query-document pair). This is exactly why reranking is a second-stage filter: you can't cross-encode every document in a large corpus for every query, but you can cross-encode the small set of already-retrieved candidates."
+        },
+        {
+          "type": "table",
+          "caption": "Bi-encoders vs. cross-encoders",
+          "headers": ["Aspect", "Bi-encoders", "Cross-encoders"],
+          "rows": [
+            ["Encoding", "Query and document encoded separately", "Query and document encoded together"],
+            ["Speed", "Fast (pre-computable)", "Slow (per-query computation)"],
+            ["Scalability", "High (entire corpus)", "Low (small candidate set)"],
+            ["Relevance accuracy", "Good", "Better"],
+            ["Use case", "Initial retrieval", "Reranking candidates"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "The two-stage tradeoff",
+          "text": "Bi-encoders are fast enough for entire corpus retrieval. Cross-encoders are accurate enough for reranking a small candidate set. Together, they balance speed and quality."
+        }
+      ]
+    },
+    {
+      "id": "clickmasters-approach",
+      "eyebrow": "ClickMasters approach",
+      "title": "How ClickMasters implements reranking for enterprise clients",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "ClickMasters adds reranking to RAG pipelines where initial retrieval quality is limiting answer accuracy — implementing cross-encoder rerankers that evaluate candidates against the specific query context before passing the top reranked results to the LLM, and validating the improvement through retrieval quality metrics before and after to confirm actual quality gain rather than assuming reranking always helps."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Diagnosis — identify where retrieval quality is limiting answers.",
+            "Cross-encoder implementation — rerank candidates against query context.",
+            "Quality validation — measure improvement with retrieval metrics.",
+            "Latency optimization — batch scoring and caching where possible.",
+            "Production integration — verified improvement before deployment."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing",
+      "eyebrow": "Investment",
+      "title": "Reranking pricing",
+      "content": [
+        {
+          "type": "table",
+          "caption": "Fixed-price reranking projects from ClickMasters",
+          "headers": ["Project Type", "Price Range", "Timeline"],
+          "rows": [
+            ["Reranking added to existing RAG retrieval pipeline", "$20,000 – $45,000", "6–10 weeks"],
+            ["Reranking included in new RAG system development", "Included in development scope", "Varies"],
+            ["Full RAG quality optimization (chunking + reranking + evaluation)", "$40,000 – $90,000", "10–16 weeks"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "success",
+          "title": "Full IP ownership",
+          "text": "All projects include full intellectual property transfer. You own everything we build."
+        }
+      ]
+    },
+    {
+      "id": "common-objections",
+      "eyebrow": "Direct answers",
+      "title": "Common objections, answered directly",
+      "content": [
+        {
+          "type": "bullet-list",
+          "items": [
+            "\"Our RAG system already uses good embeddings — do we also need reranking?\" — Often yes, if retrieved document ordering is a limiting factor — the best embedding models still produce imperfect ranking for nuanced queries, and a well-implemented reranker frequently delivers meaningful answer quality improvements even starting from strong initial retrieval.",
+            "\"How much will this cost?\" — $20,000–$90,000 depending on whether this is adding reranking to an existing pipeline or part of a broader RAG quality optimization engagement. Fixed quote after Discovery.",
+            "\"Will reranking make our RAG system significantly slower?\" — Reranking adds latency since it requires additional model inference on retrieved candidates; ClickMasters designs reranking to minimize latency impact — batching candidate scoring, caching where possible, and validating acceptable response time after implementation.",
+            "\"Does reranking replace or complement vector similarity retrieval?\" — Complement — vector retrieval first fetches candidates quickly; reranking then reorders those candidates more precisely."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "limitations",
+      "eyebrow": "Engineering reality",
+      "title": "Limitations and risks of reranking",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Reranking has limitations. It adds latency and computational cost. Cross-encoder models are more expensive to run than vector similarity search. Reranking can amplify errors if the initial retrieval fails to include relevant documents. Performance depends on the quality of the reranker model. It requires careful tuning to balance quality and latency, and may not significantly improve quality if initial retrieval is already very strong. Reranking can also be more complex to implement and maintain than single-stage retrieval."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Latency overhead — adds additional model inference.",
+            "Computational cost — cross-encoders are more expensive.",
+            "Amplification risk — can't fix missing candidates.",
+            "Model dependency — quality depends on reranker performance.",
+            "Tuning required — balance quality and latency.",
+            "Diminishing returns — may not help if retrieval is already strong."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Important",
+          "text": "Reranking is a quality improvement technique with a cost tradeoff. Validate that the quality gain justifies the added latency and cost for your specific use case."
+        }
+      ]
+    },
+    {
+      "id": "best-practices",
+      "eyebrow": "Implementation guide",
+      "title": "Best practices for reranking implementation",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Implementing reranking effectively requires careful model selection, latency optimization, and quality validation. The following practices can help ensure reranking delivers quality gains without excessive latency cost."
+        },
+        {
+          "type": "numbered-list",
+          "title": "Recommended approach:",
+          "items": [
+            "Diagnose retrieval quality to confirm reranking is needed.",
+            "Select an appropriate cross-encoder reranker for your domain.",
+            "Set the number of candidates to rerank for quality/latency balance.",
+            "Batch candidate scoring to improve efficiency.",
+            "Validate quality improvement with retrieval metrics.",
+            "Monitor latency impact and optimize if needed.",
+            "Consider caching for repeated queries.",
+            "Document reranking configuration and validation results."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "Key metric",
+          "text": "Measure recall improvement at top-k — does reranking improve the quality of documents that reach the LLM? This is the metric that matters for answer quality."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "eyebrow": "Common questions",
+    "title": "Frequently asked questions about reranking",
+    "items": [
+      {
+        "question": "How much does reranking typically improve RAG answer quality?",
+        "answer": "This varies by use case and initial retrieval quality; ClickMasters measures actual improvement via retrieval quality metrics for your specific system rather than citing a generic percentage."
+      },
+      {
+        "question": "Does reranking replace or complement vector similarity retrieval?",
+        "answer": "Complement — vector retrieval first fetches candidates quickly; reranking then reorders those candidates more precisely. They work sequentially, not as alternatives."
+      },
+      {
+        "question": "What reranker models does ClickMasters use?",
+        "answer": "Cross-encoder models optimized for relevance scoring, selected based on your domain and language requirements during Discovery."
+      },
+      {
+        "question": "Can reranking hurt RAG quality in some cases?",
+        "answer": "A poorly configured reranker can reorder candidates suboptimally; ClickMasters validates quality improvement with retrieval metrics before committing reranking to production."
+      },
+      {
+        "question": "How long does adding reranking take?",
+        "answer": "6–16 weeks depending on whether it's reranking alone or part of a broader RAG quality optimization engagement."
+      },
+      {
+        "question": "Is reranking relevant for semantic search outside of RAG?",
+        "answer": "Yes, the same two-stage retrieval-then-rerank pattern improves standalone semantic search quality, not only RAG pipelines."
+      },
+      {
+        "question": "What is the difference between bi-encoders and cross-encoders?",
+        "answer": "Bi-encoders encode query and documents separately, enabling fast retrieval from large corpora. Cross-encoders encode them together, providing more accurate relevance scores but requiring computation per query-document pair."
+      },
+      {
+        "question": "How many candidates should be retrieved before reranking?",
+        "answer": "Typically 50-200 candidates are retrieved initially, then reranked to return the top 5-10. The right number depends on your quality/latency tradeoff. ClickMasters optimizes this for your use case."
+      },
+      {
+        "question": "Can reranking be combined with hybrid search?",
+        "answer": "Yes — hybrid search (vector + keyword) can be used for initial retrieval, followed by reranking for precise ordering. This combines the strengths of all three approaches."
+      },
+      {
+        "question": "What is the relationship between reranking and retrieval quality metrics?",
+        "answer": "Reranking improves retrieval quality metrics like precision@k and recall@k. Measuring these metrics before and after reranking validates that it's actually improving retrieval quality."
+      }
+    ]
+  },
+
+  "relatedTerms": [
+    "rag-retrieval-augmented-generation",
+    "semantic-search",
+    "retrieval-quality-metrics",
+    "cross-encoder",
+    "bi-encoder"
+  ],
+
+  "references": [
+    {
+      "label": "Reranking for Information Retrieval: A Comprehensive Survey",
+      "href": "https://arxiv.org/abs/2106.08956",
+      "publisher": "arXiv"
+    },
+    {
+      "label": "Cross-Encoders for Passage Retrieval",
+      "href": "https://arxiv.org/abs/2305.09876",
+      "publisher": "arXiv"
+    }
+  ],
+
+  "additionalResources": [
+    {
+      "label": "RAG Development Services",
+      "href": "/rag-development-services/"
+    },
+    {
+      "label": "What is RAG? (Retrieval-Augmented Generation)",
+      "href": "/glossary/rag-retrieval-augmented-generation/"
+    },
+    {
+      "label": "What is Semantic Search?",
+      "href": "/glossary/semantic-search/"
+    }
+  ],
+
+  "cta": {
+    "eyebrow": "Ready to improve your RAG quality with reranking?",
+    "title": "Get a free RAG quality optimization consultation — 24-hour response",
+    "description": "ClickMasters adds reranking to RAG pipelines where initial retrieval ordering is a quality bottleneck, validated with retrieval metrics. From $20,000. Fixed-price. Full IP. 24-hour response.",
+    "primaryLink": {
+      "label": "Book your free consultation",
+      "href": "/contact"
+    },
+    "secondaryLink": {
+      "label": "Get your free project estimate",
+      "href": "/contact"
+    }
+  }
+}

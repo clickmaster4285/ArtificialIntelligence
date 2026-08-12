@@ -1,0 +1,304 @@
+{
+  "slug": "graphrag",
+  "status": "published",
+  "title": "GraphRAG",
+  "shortTitle": "GraphRAG",
+  "abbreviation": "GraphRAG",
+  "letter": "G",
+  "category": "RAG",
+  "shortDefinition": "An enhancement to RAG that uses a knowledge graph to retrieve connected information across documents, not just similar passages.",
+  "definition": "GraphRAG is an enhancement to standard RAG (Retrieval-Augmented Generation) that builds a knowledge graph over source documents, allowing retrieval to follow explicit entity relationships and connections across documents — rather than only retrieving passages whose embedding vectors are numerically similar to the query's embedding. Where standard RAG retrieves isolated passages, GraphRAG can retrieve connected chains of related information: 'what companies are connected to this acquisition?' retrieves a graph traversal across documents, not just the most similar individual passages.",
+  "introduction": "GraphRAG is an enhancement to standard RAG (Retrieval-Augmented Generation) that builds a knowledge graph over source documents, allowing retrieval to follow explicit entity relationships and connections across documents — rather than only retrieving passages whose embedding vectors are numerically similar to the query's embedding. Where standard RAG retrieves isolated passages, GraphRAG can retrieve connected chains of related information: 'what companies are connected to this acquisition?' retrieves a graph traversal across documents, not just the most similar individual passages.",
+  "featured": true,
+  "aliases": [
+    "GraphRAG",
+    "graph RAG",
+    "knowledge graph RAG",
+    "graph-enhanced RAG",
+    "Microsoft GraphRAG"
+  ],
+  "readingTime": "6 min read",
+  "publishedAt": "2026-08-07",
+  "updatedAt": "2026-08-07",
+
+  "seo": {
+    "title": "What is GraphRAG? Definition & Guide",
+    "description": "GraphRAG enhances RAG by using a knowledge graph to retrieve connected information across documents, not just similar passages. Builds from $45K.",
+    "canonical": "/glossary/graphrag/",
+    "keywords": [
+      "what is graphrag",
+      "graphrag definition",
+      "graph rag vs standard rag",
+      "graphrag microsoft",
+      "graphrag implementation services"
+    ]
+  },
+
+  "sections": [
+    {
+      "id": "why-standard-rag-misses-relationship-questions",
+      "eyebrow": "Core limitation",
+      "title": "Why standard RAG misses relationship-dependent questions",
+      "description": "Vector similarity works for single passages but fails for questions requiring connections across documents.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Standard vector similarity retrieval works well for questions answered by a single passage or a few similar passages — 'what is the return policy?' retrieves the relevant passage. It struggles with questions that require connecting information distributed across many documents in ways that aren't captured by any single passage's similarity to the query: 'which of our customers are exposed to this supplier's regulatory risk?' requires traversing a graph of customer-supplier-regulatory relationships that no individual document passage captures in a retrievable form. GraphRAG builds this relationship structure explicitly, making it queryable in ways vector search alone cannot support."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Standard RAG — works for single passage questions.",
+            "Relationship questions — require connections across documents.",
+            "GraphRAG — builds explicit relationship structure.",
+            "Queryable graph — supports traversal, not just similarity.",
+            "Example — customer-supplier-regulatory risk relationships."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "The key insight",
+          "text": "Standard RAG retrieves similar passages. GraphRAG traverses connected relationships — solving a fundamentally different class of questions."
+        }
+      ]
+    },
+    {
+      "id": "when-graphrag-is-worth-the-complexity",
+      "eyebrow": "Value assessment",
+      "title": "When GraphRAG is worth the added complexity",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "GraphRAG adds substantial complexity to RAG architecture — building and maintaining the knowledge graph over source documents is a significant additional engineering investment compared to standard vector indexing. It's most clearly justified for knowledge bases where relationship traversal questions are central use cases: enterprise knowledge about organizational structures, customer-supplier-product relationships, regulatory entity connections, or research literature where citation and concept relationships carry meaning that passage similarity doesn't capture. For simpler question-answering over documents where most questions are answered by a single relevant passage, standard RAG delivers most of the value at a fraction of the complexity."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Substantial complexity — beyond standard RAG implementation.",
+            "Justified when — relationship traversal is a central use case.",
+            "Enterprise org structures — customer-supplier-product relationships.",
+            "Regulatory connections — entity relationship mapping.",
+            "Research literature — citation and concept relationships."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clickmasters-approach",
+      "eyebrow": "ClickMasters approach",
+      "title": "How ClickMasters implements GraphRAG for enterprise clients",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "ClickMasters evaluates during Discovery whether your specific use cases genuinely require GraphRAG's relationship traversal capability, or whether well-tuned standard RAG with reranking serves your question types adequately. Where GraphRAG is warranted, ClickMasters builds the knowledge graph extraction pipeline from your source documents, the hybrid retrieval system combining graph traversal with vector similarity, and the validation framework confirming GraphRAG actually improves answer quality on your specific relationship-dependent questions."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Honest assessment — GraphRAG only when genuinely needed.",
+            "Knowledge graph extraction — from your source documents.",
+            "Hybrid retrieval — graph traversal + vector similarity.",
+            "Validation framework — confirm improvement on relationship questions.",
+            "Right-fit architecture — standard RAG when sufficient."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing",
+      "eyebrow": "Investment",
+      "title": "GraphRAG pricing",
+      "content": [
+        {
+          "type": "table",
+          "caption": "Fixed-price GraphRAG projects from ClickMasters",
+          "headers": ["Project Type", "Price Range", "Timeline"],
+          "rows": [
+            ["GraphRAG feasibility assessment and use case evaluation", "$20,000 – $40,000", "6–10 weeks"],
+            ["GraphRAG implementation for single knowledge domain", "$45,000 – $110,000", "14–22 weeks"],
+            ["Enterprise GraphRAG platform across multiple knowledge domains", "$90,000 – $220,000", "22–32 weeks"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "success",
+          "title": "Full IP ownership",
+          "text": "All projects include full intellectual property transfer. You own everything we build."
+        }
+      ]
+    },
+    {
+      "id": "common-objections",
+      "eyebrow": "Direct answers",
+      "title": "Common objections, answered directly",
+      "content": [
+        {
+          "type": "bullet-list",
+          "items": [
+            "\"How much will this cost?\" — $20,000–$220,000 depending on whether this is a feasibility assessment or a full implementation. Fixed quote after Discovery.",
+            "\"Should we use GraphRAG or standard RAG for our use case?\" — ClickMasters assesses this honestly during Discovery — most question-answering use cases are adequately served by well-tuned standard RAG; GraphRAG is most clearly justified when relationship traversal across documents is a primary, repeated question type.",
+            "\"Does GraphRAG always produce better answers than standard RAG?\" — Not universally — for simple passage-retrieval questions, standard RAG often performs equivalently at much lower complexity. GraphRAG's advantage is specific to relationship-dependent queries that span multiple documents in ways vector similarity can't capture.",
+            "\"How is GraphRAG different from standard RAG?\" — Standard RAG retrieves passages by vector similarity; GraphRAG additionally builds a knowledge graph over documents, enabling retrieval by traversing explicit entity relationships."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "limitations",
+      "eyebrow": "Engineering reality",
+      "title": "Limitations and risks of GraphRAG",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "GraphRAG has limitations. It adds significant implementation complexity and cost compared to standard RAG. The knowledge graph extraction pipeline can be error-prone, especially for unstructured documents. GraphRAG requires ongoing maintenance as documents are updated. It may not improve performance on simple passage-retrieval questions. The graph structure may not capture all relevant relationships, and the hybrid retrieval system adds latency. GraphRAG is not a replacement for standard RAG — it addresses a specific class of questions at higher cost."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Implementation complexity — significant overhead vs. standard RAG.",
+            "Extraction errors — relationship extraction can be error-prone.",
+            "Maintenance burden — graph updates as documents change.",
+            "Passage retrieval — may not improve simple questions.",
+            "Relationship coverage — graph may not capture all connections.",
+            "Latency overhead — hybrid retrieval adds response time."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Important",
+          "text": "GraphRAG addresses a specific class of relationship-dependent questions at significant added complexity. Only implement when those question types are central to your use case."
+        }
+      ]
+    },
+    {
+      "id": "best-practices",
+      "eyebrow": "Implementation guide",
+      "title": "Best practices for GraphRAG implementation",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Implementing GraphRAG effectively requires careful use case evaluation, extraction pipeline design, and hybrid retrieval architecture. The following practices can help ensure GraphRAG delivers value without unnecessary complexity."
+        },
+        {
+          "type": "numbered-list",
+          "title": "Recommended approach:",
+          "items": [
+            "Evaluate whether relationship traversal is a genuine requirement.",
+            "Start with a feasibility assessment before full implementation.",
+            "Design entity and relationship extraction for your document types.",
+            "Build hybrid retrieval combining graph traversal and vector search.",
+            "Validate quality improvement on relationship-dependent questions.",
+            "Plan for knowledge graph maintenance as documents evolve.",
+            "Consider starting with standard RAG and adding GraphRAG only where needed.",
+            "Document graph schema and extraction methodology."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "Key metric",
+          "text": "Measure answer quality improvement on relationship-dependent questions — GraphRAG's value is demonstrated by better answers to questions that standard RAG struggles with."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "eyebrow": "Common questions",
+    "title": "Frequently asked questions about GraphRAG",
+    "items": [
+      {
+        "question": "Who developed GraphRAG?",
+        "answer": "Microsoft Research published influential work on GraphRAG in 2024, though the concept of combining knowledge graphs with RAG had earlier precedents; ClickMasters implements GraphRAG drawing on both research advances and practical production experience."
+      },
+      {
+        "question": "How is GraphRAG different from standard RAG?",
+        "answer": "Standard RAG retrieves passages by vector similarity; GraphRAG additionally builds a knowledge graph over documents, enabling retrieval by traversing explicit entity relationships — better suited to questions spanning connected information across many documents."
+      },
+      {
+        "question": "Does GraphRAG require a separate knowledge graph database?",
+        "answer": "Yes, the knowledge graph is stored in a graph database (like Neo4j) alongside the vector store; ClickMasters selects appropriate infrastructure based on your existing stack and scale requirements."
+      },
+      {
+        "question": "How is the knowledge graph built from source documents?",
+        "answer": "Through entity extraction and relationship identification from document content — ClickMasters builds this extraction pipeline using NLP and LLM-assisted techniques tuned to your specific document types and entity vocabulary."
+      },
+      {
+        "question": "How long does a GraphRAG implementation take?",
+        "answer": "14–32 weeks for full implementation, considerably longer than standard RAG given the added knowledge graph construction and hybrid retrieval complexity."
+      },
+      {
+        "question": "Can GraphRAG and standard RAG be combined in the same system?",
+        "answer": "Yes, hybrid systems that route queries to graph traversal or vector retrieval based on query type are common — ClickMasters designs the routing logic based on your specific question type distribution."
+      },
+      {
+        "question": "What is the relationship between GraphRAG and knowledge graphs?",
+        "answer": "GraphRAG uses a knowledge graph as the retrieval structure. The knowledge graph stores entities and relationships extracted from documents; GraphRAG traverses this graph to retrieve connected information for answering queries."
+      },
+      {
+        "question": "Does GraphRAG require more computational resources than standard RAG?",
+        "answer": "Yes — GraphRAG requires additional infrastructure for the knowledge graph database, extraction pipeline, and hybrid retrieval. The incremental cost should be weighed against the improvement in relationship-dependent question answering."
+      },
+      {
+        "question": "What types of documents are best suited for GraphRAG?",
+        "answer": "GraphRAG is most valuable for documents with rich entity relationships — organizational charts, regulatory filings, supply chain documents, research literature with citation networks, and any content where connections between entities carry meaning."
+      },
+      {
+        "question": "Can GraphRAG be implemented incrementally?",
+        "answer": "Yes — you can start with a single knowledge domain or a subset of documents, validate the approach, and expand coverage. ClickMasters recommends this phased approach for managing complexity."
+      }
+    ]
+  },
+
+  "relatedTerms": [
+    "rag-retrieval-augmented-generation",
+    "knowledge-graph",
+    "vector-database",
+    "entity-extraction",
+    "hybrid-search"
+  ],
+
+  "references": [
+    {
+      "label": "From Local to Global: A Graph RAG Approach to Query-Focused Summarization",
+      "href": "https://arxiv.org/abs/2404.16130",
+      "publisher": "arXiv"
+    },
+    {
+      "label": "GraphRAG: A Comprehensive Survey",
+      "href": "https://arxiv.org/abs/2305.09876",
+      "publisher": "arXiv"
+    }
+  ],
+
+  "additionalResources": [
+    {
+      "label": "RAG Development Services",
+      "href": "/rag-development-services/"
+    },
+    {
+      "label": "What is RAG? (Retrieval-Augmented Generation)",
+      "href": "/glossary/rag-retrieval-augmented-generation/"
+    },
+    {
+      "label": "What is a Knowledge Graph?",
+      "href": "/glossary/knowledge-graph/"
+    }
+  ],
+
+  "cta": {
+    "eyebrow": "Ready to explore GraphRAG for your knowledge base?",
+    "title": "Get a free GraphRAG consultation — 24-hour response",
+    "description": "ClickMasters assesses whether GraphRAG's relationship traversal genuinely justifies the added complexity for your specific use cases. From $20,000. Fixed-price. Full IP. 24-hour response.",
+    "primaryLink": {
+      "label": "Book your free consultation",
+      "href": "/contact"
+    },
+    "secondaryLink": {
+      "label": "Get your free project estimate",
+      "href": "/contact"
+    }
+  }
+}

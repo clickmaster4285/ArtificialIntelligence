@@ -1,0 +1,312 @@
+{
+  "slug": "decision-tree",
+  "status": "published",
+  "title": "Decision Tree",
+  "shortTitle": "Decision Tree",
+  "abbreviation": "DT",
+  "letter": "D",
+  "category": "Machine Learning",
+  "shortDefinition": "A machine learning model that makes predictions by learning a series of sequential yes/no questions about input features.",
+  "definition": "A decision tree is a machine learning model that makes predictions by learning a series of sequential yes/no questions about input features, branching at each decision point until reaching a leaf node that delivers a final prediction. Decision trees are uniquely readable compared to most machine learning models — a human can trace every prediction's exact logical path through the tree, making them one of the most inherently interpretable prediction approaches available and valuable in regulated contexts where 'why did the model predict this?' must be answerable without additional explainability tools.",
+  "introduction": "A decision tree is a machine learning model that makes predictions by learning a series of sequential yes/no questions about input features, branching at each decision point until reaching a leaf node that delivers a final prediction. Decision trees are uniquely readable compared to most machine learning models — a human can trace every prediction's exact logical path through the tree, making them one of the most inherently interpretable prediction approaches available and valuable in regulated contexts where 'why did the model predict this?' must be answerable without additional explainability tools.",
+  "featured": true,
+  "aliases": [
+    "DT",
+    "decision tree",
+    "classification tree",
+    "regression tree",
+    "rule-based tree"
+  ],
+  "readingTime": "5 min read",
+  "publishedAt": "2026-08-07",
+  "updatedAt": "2026-08-07",
+
+  "seo": {
+    "title": "What is a Decision Tree? AI Defined",
+    "description": "A decision tree splits data using sequential yes/no questions to make predictions, offering full interpretability. Definition, builds from $25K.",
+    "canonical": "/glossary/decision-tree/",
+    "keywords": [
+      "what is a decision tree machine learning",
+      "decision tree definition",
+      "decision tree vs neural network",
+      "decision tree interpretable ai",
+      "machine learning model development services"
+    ]
+  },
+
+  "sections": [
+    {
+      "id": "how-decision-trees-learn",
+      "eyebrow": "Core mechanism",
+      "title": "How decision trees learn",
+      "description": "During training, the algorithm repeatedly finds the best feature and threshold to split data into more homogeneous groups.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "During training, a decision tree algorithm repeatedly finds the feature and threshold value that best splits the data into more homogeneous groups — for example, first splitting loan applicants by annual income above or below $60,000, then further splitting the higher-income group by credit score, and so on, until the resulting subgroups are either pure enough to predict confidently or a stopping criterion (maximum tree depth, minimum samples per leaf) prevents further splitting. The resulting tree structure encodes the learned prediction logic in a form that can be read directly as human-interpretable rules."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Splitting — find the best feature and threshold to split data.",
+            "Homogeneous groups — split until subgroups are pure enough.",
+            "Stopping criteria — max depth, min samples per leaf prevent overfitting.",
+            "Human-readable — tree structure encodes interpretable rules.",
+            "Direct logic — every prediction path is traceable."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "The key insight",
+          "text": "A decision tree's prediction logic can be read directly — every decision path is human-interpretable without additional explainability tools."
+        }
+      ]
+    },
+    {
+      "id": "decision-trees-vs-ensemble",
+      "eyebrow": "Comparison",
+      "title": "Decision trees vs. ensemble methods",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "A single decision tree, while interpretable, is often less accurate than more complex methods and prone to overfitting — it can grow too complex fitting training data quirks rather than general patterns. Ensemble methods like random forests and gradient boosting (see: Ensemble Model) address this by combining many trees, substantially improving accuracy at the cost of losing the individual tree's interpretability. This is the core tradeoff: single decision trees offer full, human-readable interpretability but lower accuracy; ensembles offer much higher accuracy but sacrifice the direct readability of any individual tree."
+        },
+        {
+          "type": "table",
+          "caption": "Single decision tree vs. ensemble methods",
+          "headers": ["Aspect", "Single Decision Tree", "Ensemble Methods"],
+          "rows": [
+            ["Interpretability", "Full, direct, human-readable", "Limited (individual trees not readable)"],
+            ["Accuracy", "Good for simple problems", "Much higher accuracy"],
+            ["Overfitting risk", "Higher", "Lower (aggregation reduces overfitting)"],
+            ["Best for", "Interpretability-first applications", "Accuracy-first applications"],
+            ["Examples", "Single tree for audit/regulation", "Random forest, gradient boosting"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "The core tradeoff",
+          "text": "Single trees offer full interpretability. Ensembles offer higher accuracy. Choose based on your priority — accuracy or explainability."
+        }
+      ]
+    },
+    {
+      "id": "clickmasters-approach",
+      "eyebrow": "ClickMasters approach",
+      "title": "How ClickMasters uses decision trees for enterprise clients",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "ClickMasters uses decision trees specifically when interpretability is a primary requirement — regulatory contexts where individual prediction decisions must be fully explainable by readable rule logic, or internal audit uses where prediction logic needs to be understood and validated by non-data-science stakeholders. For maximum accuracy without interpretability constraints, ClickMasters recommends ensemble methods; for interpretability-first applications, decision trees or simpler rule-based systems often serve better than neural networks whose behavior must be reconstructed through secondary explainability tooling."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Interpretability-first — decision trees for regulated contexts.",
+            "Regulatory compliance — individual predictions must be explainable.",
+            "Non-data-science stakeholders — readable rule logic for validation.",
+            "Accuracy-first — ensembles recommended when interpretability not required.",
+            "Right-fit approach — decision trees over neural networks when explainability matters."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing",
+      "eyebrow": "Investment",
+      "title": "Decision tree pricing",
+      "content": [
+        {
+          "type": "table",
+          "caption": "Fixed-price decision tree projects from ClickMasters",
+          "headers": ["Project Type", "Price Range", "Timeline"],
+          "rows": [
+            ["Interpretable decision tree model for regulated decision", "$25,000 – $55,000", "8–14 weeks"],
+            ["Decision tree vs. ensemble accuracy/interpretability tradeoff analysis", "$20,000 – $40,000", "4–8 weeks"],
+            ["Full custom ML model development (approach TBD during Discovery)", "$30,000 – $80,000", "10–16 weeks"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "success",
+          "title": "Full IP ownership",
+          "text": "All projects include full intellectual property transfer. You own everything we build."
+        }
+      ]
+    },
+    {
+      "id": "common-objections",
+      "eyebrow": "Direct answers",
+      "title": "Common objections, answered directly",
+      "content": [
+        {
+          "type": "bullet-list",
+          "items": [
+            "\"Should we use a decision tree or a more complex model for our use case?\" — ClickMasters recommends the right approach during Discovery — if interpretability is a hard requirement, decision trees or rule-based systems are genuinely preferable to neural networks even if the accuracy tradeoff is real.",
+            "\"How much will this cost?\" — $20,000–$80,000 depending on the task and whether this is a standalone interpretability-focused project or a broader model development engagement. Fixed quote after Discovery.",
+            "\"Don't decision trees always sacrifice too much accuracy compared to neural networks?\" — Not always — for many tabular data prediction tasks with moderate complexity, well-tuned decision tree ensembles achieve accuracy competitive with neural networks; a standalone interpretable tree is where the accuracy tradeoff is most meaningful.",
+            "\"When is a single decision tree better than an ensemble of trees?\" — When interpretability of individual predictions is a hard requirement — each tree in a random forest or gradient boosting ensemble isn't individually readable in the same way a single tree is."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "limitations",
+      "eyebrow": "Engineering reality",
+      "title": "Limitations and risks of decision trees",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Decision trees have limitations. They are prone to overfitting if not properly constrained. They can be unstable — small changes in training data can produce very different trees. They are less accurate than ensemble methods for complex problems. Single trees can be biased toward features with more levels. They may not capture complex relationships without deeper trees, which increases overfitting risk. Interpretability decreases as the tree grows larger, and the rule-based nature means they don't handle continuous variables as naturally as some other models."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Overfitting risk — can memorize training data without constraints.",
+            "Instability — small data changes can produce different trees.",
+            "Accuracy gap — less accurate than ensembles for complex problems.",
+            "Feature bias — can favor features with more levels.",
+            "Complex relationship limitation — may not capture complex patterns.",
+            "Interpretability decreases — larger trees are harder to read."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Important",
+          "text": "Decision trees offer full interpretability but require careful tuning to avoid overfitting. The accuracy-interpretability tradeoff is real and should be evaluated for your use case."
+        }
+      ]
+    },
+    {
+      "id": "best-practices",
+      "eyebrow": "Implementation guide",
+      "title": "Best practices for decision tree implementation",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Implementing decision trees effectively requires careful pruning, validation, and tradeoff awareness. The following practices can help ensure your decision tree delivers the right balance of interpretability and accuracy."
+        },
+        {
+          "type": "numbered-list",
+          "title": "Recommended approach:",
+          "items": [
+            "Determine if interpretability is a hard requirement for your use case.",
+            "Set appropriate tree depth and minimum samples per leaf.",
+            "Use cross-validation to find the right tree complexity.",
+            "Prune the tree to avoid overfitting while maintaining interpretability.",
+            "Validate accuracy on a held-out test set.",
+            "Document the tree structure and key decision paths.",
+            "Compare single tree accuracy to ensemble alternatives.",
+            "Choose ensemble methods when accuracy is the priority."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "Key metric",
+          "text": "Measure interpretability vs. accuracy tradeoff — how much accuracy are you willing to sacrifice for full, direct interpretability? This drives the decision tree vs. ensemble choice."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "eyebrow": "Common questions",
+    "title": "Frequently asked questions about decision trees",
+    "items": [
+      {
+        "question": "What's the main advantage of a decision tree over a neural network?",
+        "answer": "Full, direct interpretability — you can trace every prediction's exact logical path through the tree without any secondary explainability tools, which matters significantly in regulated contexts or when audit trails are required."
+      },
+      {
+        "question": "When is a single decision tree better than an ensemble of trees?",
+        "answer": "When interpretability of individual predictions is a hard requirement — each tree in a random forest or gradient boosting ensemble isn't individually readable in the same way a single tree is."
+      },
+      {
+        "question": "Can decision trees handle both classification and regression tasks?",
+        "answer": "Yes, decision trees work for both — predicting categorical outcomes (classification trees) and continuous numerical outcomes (regression trees)."
+      },
+      {
+        "question": "How deep should a decision tree be?",
+        "answer": "Deeper trees fit training data more precisely but risk overfitting; ClickMasters tunes tree depth through cross-validation to find the right balance for your specific data and task."
+      },
+      {
+        "question": "How long does building a decision tree model take?",
+        "answer": "4–16 weeks depending on task complexity and whether interpretability analysis is included."
+      },
+      {
+        "question": "Is a decision tree a type of neural network?",
+        "answer": "No — decision trees use completely different mechanics from neural networks; they learn rule-based splits rather than distributed numerical representations, which is what gives them their interpretability advantage."
+      },
+      {
+        "question": "What is pruning in decision trees?",
+        "answer": "Pruning is the process of removing branches from a fully grown tree to reduce overfitting and improve generalization. It simplifies the tree while maintaining accuracy, often improving interpretability as well."
+      },
+      {
+        "question": "What is the difference between a classification tree and a regression tree?",
+        "answer": "A classification tree predicts a categorical outcome (e.g., yes/no, which category). A regression tree predicts a continuous numerical value (e.g., price, amount). Both use the same tree structure but use different splitting criteria and output types."
+      },
+      {
+        "question": "Can decision trees handle missing values?",
+        "answer": "Some implementations can handle missing values by using surrogate splits or by treating missing as a separate category. ClickMasters addresses missing data appropriately based on your specific dataset."
+      },
+      {
+        "question": "What is the relationship between decision trees and rule-based systems?",
+        "answer": "Decision trees can be converted into a set of human-readable rules (if-then statements). This makes them useful as the starting point for rule-based systems in interpretability-critical applications."
+      }
+    ]
+  },
+
+  "relatedTerms": [
+    "machine-learning-model",
+    "model-explainability",
+    "ensemble-model",
+    "random-forest",
+    "gradient-boosting"
+  ],
+
+  "references": [
+    {
+      "label": "Decision Trees: A Comprehensive Guide",
+      "href": "https://arxiv.org/abs/2106.08956",
+      "publisher": "arXiv"
+    },
+    {
+      "label": "Interpretable Machine Learning with Decision Trees",
+      "href": "https://arxiv.org/abs/2305.09876",
+      "publisher": "arXiv"
+    }
+  ],
+
+  "additionalResources": [
+    {
+      "label": "Machine Learning Model Development Services",
+      "href": "/machine-learning-model-development/"
+    },
+    {
+      "label": "What is a Machine Learning Model?",
+      "href": "/glossary/machine-learning-model/"
+    },
+    {
+      "label": "What is Model Explainability?",
+      "href": "/glossary/model-explainability-xai/"
+    }
+  ],
+
+  "cta": {
+    "eyebrow": "Ready to build an interpretable prediction model?",
+    "title": "Get a free interpretable model consultation — 24-hour response",
+    "description": "ClickMasters recommends decision trees specifically when interpretability is a genuine requirement, and ensemble methods when accuracy takes priority. From $20,000. Fixed-price. Full IP. 24-hour response.",
+    "primaryLink": {
+      "label": "Book your free consultation",
+      "href": "/contact"
+    },
+    "secondaryLink": {
+      "label": "Get your free project estimate",
+      "href": "/contact"
+    }
+  }
+}
