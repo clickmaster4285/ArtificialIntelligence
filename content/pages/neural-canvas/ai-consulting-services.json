@@ -1,0 +1,353 @@
+{
+  "slug": "ai-consulting-services",
+  "status": "published",
+  "seo": {
+    "title": "AI Consulting Services | ClickMasters AI Development",
+    "description": "ClickMasters provides AI strategy, AI assessment, and fractional AI leadership for US enterprises. From $200/hr. Fixed-price engagements available. 24-hour response.",
+    "canonical": "/ai-consulting-services/",
+    "primaryKeyword": "ai consulting services",
+    "secondaryKeywords": [
+      "ai consulting company usa",
+      "ai strategy consulting",
+      "fractional cdo services",
+      "ai assessment services"
+    ],
+    "openGraphImage": "/images/pages/ai-consulting-services/og-image.jpg",
+    "noIndex": false,
+    "noFollow": false
+  },
+  "schema": {
+    "service": true,
+    "organization": false,
+    "breadcrumbs": true,
+    "faq": true,
+    "localBusiness": false
+  },
+  "appearance": {
+    "template": "neural-canvas",
+    "accent": "blue",
+    "background": "neural-grid",
+    "grain": true,
+    "glow": true,
+    "scrollProgress": true,
+    "customCursor": true
+  },
+  "hero": {
+    "eyebrow": "AI Consulting Services",
+    "title": "AI Consulting Services",
+    "highlightedText": "AI Strategy · Readiness Assessment · Fractional CAO · From $200/hr",
+    "description": "ClickMasters provides AI strategy and consulting for US and Canadian enterprises — AI readiness assessments that evaluate your data, team, and organizational capacity for AI adoption, technology selection consulting that cuts through the overwhelming LLM and ML vendor landscape to identify the right tools for your specific requirements, use case prioritization that ranks AI investment opportunities by ROI likelihood and implementation feasibility, and fractional Chief AI Officer engagement for organizations that need executive AI leadership but aren't ready for a full-time hire. AI consulting from ClickMasters is not slide decks — every engagement ends with actionable recommendations your technical team can execute, decisions on technology that match your actual constraints, and a prioritized roadmap with realistic timelines and cost estimates. From $200/hour; fixed-price consulting engagements available. 24-hour response.",
+    "primaryCta": {
+      "label": "Get a Free AI Strategy Consultation — 24-Hour Response",
+      "href": "#cta",
+      "ariaLabel": "Get a free AI strategy consultation with 24-hour response"
+    },
+    "secondaryCta": {
+      "label": "Explore AI Consulting",
+      "href": "/ai-consulting-cost/"
+    },
+    "trustText": "Engineering-calibrated · Fixed-price · Fractional CAO · 24-hour response",
+    "metrics": [
+      {
+        "value": "$200+",
+        "label": "Hourly rate",
+        "description": "Advisory engagements"
+      },
+      {
+        "value": "$15K+",
+        "label": "Fixed-price start",
+        "description": "AI Readiness Assessment"
+      },
+      {
+        "value": "4-10",
+        "label": "Weeks to delivery",
+        "description": "Strategy engagement"
+      }
+    ],
+    "visual": {
+      "type": "neural-sphere",
+      "label": "AI consulting",
+      "modelNames": [
+        "Strategy",
+        "Readiness",
+        "Selection",
+        "Fractional CAO",
+        "Discovery"
+      ]
+    }
+  },
+  "sections": [
+    {
+      "id": "consulting-services",
+      "type": "rich-text",
+      "eyebrow": "Consulting Services",
+      "title": "AI Consulting Services ClickMasters Provides",
+      "description": "Strategic AI consulting that connects to execution.",
+      "tone": "default",
+      "width": "content",
+      "animation": "mask-reveal",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "AI Readiness Assessment",
+          "paragraphs": [
+            "A structured evaluation of your organization's capacity to deploy and benefit from AI — delivered in 4–6 weeks at fixed price:",
+            "What we assess:",
+            "Data readiness: Do you have the data AI needs? We evaluate data volume, quality, labeling, accessibility, and governance. Most organizations discover their data isn't as AI-ready as assumed — unlabeled, siloed, inconsistently formatted, or privacy-constrained. The assessment identifies specific data gaps and the effort to address them before development investment.",
+            "Technical infrastructure readiness: Can your technology infrastructure support AI deployment? Cloud maturity, API infrastructure, MLOps tooling, and the integration interfaces for AI system outputs into existing workflows. Organizations that lack API-accessible data sources can't deploy AI without infrastructure investment that precedes model development.",
+            "Organizational readiness: Does your team have the skills and processes to adopt and maintain AI? AI champion identification, change management requirements, and the operational processes needed to act on AI predictions. The best AI model in the world creates no value if nobody acts on its outputs.",
+            "Use case inventory: Structured identification of AI-applicable processes — where AI would provide the most business value, which use cases have the data and feasibility required, and which should be prioritized for early wins.",
+            "Deliverable: 25–40 page assessment report with AI readiness score by dimension, identified data gaps, infrastructure recommendations, and prioritized use case roadmap with cost and timeline estimates.",
+            "Cost: $15,000–$40,000 (depending on organization size) | Timeline: 4–6 weeks"
+          ]
+        },
+        {
+          "heading": "AI Strategy Development",
+          "paragraphs": [
+            "Building an AI investment roadmap aligned with business objectives:",
+            "Use case prioritization: Scoring AI opportunities on business impact (revenue generation, cost reduction, risk mitigation) versus implementation feasibility (data availability, technical complexity, organizational readiness) — identifying the high-impact, high-feasibility AI investments that deliver ROI while building organizational AI capability.",
+            "Technology architecture design: Designing the AI technology stack appropriate for your requirements — cloud provider selection, ML platform choice, LLM model selection, vector database selection, and MLOps tooling — with explicit rationale for each choice rather than defaulting to vendor marketing.",
+            "Build vs. buy analysis: For each identified use case, evaluating whether to build custom ML, configure off-the-shelf AI products, or pursue hybrid approaches — with TCO (Total Cost of Ownership) analysis over a 3-year horizon that accounts for customization costs, integration costs, and ongoing operational costs.",
+            "ROI modeling: Quantified ROI projections for prioritized AI investments — connecting AI capability to business metrics (revenue, cost, risk) with sensitivity analysis showing return ranges under optimistic and conservative assumptions.",
+            "Deliverable: AI Strategy Roadmap document with prioritized use case portfolio, technology recommendations, build/buy analysis, ROI projections, and 18-month implementation plan.",
+            "Cost: $25,000–$75,000 (depending on scope) | Timeline: 6–10 weeks"
+          ]
+        },
+        {
+          "heading": "Technology Selection and Vendor Evaluation",
+          "paragraphs": [
+            "For organizations evaluating AI/ML platforms, LLM providers, or specific AI software products:",
+            "LLM provider evaluation: Structured evaluation of OpenAI, Anthropic, Google, Meta (Llama), and Mistral for your specific use case — benchmarking on your actual tasks and documents, not vendor-provided benchmarks that may not reflect your requirements. Output: documented model comparison with recommendation and deployment architecture.",
+            "ML platform evaluation: Evaluating AWS SageMaker, Azure ML, Google Vertex AI, Databricks MLflow, and Weights & Biases for your team's skills, data location, and production requirements — with a specific deployment recommendation rather than a generic comparison.",
+            "AI software vendor evaluation: For organizations evaluating commercial AI products (predictive analytics platforms, NLP tools, chatbot platforms), ClickMasters provides vendor selection consulting — RFP development, vendor scoring, demo facilitation, and selection recommendation.",
+            "Cost: $10,000–$30,000 per evaluation | Timeline: 3–5 weeks"
+          ]
+        },
+        {
+          "heading": "Fractional Chief AI Officer (CAO)",
+          "paragraphs": [
+            "For organizations that need executive AI leadership — an AI strategy officer without the full-time cost:",
+            "What a ClickMasters Fractional CAO does:",
+            "Establishes AI governance frameworks — model risk management, data ethics policies, AI transparency standards.",
+            "Chairs the AI steering committee and AI investment review processes.",
+            "Evaluates AI vendor proposals and technology partnerships.",
+            "Defines AI hiring strategy — what roles to build internally vs. engage externally.",
+            "Represents AI strategy to board, investors, and regulators.",
+            "Interfaces with the CEO and business leadership on AI investment priorities.",
+            "Who this serves: Series B and later startups that have grown AI investment beyond what a technical CTO can own; mid-size enterprises where the CEO lacks confidence in AI direction without executive-level AI expertise; organizations preparing for AI-related due diligence by investors or regulators.",
+            "Cost: From $8,000/month (10–15 hours/month) | Minimum 3-month engagement"
+          ]
+        },
+        {
+          "heading": "AI Project Definition (Paid Discovery)",
+          "paragraphs": [
+            "For organizations considering a specific AI development project and needing to define scope before committing development budget:",
+            "Discovery deliverables:",
+            "Business case documentation with ROI projection.",
+            "Technical feasibility assessment — data availability, model approach, integration requirements.",
+            "Fixed-price development proposal with milestone payment schedule.",
+            "Project risk register with mitigation strategies.",
+            "Recommended team composition and engagement structure.",
+            "Discovery is paid — typically $5,000–$15,000 — and the findings fully inform the development proposal that follows."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "philosophy",
+      "type": "rich-text",
+      "eyebrow": "Philosophy",
+      "title": "ClickMasters' AI Consulting Philosophy",
+      "description": "Strategy that connects to execution.",
+      "tone": "contrast",
+      "width": "content",
+      "animation": "mask-reveal",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "We don't do strategy-only.",
+          "paragraphs": [
+            "Every ClickMasters consulting engagement connects to potential development execution. We have no financial incentive to recommend unnecessary complexity or technology — we build what we recommend, so our recommendations are engineering-calibrated."
+          ]
+        },
+        {
+          "heading": "We don't recommend what we can't build.",
+          "paragraphs": [
+            "AI consulting from organizations that don't build AI produces recommendations that may be sound in theory but impractical in engineering reality. ClickMasters recommends architectures and timelines we've built and delivered, not theoretical best-in-class approaches."
+          ]
+        },
+        {
+          "heading": "We're not technology agnostic.",
+          "paragraphs": [
+            "Claiming technology agnosticism is a consulting cliché that means 'we'll recommend whatever the client already uses.' ClickMasters has genuine preferences based on production experience — specific technology choices that consistently outperform alternatives in specific contexts."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing",
+      "type": "table",
+      "eyebrow": "Pricing 2025",
+      "title": "AI Consulting Pricing Reference — 2025",
+      "description": "Published pricing ranges by consulting service type.",
+      "tone": "surface",
+      "width": "wide",
+      "animation": "horizontal-reveal",
+      "variant": "pricing",
+      "columns": [
+        {
+          "key": "service",
+          "label": "Consulting Service",
+          "align": "left",
+          "width": "40%"
+        },
+        {
+          "key": "cost",
+          "label": "Cost",
+          "align": "left",
+          "width": "30%"
+        },
+        {
+          "key": "timeline",
+          "label": "Timeline",
+          "align": "left",
+          "width": "30%"
+        }
+      ],
+      "rows": [
+        {
+          "id": "readiness",
+          "cells": {
+            "service": "AI Readiness Assessment",
+            "cost": "$15,000 – $40,000",
+            "timeline": "4–6 weeks"
+          }
+        },
+        {
+          "id": "strategy",
+          "cells": {
+            "service": "AI Strategy Development",
+            "cost": "$25,000 – $75,000",
+            "timeline": "6–10 weeks"
+          }
+        },
+        {
+          "id": "selection",
+          "cells": {
+            "service": "Technology Selection / Vendor Eval",
+            "cost": "$10,000 – $30,000",
+            "timeline": "3–5 weeks"
+          }
+        },
+        {
+          "id": "cao",
+          "cells": {
+            "service": "Fractional CAO",
+            "cost": "From $8,000/month",
+            "timeline": "3+ months"
+          }
+        },
+        {
+          "id": "discovery",
+          "cells": {
+            "service": "Paid Discovery (project definition)",
+            "cost": "$5,000 – $15,000",
+            "timeline": "2–4 weeks"
+          }
+        },
+        {
+          "id": "advisory",
+          "cells": {
+            "service": "Advisory hours",
+            "cost": "$200 – $400/hour",
+            "timeline": "As needed"
+          }
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "type": "faq",
+      "eyebrow": "FAQs",
+      "title": "Frequently Asked Questions",
+      "description": "Clear answers about AI consulting capabilities and scope.",
+      "tone": "default",
+      "width": "content",
+      "animation": "fade-up",
+      "variant": "indexed",
+      "items": [
+        {
+          "question": "How much does AI consulting cost?",
+          "answer": "$200–$400/hour for advisory engagements; $15,000–$75,000 for structured consulting engagements depending on scope and organization size. Fractional CAO from $8,000/month."
+        },
+        {
+          "question": "How long does an AI strategy engagement take?",
+          "answer": "AI Readiness Assessment: 4–6 weeks. AI Strategy Development: 6–10 weeks. Technology selection: 3–5 weeks."
+        },
+        {
+          "question": "Does ClickMasters provide AI consulting without committing to development?",
+          "answer": "Yes — consulting engagements are independent of development commitments. Many ClickMasters consulting clients use the strategy outputs to guide development with internal teams or other vendors."
+        },
+        {
+          "question": "What's the difference between ClickMasters AI consulting and a large management consulting firm's AI practice?",
+          "answer": "ClickMasters' consulting is engineering-calibrated — recommendations reflect production experience building and deploying AI in enterprise environments. Large management consulting firm AI practices typically lack deployment experience and produce strategy recommendations that subsequent engineering teams must substantially revise."
+        },
+        {
+          "question": "Can ClickMasters provide a Fractional CAO for board-level AI governance?",
+          "answer": "Yes — ClickMasters Fractional CAO engagements include board presentation capability, investor due diligence support, and regulatory AI governance documentation for organizations with formal governance requirements."
+        },
+        {
+          "question": "How do we start an AI consulting engagement?",
+          "answer": "Contact us — 24-hour response. We typically schedule an initial 60-minute call to understand your situation before scoping."
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "type": "cta",
+      "eyebrow": "Get Started",
+      "heading": "Start Your AI Strategy with ClickMasters",
+      "text": "ClickMasters AI consulting converts the overwhelming AI landscape into a specific, prioritized, costed plan that your organization can execute — without slide decks that gather digital dust.",
+      "tone": "contrast",
+      "width": "wide",
+      "animation": "fade-scale",
+      "primaryCta": {
+        "label": "Get a Free AI Strategy Consultation — 24-Hour Response",
+        "href": "/contact/"
+      },
+      "secondaryCta": {
+        "label": "Email the Consulting Team",
+        "href": "mailto:hello@clickmastersartificialintelligencecompany.com"
+      },
+      "contactEmail": "hello@clickmastersartificialintelligencecompany.com",
+      "variant": "orbital"
+    }
+  ],
+  "relatedPages": [
+    {
+      "title": "Custom AI Development",
+      "description": "Full-stack custom AI development services.",
+      "href": "/custom-ai-development/"
+    },
+    {
+      "title": "Generative AI Development",
+      "description": "Generative AI development services.",
+      "href": "/generative-ai-development/"
+    },
+    {
+      "title": "Machine Learning Model Development",
+      "description": "Custom ML model development services.",
+      "href": "/machine-learning-model-development/"
+    },
+    {
+      "title": "AI Consulting Cost",
+      "description": "AI consulting pricing and cost guide.",
+      "href": "/ai-consulting-cost/"
+    },
+    {
+      "title": "AI Strategy (Glossary)",
+      "description": "AI strategy glossary entry.",
+      "href": "/glossary/ai-strategy/"
+    }
+  ]
+}
