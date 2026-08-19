@@ -31,7 +31,9 @@ function readGlossaryTermFiles(): GlossaryTerm[] {
     glossaryTermsDirectory,
   )
     .filter((fileName) =>
-      fileName.endsWith(".json"),
+      fileName
+        .toLowerCase()
+        .endsWith(".json"),
     )
     .sort((firstFile, secondFile) =>
       firstFile.localeCompare(
@@ -54,9 +56,19 @@ function readGlossaryTermFiles(): GlossaryTerm[] {
           "utf8",
         );
 
-      return JSON.parse(
-        fileContents,
-      ) as GlossaryTerm;
+      try {
+        return JSON.parse(
+          fileContents,
+        ) as GlossaryTerm;
+      } catch (error) {
+        throw new Error(
+          `[Glossary] Failed to parse ${fileName}: ${
+            error instanceof Error
+              ? error.message
+              : String(error)
+          }`,
+        );
+      }
     });
 }
 

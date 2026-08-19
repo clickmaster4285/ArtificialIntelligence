@@ -1,0 +1,208 @@
+{
+  "slug": "ai-for-agriculture",
+  "status": "published",
+  "title": "AI for Agriculture",
+  "shortTitle": "Agriculture AI",
+  "abbreviation": "Agri AI",
+  "letter": "A",
+  "category": "Artificial Intelligence",
+  "shortDefinition": "AI applied to farming, crop monitoring, yield prediction, irrigation, pest detection, and supply planning.",
+  "definition": "AI for agriculture applies machine learning, computer vision, remote sensing, and predictive analytics to farming operations. It helps monitor crop health, predict yields, detect pests and disease, optimize irrigation, guide precision spraying, and improve planning across fields, equipment, labor, and supply chains.",
+  "introduction": "Agriculture AI turns field, weather, satellite, sensor, drone, and equipment data into practical decisions. The best systems are built around measurable outcomes such as higher yield, lower input cost, earlier disease detection, improved water use, and better harvest forecasting.",
+  "featured": false,
+  "aliases": [
+    "agriculture AI",
+    "AI in agriculture",
+    "precision agriculture AI",
+    "smart farming AI",
+    "agritech AI"
+  ],
+  "readingTime": "5 min read",
+  "publishedAt": "2026-08-13",
+  "updatedAt": "2026-08-13",
+  "seo": {
+    "title": "What is AI for Agriculture? Smart Farming AI Defined",
+    "description": "AI for agriculture uses machine learning, computer vision, and sensor data for crop monitoring, yield prediction, irrigation, and pest detection.",
+    "canonical": "/glossary/ai-for-agriculture/",
+    "keywords": [
+      "what is ai for agriculture",
+      "ai in agriculture",
+      "precision agriculture ai",
+      "smart farming ai",
+      "crop monitoring ai"
+    ]
+  },
+  "sections": [
+    {
+      "id": "high-value-applications",
+      "eyebrow": "Use cases",
+      "title": "High-value AI applications in agriculture",
+      "description": "Crop monitoring, yield prediction, irrigation optimization, pest detection, and supply planning.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Common agriculture AI applications include crop health monitoring from drone or satellite imagery, yield forecasting from historical and real-time field data, pest and disease detection through computer vision, irrigation optimization using weather and soil moisture signals, equipment routing, livestock monitoring, and demand or supply planning for harvest operations."
+        },
+        {
+          "type": "key-value-grid",
+          "items": [
+            {
+              "label": "Crop monitoring",
+              "value": "Analyze imagery and sensor data to identify stressed or underperforming areas."
+            },
+            {
+              "label": "Yield prediction",
+              "value": "Forecast expected output using weather, soil, crop stage, and historical yield data."
+            },
+            {
+              "label": "Pest and disease detection",
+              "value": "Use computer vision to identify early signs before damage spreads."
+            },
+            {
+              "label": "Irrigation optimization",
+              "value": "Recommend water use based on soil moisture, forecast weather, and crop needs."
+            },
+            {
+              "label": "Operations planning",
+              "value": "Improve harvest timing, equipment routing, labor planning, and logistics."
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "The key insight",
+          "text": "Agriculture AI works best when predictions are connected to field actions, not left as dashboards that no one can operationalize."
+        }
+      ]
+    },
+    {
+      "id": "data-sources",
+      "eyebrow": "Data",
+      "title": "Data sources used in agriculture AI",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Agriculture AI typically combines several data streams because no single source tells the whole field story. Satellite imagery provides wide coverage, drones provide high-resolution inspection, IoT sensors capture local soil and equipment signals, weather data explains external conditions, and farm management systems provide records for planting, spraying, harvest, and inventory."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Satellite and drone imagery for crop health and field condition analysis.",
+            "Soil moisture, pH, nutrient, and temperature sensors.",
+            "Weather forecasts and historical climate patterns.",
+            "Farm equipment telemetry and GPS data.",
+            "Planting, spraying, fertilization, harvest, and inventory records."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clickmasters-approach",
+      "eyebrow": "ClickMasters approach",
+      "title": "How ClickMasters builds agriculture AI",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "ClickMasters designs agriculture AI around field-level decisions and the available data quality. A typical project starts by defining the operational outcome, validating whether the data can support that outcome, building a model and workflow around real farm constraints, and measuring value through yield, cost, water, time, or loss-reduction metrics."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Use-case selection based on measurable operational value.",
+            "Data readiness assessment across imagery, sensors, weather, and farm records.",
+            "Computer vision or forecasting model development for the target decision.",
+            "Workflow integration for field teams, agronomists, or operations managers.",
+            "Monitoring for seasonal drift as weather, crop varieties, and field conditions change."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "limitations",
+      "eyebrow": "Engineering reality",
+      "title": "Limitations and risks of agriculture AI",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Agriculture AI is highly dependent on local context. Models trained on one region, crop, sensor setup, or season may not generalize cleanly to another. Weather volatility, missing data, inconsistent labeling, changing crop varieties, and limited connectivity can reduce accuracy. The strongest deployments keep humans in the loop and measure whether recommendations improve real field outcomes."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Regional variation can limit model transfer between farms.",
+            "Weather and seasonal changes can create model drift.",
+            "Drone and satellite imagery quality depends on timing, resolution, and cloud cover.",
+            "Sensor data can be noisy, incomplete, or poorly calibrated.",
+            "Recommendations must fit field workflows and equipment constraints."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Important",
+          "text": "Agriculture AI should be validated against real field outcomes before broad rollout. A model that looks accurate on historical data may still fail if the workflow is impractical."
+        }
+      ]
+    },
+    {
+      "id": "best-practices",
+      "eyebrow": "Implementation guide",
+      "title": "Best practices for agriculture AI implementation",
+      "content": [
+        {
+          "type": "numbered-list",
+          "items": [
+            "Start with one measurable outcome, such as reducing water use or improving disease detection.",
+            "Audit data quality before choosing the model approach.",
+            "Validate models across different fields, seasons, and weather patterns.",
+            "Keep agronomists and field operators involved in review and rollout.",
+            "Design recommendations around available equipment and operational constraints.",
+            "Monitor performance every season and retrain when conditions change."
+          ]
+        }
+      ]
+    }
+  ],
+  "faqs": {
+    "eyebrow": "Common questions",
+    "title": "Frequently asked questions about AI for agriculture",
+    "items": [
+      {
+        "question": "What is the most common use of AI in agriculture?",
+        "answer": "Crop monitoring, yield prediction, pest and disease detection, irrigation optimization, and precision spraying are among the most common applications."
+      },
+      {
+        "question": "Does agriculture AI require drones or satellites?",
+        "answer": "Not always. Some use cases rely on farm records, weather data, equipment telemetry, or ground sensors. Imagery is useful for crop monitoring, but it is not mandatory for every project."
+      },
+      {
+        "question": "Why do agriculture AI models need seasonal monitoring?",
+        "answer": "Field conditions, weather, crop varieties, pests, and management practices change over time, so model performance can drift from one season to the next."
+      }
+    ]
+  },
+  "relatedTerms": [
+    "computer-vision",
+    "image-segmentation",
+    "predictive-analytics",
+    "time-series-forecasting",
+    "edge-ai"
+  ],
+  "references": [
+    {
+      "label": "Artificial Intelligence in Agriculture: A Review",
+      "href": "https://arxiv.org/abs/2307.06531",
+      "publisher": "arXiv"
+    }
+  ],
+  "cta": {
+    "eyebrow": "Ready to evaluate agriculture AI?",
+    "title": "Build agriculture AI around measurable field outcomes",
+    "description": "ClickMasters helps teams validate agriculture AI use cases, build crop monitoring and forecasting systems, and deploy practical decision workflows.",
+    "primaryLink": {
+      "label": "Book your free consultation",
+      "href": "/contact"
+    }
+  }
+}

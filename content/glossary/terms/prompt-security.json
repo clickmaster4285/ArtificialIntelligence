@@ -1,0 +1,313 @@
+{
+  "slug": "prompt-security",
+  "status": "published",
+  "title": "Prompt Security",
+  "shortTitle": "Prompt Security",
+  "abbreviation": "PS",
+  "letter": "P",
+  "category": "AI Security",
+  "shortDefinition": "The discipline of protecting AI applications from attacks and misuse that occur through their natural language interfaces — covering prompt injection, jailbreaking, data extraction, and social engineering techniques.",
+  "definition": "Prompt security is the discipline of protecting AI applications from attacks and misuse that occur through their natural language interfaces — covering prompt injection, jailbreaking, data extraction, and social engineering techniques that exploit the flexibility of natural language interaction to bypass intended system behavior. As LLM-powered applications proliferate, the natural language interface creates an attack surface that traditional application security wasn't designed to address.",
+  "introduction": "Prompt security is the discipline of protecting AI applications from attacks and misuse that occur through their natural language interfaces — covering prompt injection, jailbreaking, data extraction, and social engineering techniques that exploit the flexibility of natural language interaction to bypass intended system behavior. As LLM-powered applications proliferate, the natural language interface creates an attack surface that traditional application security wasn't designed to address.",
+  "featured": true,
+  "aliases": [
+    "PS",
+    "AI application security",
+    "LLM security",
+    "prompt injection protection",
+    "AI security"
+  ],
+  "readingTime": "5 min read",
+  "publishedAt": "2026-08-13",
+  "updatedAt": "2026-08-13",
+
+  "seo": {
+    "title": "What is Prompt Security? AI Defined",
+    "description": "Prompt security protects LLM applications from manipulation, injection, and data extraction through their natural language interfaces. Builds from $30K.",
+    "canonical": "/glossary/prompt-security/",
+    "keywords": [
+      "what is prompt security",
+      "prompt security definition",
+      "llm application security",
+      "prompt injection protection",
+      "ai application security services"
+    ]
+  },
+
+  "sections": [
+    {
+      "id": "threat-landscape",
+      "eyebrow": "Threats",
+      "title": "The prompt security threat landscape",
+      "description": "Prompt injection, jailbreaking, system prompt extraction, data exfiltration, and credential harvesting.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Prompt injection — malicious instructions embedded in user input or retrieved external content that override the system prompt or redirect the model's behavior beyond intended scope. Jailbreaking — user techniques for bypassing content policies and safety guardrails by framing requests in ways that circumvent trained refusals. System prompt extraction — users attempting to reveal the contents of the system prompt containing proprietary instructions, competitive intelligence, or configuration details. Data exfiltration — techniques for extracting training data, user data from other sessions, or sensitive information the model was given access to. Credential harvesting — social engineering the model into revealing API keys, connection strings, or other credentials included in its context."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Prompt injection — malicious instructions overriding system behavior.",
+            "Jailbreaking — bypassing content policies and safety guardrails.",
+            "System prompt extraction — revealing proprietary instructions.",
+            "Data exfiltration — extracting sensitive data from sessions.",
+            "Credential harvesting — extracting API keys and credentials."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "The key insight",
+          "text": "Natural language interfaces create an attack surface that traditional application security wasn't designed to address."
+        }
+      ]
+    },
+    {
+      "id": "vs-traditional-security",
+      "eyebrow": "Distinction",
+      "title": "How prompt security differs from traditional application security",
+      "description": "Traditional security controls access through permissions; LLM security adds AI-specific layers for natural language threats.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Traditional application security controls access through authentication and authorization at the system level — you control what users can do through permission systems. LLM applications give users natural language flexibility that makes this boundary-drawing harder: the same input interface that enables legitimate creative queries also enables malicious manipulation. Prompt security adds AI-specific defensive layers — input validation for injection patterns, output monitoring for policy violations and data exfiltration signals, and runtime monitoring for anomalous interaction patterns — alongside traditional application security controls."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Traditional security — authentication, authorization, permissions.",
+            "AI-specific challenge — natural language flexibility blurs boundaries.",
+            "Input validation — detect injection patterns.",
+            "Output monitoring — policy violations and exfiltration signals.",
+            "Runtime monitoring — anomalous interaction patterns."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "success",
+          "title": "Why it matters",
+          "text": "Prompt security adds AI-specific defensive layers alongside traditional controls — because the natural language interface enables threats traditional security wasn't designed for."
+        }
+      ]
+    },
+    {
+      "id": "clickmasters-approach",
+      "eyebrow": "ClickMasters approach",
+      "title": "How ClickMasters implements prompt security for enterprise clients",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "ClickMasters builds prompt security as a layered defense: input validation detecting known injection patterns, output monitoring flagging policy violations and sensitive data exposure, rate limiting and anomalous behavior detection at the session level, and red team testing that probes the application from an attacker's perspective before production deployment."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Layered defense — input validation, output monitoring, rate limiting.",
+            "Injection detection — known pattern identification.",
+            "Anomaly detection — session-level behavior monitoring.",
+            "Red team testing — attacker perspective probing.",
+            "Provider-agnostic — works with any LLM provider."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing",
+      "eyebrow": "Investment",
+      "title": "Prompt security pricing",
+      "content": [
+        {
+          "type": "table",
+          "caption": "Fixed-price prompt security projects from ClickMasters",
+          "headers": ["Project Type", "Price Range", "Timeline"],
+          "rows": [
+            ["Prompt security assessment for existing LLM application", "$30,000 – $60,000", "6–12 weeks"],
+            ["Prompt security controls integrated into new AI development", "$20,000 – $45,000 incremental", "Varies"],
+            ["Full AI application security program with red teaming", "$55,000 – $120,000", "12–20 weeks"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "success",
+          "title": "Full IP ownership",
+          "text": "All projects include full intellectual property transfer. You own everything we build."
+        }
+      ]
+    },
+    {
+      "id": "common-objections",
+      "eyebrow": "Direct answers",
+      "title": "Common objections, answered directly",
+      "content": [
+        {
+          "type": "bullet-list",
+          "items": [
+            "\"Can't we just rely on the LLM provider's safety training for security?\" — Provider safety training reduces risk but doesn't eliminate the application-level attack surface specific to your implementation — ClickMasters adds application-level controls that work in conjunction with, not instead of, model-level safety features.",
+            "\"How much will this cost?\" — $20,000–$120,000 depending on whether this is an assessment, incremental security controls, or a full security program. Fixed quote after Discovery.",
+            "\"How do we test whether our LLM application is vulnerable to prompt injection?\" — ClickMasters conducts systematic prompt injection testing as part of AI application security assessments — building a threat model specific to your application's capabilities and attack surface before designing defenses.",
+            "\"Is prompt injection the same as SQL injection?\" — Analogous in concept (injecting malicious instructions through an input interface) but different in mechanism — SQL injection exploits structured query parsing; prompt injection exploits the model's language understanding to override intended behavior."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "limitations",
+      "eyebrow": "Engineering reality",
+      "title": "Limitations and risks of prompt security",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Prompt security has limitations. No single defense catches all injection variants. Sophisticated attackers can evolve beyond pattern detection. Output monitoring may generate false positives. LLM providers' safety training changes over time. Internal applications still face insider threats. Security controls can impact legitimate user experience. Red team testing is point-in-time and requires ongoing updates. Natural language flexibility makes perfect security unattainable."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "No perfect defense — evolving injection variants.",
+            "Pattern limitations — sophisticated attacks evade detection.",
+            "False positives — output monitoring can be noisy.",
+            "Provider changes — safety training evolves over time.",
+            "Insider threats — internal applications still at risk.",
+            "User experience impact — security controls may affect UX.",
+            "Point-in-time testing — red teaming requires ongoing updates.",
+            "Unattainable perfection — natural language flexibility poses challenges."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Important",
+          "text": "Prompt security requires layered defenses and ongoing updates — perfect security is unattainable against sophisticated attackers, so build defense in depth."
+        }
+      ]
+    },
+    {
+      "id": "best-practices",
+      "eyebrow": "Implementation guide",
+      "title": "Best practices for prompt security implementation",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Implementing prompt security effectively requires layered defenses, systematic testing, and ongoing monitoring. The following practices can help ensure your LLM application is protected against natural language attacks."
+        },
+        {
+          "type": "numbered-list",
+          "title": "Recommended approach:",
+          "items": [
+            "Conduct threat modeling — identify attack surfaces specific to your application.",
+            "Implement input validation — detect known injection patterns.",
+            "Build output monitoring — flag policy violations and sensitive data.",
+            "Add rate limiting — prevent abuse at the session level.",
+            "Run red team testing — probe from an attacker's perspective.",
+            "Monitor for anomalies — detect suspicious interaction patterns.",
+            "Update defenses regularly — as threats evolve.",
+            "Combine with traditional security — authentication and authorization."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "Key metric",
+          "text": "Measure the number of successful injection attempts blocked and time-to-detect anomalous interactions — these reveal whether your prompt security defenses are effective."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "eyebrow": "Common questions",
+    "title": "Frequently asked questions about prompt security",
+    "items": [
+      {
+        "question": "Is prompt injection the same as SQL injection?",
+        "answer": "Analogous in concept (injecting malicious instructions through an input interface) but different in mechanism — SQL injection exploits structured query parsing; prompt injection exploits the model's language understanding to override intended behavior."
+      },
+      {
+        "question": "Can input filtering prevent all prompt injection attacks?",
+        "answer": "Filtering known patterns helps but isn't complete protection — sophisticated injection often evades pattern-matching; ClickMasters combines filtering with output monitoring and rate limiting for defense in depth."
+      },
+      {
+        "question": "What's the risk of a user extracting our system prompt?",
+        "answer": "System prompt extraction reveals proprietary instructions and configuration — ClickMasters designs system prompts with extraction resistance and builds monitoring that alerts when extraction attempts occur."
+      },
+      {
+        "question": "Does prompt security need to be rebuilt for each LLM provider update?",
+        "answer": "Application-level security controls are largely provider-agnostic and don't require rebuild for provider model updates — though new model capabilities sometimes require reassessment of the threat model."
+      },
+      {
+        "question": "How long does a prompt security assessment take?",
+        "answer": "6–20 weeks depending on application complexity and whether red team testing is included."
+      },
+      {
+        "question": "Is prompt security relevant for internal-only LLM applications?",
+        "answer": "Yes — insider threat and accidental misuse risks apply to internal applications; the threat model differs from public-facing applications but prompt security remains relevant."
+      },
+      {
+        "question": "What is the difference between prompt injection and jailbreaking?",
+        "answer": "Prompt injection overrides system instructions to change behavior; jailbreaking bypasses safety guardrails to enable prohibited content. Both are prompt security threats but target different types of restrictions."
+      },
+      {
+        "question": "Can prompt security protect against data exfiltration?",
+        "answer": "Yes — output monitoring can detect patterns consistent with data exfiltration attempts, blocking or flagging responses that contain sensitive data before they reach the user."
+      },
+      {
+        "question": "How does prompt security handle multilingual attacks?",
+        "answer": "Prompt security controls should be language-agnostic — ClickMasters designs detection and monitoring that works across languages, not just English-language injection patterns."
+      }
+    ]
+  },
+
+  "relatedTerms": [
+    "prompt-injection",
+    "agentic-security",
+    "ai-guardrails",
+    "ai-red-teaming",
+    "llm-security"
+  ],
+
+  "references": [
+    {
+      "label": "OWASP Top 10 for LLM Applications",
+      "href": "https://owasp.org/www-project-top-10-for-large-language-model-applications/",
+      "publisher": "OWASP"
+    },
+    {
+      "label": "Prompt Injection: A Comprehensive Survey",
+      "href": "https://arxiv.org/abs/2503.09876",
+      "publisher": "arXiv"
+    }
+  ],
+
+  "additionalResources": [
+    {
+      "label": "What is Prompt Injection?",
+      "href": "/glossary/prompt-injection/"
+    },
+    {
+      "label": "What is Agentic Security?",
+      "href": "/glossary/agentic-security/"
+    },
+    {
+      "label": "What are AI Guardrails?",
+      "href": "/glossary/ai-guardrails/"
+    },
+    {
+      "label": "What is AI Red Teaming?",
+      "href": "/glossary/ai-red-teaming/"
+    }
+  ],
+
+  "cta": {
+    "eyebrow": "Ready to secure your LLM application against prompt-level attacks?",
+    "title": "Get a free AI application security consultation — 24-hour response",
+    "description": "ClickMasters builds layered prompt security combining input validation, output monitoring, and red team testing. From $20,000. Fixed-price. Full IP. 24-hour response.",
+    "primaryLink": {
+      "label": "Book your free consultation",
+      "href": "/contact"
+    },
+    "secondaryLink": {
+      "label": "Get your free project estimate",
+      "href": "/contact"
+    }
+  }
+}

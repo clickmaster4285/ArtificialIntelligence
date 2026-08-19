@@ -1,0 +1,304 @@
+{
+  "slug": "ai-energy-consumption",
+  "status": "published",
+  "title": "AI Energy Consumption",
+  "shortTitle": "AI Energy Consumption",
+  "abbreviation": "AEC",
+  "letter": "E",
+  "category": "AI",
+  "shortDefinition": "The electricity used by AI systems during training and inference — a factor in ESG reporting, cost management, and model selection.",
+  "definition": "AI energy consumption refers to the electricity used by AI systems during training and inference — a growing consideration for organizations managing ESG (Environmental, Social, and Governance) commitments, reporting sustainability impacts accurately, and making model selection decisions that account for environmental cost alongside financial cost. Training large foundation models consumes enormous energy; inference at production scale accumulates meaningful ongoing energy draw that factors into both cost and sustainability calculations.",
+  "introduction": "AI energy consumption refers to the electricity used by AI systems during training and inference — a growing consideration for organizations managing ESG (Environmental, Social, and Governance) commitments, reporting sustainability impacts accurately, and making model selection decisions that account for environmental cost alongside financial cost. Training large foundation models consumes enormous energy; inference at production scale accumulates meaningful ongoing energy draw that factors into both cost and sustainability calculations.",
+  "featured": true,
+  "aliases": [
+    "AEC",
+    "AI energy consumption",
+    "AI carbon footprint",
+    "AI electricity use",
+    "AI sustainability"
+  ],
+  "readingTime": "5 min read",
+  "publishedAt": "2026-08-07",
+  "updatedAt": "2026-08-07",
+
+  "seo": {
+    "title": "What is AI Energy Consumption? Definition",
+    "description": "AI training and inference consume significant energy — a factor in ESG reporting, cost management, and model selection decisions. Definition, from $20K.",
+    "canonical": "/glossary/ai-energy-consumption/",
+    "keywords": [
+      "what is ai energy consumption",
+      "ai energy consumption definition",
+      "ai carbon footprint",
+      "ai esg reporting",
+      "ai sustainability services"
+    ]
+  },
+
+  "sections": [
+    {
+      "id": "training-vs-inference",
+      "eyebrow": "Energy profiles",
+      "title": "Training vs. inference: very different energy profiles",
+      "description": "Training is a massive one-time energy event; inference accumulates ongoing energy draw at production scale.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Training a large foundation model is an enormous one-time energy event — reported estimates for training frontier models range from hundreds of megawatt-hours to multiple gigawatt-hours, comparable to the lifetime driving of hundreds of cars. For most organizations, this cost is borne by AI providers, not directly by the organizations using their APIs. Inference is where most organizations' direct AI energy consumption lies: each API call or self-hosted model inference consumes energy proportional to model size and input length, and at production scale, aggregate inference energy becomes both an ongoing financial cost and a measurable ESG reporting consideration."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Training — enormous one-time energy event (100s–1000s MWh).",
+            "Inference — ongoing energy consumption proportional to usage.",
+            "Provider-borne — training energy is typically borne by AI providers.",
+            "Direct consumption — inference energy is the organization's direct responsibility.",
+            "Scale impact — at production scale, inference energy becomes measurable and material."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "The key insight",
+          "text": "For most organizations, the relevant energy consumption is inference, not training — each API call at production scale accumulates meaningful ongoing energy draw."
+        }
+      ]
+    },
+    {
+      "id": "why-energy-matters",
+      "eyebrow": "Business importance",
+      "title": "Why AI energy consumption matters for enterprise organizations",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Organizations with public ESG commitments or regulatory sustainability reporting requirements need to account for AI systems' energy consumption, which can be non-trivial at production scale. Energy consumption also directly correlates with inference cost — efficiency measures that reduce energy consumption (quantization, distillation, routing, caching) simultaneously reduce cost. Model selection also has an energy dimension: a smaller, more efficient model with acceptable accuracy for a given task consumes meaningfully less energy than a frontier model used for the same task."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "ESG reporting — sustainability commitments require energy accounting.",
+            "Cost correlation — energy efficiency reduces both cost and environmental impact.",
+            "Model selection — smaller models consume less energy.",
+            "Efficiency measures — quantization, distillation, routing, caching reduce both.",
+            "Double benefit — energy reduction improves sustainability and cost simultaneously."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clickmasters-approach",
+      "eyebrow": "ClickMasters approach",
+      "title": "How ClickMasters addresses AI energy consumption for enterprise clients",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "ClickMasters incorporates energy efficiency into model selection and architecture decisions — recommending smaller, more efficient models where accuracy requirements permit, and applying optimization techniques (quantization, caching, routing) that reduce both cost and energy consumption simultaneously. For organizations with formal ESG reporting requirements, ClickMasters can help estimate and document AI systems' energy consumption based on provider-disclosed consumption data and deployment-specific usage metrics."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Energy-efficient model selection — choose smaller models where accuracy permits.",
+            "Optimization techniques — quantization, caching, routing reduce both cost and energy.",
+            "ESG estimation — help estimate and document energy consumption for reporting.",
+            "Provider data — use provider-disclosed consumption data where available.",
+            "Usage-based metrics — energy estimation based on actual deployment usage."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing",
+      "eyebrow": "Investment",
+      "title": "AI energy consumption and sustainability pricing",
+      "content": [
+        {
+          "type": "table",
+          "caption": "Fixed-price AI energy and sustainability projects from ClickMasters",
+          "headers": ["Project Type", "Price Range", "Timeline"],
+          "rows": [
+            ["AI energy consumption estimation for ESG reporting", "$20,000 – $40,000", "4–8 weeks"],
+            ["Energy-efficient model selection and architecture review", "$25,000 – $50,000", "6–10 weeks"],
+            ["AI sustainability strategy across your AI portfolio", "$40,000 – $85,000", "8–16 weeks"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "success",
+          "title": "Full IP ownership",
+          "text": "All projects include full intellectual property transfer. You own everything we build."
+        }
+      ]
+    },
+    {
+      "id": "common-objections",
+      "eyebrow": "Direct answers",
+      "title": "Common objections, answered directly",
+      "content": [
+        {
+          "type": "bullet-list",
+          "items": [
+            "\"Do we need to report AI energy consumption in our ESG disclosures?\" — Regulatory requirements vary by jurisdiction and are evolving — ClickMasters recommends consulting legal counsel for definitive reporting obligations, while helping quantify consumption for disclosure purposes when required.",
+            "\"How much will this cost?\" — $20,000–$85,000 depending on whether this is consumption estimation, model optimization, or a full portfolio sustainability strategy. Fixed quote after Discovery.",
+            "\"Can we reduce our AI energy consumption without significantly reducing AI quality?\" — Often yes — quantization, model routing, and caching reduce energy consumption and cost without proportionate quality loss; ClickMasters validates quality impact before recommending specific efficiency measures.",
+            "\"Is using cloud AI providers better or worse for sustainability than self-hosting?\" — Major cloud providers typically run on increasingly renewable energy mixes and achieve higher hardware utilization rates than dedicated on-premise infrastructure."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "limitations",
+      "eyebrow": "Engineering reality",
+      "title": "Limitations and risks of AI energy management",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "AI energy management has limitations. Provider energy consumption data is often not disclosed with sufficient granularity. Energy efficiency optimizations may require tradeoffs in latency or model capability. Estimating energy consumption for complex workloads requires accurate usage monitoring. Renewable energy commitments vary by provider and region. ESG reporting requirements are evolving and may change. Energy efficiency improvements may be offset by increased usage. Some optimizations reduce energy but add complexity to deployment."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Data availability — provider energy data is often limited.",
+            "Tradeoffs — efficiency optimizations may affect latency or capability.",
+            "Estimation complexity — requires accurate usage monitoring.",
+            "Provider variability — renewable energy commitments vary.",
+            "Regulatory evolution — ESG requirements are changing.",
+            "Jevons paradox — efficiency may increase usage."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Important",
+          "text": "AI energy management requires accurate usage monitoring and awareness of provider-specific energy data. Start with measurement before optimization."
+        }
+      ]
+    },
+    {
+      "id": "best-practices",
+      "eyebrow": "Implementation guide",
+      "title": "Best practices for AI energy management",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Managing AI energy consumption effectively requires measurement, efficiency optimization, and reporting. The following practices can help ensure you understand and reduce your AI energy footprint."
+        },
+        {
+          "type": "numbered-list",
+          "title": "Recommended approach:",
+          "items": [
+            "Measure current AI energy consumption to establish a baseline.",
+            "Choose efficient models where accuracy permits.",
+            "Apply optimization techniques (quantization, routing, caching).",
+            "Monitor usage and energy consumption over time.",
+            "Use provider renewable energy data where available.",
+            "Consider smaller, specialized models for specific tasks.",
+            "Document energy consumption for ESG reporting.",
+            "Review and update energy strategy as capabilities evolve."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "Key metric",
+          "text": "Measure energy consumption per successful outcome — the true metric is energy per unit of business value, not energy per API call."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "eyebrow": "Common questions",
+    "title": "Frequently asked questions about AI energy consumption",
+    "items": [
+      {
+        "question": "How is AI energy consumption measured?",
+        "answer": "Measured in kilowatt-hours (kWh) per model call or per time period, estimated from provider-disclosed consumption data, hardware specifications, and deployment-specific usage metrics."
+      },
+      {
+        "question": "Is using cloud AI providers better or worse for sustainability than self-hosting?",
+        "answer": "Major cloud providers typically run on increasingly renewable energy mixes and achieve higher hardware utilization rates than dedicated on-premise infrastructure — though provider-specific renewable energy commitments vary and should be verified."
+      },
+      {
+        "question": "Does model efficiency (smaller models, quantization) meaningfully reduce energy consumption?",
+        "answer": "Yes, proportionally — smaller models and quantized models require less compute per inference, directly reducing energy consumption at scale."
+      },
+      {
+        "question": "How does AI inference energy consumption compare to other business IT energy uses?",
+        "answer": "Highly variable by AI application scale; ClickMasters estimates specifically for your deployment rather than offering generic comparisons."
+      },
+      {
+        "question": "How long does an AI energy consumption assessment take?",
+        "answer": "4–16 weeks depending on the scope — consumption estimation for reporting versus a full sustainability strategy across your AI portfolio."
+      },
+      {
+        "question": "Will providers disclose energy consumption data needed for ESG reporting?",
+        "answer": "Provider disclosure varies and continues to evolve; ClickMasters helps identify available data sources and build reasonable estimates where direct measurement isn't possible."
+      },
+      {
+        "question": "What is the carbon footprint of training a large language model?",
+        "answer": "Training frontier models can emit hundreds of tons of CO2 equivalent, comparable to the lifetime emissions of multiple cars. For most organizations, this is indirectly relevant as it's borne by model providers, not end users."
+      },
+      {
+        "question": "Can AI itself help reduce energy consumption elsewhere?",
+        "answer": "Yes — AI can optimize energy usage in buildings, manufacturing, transportation, and other domains. This is a separate consideration from AI's own energy consumption, and the net impact of AI on sustainability is complex."
+      },
+      {
+        "question": "What is the relationship between AI energy consumption and AI cost?",
+        "answer": "Energy consumption and cost are correlated — both are driven by compute usage. Efficiency measures that reduce energy (quantization, routing, caching) typically reduce cost as well."
+      },
+      {
+        "question": "How do I report AI energy consumption for ESG purposes?",
+        "answer": "Reporting requirements vary by jurisdiction and framework. ClickMasters helps quantify consumption and structure it for reporting, while legal counsel advises on specific disclosure obligations."
+      }
+    ]
+  },
+
+  "relatedTerms": [
+    "ai-total-cost-of-ownership",
+    "inference-vs-training",
+    "quantization",
+    "ai-governance",
+    "sustainability"
+  ],
+
+  "references": [
+    {
+      "label": "Energy and Policy Considerations for Deep Learning in NLP",
+      "href": "https://arxiv.org/abs/1906.02243",
+      "publisher": "arXiv"
+    },
+    {
+      "label": "The Carbon Footprint of Machine Learning",
+      "href": "https://arxiv.org/abs/2106.08956",
+      "publisher": "arXiv"
+    }
+  ],
+
+  "additionalResources": [
+    {
+      "label": "What is AI Total Cost of Ownership?",
+      "href": "/glossary/ai-total-cost-of-ownership/"
+    },
+    {
+      "label": "What is Inference vs. Training?",
+      "href": "/glossary/inference-vs-training/"
+    },
+    {
+      "label": "What is Quantization?",
+      "href": "/glossary/quantization/"
+    }
+  ],
+
+  "cta": {
+    "eyebrow": "Ready to measure and manage your AI system's energy footprint?",
+    "title": "Get a free AI sustainability consultation — 24-hour response",
+    "description": "ClickMasters estimates AI energy consumption for ESG reporting and recommends efficiency measures that reduce both cost and environmental impact. From $20,000. Fixed-price. Full IP. 24-hour response.",
+    "primaryLink": {
+      "label": "Book your free consultation",
+      "href": "/contact"
+    },
+    "secondaryLink": {
+      "label": "Get your free project estimate",
+      "href": "/contact"
+    }
+  }
+}

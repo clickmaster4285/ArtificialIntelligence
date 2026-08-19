@@ -207,6 +207,39 @@ export function NeuralCtaSection({
 
   const reduceMotion = useReducedMotion();
 
+  const heading =
+    section.heading ??
+    section.title ??
+    "Have an idea worth shipping? Tell us about it.";
+
+  const text =
+    section.text ??
+    section.description ??
+    "A software house crafting AI products, web platforms and mobile experiences that ship faster and feel unreasonably good.";
+
+  const emailFromSecondary =
+    section.secondaryCta?.href.startsWith(
+      "mailto:",
+    )
+      ? section.secondaryCta.href.replace(
+          "mailto:",
+          "",
+        )
+      : undefined;
+
+  const contactEmail =
+    section.contactEmail ??
+    emailFromSecondary ??
+    ctaEmail;
+
+  const secondaryHref =
+    section.secondaryCta?.href ??
+    `mailto:${contactEmail}`;
+
+  const secondaryLabel =
+    section.secondaryCta?.label ??
+    contactEmail;
+
   const { scrollYProgress } = useScroll({
     target: sectionRef,
     offset: [
@@ -404,17 +437,7 @@ export function NeuralCtaSection({
                   "text-white",
                 )}
               >
-                Have an idea worth{" "}
-                <span
-                  className={cn(
-                    "bg-[linear-gradient(110deg,var(--neural-primary),var(--neural-secondary),var(--neural-highlight))]",
-                    "bg-clip-text",
-                    "italic text-transparent",
-                  )}
-                >
-                  shipping
-                </span>
-                ? Tell us about it.
+                {heading}
               </h2>
             </TextMaskReveal>
 
@@ -431,11 +454,7 @@ export function NeuralCtaSection({
                   "lg:text-[1.05rem]",
                 )}
               >
-                A software house crafting
-                AI products, web platforms
-                and mobile experiences that
-                ship faster and feel
-                unreasonably good.
+                {text}
               </p>
             </MotionReveal>
 
@@ -469,7 +488,8 @@ export function NeuralCtaSection({
                     "hover:bg-[var(--neural-secondary)]",
                   )}
                 >
-                  Book a discovery call
+                  {section.primaryCta?.label ??
+                    "Book a discovery call"}
                   <ArrowRight
                     aria-hidden="true"
                     className={cn(
@@ -481,7 +501,7 @@ export function NeuralCtaSection({
                 </Link>
 
                 <Link
-                  href={`mailto:${ctaEmail}`}
+                  href={secondaryHref}
                   className={cn(
                     "inline-flex h-12",
                     "items-center gap-3",
@@ -495,12 +515,12 @@ export function NeuralCtaSection({
                     "transition-colors",
                     "hover:text-white",
                   )}
-                >
+                  >
                   <Mail
                     aria-hidden="true"
                     className="h-4 w-4 text-[var(--neural-secondary)]"
                   />
-                  {ctaEmail}
+                  {secondaryLabel}
                 </Link>
               </div>
             </MotionReveal>
@@ -561,7 +581,8 @@ export function NeuralCtaSection({
                     "text-white/45",
                   )}
                 >
-                  {trustItems[1]}
+                  {section.trustText ??
+                    trustItems[1]}
                 </p>
               </div>
             </div>

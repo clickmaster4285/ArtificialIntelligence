@@ -502,13 +502,14 @@ export interface CalloutSection extends BaseSection {
 export interface CtaSection extends BaseSection {
   type: "cta";
 
-  heading: string;
-  text: string;
+  heading?: string;
+  text?: string;
 
   primaryCta: PageLink;
   secondaryCta?: PageLink;
 
   contactEmail?: string;
+  trustText?: string;
 
   variant?:
     | "glowing-panel"

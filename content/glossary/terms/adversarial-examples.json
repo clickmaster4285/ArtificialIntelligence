@@ -1,0 +1,305 @@
+{
+  "slug": "adversarial-examples",
+  "status": "published",
+  "title": "Adversarial Examples",
+  "shortTitle": "Adversarial Examples",
+  "abbreviation": "AdvEx",
+  "letter": "A",
+  "category": "AI Security",
+  "shortDefinition": "Inputs crafted to cause an AI model to make a specific wrong prediction, exposing model vulnerabilities.",
+  "definition": "Adversarial examples are inputs deliberately crafted to cause an AI model to make a specific, incorrect prediction — exploiting the model's learned decision boundaries in ways that are often imperceptible to humans but reliably fool the model. The classic example: an image of a panda with carefully engineered pixel noise added that is invisible to the human eye but causes a well-performing image classifier to confidently predict 'gibbon.' Adversarial examples reveal that AI models can learn brittle pattern shortcuts rather than the robust representations we assume they've learned.",
+  "introduction": "Adversarial examples are inputs deliberately crafted to cause an AI model to make a specific, incorrect prediction — exploiting the model's learned decision boundaries in ways that are often imperceptible to humans but reliably fool the model. The classic example: an image of a panda with carefully engineered pixel noise added that is invisible to the human eye but causes a well-performing image classifier to confidently predict 'gibbon.' Adversarial examples reveal that AI models can learn brittle pattern shortcuts rather than the robust representations we assume they've learned.",
+  "featured": true,
+  "aliases": [
+    "AdvEx",
+    "adversarial examples",
+    "adversarial attacks",
+    "adversarial inputs",
+    "adversarial perturbations"
+  ],
+  "readingTime": "6 min read",
+  "publishedAt": "2026-08-07",
+  "updatedAt": "2026-08-07",
+
+  "seo": {
+    "title": "What are Adversarial Examples? AI Defined",
+    "description": "Adversarial examples are inputs crafted to cause an AI model to make a specific wrong prediction, exposing model vulnerabilities. Definition, from $30K.",
+    "canonical": "/glossary/adversarial-examples/",
+    "keywords": [
+      "what are adversarial examples ai",
+      "adversarial examples definition",
+      "adversarial attacks machine learning",
+      "adversarial robustness",
+      "adversarial testing services"
+    ]
+  },
+
+  "sections": [
+    {
+      "id": "why-adversarial-examples-matter",
+      "eyebrow": "Business relevance",
+      "title": "Why adversarial examples matter for enterprise AI",
+      "description": "For most internal applications, adversarial examples are a research curiosity; they become a practical concern in adversarial environments.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "For most internal enterprise AI applications, adversarial examples are a research curiosity with limited practical threat — it's unlikely that attackers would invest in crafting adversarial inputs against, say, an internal churn prediction model. Adversarial examples become a meaningful practical concern for AI systems deployed in adversarial environments: fraud detection models that bad actors actively probe to find inputs classified as legitimate; content moderation systems that spammers experiment against to find bypasses; identity verification or biometric systems; and any AI system whose decision affects an external party who has incentive to manipulate it."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Internal applications — limited practical threat.",
+            "Adversarial environments — fraud detection, content moderation, identity verification.",
+            "External incentives — systems where parties have motivation to manipulate.",
+            "Practical concern — when the model's decisions affect external parties.",
+            "Threat assessment — not all AI systems need adversarial robustness."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "The key insight",
+          "text": "Adversarial examples are a meaningful practical concern when the AI system's decisions affect external parties with incentive to manipulate it — not for every AI application."
+        }
+      ]
+    },
+    {
+      "id": "types-of-attacks",
+      "eyebrow": "Attack types",
+      "title": "Types of adversarial attacks",
+      "description": "White-box, black-box, physical, and transfer attacks represent different threat models and attacker capabilities.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "White-box attacks assume the attacker knows the model architecture and parameters — producing the most effective adversarial examples but requiring privileged access. Black-box attacks assume the attacker can only query the model and observe its outputs — more realistic for most deployed systems, and still often effective. Physical adversarial attacks involve real-world manipulations (specially printed glasses that fool facial recognition, modified stop signs that fool autonomous vehicle perception) — relevant for computer vision systems operating in physical environments. Transfer attacks use adversarial examples generated against one model to attack a different model — exploiting the finding that adversarial examples often transfer across model architectures."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "White-box — attacker knows model architecture (most effective, requires access).",
+            "Black-box — attacker can only query and observe outputs (realistic for most systems).",
+            "Physical — real-world manipulations (glasses, modified signs).",
+            "Transfer — examples generated on one model attack a different model.",
+            "Threat modeling — different attacks apply to different deployment contexts."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clickmasters-approach",
+      "eyebrow": "ClickMasters approach",
+      "title": "How ClickMasters tests and improves adversarial robustness",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "ClickMasters includes adversarial robustness evaluation in red teaming assessments for any AI system deployed in an adversarial environment — testing the model against representative adversarial attack strategies relevant to your specific deployment context. Where adversarial robustness is a meaningful concern, ClickMasters applies adversarial training techniques (training the model on adversarial examples alongside normal examples) to improve resistance, validated against the specific attack types relevant to your actual threat model."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Red teaming integration — adversarial evaluation in adversarial environments.",
+            "Context-specific testing — relevant attack strategies for your deployment.",
+            "Adversarial training — improve resistance against identified attack types.",
+            "Validation — confirm robustness improvement on your specific threat model.",
+            "Honest assessment — not every system needs adversarial robustness."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing",
+      "eyebrow": "Investment",
+      "title": "Adversarial robustness pricing",
+      "content": [
+        {
+          "type": "table",
+          "caption": "Fixed-price adversarial robustness projects from ClickMasters",
+          "headers": ["Project Type", "Price Range", "Timeline"],
+          "rows": [
+            ["Adversarial robustness assessment for existing model", "$30,000 – $65,000", "8–14 weeks"],
+            ["Adversarial training for improved model robustness", "$40,000 – $90,000", "10–18 weeks"],
+            ["Adversarial robustness included in new AI red teaming", "Included in red teaming scope", "Varies"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "success",
+          "title": "Full IP ownership",
+          "text": "All projects include full intellectual property transfer. You own everything we build."
+        }
+      ]
+    },
+    {
+      "id": "common-objections",
+      "eyebrow": "Direct answers",
+      "title": "Common objections, answered directly",
+      "content": [
+        {
+          "type": "bullet-list",
+          "items": [
+            "\"Do we need to worry about adversarial examples for our use case?\" — ClickMasters assesses your specific threat model honestly — adversarial robustness is most critical for systems deployed in genuinely adversarial environments where external parties have incentive and capability to probe and manipulate the model.",
+            "\"How much will this cost?\" — $30,000–$90,000 depending on assessment scope and whether adversarial training is included. Fixed quote after Discovery.",
+            "\"Can adversarial training eliminate vulnerability to adversarial examples?\" — It substantially improves robustness against known attack types but doesn't provide absolute immunity — adversarial robustness is a cat-and-mouse dynamic, and ClickMasters is honest about the limits of any specific hardening approach.",
+            "\"How easy is it for a real attacker to craft adversarial examples against our model?\" — For a deployed production model without direct access to architecture and weights, crafting effective adversarial examples requires significant effort — but for high-stakes decisions, sophisticated adversaries do invest in this."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "limitations",
+      "eyebrow": "Engineering reality",
+      "title": "Limitations and risks of adversarial robustness",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Adversarial robustness has limitations. Complete robustness at practical accuracy levels remains an unsolved problem. Adversarial training can reduce normal accuracy. Defense mechanisms can be defeated by new attack techniques. Testing may not cover all possible adversarial strategies. There is a cat-and-mouse dynamic — defenses that work today may fail tomorrow. Over-investment in adversarial robustness for low-risk applications can be wasteful. Some models are inherently more vulnerable than others due to their architecture."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "No perfect defense — complete robustness is unsolved.",
+            "Accuracy tradeoff — adversarial training can reduce normal accuracy.",
+            "Evolving attacks — defenses can be defeated by new techniques.",
+            "Testing coverage — may not catch all adversarial strategies.",
+            "Cat-and-mouse dynamic — robustness is not permanent.",
+            "Over-investment risk — not all applications need adversarial robustness."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Important",
+          "text": "Adversarial robustness is a cat-and-mouse dynamic. Defenses improve robustness but don't provide absolute guarantees. Assess your actual threat model before investing."
+        }
+      ]
+    },
+    {
+      "id": "best-practices",
+      "eyebrow": "Implementation guide",
+      "title": "Best practices for adversarial robustness",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Building adversarial robustness effectively requires threat modeling, targeted testing, and honest assessment. The following practices can help ensure you invest in robustness where it matters."
+        },
+        {
+          "type": "numbered-list",
+          "title": "Recommended approach:",
+          "items": [
+            "Assess your actual threat model — is adversarial manipulation a genuine risk?",
+            "Test against attack types relevant to your deployment context.",
+            "Consider adversarial training when the risk justifies the accuracy tradeoff.",
+            "Validate robustness improvements on held-out adversarial examples.",
+            "Don't over-invest for low-risk applications.",
+            "Monitor for new attack techniques over time.",
+            "Document robustness decisions and limitations.",
+            "Combine with broader AI security practices (red teaming, guardrails)."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "Key metric",
+          "text": "Measure adversarial accuracy — the model's accuracy on adversarial examples. The goal is improving this while maintaining normal accuracy."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "eyebrow": "Common questions",
+    "title": "Frequently asked questions about adversarial examples",
+    "items": [
+      {
+        "question": "Are adversarial examples only a concern for image classification models?",
+        "answer": "No — adversarial examples exist for text models (crafted inputs that manipulate LLM responses), structured data models (carefully modified loan applications that bypass fraud detection), and other modalities beyond images."
+      },
+      {
+        "question": "How easy is it for a real attacker to craft adversarial examples against our model?",
+        "answer": "For a deployed production model without direct access to architecture and weights, crafting effective adversarial examples requires significant effort — but for high-stakes decisions, sophisticated adversaries with financial motivation (fraud, bypass of access controls) do invest in this."
+      },
+      {
+        "question": "Is red teaming the same as adversarial robustness testing?",
+        "answer": "Red teaming is the broader practice of adversarial testing; adversarial robustness testing specifically evaluates resistance to crafted adversarial inputs — it's one component within a broader red team assessment."
+      },
+      {
+        "question": "Can we make our model completely robust against adversarial examples?",
+        "answer": "Provable complete robustness at practical accuracy levels remains an unsolved problem — adversarial training and certified defenses improve robustness substantially but don't provide absolute guarantees."
+      },
+      {
+        "question": "How long does adversarial robustness assessment and training take?",
+        "answer": "8–18 weeks depending on model complexity and whether adversarial training is included."
+      },
+      {
+        "question": "Does adversarial training reduce a model's normal (non-adversarial) accuracy?",
+        "answer": "Often slightly, yes — there's a known accuracy-robustness tradeoff. ClickMasters evaluates whether the robustness gain is worth the accuracy cost for your specific use case."
+      },
+      {
+        "question": "What is the difference between adversarial examples and prompt injection?",
+        "answer": "Adversarial examples are crafted inputs that exploit model decision boundaries. Prompt injection is a specific type of adversarial input that manipulates LLM instructions. Prompt injection is a subset of adversarial examples for LLM applications."
+      },
+      {
+        "question": "Can adversarial examples be detected automatically?",
+        "answer": "Some detection methods exist, but adversaries can adapt to bypass detection. Robustness is generally preferred over detection as a defense strategy. ClickMasters advises on appropriate approaches based on your threat model."
+      },
+      {
+        "question": "What is the relationship between adversarial examples and model interpretability?",
+        "answer": "Adversarial examples highlight the brittleness of model decision boundaries. Better interpretability can help identify where models may be vulnerable, but it doesn't guarantee robustness. Both are aspects of model trustworthiness."
+      },
+      {
+        "question": "Are adversarial examples a concern for LLM-based applications?",
+        "answer": "Yes — adversarial inputs for LLMs include prompt injection, jailbreaking, and other crafted inputs that manipulate model behavior. The specific attack vectors differ from computer vision but the underlying concern is similar."
+      }
+    ]
+  },
+
+  "relatedTerms": [
+    "ai-red-teaming",
+    "model-explainability",
+    "agentic-security",
+    "adversarial-robustness",
+    "prompt-injection"
+  ],
+
+  "references": [
+    {
+      "label": "Intriguing Properties of Neural Networks (Adversarial Examples Discovery)",
+      "href": "https://arxiv.org/abs/1312.6199",
+      "publisher": "arXiv"
+    },
+    {
+      "label": "Adversarial Examples: A Comprehensive Survey",
+      "href": "https://arxiv.org/abs/2106.08956",
+      "publisher": "arXiv"
+    }
+  ],
+
+  "additionalResources": [
+    {
+      "label": "Responsible AI & Compliance Services",
+      "href": "/responsible-ai-compliance/"
+    },
+    {
+      "label": "What is AI Red Teaming?",
+      "href": "/glossary/ai-red-teaming/"
+    },
+    {
+      "label": "What is Agentic Security?",
+      "href": "/glossary/agentic-security/"
+    }
+  ],
+
+  "cta": {
+    "eyebrow": "Ready to assess your AI system's adversarial robustness?",
+    "title": "Get a free adversarial robustness consultation — 24-hour response",
+    "description": "ClickMasters tests adversarial robustness for AI systems deployed in genuinely adversarial environments, applying hardening where the threat model justifies it. From $30,000. Fixed-price. Full IP. 24-hour response.",
+    "primaryLink": {
+      "label": "Book your free consultation",
+      "href": "/contact"
+    },
+    "secondaryLink": {
+      "label": "Get your free project estimate",
+      "href": "/contact"
+    }
+  }
+}

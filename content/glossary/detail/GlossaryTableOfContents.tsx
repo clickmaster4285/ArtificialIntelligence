@@ -131,7 +131,7 @@ export function GlossaryTableOfContents({
   }, [sections]);
 
   function handleSectionClick(
-    event: MouseEvent<HTMLAnchorElement>,
+    event: MouseEvent<HTMLButtonElement>,
     sectionId: string,
   ) {
     event.preventDefault();
@@ -153,12 +153,6 @@ export function GlossaryTableOfContents({
         : "smooth",
       block: "start",
     });
-
-    window.history.replaceState(
-      null,
-      "",
-      `#${sectionId}`,
-    );
   }
 
   function scrollToTop() {
@@ -295,8 +289,8 @@ export function GlossaryTableOfContents({
                   key={section.id}
                   className="relative"
                 >
-                  <a
-                    href={`#${section.id}`}
+                  <button
+                    type="button"
                     onClick={(event) =>
                       handleSectionClick(
                         event,
@@ -310,11 +304,13 @@ export function GlossaryTableOfContents({
                     }
                     className={cn(
                       "group/link relative",
+                      "w-full",
                       "flex items-start",
                       "gap-3",
                       "overflow-hidden",
                       "rounded-xl",
                       "px-3 py-3",
+                      "text-left",
                       "transition-all",
                       "duration-300",
                       isActive
@@ -376,7 +372,7 @@ export function GlossaryTableOfContents({
                     >
                       {section.title}
                     </span>
-                  </a>
+                  </button>
                 </li>
               );
             },

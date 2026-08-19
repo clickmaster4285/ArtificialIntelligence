@@ -1,0 +1,312 @@
+{
+  "slug": "ai-regulatory-compliance",
+  "status": "published",
+  "title": "AI Regulatory Compliance",
+  "shortTitle": "AI Regulatory Compliance",
+  "abbreviation": "ARC",
+  "letter": "C",
+  "category": "AI Governance",
+  "shortDefinition": "Ensuring AI systems meet applicable laws including the EU AI Act, GDPR, HIPAA, and sector-specific rules.",
+  "definition": "AI regulatory compliance is the practice of ensuring AI systems meet applicable legal and regulatory requirements — spanning general data protection laws (GDPR, CCPA), sector-specific regulations (HIPAA for healthcare, SR 11-7 for banking model risk, FCRA for credit decisions), and the emerging AI-specific regulatory frameworks (EU AI Act, emerging US state AI laws) that are creating explicit obligations for how AI systems must be developed, validated, documented, and monitored. AI regulatory compliance is evolving rapidly, with requirements that didn't exist three years ago now applying to a growing range of AI applications.",
+  "introduction": "AI regulatory compliance is the practice of ensuring AI systems meet applicable legal and regulatory requirements — spanning general data protection laws (GDPR, CCPA), sector-specific regulations (HIPAA for healthcare, SR 11-7 for banking model risk, FCRA for credit decisions), and the emerging AI-specific regulatory frameworks (EU AI Act, emerging US state AI laws) that are creating explicit obligations for how AI systems must be developed, validated, documented, and monitored. AI regulatory compliance is evolving rapidly, with requirements that didn't exist three years ago now applying to a growing range of AI applications.",
+  "featured": true,
+  "aliases": [
+    "ARC",
+    "AI compliance",
+    "regulatory compliance",
+    "EU AI Act compliance",
+    "AI regulation"
+  ],
+  "readingTime": "6 min read",
+  "publishedAt": "2026-08-07",
+  "updatedAt": "2026-08-07",
+
+  "seo": {
+    "title": "What is AI Regulatory Compliance? Defined",
+    "description": "AI regulatory compliance ensures AI systems meet applicable laws including the EU AI Act, GDPR, HIPAA, and sector-specific rules. Builds from $35K.",
+    "canonical": "/glossary/ai-regulatory-compliance/",
+    "keywords": [
+      "what is ai regulatory compliance",
+      "ai regulatory compliance definition",
+      "eu ai act compliance",
+      "ai compliance requirements",
+      "ai regulatory services"
+    ]
+  },
+
+  "sections": [
+    {
+      "id": "key-regulatory-frameworks",
+      "eyebrow": "Core frameworks",
+      "title": "The key regulatory frameworks affecting AI systems",
+      "description": "EU AI Act, GDPR, HIPAA, SR 11-7, and CCPA/CPRA impose distinct requirements on AI systems.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "EU AI Act — the most comprehensive AI-specific regulation globally, categorizing AI systems by risk level and imposing requirements ranging from disclosure (for lower-risk systems) to conformity assessment, bias testing, and ongoing monitoring (for high-risk systems). Applies to organizations using AI systems in the EU market regardless of where the AI is developed. GDPR — applies to AI processing personal data about EU individuals, including specific provisions on automated decision-making and the right to explanation for algorithmically-driven decisions. HIPAA — applies to AI systems processing protected health information, including AI diagnostic, risk scoring, and clinical decision support tools. SR 11-7 / OCC model risk management guidance — US banking regulators' framework for model validation and governance, increasingly applied to AI/ML models used in credit, fraud, and risk decisions. CCPA/CPRA — California data privacy law with AI-specific implications for automated decision-making."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "EU AI Act — risk-based classification, conformity assessment, bias testing.",
+            "GDPR — automated decision-making, right to explanation.",
+            "HIPAA — protected health information, diagnostic and clinical tools.",
+            "SR 11-7 — model validation and governance for banking AI.",
+            "CCPA/CPRA — California privacy with AI decision-making implications."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "The key insight",
+          "text": "AI regulatory compliance is evolving rapidly — requirements that didn't exist three years ago now apply to a growing range of AI applications."
+        }
+      ]
+    },
+    {
+      "id": "compliance-vs-governance",
+      "eyebrow": "Distinction",
+      "title": "The difference between compliance and governance",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "AI governance is the internal organizational framework your organization establishes — policies, processes, and accountability structures for managing AI risk across your portfolio. AI regulatory compliance is the external obligation — what specific laws and regulations require your AI systems to do, document, or demonstrate. Governance should be designed to satisfy regulatory compliance requirements, but compliance obligations exist regardless of whether your governance framework is mature. ClickMasters addresses both: governance framework design (internal) and regulatory compliance requirements (external)."
+        },
+        {
+          "type": "table",
+          "caption": "AI governance vs. AI regulatory compliance",
+          "headers": ["Aspect", "AI Governance", "AI Regulatory Compliance"],
+          "rows": [
+            ["Source", "Internal organizational choices", "External laws and regulations"],
+            ["Purpose", "Manage AI risk across the portfolio", "Meet legal obligations"],
+            ["Scope", "All AI systems", "Systems in scope of specific regulations"],
+            ["Flexibility", "Can be designed to fit your context", "Fixed requirements"],
+            ["Implementation", "Internal policies and processes", "Documentation, validation, monitoring"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Complementary practices",
+          "text": "Governance should be designed to satisfy regulatory compliance requirements, but compliance obligations exist regardless of governance maturity."
+        }
+      ]
+    },
+    {
+      "id": "clickmasters-approach",
+      "eyebrow": "ClickMasters approach",
+      "title": "How ClickMasters supports AI regulatory compliance for enterprise clients",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "ClickMasters provides technical compliance support — building the documentation, validation evidence, monitoring infrastructure, and bias testing that compliance requirements demand — alongside regulatory education to help clients understand what each applicable framework requires. ClickMasters is not a law firm and doesn't provide legal compliance guarantees; definitive legal compliance determinations require qualified legal counsel, with ClickMasters' technical work informing and supporting that legal assessment."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Technical compliance support — documentation, validation, monitoring.",
+            "Regulatory education — help understand applicable requirements.",
+            "Bias testing — compliance-ready fairness validation.",
+            "Documentation packages — model cards, validation reports, monitoring evidence.",
+            "Legal support — technical work informs legal compliance assessment."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing",
+      "eyebrow": "Investment",
+      "title": "AI regulatory compliance pricing",
+      "content": [
+        {
+          "type": "table",
+          "caption": "Fixed-price AI compliance projects from ClickMasters",
+          "headers": ["Project Type", "Price Range", "Timeline"],
+          "rows": [
+            ["AI regulatory compliance gap assessment", "$35,000 – $70,000", "8–14 weeks"],
+            ["EU AI Act readiness assessment and remediation plan", "$45,000 – $100,000", "10–18 weeks"],
+            ["Technical compliance documentation package for specific regulation", "$50,000 – $120,000", "12–20 weeks"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "success",
+          "title": "Full IP ownership",
+          "text": "All projects include full intellectual property transfer. You own everything we build."
+        }
+      ]
+    },
+    {
+      "id": "common-objections",
+      "eyebrow": "Direct answers",
+      "title": "Common objections, answered directly",
+      "content": [
+        {
+          "type": "bullet-list",
+          "items": [
+            "\"Does the EU AI Act apply to us if we're a US company?\" — If you offer AI systems or AI-enabled products to users in the EU market, EU AI Act obligations likely apply regardless of where your company is based — ClickMasters recommends legal consultation for definitive jurisdictional scope determination.",
+            "\"How much will this cost?\" — $35,000–$120,000 depending on the number of applicable regulations and the gap between current documentation and compliance requirements. Fixed quote after Discovery.",
+            "\"We're already compliant with GDPR — does that cover AI compliance?\" — GDPR compliance is one component; AI-specific regulations (EU AI Act) impose additional requirements beyond GDPR for AI systems specifically, including risk classification, transparency requirements, and technical safeguards.",
+            "\"Is HIPAA compliance sufficient for healthcare AI, or are there additional requirements?\" — HIPAA covers data handling; the EU AI Act and emerging FDA guidance on AI-based medical devices impose additional technical requirements specifically for healthcare AI applications."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "limitations",
+      "eyebrow": "Engineering reality",
+      "title": "Limitations and risks of AI regulatory compliance",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "AI regulatory compliance has limitations. Regulatory requirements are evolving rapidly and can change unpredictably. Interpretation of broad regulations (like GDPR's right to explanation) remains legally contested. Technical compliance does not guarantee legal compliance — definitive determinations require legal counsel. Compliance requirements vary by jurisdiction and use case, creating complexity for multi-jurisdictional deployments. Meeting compliance can slow development if not integrated early. Over-compliance can be expensive and may limit AI capabilities unnecessarily."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Evolving requirements — regulations change unpredictably.",
+            "Legal interpretation — some requirements are contested.",
+            "Technical ≠ legal — compliance requires legal counsel.",
+            "Jurisdictional complexity — requirements vary by location.",
+            "Development impact — compliance can slow deployment.",
+            "Over-compliance risk — can limit capabilities unnecessarily."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Important",
+          "text": "AI regulatory compliance is a team effort — technical implementation supports legal compliance but doesn't replace it. Involve legal counsel early and continuously."
+        }
+      ]
+    },
+    {
+      "id": "best-practices",
+      "eyebrow": "Implementation guide",
+      "title": "Best practices for AI regulatory compliance",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Achieving AI regulatory compliance effectively requires early integration, cross-functional collaboration, and ongoing monitoring. The following practices can help ensure your compliance efforts are efficient and complete."
+        },
+        {
+          "type": "numbered-list",
+          "title": "Recommended approach:",
+          "items": [
+            "Involve legal counsel early to identify applicable requirements.",
+            "Build compliance documentation alongside technical development.",
+            "Implement bias testing and monitoring before deployment.",
+            "Document model validation, data lineage, and performance metrics.",
+            "Design for auditability — logs, versioning, and decision records.",
+            "Plan for ongoing compliance monitoring after deployment.",
+            "Track regulatory developments and update compliance practices.",
+            "Integrate compliance with your AI governance framework."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "Key metric",
+          "text": "Measure compliance gap closure rate — what percentage of identified compliance gaps have been remediated? This is the ultimate measure of compliance progress."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "eyebrow": "Common questions",
+    "title": "Frequently asked questions about AI regulatory compliance",
+    "items": [
+      {
+        "question": "What does the EU AI Act require for high-risk AI systems?",
+        "answer": "High-risk AI systems (defined by the act based on use case category) face requirements including conformity assessment, bias testing and mitigation, logging and auditability, human oversight provisions, and ongoing monitoring — ClickMasters is not a law firm and recommends legal consultation for your specific system's classification and obligations."
+      },
+      {
+        "question": "Does SR 11-7 model risk management guidance apply to AI/ML models?",
+        "answer": "Yes — US banking regulators have explicitly extended model risk management guidance to AI/ML models, including requirements for model validation, documentation, and ongoing performance monitoring."
+      },
+      {
+        "question": "How quickly are AI regulations evolving?",
+        "answer": "Rapidly — the EU AI Act entered into force in 2024 with phased compliance timelines; multiple US states have enacted or are considering AI-specific legislation; ClickMasters tracks regulatory developments as part of ongoing client advisory services."
+      },
+      {
+        "question": "Is HIPAA compliance sufficient for healthcare AI, or are there additional requirements?",
+        "answer": "HIPAA covers data handling; the EU AI Act and emerging FDA guidance on AI-based medical devices impose additional technical requirements specifically for healthcare AI applications."
+      },
+      {
+        "question": "How long does an AI regulatory compliance gap assessment take?",
+        "answer": "8–20 weeks depending on the number of applicable regulations and AI systems in scope."
+      },
+      {
+        "question": "Can ClickMasters provide compliance certification for our AI systems?",
+        "answer": "ClickMasters provides technical implementation and documentation supporting compliance; formal certification involves appropriate legal counsel and, for some regulations, third-party conformity assessment bodies — ClickMasters supports that process technically but doesn't provide legal certifications."
+      },
+      {
+        "question": "What is the difference between the EU AI Act and GDPR?",
+        "answer": "GDPR governs the processing of personal data generally, including automated decision-making. The EU AI Act specifically regulates AI systems, imposing requirements based on risk classification. They overlap — an AI system processing personal data must comply with both."
+      },
+      {
+        "question": "What are the penalties for non-compliance with the EU AI Act?",
+        "answer": "Penalties can be significant — up to €35 million or 7% of global annual turnover for certain violations. The exact penalties depend on the violation type and risk classification. ClickMasters recommends legal consultation for specifics."
+      },
+      {
+        "question": "How does AI compliance differ for generative AI vs. predictive AI?",
+        "answer": "Generative AI (foundation models) has specific additional obligations under the EU AI Act, including transparency requirements, copyright compliance, and mitigation of generation of illegal content. Predictive AI (classification, scoring) has different requirements based on its risk classification."
+      },
+      {
+        "question": "What is the role of bias testing in regulatory compliance?",
+        "answer": "Bias testing is a requirement for high-risk AI systems under the EU AI Act. It's also increasingly expected for fairness compliance under GDPR and sector-specific regulations. ClickMasters builds compliance-ready bias testing into AI development."
+      }
+    ]
+  },
+
+  "relatedTerms": [
+    "ai-governance",
+    "ai-compliance-audit",
+    "ai-risk-assessment",
+    "eu-ai-act",
+    "responsible-ai"
+  ],
+
+  "references": [
+    {
+      "label": "EU AI Act Overview",
+      "href": "https://artificialintelligenceact.eu/",
+      "publisher": "European Commission"
+    },
+    {
+      "label": "GDPR (Regulation (EU) 2016/679)",
+      "href": "https://gdpr-info.eu/",
+      "publisher": "European Parliament"
+    }
+  ],
+
+  "additionalResources": [
+    {
+      "label": "Responsible AI & Compliance Services",
+      "href": "/responsible-ai-compliance/"
+    },
+    {
+      "label": "What is AI Governance?",
+      "href": "/glossary/ai-governance/"
+    },
+    {
+      "label": "What is an AI Compliance Audit?",
+      "href": "/glossary/ai-compliance-audit/"
+    }
+  ],
+
+  "cta": {
+    "eyebrow": "Ready to navigate AI regulatory requirements?",
+    "title": "Get a free AI regulatory compliance consultation — 24-hour response",
+    "description": "ClickMasters provides technical compliance support — documentation, validation, monitoring — alongside regulatory education, with legal determination remaining with qualified counsel. From $35,000. Fixed-price. Full IP. 24-hour response.",
+    "primaryLink": {
+      "label": "Book your free consultation",
+      "href": "/contact"
+    },
+    "secondaryLink": {
+      "label": "Get your free project estimate",
+      "href": "/contact"
+    }
+  }
+}

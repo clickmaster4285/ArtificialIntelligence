@@ -1,0 +1,306 @@
+{
+  "slug": "few-shot-prompting",
+  "status": "published",
+  "title": "Few-Shot Prompting",
+  "shortTitle": "Few-Shot Prompting",
+  "abbreviation": "FS",
+  "letter": "F",
+  "category": "LLM",
+  "shortDefinition": "A technique where you include a small number of example input-output pairs in the prompt to guide an LLM's response format and reasoning.",
+  "definition": "Few-shot prompting is a technique where you include a small number of worked examples — input-output pairs demonstrating the desired behavior — directly in the prompt you send to an LLM, guiding the model's response format, reasoning style, or task approach without any model training or fine-tuning. Few-shot prompting sits between zero-shot prompting (no examples, just an instruction) and fine-tuning (training the model on many examples), offering a practical middle path that often significantly improves performance over zero-shot for structured tasks without requiring a training run.",
+  "introduction": "Few-shot prompting is a technique where you include a small number of worked examples — input-output pairs demonstrating the desired behavior — directly in the prompt you send to an LLM, guiding the model's response format, reasoning style, or task approach without any model training or fine-tuning. Few-shot prompting sits between zero-shot prompting (no examples, just an instruction) and fine-tuning (training the model on many examples), offering a practical middle path that often significantly improves performance over zero-shot for structured tasks without requiring a training run.",
+  "featured": true,
+  "aliases": [
+    "FS",
+    "few-shot",
+    "few-shot examples",
+    "in-context examples",
+    "demonstration prompting"
+  ],
+  "readingTime": "5 min read",
+  "publishedAt": "2026-08-07",
+  "updatedAt": "2026-08-07",
+
+  "seo": {
+    "title": "What is Few-Shot Prompting? AI Technique",
+    "description": "Few-shot prompting gives an LLM a small number of example input-output pairs in the prompt to guide its response format and reasoning. Builds from $15K.",
+    "canonical": "/glossary/few-shot-prompting/",
+    "keywords": [
+      "what is few-shot prompting",
+      "few-shot prompting definition",
+      "few-shot vs zero-shot",
+      "few-shot examples in prompt",
+      "few-shot prompt engineering services"
+    ]
+  },
+
+  "sections": [
+    {
+      "id": "few-shot-vs-zero-shot-vs-fine-tuning",
+      "eyebrow": "Core comparison",
+      "title": "Few-shot vs. zero-shot vs. fine-tuning: choosing the right approach",
+      "description": "Zero-shot uses just instructions; few-shot adds examples; fine-tuning trains on many examples.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Zero-shot prompting gives the model only an instruction ('classify this text as positive or negative'). Works well for tasks the model handles reliably from its training, but can produce inconsistent formatting or reasoning for more specific or unusual tasks. Few-shot prompting adds 2–10 input-output examples in the prompt, showing the model exactly what format and reasoning style you want. Often substantially improves consistency and accuracy for structured tasks, at the cost of using more tokens per prompt. Fine-tuning trains the model on hundreds or thousands of examples — best for tasks requiring very consistent behavior at scale, where few-shot prompting doesn't achieve sufficient consistency and the token cost of examples at high volume becomes significant."
+        },
+        {
+          "type": "table",
+          "caption": "Zero-shot vs. few-shot vs. fine-tuning",
+          "headers": ["Aspect", "Zero-Shot", "Few-Shot", "Fine-Tuning"],
+          "rows": [
+            ["Examples", "None", "2-10 in prompt", "Hundreds to thousands"],
+            ["Token cost", "Lowest", "Medium", "Training cost + inference"],
+            ["Setup effort", "Low", "Low", "High"],
+            ["Consistency", "Variable", "Improved", "Highest"],
+            ["Best for", "Simple, general tasks", "Structured output, rapid prototyping", "High-volume, consistent behavior"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "The key insight",
+          "text": "Few-shot prompting offers a practical middle path — often significantly improving performance over zero-shot without requiring a training run."
+        }
+      ]
+    },
+    {
+      "id": "when-few-shot-delivers-value",
+      "eyebrow": "Value drivers",
+      "title": "When few-shot prompting delivers the most value",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Few-shot prompting delivers the most clear-cut value for: tasks with specific, unusual output formats (JSON with a custom schema, domain-specific classification labels); tasks where the model tends to produce wrong formats or reasoning paths without examples; and rapid prototyping of new tasks before investing in a full fine-tuning project. It's also the right first step to establish a performance baseline before deciding whether fine-tuning is worth the investment — if a few well-chosen examples already achieve the accuracy you need, fine-tuning may not be worth the additional cost and effort."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Specific output formats — JSON schema, domain-specific labels.",
+            "Wrong formatting — tasks where the model needs format guidance.",
+            "Rapid prototyping — quick validation before fine-tuning investment.",
+            "Performance baseline — establish accuracy before deciding on fine-tuning.",
+            "Cost-effective — often achieves needed accuracy without training."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clickmasters-approach",
+      "eyebrow": "ClickMasters approach",
+      "title": "How ClickMasters uses few-shot prompting for enterprise clients",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "ClickMasters applies few-shot prompting as a standard technique in LLM integration work — selecting and optimizing the specific examples included in prompts based on which examples most effectively guide model behavior for your specific task, rather than arbitrarily including any available examples. For high-volume applications, ClickMasters evaluates whether the token cost of few-shot examples at scale justifies fine-tuning as a more efficient alternative."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Example optimization — select examples that most effectively guide behavior.",
+            "Task-specific — examples tailored to your specific use case.",
+            "Empirical validation — test which example sets perform best.",
+            "Cost evaluation — compare few-shot token cost vs. fine-tuning at scale.",
+            "Right-fit recommendation — use few-shot where it delivers value."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing",
+      "eyebrow": "Investment",
+      "title": "Few-shot prompting pricing",
+      "content": [
+        {
+          "type": "table",
+          "caption": "Fixed-price few-shot prompting projects from ClickMasters",
+          "headers": ["Project Type", "Price Range", "Timeline"],
+          "rows": [
+            ["Few-shot prompt optimization for specific task", "$15,000 – $30,000", "4–8 weeks"],
+            ["Few-shot prompting included in LLM integration development", "Included in development scope", "Varies"],
+            ["Comparison of few-shot vs. fine-tuning performance and cost", "$15,000 – $35,000", "4–8 weeks"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "success",
+          "title": "Full IP ownership",
+          "text": "All projects include full intellectual property transfer. You own everything we build."
+        }
+      ]
+    },
+    {
+      "id": "common-objections",
+      "eyebrow": "Direct answers",
+      "title": "Common objections, answered directly",
+      "content": [
+        {
+          "type": "bullet-list",
+          "items": [
+            "\"How many examples should we include in few-shot prompts?\" — Typically 3–8 well-chosen examples outperform larger sets — more examples increase token cost and don't always improve performance proportionally. ClickMasters validates the right number empirically for your specific task.",
+            "\"How much will this cost?\" — $15,000–$35,000 for standalone few-shot optimization or comparison work; included as standard practice in LLM integration development. Fixed quote after Discovery.",
+            "\"When should we move from few-shot prompting to fine-tuning?\" — When your task requires consistency that few-shot examples don't reliably achieve, when token cost of few-shot examples at your production volume becomes significant, or when inference latency from longer prompts is a concern.",
+            "\"Do the specific examples chosen matter, or will any examples work?\" — The specific examples matter significantly — examples that cover the range of input types the model will encounter, including edge cases, typically outperform convenience examples."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "limitations",
+      "eyebrow": "Engineering reality",
+      "title": "Limitations and risks of few-shot prompting",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Few-shot prompting has limitations. It increases token usage and cost per prompt. It can lead to inconsistent behavior if examples are poorly chosen. It may not improve performance for tasks where the model lacks the underlying capability. The approach can cause the model to copy surface patterns rather than understanding the task. Examples may contain subtle biases that get amplified. Few-shot prompting may not be sufficient for tasks requiring very consistent behavior at scale, and the token cost can be significant for high-volume applications."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Token cost — increases per-prompt cost.",
+            "Inconsistency risk — poor examples can lead to inconsistent behavior.",
+            "Capability dependency — doesn't teach fundamentally new capabilities.",
+            "Pattern copying — may copy surface patterns without understanding.",
+            "Bias amplification — examples can introduce or amplify biases.",
+            "Scale limitation — may not be sufficient for high-volume consistency requirements."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Important",
+          "text": "Few-shot prompting is a powerful technique but has limitations. Validate example selection empirically and consider fine-tuning for high-volume, consistency-critical applications."
+        }
+      ]
+    },
+    {
+      "id": "best-practices",
+      "eyebrow": "Implementation guide",
+      "title": "Best practices for few-shot prompting",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Using few-shot prompting effectively requires careful example selection, validation, and monitoring. The following practices can help ensure your few-shot prompts deliver reliable performance."
+        },
+        {
+          "type": "numbered-list",
+          "title": "Recommended approach:",
+          "items": [
+            "Use 3–8 well-chosen examples — more isn't always better.",
+            "Select examples that cover the range of input types and edge cases.",
+            "Test different example sets empirically on representative data.",
+            "Keep examples diverse to avoid biasing the model.",
+            "Use clear, consistent formatting in your examples.",
+            "Validate few-shot performance before considering fine-tuning.",
+            "Monitor token usage and cost at scale.",
+            "Update examples as your task requirements evolve."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "Key metric",
+          "text": "Measure accuracy improvement over zero-shot — few-shot is valuable when it meaningfully improves performance without requiring the investment of fine-tuning."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "eyebrow": "Common questions",
+    "title": "Frequently asked questions about few-shot prompting",
+    "items": [
+      {
+        "question": "How many examples are 'few' in few-shot prompting?",
+        "answer": "Typically 2–10 — enough to demonstrate the desired pattern clearly, without padding the prompt with redundant examples that consume tokens without improving guidance."
+      },
+      {
+        "question": "Do the specific examples chosen matter, or will any examples work?",
+        "answer": "The specific examples matter significantly — examples that cover the range of input types the model will encounter, including edge cases, typically outperform convenience examples that only represent the easy, typical case."
+      },
+      {
+        "question": "Can few-shot prompting teach a model to perform a task it genuinely can't do?",
+        "answer": "No — few-shot prompting guides how a capable model applies existing capabilities; it can't teach fundamentally new capabilities that the model's training didn't provide."
+      },
+      {
+        "question": "Is few-shot prompting still useful when using very capable models like GPT-4 or Claude?",
+        "answer": "Yes, particularly for specific output formats and structured tasks — even highly capable models benefit from seeing exactly what output structure you want, rather than interpreting it from an instruction alone."
+      },
+      {
+        "question": "How long does few-shot prompt optimization take?",
+        "answer": "4–8 weeks for a focused optimization project, including empirical testing of different example sets."
+      },
+      {
+        "question": "Can the examples in few-shot prompts be confidential or proprietary?",
+        "answer": "Prompt content sent via API is governed by the provider's data handling terms; ClickMasters reviews these terms and recommends appropriate approaches for prompts containing sensitive business logic."
+      },
+      {
+        "question": "What is the difference between few-shot and one-shot prompting?",
+        "answer": "One-shot prompting uses a single example; few-shot uses multiple examples. The naming follows how many examples are provided. Few-shot typically means 2-10 examples; one-shot means exactly one."
+      },
+      {
+        "question": "Can few-shot prompting be combined with chain-of-thought?",
+        "answer": "Yes — few-shot prompting can include examples that demonstrate step-by-step reasoning (chain-of-thought). This combination often improves performance on complex reasoning tasks."
+      },
+      {
+        "question": "How do you choose which examples to include in few-shot prompts?",
+        "answer": "Examples should be representative of the task, cover the range of input variations, and demonstrate the desired output format. ClickMasters uses empirical testing to select the most effective examples for your specific task."
+      },
+      {
+        "question": "What is the relationship between few-shot prompting and instruction tuning?",
+        "answer": "Instruction tuning trains a model on many instruction-response pairs during training. Few-shot prompting provides examples at inference time. They are complementary — instruction-tuned models often respond better to few-shot prompting."
+      }
+    ]
+  },
+
+  "relatedTerms": [
+    "prompt-engineering",
+    "zero-shot-learning",
+    "fine-tuning",
+    "chain-of-thought",
+    "llm-integration-services"
+  ],
+
+  "references": [
+    {
+      "label": "Language Models are Few-Shot Learners (GPT-3 Paper)",
+      "href": "https://arxiv.org/abs/2005.14165",
+      "publisher": "arXiv"
+    },
+    {
+      "label": "Few-Shot Prompting: Best Practices and Applications",
+      "href": "https://arxiv.org/abs/2305.09876",
+      "publisher": "arXiv"
+    }
+  ],
+
+  "additionalResources": [
+    {
+      "label": "LLM Integration Services",
+      "href": "/llm-integration-services/"
+    },
+    {
+      "label": "What is Prompt Engineering?",
+      "href": "/glossary/prompt-engineering/"
+    },
+    {
+      "label": "What is Zero-Shot Learning?",
+      "href": "/glossary/zero-shot-learning/"
+    }
+  ],
+
+  "cta": {
+    "eyebrow": "Ready to optimize your LLM prompts with few-shot techniques?",
+    "title": "Get a free prompt engineering consultation — 24-hour response",
+    "description": "ClickMasters optimizes few-shot examples empirically, selecting the examples that most effectively guide model behavior for your specific task. From $15,000. Fixed-price. Full IP. 24-hour response.",
+    "primaryLink": {
+      "label": "Book your free consultation",
+      "href": "/contact"
+    },
+    "secondaryLink": {
+      "label": "Get your free project estimate",
+      "href": "/contact"
+    }
+  }
+}
