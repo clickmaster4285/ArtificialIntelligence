@@ -62,6 +62,34 @@ import llmIntegrationChicago from "./llm-integration-chicago.json";
 import aiDevelopmentEcommerceChicago from "./ai-development-ecommerce-chicago.json";
 import aiDevelopmentLegalNewYork from "./ai-development-legal-new-york.json";
 import aiDevelopmentCompanyWashingtonDc from "./ai-development-company-washington-dc.json";
+import aiDevelopmentCompanyHouston from "./ai-development-company-houston.json";
+import dataEngineeringMlPipelinesCost from "./data-engineering-ml-pipelines-cost.json";
+import aiChatbotDevelopmentSanFrancisco from "./ai-chatbot-development-san-francisco.json";
+import predictiveAnalyticsChicago from "./predictive-analytics-chicago.json";
+import aiDevelopmentHealthcareLosAngeles from "./ai-development-healthcare-los-angeles.json";
+import aiDevelopmentManufacturingSeattle from "./ai-development-manufacturing-seattle.json";
+import aiDevelopmentCompanyPhoenix from "./ai-development-company-phoenix.json";
+import aiDevelopmentCompanyMinneapolis from "./ai-development-company-minneapolis.json";
+import aiSaasDevelopmentCost from "./ai-saas-development-cost.json";
+import machineLearningConsultingNewYork from "./machine-learning-consulting-new-york.json";
+import aiAutomationServicesChicago from "./ai-automation-services-chicago.json";
+import aiDevelopmentRetailLosAngeles from "./ai-development-retail-los-angeles.json";
+import aiDevelopmentFintechSanFrancisco from "./ai-development-fintech-san-francisco.json";
+import aiDevelopmentCompanyPortland from "./ai-development-company-portland.json";
+import aiDevelopmentCompanySanDiego from "./ai-development-company-san-diego.json";
+import mlopsServicesCost from "./mlops-services-cost.json";
+import aiChatbotDevelopmentChicago from "./ai-chatbot-development-chicago.json";
+import llmIntegrationLosAngeles from "./llm-integration-los-angeles.json";
+import aiDevelopmentLogisticsChicago from "./ai-development-logistics-chicago.json";
+import aiDevelopmentHealthcareSeattle from "./ai-development-healthcare-seattle.json";
+import aiDevelopmentCompanyTampa from "./ai-development-company-tampa.json";
+import aiDevelopmentCompanySaltLakeCity from "./ai-development-company-salt-lake-city.json";
+import machineLearningServicesNewYork from "./machine-learning-services-new-york.json";
+import aiAgentDevelopmentSanFrancisco from "./ai-agent-development-san-francisco.json";
+import aiDevelopmentInsuranceChicago from "./ai-development-insurance-chicago.json";
+import aiDevelopmentRealEstateNewYork from "./ai-development-real-estate-new-york.json";
+import aiDevelopmentCompanyCharlotte from "./ai-development-company-charlotte.json";
+import aiDevelopmentCompanyNashville from "./ai-development-company-nashville.json";
 
 
 
@@ -136,6 +164,36 @@ llmIntegrationChicago as DynamicPageData,
 aiDevelopmentEcommerceChicago as DynamicPageData,
 aiDevelopmentLegalNewYork as DynamicPageData,
 aiDevelopmentCompanyWashingtonDc as DynamicPageData,
+aiDevelopmentCompanyHouston as DynamicPageData,
+dataEngineeringMlPipelinesCost as DynamicPageData,
+aiChatbotDevelopmentSanFrancisco as DynamicPageData,
+predictiveAnalyticsChicago as DynamicPageData,
+aiDevelopmentHealthcareLosAngeles as DynamicPageData,
+aiDevelopmentManufacturingSeattle as DynamicPageData,
+aiDevelopmentCompanyPhoenix as DynamicPageData,
+aiDevelopmentCompanyMinneapolis as DynamicPageData,
+aiSaasDevelopmentCost as DynamicPageData,
+machineLearningConsultingNewYork as DynamicPageData,
+aiAutomationServicesChicago as DynamicPageData,
+aiDevelopmentRetailLosAngeles as DynamicPageData,
+aiDevelopmentFintechSanFrancisco as DynamicPageData,
+aiDevelopmentCompanyPortland as DynamicPageData,
+aiDevelopmentCompanySanDiego as DynamicPageData,
+mlopsServicesCost as DynamicPageData,
+aiChatbotDevelopmentChicago as DynamicPageData,
+llmIntegrationLosAngeles as DynamicPageData,
+aiDevelopmentLogisticsChicago as DynamicPageData,
+aiDevelopmentHealthcareSeattle as DynamicPageData,
+aiDevelopmentCompanyTampa as DynamicPageData,
+aiDevelopmentCompanySaltLakeCity as DynamicPageData,
+machineLearningServicesNewYork as DynamicPageData,
+aiAgentDevelopmentSanFrancisco as DynamicPageData,
+aiDevelopmentInsuranceChicago as DynamicPageData,
+aiDevelopmentRealEstateNewYork as DynamicPageData,
+aiDevelopmentCompanyCharlotte as DynamicPageData,
+ aiDevelopmentCompanyNashville as DynamicPageData,
+ 
+
 
 
 
