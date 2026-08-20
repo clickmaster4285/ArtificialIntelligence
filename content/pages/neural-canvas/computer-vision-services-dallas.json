@@ -1,0 +1,374 @@
+{
+  "slug": "computer-vision-services-dallas",
+  "status": "published",
+  "seo": {
+    "title": "Computer Vision Services Dallas | ClickMasters AI Dev",
+    "description": "ClickMasters builds computer vision for Dallas — construction AI, oil and gas inspection, retail analytics, medical imaging. From $45K. Fixed-price. 24-hour response.",
+    "canonical": "/computer-vision-services-dallas/",
+    "primaryKeyword": "computer vision services dallas",
+    "secondaryKeywords": [
+      "computer vision company dallas",
+      "image ai dallas texas",
+      "industrial vision ai dfw",
+      "construction ai dallas"
+    ],
+    "openGraphImage": "/images/pages/computer-vision-services-dallas/og-image.jpg",
+    "noIndex": false,
+    "noFollow": false
+  },
+  "schema": {
+    "service": true,
+    "organization": true,
+    "breadcrumbs": true,
+    "faq": true,
+    "localBusiness": true
+  },
+  "appearance": {
+    "template": "neural-canvas",
+    "accent": "orange",
+    "background": "neural-grid",
+    "grain": true,
+    "glow": true,
+    "scrollProgress": true,
+    "customCursor": true
+  },
+  "hero": {
+    "eyebrow": "Computer Vision Services — Dallas",
+    "title": "Computer Vision Services — Dallas",
+    "highlightedText": "Construction · Oil & Gas · Retail · Medical · From $45K",
+    "description": "ClickMasters builds custom computer vision for Dallas-Fort Worth's construction, oil and gas, retail, healthcare, and logistics organizations — construction site safety AI for DFW's enormous residential and commercial construction activity, pipeline and facility inspection AI for Dallas's energy sector, loss prevention and retail analytics for Dallas's consumer brands, medical imaging for UT Southwestern and Baylor, and warehouse visual quality AI for DFW's massive distribution operations. From $45,000. Fixed-price. Full IP. 24-hour response.",
+    "primaryCta": {
+      "label": "Get a Free Computer Vision Consultation — Dallas — 24-Hour Response",
+      "href": "#cta",
+      "ariaLabel": "Get a free computer vision consultation for Dallas with 24-hour response"
+    },
+    "secondaryCta": {
+      "label": "Explore Computer Vision Services",
+      "href": "/computer-vision-development/"
+    },
+    "trustText": "Construction · Energy · Retail · Central Time · Fixed-price",
+    "metrics": [
+      {
+        "value": "$45K+",
+        "label": "Project starting price",
+        "description": "Computer vision"
+      },
+      {
+        "value": "10-28",
+        "label": "Weeks to deployment",
+        "description": "Typical CV timeline"
+      },
+      {
+        "value": "CT",
+        "label": "Timezone alignment",
+        "description": "Central Time for Dallas"
+      }
+    ],
+    "visual": {
+      "type": "neural-sphere",
+      "label": "Dallas computer vision",
+      "modelNames": [
+        "Construction",
+        "Oil & Gas",
+        "Retail",
+        "Medical",
+        "Warehouse"
+      ]
+    }
+  },
+  "sections": [
+    {
+      "id": "applications",
+      "type": "rich-text",
+      "eyebrow": "Applications",
+      "title": "Computer Vision Applications for Dallas Organizations",
+      "description": "Production-grade CV solutions for DFW's leading industries.",
+      "tone": "default",
+      "width": "content",
+      "animation": "mask-reveal",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "Construction Site AI",
+          "paragraphs": [
+            "Dallas-Fort Worth is one of the US's most active construction markets — residential and commercial construction across the Metroplex's vast suburban footprint creates construction site AI demand:",
+            "Safety monitoring: CV detecting PPE compliance (hard hat, high-vis vest, safety glasses) on DFW construction sites — real-time alerting when workers are in hazard zones without required safety equipment.",
+            "Progress monitoring: Automated construction progress tracking from drone and fixed camera imagery — comparing actual progress against construction schedule to identify delays before they cascade.",
+            "Materials and equipment detection: ML counting materials inventory, tracking equipment location, and detecting unauthorized site entry from construction site cameras.",
+            "Cost: $50,000–$130,000 | Timeline: 10–22 weeks | OSHA documentation context"
+          ]
+        },
+        {
+          "heading": "Oil and Gas Infrastructure Inspection",
+          "paragraphs": [
+            "For ExxonMobil's Dallas-area operations, Atmos Energy (Dallas HQ), and DFW's energy infrastructure:",
+            "Aerial pipeline inspection: CV processing drone and helicopter imagery for pipeline corrosion, third-party damage, and right-of-way vegetation encroachment detection — replacing ground patrol inspection for Dallas's extensive gas distribution networks.",
+            "Tank farm inspection: CV for external corrosion, floating roof seal anomalies, and structural issues on petroleum storage tanks.",
+            "Substation and electrical inspection: CV for thermal anomaly detection and physical damage assessment on energy infrastructure.",
+            "Cost: $55,000–$150,000 | Timeline: 12–24 weeks | API 570/653 inspection context"
+          ]
+        },
+        {
+          "heading": "Retail Analytics and Loss Prevention",
+          "paragraphs": [
+            "For DFW's large retail community — Neiman Marcus (Dallas HQ), AT&T's retail stores, and the massive retail footprint across the Metroplex:",
+            "Customer behavior analytics: Foot traffic counting, zone dwell time, and customer journey analysis for DFW retail — informing store layout, staffing, and display decisions.",
+            "Loss prevention: Self-checkout fraud detection and shoplifting detection for DFW's large retail chains — with Texas privacy law awareness for camera systems.",
+            "Planogram compliance: CV checking shelf arrangements against planogram standards for DFW's consumer goods distributors and retail chains.",
+            "Cost: $45,000–$120,000 | Timeline: 10–20 weeks"
+          ]
+        },
+        {
+          "heading": "Medical Imaging AI",
+          "paragraphs": [
+            "For UT Southwestern Medical Center (Dallas), Baylor Scott & White, and Dallas's academic and community health systems:",
+            "Radiology AI: Chest X-ray and CT interpretation assistance for Dallas's large radiology practices — anomaly detection and study prioritization for high-volume imaging centers.",
+            "Pathology digital slides: CV for tumor grading, cell counting, and tissue analysis for Dallas's cancer programs.",
+            "Dermatology imaging: Skin lesion classification for DFW's dermatology and telemedicine communities.",
+            "Cost: $70,000–$200,000 | Timeline: 14–28 weeks | HIPAA, FDA SaMD awareness"
+          ]
+        },
+        {
+          "heading": "Warehouse and Logistics Visual AI",
+          "paragraphs": [
+            "For DFW's enormous distribution and fulfillment community:",
+            "Package and parcel detection: CV for automated package identification, sortation verification, and label reading in DFW's large parcel and freight facilities.",
+            "Warehouse safety monitoring: Forklift interaction zone detection and pedestrian safety monitoring in DFW's large fulfillment centers.",
+            "Product damage detection: CV identifying damaged goods before shipment for DFW's consumer products distribution operations.",
+            "Cost: $45,000–$120,000 | Timeline: 10–20 weeks"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "technical-context",
+      "type": "rich-text",
+      "eyebrow": "Technical Context",
+      "title": "Dallas Computer Vision Technical Context",
+      "description": "Key considerations for CV development in Dallas.",
+      "tone": "contrast",
+      "width": "content",
+      "animation": "mask-reveal",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "Texas privacy law",
+          "paragraphs": [
+            "Texas does not have a general consumer privacy law comparable to California's, but the Texas Identity Theft Enforcement and Protection Act covers biometric data. ClickMasters designs Dallas retail and safety CV AI with Texas biometric data protections in mind."
+          ]
+        },
+        {
+          "heading": "High-temperature deployment",
+          "paragraphs": [
+            "Dallas's summer temperatures (regularly exceeding 100°F) create hardware deployment challenges for edge CV systems. ClickMasters designs Dallas edge computer vision deployments with thermal management and high-temperature enclosure specifications appropriate to Texas's climate."
+          ]
+        },
+        {
+          "heading": "Drone regulations for aerial inspection",
+          "paragraphs": [
+            "FAA Part 107 and Texas drone regulations govern aerial inspection operations for Dallas oil and gas and construction inspection applications. ClickMasters designs aerial CV for Part 107 compliant operations."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing",
+      "type": "table",
+      "eyebrow": "Pricing 2026",
+      "title": "Pricing for Dallas Computer Vision Services",
+      "description": "Published pricing ranges by CV application type.",
+      "tone": "surface",
+      "width": "wide",
+      "animation": "horizontal-reveal",
+      "variant": "pricing",
+      "columns": [
+        {
+          "key": "application",
+          "label": "CV Application",
+          "align": "left",
+          "width": "30%"
+        },
+        {
+          "key": "cost_range",
+          "label": "Cost Range",
+          "align": "left",
+          "width": "25%"
+        },
+        {
+          "key": "timeline",
+          "label": "Timeline",
+          "align": "left",
+          "width": "20%"
+        },
+        {
+          "key": "notes",
+          "label": "Notes",
+          "align": "left",
+          "width": "25%"
+        }
+      ],
+      "rows": [
+        {
+          "id": "construction",
+          "cells": {
+            "application": "Construction site safety AI",
+            "cost_range": "$50,000 – $130,000",
+            "timeline": "10–22 weeks",
+            "notes": "OSHA context"
+          }
+        },
+        {
+          "id": "oilgas",
+          "cells": {
+            "application": "Pipeline and facility inspection",
+            "cost_range": "$55,000 – $150,000",
+            "timeline": "12–24 weeks",
+            "notes": "API 570/653"
+          }
+        },
+        {
+          "id": "retail",
+          "cells": {
+            "application": "Retail analytics / loss prevention",
+            "cost_range": "$45,000 – $120,000",
+            "timeline": "10–20 weeks",
+            "notes": "TX privacy"
+          }
+        },
+        {
+          "id": "medical",
+          "cells": {
+            "application": "Medical imaging AI",
+            "cost_range": "$70,000 – $200,000",
+            "timeline": "14–28 weeks",
+            "notes": "HIPAA, FDA SaMD"
+          }
+        },
+        {
+          "id": "warehouse",
+          "cells": {
+            "application": "Warehouse / logistics CV",
+            "cost_range": "$45,000 – $120,000",
+            "timeline": "10–20 weeks",
+            "notes": "Standard"
+          }
+        }
+      ]
+    },
+    {
+      "id": "objections",
+      "type": "rich-text",
+      "eyebrow": "Objections",
+      "title": "Objections, Answered Directly",
+      "description": "Addressing common questions about Dallas computer vision development.",
+      "tone": "contrast",
+      "width": "content",
+      "animation": "mask-reveal",
+      "layout": "sticky-heading",
+      "blocks": [
+        {
+          "heading": "\"Construction site AI — how does it work in DFW's scale?\"",
+          "paragraphs": [
+            "DFW's construction market spans massive geographic footprint with high worker density. ClickMasters designs construction site CV for multi-camera monitoring, edge inference at construction site connectivity (4G rather than fiber), and reporting dashboards appropriate to general contractor and subcontractor workflows."
+          ]
+        },
+        {
+          "heading": "\"How much does computer vision cost in Dallas?\"",
+          "paragraphs": [
+            "$40,000–$200,000. Medical imaging at the higher end; warehouse and retail at the mid-range."
+          ]
+        },
+        {
+          "heading": "\"How long does Dallas computer vision development take?\"",
+          "paragraphs": [
+            "10–28 weeks. Medical imaging FDA SaMD documentation at the longer end."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "type": "faq",
+      "eyebrow": "FAQs",
+      "title": "Frequently Asked Questions",
+      "description": "Clear answers about Dallas computer vision capabilities and scope.",
+      "tone": "default",
+      "width": "content",
+      "animation": "fade-up",
+      "variant": "indexed",
+      "items": [
+        {
+          "question": "Can ClickMasters build construction safety AI for DFW's major contractors?",
+          "answer": "Yes — PPE detection, hazard zone monitoring, and progress tracking CV for DFW's construction industry are ClickMasters capabilities."
+        },
+        {
+          "question": "Can ClickMasters build aerial pipeline inspection AI for Atmos Energy's Dallas network?",
+          "answer": "Yes — drone imagery processing for pipeline condition monitoring and right-of-way inspection for Dallas's gas distribution networks are ClickMasters capabilities."
+        },
+        {
+          "question": "Can ClickMasters build retail CV for Neiman Marcus or AT&T's retail locations?",
+          "answer": "Yes — foot traffic, customer behavior, and loss prevention CV for DFW's large retail operations are ClickMasters capabilities."
+        },
+        {
+          "question": "How long does Dallas computer vision development take?",
+          "answer": "10–28 weeks."
+        },
+        {
+          "question": "Do we own the vision system after delivery?",
+          "answer": "Yes — full IP transfer at project close."
+        },
+        {
+          "question": "Does ClickMasters work Central Time for Dallas?",
+          "answer": "Yes — Central Time is standard for Dallas and Texas."
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "type": "cta",
+      "eyebrow": "Get Started",
+      "heading": "Ready to Build Computer Vision AI for Your Dallas Organization?",
+      "text": "ClickMasters builds construction-grade, pipeline-inspection-ready, HIPAA-compliant computer vision for DFW's most demanding visual AI applications.",
+      "tone": "contrast",
+      "width": "wide",
+      "animation": "fade-scale",
+      "primaryCta": {
+        "label": "Get a Free Computer Vision Consultation — Dallas — 24-Hour Response",
+        "href": "/contact/"
+      },
+      "secondaryCta": {
+        "label": "Email the CV Team",
+        "href": "mailto:hello@clickmastersartificialintelligencecompany.com"
+      },
+      "contactEmail": "hello@clickmastersartificialintelligencecompany.com",
+      "variant": "orbital"
+    }
+  ],
+  "relatedPages": [
+    {
+      "title": "Computer Vision Development",
+      "description": "General CV development services.",
+      "href": "/computer-vision-development/"
+    },
+    {
+      "title": "AI Development Company Dallas",
+      "description": "General AI development services for Dallas.",
+      "href": "/ai-development-company-dallas/"
+    },
+    {
+      "title": "Computer Vision Development Cost",
+      "description": "CV pricing and cost guide.",
+      "href": "/computer-vision-development-cost/"
+    },
+    {
+      "title": "Machine Learning Services Dallas",
+      "description": "ML services for Dallas organizations.",
+      "href": "/machine-learning-services-dallas/"
+    },
+    {
+      "title": "Computer Vision (Glossary)",
+      "description": "Computer vision glossary entry.",
+      "href": "/glossary/computer-vision/"
+    }
+  ]
+}
