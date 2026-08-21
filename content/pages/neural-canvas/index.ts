@@ -90,9 +90,9 @@ import aiDevelopmentInsuranceChicago from "./ai-development-insurance-chicago.js
 import aiDevelopmentRealEstateNewYork from "./ai-development-real-estate-new-york.json";
 import aiDevelopmentCompanyCharlotte from "./ai-development-company-charlotte.json";
 import aiDevelopmentCompanyNashville from "./ai-development-company-nashville.json";
-
-
-
+import responsibleAiComplianceCost from "./responsible-ai-compliance-cost.json";
+import computerVisionServicesNewYork from "./computer-vision-services-new-york.json";
+import ragDevelopmentChicago from "./rag-development-chicago.json";
 
 
 
@@ -191,8 +191,11 @@ aiAgentDevelopmentSanFrancisco as DynamicPageData,
 aiDevelopmentInsuranceChicago as DynamicPageData,
 aiDevelopmentRealEstateNewYork as DynamicPageData,
 aiDevelopmentCompanyCharlotte as DynamicPageData,
- aiDevelopmentCompanyNashville as DynamicPageData,
- 
+aiDevelopmentCompanyNashville as DynamicPageData,
+responsibleAiComplianceCost as DynamicPageData,
+computerVisionServicesNewYork as DynamicPageData,
+ragDevelopmentChicago as DynamicPageData,
+
 
 
 
