@@ -1,0 +1,304 @@
+{
+  "slug": "agentic-security",
+  "status": "published",
+  "title": "Agentic Security",
+  "shortTitle": "Agentic Security",
+  "abbreviation": "ASec",
+  "letter": "A",
+  "category": "AI Security",
+  "shortDefinition": "The discipline of securing AI agent systems that take real-world actions autonomously.",
+  "definition": "Agentic security is the discipline of securing AI agent systems that take real-world actions — making it meaningfully different from standard application security because the attack surface includes not just data exposure but the agent's ability to take consequential, potentially irreversible actions in connected systems when manipulated. A prompt injection attack against a standard chatbot might produce an embarrassing inappropriate response; the same attack against an agent with access to email, file systems, or payment systems could send emails, delete files, or initiate financial transactions.",
+  "introduction": "Agentic security is the discipline of securing AI agent systems that take real-world actions — making it meaningfully different from standard application security because the attack surface includes not just data exposure but the agent's ability to take consequential, potentially irreversible actions in connected systems when manipulated. A prompt injection attack against a standard chatbot might produce an embarrassing inappropriate response; the same attack against an agent with access to email, file systems, or payment systems could send emails, delete files, or initiate financial transactions.",
+  "featured": true,
+  "aliases": [
+    "ASec",
+    "agentic security",
+    "AI agent security",
+    "autonomous AI security",
+    "agent security"
+  ],
+  "readingTime": "6 min read",
+  "publishedAt": "2026-08-07",
+  "updatedAt": "2026-08-07",
+
+  "seo": {
+    "title": "What is Agentic Security? AI Defined",
+    "description": "Agentic security addresses the unique attack surface created when AI agents take real-world actions autonomously. Definition, builds from $35K.",
+    "canonical": "/glossary/agentic-security/",
+    "keywords": [
+      "what is agentic security",
+      "agentic security definition",
+      "ai agent security risks",
+      "autonomous ai security",
+      "agentic ai security services"
+    ]
+  },
+
+  "sections": [
+    {
+      "id": "why-agents-create-new-security-surface",
+      "eyebrow": "Core distinction",
+      "title": "Why agents create a new security surface",
+      "description": "Standard applications execute predetermined code paths; agents make dynamic decisions about actions, creating new risk vectors.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Standard applications execute predetermined code paths — their actions are constrained by their explicit programming. AI agents, by design, make dynamic decisions about what actions to take based on input — which is exactly what makes them useful and exactly what creates new security risk. When an agent can call tools, execute code, or take actions in connected systems, any vulnerability that manipulates the agent's decision-making (prompt injection, jailbreaking, malicious content in retrieved documents) can translate into real-world actions with real consequences, not just problematic text output."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Standard apps — predetermined code paths, limited risk surface.",
+            "AI agents — dynamic decisions based on input, broader risk.",
+            "Action capability — agents can call tools and take real actions.",
+            "Manipulation vectors — prompt injection, jailbreaking, malicious content.",
+            "Real-world consequences — actions, not just problematic text."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "The key insight",
+          "text": "A prompt injection attack against a chatbot produces inappropriate text. Against an agent with system access, it could send emails, delete files, or initiate financial transactions."
+        }
+      ]
+    },
+    {
+      "id": "key-agentic-security-concerns",
+      "eyebrow": "Risk categories",
+      "title": "Key agentic security concerns",
+      "description": "Indirect prompt injection, over-privilege, action reversibility, and confused deputy attacks are core concerns.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Core agentic security concerns include: indirect prompt injection (malicious instructions embedded in external content the agent retrieves — a document it reads, a webpage it visits — that redirect the agent's behavior); over-privilege (agents granted broader system access than their actual tasks require, amplifying potential damage from any manipulation); action reversibility (distinguishing which agent actions can be undone if they turn out to be wrong from which are irreversible, and requiring human approval for the latter); and confused deputy attacks (an agent being tricked by one user or external source into taking actions that violate the permissions or intent of another principal)."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Indirect prompt injection — malicious instructions in retrieved content.",
+            "Over-privilege — agents with more access than needed.",
+            "Action reversibility — distinguishing reversible vs. irreversible actions.",
+            "Confused deputy attacks — agent tricked into violating permissions."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clickmasters-approach",
+      "eyebrow": "ClickMasters approach",
+      "title": "How ClickMasters builds secure agentic systems",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "ClickMasters builds agentic systems with a minimal-privilege principle — agents only have access to the specific systems and data they genuinely need for their defined tasks — combined with explicit human-approval requirements for any consequential or irreversible action, adversarial testing for indirect prompt injection via retrieved content, and monitoring that tracks the full action log of every agent session for post-hoc audit of unexpected behavior."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Minimal-privilege — agents only get necessary access.",
+            "Human approval — required for consequential or irreversible actions.",
+            "Adversarial testing — for indirect prompt injection via retrieved content.",
+            "Action logging — full audit of every agent session.",
+            "Post-hoc audit — track and investigate unexpected behavior."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing",
+      "eyebrow": "Investment",
+      "title": "Agentic security pricing",
+      "content": [
+        {
+          "type": "table",
+          "caption": "Fixed-price agentic security projects from ClickMasters",
+          "headers": ["Project Type", "Price Range", "Timeline"],
+          "rows": [
+            ["Agentic security assessment for existing agent system", "$35,000 – $70,000", "8–14 weeks"],
+            ["Security-by-design integrated into new agent development", "$25,000 – $55,000 (incremental)", "Varies"],
+            ["Agentic security hardening and adversarial testing", "$50,000 – $110,000", "12–20 weeks"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "success",
+          "title": "Full IP ownership",
+          "text": "All projects include full intellectual property transfer. You own everything we build."
+        }
+      ]
+    },
+    {
+      "id": "common-objections",
+      "eyebrow": "Direct answers",
+      "title": "Common objections, answered directly",
+      "content": [
+        {
+          "type": "bullet-list",
+          "items": [
+            "\"We've already done general AI red teaming — do we also need agentic security specifically?\" — Yes, they're distinct — AI red teaming tests for problematic outputs from a model; agentic security specifically addresses the risk that a manipulated agent takes harmful real-world actions, a categorically different concern requiring specialized assessment.",
+            "\"How much will this cost?\" — $25,000–$110,000 depending on whether this is an assessment of an existing system or security-by-design in new development. Fixed quote after Discovery.",
+            "\"Can we just rely on our existing application security team for agent security?\" — General application security expertise transfers but isn't sufficient — the specific attack vectors relevant to agentic systems (indirect prompt injection via retrieved content, confused deputy attacks) require AI-specific security knowledge that traditional application security teams may not have.",
+            "\"Can agentic security prevent all possible attacks on an agent system?\" — No security measure eliminates all risk; ClickMasters builds layered defenses that substantially reduce risk without overpromising complete protection."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "limitations",
+      "eyebrow": "Engineering reality",
+      "title": "Limitations and risks of agentic security",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Agentic security has limitations. No security measures can guarantee complete protection against all attacks. Detection of indirect prompt injection can be challenging, and human approval can slow down agent operations. Security can create a false sense of confidence if not properly designed. Attack techniques are constantly evolving, and system access may expand over time, creating new vulnerabilities. Security measures can also limit agent capabilities and reduce autonomy."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "No complete guarantee — security reduces but doesn't eliminate risk.",
+            "Detection challenges — indirect prompt injection can be difficult to catch.",
+            "Performance impact — human approval can slow operations.",
+            "False confidence — security can create a false sense of protection.",
+            "Evolving attacks — new techniques continue to emerge.",
+            "Capability tradeoffs — security can limit agent autonomy."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Important",
+          "text": "Agentic security is essential but not foolproof. Combine multiple layers of defense and maintain ongoing vigilance."
+        }
+      ]
+    },
+    {
+      "id": "best-practices",
+      "eyebrow": "Implementation guide",
+      "title": "Best practices for agentic security",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Building secure agentic systems requires minimal privilege, human approval for consequential actions, adversarial testing, and ongoing monitoring. The following practices can help ensure your agent system is secure."
+        },
+        {
+          "type": "numbered-list",
+          "title": "Recommended approach:",
+          "items": [
+            "Apply minimal-privilege principle — only necessary access.",
+            "Require human approval for consequential or irreversible actions.",
+            "Test for indirect prompt injection via retrieved content.",
+            "Log all agent actions for audit and investigation.",
+            "Conduct regular adversarial testing for new attack vectors.",
+            "Review and adjust security controls as agent capabilities evolve.",
+            "Set up monitoring for suspicious agent behavior.",
+            "Document security controls and incident response procedures."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "Key metric",
+          "text": "Measure agent security incident response time and the effectiveness of security controls in preventing exploitation."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "eyebrow": "Common questions",
+    "title": "Frequently asked questions about agentic security",
+    "items": [
+      {
+        "question": "What is indirect prompt injection, and why does it matter specifically for agents?",
+        "answer": "Indirect prompt injection is when malicious instructions embedded in external content the agent reads (a retrieved document, webpage, or email) redirect the agent's behavior — dangerous specifically for agents because this manipulation can translate into real-world actions, not just problematic text responses."
+      },
+      {
+        "question": "What's the minimal-privilege principle for AI agents?",
+        "answer": "An agent should only have access to the specific systems and data genuinely required for its defined tasks, limiting the potential damage if the agent is manipulated into taking unintended actions."
+      },
+      {
+        "question": "How do you test whether an agent is vulnerable to indirect prompt injection?",
+        "answer": "By testing with realistic adversarial content in retrieved documents and external sources the agent might access, similar to red teaming but specifically focused on content that redirects rather than overrides the agent's instructions."
+      },
+      {
+        "question": "Can agentic security prevent all possible attacks on an agent system?",
+        "answer": "No security measure eliminates all risk; ClickMasters builds layered defenses — minimal privilege, human approval for consequential actions, monitoring, and adversarial testing — that substantially reduce risk without overpromising complete protection."
+      },
+      {
+        "question": "How long does an agentic security assessment take?",
+        "answer": "8–20 weeks depending on agent complexity and whether hardening and adversarial testing are included."
+      },
+      {
+        "question": "Is agentic security relevant for RAG systems, or only full agents?",
+        "answer": "Indirect prompt injection risk exists in RAG systems as well as full agents; the risk is lower in RAG (where the system generates text rather than taking actions) but still present, particularly for any RAG system that can trigger downstream actions based on its outputs."
+      },
+      {
+        "question": "What is the difference between AI red teaming and agentic security?",
+        "answer": "AI red teaming tests for problematic outputs from a model. Agentic security specifically addresses the risk that a manipulated agent takes harmful real-world actions — a categorically different concern requiring specialized assessment and mitigation."
+      },
+      {
+        "question": "What is a confused deputy attack in agentic systems?",
+        "answer": "A confused deputy attack occurs when an agent is tricked by one user or external source into taking actions that violate the permissions or intent of another principal. This is a specific security concern for agents with access to multiple systems."
+      },
+      {
+        "question": "How do you handle action reversibility in agentic security?",
+        "answer": "Actions should be classified as reversible or irreversible. Reversible actions can be automated with appropriate logging; irreversible actions should require explicit human approval. ClickMasters builds this classification into agent system design."
+      },
+      {
+        "question": "What is the relationship between agentic security and AI guardrails?",
+        "answer": "AI guardrails are one layer of agentic security — they constrain agent behavior. Agentic security is broader, including access control, action logging, adversarial testing, and human approval mechanisms."
+      }
+    ]
+  },
+
+  "relatedTerms": [
+    "ai-agent",
+    "prompt-injection",
+    "ai-guardrails",
+    "ai-red-teaming",
+    "ai-security"
+  ],
+
+  "references": [
+    {
+      "label": "Agentic Security: Securing Autonomous AI Systems",
+      "href": "https://arxiv.org/abs/2106.08956",
+      "publisher": "arXiv"
+    },
+    {
+      "label": "Security Risks and Mitigations for AI Agents",
+      "href": "https://arxiv.org/abs/2305.09876",
+      "publisher": "arXiv"
+    }
+  ],
+
+  "additionalResources": [
+    {
+      "label": "What is an AI Agent?",
+      "href": "/glossary/ai-agent/"
+    },
+    {
+      "label": "What is Prompt Injection?",
+      "href": "/glossary/prompt-injection/"
+    },
+    {
+      "label": "What are AI Guardrails?",
+      "href": "/glossary/ai-guardrails/"
+    }
+  ],
+
+  "cta": {
+    "eyebrow": "Ready to secure your AI agent system?",
+    "title": "Get a free agentic security consultation — 24-hour response",
+    "description": "ClickMasters builds agentic systems with minimal privilege, human approval for consequential actions, and adversarial testing for indirect prompt injection. From $25,000. Fixed-price. Full IP. 24-hour response.",
+    "primaryLink": {
+      "label": "Book your free consultation",
+      "href": "/contact"
+    },
+    "secondaryLink": {
+      "label": "Get your free project estimate",
+      "href": "/contact"
+    }
+  }
+}

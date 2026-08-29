@@ -1,0 +1,300 @@
+{
+  "slug": "regression-vs-classification",
+  "status": "published",
+  "title": "Regression vs. Classification",
+  "shortTitle": "Regression vs. Classification",
+  "abbreviation": "RvsC",
+  "letter": "R",
+  "category": "Machine Learning",
+  "shortDefinition": "Regression predicts continuous numbers; classification predicts discrete categories.",
+  "definition": "Regression predicts a continuous numerical value — how much, how long, how likely as a probability — while classification predicts a discrete category — which category does this belong to, yes or no, which of these options. Most practical supervised machine learning problems map to one of these two task types, and choosing the right one is the first design decision in building a prediction model. Getting this choice wrong leads to models that produce the wrong type of output for what downstream business processes actually need.",
+  "introduction": "Regression predicts a continuous numerical value — how much, how long, how likely as a probability — while classification predicts a discrete category — which category does this belong to, yes or no, which of these options. Most practical supervised machine learning problems map to one of these two task types, and choosing the right one is the first design decision in building a prediction model. Getting this choice wrong leads to models that produce the wrong type of output for what downstream business processes actually need.",
+  "featured": true,
+  "aliases": [
+    "RvsC",
+    "regression vs classification",
+    "supervised learning types",
+    "regression model",
+    "classification model"
+  ],
+  "readingTime": "5 min read",
+  "publishedAt": "2026-08-07",
+  "updatedAt": "2026-08-07",
+
+  "seo": {
+    "title": "Regression vs. Classification in AI: What's the Difference?",
+    "description": "Regression predicts continuous numbers; classification predicts discrete categories. Definition, choosing the right approach, builds from $30K.",
+    "canonical": "/glossary/regression-vs-classification/",
+    "keywords": [
+      "regression vs classification ai",
+      "regression classification difference",
+      "supervised learning types",
+      "regression model definition",
+      "classification model definition"
+    ]
+  },
+
+  "sections": [
+    {
+      "id": "common-business-examples",
+      "eyebrow": "Core examples",
+      "title": "Common business examples of each",
+      "description": "Regression predicts continuous values; classification predicts discrete categories.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Regression examples: Predicting a customer's lifetime value (a dollar amount), forecasting demand for next week's inventory (a quantity), estimating how long a customer support ticket will take to resolve (a duration), or predicting the probability that a user will churn next month (a probability between 0 and 1). Classification examples: Predicting whether a loan application should be approved or declined (binary), routing a customer support ticket to the right department (multi-class), or identifying which product category an item belongs to (multi-class). The distinction matters because regression and classification models use different algorithms, different loss functions during training, and different evaluation metrics — precision/recall for classification, mean absolute error or similar for regression."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Regression — customer lifetime value, demand forecasting, resolution time, churn probability.",
+            "Classification — loan approval, ticket routing, product categorization.",
+            "Algorithm differences — different models, loss functions, and evaluation metrics.",
+            "Precision/recall for classification — mean absolute error for regression."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "The key insight",
+          "text": "Regression predicts a number; classification predicts a category. Getting this wrong produces a model that answers the wrong question."
+        }
+      ]
+    },
+    {
+      "id": "when-the-line-is-blurry",
+      "eyebrow": "Nuance",
+      "title": "When the line is blurry: thresholding regression into classification",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "In practice, the distinction can blur — a fraud model might output a fraud probability (regression) that's then thresholded into 'flag/don't flag' (classification). Whether you frame the problem as regression (predict the fraud probability) or binary classification (directly predict flag/don't flag) depends on whether the downstream decision needs a continuous score (for ranking or tiered response) or a binary action (flag or not). ClickMasters explicitly discusses this framing decision during Discovery because it affects model architecture, training approach, and how performance is measured."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Blurry boundary — regression probabilities can become classification via threshold.",
+            "Framing decision — depends on downstream need: continuous score or binary action.",
+            "Architecture impact — affects model choice, training, and metrics.",
+            "Discovery discussion — ClickMasters frames this upfront."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clickmasters-approach",
+      "eyebrow": "ClickMasters approach",
+      "title": "How ClickMasters selects the right task type for enterprise clients",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "ClickMasters frames the specific prediction task correctly during Discovery — clarifying whether what the downstream business process actually needs is a continuous numerical output, a categorical label, or both (a probability plus a threshold into a decision) before selecting any modeling approach. This framing decision is more consequential than it might appear, since getting it wrong produces a model that answers a slightly different question than the one your business process is actually asking."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Task framing — identify what the business process actually needs.",
+            "Continuous or categorical — clarify the output type required.",
+            "Combined outputs — probability + threshold when both are needed.",
+            "Consequential decision — affects every downstream technical choice."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing",
+      "eyebrow": "Investment",
+      "title": "Regression and classification pricing",
+      "content": [
+        {
+          "type": "table",
+          "caption": "Fixed-price regression and classification projects from ClickMasters",
+          "headers": ["Project Type", "Price Range", "Timeline"],
+          "rows": [
+            ["Regression model for continuous outcome prediction", "$30,000 – $80,000", "10–16 weeks"],
+            ["Classification model for categorical prediction", "$30,000 – $80,000", "10–16 weeks"],
+            ["Combined regression + classification system", "$50,000 – $120,000", "14–22 weeks"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "success",
+          "title": "Full IP ownership",
+          "text": "All projects include full intellectual property transfer. You own everything we build."
+        }
+      ]
+    },
+    {
+      "id": "common-objections",
+      "eyebrow": "Direct answers",
+      "title": "Common objections, answered directly",
+      "content": [
+        {
+          "type": "bullet-list",
+          "items": [
+            "\"We're not sure whether we need regression or classification for our use case — can you help frame it?\" — Yes, this is exactly the kind of framing work ClickMasters does during Discovery — clarifying what the downstream process actually needs from the model output before any technical decisions are made.",
+            "\"How much will this cost?\" — $30,000–$120,000 depending on task complexity and whether you need regression, classification, or both. Fixed quote after Discovery.",
+            "\"Does it really matter which framing we choose, or can we switch later?\" — It matters — the choice affects algorithm selection, training approach, and evaluation metrics, and while switching is possible, it's more efficient to frame correctly from the start.",
+            "\"Is predicting a probability regression or classification?\" — Technically both — predicting a continuous probability score is a regression task; converting that score into a class label via a threshold is a classification step."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "limitations",
+      "eyebrow": "Engineering reality",
+      "title": "Limitations and risks of regression and classification framing",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Both regression and classification approaches have limitations. Regression can be sensitive to outliers and may not handle bounded outputs well without transformation. Classification can be sensitive to class imbalance and threshold selection. Framing the problem incorrectly from the start can lead to models that don't serve the business need. Some problems genuinely require both approaches, which adds complexity. The choice of evaluation metrics must match the framing — using classification metrics for a regression task or vice versa can be misleading."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Regression limitations — sensitivity to outliers, bounded output challenges.",
+            "Classification limitations — class imbalance, threshold selection.",
+            "Incorrect framing — models that don't serve the business need.",
+            "Combined complexity — some problems need both approaches.",
+            "Metric mismatch — using the wrong evaluation metrics is misleading."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Important",
+          "text": "Framing the prediction task correctly is the first and most consequential decision. Get it right before selecting algorithms or evaluating results."
+        }
+      ]
+    },
+    {
+      "id": "best-practices",
+      "eyebrow": "Implementation guide",
+      "title": "Best practices for regression and classification",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Choosing between regression and classification requires careful business need analysis and problem framing. The following practices can help ensure you select the right approach for your business problem."
+        },
+        {
+          "type": "numbered-list",
+          "title": "Recommended approach:",
+          "items": [
+            "Clarify what the downstream business process actually needs.",
+            "Determine if a continuous number, category, or both is required.",
+            "Consider thresholding regression probabilities into decisions.",
+            "Select appropriate evaluation metrics for your chosen framing.",
+            "Use regression for continuous outcomes — amounts, probabilities, durations.",
+            "Use classification for discrete outcomes — yes/no, category membership.",
+            "Consider combined approaches when both types of output are needed.",
+            "Document framing decisions and rationale."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "Key metric",
+          "text": "Measure whether the model output actually serves the downstream business decision — the ultimate test of correct framing."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "eyebrow": "Common questions",
+    "title": "Frequently asked questions about regression vs. classification",
+    "items": [
+      {
+        "question": "Is predicting a probability regression or classification?",
+        "answer": "Technically both — predicting a continuous probability score is a regression task; converting that score into a class label (fraud/not fraud) via a threshold is a classification step. Many real systems involve both."
+      },
+      {
+        "question": "Which type of problem is more common in business applications?",
+        "answer": "Both are widespread — demand forecasting, pricing, and lifetime value prediction are regression; fraud detection, customer churn prediction framed as yes/no, and content moderation are classification."
+      },
+      {
+        "question": "Do regression and classification use different types of models?",
+        "answer": "Some model types work well for both (gradient boosting, neural networks); others are specifically designed for one (linear regression for continuous outputs, logistic regression for binary classification). ClickMasters selects the appropriate approach for your specific task."
+      },
+      {
+        "question": "How are regression and classification models evaluated differently?",
+        "answer": "Regression uses metrics like Mean Absolute Error (MAE) or Root Mean Squared Error (RMSE) to measure prediction distance from actual values; classification uses precision, recall, accuracy, and AUC-ROC to measure how well it assigns correct categories."
+      },
+      {
+        "question": "How long does building a regression or classification model take?",
+        "answer": "10–22 weeks depending on data complexity and whether you need a single model or a combined system."
+      },
+      {
+        "question": "Can the same model be used for both regression and classification tasks?",
+        "answer": "Some flexible model architectures can handle both, but ClickMasters selects architectures specifically optimized for your task type rather than defaulting to a generic approach."
+      },
+      {
+        "question": "What is the difference between binary and multi-class classification?",
+        "answer": "Binary classification predicts between two categories (yes/no). Multi-class classification predicts among three or more categories (which product type, which department)."
+      },
+      {
+        "question": "What is logistic regression — regression or classification?",
+        "answer": "Despite the name, logistic regression is a classification algorithm — it predicts the probability of a binary outcome and is used for classification tasks."
+      },
+      {
+        "question": "What are common regression evaluation metrics?",
+        "answer": "Common metrics include Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), Mean Absolute Percentage Error (MAPE), and R-squared. The right choice depends on your business context."
+      },
+      {
+        "question": "When should you use a classification model vs. a regression model with a threshold?",
+        "answer": "Use classification when you need a binary decision. Use regression when you need a continuous score that can be thresholded flexibly or ranked. ClickMasters helps determine which is better for your specific use case."
+      }
+    ]
+  },
+
+  "relatedTerms": [
+    "machine-learning-model",
+    "anomaly-detection",
+    "precision-and-recall",
+    "supervised-learning",
+    "model-evaluation"
+  ],
+
+  "references": [
+    {
+      "label": "Regression and Classification: A Comprehensive Comparison",
+      "href": "https://arxiv.org/abs/2106.08956",
+      "publisher": "arXiv"
+    },
+    {
+      "label": "Supervised Learning: Regression and Classification Techniques",
+      "href": "https://arxiv.org/abs/2305.09876",
+      "publisher": "arXiv"
+    }
+  ],
+
+  "additionalResources": [
+    {
+      "label": "Machine Learning Model Development Services",
+      "href": "/machine-learning-model-development/"
+    },
+    {
+      "label": "What is a Machine Learning Model?",
+      "href": "/glossary/machine-learning-model/"
+    },
+    {
+      "label": "What is Precision and Recall?",
+      "href": "/glossary/precision-and-recall/"
+    }
+  ],
+
+  "cta": {
+    "eyebrow": "Ready to build the right predictive model for your business?",
+    "title": "Get a free predictive model consultation — 24-hour response",
+    "description": "ClickMasters frames prediction tasks correctly before any technical decisions, ensuring the model answers the question your business actually needs answered. From $30,000. Fixed-price. Full IP. 24-hour response.",
+    "primaryLink": {
+      "label": "Book your free consultation",
+      "href": "/contact"
+    },
+    "secondaryLink": {
+      "label": "Get your free project estimate",
+      "href": "/contact"
+    }
+  }
+}

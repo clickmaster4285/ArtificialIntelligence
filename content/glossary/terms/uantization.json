@@ -1,0 +1,319 @@
+{
+  "slug": "quantization",
+  "status": "published",
+  "title": "Quantization",
+  "shortTitle": "Quantization",
+  "abbreviation": "QAT",
+  "letter": "Q",
+  "category": "Model Optimization",
+  "shortDefinition": "A technique that reduces a model's numerical precision to make it smaller and faster with minimal accuracy loss.",
+  "definition": "Quantization is a model optimization technique that reduces the numerical precision used to represent a model's parameters — for example, converting from 32-bit floating-point numbers to 8-bit integers — significantly shrinking the model's size and speeding up inference, typically with only modest accuracy loss. Quantization is one of the most common techniques for making capable AI models practical to run on resource-constrained hardware or at lower cost in production.",
+  "introduction": "Quantization is a model optimization technique that reduces the numerical precision used to represent a model's parameters — for example, converting from 32-bit floating-point numbers to 8-bit integers — significantly shrinking the model's size and speeding up inference, typically with only modest accuracy loss. Quantization is one of the most common techniques for making capable AI models practical to run on resource-constrained hardware or at lower cost in production.",
+  "featured": true,
+  "aliases": [
+    "QAT",
+    "quantization",
+    "model quantization",
+    "precision reduction",
+    "low-precision inference"
+  ],
+  "readingTime": "5 min read",
+  "publishedAt": "2026-08-07",
+  "updatedAt": "2026-08-07",
+
+  "seo": {
+    "title": "What is Quantization? AI Term Defined",
+    "description": "Quantization reduces a model's numerical precision to make it smaller and faster with minimal accuracy loss. Definition, builds from $25K.",
+    "canonical": "/glossary/quantization/",
+    "keywords": [
+      "what is model quantization",
+      "quantization definition ai",
+      "quantization vs distillation",
+      "quantized model accuracy",
+      "model quantization services"
+    ]
+  },
+
+  "sections": [
+    {
+      "id": "how-quantization-works",
+      "eyebrow": "Core technique",
+      "title": "How quantization works",
+      "description": "Quantization converts high-precision numbers to lower-precision representations, reducing memory and speeding computation.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Neural network parameters are typically stored and computed using high-precision floating-point numbers during training, since this precision helps the optimization process work effectively. Once trained, much of that precision often isn't necessary for the model to make accurate predictions — quantization converts these high-precision numbers to lower-precision representations (common targets include 16-bit, 8-bit, or even lower), dramatically reducing memory footprint and often improving computational speed, since lower-precision arithmetic is faster on most hardware."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "High precision during training — helps optimization work effectively.",
+            "Lower precision after training — often sufficient for inference.",
+            "Common targets — 16-bit, 8-bit, or even lower precision.",
+            "Memory reduction — significantly smaller model footprint.",
+            "Speed improvement — lower-precision arithmetic is faster on most hardware."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "The key insight",
+          "text": "Much of the precision used during training isn't necessary for inference — quantization reduces that precision to make models smaller and faster."
+        }
+      ]
+    },
+
+    {
+      "id": "quantization-vs-distillation",
+      "eyebrow": "Comparison",
+      "title": "Quantization vs. distillation: different optimization approaches",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Quantization reduces a model's numerical precision while keeping its architecture and learned parameters fundamentally the same, just represented more efficiently. Distillation trains an entirely new, smaller model to replicate a larger model's behavior. Both achieve similar goals (smaller, faster models), but through different mechanisms — quantization is generally simpler to apply to an existing model without retraining, while distillation requires a full training process but can sometimes achieve more dramatic size reductions. The two techniques can also be combined for maximum efficiency."
+        },
+        {
+          "type": "table",
+          "caption": "Quantization vs. distillation comparison",
+          "headers": ["Aspect", "Quantization", "Distillation"],
+          "rows": [
+            ["Approach", "Reduce numerical precision", "Train a new, smaller model"],
+            ["Retraining needed", "Usually not", "Yes"],
+            ["Effort", "Lower", "Higher"],
+            ["Size reduction", "Moderate (typically 2-4x)", "Can be more dramatic"],
+            ["Accuracy impact", "Typically modest", "Varies, can be higher"],
+            ["Combination", "Can combine with distillation", "Can combine with quantization"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "They work together",
+          "text": "Quantization and distillation can be combined for maximum efficiency — distillation creates a smaller model, then quantization further reduces its precision."
+        }
+      ]
+    },
+
+    {
+      "id": "clickmasters-approach",
+      "eyebrow": "ClickMasters approach",
+      "title": "How ClickMasters applies quantization for enterprise clients",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "ClickMasters applies quantization as a relatively low-effort optimization technique for reducing inference cost and latency, or enabling edge deployment, validating accuracy impact against your specific use case requirements before committing to a particular precision level. Different quantization levels offer different tradeoffs between efficiency gains and accuracy preservation, and ClickMasters selects the right balance based on your specific tolerance for any accuracy reduction."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Low-effort optimization — simple to apply to existing models.",
+            "Accuracy validation — confirm impact against your use case requirements.",
+            "Tradeoff selection — choose the right precision level for your needs.",
+            "Cost reduction — optimize inference for production deployment.",
+            "Edge enablement — make models practical for resource-constrained hardware."
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "pricing",
+      "eyebrow": "Investment",
+      "title": "Quantization pricing",
+      "content": [
+        {
+          "type": "table",
+          "caption": "Fixed-price quantization projects from ClickMasters",
+          "headers": ["Project Type", "Price Range", "Timeline"],
+          "rows": [
+            ["Quantization of an existing model for cost/latency optimization", "$25,000 – $55,000", "6–10 weeks"],
+            ["Quantization for edge device deployment", "$35,000 – $75,000", "10–14 weeks"],
+            ["Combined quantization and distillation optimization", "$45,000 – $100,000", "12–18 weeks"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "success",
+          "title": "Full IP ownership",
+          "text": "All projects include full intellectual property transfer. You own everything we build."
+        }
+      ]
+    },
+
+    {
+      "id": "common-objections",
+      "eyebrow": "Direct answers",
+      "title": "Common objections, answered directly",
+      "content": [
+        {
+          "type": "bullet-list",
+          "items": [
+            "\"Will quantization meaningfully hurt our model's accuracy?\" — ClickMasters validates accuracy impact directly against your specific use case requirements before deployment — typically modest accuracy loss for moderate quantization levels, though this should be confirmed rather than assumed.",
+            "\"How much will this cost?\" — $25,000–$100,000 depending on whether quantization alone or combined with distillation is the right approach for your needs. Fixed quote after Discovery.",
+            "\"Is quantization simpler or more effective than distillation for our use case?\" — ClickMasters scopes this during Discovery — quantization is generally simpler to apply since it doesn't require full retraining, but distillation can achieve more dramatic size reductions in some cases.",
+            "\"Does quantization require retraining the model?\" — Often no — many quantization techniques can be applied to an already-trained model without full retraining."
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "limitations",
+      "eyebrow": "Engineering reality",
+      "title": "Limitations and risks of quantization",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Quantization has limitations. While accuracy loss is typically modest for moderate quantization (e.g., 16-bit to 8-bit), more aggressive quantization can meaningfully degrade model performance. Some model architectures and task types are more sensitive to precision reduction than others. Quantization doesn't change model architecture, so it won't reduce inference time as much as distillation for some models. Validation is required to confirm accuracy remains acceptable, and some quantization techniques require calibration data that must be representative of production inputs."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Accuracy tradeoff — more aggressive quantization can degrade performance.",
+            "Architecture sensitivity — some models are more affected than others.",
+            "Task sensitivity — some tasks are more sensitive to precision loss.",
+            "Limited speedup — may not reduce inference time as much as distillation.",
+            "Validation required — must confirm accuracy remains acceptable.",
+            "Calibration data — some techniques require representative data."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Important",
+          "text": "Quantization is not a free lunch — it trades precision for efficiency. Always validate accuracy on your specific use case before deployment."
+        }
+      ]
+    },
+
+    {
+      "id": "best-practices",
+      "eyebrow": "Implementation guide",
+      "title": "Best practices for quantization implementation",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Applying quantization effectively requires careful precision selection, validation, and calibration. The following practices can help ensure your quantized model delivers the right balance of efficiency and accuracy."
+        },
+        {
+          "type": "numbered-list",
+          "title": "Recommended approach:",
+          "items": [
+            "Start with moderate quantization (e.g., 16-bit) before more aggressive options.",
+            "Validate accuracy on your specific use case and data.",
+            "Use calibration data that is representative of production inputs.",
+            "Consider post-training quantization for simplicity.",
+            "For more accuracy-critical applications, consider quantization-aware training.",
+            "Combine quantization with distillation for maximum efficiency if needed.",
+            "Test inference speed and memory usage improvements.",
+            "Monitor quantized model behavior in production after deployment."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "Key metric",
+          "text": "Measure the accuracy-efficiency tradeoff — compare model size and inference speed against accuracy loss. The optimal balance depends on your specific requirements."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "eyebrow": "Common questions",
+    "title": "Frequently asked questions about quantization",
+    "items": [
+      {
+        "question": "How much does quantization typically reduce model size?",
+        "answer": "This varies by quantization level, but reducing from 32-bit to 8-bit precision can reduce model size by roughly 4x, with even more aggressive quantization options available at greater potential accuracy tradeoff."
+      },
+      {
+        "question": "Does quantization require retraining the model?",
+        "answer": "Often no — many quantization techniques can be applied to an already-trained model without full retraining, making it a relatively lower-effort optimization compared to distillation."
+      },
+      {
+        "question": "Can quantization and distillation be used together?",
+        "answer": "Yes, combining both techniques can achieve greater efficiency gains than either alone, since they address model size and speed through different, complementary mechanisms."
+      },
+      {
+        "question": "Is quantization necessary for all production AI deployments?",
+        "answer": "No — it's most valuable when inference cost, latency, or deployment hardware constraints (especially edge deployment) make model size and speed a genuine priority."
+      },
+      {
+        "question": "How long does a quantization project take?",
+        "answer": "6–18 weeks depending on whether it's standalone quantization or combined with distillation for maximum efficiency."
+      },
+      {
+        "question": "Can a quantized model be deployed on mobile devices or edge hardware?",
+        "answer": "Yes, this is one of quantization's primary practical benefits — making models small and efficient enough to run on resource-constrained edge or mobile hardware."
+      },
+      {
+        "question": "What is the difference between post-training quantization and quantization-aware training?",
+        "answer": "Post-training quantization applies quantization to an already-trained model without retraining. Quantization-aware training incorporates quantization effects during the training process, typically achieving better accuracy but requiring more effort."
+      },
+      {
+        "question": "What is the difference between 8-bit and 4-bit quantization?",
+        "answer": "8-bit quantization reduces precision from 32-bit to 8-bit, achieving roughly 4x size reduction with modest accuracy loss. 4-bit quantization is more aggressive, achieving ~8x reduction but with potentially higher accuracy degradation."
+      },
+      {
+        "question": "Does quantization work for both inference and training?",
+        "answer": "Quantization is primarily used for inference optimization. While quantization-aware training exists, quantization of the trained model for inference is the most common application."
+      },
+      {
+        "question": "Can quantization be applied to any model architecture?",
+        "answer": "Most neural network architectures can be quantized, though some architectures are more sensitive to precision reduction than others. ClickMasters evaluates your specific model architecture during Discovery."
+      }
+    ]
+  },
+
+  "relatedTerms": [
+    "edge-ai",
+    "model-distillation",
+    "inference-vs-training",
+    "ai-latency",
+    "model-compression"
+  ],
+
+  "references": [
+    {
+      "label": "A Survey on Model Quantization Techniques",
+      "href": "https://arxiv.org/abs/2106.08956",
+      "publisher": "arXiv"
+    },
+    {
+      "label": "Quantization and Distillation in Neural Network Compression",
+      "href": "https://arxiv.org/abs/2304.09876",
+      "publisher": "arXiv"
+    }
+  ],
+
+  "additionalResources": [
+    {
+      "label": "What is Edge AI?",
+      "href": "/glossary/edge-ai/"
+    },
+    {
+      "label": "What is Model Distillation?",
+      "href": "/glossary/model-distillation/"
+    },
+    {
+      "label": "What is Inference vs. Training?",
+      "href": "/glossary/inference-vs-training/"
+    }
+  ],
+
+  "cta": {
+    "eyebrow": "Ready to quantize your model for cost or edge deployment?",
+    "title": "Get a free model quantization consultation — 24-hour response",
+    "description": "ClickMasters applies quantization with validated accuracy impact for cost-efficient or edge AI deployment. From $25,000. Fixed-price. Full IP. 24-hour response.",
+    "primaryLink": {
+      "label": "Book your free consultation",
+      "href": "/contact"
+    },
+    "secondaryLink": {
+      "label": "Get your free project estimate",
+      "href": "/contact"
+    }
+  }
+}

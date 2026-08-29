@@ -1,0 +1,316 @@
+{
+  "slug": "tokenization",
+  "status": "published",
+  "title": "Tokenization",
+  "shortTitle": "Tokenization",
+  "abbreviation": "Token",
+  "letter": "T",
+  "category": "LLM",
+  "shortDefinition": "The process of breaking text into units (tokens) that LLMs process, directly affecting costs and context limits.",
+  "definition": "Tokenization is the process of breaking text into smaller units called 'tokens' — roughly corresponding to words or parts of words — that a language model processes and generates one at a time. Tokens are the fundamental unit LLM providers use for billing and context window limits, meaning understanding tokenization directly affects your AI application's cost and the amount of text it can process at once.",
+  "introduction": "Tokenization is the process of breaking text into smaller units called 'tokens' — roughly corresponding to words or parts of words — that a language model processes and generates one at a time. Tokens are the fundamental unit LLM providers use for billing and context window limits, meaning understanding tokenization directly affects your AI application's cost and the amount of text it can process at once.",
+  "featured": true,
+  "aliases": [
+    "Token",
+    "tokenization",
+    "token counting",
+    "text tokenization",
+    "subword tokenization"
+  ],
+  "readingTime": "5 min read",
+  "publishedAt": "2026-08-07",
+  "updatedAt": "2026-08-07",
+
+  "seo": {
+    "title": "What is Tokenization? AI Tokens Explained",
+    "description": "Tokenization breaks text into units LLMs can process, directly affecting API costs and context limits. Definition, cost optimization from $8K.",
+    "canonical": "/glossary/tokenization/",
+    "keywords": [
+      "what is tokenization ai",
+      "ai token definition",
+      "llm tokens explained",
+      "token cost optimization",
+      "llm api cost reduction services"
+    ]
+  },
+
+  "sections": [
+    {
+      "id": "how-tokenization-works",
+      "eyebrow": "Core process",
+      "title": "How tokenization works",
+      "description": "Tokenizers split text into units using a learned vocabulary, with common words as single tokens and rare terms split into subword units.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "A tokenizer splits input text into tokens using a learned vocabulary, where common words often become a single token while rarer words or unusual terms may be split into multiple sub-word tokens. As a rough estimate, one token is roughly three-quarters of an English word, meaning 100 words is typically around 130-150 tokens — though this varies by language and content type, with non-English languages and specialized terminology (legal, medical, technical) often requiring more tokens per word than everyday English text."
+        },
+        {
+          "type": "bullet-list",
+          "title": "Common tokenization examples:",
+          "items": [
+            "Common English word (e.g., 'apple') = 1 token",
+            "Rare or unusual word (e.g., 'misunderestimated') = 2-3 tokens",
+            "Common phrase (e.g., 'I love you') = 3-4 tokens",
+            "Technical term (e.g., 'immunohistochemistry') = 5-8 tokens",
+            "100 words of everyday English = ~130-150 tokens",
+            "100 words of legal or medical text = ~150-200 tokens"
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "The key insight",
+          "text": "Tokenization isn't just a technical detail — it directly determines how much you pay per API call and how much text you can fit in a model's context window."
+        }
+      ]
+    },
+
+    {
+      "id": "cost-and-performance-impact",
+      "eyebrow": "Business impact",
+      "title": "Why tokenization matters for cost and performance",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "LLM API providers charge based on the number of input and output tokens processed, meaning verbose prompts, large context windows, and unnecessarily long outputs directly increase cost at scale. Tokenization also determines context window limits — the maximum amount of text a model can consider at once — which affects how much document content you can include in a RAG system's retrieved context, or how long a conversation history can persist before older content must be dropped or summarized."
+        },
+        {
+          "type": "bullet-list",
+          "title": "Key cost and performance considerations:",
+          "items": [
+            "Billing: input tokens + output tokens = total cost per API call.",
+            "Context window: token count determines how much text fits in the model's memory.",
+            "RAG chunk size: larger chunks consume more tokens but may provide more complete context.",
+            "Conversation history: longer chat histories consume tokens quickly.",
+            "Language variance: non-English text often requires more tokens per word.",
+            "Specialized terminology: legal, medical, technical terms tokenize inefficiently."
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "clickmasters-approach",
+      "eyebrow": "ClickMasters approach",
+      "title": "How ClickMasters optimizes token usage for enterprise clients",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "ClickMasters builds token-efficient prompt architecture by default — trimming unnecessary verbosity from system prompts, implementing caching for repeated context, and routing simpler queries to cheaper, smaller models while reserving expensive frontier models for queries that genuinely need that capability. For RAG systems specifically, ClickMasters optimizes chunk size and retrieval count to balance context completeness against token cost."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Prompt trimming: remove unnecessary verbosity from system and user prompts.",
+            "Context caching: cache repeated context blocks to avoid resending tokens.",
+            "Model routing: route simple queries to cheaper models (cost optimization).",
+            "RAG chunk optimization: balance context completeness vs. token cost.",
+            "Token usage monitoring: track token consumption per user, per use case.",
+            "Cost forecasting: estimate token costs at scale during project scoping."
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "pricing",
+      "eyebrow": "Investment",
+      "title": "Token cost optimization pricing",
+      "content": [
+        {
+          "type": "table",
+          "caption": "Fixed-price token optimization projects from ClickMasters",
+          "headers": ["Project Type", "Price Range", "Timeline"],
+          "rows": [
+            ["Token usage audit and cost optimization", "$8,000 – $20,000", "3–6 weeks"],
+            ["Prompt/context architecture redesign for cost efficiency", "$15,000 – $40,000", "6–10 weeks"],
+            ["Multi-model routing system for cost control at scale", "$30,000 – $70,000", "10–16 weeks"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "success",
+          "title": "Full IP ownership",
+          "text": "All projects include full intellectual property transfer. You own everything we build."
+        }
+      ]
+    },
+
+    {
+      "id": "common-objections",
+      "eyebrow": "Direct answers",
+      "title": "Common objections, answered directly",
+      "content": [
+        {
+          "type": "bullet-list",
+          "items": [
+            "\"Our LLM API costs are higher than expected — can this be fixed?\" — Often yes — ClickMasters audits your current token usage patterns and frequently finds straightforward optimizations (prompt trimming, caching, model routing) that meaningfully reduce cost without sacrificing output quality.",
+            "\"How much will this cost?\" — $8,000–$70,000 depending on whether this is an audit/optimization of an existing system or a new cost-efficient architecture build. Fixed quote after Discovery.",
+            "\"Will reducing tokens hurt our output quality?\" — Not when done correctly — ClickMasters optimizes for removing genuinely unnecessary tokens (redundant instructions, excessive context) while preserving everything that actually affects output quality, validated through evaluation before deployment.",
+            "\"Can you help us estimate costs before we build an LLM-powered feature?\" — Yes, ClickMasters provides token usage estimates and projected cost-at-scale as part of project scoping during Discovery."
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "limitations",
+      "eyebrow": "Engineering reality",
+      "title": "Limitations and risks of tokenization optimization",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Tokenization optimization has limits. Providers each use different tokenizers, so token counts vary across models. Over-optimizing prompts can unintentionally reduce output quality by removing necessary context. Caching only helps for repeated requests, not unique queries. Model routing requires careful evaluation to ensure smaller models meet accuracy requirements. Tokenization strategies must also be balanced against latency and user experience."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Tokenizer variance: token counts differ across providers (OpenAI vs. Claude vs. Gemini).",
+            "Quality risk: over-trimming can reduce output accuracy or completeness.",
+            "Limited caching benefit: caching only helps for repeated queries, not all use cases.",
+            "Routing complexity: needs careful evaluation to ensure smaller models still meet accuracy.",
+            "Language dependency: optimization strategies vary by language and content type.",
+            "Context tradeoff: reducing tokens may force dropping important but verbose context.",
+            "Monitoring overhead: tracking token usage adds operational complexity."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Important",
+          "text": "Token optimization is a balancing act — reduce costs where possible, but always validate that output quality remains acceptable on your specific use cases."
+        }
+      ]
+    },
+
+    {
+      "id": "best-practices",
+      "eyebrow": "Implementation guide",
+      "title": "Best practices for token cost optimization",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Managing token costs effectively requires a systematic approach to prompt design, caching, and model selection. The following practices can help optimize costs without sacrificing quality."
+        },
+        {
+          "type": "numbered-list",
+          "title": "Recommended approach:",
+          "items": [
+            "Audit current token usage to identify cost drivers (which prompts, which use cases).",
+            "Trim unnecessary words from system prompts and user instructions.",
+            "Implement caching for repeated context blocks and common queries.",
+            "Use model routing: send simple queries to smaller, cheaper models.",
+            "Optimize RAG chunk sizes and retrieval counts for cost-quality tradeoff.",
+            "Monitor token usage per user, per use case, and per model.",
+            "Set up budget alerts to prevent unexpected cost spikes.",
+            "Re-evaluate token efficiency after provider model updates."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "Key metric",
+          "text": "Track average token cost per request and monitor it over time. A rising average cost indicates inefficiency or usage pattern changes that need attention."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "eyebrow": "Common questions",
+    "title": "Frequently asked questions about tokenization",
+    "items": [
+      {
+        "question": "How many tokens are in a typical sentence or document?",
+        "answer": "Roughly, one token is about three-quarters of an English word — a 1,000-word document is typically around 1,300-1,500 tokens, though this varies by language and content type."
+      },
+      {
+        "question": "Does a longer context window always cost more?",
+        "answer": "Yes, you pay for the tokens you send and receive, so larger context windows used in practice (not just available as a maximum) directly increase cost."
+      },
+      {
+        "question": "Can token usage be reduced without losing important information?",
+        "answer": "Yes, often through prompt trimming, caching repeated content, and routing simpler queries to cheaper models — ClickMasters identifies these opportunities during a token usage audit."
+      },
+      {
+        "question": "Do different LLM providers tokenize text differently?",
+        "answer": "Yes, each provider uses its own tokenizer, meaning the same text can produce a different token count (and therefore cost) across providers — relevant when comparing pricing between models."
+      },
+      {
+        "question": "How long does a token cost optimization project take?",
+        "answer": "3–16 weeks depending on whether it's an audit of an existing system or a new cost-efficient architecture build."
+      },
+      {
+        "question": "Can you help us estimate costs before we build an LLM-powered feature?",
+        "answer": "Yes, ClickMasters provides token usage estimates and projected cost-at-scale as part of project scoping during Discovery."
+      },
+      {
+        "question": "What's the difference between input tokens and output tokens?",
+        "answer": "Input tokens are what you send to the model (prompt, context, conversation history). Output tokens are what the model generates in response. Both count toward total cost, with output tokens often being more expensive."
+      },
+      {
+        "question": "What is token caching and how does it save money?",
+        "answer": "Token caching stores repeated context blocks (like a lengthy system prompt) so you don't have to send them every time — you send a cache reference instead. This reduces input token costs significantly for repeated patterns."
+      },
+      {
+        "question": "Does non-English text cost more than English?",
+        "answer": "Generally yes. Many tokenizers are optimized for English, so non-English languages often require more tokens per word, increasing costs. This is especially true for languages with complex scripts or characters."
+      },
+      {
+        "question": "What are 'special' tokens in tokenization?",
+        "answer": "Special tokens are reserved tokens used for specific purposes — like marking the start or end of a sequence, separating instructions from content, or indicating special formatting. They're part of the tokenizer's vocabulary but don't represent actual words."
+      }
+    ]
+  },
+
+  "relatedTerms": [
+    "large-language-model",
+    "prompt-engineering",
+    "llm-integration-services",
+    "context-window",
+    "model-routing"
+  ],
+
+  "references": [
+    {
+      "label": "SentencePiece: A Simple and Language Independent Subword Tokenizer",
+      "href": "https://arxiv.org/abs/1808.06226",
+      "publisher": "arXiv"
+    },
+    {
+      "label": "Byte-Pair Encoding (BPE) for Tokenization",
+      "href": "https://arxiv.org/abs/1905.10602",
+      "publisher": "arXiv"
+    }
+  ],
+
+  "additionalResources": [
+    {
+      "label": "LLM Integration Services",
+      "href": "/llm-integration-services/"
+    },
+    {
+      "label": "AI Cost Guide",
+      "href": "/ai-cost-guide/"
+    },
+    {
+      "label": "What is Prompt Engineering?",
+      "href": "/glossary/prompt-engineering/"
+    }
+  ],
+
+  "cta": {
+    "eyebrow": "Ready to optimize your AI token costs?",
+    "title": "Get a free token cost optimization consultation — 24-hour response",
+    "description": "ClickMasters builds token-efficient prompt architecture and cost-control infrastructure for LLM applications. From $8,000. Fixed-price. Full IP. 24-hour response.",
+    "primaryLink": {
+      "label": "Book your free consultation",
+      "href": "/contact"
+    },
+    "secondaryLink": {
+      "label": "Get your free project estimate",
+      "href": "/contact"
+    }
+  }
+}

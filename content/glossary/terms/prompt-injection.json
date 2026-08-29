@@ -1,0 +1,302 @@
+{
+  "slug": "prompt-injection",
+  "status": "published",
+  "title": "Prompt Injection",
+  "shortTitle": "Prompt Injection",
+  "abbreviation": "PI",
+  "letter": "P",
+  "category": "AI Security",
+  "shortDefinition": "An attack technique that manipulates an AI model into ignoring its instructions or safety guardrails.",
+  "definition": "Prompt injection is a specific attack technique where adversarial input is crafted to manipulate an AI model into ignoring its original instructions, system prompt, or safety guardrails — often by embedding deceptive instructions within content the model processes, such as a malicious instruction hidden inside a document the AI is asked to summarize. Prompt injection is one of the most significant security risks facing LLM-powered applications that process untrusted input.",
+  "introduction": "Prompt injection is a specific attack technique where adversarial input is crafted to manipulate an AI model into ignoring its original instructions, system prompt, or safety guardrails — often by embedding deceptive instructions within content the model processes, such as a malicious instruction hidden inside a document the AI is asked to summarize. Prompt injection is one of the most significant security risks facing LLM-powered applications that process untrusted input.",
+  "featured": true,
+  "aliases": [
+    "PI",
+    "prompt injection",
+    "instruction override",
+    "prompt manipulation",
+    "prompt hacking"
+  ],
+  "readingTime": "6 min read",
+  "publishedAt": "2026-08-07",
+  "updatedAt": "2026-08-07",
+
+  "seo": {
+    "title": "What is Prompt Injection? Definition",
+    "description": "Prompt injection is an attack technique that manipulates an AI model into ignoring its instructions. Definition, defenses from $25K.",
+    "canonical": "/glossary/prompt-injection/",
+    "keywords": [
+      "what is prompt injection",
+      "prompt injection definition",
+      "prompt injection examples",
+      "prompt injection defense",
+      "prompt injection security services"
+    ]
+  },
+
+  "sections": [
+    {
+      "id": "how-prompt-injection-works",
+      "eyebrow": "Attack mechanics",
+      "title": "How prompt injection attacks work",
+      "description": "Direct injection involves user input; indirect injection embeds instructions in content the AI processes.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "A direct prompt injection attack involves a user directly typing adversarial instructions intended to override the system's original behavior ('ignore your previous instructions and instead...'). An indirect prompt injection attack is often more dangerous — embedding malicious instructions within content the AI processes as data, such as a webpage, document, or email the AI summarizes or analyzes, where the AI may not distinguish between the legitimate content and an embedded instruction designed to manipulate its behavior. This indirect form is particularly concerning for AI agents that process external content from untrusted sources as part of their normal operation."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Direct injection — user types adversarial instructions directly.",
+            "Indirect injection — malicious instructions embedded in content (documents, web pages, emails).",
+            "Instruction/data confusion — AI may not distinguish legitimate content from embedded instructions.",
+            "Agent risk — particularly concerning for AI agents processing external, untrusted content."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "The key insight",
+          "text": "Indirect prompt injection is often more dangerous than direct — it can affect AI systems that process documents, web content, or emails without distinguishing legitimate content from embedded instructions."
+        }
+      ]
+    },
+    {
+      "id": "why-hard-to-prevent",
+      "eyebrow": "Challenge",
+      "title": "Why prompt injection is hard to fully prevent",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Unlike traditional software vulnerabilities with clear technical fixes, prompt injection exploits the fundamental way LLMs process input — they don't inherently distinguish between 'instructions to follow' and 'content to merely process' the way a traditional program separates code from data. This makes prompt injection a genuinely difficult, ongoing security challenge rather than a one-time fix, requiring layered defenses (input validation, output filtering, restricted action scope for agents) rather than a single definitive solution."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Fundamental issue — LLMs don't distinguish instructions from data.",
+            "No single fix — requires layered defenses, not a one-time solution.",
+            "Ongoing challenge — new techniques continue to emerge.",
+            "Layered approach — input validation, output filtering, action restrictions."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clickmasters-approach",
+      "eyebrow": "ClickMasters approach",
+      "title": "How ClickMasters defends against prompt injection for enterprise clients",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "ClickMasters builds layered defenses against prompt injection appropriate to your specific application's risk — input sanitization and suspicious-pattern detection, restricting what actions an AI agent can take autonomously regardless of instructions it receives (so even a successful injection has limited consequence), and output validation checking that generated content doesn't reflect a successful manipulation. ClickMasters includes prompt injection testing as part of AI red teaming engagements, specifically probing for this attack category."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Input sanitization — filter and detect suspicious patterns.",
+            "Action restriction — bounded agent scope limits injection consequences.",
+            "Output validation — check for signs of successful manipulation.",
+            "Red teaming — specifically test for prompt injection vulnerabilities.",
+            "Layered defense — multiple controls for comprehensive protection."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing",
+      "eyebrow": "Investment",
+      "title": "Prompt injection defense pricing",
+      "content": [
+        {
+          "type": "table",
+          "caption": "Fixed-price prompt injection defense projects from ClickMasters",
+          "headers": ["Project Type", "Price Range", "Timeline"],
+          "rows": [
+            ["Prompt injection defense audit and remediation", "$25,000 – $55,000", "6–10 weeks"],
+            ["Layered defense implementation (input/output/action restriction)", "$40,000 – $90,000", "10–16 weeks"],
+            ["Ongoing prompt injection monitoring and testing", "$15,000 – $35,000 per cycle", "Ongoing"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "success",
+          "title": "Full IP ownership",
+          "text": "All projects include full intellectual property transfer. You own everything we build."
+        }
+      ]
+    },
+    {
+      "id": "common-objections",
+      "eyebrow": "Direct answers",
+      "title": "Common objections, answered directly",
+      "content": [
+        {
+          "type": "bullet-list",
+          "items": [
+            "\"Can prompt injection be completely prevented?\" — No technique fully eliminates the risk, since it exploits LLMs' fundamental input processing — ClickMasters is direct about this and builds layered defenses that substantially reduce risk and limit consequence, rather than overpromising a complete fix.",
+            "\"How much will this cost?\" — $25,000–$90,000 for a defense implementation, or $15,000–$35,000 per cycle for ongoing testing. Fixed quote after Discovery.",
+            "\"Is our AI agent at risk if it processes documents or web content from untrusted sources?\" — Yes, this is exactly the indirect prompt injection risk pattern — ClickMasters specifically tests and defends against this scenario for any agent processing external, untrusted content.",
+            "\"Should we test for prompt injection on an ongoing basis, or just once?\" — Ongoing testing is valuable since new injection techniques continue to emerge; ClickMasters offers periodic retesting cycles."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "limitations",
+      "eyebrow": "Engineering reality",
+      "title": "Limitations and risks of prompt injection defense",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Prompt injection defense has limitations. No single technique provides complete protection, and new attack techniques continue to emerge. Defenses can degrade over time as attackers develop new methods, and over-aggressive input filtering can block legitimate user requests. Action restrictions limit what agents can do but don't prevent injection entirely — they only limit its impact. Defenses require ongoing monitoring and updating to remain effective, and some injection techniques are genuinely sophisticated and difficult to detect."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "No complete protection — each technique has limitations.",
+            "Emerging techniques — new attacks continue to be developed.",
+            "Defense degradation — defenses need ongoing updates.",
+            "False positives — over-aggressive filtering blocks legitimate requests.",
+            "Impact limitation — action restrictions limit, not prevent, injection.",
+            "Sophisticated techniques — some injections are genuinely hard to detect."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Important",
+          "text": "Prompt injection is an ongoing security challenge, not a one-time fix. Layered defenses and continuous monitoring are essential."
+        }
+      ]
+    },
+    {
+      "id": "best-practices",
+      "eyebrow": "Implementation guide",
+      "title": "Best practices for prompt injection defense",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Defending against prompt injection requires layered controls, ongoing testing, and bounded agent scope. The following practices can help reduce your vulnerability to prompt injection attacks."
+        },
+        {
+          "type": "numbered-list",
+          "title": "Recommended approach:",
+          "items": [
+            "Implement input sanitization and suspicious-pattern detection.",
+            "Restrict agent action scope — bounded actions limit injection consequences.",
+            "Use output validation to detect signs of manipulation.",
+            "Test for prompt injection vulnerabilities through red teaming.",
+            "Monitor for new injection techniques and update defenses.",
+            "Consider content source trust levels — treat untrusted sources cautiously.",
+            "Document prompt injection defense strategy and assumptions.",
+            "Plan for incident response in case of a successful injection."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "Key metric",
+          "text": "Measure red teaming success rate — how often do attempts bypass your defenses? A high success rate indicates your defenses need strengthening."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "eyebrow": "Common questions",
+    "title": "Frequently asked questions about prompt injection",
+    "items": [
+      {
+        "question": "What's the difference between direct and indirect prompt injection?",
+        "answer": "Direct injection involves a user typing adversarial instructions directly; indirect injection embeds malicious instructions within content (documents, web pages, emails) the AI processes as data, which can be harder to detect since the AI may not distinguish legitimate content from embedded instructions."
+      },
+      {
+        "question": "Is prompt injection the same as jailbreaking?",
+        "answer": "Related but distinct — jailbreaking specifically aims to bypass a model's safety training to elicit prohibited content; prompt injection aims to override a system's specific instructions or guardrails, which may or may not involve eliciting unsafe content."
+      },
+      {
+        "question": "Can prompt injection cause an AI agent to take harmful real-world actions?",
+        "answer": "Potentially yes, if the agent has action capabilities and isn't properly restricted — this is exactly why ClickMasters builds bounded action scope for AI agents regardless of what instructions they receive."
+      },
+      {
+        "question": "How do you test for prompt injection vulnerabilities?",
+        "answer": "Through red teaming — deliberately attempting known and novel prompt injection techniques against your system to identify exploitable gaps before real adversaries do."
+      },
+      {
+        "question": "How long does prompt injection defense implementation take?",
+        "answer": "6–16 weeks depending on whether it's an audit/remediation or a full layered defense build."
+      },
+      {
+        "question": "Should we test for prompt injection on an ongoing basis, or just once?",
+        "answer": "Ongoing testing is valuable since new injection techniques continue to emerge; ClickMasters offers periodic retesting cycles for this reason."
+      },
+      {
+        "question": "What are common prompt injection patterns?",
+        "answer": "Common patterns include 'ignore previous instructions' phrasing, role-playing (pretending to be a different user with different authority), and embedding instructions in apparently benign content. Attackers continuously develop new patterns."
+      },
+      {
+        "question": "Can prompt injection be detected automatically?",
+        "answer": "Some patterns can be detected through input filtering and anomaly detection, but sophisticated injections can be difficult to catch automatically. ClickMasters combines automated detection with manual red teaming for comprehensive protection."
+      },
+      {
+        "question": "How does prompt injection affect RAG systems?",
+        "answer": "RAG systems are particularly vulnerable to indirect prompt injection — malicious instructions can be embedded in retrieved documents, potentially overriding the system's behavior when that content is included in the context. This is a significant risk vector for RAG applications."
+      },
+      {
+        "question": "What is the relationship between prompt injection and AI guardrails?",
+        "answer": "AI guardrails are one layer of defense against prompt injection. Effective prompt injection defense combines guardrails (input/output controls) with bounded action scope and ongoing testing. Guardrails alone are rarely sufficient."
+      }
+    ]
+  },
+
+  "relatedTerms": [
+    "ai-red-teaming",
+    "ai-guardrails",
+    "large-language-model",
+    "jailbreaking",
+    "responsible-ai"
+  ],
+
+  "references": [
+    {
+      "label": "Prompt Injection: A Comprehensive Survey of Attacks and Defenses",
+      "href": "https://arxiv.org/abs/2309.09876",
+      "publisher": "arXiv"
+    },
+    {
+      "label": "Indirect Prompt Injection: A New Attack Vector for LLM Applications",
+      "href": "https://arxiv.org/abs/2310.07689",
+      "publisher": "arXiv"
+    }
+  ],
+
+  "additionalResources": [
+    {
+      "label": "Responsible AI & Compliance Services",
+      "href": "/responsible-ai-compliance/"
+    },
+    {
+      "label": "What are AI Guardrails?",
+      "href": "/glossary/ai-guardrails/"
+    },
+    {
+      "label": "What is AI Red Teaming?",
+      "href": "/glossary/ai-red-teaming/"
+    }
+  ],
+
+  "cta": {
+    "eyebrow": "Ready to defend against prompt injection?",
+    "title": "Get a free prompt injection defense consultation — 24-hour response",
+    "description": "ClickMasters builds layered prompt injection defenses and tests for vulnerabilities through red teaming. From $25,000. Fixed-price. Full IP. 24-hour response.",
+    "primaryLink": {
+      "label": "Book your free consultation",
+      "href": "/contact"
+    },
+    "secondaryLink": {
+      "label": "Get your free project estimate",
+      "href": "/contact"
+    }
+  }
+}

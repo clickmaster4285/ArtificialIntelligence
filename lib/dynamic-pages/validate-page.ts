@@ -735,11 +735,21 @@ function validateCtaSection(
   path: string,
   errors: ValidationIssue[],
 ) {
-  if (!isNonEmptyString(section.heading)) {
+  const heading =
+    isNonEmptyString(section.heading)
+      ? section.heading
+      : section.title;
+
+  const text =
+    isNonEmptyString(section.text)
+      ? section.text
+      : section.description;
+
+  if (!isNonEmptyString(heading)) {
     addError(errors, `${path}.heading`, "CTA heading is required.");
   }
 
-  if (!isNonEmptyString(section.text)) {
+  if (!isNonEmptyString(text)) {
     addError(errors, `${path}.text`, "CTA text is required.");
   }
 

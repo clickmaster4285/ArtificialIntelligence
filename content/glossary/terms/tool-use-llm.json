@@ -1,0 +1,304 @@
+{
+  "slug": "tool-use-llm",
+  "status": "published",
+  "title": "Tool Use (in LLMs)",
+  "shortTitle": "Tool Use",
+  "abbreviation": "TU",
+  "letter": "T",
+  "category": "LLM",
+  "shortDefinition": "An LLM capability that lets the model call external functions or APIs to take actions or retrieve information beyond its training.",
+  "definition": "Tool use is an LLM capability that lets the model call external functions, APIs, or tools during a conversation — looking up real-time information, performing calculations, querying a database, or taking an action in a connected system — rather than being limited to generating text based only on its training data. Tool use is what transforms an LLM from a text generator into a system capable of completing genuinely useful, dynamic tasks that require current information or real-world action.",
+  "introduction": "Tool use is an LLM capability that lets the model call external functions, APIs, or tools during a conversation — looking up real-time information, performing calculations, querying a database, or taking an action in a connected system — rather than being limited to generating text based only on its training data. Tool use is what transforms an LLM from a text generator into a system capable of completing genuinely useful, dynamic tasks that require current information or real-world action.",
+  "featured": true,
+  "aliases": [
+    "TU",
+    "tool use",
+    "function calling",
+    "tool calling",
+    "LLM tool integration"
+  ],
+  "readingTime": "6 min read",
+  "publishedAt": "2026-08-07",
+  "updatedAt": "2026-08-07",
+
+  "seo": {
+    "title": "What is Tool Use in LLMs? Definition",
+    "description": "Tool use lets an LLM call external functions or APIs to take actions or retrieve information beyond its training. Definition, builds from $25K.",
+    "canonical": "/glossary/tool-use-llm/",
+    "keywords": [
+      "what is tool use llm",
+      "tool use definition",
+      "function calling vs tool use",
+      "llm tool calling",
+      "llm tool integration services"
+    ]
+  },
+
+  "sections": [
+    {
+      "id": "how-tool-use-works",
+      "eyebrow": "Core mechanism",
+      "title": "How tool use works",
+      "description": "The LLM is given tool descriptions, determines which to use, and your application executes the call.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "When tool use is configured, the LLM is given a description of available tools (what each tool does, what parameters it requires) alongside the user's request. During the conversation, the model determines whether and which tool would help answer the request, generates the appropriate parameters, and your system executes the actual tool call (the LLM itself doesn't directly execute code — it requests the call, and your application infrastructure performs it) before returning the result to the model to incorporate into its final response. This is closely related to 'function calling,' a specific technical implementation of tool use most major LLM providers support."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Tool descriptions — define what each tool does and its parameters.",
+            "Model selection — LLM determines which tool to use.",
+            "Parameter generation — LLM produces the appropriate parameters.",
+            "Application execution — your system performs the actual tool call.",
+            "Response integration — tool result is incorporated into final output."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "The key insight",
+          "text": "The LLM determines the tool and parameters — your application executes the call. The model never directly accesses your systems."
+        }
+      ]
+    },
+    {
+      "id": "common-applications",
+      "eyebrow": "Use cases",
+      "title": "Common tool use applications",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Tool use enables LLMs to perform real-time information retrieval (checking current weather, stock prices, or database records that change after the model's training cutoff), calculations the model itself might perform unreliably through pure text generation, taking actions in connected systems (creating a calendar event, updating a CRM record, sending a notification), and orchestrating multi-step workflows where each step might require a different specialized tool. This capability is foundational to building AI agents, since agents need to interact with the real world beyond pure text generation."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Real-time information — weather, stock prices, database records.",
+            "Calculations — tasks the model might perform unreliably.",
+            "System actions — calendar, CRM, notifications.",
+            "Multi-step workflows — orchestrating multiple tools.",
+            "Agent foundation — enables agents to interact with the real world."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clickmasters-approach",
+      "eyebrow": "ClickMasters approach",
+      "title": "How ClickMasters implements tool use for enterprise clients",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "ClickMasters builds tool use integrations connecting LLMs to your specific internal systems and external APIs — designing clear tool descriptions and parameter schemas that help the model reliably select and use the right tool, and building appropriate guardrails around which tool calls execute automatically versus requiring human approval based on the consequence of the action. Every tool use implementation includes testing across realistic conversation scenarios to confirm the model reliably selects appropriate tools rather than calling them incorrectly or unnecessarily."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Tool descriptions — designed for reliable model selection.",
+            "Parameter schemas — clear definitions for correct parameter generation.",
+            "Action guardrails — human approval for consequential actions.",
+            "Scenario testing — validate tool selection in realistic conversations.",
+            "Internal system integration — connect to your specific tools and APIs."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing",
+      "eyebrow": "Investment",
+      "title": "Tool use integration pricing",
+      "content": [
+        {
+          "type": "table",
+          "caption": "Fixed-price tool use integration projects from ClickMasters",
+          "headers": ["Project Type", "Price Range", "Timeline"],
+          "rows": [
+            ["Tool use integration for a small set of functions/APIs", "$25,000 – $55,000", "8–14 weeks"],
+            ["Multi-tool system with appropriate action guardrails", "$40,000 – $90,000", "12–18 weeks"],
+            ["Enterprise tool use platform across many internal systems", "$70,000 – $170,000", "18–26 weeks"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "success",
+          "title": "Full IP ownership",
+          "text": "All projects include full intellectual property transfer. You own everything we build."
+        }
+      ]
+    },
+    {
+      "id": "common-objections",
+      "eyebrow": "Direct answers",
+      "title": "Common objections, answered directly",
+      "content": [
+        {
+          "type": "bullet-list",
+          "items": [
+            "\"How much will this cost?\" — $25,000–$170,000 depending on the number of tools/systems and guardrail complexity required. Fixed quote after Discovery.",
+            "\"How do we prevent the LLM from calling tools incorrectly or taking unintended actions?\" — ClickMasters designs clear tool descriptions and parameter schemas to help the model select correctly, combined with guardrails requiring human approval for any consequential or irreversible action, rather than allowing unrestricted automatic tool execution.",
+            "\"Can tool use connect to our specific internal systems, not just generic public APIs?\" — Yes, this is a core part of ClickMasters' tool use implementation — building custom tool definitions for your specific internal databases, APIs, and systems, often using MCP (Model Context Protocol) for standardized connections.",
+            "\"Does the LLM itself execute the tool, or does my application?\" — The LLM determines which tool to call and with what parameters, but your application infrastructure actually executes the call."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "limitations",
+      "eyebrow": "Engineering reality",
+      "title": "Limitations and risks of tool use",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Tool use has limitations. The LLM can select the wrong tool or generate incorrect parameters, requiring validation and guardrails. Tool definitions must be carefully designed — ambiguous descriptions lead to inconsistent model behavior. Tool execution adds latency to responses, and multi-step tool use can be complex to coordinate. Security and authentication for connected systems must be carefully managed, and the model may attempt to use tools in ways not anticipated during testing, requiring ongoing monitoring."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Selection errors — LLM may choose the wrong tool.",
+            "Parameter errors — generated parameters may be incorrect.",
+            "Ambiguous definitions — poor descriptions lead to inconsistent behavior.",
+            "Latency overhead — tool execution adds response time.",
+            "Security management — authentication for connected systems.",
+            "Unexpected use — model may attempt unanticipated tool calls."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Important",
+          "text": "Tool use requires careful design of tool descriptions, parameter schemas, and action guardrails. Never allow unrestricted automatic tool execution for consequential actions."
+        }
+      ]
+    },
+    {
+      "id": "best-practices",
+      "eyebrow": "Implementation guide",
+      "title": "Best practices for tool use implementation",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Implementing tool use effectively requires careful tool definition, validation, and guardrails. The following practices can help ensure your tool use implementation is reliable and secure."
+        },
+        {
+          "type": "numbered-list",
+          "title": "Recommended approach:",
+          "items": [
+            "Design clear, unambiguous tool descriptions.",
+            "Define precise parameter schemas with validation.",
+            "Test tool selection across realistic conversation scenarios.",
+            "Implement guardrails for consequential or irreversible actions.",
+            "Log tool calls and outcomes for monitoring and debugging.",
+            "Secure API keys and system access appropriately.",
+            "Monitor tool selection accuracy and adjust descriptions as needed.",
+            "Plan for edge cases where the model may attempt unintended tool use."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "Key metric",
+          "text": "Measure tool selection accuracy — what percentage of tool calls are the correct tool for the task? Low accuracy indicates unclear tool descriptions."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "eyebrow": "Common questions",
+    "title": "Frequently asked questions about tool use",
+    "items": [
+      {
+        "question": "What's the difference between tool use and function calling?",
+        "answer": "They're closely related — 'function calling' is typically the specific technical mechanism through which tool use is implemented at the API level, with most providers using this term interchangeably with 'tool use' in practice."
+      },
+      {
+        "question": "Does the LLM itself execute the tool, or does my application?",
+        "answer": "The LLM determines which tool to call and with what parameters, but your application infrastructure actually executes the call — the model never directly accesses your systems itself."
+      },
+      {
+        "question": "Can tool use enable an LLM to access real-time, current information?",
+        "answer": "Yes, this is one of tool use's primary benefits — connecting the model to live data sources (search, databases, APIs) overcomes the limitation of its training data having a fixed cutoff date."
+      },
+      {
+        "question": "How do you prevent a malicious or confused user from tricking the LLM into calling a tool inappropriately?",
+        "answer": "ClickMasters builds guardrails and validation appropriate to each tool's consequence — low-risk tools may execute automatically, while higher-stakes actions require explicit human approval before execution."
+      },
+      {
+        "question": "How long does implementing tool use take?",
+        "answer": "8–26 weeks depending on the number of tools/systems and guardrail complexity."
+      },
+      {
+        "question": "Is tool use the same thing as building an AI agent?",
+        "answer": "Tool use is a foundational capability that enables agentic behavior, but an AI agent typically involves additional planning and multi-step reasoning beyond simply calling individual tools in response to a single request."
+      },
+      {
+        "question": "How do you define a tool for an LLM?",
+        "answer": "A tool definition typically includes a clear name, a description of what the tool does, and a parameter schema defining what inputs the tool requires. Good definitions help the model reliably select and use the right tool."
+      },
+      {
+        "question": "What are common mistakes in tool use implementation?",
+        "answer": "Common mistakes include ambiguous tool descriptions (model doesn't know which tool to use), poor parameter schemas (model generates invalid parameters), and lack of guardrails (model can call tools inappropriately)."
+      },
+      {
+        "question": "Can tool use be combined with RAG?",
+        "answer": "Yes — tool use can access real-time data sources, while RAG retrieves relevant documents. Together, they enable models to access both current information and specific knowledge bases."
+      },
+      {
+        "question": "What is the role of tool descriptions in LLM tool use?",
+        "answer": "Tool descriptions tell the model what each tool does, when to use it, and what parameters it needs. Clear, specific descriptions are essential for reliable tool selection."
+      }
+    ]
+  },
+
+  "relatedTerms": [
+    "ai-agent",
+    "structured-output-json-mode",
+    "model-context-protocol-mcp",
+    "function-calling",
+    "agentic-ai-workflow"
+  ],
+
+  "references": [
+    {
+      "label": "Tool Use in Large Language Models: A Survey",
+      "href": "https://arxiv.org/abs/2309.09876",
+      "publisher": "arXiv"
+    },
+    {
+      "label": "Function Calling and Tool Use in LLMs",
+      "href": "https://arxiv.org/abs/2311.00689",
+      "publisher": "arXiv"
+    }
+  ],
+
+  "additionalResources": [
+    {
+      "label": "AI Agent Development Services",
+      "href": "/ai-agent-development-company/"
+    },
+    {
+      "label": "What is an AI Agent?",
+      "href": "/glossary/ai-agent/"
+    },
+    {
+      "label": "What is MCP? (Model Context Protocol)",
+      "href": "/glossary/model-context-protocol-mcp/"
+    }
+  ],
+
+  "cta": {
+    "eyebrow": "Ready to connect your LLM to external tools and systems?",
+    "title": "Get a free LLM tool integration consultation — 24-hour response",
+    "description": "ClickMasters builds tool use integrations with appropriate guardrails for action consequence. From $25,000. Fixed-price. Full IP. 24-hour response.",
+    "primaryLink": {
+      "label": "Book your free consultation",
+      "href": "/contact"
+    },
+    "secondaryLink": {
+      "label": "Get your free project estimate",
+      "href": "/contact"
+    }
+  }
+}

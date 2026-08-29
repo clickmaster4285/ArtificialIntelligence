@@ -1,0 +1,315 @@
+{
+  "slug": "ai-process-mining",
+  "status": "published",
+  "title": "AI Process Mining",
+  "shortTitle": "AI Process Mining",
+  "abbreviation": "APM",
+  "letter": "A",
+  "category": "AI Applications",
+  "shortDefinition": "The extraction and analysis of event logs from enterprise systems to discover how business processes actually execute in practice — revealing process variants, bottlenecks, and deviations.",
+  "definition": "AI process mining extracts and analyzes event logs from enterprise systems (ERP, CRM, BPM, ticketing systems) to discover exactly how business processes actually execute in practice — revealing the full range of actual process variants, bottlenecks, deviations, and inefficiencies that process maps drawn from interviews and assumptions never capture. The central insight of process mining is that what people think a process looks like and what it actually looks like in the data are often significantly different — and the data-driven picture is always more accurate.",
+  "introduction": "AI process mining extracts and analyzes event logs from enterprise systems (ERP, CRM, BPM, ticketing systems) to discover exactly how business processes actually execute in practice — revealing the full range of actual process variants, bottlenecks, deviations, and inefficiencies that process maps drawn from interviews and assumptions never capture. The central insight of process mining is that what people think a process looks like and what it actually looks like in the data are often significantly different — and the data-driven picture is always more accurate.",
+  "featured": true,
+  "aliases": [
+    "APM",
+    "process discovery",
+    "business process analytics",
+    "conformance checking",
+    "process intelligence"
+  ],
+  "readingTime": "5 min read",
+  "publishedAt": "2026-08-13",
+  "updatedAt": "2026-08-13",
+
+  "seo": {
+    "title": "What is AI Process Mining? Definition",
+    "description": "AI process mining analyzes system event logs to discover, map, and improve actual business process flows — not how you think they work. From $35K.",
+    "canonical": "/glossary/ai-process-mining/",
+    "keywords": [
+      "what is ai process mining",
+      "ai process mining definition",
+      "process discovery ai",
+      "business process analytics",
+      "process mining services"
+    ]
+  },
+
+  "sections": [
+    {
+      "id": "what-process-mining-reveals",
+      "eyebrow": "Reality vs. perception",
+      "title": "What process mining reveals",
+      "description": "Event logs capture the complete picture — all process variants, exceptions, and workarounds that documentation misses.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Traditional process documentation captures the intended process flow from workshops and interviews — the 'happy path' as stakeholders believe or want it to be. Event logs capture every case: the 60% that followed the expected path and the 40% that didn't, along with every exception, reroute, manual workaround, and unusual variant. AI process mining extracts this complete picture: how many process variants actually exist, where cases accumulate waiting, which steps produce the most rework, which process deviations correlate with worst outcomes, and where automation would eliminate the most manual touchpoints."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Complete picture — all variants, exceptions, and workarounds.",
+            "Variant count — how many actual paths exist.",
+            "Waiting time — where cases accumulate delay.",
+            "Rework hotspots — which steps produce most rework.",
+            "Deviation impact — which variants correlate with poor outcomes.",
+            "Automation opportunity — where manual touchpoints are highest."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "The key insight",
+          "text": "What people think a process looks like and what it actually looks like in the data are often significantly different — the data-driven picture is always more accurate."
+        }
+      ]
+    },
+    {
+      "id": "key-applications",
+      "eyebrow": "Use cases",
+      "title": "Key process mining applications",
+      "description": "Process discovery, conformance checking, performance analysis, process simulation, and continuous monitoring.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Process discovery — automated reconstruction of as-is process maps from event logs, providing a data-accurate baseline no documentation exercise achieves. Conformance checking — comparing actual process execution against intended process design, identifying where and how often the process deviates from policy. Performance analysis — quantifying where time and cost accumulate across the process, identifying the highest-impact bottlenecks for improvement investment. Process simulation — testing the impact of proposed process changes in simulation before implementation, using actual process data to model realistic outcomes. Continuous process monitoring — ongoing monitoring of process execution for deviations and emerging bottlenecks after improvement implementation."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Process discovery — data-accurate as-is process maps.",
+            "Conformance checking — identify policy deviations.",
+            "Performance analysis — quantify time and cost bottlenecks.",
+            "Process simulation — test changes before implementation.",
+            "Continuous monitoring — track execution and emerging issues."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "success",
+          "title": "Why it matters",
+          "text": "Process mining should typically precede automation investment — it identifies which processes are worth automating and reveals the actual flow that automation needs to handle."
+        }
+      ]
+    },
+    {
+      "id": "clickmasters-approach",
+      "eyebrow": "ClickMasters approach",
+      "title": "How ClickMasters implements process mining for enterprise clients",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "ClickMasters extracts and prepares event log data from your specific enterprise systems, applies process mining algorithms (process discovery, conformance checking, performance analysis), and delivers actionable insights into your specific highest-impact improvement opportunities — connecting findings to concrete automation or redesign recommendations."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Data extraction — from ERP, CRM, BPM systems.",
+            "Process discovery — data-accurate process maps.",
+            "Conformance checking — deviation identification.",
+            "Performance analysis — bottleneck quantification.",
+            "Actionable insights — concrete recommendations."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing",
+      "eyebrow": "Investment",
+      "title": "AI process mining pricing",
+      "content": [
+        {
+          "type": "table",
+          "caption": "Fixed-price process mining projects from ClickMasters",
+          "headers": ["Project Type", "Price Range", "Timeline"],
+          "rows": [
+            ["Process discovery and conformance analysis", "$35,000 – $70,000", "6–12 weeks"],
+            ["Performance analysis with bottleneck identification", "$40,000 – $80,000", "8–14 weeks"],
+            ["Continuous process monitoring infrastructure", "$50,000 – $110,000", "12–20 weeks"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "success",
+          "title": "Full IP ownership",
+          "text": "All projects include full intellectual property transfer. You own everything we build."
+        }
+      ]
+    },
+    {
+      "id": "common-objections",
+      "eyebrow": "Direct answers",
+      "title": "Common objections, answered directly",
+      "content": [
+        {
+          "type": "bullet-list",
+          "items": [
+            "\"How much will this cost?\" — $35,000–$110,000 depending on scope. Fixed quote after Discovery.",
+            "\"Our processes are complex with many variants — is that a problem for process mining?\" — High variant count is exactly what process mining reveals effectively; manual process documentation typically hides or underestimates variant complexity that event logs expose.",
+            "\"What systems do you need access to for process mining?\" — The event log data from your ERP, CRM, or BPM system — typically accessible without requiring live system integration. ClickMasters works with data exports for initial analysis, transitioning to live monitoring infrastructure for ongoing use cases.",
+            "\"How is process mining different from workflow automation?\" — Process mining discovers and analyzes how processes actually work; workflow automation redesigns and automates them. Process mining should typically precede automation investment — it identifies which processes are worth automating and reveals the actual flow that automation needs to handle."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "limitations",
+      "eyebrow": "Engineering reality",
+      "title": "Limitations and risks of AI process mining",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "AI process mining has limitations. Event log data quality is the primary constraint. Data availability varies across systems. Process variant complexity can be overwhelming without prioritization. Conformance checking only identifies deviations from documented processes. Performance analysis requires accurate case duration data. Continuous monitoring requires ongoing data extraction. Integration with automation tools adds complexity. Interpretation requires process domain expertise. Process mining reveals symptoms, not root causes."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Data quality — primary constraint for accuracy.",
+            "Data availability — varies across enterprise systems.",
+            "Variant complexity — can be overwhelming without focus.",
+            "Conformance limits — only identifies deviations from documented processes.",
+            "Case duration — requires accurate timestamp data.",
+            "Ongoing extraction — continuous monitoring requires it.",
+            "Integration complexity — with automation tools.",
+            "Domain expertise — required for interpretation.",
+            "Symptom vs. cause — reveals what, not why."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Important",
+          "text": "Process mining reveals symptoms — diagnosing root causes and designing improvements requires process domain expertise alongside the data analysis."
+        }
+      ]
+    },
+    {
+      "id": "best-practices",
+      "eyebrow": "Implementation guide",
+      "title": "Best practices for AI process mining implementation",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Implementing AI process mining effectively requires careful data preparation, domain expertise collaboration, and improvement prioritization. The following practices can help ensure your process mining delivers actionable insights."
+        },
+        {
+          "type": "numbered-list",
+          "title": "Recommended approach:",
+          "items": [
+            "Start with a high-value process — order-to-cash or procure-to-pay.",
+            "Assess event log data quality — timestamps, case IDs, and completeness.",
+            "Collaborate with process domain experts — for interpretation.",
+            "Prioritize findings — focus on highest-impact bottlenecks.",
+            "Connect to improvement recommendations — automation or redesign.",
+            "Design for continuous monitoring — after initial analysis.",
+            "Validate findings with stakeholders — confirm interpretations.",
+            "Measure improvement impact — track process performance over time."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "Key metric",
+          "text": "Measure process cycle time, variant count, and conformance rate — these reveal the gap between intended and actual process execution."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "eyebrow": "Common questions",
+    "title": "Frequently asked questions about AI process mining",
+    "items": [
+      {
+        "question": "How is process mining different from workflow automation?",
+        "answer": "Process mining discovers and analyzes how processes actually work; workflow automation redesigns and automates them. Process mining should typically precede automation investment — it identifies which processes are worth automating and reveals the actual flow that automation needs to handle."
+      },
+      {
+        "question": "What ERP systems does process mining work with?",
+        "answer": "SAP, Oracle, Salesforce, ServiceNow, and other systems that log timestamped events — the key requirement is accessible event log data with case IDs and timestamps."
+      },
+      {
+        "question": "How long does process mining analysis take?",
+        "answer": "Initial discovery analysis: 6–12 weeks; ongoing monitoring infrastructure: 12–20 weeks."
+      },
+      {
+        "question": "Can process mining identify fraud or compliance violations?",
+        "answer": "Yes — conformance checking identifies process deviations that may indicate fraud, segregation of duties violations, or policy non-compliance in audit-relevant processes."
+      },
+      {
+        "question": "What process types benefit most from process mining?",
+        "answer": "High-volume transactional processes (order-to-cash, procure-to-pay, incident-to-resolution) with rich event log data and known variation in outcomes."
+      },
+      {
+        "question": "Can process mining help us make the case for automation investment?",
+        "answer": "Yes — quantifying actual manual touchpoints, exception rates, and cycle time is precisely the business case data that automation investment decisions require."
+      },
+      {
+        "question": "What is conformance checking in process mining?",
+        "answer": "Conformance checking compares actual process execution against intended process design — identifying where and how often the process deviates from policy or documented procedures."
+      },
+      {
+        "question": "Can process mining work with real-time data?",
+        "answer": "Yes — continuous process monitoring infrastructure can extract and analyze event log data in near real-time, enabling proactive bottleneck and deviation detection."
+      },
+      {
+        "question": "Does process mining require data scientists?",
+        "answer": "Process mining requires data engineering for extraction and preparation, but the analysis itself is increasingly supported by process mining platforms that surface insights visually — ClickMasters provides the technical capability alongside process domain expertise."
+      }
+    ]
+  },
+
+  "relatedTerms": [
+    "ai-workflow-automation",
+    "anomaly-detection",
+    "predictive-analytics",
+    "process-discovery",
+    "conformance-checking"
+  ],
+
+  "references": [
+    {
+      "label": "Process Mining: Data Science in Action",
+      "href": "https://arxiv.org/abs/2608.09876",
+      "publisher": "arXiv"
+    },
+    {
+      "label": "Process Mining Best Practices and Implementation Guide",
+      "href": "https://www.gartner.com/en/process-mining",
+      "publisher": "Gartner"
+    }
+  ],
+
+  "additionalResources": [
+    {
+      "label": "AI Data Engineering Services",
+      "href": "/ai-data-engineering-services/"
+    },
+    {
+      "label": "What is AI Workflow Automation?",
+      "href": "/glossary/ai-workflow-automation/"
+    },
+    {
+      "label": "What is Anomaly Detection?",
+      "href": "/glossary/anomaly-detection/"
+    },
+    {
+      "label": "What is Predictive Analytics?",
+      "href": "/glossary/predictive-analytics/"
+    }
+  ],
+
+  "cta": {
+    "eyebrow": "Ready to discover how your processes actually work?",
+    "title": "Get a free process mining consultation — 24-hour response",
+    "description": "ClickMasters extracts the data-accurate process picture that documentation exercises never produce. From $35,000. Fixed-price. Full IP. 24-hour response.",
+    "primaryLink": {
+      "label": "Book your free consultation",
+      "href": "/contact"
+    },
+    "secondaryLink": {
+      "label": "Get your free project estimate",
+      "href": "/contact"
+    }
+  }
+}

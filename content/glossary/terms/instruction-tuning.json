@@ -1,0 +1,304 @@
+{
+  "slug": "instruction-tuning",
+  "status": "published",
+  "title": "Instruction Tuning",
+  "shortTitle": "Instruction Tuning",
+  "abbreviation": "IT",
+  "letter": "I",
+  "category": "LLM",
+  "shortDefinition": "A specific type of fine-tuning that trains a model on instruction-response pairs to follow directions reliably.",
+  "definition": "Instruction tuning is a specific type of fine-tuning that trains a language model on a large collection of (instruction, ideal-response) pairs — teaching the model to reliably follow diverse natural language instructions rather than simply continuing text, which is what base LLMs are trained to do. Instruction tuning is what transforms a raw base language model (which predicts next tokens, not follow instructions) into an 'instruct' model that understands and responds to human directions — the difference between GPT-3's raw base model and the instruction-following models users interact with today.",
+  "introduction": "Instruction tuning is a specific type of fine-tuning that trains a language model on a large collection of (instruction, ideal-response) pairs — teaching the model to reliably follow diverse natural language instructions rather than simply continuing text, which is what base LLMs are trained to do. Instruction tuning is what transforms a raw base language model (which predicts next tokens, not follow instructions) into an 'instruct' model that understands and responds to human directions — the difference between GPT-3's raw base model and the instruction-following models users interact with today.",
+  "featured": true,
+  "aliases": [
+    "IT",
+    "instruction tuning",
+    "instruct tuning",
+    "instruction fine-tuning",
+    "instruction following"
+  ],
+  "readingTime": "5 min read",
+  "publishedAt": "2026-08-07",
+  "updatedAt": "2026-08-07",
+
+  "seo": {
+    "title": "What is Instruction Tuning? AI Defined",
+    "description": "Instruction tuning trains LLMs on examples of instructions and ideal responses, teaching models to follow directions reliably. Builds from $25K.",
+    "canonical": "/glossary/instruction-tuning/",
+    "keywords": [
+      "what is instruction tuning",
+      "instruction tuning definition",
+      "instruction tuning vs fine-tuning",
+      "instruct model definition",
+      "instruction tuning services"
+    ]
+  },
+
+  "sections": [
+    {
+      "id": "how-instruction-tuning-differs",
+      "eyebrow": "Core distinction",
+      "title": "How instruction tuning differs from general fine-tuning",
+      "description": "Instruction tuning trains models to follow instructions in general; general fine-tuning adapts behavior for specific tasks.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "General fine-tuning adapts a model's behavior for a specific task or domain — training a model on customer service transcripts to improve domain vocabulary and tone, for example. Instruction tuning specifically trains a model to follow instructions in general — exposing it to thousands of diverse (instruction, ideal-response) examples covering many different task types, so the model develops a robust capability for following natural language directions rather than just performing one specific trained task. Instruction tuning is typically done once by model providers on top of base models; organizations then apply task-specific fine-tuning on top of the already-instruction-tuned model."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "General fine-tuning — adapts behavior for a specific task or domain.",
+            "Instruction tuning — trains general instruction-following capability.",
+            "Diverse examples — covers many task types and instruction phrasings.",
+            "Provider role — typically done once by model providers.",
+            "Stacking — task-specific fine-tuning on top of instruction-tuned models."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "The key insight",
+          "text": "Instruction tuning transforms a base model (which predicts next tokens) into an instruct model that follows directions — the foundation for today's conversational AI."
+        }
+      ]
+    },
+    {
+      "id": "instruct-vs-base",
+      "eyebrow": "Model types",
+      "title": "'Instruct' models vs. base models in practice",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Most commercial LLM APIs expose instruction-tuned 'instruct' models rather than raw base models, because base models aren't designed for instruction-following and produce unhelpful outputs when asked to complete instructions rather than continue text. When providers release model families (GPT-4, Claude 3, Gemini), the conversational versions that follow instructions are the instruction-tuned variants. Base models are primarily used by researchers and teams doing further fine-tuning who want to start from the model's original learned representation before instruction-tuning shaped its behavior patterns."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Instruct models — instruction-tuned, designed for conversational use.",
+            "Base models — raw next-token predictors, not instruction-followers.",
+            "Provider releases — conversational variants are instruction-tuned.",
+            "Base model use — primarily for research and further fine-tuning.",
+            "API exposure — most commercial APIs expose instruct models."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clickmasters-approach",
+      "eyebrow": "ClickMasters approach",
+      "title": "Instruction tuning in custom model development",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Organizations fine-tuning models for specific applications typically start from instruction-tuned models rather than base models — building task-specific fine-tuning on top of the instruction-following capability already present, rather than re-teaching the model to follow instructions as part of task-specific training. ClickMasters applies this distinction in fine-tuning recommendations: for most enterprise fine-tuning tasks, starting from an instruction-tuned model and adding task-specific fine-tuning is more effective than starting from a base model."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Start from instruct models — instruction-following capability already present.",
+            "Task-specific fine-tuning — builds on existing capability.",
+            "Not re-teaching — don't re-teach instruction-following.",
+            "More effective — better results than starting from base models.",
+            "Enterprise best practice — start from instruction-tuned models."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing",
+      "eyebrow": "Investment",
+      "title": "Instruction tuning pricing",
+      "content": [
+        {
+          "type": "table",
+          "caption": "Fixed-price instruction tuning projects from ClickMasters",
+          "headers": ["Project Type", "Price Range", "Timeline"],
+          "rows": [
+            ["Custom instruction tuning for specific instruction-following requirements", "$25,000 – $60,000", "8–14 weeks"],
+            ["Task-specific fine-tuning on top of instruction-tuned base model", "$15,000 – $50,000", "6–12 weeks"],
+            ["Instruction tuning dataset curation and training", "$30,000 – $70,000", "10–16 weeks"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "success",
+          "title": "Full IP ownership",
+          "text": "All projects include full intellectual property transfer. You own everything we build."
+        }
+      ]
+    },
+    {
+      "id": "common-objections",
+      "eyebrow": "Direct answers",
+      "title": "Common objections, answered directly",
+      "content": [
+        {
+          "type": "bullet-list",
+          "items": [
+            "\"Should we fine-tune a base model or an instruction-tuned model for our use case?\" — Almost always start from an instruction-tuned model — it already handles instruction-following well, and task-specific fine-tuning builds on that capability rather than needing to teach both instruction-following and task specifics simultaneously.",
+            "\"How much will this cost?\" — $15,000–$70,000 depending on whether this is custom instruction tuning or task-specific fine-tuning on an instruction-tuned base. Fixed quote after Discovery.",
+            "\"What makes a good instruction tuning dataset?\" — Diversity across instruction types matters more than volume for instruction tuning — broad coverage of instruction phrasings and task types produces more generalizable instruction-following than a large dataset of a single instruction type.",
+            "\"Is RLHF the same as instruction tuning?\" — Related but distinct — instruction tuning is supervised fine-tuning on instruction-response pairs; RLHF adds a reinforcement learning step using human preference signals."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "limitations",
+      "eyebrow": "Engineering reality",
+      "title": "Limitations and risks of instruction tuning",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Instruction tuning has limitations. It requires high-quality, diverse instruction-response pairs. Poor quality instruction data can teach undesirable behavior patterns. Instruction tuning may reduce performance on some tasks that don't follow the instruction format. The approach can be expensive at scale. Instruction tuning does not guarantee the model will follow instructions correctly on all topics. Model providers handle most instruction tuning for commercial models. Custom instruction tuning requires careful dataset curation and validation."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Data quality — requires high-quality, diverse instruction-response pairs.",
+            "Undesirable patterns — poor data can teach bad behavior.",
+            "Task performance — may reduce performance on non-instruction format tasks.",
+            "Cost — can be expensive at scale.",
+            "No guarantee — doesn't ensure correct instruction-following on all topics.",
+            "Provider role — most instruction tuning is handled by providers."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Important",
+          "text": "Instruction tuning requires high-quality, diverse data. For most applications, starting from an instruction-tuned model and adding task-specific fine-tuning is more effective than custom instruction tuning from a base model."
+        }
+      ]
+    },
+    {
+      "id": "best-practices",
+      "eyebrow": "Implementation guide",
+      "title": "Best practices for instruction tuning",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Applying instruction tuning effectively requires careful dataset curation, model selection, and validation. The following practices can help ensure your instruction tuning delivers reliable instruction-following."
+        },
+        {
+          "type": "numbered-list",
+          "title": "Recommended approach:",
+          "items": [
+            "Start from an instruction-tuned model for most enterprise applications.",
+            "Use diverse instruction-response pairs for instruction tuning datasets.",
+            "Validate instruction-following on held-out instruction types.",
+            "Consider prompt engineering before committing to instruction tuning.",
+            "For task-specific needs, fine-tune on top of instruction-tuned models.",
+            "Monitor instruction-following quality over time.",
+            "Document instruction tuning dataset composition and validation.",
+            "Use provider instruction-tuned models where available."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "Key metric",
+          "text": "Measure instruction-following accuracy on held-out instruction types — the true test of instruction tuning is whether the model follows instructions it hasn't seen before."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "eyebrow": "Common questions",
+    "title": "Frequently asked questions about instruction tuning",
+    "items": [
+      {
+        "question": "What's the difference between an 'instruct' model and a 'base' model?",
+        "answer": "A base model predicts next tokens from its pre-training; an instruct model has been further trained on instruction-response pairs to follow human directions, making it far more useful for typical applications."
+      },
+      {
+        "question": "Is RLHF (Reinforcement Learning from Human Feedback) the same as instruction tuning?",
+        "answer": "Related but distinct — instruction tuning is supervised fine-tuning on instruction-response pairs; RLHF adds a reinforcement learning step using human preference signals to further align model behavior. Many state-of-the-art models use both."
+      },
+      {
+        "question": "Can instruction tuning be applied to open-source models?",
+        "answer": "Yes — instruction-tuning open-source base models (LLaMA, Mistral, etc.) is a common way to create customized instruction-following models for specific deployment contexts."
+      },
+      {
+        "question": "How many instruction-response pairs are needed for instruction tuning?",
+        "answer": "Highly variable — high-quality diverse datasets of thousands to tens of thousands of examples are typical, though dataset quality and diversity matters more than raw volume."
+      },
+      {
+        "question": "How long does instruction tuning take?",
+        "answer": "6–16 weeks depending on dataset curation needs and training scale."
+      },
+      {
+        "question": "Should we do instruction tuning or just use a better prompt for instruction-following improvements?",
+        "answer": "Prompt engineering is the first option to try — instruction tuning adds value when consistent instruction-following on your specific instruction phrasings isn't achievable through prompting alone."
+      },
+      {
+        "question": "What is the difference between instruction tuning and fine-tuning?",
+        "answer": "Instruction tuning is a specific type of fine-tuning focused on teaching general instruction-following. Fine-tuning is a broader term that includes instruction tuning, task-specific adaptation, and domain adaptation."
+      },
+      {
+        "question": "Does instruction tuning improve performance on all tasks?",
+        "answer": "Instruction tuning improves performance on tasks that follow the instruction format but may not improve performance on tasks that don't, such as pure text completion. It typically makes models more generally usable for instruction-based applications."
+      },
+      {
+        "question": "Can instruction tuning be combined with RAG?",
+        "answer": "Yes — instruction-tuned models that also use RAG combine instruction-following capability with access to external knowledge. This is common in enterprise RAG applications."
+      },
+      {
+        "question": "What is the difference between supervised fine-tuning and instruction tuning?",
+        "answer": "Supervised fine-tuning (SFT) is the broader category of training on labeled examples. Instruction tuning is a specific type of SFT focused on instruction-response pairs to teach instruction-following. All instruction tuning is supervised fine-tuning, but not all supervised fine-tuning is instruction tuning."
+      }
+    ]
+  },
+
+  "relatedTerms": [
+    "fine-tuning",
+    "parameter-efficient-fine-tuning-peft",
+    "large-language-model",
+    "rlhf",
+    "model-alignment"
+  ],
+
+  "references": [
+    {
+      "label": "Supervised Fine-Tuning for Instruction Following",
+      "href": "https://arxiv.org/abs/2109.01652",
+      "publisher": "arXiv"
+    },
+    {
+      "label": "Instruction Tuning: A Comprehensive Survey",
+      "href": "https://arxiv.org/abs/2305.09876",
+      "publisher": "arXiv"
+    }
+  ],
+
+  "additionalResources": [
+    {
+      "label": "AI Model Fine-Tuning Services",
+      "href": "/ai-model-fine-tuning/"
+    },
+    {
+      "label": "What is Fine-Tuning?",
+      "href": "/glossary/fine-tuning/"
+    },
+    {
+      "label": "What is Parameter Efficient Fine-Tuning (PEFT)?",
+      "href": "/glossary/parameter-efficient-fine-tuning-peft/"
+    }
+  ],
+
+  "cta": {
+    "eyebrow": "Ready to tune a model for your specific instruction-following needs?",
+    "title": "Get a free LLM fine-tuning consultation — 24-hour response",
+    "description": "ClickMasters builds instruction tuning and task-specific fine-tuning projects starting from the right base model for your requirements. From $15,000. Fixed-price. Full IP. 24-hour response.",
+    "primaryLink": {
+      "label": "Book your free consultation",
+      "href": "/contact"
+    },
+    "secondaryLink": {
+      "label": "Get your free project estimate",
+      "href": "/contact"
+    }
+  }
+}

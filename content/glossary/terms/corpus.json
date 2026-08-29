@@ -1,0 +1,304 @@
+{
+  "slug": "corpus",
+  "status": "published",
+  "title": "Corpus",
+  "shortTitle": "Corpus",
+  "abbreviation": "Corpus",
+  "letter": "C",
+  "category": "NLP",
+  "shortDefinition": "A structured collection of text or data used to train or evaluate a natural language processing model.",
+  "definition": "A corpus (plural: corpora) is a structured collection of text or data used to train, fine-tune, or evaluate a natural language processing model — the foundational raw material from which an NLP model learns language patterns, vocabulary, domain knowledge, and the relationships between language and meaning. The composition and quality of a corpus directly shapes what a model learns and what it remains ignorant about: a model's knowledge and language patterns are fundamentally bounded by what was present in its training corpus.",
+  "introduction": "A corpus (plural: corpora) is a structured collection of text or data used to train, fine-tune, or evaluate a natural language processing model — the foundational raw material from which an NLP model learns language patterns, vocabulary, domain knowledge, and the relationships between language and meaning. The composition and quality of a corpus directly shapes what a model learns and what it remains ignorant about: a model's knowledge and language patterns are fundamentally bounded by what was present in its training corpus.",
+  "featured": true,
+  "aliases": [
+    "Corpus",
+    "text corpus",
+    "training corpus",
+    "domain corpus",
+    "language corpus"
+  ],
+  "readingTime": "5 min read",
+  "publishedAt": "2026-08-07",
+  "updatedAt": "2026-08-07",
+
+  "seo": {
+    "title": "What is a Corpus? AI and NLP Term Defined",
+    "description": "A corpus is a structured collection of text or data used to train or evaluate a natural language processing model. Definition, builds from $20K.",
+    "canonical": "/glossary/corpus/",
+    "keywords": [
+      "what is a corpus nlp",
+      "corpus definition nlp",
+      "text corpus training data",
+      "domain corpus ai",
+      "corpus development services"
+    ]
+  },
+
+  "sections": [
+    {
+      "id": "why-corpus-composition-matters",
+      "eyebrow": "Core importance",
+      "title": "Why corpus composition matters for domain-specific AI",
+      "description": "A model's domain knowledge is bounded by what was present in its training corpus.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Large general-purpose language models are trained on enormous corpora of diverse internet text, making them broadly capable — but this also means their representation of specialized domains (medical literature, legal documents, technical specifications, financial filings) is proportional to how much of that domain's language appeared in general internet text, which is often far less than the domain's actual language diversity and precision would warrant. A model whose training corpus was heavily weighted toward general language may handle your domain's terminology, conventions, and nuances less reliably than a model whose corpus included more representative domain-specific text."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "General-purpose models — trained on diverse internet text.",
+            "Domain representation — proportional to presence in general training data.",
+            "Specialized domains — often underrepresented in general corpora.",
+            "Terminology gap — domain language may be handled less reliably.",
+            "Corpus composition — directly determines model capabilities."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "The key insight",
+          "text": "A model's domain knowledge is fundamentally bounded by what was present in its training corpus — composition matters as much as size."
+        }
+      ]
+    },
+    {
+      "id": "domain-corpus-for-fine-tuning",
+      "eyebrow": "Fine-tuning",
+      "title": "Domain corpus construction for fine-tuning",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "When fine-tuning a foundation model for a specific domain, the quality and representativeness of the fine-tuning corpus is a primary determinant of the fine-tuned model's domain capability. A domain corpus for fine-tuning should reflect the actual language, terminology, and communication patterns present in your real production use case — not just convenient text that happens to be available, but text that genuinely represents the range of inputs the model will encounter in deployment, including typical cases, edge cases, and the specific conventions of your domain's writing style."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Quality determinant — corpus quality shapes fine-tuning results.",
+            "Representativeness — reflect actual production language patterns.",
+            "Terminology coverage — include domain-specific vocabulary.",
+            "Edge cases — cover more than just typical examples.",
+            "Writing conventions — match the style of your domain."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clickmasters-approach",
+      "eyebrow": "ClickMasters approach",
+      "title": "How ClickMasters builds and curates corpus data for enterprise clients",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "ClickMasters works with clients to assemble domain-specific corpora for fine-tuning from your actual internal documents, communications, and domain-specific text sources — evaluating coverage of key terminology, domain conventions, and representative edge cases before using the corpus for training, rather than assuming available data is automatically representative of the production language environment."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Internal sources — use your actual documents and communications.",
+            "Coverage evaluation — assess terminology and edge case representation.",
+            "Quality before quantity — ensure representativeness before training.",
+            "Production alignment — reflect the actual language environment.",
+            "Curated approach — don't assume available data is automatically sufficient."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing",
+      "eyebrow": "Investment",
+      "title": "Corpus development pricing",
+      "content": [
+        {
+          "type": "table",
+          "caption": "Fixed-price corpus development projects from ClickMasters",
+          "headers": ["Project Type", "Price Range", "Timeline"],
+          "rows": [
+            ["Domain corpus assessment and gap analysis", "$20,000 – $40,000", "6–10 weeks"],
+            ["Domain corpus curation and preparation for fine-tuning", "$30,000 – $70,000", "8–14 weeks"],
+            ["Domain corpus construction from internal sources", "$40,000 – $90,000", "10–18 weeks"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "success",
+          "title": "Full IP ownership",
+          "text": "All projects include full intellectual property transfer. You own everything we build."
+        }
+      ]
+    },
+    {
+      "id": "common-objections",
+      "eyebrow": "Direct answers",
+      "title": "Common objections, answered directly",
+      "content": [
+        {
+          "type": "bullet-list",
+          "items": [
+            "\"We have plenty of internal documents to use as training data — is that sufficient?\" — Not necessarily without evaluation — ClickMasters assesses whether available documents genuinely represent the range of language and use cases the model will encounter in production, or whether coverage gaps require targeted additional collection.",
+            "\"How much will this cost?\" — $20,000–$90,000 depending on whether this is corpus assessment or active collection and curation. Fixed quote after Discovery.",
+            "\"Does corpus size matter more than corpus quality?\" — Quality matters more for domain-specific fine-tuning — a smaller, highly representative corpus typically produces better domain fine-tuning results than a larger corpus with poor coverage of the target language patterns.",
+            "\"Can the same corpus be used for both training and evaluation?\" — No — evaluation should use held-out data not seen during training to get an unbiased estimate of how the model performs on genuinely new inputs."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "limitations",
+      "eyebrow": "Engineering reality",
+      "title": "Limitations and risks of corpus construction",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Corpus construction has limitations. Available internal documents may not represent all production use cases. Quality filtering is time-consuming and may remove valuable content. Corpus bias can be introduced through selection or exclusion of certain content types. The corpus may contain sensitive information that requires careful handling. Domain corpus construction is iterative and may require multiple rounds of refinement, and the corpus may not capture all edge cases until the model is tested in production."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Representation gaps — available documents may not cover all use cases.",
+            "Quality filtering — time-consuming and may be imperfect.",
+            "Bias risk — selection and exclusion can introduce bias.",
+            "Sensitive content — careful handling required for confidential data.",
+            "Iterative process — multiple refinement rounds may be needed.",
+            "Edge case discovery — some gaps only appear in production testing."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Important",
+          "text": "Corpus quality is a primary determinant of model quality. Invest in careful curation and representative coverage, not just volume."
+        }
+      ]
+    },
+    {
+      "id": "best-practices",
+      "eyebrow": "Implementation guide",
+      "title": "Best practices for corpus construction",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Building effective domain corpora requires careful selection, quality filtering, and coverage evaluation. The following practices can help ensure your corpus supports reliable domain-specific model performance."
+        },
+        {
+          "type": "numbered-list",
+          "title": "Recommended approach:",
+          "items": [
+            "Assess available internal sources for relevance and representativeness.",
+            "Identify coverage gaps and prioritize additional collection.",
+            "Quality filter to remove irrelevant, noisy, or problematic content.",
+            "Include edge cases, not just typical examples.",
+            "Maintain separate training and evaluation corpora.",
+            "Handle sensitive content appropriately.",
+            "Evaluate corpus coverage against production use cases.",
+            "Plan for iterative corpus refinement based on model performance."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "Key metric",
+          "text": "Measure corpus coverage — what percentage of your production language patterns and terminology are represented in the corpus? Gaps indicate areas where the model may underperform."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "eyebrow": "Common questions",
+    "title": "Frequently asked questions about corpora",
+    "items": [
+      {
+        "question": "What's the difference between a corpus and a dataset?",
+        "answer": "They're related and often used interchangeably; 'corpus' typically emphasizes the text/language collection specifically and its use for NLP, while 'dataset' is a broader term applying to any structured collection of data for any machine learning task."
+      },
+      {
+        "question": "Can we use our internal company documents as a fine-tuning corpus?",
+        "answer": "Often yes, after appropriate review for sensitive content, proprietary information that shouldn't be in training data, and quality filtering; ClickMasters evaluates suitability during corpus assessment."
+      },
+      {
+        "question": "How large does a domain fine-tuning corpus need to be?",
+        "answer": "This varies by task and foundation model; generally a few hundred to several thousand high-quality domain examples is often sufficient for meaningful fine-tuning, with quality mattering more than raw volume."
+      },
+      {
+        "question": "Does a domain corpus need to cover edge cases, not just typical examples?",
+        "answer": "Yes — a corpus that only represents typical examples will produce a model that handles typical inputs well but may fail on the edge cases that most need reliable handling in production."
+      },
+      {
+        "question": "How long does corpus construction take?",
+        "answer": "6–18 weeks depending on whether it's assessment, curation, or active collection from internal sources."
+      },
+      {
+        "question": "Can the same corpus be used for both training and evaluation?",
+        "answer": "No — evaluation should use held-out data not seen during training to get an unbiased estimate of how the model performs on genuinely new inputs."
+      },
+      {
+        "question": "What is the difference between a general corpus and a domain corpus?",
+        "answer": "A general corpus contains diverse text from many domains. A domain corpus focuses on a specific domain (medical, legal, technical) and is used for domain-specific model development or fine-tuning."
+      },
+      {
+        "question": "How do you handle bias in corpus construction?",
+        "answer": "Bias can be addressed by ensuring diverse representation within the domain, reviewing corpus composition for imbalances, and validating model performance across different sub-groups or content types."
+      },
+      {
+        "question": "What is the relationship between corpus size and model performance?",
+        "answer": "For foundation model pretraining, larger corpora generally improve capability. For domain fine-tuning, quality and representativeness matter more than sheer size — a well-curated small corpus often outperforms a large but noisy one."
+      },
+      {
+        "question": "Can corpora include non-text data like images or audio?",
+        "answer": "While 'corpus' traditionally refers to text, multimodal corpora including images, audio, or video are increasingly common. The same principles of representativeness and quality apply across modalities."
+      }
+    ]
+  },
+
+  "relatedTerms": [
+    "natural-language-processing",
+    "ground-truth",
+    "data-labeling",
+    "fine-tuning",
+    "training-data"
+  ],
+
+  "references": [
+    {
+      "label": "Corpus Linguistics: A Comprehensive Guide",
+      "href": "https://arxiv.org/abs/2106.08956",
+      "publisher": "arXiv"
+    },
+    {
+      "label": "Domain Corpora for NLP: Construction and Best Practices",
+      "href": "https://arxiv.org/abs/2305.09876",
+      "publisher": "arXiv"
+    }
+  ],
+
+  "additionalResources": [
+    {
+      "label": "Natural Language Processing Services",
+      "href": "/natural-language-processing-services/"
+    },
+    {
+      "label": "What is Ground Truth?",
+      "href": "/glossary/ground-truth/"
+    },
+    {
+      "label": "What is Data Labeling?",
+      "href": "/glossary/data-labeling/"
+    }
+  ],
+
+  "cta": {
+    "eyebrow": "Ready to build or evaluate your domain training corpus?",
+    "title": "Get a free NLP development consultation — 24-hour response",
+    "description": "ClickMasters builds and curates domain-specific corpora representing your actual production language environment, not just whatever text is conveniently available. From $20,000. Fixed-price. Full IP. 24-hour response.",
+    "primaryLink": {
+      "label": "Book your free consultation",
+      "href": "/contact"
+    },
+    "secondaryLink": {
+      "label": "Get your free project estimate",
+      "href": "/contact"
+    }
+  }
+}

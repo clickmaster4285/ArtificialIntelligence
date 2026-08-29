@@ -1,0 +1,304 @@
+{
+  "slug": "ai-sla",
+  "status": "published",
+  "title": "AI SLA",
+  "shortTitle": "AI SLA",
+  "abbreviation": "SLA",
+  "letter": "S",
+  "category": "AI",
+  "shortDefinition": "A documented commitment defining measurable performance standards for an AI system.",
+  "definition": "An AI SLA (Service Level Agreement) is a documented commitment defining measurable performance standards for an AI system — covering dimensions like prediction accuracy, response latency, system uptime, and acceptable drift thresholds — providing a clear, contractual or internal basis for accountability when an AI system's performance falls below defined standards. AI SLAs are more complex than traditional software SLAs because AI systems have performance dimensions (accuracy, fairness, drift) that have no equivalent in standard application uptime-and-latency SLAs.",
+  "introduction": "An AI SLA (Service Level Agreement) is a documented commitment defining measurable performance standards for an AI system — covering dimensions like prediction accuracy, response latency, system uptime, and acceptable drift thresholds — providing a clear, contractual or internal basis for accountability when an AI system's performance falls below defined standards. AI SLAs are more complex than traditional software SLAs because AI systems have performance dimensions (accuracy, fairness, drift) that have no equivalent in standard application uptime-and-latency SLAs.",
+  "featured": true,
+  "aliases": [
+    "SLA",
+    "AI SLA",
+    "service level agreement",
+    "AI performance commitment",
+    "AI accountability standard"
+  ],
+  "readingTime": "6 min read",
+  "publishedAt": "2026-08-07",
+  "updatedAt": "2026-08-07",
+
+  "seo": {
+    "title": "What is an AI SLA? Service Level Agreement",
+    "description": "An AI SLA defines measurable performance commitments for an AI system — accuracy, latency, uptime, and drift thresholds. Definition, from $25K.",
+    "canonical": "/glossary/ai-sla/",
+    "keywords": [
+      "what is an ai sla",
+      "ai sla definition",
+      "ai service level agreement",
+      "ai performance commitments",
+      "ai sla development services"
+    ]
+  },
+
+  "sections": [
+    {
+      "id": "why-ai-slas-are-more-complex",
+      "eyebrow": "Core complexity",
+      "title": "Why AI SLAs are more complex than standard software SLAs",
+      "description": "AI systems add performance dimensions that have no equivalent in standard application uptime-and-latency SLAs.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Traditional software SLAs typically cover uptime (what percentage of time the system is available) and latency (how quickly it responds). AI systems add several additional performance dimensions that require their own SLA commitments: prediction accuracy (what minimum accuracy level is maintained, measured how, on what test set); fairness thresholds (for consequential systems, what maximum acceptable performance disparity across demographic groups); model drift tolerance (how much the model's prediction distribution can shift before triggering a remediation obligation); and retraining cadence (how frequently the model is updated to maintain accuracy as real-world data evolves). Each requires specific measurement methodology, not just a number."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Prediction accuracy — minimum accuracy maintained.",
+            "Fairness thresholds — acceptable performance disparity.",
+            "Model drift tolerance — allowed distribution shift.",
+            "Retraining cadence — update frequency commitments.",
+            "Measurement methodology — specific, not just a number."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "The key insight",
+          "text": "AI SLAs are more complex than traditional SLAs because they cover accuracy, fairness, and drift — dimensions with no equivalent in standard software uptime-and-latency SLAs."
+        }
+      ]
+    },
+    {
+      "id": "internal-vs-external",
+      "eyebrow": "Types",
+      "title": "Internal vs. external AI SLAs",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "AI SLAs can be internal (accountability commitments between an AI team and an internal business stakeholder about what performance will be maintained) or external (contractual commitments to a client about a deployed AI system's performance). Both require the same specificity — vague commitments like 'the model will remain accurate' aren't enforceable or useful without measurement methodology, thresholds, and accountability for violations. Internal AI SLAs are particularly valuable for establishing governance: they create explicit accountability for model performance maintenance that informal 'we'll keep an eye on it' approaches don't provide."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Internal SLAs — accountability to internal stakeholders.",
+            "External SLAs — contractual commitments to clients.",
+            "Same specificity — both require measurement methodology.",
+            "Vague commitments — not enforceable or useful.",
+            "Governance value — internal SLAs create explicit accountability."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clickmasters-approach",
+      "eyebrow": "ClickMasters approach",
+      "title": "How ClickMasters designs AI SLAs for enterprise clients",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "ClickMasters designs AI SLAs as part of deployment planning — defining accuracy, latency, uptime, and drift thresholds with specific measurement methodology, monitoring infrastructure that tracks these metrics continuously, alerting that triggers when thresholds are approached or crossed, and incident response procedures for SLA violations. Every AI SLA includes explicit measurement definitions, since '95% accuracy' is meaningless without specifying what test set, what time period, and how accuracy is calculated."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Measurement methodology — explicit definitions for every metric.",
+            "Monitoring infrastructure — continuous tracking of SLA metrics.",
+            "Alerting — triggers when thresholds are approached or crossed.",
+            "Incident response — procedures for SLA violations.",
+            "Meaningful metrics — specificity prevents ambiguous commitments."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing",
+      "eyebrow": "Investment",
+      "title": "AI SLA design pricing",
+      "content": [
+        {
+          "type": "table",
+          "caption": "Fixed-price AI SLA projects from ClickMasters",
+          "headers": ["Project Type", "Price Range", "Timeline"],
+          "rows": [
+            ["AI SLA design and documentation for a single system", "$25,000 – $50,000", "6–10 weeks"],
+            ["AI SLA with monitoring infrastructure implementation", "$40,000 – $85,000", "10–16 weeks"],
+            ["Enterprise AI SLA framework across multiple AI systems", "$60,000 – $130,000", "12–20 weeks"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "success",
+          "title": "Full IP ownership",
+          "text": "All projects include full intellectual property transfer. You own everything we build."
+        }
+      ]
+    },
+    {
+      "id": "common-objections",
+      "eyebrow": "Direct answers",
+      "title": "Common objections, answered directly",
+      "content": [
+        {
+          "type": "bullet-list",
+          "items": [
+            "\"We don't currently have formal performance commitments for our AI systems — should we?\" — For any AI system that internal stakeholders depend on or that has significant business consequence, yes — informal expectations without documented commitments typically lead to misaligned expectations and reactive rather than proactive performance management.",
+            "\"How much will this cost?\" — $25,000–$130,000 depending on the number of systems and whether monitoring infrastructure is included. Fixed quote after Discovery.",
+            "\"How do we handle an SLA violation when it occurs?\" — ClickMasters builds incident response procedures for SLA violations as part of SLA design — defining who is responsible for what action, within what timeframe, when a threshold is crossed.",
+            "\"What accuracy threshold should we commit to in an AI SLA?\" — This depends on your specific use case, data distribution, and stakeholder expectations — ClickMasters validates achievable accuracy ranges on your specific data before recommending commitments."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "limitations",
+      "eyebrow": "Engineering reality",
+      "title": "Limitations and risks of AI SLAs",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "AI SLAs have limitations. Measuring accuracy in production is often challenging without ground truth labels. Fairness metrics require protected characteristic data that may not be available. Drift thresholds can be difficult to set appropriately. SLAs can create perverse incentives — optimizing for the measured metric at the expense of unmeasured quality dimensions. External SLAs can create liability exposure. Internal SLAs require organizational commitment to be effective. Overly aggressive SLAs can lead to false confidence if the model cannot consistently meet them."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Accuracy measurement — challenging without ground truth labels.",
+            "Fairness data — protected characteristic data may not be available.",
+            "Threshold difficulty — drift thresholds are hard to set.",
+            "Perverse incentives — optimizing measured metrics at expense of quality.",
+            "Liability exposure — external SLAs create contractual risk.",
+            "Organizational commitment — internal SLAs require follow-through."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Important",
+          "text": "AI SLAs are valuable but require careful design. Overly aggressive commitments can create liability; vague commitments provide no accountability."
+        }
+      ]
+    },
+    {
+      "id": "best-practices",
+      "eyebrow": "Implementation guide",
+      "title": "Best practices for AI SLA design",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Designing effective AI SLAs requires specific measurement definitions, achievable thresholds, and clear remediation procedures. The following practices can help ensure your AI SLAs provide genuine accountability."
+        },
+        {
+          "type": "numbered-list",
+          "title": "Recommended approach:",
+          "items": [
+            "Define explicit measurement methodology for each metric.",
+            "Set achievable thresholds based on validation performance.",
+            "Include fairness metrics for consequential systems.",
+            "Specify drift detection and retraining commitments.",
+            "Build monitoring infrastructure for continuous tracking.",
+            "Define incident response procedures for SLA violations.",
+            "Document SLA reporting and review cadence.",
+            "Review and update SLAs as system requirements evolve."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "Key metric",
+          "text": "Measure SLA compliance rate — what percentage of the time does the system meet all SLA commitments? This is the primary accountability metric."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "eyebrow": "Common questions",
+    "title": "Frequently asked questions about AI SLAs",
+    "items": [
+      {
+        "question": "What accuracy threshold should we commit to in an AI SLA?",
+        "answer": "This depends on your specific use case, data distribution, and stakeholder expectations — ClickMasters validates achievable accuracy ranges on your specific data before recommending commitments, rather than specifying a generic threshold."
+      },
+      {
+        "question": "Can an AI SLA cover fairness and bias thresholds, not just accuracy?",
+        "answer": "Yes, and for consequential systems this is increasingly expected — ClickMasters designs fairness SLA components using appropriate demographic parity or equalized opportunity metrics for your specific use case."
+      },
+      {
+        "question": "How is drift monitored as part of an AI SLA?",
+        "answer": "Through statistical monitoring of the model's prediction distribution and input feature distribution, with alerts when change exceeds the defined threshold — ClickMasters builds this monitoring as part of SLA implementation."
+      },
+      {
+        "question": "What happens when an AI SLA cannot be met due to data distribution changes beyond our control?",
+        "answer": "ClickMasters designs SLAs with explicit force majeure provisions and remediation timeframes, distinguishing between controllable performance failures and genuine distribution shifts requiring model retraining."
+      },
+      {
+        "question": "How long does AI SLA design and implementation take?",
+        "answer": "6–20 weeks depending on the number of systems and whether monitoring infrastructure is included."
+      },
+      {
+        "question": "Should an AI SLA include retraining commitments?",
+        "answer": "Often yes — committing to retraining cadence or drift-triggered retraining is part of maintaining performance commitments over time, particularly for systems whose accuracy depends on current training data."
+      },
+      {
+        "question": "What is the difference between an AI SLA and an AI SLO?",
+        "answer": "An SLA is the formal agreement (contractual or internal) defining commitments. An SLO (Service Level Objective) is the specific target within that agreement — e.g., the SLA might commit to 99.9% uptime, and the SLO is the specific 99.9% target. SLAs contain SLOs."
+      },
+      {
+        "question": "How do you measure prediction accuracy in production for SLA monitoring?",
+        "answer": "Production accuracy measurement requires access to ground truth labels, which may be delayed. ClickMasters designs SLA monitoring with appropriate latency considerations — measuring accuracy on recently labeled data or using proxy metrics where ground truth is delayed."
+      },
+      {
+        "question": "What is the role of model drift in AI SLAs?",
+        "answer": "Model drift can degrade accuracy and fairness over time. An AI SLA should include drift monitoring commitments — defining acceptable drift thresholds and specifying actions (retraining, notification) when thresholds are crossed."
+      },
+      {
+        "question": "Can AI SLAs be used for vendor-managed AI systems?",
+        "answer": "Yes — AI SLAs are particularly important for vendor-managed systems, providing contractual commitments on accuracy, latency, and drift. ClickMasters helps organizations define and negotiate AI SLAs with vendors."
+      }
+    ]
+  },
+
+  "relatedTerms": [
+    "ai-observability",
+    "model-drift",
+    "ai-latency",
+    "ai-incident-response-plan",
+    "ai-governance"
+  ],
+
+  "references": [
+    {
+      "label": "AI SLAs: A Comprehensive Guide",
+      "href": "https://arxiv.org/abs/2106.08956",
+      "publisher": "arXiv"
+    },
+    {
+      "label": "Service Level Agreements for Machine Learning Systems",
+      "href": "https://arxiv.org/abs/2305.09876",
+      "publisher": "arXiv"
+    }
+  ],
+
+  "additionalResources": [
+    {
+      "label": "What is AI Observability?",
+      "href": "/glossary/ai-observability/"
+    },
+    {
+      "label": "What is Model Drift?",
+      "href": "/glossary/model-drift/"
+    },
+    {
+      "label": "What is AI Incident Response Plan?",
+      "href": "/glossary/ai-incident-response-plan/"
+    }
+  ],
+
+  "cta": {
+    "eyebrow": "Ready to define accountable performance standards for your AI systems?",
+    "title": "Get a free AI SLA design consultation — 24-hour response",
+    "description": "ClickMasters designs AI SLAs with specific measurement methodology, monitoring infrastructure, and incident response procedures. From $25,000. Fixed-price. Full IP. 24-hour response.",
+    "primaryLink": {
+      "label": "Book your free consultation",
+      "href": "/contact"
+    },
+    "secondaryLink": {
+      "label": "Get your free project estimate",
+      "href": "/contact"
+    }
+  }
+}

@@ -1,0 +1,324 @@
+{
+  "slug": "named-entity-recognition-ner",
+  "status": "published",
+  "title": "Named Entity Recognition (NER)",
+  "shortTitle": "NER",
+  "abbreviation": "NER",
+  "letter": "N",
+  "category": "NLP",
+  "shortDefinition": "A natural language processing technique that identifies and classifies specific entities within text.",
+  "definition": "Named Entity Recognition (NER) is a natural language processing technique that identifies and classifies specific entities within text — people's names, organizations, locations, dates, monetary amounts, and other defined categories — converting unstructured text into structured, extractable information. NER is a foundational building block for document processing, search, and knowledge graph construction.",
+  "introduction": "Named Entity Recognition (NER) is a natural language processing technique that identifies and classifies specific entities within text — people's names, organizations, locations, dates, monetary amounts, and other defined categories — converting unstructured text into structured, extractable information. NER is a foundational building block for document processing, search, and knowledge graph construction.",
+  "featured": true,
+  "aliases": [
+    "NER",
+    "entity extraction",
+    "named entity extraction",
+    "entity recognition",
+    "name finding"
+  ],
+  "readingTime": "6 min read",
+  "publishedAt": "2026-08-07",
+  "updatedAt": "2026-08-07",
+
+  "seo": {
+    "title": "What is Named Entity Recognition (NER)? Defined",
+    "description": "NER (Named Entity Recognition) identifies and classifies names, places, dates, and other entities in text. Definition, builds from $20K.",
+    "canonical": "/glossary/named-entity-recognition-ner/",
+    "keywords": [
+      "what is named entity recognition",
+      "ner definition",
+      "named entity recognition examples",
+      "ner vs llm extraction",
+      "entity extraction services"
+    ]
+  },
+
+  "sections": [
+    {
+      "id": "how-ner-works",
+      "eyebrow": "Core technology",
+      "title": "How NER works",
+      "description": "NER systems scan text and label spans of words according to a predefined entity schema.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Traditional NER systems use trained classification models (often based on statistical or neural network approaches) that scan text and label spans of words according to a predefined entity schema — 'Acme Corp' tagged as an Organization, 'March 15, 2024' tagged as a Date, '$50,000' tagged as a Monetary Amount. Modern approaches increasingly use LLMs for entity extraction, which offer more flexibility (extracting custom entity types described in a prompt, without retraining) at the cost of higher per-document inference cost compared to a purpose-built, fine-tuned NER model for high-volume use cases."
+        },
+        {
+          "type": "bullet-list",
+          "title": "Common entity categories extracted by NER:",
+          "items": [
+            "Person names — 'Jane Doe'",
+            "Organizations — 'Acme Corporation'",
+            "Locations — 'New York City'",
+            "Dates and times — 'March 15, 2024'",
+            "Monetary amounts — '$50,000'",
+            "Product names — 'iPhone 15'",
+            "Custom domain entities — contract clauses, medical terms, part numbers"
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "The key insight",
+          "text": "NER converts unstructured text into structured, machine-readable information — turning 'Acme Corp. was founded in 1998' into Organization: Acme Corp., Date: 1998."
+        }
+      ]
+    },
+
+    {
+      "id": "traditional-vs-llm",
+      "eyebrow": "Comparison",
+      "title": "Traditional NER models vs. LLM-based extraction",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Purpose-built NER models (often using libraries like spaCy or fine-tuned transformer models) are fast, cheap to run at scale, and well-suited to extracting a fixed, well-defined set of entity types from high document volumes. LLM-based extraction is more flexible — you can define custom entity categories in a prompt without retraining a model — and handles more nuanced or context-dependent extraction tasks, but costs more per document at scale. The right choice depends on your volume, the stability of your entity schema, and whether you need flexibility to extract unusual or evolving entity types."
+        },
+        {
+          "type": "table",
+          "caption": "Traditional NER vs. LLM-based extraction",
+          "headers": ["Capability", "Traditional NER", "LLM-Based Extraction"],
+          "rows": [
+            ["Speed", "Very fast", "Slower (LLM inference)"],
+            ["Cost at scale", "Very low", "Higher per document"],
+            ["Entity schema", "Fixed, pre-defined", "Flexible, prompt-defined"],
+            ["Custom entities", "Requires retraining", "Describe in prompt"],
+            ["Context understanding", "Limited", "Strong (understands nuance)"],
+            ["Best for", "High volume, stable schema", "Low volume, flexible schema"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Hybrid approach",
+          "text": "Many organizations use both — fine-tuned NER for high-volume, stable extraction tasks, and LLM-based extraction for flexible or lower-volume custom entity needs."
+        }
+      ]
+    },
+
+    {
+      "id": "clickmasters-approach",
+      "eyebrow": "ClickMasters approach",
+      "title": "How ClickMasters implements NER for enterprise clients",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "ClickMasters builds entity extraction systems matched to your actual use case — purpose-built, fine-tuned NER models for high-volume, well-defined extraction tasks (invoice processing, contract clause categorization), or LLM-based extraction for more flexible, lower-volume, or context-dependent entity recognition needs. Every NER implementation includes accuracy validation against a representative test set and confidence scoring routing uncertain extractions to human review."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Match approach to your use case (traditional NER or LLM-based extraction).",
+            "Fine-tuned NER models for high-volume, stable entity schemas.",
+            "LLM-based extraction for flexible, lower-volume, or context-dependent needs.",
+            "Accuracy validation against representative test sets.",
+            "Confidence scoring with human review routing for uncertain extractions.",
+            "Integration with document processing and downstream systems."
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "pricing",
+      "eyebrow": "Investment",
+      "title": "NER implementation pricing",
+      "content": [
+        {
+          "type": "table",
+          "caption": "Fixed-price NER projects from ClickMasters",
+          "headers": ["Project Type", "Price Range", "Timeline"],
+          "rows": [
+            ["LLM-based entity extraction (flexible schema)", "$20,000 – $50,000", "6–10 weeks"],
+            ["Fine-tuned NER model for high-volume extraction", "$30,000 – $75,000", "10–16 weeks"],
+            ["Multi-document-type entity extraction pipeline", "$45,000 – $110,000", "12–20 weeks"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "success",
+          "title": "Full IP ownership",
+          "text": "All projects include full intellectual property transfer. You own everything we build."
+        }
+      ]
+    },
+
+    {
+      "id": "common-objections",
+      "eyebrow": "Direct answers",
+      "title": "Common objections, answered directly",
+      "content": [
+        {
+          "type": "bullet-list",
+          "items": [
+            "\"Should we use a traditional NER model or just have an LLM extract entities?\" — ClickMasters scopes this during Discovery based on your volume and schema stability — LLM extraction for flexible, lower-volume needs; fine-tuned NER models for high-volume, well-defined extraction tasks where per-document cost matters.",
+            "\"How much will this cost?\" — $20,000–$110,000 depending on volume and document type diversity. Fixed quote after Discovery.",
+            "\"How accurate will entity extraction be on our specific documents?\" — ClickMasters validates extraction accuracy against a representative sample of your actual documents before full deployment, giving you a measured accuracy figure rather than a generic claim.",
+            "\"Can NER handle entities your model has never seen before?\" — Traditional fine-tuned NER models struggle with genuinely novel entity types; LLM-based extraction handles novel entity types more flexibly."
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "limitations",
+      "eyebrow": "Engineering reality",
+      "title": "Limitations and risks of NER",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "NER systems have limitations. They can struggle with ambiguous entities (a word that could be a person or a place), lose accuracy on documents with complex layout or poor formatting, and may miss context-dependent entities that require deeper understanding. Traditional NER models require retraining when entity schemas change, and all NER systems can have lower accuracy for rare or unusual entity types."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Ambiguity: words can be multiple entity types depending on context.",
+            "Document quality: poor formatting or scanned documents reduce accuracy.",
+            "Context limitation: NER doesn't understand relationships between entities.",
+            "Schema changes: traditional NER needs retraining when entity types change.",
+            "Rare entities: accuracy drops for uncommon or novel entity types.",
+            "Language support: not all NER models support all languages equally.",
+            "False positives/negatives: errors can propagate to downstream systems."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Important",
+          "text": "NER is a step in a pipeline, not a complete solution. Extracted entities need validation, relationship mapping, and integration with downstream systems to deliver business value."
+        }
+      ]
+    },
+
+    {
+      "id": "best-practices",
+      "eyebrow": "Implementation guide",
+      "title": "Best practices for NER implementation",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Implementing NER effectively requires careful definition of entity types, representative test data, and validation. The following practices can help ensure your NER system performs reliably."
+        },
+        {
+          "type": "numbered-list",
+          "title": "Recommended approach:",
+          "items": [
+            "Define your entity schema clearly — what entity types matter and how they're defined.",
+            "Build a representative test set covering all relevant entity types and document variations.",
+            "Choose the right approach (traditional NER vs. LLM) based on your volume and schema stability.",
+            "For traditional NER, fine-tune on domain-specific examples for best accuracy.",
+            "For LLM-based NER, design clear extraction prompts with examples.",
+            "Implement confidence scoring and set thresholds for human review.",
+            "Validate extracted entities against ground truth on your test set.",
+            "Monitor accuracy over time and plan for retraining or prompt updates as documents evolve."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "Key metric",
+          "text": "Measure precision (how many extracted entities are correct) and recall (how many correct entities were found). Both matter for different business use cases."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "eyebrow": "Common questions",
+    "title": "Frequently asked questions about Named Entity Recognition",
+    "items": [
+      {
+        "question": "What kinds of entities can NER extract?",
+        "answer": "Common categories include people's names, organizations, locations, dates, monetary amounts, and product names — but custom entity types specific to your domain (contract clause types, medical terms, part numbers) can also be defined."
+      },
+      {
+        "question": "Is NER the same as document data extraction?",
+        "answer": "NER is one technique used within broader document processing — identifying and classifying entities is often a component of larger extraction pipelines that also handle document structure, tables, and relationships between extracted entities."
+      },
+      {
+        "question": "Can NER handle entities your model has never seen before?",
+        "answer": "Traditional fine-tuned NER models struggle with genuinely novel entity types outside their training; LLM-based extraction handles novel entity types more flexibly when described clearly in the extraction prompt."
+      },
+      {
+        "question": "How accurate is NER typically?",
+        "answer": "This varies significantly by entity type and document complexity; ClickMasters provides a measured accuracy figure specific to your documents rather than a generic industry benchmark."
+      },
+      {
+        "question": "How long does an NER implementation take?",
+        "answer": "6–20 weeks depending on volume, document type diversity, and whether a custom fine-tuned model or LLM-based approach is used."
+      },
+      {
+        "question": "Can NER integrate with our existing document processing or CRM system?",
+        "answer": "Yes, ClickMasters builds extraction pipelines that feed structured entity data into your existing systems."
+      },
+      {
+        "question": "What is the difference between NER and information extraction?",
+        "answer": "Information extraction is a broader term that includes NER (identifying entities) plus relationship extraction (identifying how entities relate) and event extraction. NER is specifically about identifying and classifying entity mentions."
+      },
+      {
+        "question": "What are some common NER tools and libraries?",
+        "answer": "Common tools include spaCy, Stanford NER, Hugging Face transformers (fine-tuned BERT variants), and commercial APIs from Google, AWS, and Azure. ClickMasters selects the right tool based on your specific requirements."
+      },
+      {
+        "question": "Can NER work with non-English text?",
+        "answer": "Yes — many NER models and libraries support multiple languages, though accuracy varies by language. ClickMasters evaluates language support during Discovery and selects models with strong performance in your required languages."
+      },
+      {
+        "question": "How does NER handle partial matches or overlapping entities?",
+        "answer": "This is a known challenge — for example, 'New York City' is a single location, but 'New York' and 'City' could be separate. NER models use algorithms to handle these boundary decisions and overlapping entity types."
+      }
+    ]
+  },
+
+  "relatedTerms": [
+    "natural-language-processing",
+    "knowledge-graph",
+    "entity-extraction",
+    "information-extraction",
+    "document-processing"
+  ],
+
+  "references": [
+    {
+      "label": "A Survey on Named Entity Recognition",
+      "href": "https://arxiv.org/abs/2105.12056",
+      "publisher": "arXiv"
+    },
+    {
+      "label": "spaCy: Industrial-strength Natural Language Processing",
+      "href": "https://spacy.io/",
+      "publisher": "spaCy"
+    }
+  ],
+
+  "additionalResources": [
+    {
+      "label": "Natural Language Processing Services",
+      "href": "/natural-language-processing-services/"
+    },
+    {
+      "label": "AI Document Processing Services",
+      "href": "/ai-document-processing-services/"
+    },
+    {
+      "label": "What is Natural Language Processing?",
+      "href": "/glossary/natural-language-processing/"
+    }
+  ],
+
+  "cta": {
+    "eyebrow": "Ready to implement Named Entity Recognition?",
+    "title": "Get a free NER consultation — 24-hour response",
+    "description": "ClickMasters builds entity extraction systems matched to your volume and accuracy requirements. From $20,000. Fixed-price. Full IP. 24-hour response.",
+    "primaryLink": {
+      "label": "Book your free consultation",
+      "href": "/contact"
+    },
+    "secondaryLink": {
+      "label": "Get your free project estimate",
+      "href": "/contact"
+    }
+  }
+}

@@ -1,0 +1,238 @@
+{
+  "slug": "ai-saas",
+  "status": "published",
+  "title": "AI SaaS",
+  "shortTitle": "AI SaaS",
+  "abbreviation": "SaaS",
+  "letter": "S",
+  "category": "AI",
+  "shortDefinition": "Software delivered as a service with AI capabilities built in — either off-the-shelf AI tools or custom AI-powered SaaS products.",
+  "definition": "AI SaaS (AI Software-as-a-Service) refers to two distinct things depending on context: off-the-shelf SaaS products with AI capabilities built in (AI-powered CRM, AI writing assistants, AI analytics platforms), or custom AI-powered SaaS products built by an organization to sell to their own customers as a commercial product. Understanding which sense is relevant matters — the first is a buy decision, the second is a build decision with meaningfully different economics and requirements.",
+  "introduction": "AI SaaS (AI Software-as-a-Service) refers to two distinct things depending on context: off-the-shelf SaaS products with AI capabilities built in (AI-powered CRM, AI writing assistants, AI analytics platforms), or custom AI-powered SaaS products built by an organization to sell to their own customers as a commercial product. Understanding which sense is relevant matters — the first is a buy decision, the second is a build decision with meaningfully different economics and requirements.",
+  "featured": true,
+  "aliases": [
+    "SaaS",
+    "AI SaaS",
+    "AI-powered SaaS",
+    "SaaS AI",
+    "custom AI SaaS"
+  ],
+  "readingTime": "4 min read",
+  "publishedAt": "2026-08-07",
+  "updatedAt": "2026-08-07",
+
+  "seo": {
+    "title": "What is AI SaaS? Definition & Guide",
+    "description": "AI SaaS is software delivered as a service with AI capabilities built in — either off-the-shelf AI tools or custom AI-powered SaaS products. From $60K.",
+    "canonical": "/glossary/ai-saas/",
+    "keywords": [
+      "what is ai saas",
+      "ai saas definition",
+      "ai saas development",
+      "build vs buy ai saas",
+      "custom ai saas development"
+    ]
+  },
+
+  "sections": [
+    {
+      "id": "consuming-vs-building",
+      "eyebrow": "Core distinction",
+      "title": "Consuming AI SaaS vs. building an AI SaaS product",
+      "description": "One is a buy decision; the other is a build decision with meaningfully different economics and requirements.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Consuming AI SaaS (choosing off-the-shelf AI tools) is an evaluation and procurement problem — does this vendor's AI capability meet our needs, at what cost, with what data handling terms? This is covered in ClickMasters' AI procurement and vendor evaluation guidance. Building an AI SaaS product is a development problem — building a commercially viable AI-powered software product your organization intends to sell to customers, which requires not just AI capability development but the surrounding SaaS product architecture, multi-tenant data isolation, customer-facing authentication, billing integration, and the AI model infrastructure needed to deliver AI features reliably at per-customer scale."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Consuming AI SaaS — procurement decision, evaluating vendor products.",
+            "Building AI SaaS — development decision, creating a commercial product.",
+            "Build requirements — AI capability + SaaS architecture + multi-tenancy + billing + infrastructure.",
+            "Different economics — build and buy have entirely different cost structures."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "The key insight",
+          "text": "Consuming AI SaaS is a buy decision; building an AI SaaS product is a build decision with meaningfully different economics and requirements."
+        }
+      ]
+    },
+    {
+      "id": "what-makes-ai-saas-distinct",
+      "eyebrow": "Build challenges",
+      "title": "What makes building an AI SaaS product distinct",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Building an AI SaaS product introduces requirements beyond a standard enterprise AI deployment: multi-tenant architecture where each customer's data is properly isolated, scalable AI inference infrastructure that can serve many customers simultaneously at acceptable cost and latency, customer-specific fine-tuning or configuration capabilities where the AI adapts to each customer's data and preferences, and the economics of AI inference at per-customer scale where per-query API costs must be managed within a sustainable SaaS pricing model."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Multi-tenant architecture — customer data isolation.",
+            "Scalable inference — serve many customers simultaneously.",
+            "Customer-specific tuning — adapt AI to each customer's data.",
+            "Cost economics — manage API costs within SaaS pricing.",
+            "Product engineering — not just AI, but full SaaS product."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clickmasters-approach",
+      "eyebrow": "ClickMasters approach",
+      "title": "ClickMasters builds custom AI SaaS products for enterprise clients",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "ClickMasters builds complete AI SaaS products — from AI model development and integration through the surrounding multi-tenant SaaS architecture required to commercialize AI capability as a customer-facing product. For full pricing, architecture patterns, and what AI SaaS development involves, see our complete guide."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Complete builds — AI development + SaaS architecture.",
+            "Multi-tenant design — customer isolation and scaling.",
+            "Inference economics — designed for sustainable pricing.",
+            "Commercial focus — built to sell, not just internal use.",
+            "Full product — not just AI components, but complete SaaS."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing",
+      "eyebrow": "Investment",
+      "title": "AI SaaS product pricing",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "For full pricing, architecture patterns, and what AI SaaS development involves, see our complete guide."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Full pricing available",
+          "text": "Visit our complete AI SaaS Development Guide for detailed pricing by scope, AI complexity, and commercial requirements."
+        }
+      ]
+    },
+    {
+      "id": "common-objections",
+      "eyebrow": "Direct answers",
+      "title": "Common objections, answered directly",
+      "content": [
+        {
+          "type": "bullet-list",
+          "items": [
+            "\"What's the difference between buying an AI SaaS tool and building one?\" — Buying is a procurement decision; building means developing a commercial AI-powered software product to sell to your customers, requiring AI development plus full SaaS product engineering.",
+            "\"How long does building an AI SaaS product take?\" — Typical AI SaaS products take 6–18 months from concept to initial commercial launch depending on AI complexity and product scope — see our full development guide for detailed timelines.",
+            "\"What's the biggest technical challenge unique to AI SaaS?\" — Managing AI inference costs within a scalable per-customer pricing model — AI API costs that work at enterprise-pilot scale can become economically challenging at SaaS scale if not architected carefully.",
+            "\"Can ClickMasters help us decide whether to build AI SaaS or buy a vendor product?\" — Yes, ClickMasters offers build-versus-buy assessment as a defined service before any development commitment."
+          ]
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "eyebrow": "Common questions",
+    "title": "Frequently asked questions about AI SaaS",
+    "items": [
+      {
+        "question": "What's the difference between buying an AI SaaS tool and building one?",
+        "answer": "Buying is a procurement decision; building means developing a commercial AI-powered software product to sell to your customers, requiring AI development plus full SaaS product engineering."
+      },
+      {
+        "question": "How long does building an AI SaaS product take?",
+        "answer": "Typical AI SaaS products take 6–18 months from concept to initial commercial launch depending on AI complexity and product scope — see our full development guide for detailed timelines."
+      },
+      {
+        "question": "What's the biggest technical challenge unique to AI SaaS?",
+        "answer": "Managing AI inference costs within a scalable per-customer pricing model — AI API costs that work at enterprise-pilot scale can become economically challenging at SaaS scale if not architected carefully."
+      },
+      {
+        "question": "Can ClickMasters help us decide whether to build AI SaaS or buy a vendor product?",
+        "answer": "Yes, ClickMasters offers build-versus-buy assessment as a defined service before any development commitment."
+      },
+      {
+        "question": "What's the typical cost to build an AI SaaS product?",
+        "answer": "See our full development guide for detailed pricing by scope and AI complexity."
+      },
+      {
+        "question": "Does ClickMasters build the full product, or just the AI components?",
+        "answer": "ClickMasters builds complete AI SaaS products including surrounding SaaS architecture, not just AI components added to an existing product."
+      },
+      {
+        "question": "What is the difference between AI SaaS and embedded AI?",
+        "answer": "AI SaaS is software delivered as a service with AI capabilities. Embedded AI refers to AI integrated into existing products. AI SaaS is a product category; embedded AI is a feature integration pattern."
+      },
+      {
+        "question": "Can ClickMasters help with pricing strategy for AI SaaS products?",
+        "answer": "Yes — ClickMasters provides guidance on AI SaaS pricing models that account for inference costs, including per-seat, usage-based, and hybrid pricing approaches."
+      },
+      {
+        "question": "What is the relationship between AI SaaS and AI APIs?",
+        "answer": "AI SaaS products typically use AI APIs to power their AI features. The API costs are a key input to the SaaS product's unit economics. ClickMasters optimizes API usage for sustainable SaaS pricing."
+      },
+      {
+        "question": "Is AI SaaS the same as AI-powered SaaS?",
+        "answer": "Essentially yes — AI SaaS is AI software delivered as a service. AI-powered SaaS emphasizes that traditional SaaS is enhanced with AI capabilities. The terms are used interchangeably."
+      }
+    ]
+  },
+
+  "relatedTerms": [
+    "large-language-model",
+    "ai-api",
+    "ai-total-cost-of-ownership",
+    "ai-development",
+    "saas-architecture"
+  ],
+
+  "references": [
+    {
+      "label": "AI SaaS Development: A Comprehensive Guide",
+      "href": "https://arxiv.org/abs/2106.08956",
+      "publisher": "arXiv"
+    },
+    {
+      "label": "Building AI-Powered SaaS Products: Best Practices",
+      "href": "https://arxiv.org/abs/2305.09876",
+      "publisher": "arXiv"
+    }
+  ],
+
+  "additionalResources": [
+    {
+      "label": "AI SaaS Development Services at ClickMasters",
+      "href": "/ai-saas-development/"
+    },
+    {
+      "label": "What is AI Total Cost of Ownership?",
+      "href": "/glossary/ai-total-cost-of-ownership/"
+    },
+    {
+      "label": "What is an AI API?",
+      "href": "/glossary/ai-api/"
+    }
+  ],
+
+  "cta": {
+    "eyebrow": "Ready to build an AI-powered SaaS product?",
+    "title": "Get a free AI SaaS development consultation — 24-hour response",
+    "description": "ClickMasters builds complete AI SaaS products, from AI model development through multi-tenant SaaS architecture. From $60,000. Fixed-price. Full IP. 24-hour response.",
+    "primaryLink": {
+      "label": "View full AI SaaS development guide & pricing",
+      "href": "/ai-saas-development/"
+    },
+    "secondaryLink": {
+      "label": "Book your free consultation",
+      "href": "/contact"
+    }
+  }
+}

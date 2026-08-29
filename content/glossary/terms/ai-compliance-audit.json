@@ -1,0 +1,319 @@
+{
+  "slug": "ai-compliance-audit",
+  "status": "published",
+  "title": "AI Compliance Audit",
+  "shortTitle": "AI Compliance Audit",
+  "abbreviation": "ACA",
+  "letter": "A",
+  "category": "AI Governance",
+  "shortDefinition": "A systematic review of an AI system against applicable regulations and internal policies.",
+  "definition": "An AI compliance audit is a systematic review of an AI system against applicable regulations, industry standards, and internal organizational policies — examining documentation, validation evidence, bias testing results, and operational practices to confirm the system meets its compliance obligations. AI compliance audits are increasingly important as regulations like the EU AI Act and emerging US state-level AI laws create specific documented compliance requirements for certain AI applications.",
+  "introduction": "An AI compliance audit is a systematic review of an AI system against applicable regulations, industry standards, and internal organizational policies — examining documentation, validation evidence, bias testing results, and operational practices to confirm the system meets its compliance obligations. AI compliance audits are increasingly important as regulations like the EU AI Act and emerging US state-level AI laws create specific documented compliance requirements for certain AI applications.",
+  "featured": true,
+  "aliases": [
+    "ACA",
+    "compliance audit",
+    "AI regulatory audit",
+    "AI compliance review",
+    "regulatory compliance audit"
+  ],
+  "readingTime": "5 min read",
+  "publishedAt": "2026-08-07",
+  "updatedAt": "2026-08-07",
+
+  "seo": {
+    "title": "What is an AI Compliance Audit? Definition",
+    "description": "An AI compliance audit systematically reviews an AI system against applicable regulations and internal policies. Definition, builds from $30K.",
+    "canonical": "/glossary/ai-compliance-audit/",
+    "keywords": [
+      "what is an ai compliance audit",
+      "ai compliance audit definition",
+      "ai compliance audit checklist",
+      "nist ai rmf audit",
+      "ai compliance services"
+    ]
+  },
+
+  "sections": [
+    {
+      "id": "what-audit-examines",
+      "eyebrow": "Scope",
+      "title": "What an AI compliance audit typically examines",
+      "description": "A thorough audit reviews documentation, bias evidence, explainability, data handling, and monitoring practices.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "A thorough AI compliance audit reviews documentation completeness (model cards, validation reports, data lineage), bias and fairness testing evidence across applicable protected characteristics, explainability documentation appropriate to the system's risk level, data handling and privacy practices against applicable regulations, and ongoing monitoring practices confirming the system continues performing as validated after deployment. The specific requirements examined depend heavily on your industry, jurisdiction, and the AI system's risk classification."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Documentation completeness — model cards, validation reports, data lineage.",
+            "Bias and fairness testing — evidence across protected characteristics.",
+            "Explainability — documentation appropriate to risk level.",
+            "Data handling — privacy practices against applicable regulations.",
+            "Ongoing monitoring — performance validation after deployment.",
+            "Industry-specific — requirements vary by sector and jurisdiction."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "The key insight",
+          "text": "An AI compliance audit verifies that what you claim about your system's compliance is actually documented and supported by evidence."
+        }
+      ]
+    },
+
+    {
+      "id": "audit-vs-risk-assessment",
+      "eyebrow": "Comparison",
+      "title": "AI compliance audit vs. risk assessment: how they relate",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "A risk assessment evaluates a system's potential harms and appropriate safeguards, typically conducted before or during development. A compliance audit specifically verifies whether the system and its documentation actually meet defined regulatory or policy requirements, often conducted periodically for systems already in production or before a significant milestone (new market entry, new regulatory requirement taking effect, or as part of routine governance practice). Risk assessment informs what safeguards are needed; compliance audit verifies those safeguards are actually in place and properly documented."
+        },
+        {
+          "type": "table",
+          "caption": "Risk assessment vs. compliance audit",
+          "headers": ["Aspect", "Risk Assessment", "Compliance Audit"],
+          "rows": [
+            ["Purpose", "Identify potential harms and safeguards", "Verify compliance with regulations/policies"],
+            ["Timing", "Before or during development", "Periodically after deployment"],
+            ["Output", "Risk classification, mitigation plan", "Findings report, gap identification"],
+            ["Focus", "What could go wrong", "What is documented and evidenced"],
+            ["Frequency", "Typically once per system", "Periodic or triggered by changes"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Complementary processes",
+          "text": "Risk assessment informs what safeguards are needed; compliance audit verifies those safeguards are actually in place and properly documented."
+        }
+      ]
+    },
+
+    {
+      "id": "clickmasters-approach",
+      "eyebrow": "ClickMasters approach",
+      "title": "How ClickMasters conducts AI compliance audits for enterprise clients",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "ClickMasters audits AI systems against applicable frameworks (NIST AI RMF, industry-specific requirements, and emerging regulations like the EU AI Act where relevant to your operations) — reviewing documentation, validation evidence, and operational practices, then producing a clear findings report identifying specific gaps and remediation priorities. ClickMasters is not a law firm, and recommends involving legal counsel for definitive compliance determinations, while providing the technical audit and remediation work that informs that legal assessment."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Framework alignment — NIST AI RMF, EU AI Act, industry-specific.",
+            "Documentation review — comprehensive assessment of existing evidence.",
+            "Findings report — clear gap identification and remediation priorities.",
+            "Technical audit — providing the technical basis for compliance assessment.",
+            "Legal counsel recommendation — definitive compliance determinations require legal review."
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "pricing",
+      "eyebrow": "Investment",
+      "title": "AI compliance audit pricing",
+      "content": [
+        {
+          "type": "table",
+          "caption": "Fixed-price AI compliance audit projects from ClickMasters",
+          "headers": ["Project Type", "Price Range", "Timeline"],
+          "rows": [
+            ["Compliance audit for a single AI system", "$30,000 – $65,000", "8–14 weeks"],
+            ["Compliance audit across a portfolio of AI systems", "$55,000 – $130,000", "14–22 weeks"],
+            ["Compliance audit plus remediation implementation", "$70,000 – $180,000", "16–26 weeks"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "success",
+          "title": "Full IP ownership",
+          "text": "All projects include full intellectual property transfer. You own everything we build."
+        }
+      ]
+    },
+
+    {
+      "id": "common-objections",
+      "eyebrow": "Direct answers",
+      "title": "Common objections, answered directly",
+      "content": [
+        {
+          "type": "bullet-list",
+          "items": [
+            "\"How much will this cost?\" — $30,000–$180,000 depending on the number of systems audited and whether remediation implementation is included. Fixed quote after Discovery.",
+            "\"Will an audit finding gaps create legal liability we didn't have before?\" — This is a genuine consideration worth discussing with legal counsel before proceeding — ClickMasters recommends involving your legal team in scoping the audit appropriately, since the goal is identifying and closing gaps proactively, not creating unmanaged risk.",
+            "\"Is ClickMasters qualified to determine our specific regulatory compliance?\" — ClickMasters conducts technical audits against established frameworks and documents specific findings, but is not a law firm — definitive compliance determinations should involve your legal counsel, with ClickMasters' technical findings informing that assessment.",
+            "\"What frameworks does ClickMasters audit against?\" — ClickMasters audits against established frameworks like the NIST AI Risk Management Framework, adapted to your specific industry and applicable regulations."
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "limitations",
+      "eyebrow": "Engineering reality",
+      "title": "Limitations and risks of AI compliance audits",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "AI compliance audits have limitations. They provide a point-in-time assessment — compliance status can change as systems evolve or regulations update. Audits can only assess what they examine; incomplete access to documentation or systems can limit findings. Technical audits alone don't determine legal compliance, which requires legal interpretation. Audits can create compliance fatigue if not focused on genuine risks, and remediation of findings requires organizational commitment and resources. The evolving regulatory landscape means compliance requirements can change between audit cycles."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Point-in-time — compliance status can change after the audit.",
+            "Access dependency — findings limited by what is examined.",
+            "Legal interpretation — technical audits don't determine legal compliance.",
+            "Compliance fatigue — audits without focus can create overhead.",
+            "Remediation commitment — fixes require organizational resources.",
+            "Regulatory evolution — requirements can change between cycles."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Important",
+          "text": "A compliance audit is a snapshot, not a guarantee. Ongoing monitoring and periodic re-audit are essential for maintaining compliance."
+        }
+      ]
+    },
+
+    {
+      "id": "best-practices",
+      "eyebrow": "Implementation guide",
+      "title": "Best practices for AI compliance audits",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Conducting effective AI compliance audits requires clear scope, comprehensive documentation review, and a practical remediation approach. The following practices can help ensure your compliance audit delivers genuine value."
+        },
+        {
+          "type": "numbered-list",
+          "title": "Recommended approach:",
+          "items": [
+            "Define clear audit scope based on applicable regulations and policies.",
+            "Gather comprehensive documentation before the audit begins.",
+            "Involve legal counsel in scoping and interpreting requirements.",
+            "Prioritize findings based on actual risk severity.",
+            "Build a remediation plan with clear ownership and timelines.",
+            "Document audit methodology and findings for governance records.",
+            "Consider periodic re-audit for consequential systems.",
+            "Treat audit findings as improvement opportunities, not just checkboxes."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "Key metric",
+          "text": "Measure audit remediation closure rate — a compliance audit's value is realized when identified gaps are actually closed, not just reported."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "eyebrow": "Common questions",
+    "title": "Frequently asked questions about AI compliance audits",
+    "items": [
+      {
+        "question": "What frameworks does ClickMasters audit against?",
+        "answer": "ClickMasters audits against established frameworks like the NIST AI Risk Management Framework, adapted to your specific industry and applicable regulations, with the understanding that definitive legal compliance determinations involve your legal counsel."
+      },
+      {
+        "question": "How often should AI systems undergo a compliance audit?",
+        "answer": "This depends on the system's risk level and how frequently regulations or your internal policies change; periodic re-audit (annually or after significant system changes) is a common practice for consequential systems."
+      },
+      {
+        "question": "What happens if the audit finds compliance gaps?",
+        "answer": "ClickMasters provides specific remediation recommendations and can implement them directly as a follow-on engagement, closing identified gaps with documented evidence of the fix."
+      },
+      {
+        "question": "Does ClickMasters provide legal compliance guarantees?",
+        "answer": "No — ClickMasters is not a law firm and doesn't provide legal compliance guarantees; we conduct technical audits and provide findings that inform your organization's compliance determination, made with appropriate legal counsel involvement."
+      },
+      {
+        "question": "How long does an AI compliance audit take?",
+        "answer": "8–26 weeks depending on the number of systems and whether remediation implementation is included."
+      },
+      {
+        "question": "Is a compliance audit the same as a bias audit?",
+        "answer": "A bias audit specifically examines discriminatory outcomes; a compliance audit is broader, examining documentation, validation, data handling, and operational practices against the full range of applicable requirements, of which bias testing is one component."
+      },
+      {
+        "question": "What is the EU AI Act and how does it relate to compliance audits?",
+        "answer": "The EU AI Act is a regulatory framework that classifies AI systems by risk level and imposes requirements on developers and deployers. It requires documented governance practices for high-risk AI systems, making compliance audits essential for organizations operating in the EU market."
+      },
+      {
+        "question": "What is the NIST AI Risk Management Framework?",
+        "answer": "A voluntary framework published by the US National Institute of Standards and Technology providing structured guidance for identifying, assessing, and managing AI-related risks throughout a system's lifecycle. It is commonly used as a benchmark for compliance audits."
+      },
+      {
+        "question": "Can a compliance audit be conducted internally, or does it require external vendors?",
+        "answer": "Internal audits can be conducted, but external audits bring objectivity and expertise in established frameworks. ClickMasters provides external audit services that complement internal governance processes."
+      },
+      {
+        "question": "What documentation is typically required for an AI compliance audit?",
+        "answer": "Typical documentation includes model cards, data lineage records, validation reports, bias testing results, explainability documentation, and ongoing monitoring records. ClickMasters provides specific documentation requirements during scoping."
+      }
+    ]
+  },
+
+  "relatedTerms": [
+    "ai-governance",
+    "ai-risk-assessment",
+    "ai-bias",
+    "responsible-ai",
+    "nist-ai-rmf"
+  ],
+
+  "references": [
+    {
+      "label": "NIST AI Risk Management Framework (AI RMF 1.0)",
+      "href": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "publisher": "NIST"
+    },
+    {
+      "label": "EU AI Act Overview",
+      "href": "https://artificialintelligenceact.eu/",
+      "publisher": "European Commission"
+    }
+  ],
+
+  "additionalResources": [
+    {
+      "label": "Responsible AI & Compliance Services",
+      "href": "/responsible-ai-compliance/"
+    },
+    {
+      "label": "What is AI Governance?",
+      "href": "/glossary/ai-governance/"
+    },
+    {
+      "label": "What is AI Bias?",
+      "href": "/glossary/ai-bias/"
+    }
+  ],
+
+  "cta": {
+    "eyebrow": "Ready to audit your AI system's compliance?",
+    "title": "Get a free AI compliance audit consultation — 24-hour response",
+    "description": "ClickMasters conducts technical compliance audits against established frameworks, with clear findings and remediation recommendations. From $30,000. Fixed-price. Full IP. 24-hour response.",
+    "primaryLink": {
+      "label": "Book your free consultation",
+      "href": "/contact"
+    },
+    "secondaryLink": {
+      "label": "Get your free project estimate",
+      "href": "/contact"
+    }
+  }
+}

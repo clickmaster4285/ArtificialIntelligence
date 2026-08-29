@@ -1,0 +1,304 @@
+{
+  "slug": "model-card",
+  "status": "published",
+  "title": "Model Card",
+  "shortTitle": "Model Card",
+  "abbreviation": "MC",
+  "letter": "M",
+  "category": "AI Governance",
+  "shortDefinition": "A standardized document describing an AI model's purpose, performance, limitations, and intended use.",
+  "definition": "A model card is a standardized document describing an AI model's intended purpose, performance characteristics, known limitations, training data, and appropriate use cases — providing transparency for anyone deploying, auditing, or relying on the model's outputs. Model cards have become a standard documentation practice for responsible AI development, particularly for models influencing consequential decisions.",
+  "introduction": "A model card is a standardized document describing an AI model's intended purpose, performance characteristics, known limitations, training data, and appropriate use cases — providing transparency for anyone deploying, auditing, or relying on the model's outputs. Model cards have become a standard documentation practice for responsible AI development, particularly for models influencing consequential decisions.",
+  "featured": true,
+  "aliases": [
+    "MC",
+    "model card",
+    "model documentation",
+    "AI model card",
+    "model reporting"
+  ],
+  "readingTime": "5 min read",
+  "publishedAt": "2026-08-07",
+  "updatedAt": "2026-08-07",
+
+  "seo": {
+    "title": "What is a Model Card? Definition",
+    "description": "A model card documents an AI model's purpose, performance, limitations, and intended use. Definition, templates, implementation from $15K.",
+    "canonical": "/glossary/model-card/",
+    "keywords": [
+      "what is a model card",
+      "model card definition",
+      "model card template",
+      "model documentation ai",
+      "ai model documentation services"
+    ]
+  },
+
+  "sections": [
+    {
+      "id": "what-model-card-includes",
+      "eyebrow": "Core components",
+      "title": "What a thorough model card includes",
+      "description": "A complete model card documents purpose, performance, limitations, and version history.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "A complete model card typically documents the model's intended use cases and explicitly out-of-scope uses, training data sources and any known limitations or biases in that data, performance metrics including subgroup performance breakdowns (not just aggregate accuracy), known failure modes and edge cases where the model performs less reliably, and version history tracking changes over the model's lifecycle. The goal is giving anyone evaluating whether to trust or deploy the model enough information to make that judgment without needing to independently re-derive the model's characteristics."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Intended use — clear purpose and scope of the model.",
+            "Out-of-scope uses — explicitly what the model should NOT be used for.",
+            "Training data — sources and known limitations or biases.",
+            "Performance metrics — including subgroup performance breakdowns.",
+            "Failure modes — known edge cases where the model performs less reliably.",
+            "Version history — tracking changes over the model's lifecycle."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "The key insight",
+          "text": "A model card gives anyone evaluating the model enough information to make an informed judgment without needing to independently re-derive its characteristics."
+        }
+      ]
+    },
+    {
+      "id": "why-model-cards-matter",
+      "eyebrow": "Practical value",
+      "title": "Why model cards matter beyond compliance documentation",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Model cards provide genuine practical value beyond regulatory or audit purposes — they prevent a model trained for one specific context from being inappropriately applied to a different context where its training data and validation don't actually support reliable performance. They also create institutional memory as teams change over time, ensuring knowledge about a model's actual capabilities and limitations doesn't depend entirely on the original developer's continued presence and memory."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Context prevention — avoid model misuse in inappropriate contexts.",
+            "Institutional memory — preserve knowledge beyond original developers.",
+            "Team continuity — documentation survives team changes.",
+            "Audit readiness — clear documentation for compliance reviews.",
+            "Deployment confidence — informed decisions about model deployment."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clickmasters-approach",
+      "eyebrow": "ClickMasters approach",
+      "title": "How ClickMasters creates model cards for enterprise clients",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "ClickMasters documents model cards as standard practice for any model deployed for enterprise clients — capturing intended use, training data characteristics, subgroup performance validation results, and known limitations in a clear, accessible format your team can reference and maintain going forward. For organizations with existing undocumented models, ClickMasters can retroactively create model cards based on available validation data and model behavior testing."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Standard practice — included in every enterprise model deployment.",
+            "Clear documentation — accessible format for your team.",
+            "Retroactive creation — for existing undocumented models.",
+            "Subgroup validation — performance breakdowns included.",
+            "Ongoing maintenance — updateable format for future changes."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing",
+      "eyebrow": "Investment",
+      "title": "Model card pricing",
+      "content": [
+        {
+          "type": "table",
+          "caption": "Fixed-price model documentation projects from ClickMasters",
+          "headers": ["Project Type", "Price Range", "Timeline"],
+          "rows": [
+            ["Model card creation for existing model", "$15,000 – $30,000", "4–8 weeks"],
+            ["Model card creation included in new model development", "Included in development scope", "Varies"],
+            ["Model card template and process for ongoing internal use", "$20,000 – $45,000", "6–10 weeks"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "success",
+          "title": "Full IP ownership",
+          "text": "All projects include full intellectual property transfer. You own everything we build."
+        }
+      ]
+    },
+    {
+      "id": "common-objections",
+      "eyebrow": "Direct answers",
+      "title": "Common objections, answered directly",
+      "content": [
+        {
+          "type": "bullet-list",
+          "items": [
+            "\"We've already deployed several models without formal documentation — can you create model cards retroactively?\" — Yes, ClickMasters can create model cards for existing models based on available validation data and additional testing where documentation gaps exist.",
+            "\"How much will this cost?\" — $15,000–$45,000 for standalone model card creation, or included as standard scope in new ClickMasters model development. Fixed quote after Discovery.",
+            "\"Is a model card the same as the explainability documentation we already have?\" — Related but distinct — explainability documentation explains why a model made specific predictions; a model card is a broader overview of the model's purpose, training, performance, and appropriate use.",
+            "\"Do all our AI models need a full model card, or just consequential ones?\" — Documentation depth should scale with the model's consequence — a low-stakes internal tool may need lighter documentation."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "limitations",
+      "eyebrow": "Engineering reality",
+      "title": "Limitations and risks of model cards",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Model cards have limitations. They document what is known about a model at a point in time — they can't capture unknown failure modes or issues that may emerge in production. The quality of a model card depends on the thoroughness of the underlying validation and testing. Cards can become outdated if not maintained, and they require organizational buy-in and process to remain useful. A model card is not a substitute for ongoing monitoring and validation."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Point-in-time — cannot capture unknown or future failure modes.",
+            "Quality dependence — depends on validation and testing thoroughness.",
+            "Outdated risk — requires ongoing maintenance to remain current.",
+            "Organizational buy-in — needs process and commitment to maintain.",
+            "Not a substitute — does not replace ongoing monitoring and validation."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Important",
+          "text": "A model card documents what you know about your model at a given time. It's not a substitute for ongoing monitoring and validation."
+        }
+      ]
+    },
+    {
+      "id": "best-practices",
+      "eyebrow": "Implementation guide",
+      "title": "Best practices for model card creation",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Creating effective model cards requires thorough validation, clear documentation, and ongoing maintenance. The following practices can help ensure your model cards deliver genuine transparency and governance value."
+        },
+        {
+          "type": "numbered-list",
+          "title": "Recommended approach:",
+          "items": [
+            "Include both intended and out-of-scope uses explicitly.",
+            "Document training data sources and known limitations.",
+            "Report subgroup performance, not just aggregate metrics.",
+            "Identify known failure modes and edge cases.",
+            "Track version history and changes over time.",
+            "Make model cards accessible to all relevant stakeholders.",
+            "Review and update model cards when the model changes.",
+            "Use model cards as part of your AI governance framework."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "Key metric",
+          "text": "Measure how often model cards are referenced for deployment decisions. High usage indicates they're providing practical value beyond compliance."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "eyebrow": "Common questions",
+    "title": "Frequently asked questions about model cards",
+    "items": [
+      {
+        "question": "Is creating model cards legally required?",
+        "answer": "Requirements vary by jurisdiction and industry; ClickMasters is not a law firm and recommends consulting legal counsel on your specific compliance obligations, though model cards are increasingly considered a responsible AI best practice regardless of explicit mandate."
+      },
+      {
+        "question": "Do all our AI models need a full model card, or just consequential ones?",
+        "answer": "Documentation depth should scale with the model's consequence — a low-stakes internal tool may need lighter documentation than a model influencing credit, hiring, or healthcare decisions."
+      },
+      {
+        "question": "Who is the intended audience for a model card?",
+        "answer": "Multiple audiences — data scientists and engineers maintaining the model, business stakeholders deciding whether to deploy it for a specific use case, compliance teams conducting audits, and sometimes external parties evaluating the model."
+      },
+      {
+        "question": "Can a model card help us avoid misusing a model in an inappropriate context?",
+        "answer": "Yes, this is one of its primary practical benefits — clearly documenting intended use and explicitly out-of-scope applications helps prevent a model validated for one context from being inappropriately deployed elsewhere."
+      },
+      {
+        "question": "How long does creating a model card take?",
+        "answer": "4–10 weeks depending on whether it's for a single existing model or establishing an ongoing documentation template and process."
+      },
+      {
+        "question": "Does a model card need to be updated over time?",
+        "answer": "Yes, particularly as the model is retrained, its performance is reassessed, or its use cases expand — ClickMasters builds version history tracking into every model card."
+      },
+      {
+        "question": "What is the difference between a model card and a datasheet for datasets?",
+        "answer": "A model card documents a trained model. A datasheet for datasets documents the training data itself. Both are important governance practices — the datasheet covers the data; the model card covers the model trained on it."
+      },
+      {
+        "question": "How do you handle proprietary information in model cards?",
+        "answer": "Model cards should include relevant information without exposing proprietary training data or sensitive business information. ClickMasters helps balance transparency with appropriate confidentiality."
+      },
+      {
+        "question": "What is the NIST AI RMF perspective on model cards?",
+        "answer": "The NIST AI Risk Management Framework emphasizes documentation as a key governance practice. Model cards are a recognized approach for meeting documentation expectations and supporting transparency in AI systems."
+      },
+      {
+        "question": "Can model cards be used for third-party model evaluation?",
+        "answer": "Yes — model cards provide the information needed for third-party evaluators to assess a model's suitability and risks. A well-documented model card simplifies external reviews."
+      }
+    ]
+  },
+
+  "relatedTerms": [
+    "ai-governance",
+    "model-explainability",
+    "ai-bias",
+    "responsible-ai",
+    "model-documentation"
+  ],
+
+  "references": [
+    {
+      "label": "Model Cards for Model Reporting (Google Research)",
+      "href": "https://arxiv.org/abs/1810.03993",
+      "publisher": "arXiv"
+    },
+    {
+      "label": "NIST AI Risk Management Framework",
+      "href": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "publisher": "NIST"
+    }
+  ],
+
+  "additionalResources": [
+    {
+      "label": "Responsible AI & Compliance Services",
+      "href": "/responsible-ai-compliance/"
+    },
+    {
+      "label": "What is AI Governance?",
+      "href": "/glossary/ai-governance/"
+    },
+    {
+      "label": "What is Model Explainability?",
+      "href": "/glossary/model-explainability-xai/"
+    }
+  ],
+
+  "cta": {
+    "eyebrow": "Ready to document your AI models properly?",
+    "title": "Get a free model documentation consultation — 24-hour response",
+    "description": "ClickMasters creates comprehensive model cards documenting purpose, performance, and limitations for enterprise AI models. From $15,000. Fixed-price. Full IP. 24-hour response.",
+    "primaryLink": {
+      "label": "Book your free consultation",
+      "href": "/contact"
+    },
+    "secondaryLink": {
+      "label": "Get your free project estimate",
+      "href": "/contact"
+    }
+  }
+}

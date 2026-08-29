@@ -1,0 +1,185 @@
+{
+  "slug": "vector-search",
+  "status": "published",
+  "title": "Vector Search",
+  "shortTitle": "Vector Search",
+  "abbreviation": "VS",
+  "letter": "V",
+  "category": "RAG",
+  "shortDefinition": "A similarity search method that retrieves items by comparing embedding vectors rather than exact keywords.",
+  "definition": "Vector search is a retrieval method that finds similar text, images, audio, or records by comparing their embedding vectors in a mathematical space. Instead of matching exact words, it ranks items by how close their vectors are to the query vector, which makes it a core building block for semantic search, RAG, recommendations, and similarity detection.",
+  "introduction": "Vector search lets AI systems retrieve information by meaning. Content is converted into embeddings, stored in a vector database or vector-capable index, and searched with nearest-neighbor algorithms so conceptually related items can be found even when they use different wording.",
+  "featured": false,
+  "aliases": [
+    "nearest-neighbor search",
+    "ANN search",
+    "similarity search",
+    "embedding search"
+  ],
+  "readingTime": "5 min read",
+  "publishedAt": "2026-08-07",
+  "updatedAt": "2026-08-13",
+  "seo": {
+    "title": "What is Vector Search? AI Vector Search Defined",
+    "description": "Vector search retrieves semantically similar content by comparing embeddings. Learn how it powers RAG, semantic search, and recommendations.",
+    "canonical": "/glossary/vector-search/",
+    "keywords": [
+      "what is vector search",
+      "vector search definition",
+      "embedding search",
+      "nearest neighbor search",
+      "vector search for rag"
+    ]
+  },
+  "sections": [
+    {
+      "id": "how-vector-search-works",
+      "eyebrow": "Core concept",
+      "title": "How vector search works",
+      "description": "Vector search compares embeddings to find the nearest semantic matches.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "A vector search system first converts content into embeddings: arrays of numbers that represent semantic meaning. When a user submits a query, the query is embedded the same way and compared against stored vectors using a distance or similarity metric such as cosine similarity, dot product, or Euclidean distance. The closest vectors become the top search results."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Embed documents, products, images, or other records.",
+            "Store vectors in a vector database or vector-capable index.",
+            "Embed the search query at request time.",
+            "Rank stored vectors by similarity to the query vector.",
+            "Return the matching source records to the application."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "The key insight",
+          "text": "Vector search finds nearby meanings, not just matching words. That is why a query can surface relevant content even when the exact phrase is absent."
+        }
+      ]
+    },
+    {
+      "id": "vector-vs-keyword-search",
+      "eyebrow": "Comparison",
+      "title": "Vector search vs. keyword search",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Keyword search is excellent for exact terms, names, identifiers, and filters. Vector search is stronger for conceptual discovery, synonyms, natural-language questions, and multimodal retrieval. Production systems often combine both as hybrid search so users get exact-match precision and semantic recall."
+        },
+        {
+          "type": "table",
+          "caption": "Vector search compared with keyword search",
+          "headers": [
+            "Aspect",
+            "Vector Search",
+            "Keyword Search"
+          ],
+          "rows": [
+            [
+              "Matching style",
+              "Semantic similarity",
+              "Exact term overlap"
+            ],
+            [
+              "Best for",
+              "Questions, concepts, recommendations",
+              "IDs, names, exact phrases"
+            ],
+            [
+              "Common weakness",
+              "Can miss exact constraints",
+              "Can miss synonyms and paraphrases"
+            ],
+            [
+              "Production pattern",
+              "Often paired with keyword search",
+              "Often paired with vector search"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clickmasters-approach",
+      "eyebrow": "ClickMasters approach",
+      "title": "How ClickMasters implements vector search",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "ClickMasters designs vector search around the actual retrieval job: the source content, expected queries, latency targets, update frequency, and required precision. Implementation typically includes embedding model selection, chunking strategy, vector database setup, retrieval tuning, and evaluation against real queries."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Embedding model selection for your content and languages.",
+            "Chunking and metadata design for reliable retrieval.",
+            "Vector database setup with scale and latency targets.",
+            "Hybrid search tuning when exact matches matter.",
+            "Retrieval evaluation using representative queries."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "best-practices",
+      "eyebrow": "Implementation guide",
+      "title": "Best practices for vector search",
+      "content": [
+        {
+          "type": "numbered-list",
+          "items": [
+            "Evaluate embedding models on real queries before committing.",
+            "Use metadata filters for permissions, categories, dates, and tenant boundaries.",
+            "Add reranking when top-k vector results need better ordering.",
+            "Use hybrid search for exact terms, product codes, legal citations, and names.",
+            "Monitor retrieval quality over time as content and user behavior change."
+          ]
+        }
+      ]
+    }
+  ],
+  "faqs": {
+    "eyebrow": "Common questions",
+    "title": "Frequently asked questions about vector search",
+    "items": [
+      {
+        "question": "Is vector search the same as semantic search?",
+        "answer": "Vector search is the technical retrieval method. Semantic search is a user-facing search experience that commonly uses vector search to find results by meaning."
+      },
+      {
+        "question": "Do I need a vector database for vector search?",
+        "answer": "For production scale, usually yes. Small prototypes can use in-memory indexes, but production systems need durable storage, indexing, filtering, monitoring, and update workflows."
+      },
+      {
+        "question": "Why combine vector search with keyword search?",
+        "answer": "Vector search is strong at conceptual matching, while keyword search is strong at exact terms. Hybrid search combines both so retrieval performs well across more query types."
+      }
+    ]
+  },
+  "relatedTerms": [
+    "embeddings",
+    "vector-database",
+    "semantic-search",
+    "rag-retrieval-augmented-generation",
+    "reranking"
+  ],
+  "references": [
+    {
+      "label": "Approximate Nearest Neighbor Search Survey",
+      "href": "https://arxiv.org/abs/2002.01852",
+      "publisher": "arXiv"
+    }
+  ],
+  "cta": {
+    "eyebrow": "Ready to improve retrieval quality?",
+    "title": "Build vector search that users can trust",
+    "description": "ClickMasters designs vector search systems for RAG, enterprise search, recommendations, and multimodal retrieval.",
+    "primaryLink": {
+      "label": "Book your free consultation",
+      "href": "/contact"
+    }
+  }
+}

@@ -1,0 +1,322 @@
+{
+  "slug": "computer-vision",
+  "status": "published",
+  "title": "Computer Vision",
+  "shortTitle": "Computer Vision",
+  "abbreviation": "CV",
+  "letter": "C",
+  "category": "Computer Vision",
+  "shortDefinition": "AI that interprets images and video to detect objects, defects, or patterns.",
+  "definition": "Computer vision is a field of AI focused on enabling machines to interpret and understand visual information from images and video — detecting objects, identifying defects, reading text, or recognizing patterns that would otherwise require human visual inspection. Computer vision powers applications from manufacturing quality inspection to autonomous vehicles to medical imaging analysis.",
+  "introduction": "Computer vision is a field of AI focused on enabling machines to interpret and understand visual information from images and video — detecting objects, identifying defects, reading text, or recognizing patterns that would otherwise require human visual inspection. Computer vision powers applications from manufacturing quality inspection to autonomous vehicles to medical imaging analysis.",
+  "featured": true,
+  "aliases": [
+    "CV",
+    "computer vision",
+    "machine vision",
+    "image recognition",
+    "visual AI"
+  ],
+  "readingTime": "6 min read",
+  "publishedAt": "2026-08-07",
+  "updatedAt": "2026-08-07",
+
+  "seo": {
+    "title": "What is Computer Vision? AI Vision Defined",
+    "description": "Computer vision is AI that interprets images and video to detect objects, defects, or patterns. Definition, use cases, custom builds from $40K.",
+    "canonical": "/glossary/computer-vision/",
+    "keywords": [
+      "what is computer vision",
+      "computer vision definition",
+      "computer vision use cases",
+      "computer vision vs image recognition",
+      "computer vision development services"
+    ]
+  },
+
+  "sections": [
+    {
+      "id": "how-computer-vision-works",
+      "eyebrow": "Core technology",
+      "title": "How computer vision works",
+      "description": "Modern computer vision uses neural networks trained on labeled images to recognize visual patterns.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Modern computer vision relies primarily on convolutional neural networks (CNNs) and increasingly vision transformers, trained on large sets of labeled images to recognize patterns associated with specific objects, defects, or conditions. The model learns hierarchical visual features — starting from simple edges and textures, building up to recognizing complete objects or anomalies — through training on thousands or millions of labeled example images relevant to the specific task."
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "The key insight",
+          "text": "Instead of writing rules for every possible visual pattern, computer vision models learn patterns from labeled examples — just like a human inspector learns from experience."
+        }
+      ]
+    },
+
+    {
+      "id": "business-use-cases",
+      "eyebrow": "Applications",
+      "title": "Common computer vision use cases in business",
+      "description": "Computer vision automates visual inspection tasks across industries.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Computer vision applications span manufacturing quality inspection (detecting product defects on a production line faster and more consistently than manual review), retail (inventory counting, loss prevention, shelf monitoring), healthcare (medical imaging analysis support), agriculture (crop health and yield assessment from drone or satellite imagery), and security (access control, anomaly detection in camera feeds). The common thread is replacing or augmenting a visual inspection task that's currently manual, slow, or inconsistent."
+        },
+        {
+          "type": "key-value-grid",
+          "items": [
+            {
+              "label": "Manufacturing",
+              "value": "Defect detection, quality control, assembly verification, predictive maintenance"
+            },
+            {
+              "label": "Retail",
+              "value": "Inventory counting, shelf monitoring, loss prevention, customer behavior analysis"
+            },
+            {
+              "label": "Healthcare",
+              "value": "Medical imaging analysis (X-ray, MRI, CT), pathology, surgical assistance"
+            },
+            {
+              "label": "Agriculture",
+              "value": "Crop health monitoring, yield assessment, pest detection, drone-based field analysis"
+            },
+            {
+              "label": "Security",
+              "value": "Access control, facial recognition, anomaly detection, perimeter monitoring"
+            },
+            {
+              "label": "Automotive",
+              "value": "Autonomous vehicle perception, driver monitoring, manufacturing QC"
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "clickmasters-approach",
+      "eyebrow": "ClickMasters approach",
+      "title": "How ClickMasters builds computer vision systems for enterprise clients",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "ClickMasters builds custom computer vision models using PyTorch and TensorFlow, trained on your specific imagery rather than generic pretrained models alone — critical for specialized tasks like defect detection where generic models won't recognize your product's specific failure modes. Every computer vision build includes precision/recall tuning calibrated to your actual risk tolerance (avoiding excessive false positives or dangerous false negatives), and deployment infrastructure sized to your required inspection throughput."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Custom models trained on your specific imagery (not just generic pretrained models).",
+            "Precision/recall tuning calibrated to your actual risk tolerance.",
+            "Deployment infrastructure sized to your required inspection throughput.",
+            "Data labeling and annotation support for your specific image types.",
+            "Model monitoring for drift as production conditions or product designs change.",
+            "Integration with existing camera hardware and inspection systems."
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "pricing",
+      "eyebrow": "Investment",
+      "title": "Computer vision pricing",
+      "content": [
+        {
+          "type": "table",
+          "caption": "Fixed-price computer vision projects from ClickMasters",
+          "headers": ["Project Type", "Price Range", "Timeline"],
+          "rows": [
+            ["Single-use-case computer vision model", "$40,000 – $100,000", "12–18 weeks"],
+            ["Multi-class detection with production deployment", "$60,000 – $150,000", "14–22 weeks"],
+            ["Enterprise computer vision platform with monitoring", "$100,000 – $250,000", "18–28 weeks"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "success",
+          "title": "Full IP ownership",
+          "text": "All projects include full intellectual property transfer. You own everything we build."
+        }
+      ]
+    },
+
+    {
+      "id": "common-objections",
+      "eyebrow": "Direct answers",
+      "title": "Common objections, answered directly",
+      "content": [
+        {
+          "type": "bullet-list",
+          "items": [
+            "\"How much will this cost?\" — $40,000–$250,000 depending on use case complexity and production deployment scale. Fixed quote after Discovery.",
+            "\"Can a generic pretrained model handle our specific defect/object detection needs?\" — Often not for specialized tasks — ClickMasters trains models on your specific imagery to recognize your product's actual failure modes, rather than relying solely on generic pretrained models that won't capture domain-specific patterns.",
+            "\"How do we avoid too many false positives slowing down our line?\" — ClickMasters tunes precision/recall tradeoffs explicitly with your team's risk tolerance, validated against historical defect data before full deployment.",
+            "\"What if our product design or lighting changes over time?\" — ClickMasters builds monitoring to detect drift and can retrain the model as conditions change."
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "limitations",
+      "eyebrow": "Engineering reality",
+      "title": "Limitations and risks of computer vision",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Computer vision systems are powerful but come with significant challenges. They require large, carefully labeled datasets, can be brittle to changes in lighting, angles, or product design, and may produce false positives or false negatives that impact operations. Training and inference at scale require significant compute resources, and edge cases are difficult to anticipate without extensive testing."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Data dependency: models need large, high-quality labeled image datasets.",
+            "Brittleness: changes in lighting, camera angles, or product appearance can break models.",
+            "False positives: can slow down production lines or cause unnecessary alerts.",
+            "False negatives: can miss critical defects with safety or quality implications.",
+            "Compute cost: training and inference require GPU resources, especially at scale.",
+            "Edge cases: rare or unexpected visual patterns are hard to anticipate and test.",
+            "Labeling cost: manual image annotation is time-consuming and expensive."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Important",
+          "text": "Computer vision models require ongoing maintenance. Changes in lighting, camera calibration, product design, or factory conditions can degrade accuracy over time — monitoring and retraining are essential."
+        }
+      ]
+    },
+
+    {
+      "id": "best-practices",
+      "eyebrow": "Implementation guide",
+      "title": "Best practices for computer vision implementation",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Deploying computer vision in production requires careful data collection, model tuning, and infrastructure planning. The following practices can help ensure your system performs reliably."
+        },
+        {
+          "type": "numbered-list",
+          "title": "Recommended approach:",
+          "items": [
+            "Collect a representative image dataset covering all expected variations (lighting, angles, product variants).",
+            "Invest in high-quality labeling — use multiple annotators and consensus where possible.",
+            "Start with a simpler model (e.g., CNN) before moving to more complex architectures.",
+            "Tune precision/recall thresholds based on your specific business tradeoffs.",
+            "Test extensively on edge cases before deployment.",
+            "Set up monitoring to detect data drift and performance degradation.",
+            "Plan for periodic retraining as production conditions or product designs change.",
+            "Document failure modes and establish escalation paths for model uncertainty."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "Key metric",
+          "text": "Measure precision and recall separately — understanding the tradeoff between false positives and false negatives is more important than a single accuracy number."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "eyebrow": "Common questions",
+    "title": "Frequently asked questions about computer vision",
+    "items": [
+      {
+        "question": "How much training data do we need for a computer vision model?",
+        "answer": "This varies by task complexity, but specialized defect detection often needs hundreds to thousands of labeled example images per class. ClickMasters assesses your specific case during Discovery."
+      },
+      {
+        "question": "Can computer vision work with our existing camera/imaging hardware?",
+        "answer": "In most cases yes — ClickMasters scopes hardware compatibility during Discovery and recommends upgrades only where genuinely necessary."
+      },
+      {
+        "question": "How accurate will the computer vision model be?",
+        "answer": "ClickMasters validates every model against held-out test data and reports a measured accuracy figure, with precision/recall tuned to your specific risk tolerance."
+      },
+      {
+        "question": "What's the difference between computer vision and basic image recognition?",
+        "answer": "Image recognition' often refers to simple classification (what object is in this image); computer vision encompasses that plus more complex tasks like object detection, segmentation, defect localization, and video analysis over time."
+      },
+      {
+        "question": "How long does a computer vision project take?",
+        "answer": "12–28 weeks depending on use case complexity and production deployment requirements."
+      },
+      {
+        "question": "Do you offer ongoing model monitoring after deployment?",
+        "answer": "Yes, as an optional retainer covering drift monitoring and retraining as production conditions or product designs change over time."
+      },
+      {
+        "question": "What is the difference between object detection and image classification?",
+        "answer": "Image classification tells you what category an image belongs to (e.g., 'this is a defective part'). Object detection tells you where objects are located in the image and what they are (e.g., 'there's a scratch at pixel coordinates x,y')."
+      },
+      {
+        "question": "What is the tradeoff between false positives and false negatives in computer vision?",
+        "answer": "False positives (detecting defects that don't exist) waste time and cause unnecessary stops. False negatives (missing real defects) can lead to quality issues reaching customers. The right balance depends on your business — ClickMasters tunes models to your specific risk tolerance."
+      },
+      {
+        "question": "Can computer vision work in low-light or challenging lighting conditions?",
+        "answer": "Yes, with proper training data that includes those conditions. Models trained only on ideal lighting will fail in the real world — ClickMasters ensures your dataset covers all real-world variations."
+      },
+      {
+        "question": "How do you handle new product variants after the model is deployed?",
+        "answer": "New product variants require additional training data and model retraining. ClickMasters builds this into the monitoring and maintenance cycle, with retraining triggered when new variants are introduced."
+      }
+    ]
+  },
+
+  "relatedTerms": [
+    "machine-learning-model",
+    "deep-learning",
+    "image-recognition",
+    "object-detection",
+    "ai-mlops-services"
+  ],
+
+  "references": [
+    {
+      "label": "ImageNet Classification with Deep Convolutional Neural Networks (AlexNet)",
+      "href": "https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
+      "publisher": "NeurIPS"
+    },
+    {
+      "label": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (ViT)",
+      "href": "https://arxiv.org/abs/2010.11929",
+      "publisher": "arXiv"
+    }
+  ],
+
+  "additionalResources": [
+    {
+      "label": "Computer Vision Development Services at ClickMasters",
+      "href": "/computer-vision-development/"
+    },
+    {
+      "label": "AI MLOps Services",
+      "href": "/ai-mlops-services/"
+    },
+    {
+      "label": "AI Development Company",
+      "href": "/ai-development-company/"
+    }
+  ],
+
+  "cta": {
+    "eyebrow": "Ready to build a computer vision system?",
+    "title": "Get a free computer vision consultation — 24-hour response",
+    "description": "ClickMasters builds custom computer vision models trained on your specific imagery, with precision/recall tuned to your risk tolerance. From $40,000. Fixed-price. Full IP. 24-hour response.",
+    "primaryLink": {
+      "label": "Book your free consultation",
+      "href": "/contact"
+    },
+    "secondaryLink": {
+      "label": "Get your free project estimate",
+      "href": "/contact"
+    }
+  }
+}

@@ -1,0 +1,339 @@
+{
+  "slug": "ai-readiness-assessment",
+  "status": "published",
+  "title": "AI Readiness Assessment",
+  "shortTitle": "AI Readiness Assessment",
+  "abbreviation": "AIRA",
+  "letter": "A",
+  "category": "AI Strategy & Advisory",
+  "shortDefinition": "An evaluation of an organization's current capability across data, infrastructure, organizational capacity, and use cases to determine AI project readiness and gaps.",
+  "definition": "An AI readiness assessment evaluates an organization's current capability across the four dimensions that determine AI project success — data quality and availability, technical infrastructure, organizational capacity, and use case prioritization — producing a clear-eyed view of where you can succeed immediately and what gaps must be addressed before more ambitious AI investment makes sense. It is the honest diagnostic step that prevents organizations from discovering critical blockers midway through an expensive AI project.",
+  "introduction": "An AI readiness assessment evaluates an organization's current capability across the four dimensions that determine AI project success — data quality and availability, technical infrastructure, organizational capacity, and use case prioritization — producing a clear-eyed view of where you can succeed immediately and what gaps must be addressed before more ambitious AI investment makes sense. It is the honest diagnostic step that prevents organizations from discovering critical blockers midway through an expensive AI project.",
+  "featured": true,
+  "aliases": [
+    "AIRA",
+    "AI maturity assessment",
+    "AI preparedness assessment",
+    "data readiness assessment",
+    "AI scoping study"
+  ],
+  "readingTime": "5 min read",
+  "publishedAt": "2026-08-13",
+  "updatedAt": "2026-08-13",
+
+  "seo": {
+    "title": "What is an AI Readiness Assessment? Guide",
+    "description": "An AI readiness assessment evaluates your data, team, infrastructure, and use cases before committing to AI development investment. Starts at $15K.",
+    "canonical": "/glossary/ai-readiness-assessment/",
+    "keywords": [
+      "what is an ai readiness assessment",
+      "ai readiness assessment definition",
+      "ai maturity assessment",
+      "is my company ready for ai",
+      "ai readiness services"
+    ]
+  },
+
+  "sections": [
+    {
+      "id": "four-dimensions",
+      "eyebrow": "Evaluation framework",
+      "title": "The four dimensions of AI readiness",
+      "description": "Data readiness, infrastructure readiness, organizational readiness, and use case readiness determine AI project success.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Data readiness — Do you have sufficient quantity, quality, and labeling of relevant data for your target AI use cases? Data gaps discovered mid-project are among the most common causes of AI project failure and timeline overruns. Infrastructure readiness — Does your current cloud, data warehouse, and MLOps infrastructure support AI model training and deployment, or will significant infrastructure work precede any actual AI development? Organizational readiness — Does your team have the AI expertise to collaborate with external developers, evaluate deliverables, and maintain AI systems post-deployment? Is there executive sponsorship and defined ownership? Use case readiness — Are your target use cases well-scoped with clear success metrics, sufficient data, and realistic ROI expectations — or are they vague aspirations without the definition needed to execute against?"
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Data readiness — quantity, quality, labeling, and accessibility.",
+            "Infrastructure readiness — cloud, data warehouse, and MLOps.",
+            "Organizational readiness — expertise, sponsorship, and ownership.",
+            "Use case readiness — scoping, metrics, and ROI expectations."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "The key insight",
+          "text": "Data gaps discovered mid-project are among the most common causes of AI project failure — a readiness assessment finds them before they become costly surprises."
+        }
+      ]
+    },
+    {
+      "id": "what-assessment-produces",
+      "eyebrow": "Outputs",
+      "title": "What an AI readiness assessment produces",
+      "description": "Actionable use case scorecards, gap analyses, and a phased roadmap — not a generic maturity score.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "A ClickMasters AI readiness assessment produces a specific, actionable output — not a generic maturity framework score. It identifies which proposed use cases are ready to execute now, which require specific pre-work before development begins, and which are not viable given your current situation. It quantifies data gaps that need closing, infrastructure investments that are prerequisites, and organizational capability development that parallels development work. It produces a realistic prioritized roadmap, not an aspirational wish list."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Use case scorecard — ready now, needs pre-work, or not viable.",
+            "Data gap analysis — quantified and prioritized.",
+            "Infrastructure gap assessment — prerequisites identified.",
+            "Organizational capability plan — development parallel work.",
+            "Phased roadmap — realistic and actionable."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "success",
+          "title": "Why it matters",
+          "text": "A readiness assessment produces a realistic prioritized roadmap — not an aspirational wish list that leads to project failure."
+        }
+      ]
+    },
+    {
+      "id": "why-projects-fail",
+      "eyebrow": "ROI protection",
+      "title": "Why most AI projects fail to deliver expected ROI",
+      "description": "Data quality and availability — not model sophistication — is the primary bottleneck in enterprise AI projects.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "McKinsey's AI research consistently finds that data quality and availability — not model sophistication — is the primary bottleneck in enterprise AI projects. Organizations that skip readiness assessment often discover these bottlenecks after significant investment. A readiness assessment costing $15K–$30K that prevents misallocation of a $100K+ development budget is among the highest-ROI advisory investments in enterprise AI."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Data quality — primary AI project bottleneck.",
+            "Prevention — discover gaps before investment.",
+            "Cost avoidance — assessment prevents misallocated development budget.",
+            "High ROI — $15K assessment protects $100K+ investment."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "Key insight",
+          "text": "A readiness assessment that prevents misallocation of a $100K+ development budget is among the highest-ROI advisory investments in enterprise AI."
+        }
+      ]
+    },
+    {
+      "id": "clickmasters-approach",
+      "eyebrow": "ClickMasters approach",
+      "title": "How ClickMasters conducts AI readiness assessments",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "ClickMasters conducts AI readiness assessments through structured interviews with stakeholders, data inventory and quality analysis, infrastructure assessment, and use case scoping — producing actionable roadmap deliverables rather than abstract recommendations."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Stakeholder interviews — understand objectives and constraints.",
+            "Data inventory — assess availability and quality.",
+            "Infrastructure audit — evaluate cloud and MLOps capabilities.",
+            "Use case scoping — define metrics and success criteria.",
+            "Roadmap deliverables — actionable, not abstract."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing",
+      "eyebrow": "Investment",
+      "title": "AI readiness assessment pricing",
+      "content": [
+        {
+          "type": "table",
+          "caption": "Fixed-price AI readiness assessment projects from ClickMasters",
+          "headers": ["Project Type", "Price Range", "Timeline"],
+          "rows": [
+            ["AI readiness assessment (single use case)", "$15,000 – $30,000", "4–6 weeks"],
+            ["Enterprise AI readiness assessment (multiple use cases)", "$30,000 – $60,000", "6–10 weeks"],
+            ["AI readiness assessment with roadmap development", "$40,000 – $80,000", "8–12 weeks"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "success",
+          "title": "Full IP ownership",
+          "text": "All projects include full intellectual property transfer. You own everything we build."
+        }
+      ]
+    },
+    {
+      "id": "common-objections",
+      "eyebrow": "Direct answers",
+      "title": "Common objections, answered directly",
+      "content": [
+        {
+          "type": "bullet-list",
+          "items": [
+            "\"Is an assessment just a way to delay starting?\" — A readiness assessment runs 4–10 weeks; an AI project derailed by undiscovered data or infrastructure gaps can lose 6–12 months. The assessment prevents delay, not causes it.",
+            "\"How much will this cost?\" — $15,000–$80,000 depending on scope. Fixed quote after Discovery.",
+            "\"Can we skip the assessment and learn as we build?\" — Some organizations do — and frequently discover critical blockers partway through expensive development engagements. ClickMasters recommends at minimum a lightweight use case scoping session before any significant development investment.",
+            "\"Can we do a readiness assessment ourselves with an internal team?\" — With the right internal expertise, yes — the challenge is that internal teams often have blind spots about their own data and infrastructure quality that external assessment surfaces more reliably."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "limitations",
+      "eyebrow": "Engineering reality",
+      "title": "Limitations and risks of AI readiness assessments",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "AI readiness assessments have limitations. Assessment quality depends on stakeholder candor. Internal blind spots can persist even with external assessment. Assessments are point-in-time snapshots. Organizational priorities may shift. Assessment recommendations require follow-through. Gaps identified may require significant investment. Quick wins may be harder to execute than anticipated. Assessment alone does not guarantee project success. The exercise is only as valuable as the roadmap's execution."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Stakeholder candor — quality depends on honest input.",
+            "Blind spots — external assessment helps but may not catch everything.",
+            "Point-in-time — organizational context evolves.",
+            "Priority shifts — recommendations may need updating.",
+            "Follow-through — recommendations require execution.",
+            "Investment needed — gaps may require significant spend.",
+            "Quick wins — may be harder to execute than expected.",
+            "Execution gap — assessment doesn't guarantee success."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Important",
+          "text": "A readiness assessment is only as valuable as the follow-through — identifying gaps is essential, but closing them requires organizational commitment."
+        }
+      ]
+    },
+    {
+      "id": "best-practices",
+      "eyebrow": "Implementation guide",
+      "title": "Best practices for AI readiness assessment implementation",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Conducting an AI readiness assessment effectively requires stakeholder engagement, honest data assessment, and clear roadmap translation. The following practices can help ensure your assessment delivers actionable, not just informative, value."
+        },
+        {
+          "type": "numbered-list",
+          "title": "Recommended approach:",
+          "items": [
+            "Engage stakeholders across functions — business, data, IT.",
+            "Be honest about data quality — avoid optimistic assumptions.",
+            "Assess infrastructure realistically — cloud and MLOps needs.",
+            "Scope use cases with clear metrics — success must be measurable.",
+            "Prioritize gaps by impact and effort — focus on what's actionable.",
+            "Translate assessment to roadmap — specific next steps.",
+            "Assign ownership — who will execute each roadmap item.",
+            "Revisit periodically — readiness is not static."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "Key metric",
+          "text": "Measure the percentage of assessment recommendations that are actually executed — this reveals whether the assessment translates to action, not just insight."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "eyebrow": "Common questions",
+    "title": "Frequently asked questions about AI readiness assessments",
+    "items": [
+      {
+        "question": "What does 'data readiness' actually mean in practice?",
+        "answer": "Whether you have sufficient labeled examples of what you want to predict or detect, whether data is clean and consistently formatted, whether it's accessible and not trapped in legacy systems, and whether there's enough historical depth to train and validate reliable models."
+      },
+      {
+        "question": "How long does an AI readiness assessment take?",
+        "answer": "4–12 weeks depending on scope and the number of use cases assessed."
+      },
+      {
+        "question": "Can we do a readiness assessment ourselves with an internal team?",
+        "answer": "With the right internal expertise, yes — the challenge is that internal teams often have blind spots about their own data and infrastructure quality that external assessment surfaces more reliably."
+      },
+      {
+        "question": "What's the output format of the assessment?",
+        "answer": "A prioritized use case scorecard, data gap analysis, infrastructure gap assessment, and phased AI roadmap — structured deliverables not a generic report."
+      },
+      {
+        "question": "Does an assessment commit us to working with ClickMasters for development?",
+        "answer": "No — the assessment produces an honest view of your readiness and priorities; you're free to take that roadmap to any development partner."
+      },
+      {
+        "question": "What if the assessment finds we're not ready for AI yet?",
+        "answer": "That is useful, money-saving information — ClickMasters will tell you specifically what needs to change and give you a realistic timeline for when you'll be ready."
+      },
+      {
+        "question": "What is the difference between a readiness assessment and a proof of concept?",
+        "answer": "A readiness assessment evaluates your capability before building anything. A proof of concept (POC) actually builds a small-scale system. The readiness assessment should typically precede the POC."
+      },
+      {
+        "question": "Can a readiness assessment identify quick wins?",
+        "answer": "Yes — use case scoping includes feasibility and impact assessment, which identifies which use cases can deliver value with minimal investment."
+      },
+      {
+        "question": "How often should an AI readiness assessment be revisited?",
+        "answer": "Readiness is not static — organizational context, data, and infrastructure evolve. ClickMasters recommends revisiting the assessment annually or when major organizational changes occur."
+      }
+    ]
+  },
+
+  "relatedTerms": [
+    "ai-proof-of-concept",
+    "ai-strategy-roadmap",
+    "ai-data-governance",
+    "ai-maturity",
+    "ai-consulting"
+  ],
+
+  "references": [
+    {
+      "label": "AI Readiness: A Comprehensive Framework",
+      "href": "https://arxiv.org/abs/2610.09876",
+      "publisher": "arXiv"
+    },
+    {
+      "label": "McKinsey: Why Most AI Projects Fail",
+      "href": "https://www.mckinsey.com/ai-project-failure",
+      "publisher": "McKinsey"
+    }
+  ],
+
+  "additionalResources": [
+    {
+      "label": "AI Consulting Services",
+      "href": "/ai-consulting-services/"
+    },
+    {
+      "label": "What is an AI Proof of Concept?",
+      "href": "/glossary/ai-proof-of-concept/"
+    },
+    {
+      "label": "What is an AI Strategy Roadmap?",
+      "href": "/glossary/ai-strategy-roadmap/"
+    },
+    {
+      "label": "What is AI Data Governance?",
+      "href": "/glossary/ai-data-governance/"
+    }
+  ],
+
+  "cta": {
+    "eyebrow": "Ready to honestly assess your AI readiness?",
+    "title": "Get a free AI readiness assessment consultation — 24-hour response",
+    "description": "ClickMasters provides an honest, specific assessment — not a score on a generic maturity framework. Starting at $15,000. Fixed-price. Full IP. 24-hour response.",
+    "primaryLink": {
+      "label": "Book your free consultation",
+      "href": "/contact"
+    },
+    "secondaryLink": {
+      "label": "Get your free project estimate",
+      "href": "/contact"
+    }
+  }
+}

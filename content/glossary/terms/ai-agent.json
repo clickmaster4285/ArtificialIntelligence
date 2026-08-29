@@ -1,0 +1,310 @@
+{
+  "slug": "ai-agent",
+  "status": "published",
+  "title": "AI Agent",
+  "shortTitle": "AI Agent",
+  "abbreviation": "Agent",
+  "letter": "A",
+  "category": "AI Agent",
+  "shortDefinition": "An AI system that autonomously completes multi-step tasks using tools and decision-making.",
+  "definition": "An AI agent is an AI system that can autonomously plan and execute multi-step tasks — using tools, making decisions, and adapting its approach based on intermediate results — rather than simply responding to a single question with a single answer. Where a chatbot answers a question, an agent can complete a workflow: researching information across multiple sources, taking actions in connected systems, and adjusting its plan as it goes.",
+  "introduction": "An AI agent is an AI system that can autonomously plan and execute multi-step tasks — using tools, making decisions, and adapting its approach based on intermediate results — rather than simply responding to a single question with a single answer. Where a chatbot answers a question, an agent can complete a workflow: researching information across multiple sources, taking actions in connected systems, and adjusting its plan as it goes.",
+  "featured": true,
+  "aliases": [
+    "Agent",
+    "agentic AI",
+    "autonomous agent",
+    "AI agent",
+    "multi-step AI system"
+  ],
+  "readingTime": "6 min read",
+  "publishedAt": "2026-08-07",
+  "updatedAt": "2026-08-07",
+
+  "seo": {
+    "title": "What is an AI Agent? Agentic AI Defined",
+    "description": "An AI agent autonomously completes multi-step tasks using tools and decision-making, not just single Q&A. Definition, examples, builds from $40K.",
+    "canonical": "/glossary/ai-agent/",
+    "keywords": [
+      "what is an ai agent",
+      "agentic ai definition",
+      "ai agent vs chatbot",
+      "autonomous ai agent examples",
+      "ai agent development services"
+    ]
+  },
+
+  "sections": [
+    {
+      "id": "how-agents-work",
+      "eyebrow": "Core technology",
+      "title": "How AI agents work",
+      "description": "AI agents combine LLM reasoning with tool calling in an autonomous decision loop.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "An AI agent combines an LLM's reasoning capability with the ability to call external tools — APIs, databases, search functions, or other systems — and use the results to inform its next step. The agent operates in a loop: assess the current state, decide on an action, execute it, observe the result, and repeat until the task is complete or it determines it needs human input. This is fundamentally different from a single-turn LLM call because the agent's plan can change based on what it discovers along the way."
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "The key distinction",
+          "text": "An agent doesn't just answer questions — it completes workflows. It plans, acts, observes, and adapts until the goal is achieved."
+        }
+      ]
+    },
+
+    {
+      "id": "agent-vs-chatbot",
+      "eyebrow": "Comparison",
+      "title": "AI agent vs. chatbot: what's the difference?",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "A chatbot, even an LLM-powered one, typically operates within a single conversational turn or a scripted flow — answering a question or following a predetermined decision tree. An AI agent operates with more autonomy: given a goal like 'research these five competitors and summarize their pricing,' an agent will independently determine the steps needed, execute searches, gather data, and synthesize a result without being told each individual step. This makes agents well-suited to research, multi-system workflows, and tasks that don't fit a predictable conversational script."
+        },
+        {
+          "type": "table",
+          "caption": "Chatbot vs. AI agent comparison",
+          "headers": ["Capability", "Chatbot", "AI Agent"],
+          "rows": [
+            ["Task scope", "Single-turn Q&A or scripted flow", "Multi-step, goal-oriented workflows"],
+            ["Planning", "Predefined decision tree", "Autonomous, adaptive planning"],
+            ["Tool usage", "None or limited", "Can call APIs, databases, and external systems"],
+            ["Adaptability", "Scripted responses", "Adapts based on intermediate results"],
+            ["Autonomy", "Low — follows script", "High — plans and executes independently"],
+            ["Human oversight", "Not typically needed", "Requires bounded scope + escalation paths"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Not either/or",
+          "text": "Many applications combine both — a chatbot interface that surfaces AI agent capabilities for complex tasks, or agents that use chat as one of their interaction modes."
+        }
+      ]
+    },
+
+    {
+      "id": "clickmasters-approach",
+      "eyebrow": "ClickMasters approach",
+      "title": "How ClickMasters builds AI agents for enterprise clients",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "ClickMasters builds production agentic systems with bounded action scope by default — meaning the agent operates within explicitly defined limits and requires human sign-off for any consequential or irreversible action, rather than having unrestricted autonomy. Every agent build includes evaluation against representative task scenarios, logging and observability so you can audit what the agent did and why, and clear escalation paths for situations the agent isn't confident handling."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Bounded action scope by default — the agent operates within defined limits.",
+            "Mandatory human sign-off for consequential or irreversible actions.",
+            "Evaluation against representative task scenarios before production.",
+            "Logging and observability to audit agent decisions and actions.",
+            "Clear escalation paths for low-confidence or out-of-scope situations."
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "pricing",
+      "eyebrow": "Investment",
+      "title": "AI agent pricing",
+      "content": [
+        {
+          "type": "table",
+          "caption": "Fixed-price AI agent projects from ClickMasters",
+          "headers": ["Project Type", "Price Range", "Timeline"],
+          "rows": [
+            ["Single-workflow agentic system", "$40,000 – $90,000", "12–18 weeks"],
+            ["Multi-tool agent with system integrations", "$60,000 – $150,000", "16–24 weeks"],
+            ["Enterprise agentic platform with governance", "$100,000 – $250,000+", "20–30 weeks"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "success",
+          "title": "Full IP ownership",
+          "text": "All projects include full intellectual property transfer. You own everything we build."
+        }
+      ]
+    },
+
+    {
+      "id": "common-objections",
+      "eyebrow": "Direct answers",
+      "title": "Common objections, answered directly",
+      "content": [
+        {
+          "type": "bullet-list",
+          "items": [
+            "\"How much will this cost?\" — $40,000–$250,000+ depending on the number of tools, systems integrated, and governance requirements. Fixed quote after Discovery.",
+            "\"What stops the agent from making a costly mistake autonomously?\" — ClickMasters builds bounded action scope and mandatory human sign-off for any consequential or irreversible action by default — the agent doesn't get unrestricted autonomy.",
+            "\"How long will it take?\" — 12–30 weeks depending on workflow complexity and number of system integrations required.",
+            "\"Are AI agents reliable enough for production?\" — Yes, with proper evaluation, governance, and escalation paths in place."
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "limitations",
+      "eyebrow": "Engineering reality",
+      "title": "Limitations and risks of AI agents",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "AI agents are powerful but complex. They can make incorrect decisions, get stuck in loops, have high latency for multi-step tasks, and incur significant API costs. Without proper bounded action scope, they can take unintended actions in connected systems. The decision path is not always transparent, making auditing and debugging challenging."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Decision errors: agents can make incorrect choices that compound across steps.",
+            "Looping: agents can get stuck in repetitive loops without proper safeguards.",
+            "Latency: multi-step reasoning and tool calls increase response time.",
+            "Cost: tool calls and LLM reasoning add significant API expense.",
+            "Complexity: agents are harder to build, test, and debug than simple LLM calls.",
+            "Unintended actions: without bounded scope, agents may take actions you didn't authorize.",
+            "Transparency: decision paths can be opaque, making auditability difficult."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Important",
+          "text": "AI agents are not a drop-in replacement for chatbots or simple LLM calls. They require careful architecture, extensive testing, and governance frameworks to operate safely in production."
+        }
+      ]
+    },
+
+    {
+      "id": "best-practices",
+      "eyebrow": "Implementation guide",
+      "title": "Best practices for AI agent development",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Building production-grade AI agents requires careful architecture, extensive testing, and robust governance. The following practices can help ensure your agent is safe, reliable, and effective."
+        },
+        {
+          "type": "numbered-list",
+          "title": "Recommended approach:",
+          "items": [
+            "Start with a narrow, well-defined workflow before expanding scope.",
+            "Define bounded action scope from day one — agents should know what they can and cannot do.",
+            "Implement human-in-the-loop for all consequential actions (e.g., financial transactions, data updates).",
+            "Build comprehensive logging and observability to audit decisions.",
+            "Create evaluation test sets with edge cases and failure scenarios.",
+            "Add maximum step limits and timeout safeguards to prevent loops.",
+            "Implement confidence thresholds — agents should escalate when uncertain.",
+            "Plan for model updates that can change agent behavior unexpectedly."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "highlight",
+          "title": "Key metric",
+          "text": "Measure task completion rate and average steps per task. If agents frequently exceed max steps or require human escalation, refine your prompts or tool designs."
+        }
+      ]
+    }
+  ],
+
+  "faqs": {
+    "eyebrow": "Common questions",
+    "title": "Frequently asked questions about AI agents",
+    "items": [
+      {
+        "question": "What's the difference between an AI agent and a chatbot?",
+        "answer": "A chatbot typically responds within a single conversational turn or follows a scripted flow. An AI agent autonomously plans and executes multi-step tasks, adapting its approach based on intermediate results, without being told each individual step."
+      },
+      {
+        "question": "Can an AI agent take real actions in our systems, like updating a database or sending an email?",
+        "answer": "Yes, with appropriate guardrails — ClickMasters builds agents that can take real actions, but scopes which actions are autonomous versus which require human approval based on the consequence and reversibility of the action."
+      },
+      {
+        "question": "How do we audit what an AI agent actually did?",
+        "answer": "ClickMasters builds logging and observability into every agent deployment, so you can review the agent's decision path and actions taken for any completed task."
+      },
+      {
+        "question": "Are AI agents reliable enough for production use?",
+        "answer": "With proper bounded action scope, evaluation, and human escalation paths, yes — this is exactly the engineering discipline ClickMasters applies, rather than deploying an agent with unrestricted autonomy and hoping it performs well."
+      },
+      {
+        "question": "How long does an AI agent project take?",
+        "answer": "12–30 weeks depending on workflow complexity and the number of system integrations required."
+      },
+      {
+        "question": "Can you build an agent that integrates with our specific internal tools and systems?",
+        "answer": "Yes, ClickMasters builds custom tool integrations for your specific systems as part of every agent engagement."
+      },
+      {
+        "question": "What is the difference between an agent and an LLM with function calling?",
+        "answer": "Function calling is a feature where an LLM can output a single tool call in a single turn. An AI agent uses function calling as part of a multi-step loop, planning, executing, and adapting across multiple turns to complete a complex task."
+      },
+      {
+        "question": "Can AI agents be combined with RAG?",
+        "answer": "Yes — RAG provides the agent with current, private information, while the agent uses that information as part of its planning and reasoning. This is a common and powerful combination."
+      },
+      {
+        "question": "What are the most common use cases for AI agents?",
+        "answer": "Common use cases include research and analysis (competitive intelligence, market research), multi-system workflows (onboarding, support ticket triage), autonomous data retrieval, report generation, and personal assistants that take actions across multiple tools."
+      },
+      {
+        "question": "What's the difference between an AI agent and an autonomous agent?",
+        "answer": "The terms are often used interchangeably. 'Autonomous agent' typically emphasizes the agent's ability to operate without human oversight, while 'AI agent' is a broader term that includes both autonomous and human-in-the-loop systems."
+      }
+    ]
+  },
+
+  "relatedTerms": [
+    "large-language-model",
+    "retrieval-augmented-generation",
+    "prompt-engineering",
+    "fine-tuning",
+    "ai-chatbot-development"
+  ],
+
+  "references": [
+    {
+      "label": "ReAct: Synergizing Reasoning and Acting in Language Models",
+      "href": "https://arxiv.org/abs/2210.03629",
+      "publisher": "arXiv"
+    },
+    {
+      "label": "Toolformer: Language Models That Can Use Tools",
+      "href": "https://arxiv.org/abs/2302.04761",
+      "publisher": "arXiv"
+    }
+  ],
+
+  "additionalResources": [
+    {
+      "label": "AI Agent Development Services at ClickMasters",
+      "href": "/ai-agent-development-company/"
+    },
+    {
+      "label": "AI Chatbot Development",
+      "href": "/ai-chatbot-development/"
+    },
+    {
+      "label": "What is RAG? (Retrieval-Augmented Generation)",
+      "href": "/glossary/rag-retrieval-augmented-generation/"
+    }
+  ],
+
+  "cta": {
+    "eyebrow": "Ready to build an AI agent for your workflow?",
+    "title": "Get a free AI agent consultation — 24-hour response",
+    "description": "ClickMasters builds production agentic AI systems with bounded action scope and human-in-the-loop governance. From $40,000. Fixed-price. Full IP. 24-hour response.",
+    "primaryLink": {
+      "label": "Book your free consultation",
+      "href": "/contact"
+    },
+    "secondaryLink": {
+      "label": "Get your free project estimate",
+      "href": "/contact"
+    }
+  }
+}
