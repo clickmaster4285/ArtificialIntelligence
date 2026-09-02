@@ -78,10 +78,33 @@ export function GlobalLeadForm() {
 
         <form
           className="glass relative overflow-hidden rounded-3xl p-5 shadow-[0_40px_120px_-70px_rgba(139,92,246,0.9)] md:p-7"
-          onSubmit={(event) => {
+          onSubmit={async (event) => {
             event.preventDefault();
-            event.currentTarget.reset();
-            setSubmitted(true);
+            const form = event.currentTarget;
+            const formData = new FormData(form);
+            const response = await fetch(
+              "/api/send-mail",
+              {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                  name: formData.get("name"),
+                  email: formData.get("email"),
+                  projectType:
+                    formData.get("projectType"),
+                  budget: formData.get("budget"),
+                  message: formData.get("message"),
+                }),
+              },
+            );
+            const result = await response.json();
+
+            if (result.ok) {
+              form.reset();
+              setSubmitted(true);
+            }
           }}
         >
           <div
