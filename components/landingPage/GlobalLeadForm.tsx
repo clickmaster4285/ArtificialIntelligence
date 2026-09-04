@@ -7,6 +7,7 @@ import {
   Mail,
   Sparkles,
 } from "lucide-react";
+import { submitLeadToCrm } from "@/lib/crm";
 
 const projectTypes = [
   "AI product",
@@ -19,6 +20,10 @@ const projectTypes = [
 export function GlobalLeadForm() {
   const [submitted, setSubmitted] =
     useState(false);
+  const [submitting, setSubmitting] =
+    useState(false);
+  const [submitError, setSubmitError] =
+    useState("");
 
   return (
     <section className="relative overflow-hidden border-t border-border/30 bg-background px-6 py-16 text-foreground md:px-12 md:py-24">
@@ -82,28 +87,35 @@ export function GlobalLeadForm() {
             event.preventDefault();
             const form = event.currentTarget;
             const formData = new FormData(form);
-            const response = await fetch(
-              "/api/send-mail",
-              {
-                method: "POST",
-                headers: {
-                  "Content-Type": "application/json",
-                },
-                body: JSON.stringify({
-                  name: formData.get("name"),
-                  email: formData.get("email"),
-                  projectType:
-                    formData.get("projectType"),
-                  budget: formData.get("budget"),
-                  message: formData.get("message"),
-                }),
-              },
-            );
-            const result = await response.json();
 
-            if (result.ok) {
+            setSubmitError("");
+            setSubmitting(true);
+
+            try {
+              await submitLeadToCrm({
+                name: String(formData.get("name") ?? ""),
+                email: String(formData.get("email") ?? ""),
+                message: [
+                  String(formData.get("message") ?? ""),
+                  formData.get("projectType")
+                    ? `Project Type: ${formData.get("projectType")}`
+                    : "",
+                  formData.get("budget")
+                    ? `Budget: ${formData.get("budget")}`
+                    : "",
+                ]
+                  .filter(Boolean)
+                  .join("\n"),
+              });
+
               form.reset();
               setSubmitted(true);
+            } catch {
+              setSubmitError(
+                "Something went wrong while sending your message. Please try again.",
+              );
+            } finally {
+              setSubmitting(false);
             }
           }}
         >
@@ -198,9 +210,12 @@ export function GlobalLeadForm() {
           <div className="mt-5 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <button
               type="submit"
-              className="group inline-flex h-12 items-center justify-center gap-3 rounded-full bg-foreground px-6 text-sm font-medium text-background transition-opacity hover:opacity-90"
+              disabled={submitting}
+              className="group inline-flex h-12 items-center justify-center gap-3 rounded-full bg-foreground px-6 text-sm font-medium text-background transition-opacity hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-60"
             >
-              Send project brief
+              {submitting
+                ? "Sending..."
+                : "Send project brief"}
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </button>
 
@@ -208,6 +223,12 @@ export function GlobalLeadForm() {
               No spam. Just a senior review and a clear next step.
             </p>
           </div>
+
+          {submitError && (
+            <div className="mt-5 rounded-2xl border border-red-400/25 bg-red-400/10 px-4 py-3 text-sm text-red-200">
+              {submitError}
+            </div>
+          )}
 
           {submitted && (
             <div className="mt-5 rounded-2xl border border-emerald-400/25 bg-emerald-400/10 px-4 py-3 text-sm text-emerald-200">
